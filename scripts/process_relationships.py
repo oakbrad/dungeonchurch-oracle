@@ -64,7 +64,9 @@ def restore_database(dump_file):
             # Only print first few lines of stderr to avoid overwhelming logs
             stderr_lines = result.stderr.split('\n')
             if len(stderr_lines) > 10:
-                print(f"stderr (first 10 lines): {'\n'.join(stderr_lines[:10])}")
+                print("stderr (first 10 lines):")
+                for i in range(10):
+                    print(stderr_lines[i])
                 print(f"... and {len(stderr_lines) - 10} more lines")
             else:
                 print(f"stderr: {result.stderr}")
