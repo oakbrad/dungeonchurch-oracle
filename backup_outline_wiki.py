@@ -36,6 +36,11 @@ headers = {
 def make_api_request(endpoint, data=None):
     """Make a request to the Outline API."""
     url = f"{OUTLINE_URL}/{endpoint}"
+    
+    # Debug output to see what's being sent
+    print(f"Making API request to: {url}")
+    print(f"With data: {json.dumps(data or {}, indent=2)}")
+    
     response = requests.post(url, headers=headers, json=data or {})
     
     if response.status_code != 200:
@@ -65,26 +70,39 @@ def track_export_progress(file_operation_id):
     attempt = 0
     
     while attempt < max_attempts:
-        response = make_api_request('fileOperations.info', {'id': file_operation_id})
+        # Debug output to see what's being sent
+        print(f"Checking status of file operation: {file_operation_id}")
         
-        if not response.get('ok'):
-            print(f"Error: Failed to get file operation info. Response: {response}")
-            sys.exit(1)
-        
-        file_operation = response.get('data')
-        state = file_operation.get('state')
-        
-        print(f"Export state: {state}")
-        
-        if state == 'complete':
-            print("Export completed successfully!")
-            return file_operation
-        elif state == 'error':
-            print(f"Error: Export failed. Response: {response}")
-            sys.exit(1)
-        
-        attempt += 1
-        time.sleep(10)  # Wait for 10 seconds before checking again
+        try:
+            # Make the API request with the correct parameter format
+            response = make_api_request('fileOperations.info', {'id': file_operation_id})
+            
+            # Debug output to see the full response
+            print(f"Response from fileOperations.info: {json.dumps(response, indent=2)}")
+            
+            if not response.get('ok'):
+                print(f"Error: Failed to get file operation info. Response: {response}")
+                sys.exit(1)
+            
+            file_operation = response.get('data')
+            state = file_operation.get('state')
+            
+            print(f"Export state: {state}")
+            
+            if state == 'complete':
+                print("Export completed successfully!")
+                return file_operation
+            elif state == 'error':
+                print(f"Error: Export failed. Response: {response}")
+                sys.exit(1)
+            
+            attempt += 1
+            time.sleep(10)  # Wait for 10 seconds before checking again
+        except Exception as e:
+            print(f"Error during tracking: {e}")
+            print("Retrying in 10 seconds...")
+            attempt += 1
+            time.sleep(10)
     
     print("Error: Export timed out after 5 minutes")
     sys.exit(1)
@@ -173,3 +191,4 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+
