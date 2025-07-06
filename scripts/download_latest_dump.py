@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-import boto3
 import os
-from datetime import datetime
 import sys
 import tempfile
 import requests
 from urllib.parse import urlparse
+import xml.etree.ElementTree as ET
+from datetime import datetime
 
 def download_latest_dump():
     """
@@ -30,12 +30,9 @@ def download_latest_dump():
     print(f"Bucket: {bucket}")
 
     try:
-        # Parse the base URL from the PAR URL
-        parsed_url = urlparse(s3_url)
-        base_url = f"{parsed_url.scheme}://{parsed_url.netloc}{parsed_url.path}"
-        
         # List objects in the bucket using the pre-authenticated request URL
-        list_url = f"{s3_url}"
+        # Look specifically in the 'backup' subfolder
+        list_url = f"{s3_url}?prefix=backup/"
         print(f"Listing objects from: {list_url}")
         
         response = requests.get(list_url)
@@ -44,32 +41,54 @@ def download_latest_dump():
             sys.exit(1)
             
         # Parse the XML response to find .dump files
-        # This is a simplified approach - in production you might want to use xml parsing
         content = response.text
-        dump_files = []
         
-        # Simple parsing to find .dump files and their last modified dates
-        # In a real implementation, you would use proper XML parsing
-        lines = content.split('\n')
-        current_key = None
-        current_modified = None
-        
-        for line in lines:
-            if '<Key>' in line and '</Key>' in line:
-                current_key = line.split('<Key>')[1].split('</Key>')[0]
-            elif '<LastModified>' in line and '</LastModified>' in line:
-                current_modified = line.split('<LastModified>')[1].split('</LastModified>')[0]
+        # Use proper XML parsing
+        try:
+            root = ET.fromstring(content)
+            # Define namespace
+            ns = {'s3': 'http://s3.amazonaws.com/doc/2006-03-01/'}
+            
+            dump_files = []
+            
+            # Find all Contents elements
+            for contents in root.findall('.//s3:Contents', ns):
+                key = contents.find('s3:Key', ns).text
+                last_modified = contents.find('s3:LastModified', ns).text
                 
-                if current_key and current_key.endswith('.dump'):
+                if key.endswith('.dump'):
                     dump_files.append({
-                        'Key': current_key,
-                        'LastModified': current_modified
+                        'Key': key,
+                        'LastModified': last_modified
                     })
-                current_key = None
-                current_modified = None
+                    print(f"Found dump file: {key}, modified: {last_modified}")
+        except ET.ParseError:
+            # Fallback to simple string parsing if XML parsing fails
+            print("XML parsing failed, falling back to simple string parsing")
+            dump_files = []
+            
+            # Simple parsing to find .dump files and their last modified dates
+            lines = content.split('\n')
+            current_key = None
+            current_modified = None
+            
+            for line in lines:
+                if '<Key>' in line and '</Key>' in line:
+                    current_key = line.split('<Key>')[1].split('</Key>')[0]
+                elif '<LastModified>' in line and '</LastModified>' in line:
+                    current_modified = line.split('<LastModified>')[1].split('</LastModified>')[0]
+                    
+                    if current_key and current_key.endswith('.dump'):
+                        dump_files.append({
+                            'Key': current_key,
+                            'LastModified': current_modified
+                        })
+                        print(f"Found dump file: {current_key}, modified: {current_modified}")
+                    current_key = None
+                    current_modified = None
         
         if not dump_files:
-            print("No .dump files found in the bucket.")
+            print("No .dump files found in the backup folder.")
             sys.exit(1)
         
         # Sort by last modified date
