@@ -52,6 +52,8 @@ def restore_database(dump_file):
             "-p", pg_port,
             "-U", pg_user,
             "-d", temp_db_name,
+            "--no-owner",  # Skip ownership commands
+            "--no-privileges",  # Skip privilege commands
             dump_file
         ], capture_output=True, text=True, env=pg_env)
         
@@ -59,7 +61,13 @@ def restore_database(dump_file):
         # due to warnings, so we check if the database was created
         if result.returncode != 0:
             print("Warning: pg_restore returned non-zero exit code")
-            print(f"stderr: {result.stderr}")
+            # Only print first few lines of stderr to avoid overwhelming logs
+            stderr_lines = result.stderr.split('\n')
+            if len(stderr_lines) > 10:
+                print(f"stderr (first 10 lines): {'\n'.join(stderr_lines[:10])}")
+                print(f"... and {len(stderr_lines) - 10} more lines")
+            else:
+                print(f"stderr: {result.stderr}")
             
         # Create the materialized views
         print("Creating materialized views for graph nodes and edges")
