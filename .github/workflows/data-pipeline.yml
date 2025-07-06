@@ -1,0 +1,99 @@
+name: Data Visualization Pipeline
+
+on:
+  schedule:
+    # Run once a day at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    # Allow manual triggering
+
+jobs:
+  process-data:
+    runs-on: ubuntu-latest
+    
+    services:
+      postgres:
+        image: postgres:13
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_USER: postgres
+          POSTGRES_DB: postgres
+        ports:
+          - 5432:5432
+        # Set health checks to wait until postgres has started
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install psycopg2-binary requests
+          sudo apt-get update
+          sudo apt-get install -y postgresql-client
+      
+      - name: Download latest database dump
+        id: download
+        env:
+          DUNGEONCHURCH_S3_URL: ${{ secrets.DUNGEONCHURCH_S3_URL }}
+          DUNGEONCHURCH_S3_NAMESPACE: ${{ secrets.DUNGEONCHURCH_S3_NAMESPACE }}
+          DUNGEONCHURCH_S3_BUCKET: ${{ secrets.DUNGEONCHURCH_S3_BUCKET }}
+        run: |
+          python scripts/download_latest_dump.py
+          # Check if download was successful by looking for dump files
+          if ls data/*.dump 1> /dev/null 2>&1; then
+            echo "Download successful"
+            echo "DOWNLOAD_SUCCESS=true" >> $GITHUB_ENV
+            # Get the path of the downloaded file
+            DUMP_FILE=$(ls -t data/*.dump | head -1)
+            echo "DUMP_FILE=$DUMP_FILE" >> $GITHUB_ENV
+          else
+            echo "Download failed"
+            echo "DOWNLOAD_SUCCESS=false" >> $GITHUB_ENV
+          fi
+      
+      - name: Process relationships data
+        if: env.DOWNLOAD_SUCCESS == 'true'
+        run: |
+          echo "Processing dump file: ${{ env.DUMP_FILE }}"
+          python scripts/process_relationships.py "${{ env.DUMP_FILE }}" --output data/graph_data.json
+      
+      - name: Commit and push if data changed
+        if: env.DOWNLOAD_SUCCESS == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Check if graph_data.json exists and has changes
+          if [ -f data/graph_data.json ]; then
+            git add data/graph_data.json
+            
+            # Only commit if there are changes
+            if git diff --staged --quiet; then
+              echo "No changes to graph_data.json"
+            else
+              git commit -m "Update graph data [skip ci]"
+              git push
+              echo "Updated graph_data.json committed and pushed"
+            fi
+          else
+            echo "graph_data.json not found"
+          fi
+      
+      - name: Clean up dump file
+        if: env.DOWNLOAD_SUCCESS == 'true'
+        run: |
+          echo "Removing dump file: ${{ env.DUMP_FILE }}"
+          rm -f "${{ env.DUMP_FILE }}"
+

@@ -17,6 +17,8 @@ DUNGEONCHURCH_S3_NAMESPACE=<OCI namespace>
 DUNGEONCHURCH_S3_BUCKET=<OCI bucket name>
 ```
 
+For GitHub Actions, add these as repository secrets.
+
 ## Usage
 
 ### Download the Latest Database Dump
@@ -47,6 +49,20 @@ This will:
 Options:
 - `--output` or `-o`: Specify the output JSON file path
 - `--keep-dump` or `-k`: Keep the dump file after processing
+
+## Automated Updates
+
+This repository includes a GitHub Actions workflow that:
+1. Runs daily at midnight UTC (and can be triggered manually)
+2. Downloads the latest database dump
+3. Processes the relationship data if download is successful
+4. Commits and pushes the updated graph_data.json file
+5. Cleans up the dump file to ensure sensitive data isn't stored
+
+The workflow requires the following GitHub secrets:
+- `DUNGEONCHURCH_S3_URL`
+- `DUNGEONCHURCH_S3_NAMESPACE`
+- `DUNGEONCHURCH_S3_BUCKET`
 
 # To Do
 Use `OUTLINE_API_TOKEN` and `OUTLINE_URL`
