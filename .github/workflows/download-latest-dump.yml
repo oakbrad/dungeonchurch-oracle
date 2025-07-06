@@ -23,9 +23,9 @@ jobs:
 
       - name: Download the latest dump file
         env:
-          OCI_S3_URL: ${{ secrets.DUNGEONCHURCH_S3_URL }}
-          OCI_S3_NAMESPACE: ${{ secrets.DUNGEONCHURCH_S3_NAMESPACE }}
-          OCI_S3_BUCKET: ${{ secrets.DUNGEONCHURCH_S3_BUCKET }}
+          DUNGEONCHURCH_S3_URL: ${{ secrets.DUNGEONCHURCH_S3_URL }}
+          DUNGEONCHURCH_S3_NAMESPACE: ${{ secrets.DUNGEONCHURCH_S3_NAMESPACE }}
+          DUNGEONCHURCH_S3_BUCKET: ${{ secrets.DUNGEONCHURCH_S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.DUNGEONCHURCH_S3_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DUNGEONCHURCH_S3_SECRET_KEY }}
         run: |

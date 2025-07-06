@@ -9,19 +9,19 @@ def download_latest_dump():
     """
     Download the latest PostgreSQL dump file from OCI S3 compatible storage.
     Uses environment variables for configuration:
-    - OCI_S3_URL: The S3 endpoint URL
-    - OCI_S3_NAMESPACE: The S3 namespace
-    - OCI_S3_BUCKET: The S3 bucket name
+    - DUNGEONCHURCH_S3_URL: The S3 endpoint URL
+    - DUNGEONCHURCH_S3_NAMESPACE: The S3 namespace
+    - DUNGEONCHURCH_S3_BUCKET: The S3 bucket name
     AWS credentials are expected to be in AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
     """
     # Get environment variables
-    s3_url = os.environ.get('OCI_S3_URL')
-    namespace = os.environ.get('OCI_S3_NAMESPACE')
-    bucket = os.environ.get('OCI_S3_BUCKET')
+    s3_url = os.environ.get('DUNGEONCHURCH_S3_URL')
+    namespace = os.environ.get('DUNGEONCHURCH_S3_NAMESPACE')
+    bucket = os.environ.get('DUNGEONCHURCH_S3_BUCKET')
 
-    if not all([s3_url, bucket]):
+    if not all([s3_url, namespace, bucket]):
         print("Error: Required environment variables are missing.")
-        print("Required: OCI_S3_URL, OCI_S3_BUCKET")
+        print("Required: DUNGEONCHURCH_S3_URL, DUNGEONCHURCH_S3_NAMESPACE, DUNGEONCHURCH_S3_BUCKET")
         sys.exit(1)
 
     # Configure S3 client with OCI endpoint
@@ -82,4 +82,3 @@ def download_latest_dump():
 
 if __name__ == "__main__":
     download_latest_dump()
-
