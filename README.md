@@ -54,14 +54,16 @@ Options:
 
 This repository includes a GitHub Actions workflow that:
 1. Runs daily at midnight UTC (and can be triggered manually)
-2. Downloads the latest database dump in the `download-dump` job
-3. If download is successful, automatically runs the `process-data` job to:
-   - Process the relationship data
-   - Commit and push the updated graph_data.json file
+2. Downloads the latest database dump
+3. Processes the relationship data if download is successful
+4. Commits and pushes the updated graph_data.json file
+5. Cleans up the dump file to ensure sensitive data isn't stored
 
-The workflow is structured as two separate jobs with dependencies:
-- `download-dump`: Downloads the database dump and uploads it as an artifact
-- `process-data`: Runs only if `download-dump` is successful, processes the data, and commits the results
+The workflow is designed with security in mind:
+- All processing happens within a single job to avoid storing sensitive data as artifacts
+- The database dump remains only in the runner's temporary file system
+- The dump file is deleted after processing, even if the workflow fails
+- Only the processed JSON data (which doesn't contain sensitive information) is committed to the repository
 
 The workflow requires the following GitHub secrets:
 - `DUNGEONCHURCH_S3_URL`
