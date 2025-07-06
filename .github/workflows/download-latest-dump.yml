@@ -1,0 +1,102 @@
+name: Download Latest PostgreSQL Dump
+
+on:
+  workflow_dispatch:
+    # Allows manual triggering of the workflow
+
+jobs:
+  download-dump:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install OCI CLI
+        run: |
+          pip install oci-cli
+          pip install boto3
+
+      - name: Download the latest dump file
+        env:
+          OCI_S3_URL: ${{ secrets.DUNGEONCHURCH_S3_URL }}
+          OCI_S3_NAMESPACE: ${{ secrets.DUNGEONCHURCH_S3_NAMESPACE }}
+          OCI_S3_BUCKET: ${{ secrets.DUNGEONCHURCH_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.DUNGEONCHURCH_S3_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.DUNGEONCHURCH_S3_SECRET_KEY }}
+        run: |
+          # Create a Python script to find and download the latest dump file
+          cat > download_latest_dump.py << 'EOF'
+          import boto3
+          import os
+          from datetime import datetime
+          import sys
+
+          # Get environment variables
+          s3_url = os.environ.get('OCI_S3_URL')
+          namespace = os.environ.get('OCI_S3_NAMESPACE')
+          bucket = os.environ.get('OCI_S3_BUCKET')
+
+          # Configure S3 client with OCI endpoint
+          s3_client = boto3.client(
+              's3',
+              endpoint_url=s3_url
+          )
+
+          print(f"Connecting to S3 endpoint: {s3_url}")
+          print(f"Looking for dump files in bucket: {bucket}")
+
+          try:
+              # List all objects in the bucket
+              response = s3_client.list_objects_v2(Bucket=bucket)
+              
+              if 'Contents' not in response:
+                  print("No objects found in the bucket.")
+                  sys.exit(1)
+              
+              # Filter for .dump files and find the most recent one
+              dump_files = []
+              for obj in response['Contents']:
+                  if obj['Key'].endswith('.dump'):
+                      dump_files.append(obj)
+              
+              if not dump_files:
+                  print("No .dump files found in the bucket.")
+                  sys.exit(1)
+              
+              # Sort by last modified date
+              latest_dump = sorted(dump_files, key=lambda x: x['LastModified'])[-1]
+              latest_key = latest_dump['Key']
+              
+              print(f"Found latest dump file: {latest_key}")
+              print(f"Last modified: {latest_dump['LastModified']}")
+              print(f"Size: {latest_dump['Size']} bytes")
+              
+              # Create a temporary directory
+              import tempfile
+              temp_dir = tempfile.mkdtemp()
+              temp_file = os.path.join(temp_dir, "latest.dump")
+              
+              print(f"Downloading to temporary file: {temp_file}")
+              
+              # Download the file
+              s3_client.download_file(bucket, latest_key, temp_file)
+              
+              print(f"Download complete. File saved to {temp_file}")
+              print(f"File size: {os.path.getsize(temp_file)} bytes")
+              
+              # Clean up
+              os.remove(temp_file)
+              os.rmdir(temp_dir)
+              print("Temporary files cleaned up.")
+              
+          except Exception as e:
+              print(f"Error: {str(e)}")
+              sys.exit(1)
+          EOF
+
+          # Run the Python script
+          python download_latest_dump.py
+          
+          # Clean up the script
+          rm download_latest_dump.py
+
