@@ -6,7 +6,7 @@ This script performs the following steps:
 1. Makes an API call to start export of all collections
 2. Tracks the progress of the export operation
 3. Retrieves the file when it's ready
-4. Deletes the backup file on the server (if possible)
+4. Deletes the backup file on the server
 5. Saves the backup file to the repository
 """
 
@@ -126,21 +126,17 @@ def download_export(file_operation_id):
 
 def delete_export_from_server(file_operation_id):
     """
-    Try to delete the export file from the server.
-    Note: The Outline API may not support this operation directly.
+    Delete the export file from the server using the fileOperations.delete endpoint.
     """
-    print("Note: The Outline API doesn't appear to have a direct endpoint for deleting file operations.")
-    print("The backup file may remain on the server until automatically cleaned up by Outline.")
-    
-    # If in the future Outline adds a delete endpoint, it would be used like this:
-    # try:
-    #     response = make_api_request('fileOperations.delete', {'id': file_operation_id})
-    #     if response.get('ok'):
-    #         print("Export file deleted from server successfully")
-    #     else:
-    #         print(f"Warning: Failed to delete export file from server. Response: {response}")
-    # except Exception as e:
-    #     print(f"Warning: Error when trying to delete export file from server: {e}")
+    print("Attempting to delete the export file from the server...")
+    try:
+        response = make_api_request('fileOperations.delete', {'id': file_operation_id})
+        if response.get('ok'):
+            print("Export file deleted from server successfully")
+        else:
+            print(f"Warning: Failed to delete export file from server. Response: {response}")
+    except Exception as e:
+        print(f"Warning: Error when trying to delete export file from server: {e}")
 
 def main():
     """Main function to run the backup process."""
@@ -177,4 +173,3 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
-

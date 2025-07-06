@@ -8,7 +8,7 @@ Use `OUTLINE_API_TOKEN` and `OUTLINE_URL`
    1. Make API call to start [export of all collections](https://www.getoutline.com/developers#tag/collections/post/collections.export_all)
    2. Use the returned `FileOperation` to [track it's progress](https://www.getoutline.com/developers#tag/fileoperations/post/fileOperations.info)
    3. [Retrieve the file](https://www.getoutline.com/developers#tag/fileoperations/post/fileOperations.redirect) when it's ready
-   4. [Delete the backup](https://www.getoutline.com/developers#tag/fileOperations.delete) file on the server
+   4. [Delete the backup](https://www.getoutline.com/developers#tag/fileoperations/post/fileOperations.delete) file on the server
 2. Process that data into a form D3 can use
 3. Create the visualization
 4. Publish to Github Pages
@@ -33,4 +33,3 @@ The GitHub Action workflow will:
 - Download a backup of all collections from your Outline wiki
 - Save the backup to the `data/` directory
 - Commit and push the changes to the repository
-
