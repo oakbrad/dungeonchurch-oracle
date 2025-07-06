@@ -25,16 +25,35 @@ def restore_database(dump_file):
         
         print(f"Creating temporary database: {temp_db_name}")
         
+        # Get PostgreSQL connection parameters from environment variables
+        pg_host = os.environ.get("POSTGRES_HOST", "localhost")
+        pg_port = os.environ.get("POSTGRES_PORT", "5432")
+        pg_user = os.environ.get("POSTGRES_USER", "postgres")
+        pg_password = os.environ.get("POSTGRES_PASSWORD", "postgres")
+        
+        # Set PGPASSWORD environment variable for command-line tools
+        pg_env = os.environ.copy()
+        pg_env["PGPASSWORD"] = pg_password
+        
         # Create the database
-        subprocess.run(["createdb", temp_db_name], check=True)
+        subprocess.run([
+            "createdb",
+            "-h", pg_host,
+            "-p", pg_port,
+            "-U", pg_user,
+            temp_db_name
+        ], check=True, env=pg_env)
         
         # Restore the dump file to the temporary database
         print(f"Restoring dump file to database: {temp_db_name}")
-        result = subprocess.run(
-            ["pg_restore", "-d", temp_db_name, dump_file],
-            capture_output=True,
-            text=True
-        )
+        result = subprocess.run([
+            "pg_restore",
+            "-h", pg_host,
+            "-p", pg_port,
+            "-U", pg_user,
+            "-d", temp_db_name,
+            dump_file
+        ], capture_output=True, text=True, env=pg_env)
         
         # pg_restore often returns non-zero exit codes even when successful
         # due to warnings, so we check if the database was created
@@ -44,7 +63,13 @@ def restore_database(dump_file):
             
         # Create the materialized views
         print("Creating materialized views for graph nodes and edges")
-        conn = psycopg2.connect(f"dbname={temp_db_name}")
+        conn = psycopg2.connect(
+            host=pg_host,
+            port=pg_port,
+            user=pg_user,
+            password=pg_password,
+            dbname=temp_db_name
+        )
         cursor = conn.cursor()
         
         # Create graph_nodes view
@@ -72,7 +97,7 @@ def restore_database(dump_file):
         
     except subprocess.CalledProcessError as e:
         print(f"Error restoring database: {e}")
-        print(f"stderr: {e.stderr}")
+        print(f"stderr: {e.stderr if hasattr(e, 'stderr') else 'None'}")
         return None
     except Exception as e:
         print(f"Error: {str(e)}")
@@ -89,8 +114,20 @@ def extract_relationship_data(db_name):
         dict: D3-compatible graph data, or None if extraction failed
     """
     try:
+        # Get PostgreSQL connection parameters from environment variables
+        pg_host = os.environ.get("POSTGRES_HOST", "localhost")
+        pg_port = os.environ.get("POSTGRES_PORT", "5432")
+        pg_user = os.environ.get("POSTGRES_USER", "postgres")
+        pg_password = os.environ.get("POSTGRES_PASSWORD", "postgres")
+        
         print(f"Connecting to database: {db_name}")
-        conn = psycopg2.connect(f"dbname={db_name}")
+        conn = psycopg2.connect(
+            host=pg_host,
+            port=pg_port,
+            user=pg_user,
+            password=pg_password,
+            dbname=db_name
+        )
         cursor = conn.cursor(cursor_factory=RealDictCursor)
         
         # Extract nodes
@@ -126,12 +163,28 @@ def cleanup_database(db_name):
         db_name (str): Name of the database to drop
     """
     try:
+        # Get PostgreSQL connection parameters from environment variables
+        pg_host = os.environ.get("POSTGRES_HOST", "localhost")
+        pg_port = os.environ.get("POSTGRES_PORT", "5432")
+        pg_user = os.environ.get("POSTGRES_USER", "postgres")
+        pg_password = os.environ.get("POSTGRES_PASSWORD", "postgres")
+        
+        # Set PGPASSWORD environment variable for command-line tools
+        pg_env = os.environ.copy()
+        pg_env["PGPASSWORD"] = pg_password
+        
         print(f"Dropping temporary database: {db_name}")
-        subprocess.run(["dropdb", db_name], check=True)
+        subprocess.run([
+            "dropdb",
+            "-h", pg_host,
+            "-p", pg_port,
+            "-U", pg_user,
+            db_name
+        ], check=True, env=pg_env)
         print("Database dropped successfully")
     except subprocess.CalledProcessError as e:
         print(f"Error dropping database: {e}")
-        print(f"stderr: {e.stderr}")
+        print(f"stderr: {e.stderr if hasattr(e, 'stderr') else 'None'}")
     except Exception as e:
         print(f"Error: {str(e)}")
 
@@ -201,4 +254,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
