@@ -53,7 +53,8 @@ def make_api_request(endpoint, data=None):
 def start_export():
     """Start the export of all collections."""
     print("Starting export of all collections...")
-    response = make_api_request('collections.export_all')
+    # Request JSON format for the export
+    response = make_api_request('collections.export_all', {'format': 'json'})
     
     if not response.get('ok'):
         print(f"Error: Failed to start export. Response: {response}")
@@ -66,7 +67,8 @@ def start_export():
 def track_export_progress(file_operation_id):
     """Track the progress of the export operation."""
     print("Tracking export progress...")
-    max_attempts = 30  # Maximum number of attempts (30 * 10 seconds = 5 minutes)
+    # Increase max attempts to allow for up to 2 hours (720 attempts * 10 seconds = 2 hours)
+    max_attempts = 720
     attempt = 0
     
     while attempt < max_attempts:
@@ -104,7 +106,7 @@ def track_export_progress(file_operation_id):
             attempt += 1
             time.sleep(10)
     
-    print("Error: Export timed out after 5 minutes")
+    print("Error: Export timed out after 2 hours")
     sys.exit(1)
 
 def download_export(file_operation_id):
