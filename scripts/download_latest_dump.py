@@ -67,7 +67,8 @@ def download_latest_dump():
             print(f"Downloading to temporary file: {temp_file}")
             
             # Download the file using the pre-authenticated request
-            download_url = f"{s3_url}/{latest_dump}"
+            # Remove the leading slash to avoid double slashes in the URL
+            download_url = f"{s3_url}{latest_dump}"
             print(f"Downloading from: {download_url}")
             
             download_response = requests.get(download_url, stream=True)
@@ -99,4 +100,3 @@ def download_latest_dump():
 
 if __name__ == "__main__":
     download_latest_dump()
-
