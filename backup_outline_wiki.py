@@ -48,6 +48,9 @@ def make_api_request(endpoint, data=None):
         print(f"Response: {response.text}")
         sys.exit(1)
     
+    # Debug output to see the full response
+    print(f"Response from {endpoint}: {json.dumps(response.json(), indent=2)}")
+    
     return response.json()
 
 def start_export():
@@ -60,9 +63,40 @@ def start_export():
         print(f"Error: Failed to start export. Response: {response}")
         sys.exit(1)
     
-    file_operation = response.get('data')
-    print(f"Export started. File operation ID: {file_operation.get('id')}")
-    return file_operation
+    # The response structure might be different than expected
+    # Let's extract the file operation ID more carefully
+    data = response.get('data', {})
+    
+    # Check if data is a dictionary and has an 'id' field
+    if isinstance(data, dict) and 'id' in data:
+        file_operation_id = data.get('id')
+    else:
+        # If the structure is different, try to find the ID in the response
+        print("Warning: Unexpected response structure. Attempting to find file operation ID...")
+        
+        # Try to find any field that might contain the ID
+        if isinstance(data, dict):
+            for key, value in data.items():
+                if key.lower().endswith('id') and isinstance(value, str):
+                    file_operation_id = value
+                    print(f"Found potential ID in field '{key}': {file_operation_id}")
+                    break
+        
+        # If we still don't have an ID, check the top-level response
+        if not file_operation_id and isinstance(response, dict):
+            for key, value in response.items():
+                if key.lower().endswith('id') and isinstance(value, str):
+                    file_operation_id = value
+                    print(f"Found potential ID in top-level field '{key}': {file_operation_id}")
+                    break
+        
+        # If we still don't have an ID, this is an error
+        if not file_operation_id:
+            print(f"Error: Could not find file operation ID in response: {response}")
+            sys.exit(1)
+    
+    print(f"Export started. File operation ID: {file_operation_id}")
+    return {'id': file_operation_id}
 
 def track_export_progress(file_operation_id):
     """Track the progress of the export operation."""
@@ -78,9 +112,6 @@ def track_export_progress(file_operation_id):
         try:
             # Make the API request with the correct parameter format
             response = make_api_request('fileOperations.info', {'id': file_operation_id})
-            
-            # Debug output to see the full response
-            print(f"Response from fileOperations.info: {json.dumps(response, indent=2)}")
             
             if not response.get('ok'):
                 print(f"Error: Failed to get file operation info. Response: {response}")
