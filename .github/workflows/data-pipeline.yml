@@ -68,9 +68,65 @@ jobs:
             exit 1
           fi
       
+      - name: Modify process_relationships.py to use environment variables
+        if: steps.download.outputs.DOWNLOAD_SUCCESS == 'true'
+        run: |
+          # Create a temporary script to modify the process_relationships.py file
+          cat > modify_script.py << 'EOF'
+          import re
+          
+          # Read the original file
+          with open('scripts/process_relationships.py', 'r') as f:
+              content = f.read()
+          
+          # Modify the database connection to use environment variables
+          content = re.sub(
+              r'conn = psycopg2\.connect\(f"dbname=\{temp_db_name\}"\)',
+              'conn = psycopg2.connect(\n            host=os.environ.get("POSTGRES_HOST", "localhost"),\n            port=os.environ.get("POSTGRES_PORT", "5432"),\n            user=os.environ.get("POSTGRES_USER", "postgres"),\n            password=os.environ.get("POSTGRES_PASSWORD", "postgres"),\n            dbname=temp_db_name\n        )',
+              content
+          )
+          
+          # Modify the database creation command to use environment variables
+          content = re.sub(
+              r'subprocess\.run\(\["createdb", temp_db_name\], check=True\)',
+              'subprocess.run([\n            "createdb",\n            "-h", os.environ.get("POSTGRES_HOST", "localhost"),\n            "-p", os.environ.get("POSTGRES_PORT", "5432"),\n            "-U", os.environ.get("POSTGRES_USER", "postgres"),\n            temp_db_name\n        ], check=True, env={**os.environ, "PGPASSWORD": os.environ.get("POSTGRES_PASSWORD", "postgres")})',
+              content
+          )
+          
+          # Modify the database restoration command to use environment variables
+          content = re.sub(
+              r'subprocess\.run\(\["pg_restore", "-d", temp_db_name, dump_file\],',
+              'subprocess.run([\n            "pg_restore",\n            "-h", os.environ.get("POSTGRES_HOST", "localhost"),\n            "-p", os.environ.get("POSTGRES_PORT", "5432"),\n            "-U", os.environ.get("POSTGRES_USER", "postgres"),\n            "-d", temp_db_name,\n            dump_file\n        ],',
+              content
+          )
+          
+          # Modify the database drop command to use environment variables
+          content = re.sub(
+              r'subprocess\.run\(\["dropdb", db_name\], check=True\)',
+              'subprocess.run([\n            "dropdb",\n            "-h", os.environ.get("POSTGRES_HOST", "localhost"),\n            "-p", os.environ.get("POSTGRES_PORT", "5432"),\n            "-U", os.environ.get("POSTGRES_USER", "postgres"),\n            db_name\n        ], check=True, env={**os.environ, "PGPASSWORD": os.environ.get("POSTGRES_PASSWORD", "postgres")})',
+              content
+          )
+          
+          # Write the modified content back to the file
+          with open('scripts/process_relationships.py', 'w') as f:
+              f.write(content)
+          EOF
+          
+          # Run the script to modify the file
+          python modify_script.py
+          
+          # Display the changes for debugging
+          echo "Modified process_relationships.py:"
+          cat scripts/process_relationships.py | grep -A 5 -B 5 "POSTGRES_HOST"
+      
       - name: Process relationships data
         id: process
         if: steps.download.outputs.DOWNLOAD_SUCCESS == 'true'
+        env:
+          POSTGRES_HOST: localhost
+          POSTGRES_PORT: 5432
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
         run: |
           # Get the path of the downloaded file
           DUMP_FILE="${{ steps.download.outputs.DUMP_FILE }}"
@@ -78,7 +134,7 @@ jobs:
           python scripts/process_relationships.py "$DUMP_FILE" --output data/graph_data.json
       
       - name: Commit and push if data changed
-        if: steps.download.outputs.DOWNLOAD_SUCCESS == 'true'
+        if: steps.download.outputs.DOWNLOAD_SUCCESS == 'true' && success()
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
