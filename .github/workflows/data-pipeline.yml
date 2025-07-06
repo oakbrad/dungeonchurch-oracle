@@ -8,7 +8,55 @@ on:
     # Allow manual triggering
 
 jobs:
+  download-dump:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+      
+      - name: Download latest database dump
+        id: download
+        env:
+          DUNGEONCHURCH_S3_URL: ${{ secrets.DUNGEONCHURCH_S3_URL }}
+          DUNGEONCHURCH_S3_NAMESPACE: ${{ secrets.DUNGEONCHURCH_S3_NAMESPACE }}
+          DUNGEONCHURCH_S3_BUCKET: ${{ secrets.DUNGEONCHURCH_S3_BUCKET }}
+        run: |
+          mkdir -p data
+          python scripts/download_latest_dump.py
+          # Check if download was successful by looking for dump files
+          if ls data/*.dump 1> /dev/null 2>&1; then
+            echo "Download successful"
+            echo "DOWNLOAD_SUCCESS=true" >> $GITHUB_OUTPUT
+            # Get the path of the downloaded file
+            DUMP_FILE=$(ls -t data/*.dump | head -1)
+            echo "DUMP_FILE=$DUMP_FILE" >> $GITHUB_OUTPUT
+          else
+            echo "Download failed"
+            echo "DOWNLOAD_SUCCESS=false" >> $GITHUB_OUTPUT
+            exit 1
+          fi
+      
+      - name: Upload dump file as artifact
+        if: steps.download.outputs.DOWNLOAD_SUCCESS == 'true'
+        uses: actions/upload-artifact@v3
+        with:
+          name: database-dump
+          path: ${{ steps.download.outputs.DUMP_FILE }}
+          retention-days: 1
+
   process-data:
+    needs: download-dump
     runs-on: ubuntu-latest
     
     services:
@@ -30,6 +78,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          # Fetch all history for all branches and tags
+          fetch-depth: 0
       
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -43,34 +94,21 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y postgresql-client
       
-      - name: Download latest database dump
-        id: download
-        env:
-          DUNGEONCHURCH_S3_URL: ${{ secrets.DUNGEONCHURCH_S3_URL }}
-          DUNGEONCHURCH_S3_NAMESPACE: ${{ secrets.DUNGEONCHURCH_S3_NAMESPACE }}
-          DUNGEONCHURCH_S3_BUCKET: ${{ secrets.DUNGEONCHURCH_S3_BUCKET }}
-        run: |
-          python scripts/download_latest_dump.py
-          # Check if download was successful by looking for dump files
-          if ls data/*.dump 1> /dev/null 2>&1; then
-            echo "Download successful"
-            echo "DOWNLOAD_SUCCESS=true" >> $GITHUB_ENV
-            # Get the path of the downloaded file
-            DUMP_FILE=$(ls -t data/*.dump | head -1)
-            echo "DUMP_FILE=$DUMP_FILE" >> $GITHUB_ENV
-          else
-            echo "Download failed"
-            echo "DOWNLOAD_SUCCESS=false" >> $GITHUB_ENV
-          fi
+      - name: Download dump file artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: database-dump
+          path: data
       
       - name: Process relationships data
-        if: env.DOWNLOAD_SUCCESS == 'true'
+        id: process
         run: |
-          echo "Processing dump file: ${{ env.DUMP_FILE }}"
-          python scripts/process_relationships.py "${{ env.DUMP_FILE }}" --output data/graph_data.json
+          # Get the path of the downloaded file
+          DUMP_FILE=$(ls -t data/*.dump | head -1)
+          echo "Processing dump file: $DUMP_FILE"
+          python scripts/process_relationships.py "$DUMP_FILE" --output data/graph_data.json
       
       - name: Commit and push if data changed
-        if: env.DOWNLOAD_SUCCESS == 'true'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
@@ -89,11 +127,6 @@ jobs:
             fi
           else
             echo "graph_data.json not found"
+            exit 1
           fi
-      
-      - name: Clean up dump file
-        if: env.DOWNLOAD_SUCCESS == 'true'
-        run: |
-          echo "Removing dump file: ${{ env.DUMP_FILE }}"
-          rm -f "${{ env.DUMP_FILE }}"
 
