@@ -13,6 +13,9 @@ def download_latest_dump():
     - DUNGEONCHURCH_S3_URL: The pre-authenticated request URL for OCI Object Storage
     - DUNGEONCHURCH_S3_NAMESPACE: The OCI namespace
     - DUNGEONCHURCH_S3_BUCKET: The OCI bucket name
+    
+    Returns:
+        str: Path to the downloaded dump file, or None if download failed
     """
     # Get environment variables
     s3_url = os.environ.get('DUNGEONCHURCH_S3_URL')
@@ -60,11 +63,15 @@ def download_latest_dump():
             
             print(f"Found latest dump file: {latest_dump}")
             
-            # Create a temporary directory
-            temp_dir = tempfile.mkdtemp()
-            temp_file = os.path.join(temp_dir, "latest.dump")
+            # Create a data directory if it doesn't exist
+            data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+            os.makedirs(data_dir, exist_ok=True)
             
-            print(f"Downloading to temporary file: {temp_file}")
+            # Use a more descriptive filename with timestamp
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            dump_file = os.path.join(data_dir, f"outline_postgres_{timestamp}.dump")
+            
+            print(f"Downloading to file: {dump_file}")
             
             # Download the file using the pre-authenticated request
             # Remove the leading slash to avoid double slashes in the URL
@@ -77,17 +84,15 @@ def download_latest_dump():
                 sys.exit(1)
                 
             # Save the file
-            with open(temp_file, 'wb') as f:
+            with open(dump_file, 'wb') as f:
                 for chunk in download_response.iter_content(chunk_size=8192):
                     f.write(chunk)
             
-            print(f"Download complete. File saved to {temp_file}")
-            print(f"File size: {os.path.getsize(temp_file)} bytes")
+            print(f"Download complete. File saved to {dump_file}")
+            print(f"File size: {os.path.getsize(dump_file)} bytes")
             
-            # Clean up
-            os.remove(temp_file)
-            os.rmdir(temp_dir)
-            print("Temporary files cleaned up.")
+            # Return the path to the downloaded file instead of deleting it
+            return dump_file
             
         except json.JSONDecodeError:
             print("Error: Failed to parse JSON response from S3")
@@ -96,7 +101,13 @@ def download_latest_dump():
             
     except Exception as e:
         print(f"Error: {str(e)}")
-        sys.exit(1)
+        return None
 
 if __name__ == "__main__":
-    download_latest_dump()
+    dump_file = download_latest_dump()
+    if dump_file:
+        print(f"Successfully downloaded dump file to: {dump_file}")
+        print("You can now process this file with the process_relationships.py script")
+    else:
+        print("Failed to download dump file")
+        sys.exit(1)
