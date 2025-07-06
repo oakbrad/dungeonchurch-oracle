@@ -12,22 +12,28 @@ def download_latest_dump():
     - DUNGEONCHURCH_S3_URL: The S3 endpoint URL
     - DUNGEONCHURCH_S3_NAMESPACE: The S3 namespace
     - DUNGEONCHURCH_S3_BUCKET: The S3 bucket name
-    AWS credentials are expected to be in AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+    - AWS_ACCESS_KEY_ID: The S3 access key
+    - AWS_SECRET_ACCESS_KEY: The S3 secret key
     """
     # Get environment variables
     s3_url = os.environ.get('DUNGEONCHURCH_S3_URL')
     namespace = os.environ.get('DUNGEONCHURCH_S3_NAMESPACE')
     bucket = os.environ.get('DUNGEONCHURCH_S3_BUCKET')
+    access_key = os.environ.get('AWS_ACCESS_KEY_ID')
+    secret_key = os.environ.get('AWS_SECRET_ACCESS_KEY')
 
-    if not all([s3_url, namespace, bucket]):
+    if not all([s3_url, namespace, bucket, access_key, secret_key]):
         print("Error: Required environment variables are missing.")
         print("Required: DUNGEONCHURCH_S3_URL, DUNGEONCHURCH_S3_NAMESPACE, DUNGEONCHURCH_S3_BUCKET")
+        print("Required: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY")
         sys.exit(1)
 
-    # Configure S3 client with OCI endpoint
+    # Configure S3 client with OCI endpoint and explicit credentials
     s3_client = boto3.client(
         's3',
-        endpoint_url=s3_url
+        endpoint_url=s3_url,
+        aws_access_key_id=access_key,
+        aws_secret_access_key=secret_key
     )
 
     print(f"Connecting to S3 endpoint: {s3_url}")
