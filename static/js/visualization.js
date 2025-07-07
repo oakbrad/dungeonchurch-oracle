@@ -11,6 +11,11 @@ graphData.nodes.forEach(node => {
 const width = window.innerWidth;
 const height = window.innerHeight;
 
+// Create tooltip for truncated nodes
+const tooltipTruncated = d3.select("body").append("div")
+    .attr("class", "tooltip-truncated")
+    .style("opacity", 0);
+
 // Create SVG
 const svg = d3.select("#visualization")
     .append("svg")
@@ -159,8 +164,19 @@ node.append("circle")
                 linkElement.classed("link-dimmed", true);
             }
         });
+        
+        // Show tooltip if the node's title is truncated
+        if (d.isTruncated) {
+            tooltipTruncated.transition()
+                .duration(200)
+                .style("opacity", .9);
+            
+            tooltipTruncated.html("<strong>" + d.title + "</strong>")
+                .style("left", (event.pageX + 10) + "px")
+                .style("top", (event.pageY - 28) + "px");
+        }
     })
-    .on("mouseout", function() {
+    .on("mouseout", function(d) {
         // Remove all highlight and dimmed classes
         node.classed("node-highlight", false)
             .classed("node-highlight-first", false)
@@ -170,6 +186,11 @@ node.append("circle")
         link.classed("link-highlight-first", false)
             .classed("link-highlight-second", false)
             .classed("link-dimmed", false);
+            
+        // Hide tooltip
+        tooltipTruncated.transition()
+            .duration(500)
+            .style("opacity", 0);
     });
 
 // Add labels to nodes - move inside the circle with improved centering
@@ -343,6 +364,9 @@ node.append("text")
                             .text(line);
                     });
                     
+                    // Mark node as not truncated
+                    d.isTruncated = false;
+                    
                     return true;
                 }
             }
@@ -367,6 +391,11 @@ node.append("text")
                         truncatedText = truncatedText.slice(0, -1);
                         tempText.text(truncatedText + "...");
                     }
+                    
+                    // If we're down to just one character, don't add ellipsis
+                    if (truncatedText.length === 1) {
+                        tempText.text(truncatedText);
+                    }
                 }
                 
                 tempText.remove();
@@ -375,7 +404,10 @@ node.append("text")
                 text.append("tspan")
                     .attr("x", 0)
                     .attr("y", 0)
-                    .text(truncatedText + (truncatedText.length < title.length ? "..." : ""));
+                    .text(truncatedText.length === 1 ? truncatedText : truncatedText + "...");
+                
+                // Mark node as truncated
+                d.isTruncated = true;
             }
             
             return true;
@@ -393,7 +425,10 @@ node.append("text")
             text.append("tspan")
                 .attr("x", 0)
                 .attr("y", 0)
-                .text(title.substring(0, 1) + "..."); // At least show first character
+                .text(title.substring(0, 1)); // Just show first character without ellipsis
+                
+            // Mark node as truncated
+            d.isTruncated = true;
         }
     })
     .style("opacity", 0.9)

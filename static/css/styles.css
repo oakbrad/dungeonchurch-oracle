@@ -78,6 +78,19 @@ body {
     stroke-opacity: 0.2;
 }
 
+/* Tooltip for truncated nodes */
+.tooltip-truncated {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    pointer-events: none;
+    font-size: 14px;
+    max-width: 300px;
+    z-index: 100;
+}
+
 #search-container {
     position: absolute;
     top: 25px;
