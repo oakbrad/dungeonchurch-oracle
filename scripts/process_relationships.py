@@ -282,6 +282,9 @@ def process_relationships(dump_file, output_file=None):
         os.makedirs(data_dir, exist_ok=True)
         output_file = os.path.join(data_dir, "graph_data.json")
     
+    # Determine the orphan data file path
+    orphan_file = os.path.join(os.path.dirname(output_file), "orphan_data.json")
+    
     # Restore the database
     db_name = restore_database(dump_file)
     if not db_name:
@@ -295,14 +298,33 @@ def process_relationships(dump_file, output_file=None):
             print("Failed to extract relationship data")
             return None
         
-        # Save the data to a JSON file
+        # Identify and separate orphaned nodes (nodes with 0 connections)
+        print("Identifying orphaned nodes (nodes with 0 connections)")
+        orphaned_nodes = [node for node in graph_data['nodes'] if node['connections'] == 0]
+        
+        # Remove orphaned nodes from the main graph data
+        graph_data['nodes'] = [node for node in graph_data['nodes'] if node['connections'] > 0]
+        
+        # Create orphan data structure
+        orphan_data = {
+            'nodes': orphaned_nodes,
+            'links': []  # No links for orphaned nodes by definition
+        }
+        
+        # Save the main graph data to a JSON file
         print(f"Saving graph data to: {output_file}")
         with open(output_file, 'w') as f:
             json.dump(graph_data, f, indent=2)
         
+        # Save the orphaned nodes to a separate JSON file
+        print(f"Saving orphaned nodes data to: {orphan_file}")
+        with open(orphan_file, 'w') as f:
+            json.dump(orphan_data, f, indent=2)
+        
         print(f"Graph data saved successfully")
         print(f"Nodes: {len(graph_data['nodes'])}")
         print(f"Links: {len(graph_data['links'])}")
+        print(f"Orphaned nodes: {len(orphaned_nodes)}")
         
         return output_file
         
