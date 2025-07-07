@@ -187,7 +187,7 @@ node.append("circle")
                 .style("top", (screenY + radius + 10) + "px");
         }
     })
-    .on("mouseout", function(d) {
+    .on("mouseout", function() {
         // Remove all highlight and dimmed classes
         node.classed("node-highlight", false)
             .classed("node-highlight-first", false)
