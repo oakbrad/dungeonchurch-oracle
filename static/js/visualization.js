@@ -768,8 +768,23 @@ searchInput.addEventListener("input", function() {
                 // Find the node in the visualization
                 const selectedNode = node;
                 
-                // First clear any existing highlights
-                clearHighlightAndResetZoom();
+                // Clear any existing highlights without resetting zoom
+                if (highlightedNode) {
+                    // Remove all highlight and dimmed classes
+                    node.classed("node-highlight", false)
+                        .classed("node-highlight-first", false)
+                        .classed("node-highlight-second", false)
+                        .classed("node-dimmed", false);
+                    
+                    link.classed("link-highlight-first", false)
+                        .classed("link-highlight-second", false)
+                        .classed("link-dimmed", false);
+                        
+                    // Hide tooltip
+                    tooltipTruncated.transition()
+                        .duration(500)
+                        .style("opacity", 0);
+                }
                 
                 // Set this node as the highlighted node
                 highlightedNode = selectedNode;
