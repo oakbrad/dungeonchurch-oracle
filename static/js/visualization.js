@@ -119,35 +119,114 @@ node.append("circle")
             .style("opacity", 0);
     });
 
-// Add labels to nodes - move inside the circle and scale with node size
+// Add labels to nodes - move inside the circle with multi-line support
 node.append("text")
     .attr("text-anchor", "middle") // Center text horizontally
     .attr("dominant-baseline", "central") // Center text vertically
-    .text(d => d.title) // Use the full title without truncation
     .each(function(d) {
-        // Calculate appropriate font size to fit text within circle
         const text = d3.select(this);
         const radius = d.radius;
+        const title = d.title;
         
-        // Start with a font size proportional to the radius
-        let fontSize = Math.min(radius * 0.7, 16);
-        text.style("font-size", fontSize + "px");
+        // Initial font size estimate based on radius
+        let fontSize = Math.min(radius * 0.6, 14);
         
-        // Check if text width exceeds the available space
-        let textWidth = this.getComputedTextLength();
-        const maxWidth = radius * 1.8; // Leave some padding inside the circle
-        
-        // If text is too wide, reduce font size until it fits
-        while (textWidth > maxWidth && fontSize > 4) {
-            fontSize = fontSize - 0.5;
+        // Function to create tspans for multi-line text
+        function createMultiLineText(text, title, fontSize, maxLines) {
+            text.selectAll("*").remove(); // Clear any existing content
             text.style("font-size", fontSize + "px");
-            textWidth = this.getComputedTextLength();
+            
+            // Split text into words
+            const words = title.split(/\s+/);
+            const lines = [];
+            let currentLine = [];
+            
+            // Create a temporary text element to measure text width
+            const tempText = text.append("tspan").style("opacity", 0);
+            
+            // Calculate available width (accounting for circular shape)
+            const availableWidth = radius * 1.8;
+            
+            // Group words into lines
+            words.forEach(word => {
+                currentLine.push(word);
+                tempText.text(currentLine.join(" "));
+                if (tempText.node().getComputedTextLength() > availableWidth && currentLine.length > 1) {
+                    // Remove the last word if the line is too long
+                    currentLine.pop();
+                    lines.push(currentLine.join(" "));
+                    currentLine = [word];
+                }
+            });
+            
+            // Add the last line
+            if (currentLine.length > 0) {
+                lines.push(currentLine.join(" "));
+            }
+            
+            // Remove temporary element
+            tempText.remove();
+            
+            // If we have too many lines, try with fewer lines
+            if (lines.length > maxLines) {
+                return false;
+            }
+            
+            // Create tspans for each line
+            const lineHeight = fontSize * 1.2; // Line height based on font size
+            const totalHeight = lineHeight * lines.length;
+            
+            // Check if total height fits within the circle
+            if (totalHeight > radius * 1.8) {
+                return false;
+            }
+            
+            // Calculate vertical offset to center all lines
+            const startY = -(lineHeight * (lines.length - 1)) / 2;
+            
+            // Create tspans for each line
+            lines.forEach((line, i) => {
+                text.append("tspan")
+                    .attr("x", 0)
+                    .attr("y", startY + i * lineHeight)
+                    .attr("dy", "0.35em")
+                    .text(line);
+            });
+            
+            return true;
+        }
+        
+        // Try different font sizes and line counts to find optimal configuration
+        let success = false;
+        let maxLines = Math.max(1, Math.floor(radius / 8)); // Estimate max lines based on radius
+        
+        // Try with different line counts, starting from the maximum
+        while (!success && fontSize >= 6) {
+            success = createMultiLineText(text, title, fontSize, maxLines);
+            if (!success) {
+                // If not successful, reduce font size or increase max lines
+                if (maxLines < Math.min(5, Math.floor(radius / 6))) {
+                    maxLines++;
+                } else {
+                    fontSize -= 0.5;
+                    maxLines = Math.max(1, Math.floor(radius / 8)); // Reset max lines
+                }
+            }
+        }
+        
+        // If we still couldn't fit the text, use a single line with minimum font size
+        if (!success) {
+            text.selectAll("*").remove();
+            text.style("font-size", "6px")
+                .append("tspan")
+                .attr("x", 0)
+                .attr("y", 0)
+                .text(title);
         }
         
         // Store the calculated font size on the data object
         d.fontSize = fontSize;
     })
-    .style("font-size", d => d.fontSize + "px") // Apply the calculated font size
     .style("opacity", 0.9)
     .style("pointer-events", "none"); // Ensure text doesn't interfere with mouse events
 
