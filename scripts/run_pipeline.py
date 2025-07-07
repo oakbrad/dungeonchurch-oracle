@@ -1,18 +1,21 @@
 #!/usr/bin/env python3
 import os
 import sys
+import json
 import argparse
 from download_latest_dump import download_latest_dump
-from process_relationships import process_relationships
+from process_relationships import process_relationships, restore_database, cleanup_database
 from process_colors import process_colors
 
 def run_pipeline(output_file=None, keep_dump=False, dump_file=None):
     """
     Run the complete data pipeline:
     1. Download the latest database dump (if not provided)
-    2. Process the dump to extract relationship data
-    3. Process collection colors for visualization
-    4. Optionally clean up the dump file
+    2. Restore the database
+    3. Process the dump to extract relationship data
+    4. Process collection colors for visualization
+    5. Clean up the temporary database
+    6. Optionally clean up the dump file
     
     Args:
         output_file (str, optional): Path to the output JSON file. If None, a default path will be used.
@@ -35,25 +38,74 @@ def run_pipeline(output_file=None, keep_dump=False, dump_file=None):
             print(f"Pipeline failed: Provided dump file does not exist: {dump_file}")
             return False
     
-    # Step 2: Process the dump to extract relationship data
-    print("\nStep 2: Processing the dump to extract relationship data")
-    output_file = process_relationships(dump_file, output_file)
-    if not output_file:
-        print("Pipeline failed: Could not process the database dump")
+    # Step 2: Restore the database
+    print("\nStep 2: Restoring the database")
+    db_name = restore_database(dump_file)
+    if not db_name:
+        print("Pipeline failed: Could not restore the database")
         return False
     
-    # Step 3: Process collection colors for visualization
-    print("\nStep 3: Processing collection colors for visualization")
-    # Get the temporary database name from the dump file
-    temp_db_name = f"outline_temp_{os.path.basename(dump_file).split('.')[0]}"
-    css_file, js_file = process_colors(temp_db_name)
-    if not css_file or not js_file:
-        print("Warning: Could not process collection colors")
-        # Continue with the pipeline even if color processing fails
+    try:
+        # Step 3: Process the dump to extract relationship data
+        print("\nStep 3: Processing the dump to extract relationship data")
+        # Set default output file if not provided
+        if output_file is None:
+            # Create a data directory if it doesn't exist
+            data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+            os.makedirs(data_dir, exist_ok=True)
+            output_file = os.path.join(data_dir, "graph_data.json")
+        
+        # Extract relationship data
+        from process_relationships import extract_relationship_data
+        graph_data = extract_relationship_data(db_name)
+        if not graph_data:
+            print("Failed to extract relationship data")
+            return False
+        
+        # Identify and separate orphaned nodes (nodes with 0 connections)
+        print("Identifying orphaned nodes (nodes with 0 connections)")
+        orphaned_nodes = [node for node in graph_data['nodes'] if node['connections'] == 0]
+        
+        # Remove orphaned nodes from the main graph data
+        graph_data['nodes'] = [node for node in graph_data['nodes'] if node['connections'] > 0]
+        
+        # Create orphan data structure
+        orphan_data = {
+            'nodes': orphaned_nodes,
+            'links': []  # No links for orphaned nodes by definition
+        }
+        
+        # Save the main graph data to a JSON file
+        print(f"Saving graph data to: {output_file}")
+        with open(output_file, 'w') as f:
+            json.dump(graph_data, f, indent=2)
+        
+        # Save the orphaned nodes to a separate JSON file
+        orphan_file = os.path.join(os.path.dirname(output_file), "orphan_data.json")
+        print(f"Saving orphaned nodes data to: {orphan_file}")
+        with open(orphan_file, 'w') as f:
+            json.dump(orphan_data, f, indent=2)
+        
+        print(f"Graph data saved successfully")
+        print(f"Nodes: {len(graph_data['nodes'])}")
+        print(f"Links: {len(graph_data['links'])}")
+        print(f"Orphaned nodes: {len(orphaned_nodes)}")
+        
+        # Step 4: Process collection colors for visualization
+        print("\nStep 4: Processing collection colors for visualization")
+        css_file, js_file = process_colors(db_name)
+        if not css_file or not js_file:
+            print("Warning: Could not process collection colors")
+            # Continue with the pipeline even if color processing fails
     
-    # Step 4: Clean up the dump file if not keeping it
+    finally:
+        # Step 5: Clean up the temporary database
+        print("\nStep 5: Cleaning up the temporary database")
+        cleanup_database(db_name)
+    
+    # Step 6: Clean up the dump file if not keeping it
     if not keep_dump:
-        print("\nStep 4: Cleaning up the dump file")
+        print("\nStep 6: Cleaning up the dump file")
         try:
             os.remove(dump_file)
             print(f"Dump file removed: {dump_file}")
