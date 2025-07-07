@@ -11,11 +11,6 @@ graphData.nodes.forEach(node => {
 const width = window.innerWidth;
 const height = window.innerHeight;
 
-// Create tooltip
-const tooltip = d3.select("body").append("div")
-    .attr("class", "tooltip")
-    .style("opacity", 0);
-
 // Create SVG
 const svg = d3.select("#visualization")
     .append("svg")
@@ -75,48 +70,83 @@ node.append("circle")
     })
     .attr("fill", d => getNodeColor(d))
     .on("mouseover", function(event, d) {
-        tooltip.transition()
-            .duration(200)
-            .style("opacity", .9);
+        // Get the current node element
+        const currentNode = d3.select(this.parentNode);
         
-        // Get connected nodes
-        const connectedLinks = graphData.links.filter(link => 
+        // Add highlight class to the current node
+        currentNode.classed("node-highlight", true);
+        
+        // Get first-order connections
+        const firstOrderLinks = graphData.links.filter(link => 
             link.source.id === d.id || link.target.id === d.id
         );
         
-        const connectedNodes = connectedLinks.map(link => {
+        const firstOrderNodeIds = new Set();
+        firstOrderLinks.forEach(link => {
             const connectedId = link.source.id === d.id ? link.target.id : link.source.id;
-            const connectedNode = nodeMap.get(connectedId);
-            return {
-                title: connectedNode.title,
-                relationship: link.relationship || "connected to"
-            };
+            firstOrderNodeIds.add(connectedId);
         });
         
-        // Build tooltip content
-        let tooltipContent = "<strong>" + d.title + "</strong><br>";
-        if (d.connections) {
-            tooltipContent += "<br><strong>Connections:</strong> " + d.connections + "<br>";
-        }
-        if (connectedNodes.length > 0) {
-            tooltipContent += "<br><strong>Connected to:</strong><br>";
-            connectedNodes.slice(0, 10).forEach(conn => {
-                tooltipContent += "• " + conn.relationship + " <em>" + conn.title + "</em><br>";
-            });
-            
-            if (connectedNodes.length > 10) {
-                tooltipContent += "<em>...and " + (connectedNodes.length - 10) + " more</em>";
+        // Highlight first-order links and nodes
+        link.each(function(l) {
+            const linkElement = d3.select(this);
+            if (l.source.id === d.id || l.target.id === d.id) {
+                linkElement.classed("link-highlight-first", true);
             }
-        }
+        });
         
-        tooltip.html(tooltipContent)
-            .style("left", (event.pageX + 10) + "px")
-            .style("top", (event.pageY - 28) + "px");
+        node.each(function(n) {
+            const nodeElement = d3.select(this);
+            if (firstOrderNodeIds.has(n.id)) {
+                nodeElement.classed("node-highlight-first", true);
+            }
+        });
+        
+        // Get second-order connections
+        const secondOrderNodeIds = new Set();
+        
+        // For each first-order node, find its connections
+        firstOrderNodeIds.forEach(nodeId => {
+            graphData.links.forEach(link => {
+                if (link.source.id === nodeId) {
+                    // Don't include the original node or first-order nodes
+                    if (link.target.id !== d.id && !firstOrderNodeIds.has(link.target.id)) {
+                        secondOrderNodeIds.add(link.target.id);
+                    }
+                } else if (link.target.id === nodeId) {
+                    // Don't include the original node or first-order nodes
+                    if (link.source.id !== d.id && !firstOrderNodeIds.has(link.source.id)) {
+                        secondOrderNodeIds.add(link.source.id);
+                    }
+                }
+            });
+        });
+        
+        // Highlight second-order links and nodes
+        link.each(function(l) {
+            const linkElement = d3.select(this);
+            // If link connects a first-order node to a second-order node
+            if ((firstOrderNodeIds.has(l.source.id) && secondOrderNodeIds.has(l.target.id)) || 
+                (firstOrderNodeIds.has(l.target.id) && secondOrderNodeIds.has(l.source.id))) {
+                linkElement.classed("link-highlight-second", true);
+            }
+        });
+        
+        node.each(function(n) {
+            const nodeElement = d3.select(this);
+            if (secondOrderNodeIds.has(n.id)) {
+                nodeElement.classed("node-highlight-second", true);
+            }
+        });
     })
     .on("mouseout", function() {
-        tooltip.transition()
-            .duration(500)
-            .style("opacity", 0);
+        // Remove all highlight classes
+        node.classed("node-highlight", false)
+            .classed("node-highlight-first", false)
+            .classed("node-highlight-second", false);
+        
+        link.classed("link-highlight-first", false)
+            .classed("link-highlight-second", false);
     });
 
 // Add labels to nodes - move inside the circle with improved centering
