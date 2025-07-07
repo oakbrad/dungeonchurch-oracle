@@ -2,6 +2,8 @@ name: Create Network Visualization
 
 on:
   push:
+    branches:
+      - main
     paths:
       - 'data/graph_data.json'
       - 'static/**'
