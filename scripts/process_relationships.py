@@ -158,11 +158,18 @@ def extract_relationship_data(db_name):
         print(f"Filtering out nodes from private collection: {private_collection_id}")
         nodes = [node for node in all_nodes if node['collectionId'] != private_collection_id]
         
+        # Check if we should exclude the 5E collection based on the EXCLUDE_5E environment variable
+        exclude_5e = os.environ.get("EXCLUDE_5E", "").lower() == "true"
+        if exclude_5e:
+            five_e_collection_id = "7275a3d8-27da-4f63-ac39-a9bc9a1ec6d7"
+            print(f"EXCLUDE_5E is set to true. Filtering out nodes from 5E collection: {five_e_collection_id}")
+            nodes = [node for node in nodes if node['collectionId'] != five_e_collection_id]
+        
         # Get the IDs of nodes to include
         node_ids = {node['id'] for node in nodes}
         
         # Filter out links that connect to excluded nodes
-        print("Filtering out links connected to private collection nodes")
+        print("Filtering out links connected to excluded collection nodes")
         links = [link for link in all_links 
                 if link['source'] in node_ids and link['target'] in node_ids]
         
@@ -172,8 +179,8 @@ def extract_relationship_data(db_name):
             "links": [dict(link) for link in links]
         }
         
-        print(f"Filtered out {len(all_nodes) - len(nodes)} nodes from private collection")
-        print(f"Filtered out {len(all_links) - len(links)} links connected to private collection nodes")
+        print(f"Filtered out {len(all_nodes) - len(nodes)} nodes from excluded collections")
+        print(f"Filtered out {len(all_links) - len(links)} links connected to excluded collection nodes")
         
         return graph_data
         
