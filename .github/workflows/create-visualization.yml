@@ -8,9 +8,9 @@ on:
     # Allow manual triggering
 
 permissions:
-  contents: write  # Needed to push to gh-pages branch
-  pages: write     # Needed for GitHub Pages deployment
-  id-token: write  # Needed for GitHub Pages deployment
+  contents: read
+  pages: write
+  id-token: write
 
 # Allow only one concurrent deployment
 concurrency:
@@ -20,6 +20,9 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     
     steps:
       - name: Checkout repository

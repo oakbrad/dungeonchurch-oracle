@@ -1,11 +1,9 @@
-name: Configure GitHub Pages
+name: Enable GitHub Pages
 
 on:
   push:
     branches:
       - main
-    paths:
-      - '.github/workflows/pages.yml'
   workflow_dispatch:
 
 permissions:
@@ -14,8 +12,11 @@ permissions:
   id-token: write
 
 jobs:
-  configure-pages:
+  enable-github-pages:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     
     steps:
       - name: Checkout
@@ -23,7 +24,22 @@ jobs:
       
       - name: Setup Pages
         uses: actions/configure-pages@v3
+      
+      - name: Create docs directory if it doesn't exist
+        run: mkdir -p docs
+      
+      - name: Create placeholder index if it doesn't exist
+        run: |
+          if [ ! -f docs/index.html ]; then
+            echo "<html><body><h1>GitHub Pages Enabled</h1><p>This page will be replaced by the visualization when it's generated.</p></body></html>" > docs/index.html
+          fi
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          # Configure GitHub Pages to publish from the docs directory
-          source: docs
+          path: './docs'
+      
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
 
