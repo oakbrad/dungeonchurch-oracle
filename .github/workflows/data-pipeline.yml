@@ -155,7 +155,7 @@ jobs:
           
           # Commit and push if any changes were detected
           if [ "$CHANGES_DETECTED" = true ]; then
-            git commit -m "Update graph data and collection colors [skip ci]"
+            git commit -m "Update graph data and collection colors"
             git push
             echo "Updated data files committed and pushed"
           else
