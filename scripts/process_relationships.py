@@ -150,6 +150,23 @@ def extract_relationship_data(db_name):
         cursor.execute("SELECT * FROM graph_edges")
         all_links = cursor.fetchall()
         
+        # Extract collection colors
+        print("Extracting collection colors")
+        cursor.execute("SELECT id, color, name FROM collections")
+        collections = cursor.fetchall()
+        
+        # Create a mapping of collection IDs to colors and names
+        collection_colors = {}
+        collection_names = {}
+        for collection in collections:
+            if collection['color']:
+                collection_colors[collection['id']] = collection['color']
+            if collection['name']:
+                collection_names[collection['id']] = collection['name']
+        
+        print(f"Extracted colors for {len(collection_colors)} collections")
+        print(f"Extracted names for {len(collection_names)} collections")
+        
         cursor.close()
         conn.close()
         
@@ -206,20 +223,33 @@ def extract_relationship_data(db_name):
             connection_counts[source] = connection_counts.get(source, 0) + 1
             connection_counts[target] = connection_counts.get(target, 0) + 1
         
-        # Add the connection count to each node
+        # Add the connection count and collection color to each node
         for node in nodes:
             node['connections'] = connection_counts.get(node['id'], 0)
+            # Add collection color if available
+            if node['collectionId'] in collection_colors:
+                node['collectionColor'] = collection_colors[node['collectionId']]
+            # Add collection name if available
+            if node['collectionId'] in collection_names:
+                node['collectionName'] = collection_names[node['collectionId']]
         
         # Convert to D3-compatible format
         graph_data = {
             "nodes": [dict(node) for node in nodes],
-            "links": [dict(link) for link in links]
+            "links": [dict(link) for link in links],
+            "collections": {
+                id: {
+                    "color": collection_colors.get(id),
+                    "name": collection_names.get(id)
+                } for id in set(collection_colors.keys()) | set(collection_names.keys())
+            }
         }
         
         print(f"Filtered out {len(all_nodes) - len(nodes)} nodes from excluded collections")
         print(f"Filtered out {len(all_links) - len(links) + duplicates_removed} links connected to excluded collection nodes")
         print(f"Removed {duplicates_removed} duplicate relationships")
         print(f"Added connection counts to {len(nodes)} nodes")
+        print(f"Added collection colors to graph data")
         
         return graph_data
         

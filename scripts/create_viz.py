@@ -100,6 +100,32 @@ def create_visualization():
         .search-result:hover {{
             background-color: #444;
         }}
+        /* Collection color styles */
+        .collection-legend {{
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            max-width: 300px;
+            z-index: 10;
+        }}
+        .legend-item {{
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }}
+        .legend-color {{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }}
+        .legend-label {{
+            font-size: 12px;
+            color: #fff;
+        }}
     </style>
 </head>
 <body>
@@ -108,6 +134,7 @@ def create_visualization():
         <div id="search-results"></div>
     </div>
     <div id="visualization"></div>
+    <div id="collection-legend" class="collection-legend"></div>
     
     <script>
     // Graph data from JSON
@@ -264,11 +291,23 @@ def create_visualization():
     }}
     
     function getNodeColor(node) {{
-        // Color nodes based on collection
+        // Use the collection color if available
+        if (node.collectionColor) {{
+            return "#" + node.collectionColor;
+        }}
+        
+        // Fallback to collection mapping if direct color not available
+        if (graphData.collections && node.collectionId && graphData.collections[node.collectionId]) {{
+            const collectionColor = graphData.collections[node.collectionId].color;
+            if (collectionColor) {{
+                return "#" + collectionColor;
+            }}
+        }}
+        
+        // Legacy hardcoded colors as fallback
         const collections = {{
             "13b87098-500c-490d-ae46-01356387fe88": "#ff7f0e", // Adventures
             "7275a3d8-27da-4f63-ac39-a9bc9a1ec6d7": "#1f77b4", // Spells
-            // Add more collections as needed
         }};
         
         return collections[node.collectionId] || "#69b3a2";
@@ -277,6 +316,60 @@ def create_visualization():
     function truncateText(text, maxLength) {{
         return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
     }}
+    
+    // Create collection legend
+    function createCollectionLegend() {{
+        // Get unique collections from nodes
+        const collections = new Map();
+        graphData.nodes.forEach(node => {{
+            if (node.collectionId && !collections.has(node.collectionId)) {{
+                const color = getNodeColor(node);
+                let name = "Collection";
+                
+                // Try to get collection name from various sources
+                if (node.collectionName) {{
+                    name = node.collectionName;
+                }} else if (graphData.collections && graphData.collections[node.collectionId] && graphData.collections[node.collectionId].name) {{
+                    name = graphData.collections[node.collectionId].name;
+                }} else {{
+                    name = `Collection ${collections.size + 1}`;
+                }}
+                
+                collections.set(node.collectionId, {{
+                    color: color,
+                    name: name
+                }});
+            }}
+        }});
+        
+        // Create legend items
+        const legend = document.getElementById("collection-legend");
+        legend.innerHTML = "<h3 style='margin-top: 0; margin-bottom: 10px; font-size: 14px;'>Collections</h3>";
+        
+        // Convert to array and sort by name
+        const sortedCollections = Array.from(collections.entries())
+            .sort((a, b) => a[1].name.localeCompare(b[1].name));
+        
+        sortedCollections.forEach(([id, collection]) => {{
+            const item = document.createElement("div");
+            item.className = "legend-item";
+            
+            const colorBox = document.createElement("div");
+            colorBox.className = "legend-color";
+            colorBox.style.backgroundColor = collection.color;
+            
+            const label = document.createElement("div");
+            label.className = "legend-label";
+            label.textContent = collection.name;
+            
+            item.appendChild(colorBox);
+            item.appendChild(label);
+            legend.appendChild(item);
+        }});
+    }}
+    
+    // Call the function to create the legend
+    createCollectionLegend();
     
     // Search functionality
     const searchInput = document.getElementById("search-input");
