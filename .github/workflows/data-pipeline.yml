@@ -83,7 +83,7 @@ jobs:
           # Get the path of the downloaded file
           DUMP_FILE="${{ steps.download.outputs.DUMP_FILE }}"
           echo "Processing dump file: $DUMP_FILE"
-          python scripts/process_relationships.py "$DUMP_FILE" --output data/graph_data.json
+          python scripts/run_pipeline.py --output data/graph_data.json --dump-file "$DUMP_FILE"
       
       - name: Commit and push if data changed
         if: steps.download.outputs.DOWNLOAD_SUCCESS == 'true' && success()
@@ -124,9 +124,38 @@ jobs:
             echo "orphan_data.json not found"
           fi
           
+          # Check for collection color files
+          if [ -f static/css/collection-colors.css ]; then
+            git add static/css/collection-colors.css
+            
+            # Check if there are changes to collection-colors.css
+            if ! git diff --staged --quiet; then
+              CHANGES_DETECTED=true
+              echo "Changes detected in collection-colors.css"
+            else
+              echo "No changes to collection-colors.css"
+            fi
+          else
+            echo "collection-colors.css not found"
+          fi
+          
+          if [ -f static/js/collection-colors.js ]; then
+            git add static/js/collection-colors.js
+            
+            # Check if there are changes to collection-colors.js
+            if ! git diff --staged --quiet; then
+              CHANGES_DETECTED=true
+              echo "Changes detected in collection-colors.js"
+            else
+              echo "No changes to collection-colors.js"
+            fi
+          else
+            echo "collection-colors.js not found"
+          fi
+          
           # Commit and push if any changes were detected
           if [ "$CHANGES_DETECTED" = true ]; then
-            git commit -m "Update graph and orphan data [skip ci]"
+            git commit -m "Update graph data and collection colors [skip ci]"
             git push
             echo "Updated data files committed and pushed"
           else
