@@ -74,6 +74,70 @@ node.append("circle")
         return d.radius;
     })
     .attr("fill", d => getNodeColor(d))
+    .on("click", function(event, d) {
+        // Prevent event from propagating to potential parent elements
+        event.stopPropagation();
+        
+        // Get first-order connections
+        const firstOrderLinks = graphData.links.filter(link => 
+            link.source.id === d.id || link.target.id === d.id
+        );
+        
+        const firstOrderNodeIds = new Set();
+        firstOrderLinks.forEach(link => {
+            const connectedId = link.source.id === d.id ? link.target.id : link.source.id;
+            firstOrderNodeIds.add(connectedId);
+        });
+        
+        // Get all nodes that need to be included in the view
+        const nodesToInclude = [d];
+        firstOrderNodeIds.forEach(nodeId => {
+            const node = graphData.nodes.find(n => n.id === nodeId);
+            if (node) nodesToInclude.push(node);
+        });
+        
+        // Calculate the bounding box for these nodes
+        let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+        nodesToInclude.forEach(node => {
+            minX = Math.min(minX, node.x);
+            minY = Math.min(minY, node.y);
+            maxX = Math.max(maxX, node.x);
+            maxY = Math.max(maxY, node.y);
+        });
+        
+        // Add some padding
+        const padding = 50;
+        minX -= padding;
+        minY -= padding;
+        maxX += padding;
+        maxY += padding;
+        
+        // Calculate the scale and translate to fit this box
+        const boxWidth = maxX - minX;
+        const boxHeight = maxY - minY;
+        const scale = Math.min(width / boxWidth, height / boxHeight) * 0.9;
+        const centerX = (minX + maxX) / 2;
+        const centerY = (minY + maxY) / 2;
+        
+        // Animate the zoom
+        svg.transition().duration(750).call(
+            zoom.transform,
+            d3.zoomIdentity
+                .translate(width / 2, height / 2)
+                .scale(scale)
+                .translate(-centerX, -centerY)
+        );
+    })
+    .on("dblclick", function(event, d) {
+        // Prevent event from propagating and prevent default behavior
+        event.stopPropagation();
+        event.preventDefault();
+        
+        // Open the wiki document in a new window
+        if (d.urlId) {
+            window.open(`https://lore.dungeon.church/doc/-${d.urlId}`, '_blank');
+        }
+    })
     .on("mouseover", function(event, d) {
         // Get the current node element
         const currentNode = d3.select(this.parentNode);
