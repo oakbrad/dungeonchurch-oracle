@@ -14,18 +14,25 @@ const height = window.innerHeight;
 // Create tooltip for truncated nodes
 const tooltipTruncated = d3.select("body").append("div")
     .attr("class", "tooltip-truncated")
+// Track the current node with a tooltip
+let currentTooltipNode = null;
     .style("opacity", 0);
+
+// Track the currently highlighted node
+let highlightedNode = null;
 
 // Create SVG
 const svg = d3.select("#visualization")
     .append("svg")
     .attr("width", width)
-    .attr("height", height);
+    .attr("height", height)
+    .attr("viewBox", [0, 0, width, height]);
 
 // Add click handler to SVG to clear highlight state when clicking on the canvas
 svg.on("click", function(event) {
     // Only handle clicks directly on the SVG, not on nodes or other elements
     if (event.target === this) {
+            clearTooltip();
         clearHighlightAndResetZoom();
     }
 });
@@ -34,10 +41,52 @@ svg.on("click", function(event) {
 const g = svg.append("g");
 
 // Add zoom behavior
+        // Update tooltip position if there is an active tooltip
+        if (currentTooltipNode) {
+            updateTooltipPosition(currentTooltipNode);
+        }
 const zoom = d3.zoom()
     .scaleExtent([0.1, 8])
     .on("zoom", (event) => {
         g.attr("transform", event.transform);
+        
+        // Update tooltip position if there's an active tooltip
+        if (currentTooltipNode) {
+            updateTooltipPosition(currentTooltipNode);
+// Function to update tooltip position
+function updateTooltipPosition(node) {
+    if (!node) return;
+    
+    // Get current zoom transform
+    const transform = d3.zoomTransform(svg.node());
+    
+    // Calculate position to center below the node
+    const nodeX = node.x;
+    const nodeY = node.y;
+    const radius = node.radius || 10;
+    
+    // Convert node coordinates to screen coordinates
+    const screenX = transform.applyX(nodeX);
+    const screenY = transform.applyY(nodeY);
+    
+    // Calculate offset based on zoom level
+    const zoomScale = transform.k;
+    const verticalOffset = (radius + 10) / zoomScale;
+    
+    // Position tooltip centered below the node
+    tooltipTruncated
+        .style("left", screenX + "px")
+        .style("top", transform.applyY(nodeY + verticalOffset) + "px");
+}
+
+// Function to clear the tooltip
+function clearTooltip() {
+    tooltipTruncated.transition()
+        .duration(200)
+        .style("opacity", 0);
+    currentTooltipNode = null;
+}
+        }
     });
 
 svg.call(zoom);
@@ -45,8 +94,39 @@ svg.call(zoom);
 // Center the view initially
 svg.call(zoom.transform, d3.zoomIdentity.translate(width / 2, height / 2).scale(0.5));
 
-// Track the currently highlighted node
-let highlightedNode = null;
+// Function to update tooltip position
+function updateTooltipPosition(node) {
+    if (!node) return;
+    
+    // Get current zoom transform
+    const transform = d3.zoomTransform(svg.node());
+    
+    // Calculate position to center below the node
+    const nodeX = node.x;
+    const nodeY = node.y;
+    const radius = node.radius || 10;
+    
+    // Convert node coordinates to screen coordinates
+    const screenX = transform.applyX(nodeX);
+    const screenY = transform.applyY(nodeY);
+    
+    // Calculate offset based on zoom level
+    const zoomScale = transform.k;
+    const verticalOffset = (radius + 10) / zoomScale;
+    
+    // Position tooltip centered below the node
+    tooltipTruncated
+        .style("left", screenX + "px")
+        .style("top", transform.applyY(nodeY + verticalOffset) + "px");
+}
+
+// Function to clear the tooltip
+function clearTooltip() {
+    tooltipTruncated.transition()
+        .duration(200)
+        .style("opacity", 0);
+    currentTooltipNode = null;
+}
 
 // Function to clear highlight state and reset zoom
 function clearHighlightAndResetZoom() {
@@ -62,9 +142,7 @@ function clearHighlightAndResetZoom() {
             .classed("link-dimmed", false);
             
         // Hide tooltip
-        tooltipTruncated.transition()
-            .duration(500)
-            .style("opacity", 0);
+        clearTooltip();
             
         // Reset the highlighted node tracker
         highlightedNode = null;
@@ -263,33 +341,19 @@ node.append("circle")
         
         // Show tooltip if the node's title is truncated
         if (d.isTruncated) {
+            // Set the current tooltip node
+            currentTooltipNode = d;
+            
             tooltipTruncated.transition()
                 .duration(200)
                 .style("opacity", .9);
             
-            // Calculate position to center below the node
-            const nodeX = d.x; // Node's x position in the visualization
-            const nodeY = d.y; // Node's y position in the visualization
-            const radius = d.radius || 10; // Node's radius
+            // Set tooltip content
+            tooltipTruncated.html("<strong>" + d.title + "</strong>");
             
-            // Get current zoom transform
-            const transform = d3.zoomTransform(svg.node());
-            
-            // Convert node coordinates to screen coordinates
-            const screenX = transform.applyX(nodeX);
-            const screenY = transform.applyY(nodeY);
-            
-            // Calculate offset based on zoom level
-            // This ensures the caption maintains a consistent visual distance
-            // regardless of zoom level
-            const zoomScale = transform.k;
-            const verticalOffset = (radius + 10) / zoomScale;
-            
-            // Position tooltip centered below the node
-            // Apply the zoom-adjusted vertical offset to maintain consistent spacing
-            tooltipTruncated.html("<strong>" + d.title + "</strong>")
-                .style("left", screenX + "px")
-                .style("top", transform.applyY(nodeY + verticalOffset) + "px");
+            // Update tooltip position
+            updateTooltipPosition(d);
+        }
         }
     })
     .on("dblclick", function(event, d) {
@@ -405,33 +469,19 @@ node.append("circle")
         
         // Show tooltip if the node's title is truncated
         if (d.isTruncated) {
+            // Set the current tooltip node
+            currentTooltipNode = d;
+            
             tooltipTruncated.transition()
                 .duration(200)
                 .style("opacity", .9);
             
-            // Calculate position to center below the node
-            const nodeX = d.x; // Node's x position in the visualization
-            const nodeY = d.y; // Node's y position in the visualization
-            const radius = d.radius || 10; // Node's radius
+            // Set tooltip content
+            tooltipTruncated.html("<strong>" + d.title + "</strong>");
             
-            // Get current zoom transform
-            const transform = d3.zoomTransform(svg.node());
-            
-            // Convert node coordinates to screen coordinates
-            const screenX = transform.applyX(nodeX);
-            const screenY = transform.applyY(nodeY);
-            
-            // Calculate offset based on zoom level
-            // This ensures the caption maintains a consistent visual distance
-            // regardless of zoom level
-            const zoomScale = transform.k;
-            const verticalOffset = (radius + 10) / zoomScale;
-            
-            // Position tooltip centered below the node
-            // Apply the zoom-adjusted vertical offset to maintain consistent spacing
-            tooltipTruncated.html("<strong>" + d.title + "</strong>")
-                .style("left", screenX + "px")
-                .style("top", transform.applyY(nodeY + verticalOffset) + "px");
+            // Update tooltip position
+            updateTooltipPosition(d);
+        }
         }
     })
     .on("mouseout", function() {
@@ -449,9 +499,7 @@ node.append("circle")
             .classed("link-dimmed", false);
             
         // Hide tooltip
-        tooltipTruncated.transition()
-            .duration(500)
-            .style("opacity", 0);
+        clearTooltip();
     });
 
 // Add labels to nodes - move inside the circle with improved centering
