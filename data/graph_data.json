@@ -50,13 +50,6 @@
       "connections": 19
     },
     {
-      "id": "72f49da0-c65a-4ac4-bb82-6a2d68078bf9",
-      "title": "Dark Truth Serum",
-      "urlId": "XpjnKHYKML",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "connections": 0
-    },
-    {
       "id": "e1f8661f-6a05-45c7-afe7-a796076a9089",
       "title": "Shadow Dancer",
       "urlId": "6Qsn4Xr6q8",
@@ -106,25 +99,11 @@
       "connections": 15
     },
     {
-      "id": "08c6ca6d-fe32-4938-9989-d964a25dcfdf",
-      "title": "Potion of Incorporeal Passage",
-      "urlId": "izVvGx3r6c",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "connections": 0
-    },
-    {
       "id": "07e1596b-fc7f-4496-843a-c1cf681ce404",
       "title": "Cestian Garindollo",
       "urlId": "9ky29l68Kg",
       "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
       "connections": 1
-    },
-    {
-      "id": "7878399f-387e-4a87-8417-bc42c7b4c36e",
-      "title": "Boomerang Cat",
-      "urlId": "W3QY45gDvY",
-      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
-      "connections": 0
     },
     {
       "id": "dcf12c17-3bcd-41d4-91b3-9009fa9e88f7",
@@ -155,13 +134,6 @@
       "connections": 4
     },
     {
-      "id": "45764f5c-2fe5-4e13-9bbf-b5281b7c0fe3",
-      "title": "Void Essence",
-      "urlId": "lYJOMctLcD",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "connections": 0
-    },
-    {
       "id": "17af65ce-ac1e-4494-9b57-ec46066d6087",
       "title": "Verid",
       "urlId": "uohwmUFvsh",
@@ -174,13 +146,6 @@
       "urlId": "zwTvrSOGgc",
       "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
       "connections": 7
-    },
-    {
-      "id": "f7230889-894e-401a-bfd9-015523c28ab1",
-      "title": "Potion of Vile Strength",
-      "urlId": "v5oDyTkJ2B",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "connections": 0
     },
     {
       "id": "b0bdbf59-39ad-4e88-8350-7d8812b562bc",
@@ -400,13 +365,6 @@
       "connections": 9
     },
     {
-      "id": "35efdcc9-2ae3-46e3-a39d-e408634157c6",
-      "title": "Wooden Stake",
-      "urlId": "FnGtypUkbI",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "connections": 0
-    },
-    {
       "id": "30f4ff54-c7f6-4451-8470-ae5f5b4be853",
       "title": "Ole Boudreaux",
       "urlId": "JAQa03P0Gp",
@@ -435,13 +393,6 @@
       "connections": 23
     },
     {
-      "id": "cd52e5b7-262d-494a-a683-647cd34875cc",
-      "title": "",
-      "urlId": "VnGOZy1tBs",
-      "collectionId": "13b87098-500c-490d-ae46-01356387fe88",
-      "connections": 0
-    },
-    {
       "id": "f072e19f-6e96-4195-87ad-7b609a252019",
       "title": "Gold Scale Company",
       "urlId": "m1WdlmIYwP",
@@ -461,13 +412,6 @@
       "urlId": "pD3QcRCjIA",
       "collectionId": "13b87098-500c-490d-ae46-01356387fe88",
       "connections": 15
-    },
-    {
-      "id": "8abaf115-af57-4910-9e30-d3e55fda9042",
-      "title": "",
-      "urlId": "7cqNWQW4Ou",
-      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
-      "connections": 0
     },
     {
       "id": "2899268b-7e0f-4b42-ae8f-21ca27429a2a",
@@ -561,13 +505,6 @@
       "connections": 8
     },
     {
-      "id": "b0cb80bd-3a1c-4b01-a465-0e980b650b59",
-      "title": "Isle of Sargoth",
-      "urlId": "jV48txissH",
-      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
-      "connections": 0
-    },
-    {
       "id": "3cc25ac9-c730-4796-918d-75e3495ec403",
       "title": "Ole Boudreaux\u2019s Purple Bazaar",
       "urlId": "FVNvg7kt72",
@@ -617,13 +554,6 @@
       "connections": 4
     },
     {
-      "id": "b18be2f0-2d34-4e36-8056-a7939cafa83e",
-      "title": "Gamer Tag Directory",
-      "urlId": "MHfI6wHjTc",
-      "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
-      "connections": 0
-    },
-    {
       "id": "83b65052-cf10-4bf2-b2bb-bf59193b3b03",
       "title": "Cloak of Rats",
       "urlId": "iHIvQwaOt1",
@@ -645,20 +575,6 @@
       "connections": 4
     },
     {
-      "id": "afd4985e-c2ec-4c86-929a-623bfbe69ce9",
-      "title": "Brooch of Witchsight",
-      "urlId": "Do7tfU7V9e",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "connections": 0
-    },
-    {
-      "id": "c58ce118-402d-4863-a7d0-c2c61c0d6d6f",
-      "title": "Quake 3 Arena Server",
-      "urlId": "xS83fBv2U6",
-      "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
-      "connections": 0
-    },
-    {
       "id": "61a8684d-b859-4126-b227-eb31864302da",
       "title": "Dolly",
       "urlId": "8Qx5vtfks6",
@@ -678,13 +594,6 @@
       "urlId": "Jh9ytDvK6s",
       "collectionId": "13b87098-500c-490d-ae46-01356387fe88",
       "connections": 22
-    },
-    {
-      "id": "38310564-2e34-4f13-ad4d-2171a74eccf0",
-      "title": "Original Commissions",
-      "urlId": "UfC7ojbPA8",
-      "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
-      "connections": 0
     },
     {
       "id": "9f0c7f46-d8c8-4b69-91c5-0545afeb8df7",
@@ -883,13 +792,6 @@
       "connections": 20
     },
     {
-      "id": "ef485e4c-cf47-4a88-bb7d-6bcb4e1127d5",
-      "title": "",
-      "urlId": "YkWsMwoRVU",
-      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
-      "connections": 0
-    },
-    {
       "id": "fd6c98ee-6465-4170-b429-7c11c8887db8",
       "title": "Ukeo the Mermaid King",
       "urlId": "LL5CtPF7RQ",
@@ -967,13 +869,6 @@
       "connections": 8
     },
     {
-      "id": "27ad6f20-1261-41f6-9e69-8858004f38f2",
-      "title": "Kierst Issel",
-      "urlId": "pMsLNk1pYH",
-      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
-      "connections": 0
-    },
-    {
       "id": "dff3cfa3-8c3c-45cf-98a6-6e07974440e6",
       "title": "Session 36: Inner Circle",
       "urlId": "dFUeu3Wf9K",
@@ -1030,13 +925,6 @@
       "connections": 3
     },
     {
-      "id": "e4a8892f-02cb-4e39-badc-bebd1e354dc7",
-      "title": "Forge Mead",
-      "urlId": "wP6KD1RtSA",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "connections": 0
-    },
-    {
       "id": "3d57186b-2e38-47b1-84a8-62fce4be1e5d",
       "title": "Mummy",
       "urlId": "9U5E5q5Z7o",
@@ -1056,13 +944,6 @@
       "urlId": "dwK4zxrboT",
       "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
       "connections": 3
-    },
-    {
-      "id": "f254d3f6-aecb-4324-a3b5-325b11a205ca",
-      "title": "Noctael the Chain Bearer",
-      "urlId": "gC1NS09X0N",
-      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
-      "connections": 0
     },
     {
       "id": "c2b72032-bd6e-4602-a7ba-121ae4c73fcd",
@@ -1226,13 +1107,6 @@
       "connections": 2
     },
     {
-      "id": "c5a25534-d081-4135-9045-2970a9836a0a",
-      "title": "Durandian Guilds",
-      "urlId": "VYP24qV8BZ",
-      "collectionId": "28015ad0-50f5-4495-a6c5-2415436a3d40",
-      "connections": 0
-    },
-    {
       "id": "6926ac4d-3902-4111-b4b0-b56a35fd140e",
       "title": "Aldor the Immense",
       "urlId": "xzpcXjqD6D",
@@ -1259,20 +1133,6 @@
       "urlId": "xpUNyD7GMm",
       "collectionId": "28015ad0-50f5-4495-a6c5-2415436a3d40",
       "connections": 5
-    },
-    {
-      "id": "2893a341-1a9c-41eb-aab3-c0a40bdeed98",
-      "title": "The Moon",
-      "urlId": "bgZmElgvAb",
-      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
-      "connections": 0
-    },
-    {
-      "id": "1ad895c7-8459-4839-8801-9bcff99bf76a",
-      "title": "Brotherhood of Alesmiths",
-      "urlId": "i9FLDW85Hu",
-      "collectionId": "28015ad0-50f5-4495-a6c5-2415436a3d40",
-      "connections": 0
     },
     {
       "id": "10ac0090-b3a2-46c3-879d-616dc7678cb0",
@@ -1338,20 +1198,6 @@
       "connections": 8
     },
     {
-      "id": "0c7e7f27-d042-4537-9e31-4c747ef8d018",
-      "title": "Druid's Peak",
-      "urlId": "hz4k88M2J1",
-      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
-      "connections": 0
-    },
-    {
-      "id": "1390332f-b491-4e5f-9b4c-69d128a4d6c8",
-      "title": "Third Ward (Noble Circle)",
-      "urlId": "988JqUPxSX",
-      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
-      "connections": 0
-    },
-    {
       "id": "c7bd44d8-2fc4-49d7-8822-ab790ced5851",
       "title": "Domains of Dread",
       "urlId": "2Eg2DJXZRO",
@@ -1364,13 +1210,6 @@
       "urlId": "ndIfgvk1B6",
       "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
       "connections": 19
-    },
-    {
-      "id": "bcd19c66-4063-4f60-a14f-dd03519cee53",
-      "title": "Temple of the Lights",
-      "urlId": "88znSgAhr0",
-      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
-      "connections": 0
     },
     {
       "id": "db8e3685-022a-4c86-9ed4-85f58ae888e0",
@@ -1415,13 +1254,6 @@
       "connections": 11
     },
     {
-      "id": "b39f4303-311a-480a-ab92-2e24f2171fed",
-      "title": "Restaurant List",
-      "urlId": "OXVi7L5CUF",
-      "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
-      "connections": 0
-    },
-    {
       "id": "ed735538-f8e0-4bd2-9671-e1203bb9613b",
       "title": "Session 48: Transformation",
       "urlId": "kHgG32WQus",
@@ -1464,13 +1296,6 @@
       "connections": 2
     },
     {
-      "id": "b12d36a2-1492-462e-9286-26d43f1fd4b9",
-      "title": "Gideon Runeshot, Powder Mage",
-      "urlId": "Fg3vZTtLm2",
-      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
-      "connections": 0
-    },
-    {
       "id": "71e3a8af-2e7a-440c-8461-e724e5731f98",
       "title": "Doral",
       "urlId": "7CPHFPqsXA",
@@ -1511,13 +1336,6 @@
       "urlId": "cofX8ha90z",
       "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
       "connections": 18
-    },
-    {
-      "id": "d7b13ae5-9d70-48b3-91cd-39e10cdd3d4e",
-      "title": "Elfbark Ales",
-      "urlId": "l0SEeSfVd4",
-      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
-      "connections": 0
     },
     {
       "id": "8a8a0a7f-437f-4005-8007-8fdd78664b85",
@@ -1588,13 +1406,6 @@
       "urlId": "ziIwCBr2jq",
       "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
       "connections": 2
-    },
-    {
-      "id": "7ba51ddc-e490-4e13-944e-0e13c43cd714",
-      "title": "Herschel",
-      "urlId": "lgSYbAyEFz",
-      "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
-      "connections": 0
     },
     {
       "id": "5dd830ff-4bb9-4c3a-91a8-c385de63c15b",
@@ -1730,13 +1541,6 @@
       "connections": 3
     },
     {
-      "id": "1366376f-f606-4c4c-94b1-ee5672151729",
-      "title": "NPC",
-      "urlId": "NbEQA6bRW6",
-      "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
-      "connections": 0
-    },
-    {
       "id": "a5118b9e-592f-4b8d-9850-069841fd4f7f",
       "title": "Clockwork Myrmidon",
       "urlId": "ovzS6Ccvnk",
@@ -1777,13 +1581,6 @@
       "urlId": "DRMv0oTld5",
       "collectionId": "13b87098-500c-490d-ae46-01356387fe88",
       "connections": 28
-    },
-    {
-      "id": "f6190f94-9ef9-417b-8626-ae3bfbdede03",
-      "title": "Backend Todo",
-      "urlId": "polnbdej4R",
-      "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
-      "connections": 0
     },
     {
       "id": "54f8b905-098e-4213-8171-024a4a923b3e",
@@ -1919,13 +1716,6 @@
       "connections": 2
     },
     {
-      "id": "8baabf65-f57f-4639-b2aa-e8ddf6066f71",
-      "title": "Legendary",
-      "urlId": "Vs6JW0T0Cz",
-      "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
-      "connections": 0
-    },
-    {
       "id": "5ed32fed-da2d-4b8a-b083-389e0c23d13f",
       "title": "The Order of the Guardians",
       "urlId": "Cx68gYFHO1",
@@ -1938,13 +1728,6 @@
       "urlId": "IDoTPoL9oJ",
       "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
       "connections": 2
-    },
-    {
-      "id": "5c4cf391-d7d2-4fa7-ae44-0c2db34fccd4",
-      "title": "Dimensional Glasses",
-      "urlId": "953LlRzRKE",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "connections": 0
     },
     {
       "id": "2bbe1920-9e15-4eff-b8a1-00804da51e60",
@@ -2038,13 +1821,6 @@
       "connections": 5
     },
     {
-      "id": "98146788-b650-4739-a5e2-03251bf80b13",
-      "title": "Potion of Unbridled Potential",
-      "urlId": "MeZ67CPgHh",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "connections": 0
-    },
-    {
       "id": "c4dab60d-564b-4696-af29-f0d917787293",
       "title": "Ashardolon",
       "urlId": "tpAzsPflZX",
@@ -2071,13 +1847,6 @@
       "urlId": "UOdggQRi6Y",
       "collectionId": "ffaa3b03-1b56-4131-aedd-f208a0b3ed03",
       "connections": 9
-    },
-    {
-      "id": "15af1f3d-dc51-46a3-968f-261e1221bdab",
-      "title": "stuff",
-      "urlId": "pLeBZZot88",
-      "collectionId": "7e8c2f3f-6e08-4b08-b207-33365583a8bf",
-      "connections": 0
     },
     {
       "id": "9bb71bbe-3c44-4155-ae35-62cdbae2f37e",
@@ -2157,13 +1926,6 @@
       "connections": 23
     },
     {
-      "id": "e687c077-6cff-45d0-a51a-77755effa0e6",
-      "title": "NPC with Statblock",
-      "urlId": "Vch1hQ9vhn",
-      "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
-      "connections": 0
-    },
-    {
       "id": "62a88c40-4d1e-45c4-8e07-f5a0cea68b0b",
       "title": "Sphere of Everlasting Ice",
       "urlId": "hjFNSWJiwx",
@@ -2218,13 +1980,6 @@
       "urlId": "Kkj0fnOKGP",
       "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
       "connections": 1
-    },
-    {
-      "id": "6f642105-6cdb-4efd-8de6-7138aff5eaa8",
-      "title": "Directions to Brad's Studio",
-      "urlId": "MqCuUBMHAN",
-      "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
-      "connections": 0
     },
     {
       "id": "6542585d-dacd-465d-bd3d-e58f429f8baa",
@@ -2402,20 +2157,6 @@
       "connections": 1
     },
     {
-      "id": "074b438f-e9de-4f0c-a6f4-b76575529ab4",
-      "title": "Oil of Immolation",
-      "urlId": "dxIY4nbdeR",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "connections": 0
-    },
-    {
-      "id": "8cf8c19a-b63b-48e8-b03e-0de72afa95f0",
-      "title": "Session X: Game Summary",
-      "urlId": "9JFzRQ20OE",
-      "collectionId": "13b87098-500c-490d-ae46-01356387fe88",
-      "connections": 0
-    },
-    {
       "id": "a2670e80-b4ac-47c6-8f9c-35f6bfec2689",
       "title": "Lukas Woodenkeeper",
       "urlId": "MFwbJrVzOB",
@@ -2465,13 +2206,6 @@
       "connections": 2
     },
     {
-      "id": "ad5643eb-ed6a-4f83-9490-3226dfb21f10",
-      "title": "Oil of Immolation",
-      "urlId": "nrtJScIEL4",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "connections": 0
-    },
-    {
       "id": "e8e28ca1-7c9f-417b-97a4-0c63bf454918",
       "title": "Child of the Briar",
       "urlId": "sI5pUsj9VA",
@@ -2491,13 +2225,6 @@
       "urlId": "ya5uvzqUn9",
       "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
       "connections": 8
-    },
-    {
-      "id": "071bfc34-6b37-46bb-9cfe-5c57f1d91ca8",
-      "title": "Ring of Prestidigitation",
-      "urlId": "RrfeGNnCzv",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "connections": 0
     },
     {
       "id": "d58dd878-e9d9-489f-9fa7-181af773ccfb",
@@ -2603,13 +2330,6 @@
       "urlId": "ThBLg6TCvC",
       "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
       "connections": 1
-    },
-    {
-      "id": "ab27bc94-50c2-4b0e-a403-1af27a429ead",
-      "title": "Animated Bearskin Rug",
-      "urlId": "vN5Jd1nq8h",
-      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
-      "connections": 0
     },
     {
       "id": "49035b1d-73b0-4d6f-9a29-902cfd54bc74",
@@ -2843,13 +2563,6 @@
       "connections": 3
     },
     {
-      "id": "f4e43cc6-76cc-4140-abad-35e7c4d68419",
-      "title": "Ironsworn Rules & Reference",
-      "urlId": "hnnfupcKzs",
-      "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
-      "connections": 0
-    },
-    {
       "id": "53e173aa-f7c4-4e85-99ed-9833c0bed2f2",
       "title": "Session 17: The Fate of Saltmarsh",
       "urlId": "mBiDgChv72",
@@ -2969,13 +2682,6 @@
       "connections": 9
     },
     {
-      "id": "98d90f17-f2d6-4638-9da7-cdca2af0dbcd",
-      "title": "Zobek",
-      "urlId": "q0RfdbBEQK",
-      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
-      "connections": 0
-    },
-    {
       "id": "16809e0c-d30f-4e02-bdf0-a830ac4ef097",
       "title": "New Galmaarden Civil Society",
       "urlId": "AjPbwTWHao",
@@ -3074,13 +2780,6 @@
       "connections": 25
     },
     {
-      "id": "2516bf5f-e47c-4be9-a6fc-55b82c0eab83",
-      "title": "Briar Tree",
-      "urlId": "fRVWJq8gZQ",
-      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
-      "connections": 0
-    },
-    {
       "id": "28e5fd09-1afc-444f-b44e-e0ff5e041528",
       "title": "Tribeborn",
       "urlId": "KVgPsdxk3f",
@@ -3093,13 +2792,6 @@
       "urlId": "WNp5oBATI3",
       "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
       "connections": 5
-    },
-    {
-      "id": "3065a94f-b927-457f-8af6-817a0ef0866f",
-      "title": "Dagger of Profuse Bleeding",
-      "urlId": "uXUIGCXKkL",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "connections": 0
     },
     {
       "id": "67dd5389-f49c-4938-a464-554a4f9d8840",
@@ -3242,13 +2934,6 @@
       "connections": 1
     },
     {
-      "id": "bbd74927-632d-4b75-967d-db15c80ed171",
-      "title": "Rotting Wind",
-      "urlId": "CxgAe2KETh",
-      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
-      "connections": 0
-    },
-    {
       "id": "ae2bf2c5-d5c8-4a14-adc6-d9833fca0950",
       "title": "Estelar Thelen",
       "urlId": "3oPlHNG1pr",
@@ -3296,13 +2981,6 @@
       "urlId": "RsvOfpU21i",
       "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
       "connections": 2
-    },
-    {
-      "id": "02406736-aaa1-4f4b-8b26-4b542b3d1fe2",
-      "title": "Steel Defender",
-      "urlId": "9sglfJ4wpE",
-      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
-      "connections": 0
     },
     {
       "id": "372878d6-da83-4974-93f3-10e33c5be421",
@@ -3429,13 +3107,6 @@
       "urlId": "tgDf5YJbgf",
       "collectionId": "13b87098-500c-490d-ae46-01356387fe88",
       "connections": 23
-    },
-    {
-      "id": "9e857703-6e74-4440-8de6-fbfc22a62027",
-      "title": "Goblin Spore Servant",
-      "urlId": "cHpx24bTBS",
-      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
-      "connections": 0
     },
     {
       "id": "f4804bd7-6dc5-49a0-b8aa-a1b4b15edb44",
@@ -3718,25 +3389,11 @@
       "connections": 1
     },
     {
-      "id": "531f83e1-ad3c-4063-9392-6c1ca4bb5f70",
-      "title": "Potion of the Mossy Oak",
-      "urlId": "EUrhe6nCRs",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "connections": 0
-    },
-    {
       "id": "0c6d33ac-a1e5-4120-9897-467dcc1df91b",
       "title": "Giant Lizard",
       "urlId": "TMNgqcB7LH",
       "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
       "connections": 1
-    },
-    {
-      "id": "dcbd2031-a905-41a9-b950-9f671e651994",
-      "title": "Potion of Oblivion",
-      "urlId": "DBhlvDmtCl",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "connections": 0
     },
     {
       "id": "d75ddada-1fdd-482e-9bd4-08e495f0be40",
@@ -3814,13 +3471,6 @@
       "urlId": "7Fte9HtwL6",
       "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
       "connections": 1
-    },
-    {
-      "id": "097dda7a-da00-43f6-9214-29dcf4a9d6fa",
-      "title": "Giant Ant",
-      "urlId": "s7ojhFjK7F",
-      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
-      "connections": 0
     },
     {
       "id": "c1078a15-d532-4119-b262-4f656a816804",
@@ -3926,20 +3576,6 @@
       "urlId": "q9dbCwX0TX",
       "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
       "connections": 2
-    },
-    {
-      "id": "66724d7b-7b93-4cec-8d11-18081239cad2",
-      "title": "Briar Mound",
-      "urlId": "Jh4pKdDHHQ",
-      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
-      "connections": 0
-    },
-    {
-      "id": "233327a7-8900-4013-836e-c195abcd6d25",
-      "title": "Bag of Rust",
-      "urlId": "SfaknUwwtp",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "connections": 0
     },
     {
       "id": "7feedac1-cee3-4c32-a16f-578c5c160f8e",
