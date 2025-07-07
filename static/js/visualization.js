@@ -119,14 +119,14 @@ node.append("circle")
             .style("opacity", 0);
     });
 
-// Add labels to nodes - move inside the circle with improved multi-line support
+// Add labels to nodes - move inside the circle with improved centering
 node.append("text")
     .attr("text-anchor", "middle") // Center text horizontally
     .attr("dominant-baseline", "central") // Center text vertically
     .each(function(d) {
         const text = d3.select(this);
         const radius = d.radius;
-        const title = d.title;
+        const title = d.title || "Node"; // Ensure there's always some text
         
         // Function to calculate available width at a given vertical offset in a circle
         function getAvailableWidthAtOffset(radius, yOffset) {
@@ -271,16 +271,25 @@ node.append("text")
                 
                 // If we've successfully fit all text, create the tspans
                 if (success) {
-                    // Create tspans for each line
+                    // Create a container group for better positioning
+                    const lineCount = lines.length;
+                    const totalHeight = lineHeight * lineCount;
+                    
+                    // Create tspans for each line with precise positioning
                     lines.forEach((line, i) => {
-                        if (i < verticalPositions.length) {
-                            text.append("tspan")
-                                .attr("x", 0)
-                                .attr("y", verticalPositions[i])
-                                .attr("dy", "0.35em")
-                                .text(line);
-                        }
+                        // Calculate vertical position
+                        // For single line, y=0 (center)
+                        // For multiple lines, distribute evenly around center
+                        const yPos = lineCount === 1 ? 0 : 
+                                    (i - (lineCount - 1) / 2) * lineHeight;
+                        
+                        text.append("tspan")
+                            .attr("x", 0)
+                            .attr("y", yPos)
+                            .attr("dy", 0) // No additional vertical offset
+                            .text(line);
                     });
+                    
                     return true;
                 }
             }
@@ -292,14 +301,19 @@ node.append("text")
                 // Calculate available width at center
                 const availableWidth = getAvailableWidthAtOffset(radius - padding, 0) - padding * 2;
                 
-                // Truncate text to fit
+                // Ensure we show at least the first few characters
                 let truncatedText = title;
                 const tempText = text.append("tspan").style("opacity", 0);
                 
-                tempText.text(truncatedText);
-                while (tempText.node().getComputedTextLength() > availableWidth && truncatedText.length > 3) {
-                    truncatedText = truncatedText.slice(0, -1);
-                    tempText.text(truncatedText + "...");
+                // If title is empty or undefined, use a default
+                if (!title || title.trim() === "") {
+                    truncatedText = "Node";
+                } else {
+                    tempText.text(truncatedText);
+                    while (tempText.node().getComputedTextLength() > availableWidth && truncatedText.length > 3) {
+                        truncatedText = truncatedText.slice(0, -1);
+                        tempText.text(truncatedText + "...");
+                    }
                 }
                 
                 tempText.remove();
@@ -319,6 +333,15 @@ node.append("text")
         
         // Store the font size on the data object
         d.fontSize = parseFloat(text.style("font-size"));
+        
+        // Ensure text is visible by checking if any tspans were created
+        if (text.selectAll("tspan").size() === 0) {
+            // If no tspans were created, add a default one
+            text.append("tspan")
+                .attr("x", 0)
+                .attr("y", 0)
+                .text(title.substring(0, 1) + "..."); // At least show first character
+        }
     })
     .style("opacity", 0.9)
     .style("pointer-events", "none"); // Ensure text doesn't interfere with mouse events
