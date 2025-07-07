@@ -15,7 +15,6 @@ body {
 }
 .node circle {
     fill: #666;
-    stroke: #fff;
     stroke-width: 1.5px;
     transition: all 0.3s ease;
 }
@@ -43,36 +42,27 @@ body {
 
 /* First-order connection highlighting */
 .link-highlight-first {
-    stroke: #ffffff;
     stroke-opacity: 0.9;
     stroke-width: 2px;
 }
 
 .node-highlight-first circle {
-    stroke: #ffffff;
-    fill: #ff2600;
     stroke-width: 2.5px;
     transform: scale(125%,125%);
 }
 .node-highlight-first text {
-        transform: scale(125%,125%);
+    transform: scale(125%,125%);
 }
 
 /* Second-order connection highlighting */
 .link-highlight-second {
-    stroke: #ffffff;
     stroke-opacity: 0.4;
     stroke-width: 1px;
 }
 
 .node-highlight-second circle {
-    stroke: #aaaaaa;
     stroke-width: 2px;
-}
-
-.node-highlight-second circle {
-    fill: #ffffff50;
-
+    opacity: 0.7;
 }
 
 /* Dimmed nodes and links */

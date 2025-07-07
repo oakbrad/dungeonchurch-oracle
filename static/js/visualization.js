@@ -99,7 +99,7 @@ const node = g.append("g")
     .selectAll(".node")
     .data(graphData.nodes)
     .enter().append("g")
-    .attr("class", "node")
+    .attr("class", d => `node collection-${d.collectionId}`)
     .call(d3.drag()
         .on("start", dragstarted)
         .on("drag", dragged)
@@ -114,6 +114,7 @@ node.append("circle")
         return d.radius;
     })
     .attr("fill", d => getNodeColor(d))
+    .attr("stroke", d => getNodeColor(d))
     .on("click", function(event, d) {
         // Prevent event from propagating to potential parent elements
         event.stopPropagation();
@@ -217,6 +218,9 @@ node.append("circle")
             const linkElement = d3.select(this);
             if (l.source.id === d.id || l.target.id === d.id) {
                 linkElement.classed("link-highlight-first", true);
+                // Set the stroke color to the collection color of the connected node
+                const connectedNode = l.source.id === d.id ? l.target : l.source;
+                linkElement.attr("stroke", getNodeColor(connectedNode));
                 highlightedLinkIndices.add(i);
             }
         });
@@ -225,6 +229,8 @@ node.append("circle")
             const nodeElement = d3.select(this);
             if (firstOrderNodeIds.has(n.id)) {
                 nodeElement.classed("node-highlight-first", true);
+                // Keep the fill as the collection color but make it more vibrant
+                nodeElement.select("circle").attr("fill", getNodeColor(n));
             }
         });
         
@@ -235,6 +241,9 @@ node.append("circle")
             if ((firstOrderNodeIds.has(l.source.id) && secondOrderNodeIds.has(l.target.id)) || 
                 (firstOrderNodeIds.has(l.target.id) && secondOrderNodeIds.has(l.source.id))) {
                 linkElement.classed("link-highlight-second", true);
+                // Use the color of the first-order node for the link
+                const firstOrderNode = firstOrderNodeIds.has(l.source.id) ? l.source : l.target;
+                linkElement.attr("stroke", getNodeColor(firstOrderNode));
                 highlightedLinkIndices.add(i);
             }
         });
@@ -243,6 +252,8 @@ node.append("circle")
             const nodeElement = d3.select(this);
             if (secondOrderNodeIds.has(n.id)) {
                 nodeElement.classed("node-highlight-second", true);
+                // Use a lighter version of the collection color
+                nodeElement.select("circle").attr("fill", getNodeColor(n));
             }
         });
         
