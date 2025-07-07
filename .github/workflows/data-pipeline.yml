@@ -78,6 +78,7 @@ jobs:
           POSTGRES_PORT: 5432
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
+          EXCLUDE_5E: ${{ secrets.EXCLUDE_5E }}
         run: |
           # Get the path of the downloaded file
           DUMP_FILE="${{ steps.download.outputs.DUMP_FILE }}"
@@ -113,4 +114,3 @@ jobs:
           # Remove any dump files to ensure sensitive data is not kept
           rm -f data/*.dump
           echo "Cleaned up dump files"
-
