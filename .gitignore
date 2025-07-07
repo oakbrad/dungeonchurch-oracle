@@ -50,3 +50,6 @@ Thumbs.db
 /data/*
 !/data/*.json
 
+# Generated docs directory
+/docs/
+
