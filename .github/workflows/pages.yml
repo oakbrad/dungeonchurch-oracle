@@ -24,6 +24,9 @@ jobs:
       
       - name: Setup Pages
         uses: actions/configure-pages@v3
+        with:
+          enablement: true
+          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Create docs directory if it doesn't exist
         run: mkdir -p docs
