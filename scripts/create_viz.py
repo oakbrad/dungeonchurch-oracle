@@ -201,15 +201,15 @@ def create_visualization():
             }});
             
             // Build tooltip content
-            let tooltipContent = `<strong>${d.title}</strong><br>`;
+            let tooltipContent = "<strong>" + d.title + "</strong><br>";
             if (connectedNodes.length > 0) {{
                 tooltipContent += "<br><strong>Connections:</strong><br>";
                 connectedNodes.slice(0, 10).forEach(conn => {{
-                    tooltipContent += `• ${conn.relationship} <em>${conn.title}</em><br>`;
+                    tooltipContent += "• " + conn.relationship + " <em>" + conn.title + "</em><br>";
                 }});
                 
                 if (connectedNodes.length > 10) {{
-                    tooltipContent += `<em>...and ${connectedNodes.length - 10} more</em>`;
+                    tooltipContent += "<em>...and " + (connectedNodes.length - 10) + " more</em>";
                 }}
             }}
             
@@ -239,7 +239,7 @@ def create_visualization():
             .attr("y2", d => d.target.y);
         
         node
-            .attr("transform", d => `translate(${d.x},${d.y})`);
+            .attr("transform", d => `translate(${{d.x}},${{d.y}})`);
     }});
     
     // Helper functions
