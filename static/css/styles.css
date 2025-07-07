@@ -14,9 +14,10 @@ body {
     cursor: pointer;
 }
 .node circle {
-    fill: #69b3a2;
+    fill: #666;
     stroke: #fff;
     stroke-width: 1.5px;
+    transition: all 0.3s ease;
 }
 .node text {
     fill: #fff;
@@ -25,21 +26,93 @@ body {
 .link {
     stroke: #999;
     stroke-opacity: 0.6;
+    transition: all 0.3s ease;
 }
-.tooltip {
+
+/* Node glow effect */
+.node-highlight circle {
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
+    fill: #ffffff;
+    transform: scale(200%,200%);
+}
+
+.node-highlight text {
+    fill: #000000 !important;
+    transform: scale(200%,200%);
+}
+
+/* First-order connection highlighting */
+.link-highlight-first {
+    stroke: #ffffff;
+    stroke-opacity: 0.9;
+    stroke-width: 2px;
+}
+
+.node-highlight-first circle {
+    stroke: #ffffff;
+    fill: #ff2600;
+    stroke-width: 2.5px;
+    transform: scale(125%,125%);
+}
+.node-highlight-first text {
+        transform: scale(125%,125%);
+}
+
+/* Second-order connection highlighting */
+.link-highlight-second {
+    stroke: #ffffff;
+    stroke-opacity: 0.4;
+    stroke-width: 1px;
+}
+
+.node-highlight-second circle {
+    stroke: #aaaaaa;
+    stroke-width: 2px;
+}
+
+.node-highlight-second circle {
+    fill: #ffffff50;
+
+}
+
+/* Dimmed nodes and links */
+.node-dimmed circle {
+    opacity: 0.1;
+    fill: #666;
+}
+
+.node-dimmed text {
+    color: #333;
+    fill: #333;
+    opacity: 0.1;
+}
+
+.link-dimmed {
+    stroke-opacity: 0.1;
+}
+
+/* Tooltip for truncated nodes */
+.tooltip-truncated {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 10px;
+    padding: 6px 10px;
     border-radius: 5px;
     pointer-events: none;
     font-size: 14px;
     max-width: 300px;
+    z-index: 100;
+    text-align: center;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
+
 #search-container {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 25px;
+    left: 25px;
     z-index: 10;
 }
 #search-input {

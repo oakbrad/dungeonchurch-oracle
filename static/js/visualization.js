@@ -11,9 +11,9 @@ graphData.nodes.forEach(node => {
 const width = window.innerWidth;
 const height = window.innerHeight;
 
-// Create tooltip
-const tooltip = d3.select("body").append("div")
-    .attr("class", "tooltip")
+// Create tooltip for truncated nodes
+const tooltipTruncated = d3.select("body").append("div")
+    .attr("class", "tooltip-truncated")
     .style("opacity", 0);
 
 // Create SVG
@@ -75,46 +75,140 @@ node.append("circle")
     })
     .attr("fill", d => getNodeColor(d))
     .on("mouseover", function(event, d) {
-        tooltip.transition()
-            .duration(200)
-            .style("opacity", .9);
+        // Get the current node element
+        const currentNode = d3.select(this.parentNode);
         
-        // Get connected nodes
-        const connectedLinks = graphData.links.filter(link => 
+        // Add highlight class to the current node
+        currentNode.classed("node-highlight", true);
+        
+        // Get first-order connections
+        const firstOrderLinks = graphData.links.filter(link => 
             link.source.id === d.id || link.target.id === d.id
         );
         
-        const connectedNodes = connectedLinks.map(link => {
+        const firstOrderNodeIds = new Set();
+        firstOrderLinks.forEach(link => {
             const connectedId = link.source.id === d.id ? link.target.id : link.source.id;
-            const connectedNode = nodeMap.get(connectedId);
-            return {
-                title: connectedNode.title,
-                relationship: link.relationship || "connected to"
-            };
+            firstOrderNodeIds.add(connectedId);
         });
         
-        // Build tooltip content
-        let tooltipContent = "<strong>" + d.title + "</strong><br>";
-        if (d.connections) {
-            tooltipContent += "<br><strong>Connections:</strong> " + d.connections + "<br>";
-        }
-        if (connectedNodes.length > 0) {
-            tooltipContent += "<br><strong>Connected to:</strong><br>";
-            connectedNodes.slice(0, 10).forEach(conn => {
-                tooltipContent += "• " + conn.relationship + " <em>" + conn.title + "</em><br>";
-            });
-            
-            if (connectedNodes.length > 10) {
-                tooltipContent += "<em>...and " + (connectedNodes.length - 10) + " more</em>";
-            }
-        }
+        // Get second-order connections
+        const secondOrderNodeIds = new Set();
         
-        tooltip.html(tooltipContent)
-            .style("left", (event.pageX + 10) + "px")
-            .style("top", (event.pageY - 28) + "px");
+        // For each first-order node, find its connections
+        firstOrderNodeIds.forEach(nodeId => {
+            graphData.links.forEach(link => {
+                if (link.source.id === nodeId) {
+                    // Don't include the original node or first-order nodes
+                    if (link.target.id !== d.id && !firstOrderNodeIds.has(link.target.id)) {
+                        secondOrderNodeIds.add(link.target.id);
+                    }
+                } else if (link.target.id === nodeId) {
+                    // Don't include the original node or first-order nodes
+                    if (link.source.id !== d.id && !firstOrderNodeIds.has(link.source.id)) {
+                        secondOrderNodeIds.add(link.source.id);
+                    }
+                }
+            });
+        });
+        
+        // Create sets to track which nodes and links should be highlighted
+        const highlightedNodeIds = new Set([d.id, ...firstOrderNodeIds, ...secondOrderNodeIds]);
+        const highlightedLinkIndices = new Set();
+        
+        // Highlight first-order links and nodes
+        link.each(function(l, i) {
+            const linkElement = d3.select(this);
+            if (l.source.id === d.id || l.target.id === d.id) {
+                linkElement.classed("link-highlight-first", true);
+                highlightedLinkIndices.add(i);
+            }
+        });
+        
+        node.each(function(n) {
+            const nodeElement = d3.select(this);
+            if (firstOrderNodeIds.has(n.id)) {
+                nodeElement.classed("node-highlight-first", true);
+            }
+        });
+        
+        // Highlight second-order links and nodes
+        link.each(function(l, i) {
+            const linkElement = d3.select(this);
+            // If link connects a first-order node to a second-order node
+            if ((firstOrderNodeIds.has(l.source.id) && secondOrderNodeIds.has(l.target.id)) || 
+                (firstOrderNodeIds.has(l.target.id) && secondOrderNodeIds.has(l.source.id))) {
+                linkElement.classed("link-highlight-second", true);
+                highlightedLinkIndices.add(i);
+            }
+        });
+        
+        node.each(function(n) {
+            const nodeElement = d3.select(this);
+            if (secondOrderNodeIds.has(n.id)) {
+                nodeElement.classed("node-highlight-second", true);
+            }
+        });
+        
+        // Dim all non-highlighted nodes and links
+        node.each(function(n) {
+            const nodeElement = d3.select(this);
+            if (!highlightedNodeIds.has(n.id)) {
+                nodeElement.classed("node-dimmed", true);
+            }
+        });
+        
+        link.each(function(l, i) {
+            const linkElement = d3.select(this);
+            if (!highlightedLinkIndices.has(i)) {
+                linkElement.classed("link-dimmed", true);
+            }
+        });
+        
+        // Show tooltip if the node's title is truncated
+        if (d.isTruncated) {
+            tooltipTruncated.transition()
+                .duration(200)
+                .style("opacity", .9);
+            
+            // Calculate position to center below the node
+            const nodeX = d.x; // Node's x position in the visualization
+            const nodeY = d.y; // Node's y position in the visualization
+            const radius = d.radius || 10; // Node's radius
+            
+            // Get current zoom transform
+            const transform = d3.zoomTransform(svg.node());
+            
+            // Convert node coordinates to screen coordinates
+            const screenX = transform.applyX(nodeX);
+            const screenY = transform.applyY(nodeY);
+            
+            // Calculate offset based on zoom level
+            // This ensures the caption maintains a consistent visual distance
+            // regardless of zoom level
+            const zoomScale = transform.k;
+            const verticalOffset = (radius + 10) / zoomScale;
+            
+            // Position tooltip centered below the node
+            // Apply the zoom-adjusted vertical offset to maintain consistent spacing
+            tooltipTruncated.html("<strong>" + d.title + "</strong>")
+                .style("left", screenX + "px")
+                .style("top", transform.applyY(nodeY + verticalOffset) + "px");
+        }
     })
     .on("mouseout", function() {
-        tooltip.transition()
+        // Remove all highlight and dimmed classes
+        node.classed("node-highlight", false)
+            .classed("node-highlight-first", false)
+            .classed("node-highlight-second", false)
+            .classed("node-dimmed", false);
+        
+        link.classed("link-highlight-first", false)
+            .classed("link-highlight-second", false)
+            .classed("link-dimmed", false);
+            
+        // Hide tooltip
+        tooltipTruncated.transition()
             .duration(500)
             .style("opacity", 0);
     });
@@ -290,6 +384,9 @@ node.append("text")
                             .text(line);
                     });
                     
+                    // Mark node as not truncated
+                    d.isTruncated = false;
+                    
                     return true;
                 }
             }
@@ -314,6 +411,11 @@ node.append("text")
                         truncatedText = truncatedText.slice(0, -1);
                         tempText.text(truncatedText + "...");
                     }
+                    
+                    // If we're down to just one character, don't add ellipsis
+                    if (truncatedText.length === 1) {
+                        tempText.text(truncatedText);
+                    }
                 }
                 
                 tempText.remove();
@@ -322,7 +424,10 @@ node.append("text")
                 text.append("tspan")
                     .attr("x", 0)
                     .attr("y", 0)
-                    .text(truncatedText + (truncatedText.length < title.length ? "..." : ""));
+                    .text(truncatedText.length === 1 ? truncatedText : truncatedText + "...");
+                
+                // Mark node as truncated
+                d.isTruncated = true;
             }
             
             return true;
@@ -340,7 +445,10 @@ node.append("text")
             text.append("tspan")
                 .attr("x", 0)
                 .attr("y", 0)
-                .text(title.substring(0, 1) + "..."); // At least show first character
+                .text(title.substring(0, 1)); // Just show first character without ellipsis
+                
+            // Mark node as truncated
+            d.isTruncated = true;
         }
     })
     .style("opacity", 0.9)
