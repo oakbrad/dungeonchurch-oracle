@@ -179,7 +179,7 @@ def create_visualization():
     
     // Add circles to nodes
     node.append("circle")
-        .attr("r", d => 5 + (d.connections ? Math.sqrt(d.connections) * 2 : 5))
+        .attr("r", d => 5 + (d.connections ? Math.sqrt(d.connections) * 3 : 5))
         .attr("fill", d => getNodeColor(d))
         .on("mouseover", function(event, d) {{
             tooltip.transition()
@@ -202,8 +202,11 @@ def create_visualization():
             
             // Build tooltip content
             let tooltipContent = "<strong>" + d.title + "</strong><br>";
+            if (d.connections) {
+                tooltipContent += "<br><strong>Connections:</strong> " + d.connections + "<br>";
+            }
             if (connectedNodes.length > 0) {{
-                tooltipContent += "<br><strong>Connections:</strong><br>";
+                tooltipContent += "<br><strong>Connected to:</strong><br>";
                 connectedNodes.slice(0, 10).forEach(conn => {{
                     tooltipContent += "• " + conn.relationship + " <em>" + conn.title + "</em><br>";
                 }});
@@ -366,4 +369,3 @@ This visualization is automatically updated daily with the latest data from the 
 
 if __name__ == "__main__":
     create_visualization()
-
