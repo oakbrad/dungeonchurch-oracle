@@ -67,7 +67,10 @@ const node = g.append("g")
 
 // Add circles to nodes
 node.append("circle")
-    .attr("r", d => 5 + (d.connections ? Math.sqrt(d.connections) * 3 : 5))
+    .attr("r", d => {
+        // Increase the relative size difference between nodes
+        return d.connections ? 10 + Math.pow(d.connections, 0.8) * 2 : 10;
+    })
     .attr("fill", d => getNodeColor(d))
     .on("mouseover", function(event, d) {
         tooltip.transition()
@@ -114,12 +117,24 @@ node.append("circle")
             .style("opacity", 0);
     });
 
-// Add labels to nodes
+// Add labels to nodes - move inside the circle and scale with node size
 node.append("text")
-    .attr("dx", 12)
-    .attr("dy", ".35em")
-    .text(d => truncateText(d.title, 20))
-    .style("opacity", 0.7);
+    .attr("text-anchor", "middle") // Center text horizontally
+    .attr("dominant-baseline", "central") // Center text vertically
+    .text(d => {
+        // Get the node radius for text sizing calculations
+        const radius = d.connections ? 10 + Math.pow(d.connections, 0.8) * 2 : 10;
+        // Adjust truncation based on node size
+        const maxLength = Math.max(1, Math.floor(radius / 3.5));
+        return truncateText(d.title, maxLength);
+    })
+    .style("font-size", d => {
+        // Scale font size based on node radius
+        const radius = d.connections ? 10 + Math.pow(d.connections, 0.8) * 2 : 10;
+        return Math.max(8, Math.min(radius * 0.7, 16)) + "px";
+    })
+    .style("opacity", 0.9)
+    .style("pointer-events", "none"); // Ensure text doesn't interfere with mouse events
 
 // Update positions on each tick
 simulation.on("tick", () => {
@@ -222,4 +237,3 @@ document.addEventListener("click", function(event) {
         searchResults.style.display = "none";
     }
 });
-
