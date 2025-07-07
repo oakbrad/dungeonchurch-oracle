@@ -14,10 +14,12 @@ This folder contains the static templates used to generate the Dungeon Church Or
    - Edit these files to customize the visualization
    - Run `python scripts/create_viz.py` to generate the visualization in the `docs` folder
    - Open `docs/index.html` in your browser to preview the changes
+   - Note: The `docs` folder is not stored in the repository, it's generated on-demand
 
 2. **Deployment**:
    - Changes to files in this folder will automatically trigger a rebuild and deployment via GitHub Actions
    - The GitHub Actions workflow will run `create_viz.py` and deploy the generated files to GitHub Pages
+   - The `docs` folder is uploaded as an artifact and deployed directly to GitHub Pages
 
 ## Notes
 

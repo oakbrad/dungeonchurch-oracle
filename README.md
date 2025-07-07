@@ -20,7 +20,7 @@ This repo automates the creation of [D3js](https://d3js.org/) visualizations bas
 - `data/` - Contains the graph data JSON file
 - `scripts/` - Python scripts for data processing and visualization generation
 - `static/` - Static templates for the visualization (HTML, CSS, JS)
-- `docs/` - Generated files for GitHub Pages deployment (created by scripts)
+- `docs/` - Generated files for GitHub Pages deployment (created by scripts, not stored in the repository)
 
 ## Setup
 [Outline](https://github.com/outline/outline) database [nightly backups](https://github.com/oakbrad/dungeonchurch/blob/81f2a3a4e5cf00af524ad6a5d0c33f967a0edd74/docker-compose.yaml#L174) are stored in a private S3 bucket:
@@ -59,6 +59,7 @@ python scripts/process_relationships.py <path_to_dump_file>
 python scripts/create_viz.py
 ```
 1. Generate the visualization files in the `docs` folder using templates from the `static` folder
+2. The `docs` folder is not stored in the repository but is generated on-demand
 
 ### Run the Complete Pipeline
 ```bash
