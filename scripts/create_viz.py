@@ -332,7 +332,7 @@ def create_visualization():
                 }} else if (graphData.collections && graphData.collections[node.collectionId] && graphData.collections[node.collectionId].name) {{
                     name = graphData.collections[node.collectionId].name;
                 }} else {{
-                    name = `Collection ${collections.size + 1}`;
+                    name = `Collection ${{collections.size + 1}}`;
                 }}
                 
                 collections.set(node.collectionId, {{
