@@ -19,8 +19,8 @@ body {
     stroke-width: 1.5px;
 }
 .node text {
-    font-size: 10px;
     fill: #fff;
+    font-weight: 500;
 }
 .link {
     stroke: #999;
@@ -67,4 +67,3 @@ body {
 .search-result:hover {
     background-color: #444;
 }
-
