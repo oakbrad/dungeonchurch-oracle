@@ -202,9 +202,9 @@ def create_visualization():
             
             // Build tooltip content
             let tooltipContent = "<strong>" + d.title + "</strong><br>";
-            if (d.connections) {
+            if (d.connections) {{
                 tooltipContent += "<br><strong>Connections:</strong> " + d.connections + "<br>";
-            }
+            }}
             if (connectedNodes.length > 0) {{
                 tooltipContent += "<br><strong>Connected to:</strong><br>";
                 connectedNodes.slice(0, 10).forEach(conn => {{
