@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'data/graph_data.json'
+      - 'static/**'
+      - 'scripts/create_viz.py'
   workflow_dispatch:
     # Allow manual triggering
 

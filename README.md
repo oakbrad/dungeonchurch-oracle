@@ -15,6 +15,13 @@ This repo automates the creation of [D3js](https://d3js.org/) visualizations bas
 
 [The result](https://oakbrad.github.io/dungeonchurch-oracle/) is deployed on GH pages.
 
+## Repository Structure
+
+- `data/` - Contains the graph data JSON file
+- `scripts/` - Python scripts for data processing and visualization generation
+- `static/` - Static templates for the visualization (HTML, CSS, JS)
+- `docs/` - Generated files for GitHub Pages deployment (created by scripts)
+
 ## Setup
 [Outline](https://github.com/outline/outline) database [nightly backups](https://github.com/oakbrad/dungeonchurch/blob/81f2a3a4e5cf00af524ad6a5d0c33f967a0edd74/docker-compose.yaml#L174) are stored in a private S3 bucket:
 ```
@@ -51,7 +58,7 @@ python scripts/process_relationships.py <path_to_dump_file>
 ```bash
 python scripts/create_viz.py
 ```
-1. Create the visualization
+1. Generate the visualization files in the `docs` folder using templates from the `static` folder
 
 ### Run the Complete Pipeline
 ```bash
@@ -65,5 +72,26 @@ Options:
 - `--output` or `-o`: Specify the output JSON file path
 - `--keep-dump` or `-k`: Keep the dump file after processing
 
+## Customizing the Visualization
+
+The visualization can be customized by editing the files in the `static` folder:
+
+- `static/index.html` - The main HTML template
+- `static/css/styles.css` - The CSS styles for the visualization
+- `static/js/visualization.js` - The JavaScript code for the D3.js visualization
+
+After making changes to these files, you can:
+
+1. Run `python scripts/create_viz.py` to generate the updated visualization in the `docs` folder
+2. Open `docs/index.html` in your browser to preview the changes
+3. Commit and push your changes to deploy them via GitHub Actions
+
 ## Automated Updates
-This repository includes a GitHub Actions workflow that runs daily at midnight UTC (and can be triggered manually).
+This repository includes GitHub Actions workflows that:
+
+1. Run the data pipeline daily at midnight UTC (and can be triggered manually)
+2. Rebuild and deploy the visualization when changes are made to:
+   - The graph data (`data/graph_data.json`)
+   - The static templates (`static/*`)
+   - The visualization script (`scripts/create_viz.py`)
+
