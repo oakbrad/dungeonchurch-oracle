@@ -176,15 +176,24 @@ node.append("circle")
             const nodeY = d.y; // Node's y position in the visualization
             const radius = d.radius || 10; // Node's radius
             
-            // Convert node coordinates to screen coordinates
+            // Get current zoom transform
             const transform = d3.zoomTransform(svg.node());
+            
+            // Convert node coordinates to screen coordinates
             const screenX = transform.applyX(nodeX);
             const screenY = transform.applyY(nodeY);
             
+            // Calculate offset based on zoom level
+            // This ensures the caption maintains a consistent visual distance
+            // regardless of zoom level
+            const zoomScale = transform.k;
+            const verticalOffset = (radius + 10) / zoomScale;
+            
             // Position tooltip centered below the node
+            // Apply the zoom-adjusted vertical offset to maintain consistent spacing
             tooltipTruncated.html("<strong>" + d.title + "</strong>")
                 .style("left", screenX + "px")
-                .style("top", (screenY + radius + 10) + "px");
+                .style("top", transform.applyY(nodeY + verticalOffset) + "px");
         }
     })
     .on("mouseout", function() {
