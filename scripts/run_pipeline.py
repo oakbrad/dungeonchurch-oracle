@@ -6,10 +6,10 @@ from download_latest_dump import download_latest_dump
 from process_relationships import process_relationships
 from process_colors import process_colors
 
-def run_pipeline(output_file=None, keep_dump=False):
+def run_pipeline(output_file=None, keep_dump=False, dump_file=None):
     """
     Run the complete data pipeline:
-    1. Download the latest database dump
+    1. Download the latest database dump (if not provided)
     2. Process the dump to extract relationship data
     3. Process collection colors for visualization
     4. Optionally clean up the dump file
@@ -17,16 +17,23 @@ def run_pipeline(output_file=None, keep_dump=False):
     Args:
         output_file (str, optional): Path to the output JSON file. If None, a default path will be used.
         keep_dump (bool): Whether to keep the dump file after processing
+        dump_file (str, optional): Path to an existing dump file. If None, a new dump will be downloaded.
         
     Returns:
         bool: True if the pipeline completed successfully, False otherwise
     """
-    # Step 1: Download the latest database dump
-    print("Step 1: Downloading the latest database dump")
-    dump_file = download_latest_dump()
-    if not dump_file:
-        print("Pipeline failed: Could not download the latest database dump")
-        return False
+    # Step 1: Download the latest database dump (if not provided)
+    if dump_file is None:
+        print("Step 1: Downloading the latest database dump")
+        dump_file = download_latest_dump()
+        if not dump_file:
+            print("Pipeline failed: Could not download the latest database dump")
+            return False
+    else:
+        print(f"Step 1: Using provided dump file: {dump_file}")
+        if not os.path.exists(dump_file):
+            print(f"Pipeline failed: Provided dump file does not exist: {dump_file}")
+            return False
     
     # Step 2: Process the dump to extract relationship data
     print("\nStep 2: Processing the dump to extract relationship data")
@@ -65,10 +72,11 @@ def main():
     parser = argparse.ArgumentParser(description='Run the complete data pipeline for D3 visualization')
     parser.add_argument('--output', '-o', help='Path to the output JSON file')
     parser.add_argument('--keep-dump', '-k', action='store_true', help='Keep the dump file after processing')
+    parser.add_argument('--dump-file', '-d', help='Path to an existing dump file')
     
     args = parser.parse_args()
     
-    success = run_pipeline(args.output, args.keep_dump)
+    success = run_pipeline(args.output, args.keep_dump, args.dump_file)
     if not success:
         sys.exit(1)
 
