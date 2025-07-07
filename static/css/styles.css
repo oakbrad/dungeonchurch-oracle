@@ -14,7 +14,7 @@ body {
     cursor: pointer;
 }
 .node circle {
-    fill: #333333;
+    fill: #666;
     stroke: #fff;
     stroke-width: 1.5px;
     transition: all 0.3s ease;
@@ -32,7 +32,13 @@ body {
 /* Node glow effect */
 .node-highlight circle {
     filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
-    fill: #ff2600;
+    fill: #ffffff;
+    transform: scale(200%,200%);
+}
+
+.node-highlight text {
+    fill: #000000 !important;
+    transform: scale(200%,200%);
 }
 
 /* First-order connection highlighting */
@@ -44,19 +50,19 @@ body {
 
 .node-highlight-first circle {
     stroke: #ffffff;
-    fill: #ffffff;
+    fill: #ff2600;
     stroke-width: 2.5px;
+    transform: scale(125%,125%);
 }
-
 .node-highlight-first text {
-    fill: #000000 !important;
+        transform: scale(125%,125%);
 }
 
 /* Second-order connection highlighting */
 .link-highlight-second {
-    stroke: #aaaaaa;
-    stroke-opacity: 0.7;
-    stroke-width: 1.5px;
+    stroke: #ffffff;
+    stroke-opacity: 0.4;
+    stroke-width: 1px;
 }
 
 .node-highlight-second circle {
@@ -64,18 +70,25 @@ body {
     stroke-width: 2px;
 }
 
+.node-highlight-second circle {
+    fill: #ffffff50;
+
+}
+
 /* Dimmed nodes and links */
 .node-dimmed circle {
-    opacity: 0.2;
-    fill: #ffffff40;
+    opacity: 0.1;
+    fill: #666;
 }
 
 .node-dimmed text {
-    opacity: 0.2;
+    color: #333;
+    fill: #333;
+    opacity: 0.1;
 }
 
 .link-dimmed {
-    stroke-opacity: 0.2;
+    stroke-opacity: 0.1;
 }
 
 /* Tooltip for truncated nodes */
