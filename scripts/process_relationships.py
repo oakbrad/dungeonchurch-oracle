@@ -195,6 +195,21 @@ def extract_relationship_data(db_name):
         # Replace the original links with deduplicated ones
         links = deduplicated_links
         
+        # Calculate the number of connections for each node
+        print("Calculating connection counts for each node")
+        connection_counts = {}
+        for link in links:
+            source = link['source']
+            target = link['target']
+            
+            # Increment the connection count for both source and target
+            connection_counts[source] = connection_counts.get(source, 0) + 1
+            connection_counts[target] = connection_counts.get(target, 0) + 1
+        
+        # Add the connection count to each node
+        for node in nodes:
+            node['connections'] = connection_counts.get(node['id'], 0)
+        
         # Convert to D3-compatible format
         graph_data = {
             "nodes": [dict(node) for node in nodes],
@@ -204,6 +219,7 @@ def extract_relationship_data(db_name):
         print(f"Filtered out {len(all_nodes) - len(nodes)} nodes from excluded collections")
         print(f"Filtered out {len(all_links) - len(links) + duplicates_removed} links connected to excluded collection nodes")
         print(f"Removed {duplicates_removed} duplicate relationships")
+        print(f"Added connection counts to {len(nodes)} nodes")
         
         return graph_data
         
