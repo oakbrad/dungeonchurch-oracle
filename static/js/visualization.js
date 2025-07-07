@@ -69,7 +69,9 @@ const node = g.append("g")
 node.append("circle")
     .attr("r", d => {
         // Increase the relative size difference between nodes
-        return d.connections ? 10 + Math.pow(d.connections, 0.8) * 2 : 10;
+        // Store the radius on the data object for later use
+        d.radius = d.connections ? 10 + Math.pow(d.connections, 0.8) * 2 : 10;
+        return d.radius;
     })
     .attr("fill", d => getNodeColor(d))
     .on("mouseover", function(event, d) {
@@ -121,18 +123,31 @@ node.append("circle")
 node.append("text")
     .attr("text-anchor", "middle") // Center text horizontally
     .attr("dominant-baseline", "central") // Center text vertically
-    .text(d => {
-        // Get the node radius for text sizing calculations
-        const radius = d.connections ? 10 + Math.pow(d.connections, 0.8) * 2 : 10;
-        // Adjust truncation based on node size
-        const maxLength = Math.max(1, Math.floor(radius / 3.5));
-        return truncateText(d.title, maxLength);
+    .text(d => d.title) // Use the full title without truncation
+    .each(function(d) {
+        // Calculate appropriate font size to fit text within circle
+        const text = d3.select(this);
+        const radius = d.radius;
+        
+        // Start with a font size proportional to the radius
+        let fontSize = Math.min(radius * 0.7, 16);
+        text.style("font-size", fontSize + "px");
+        
+        // Check if text width exceeds the available space
+        let textWidth = this.getComputedTextLength();
+        const maxWidth = radius * 1.8; // Leave some padding inside the circle
+        
+        // If text is too wide, reduce font size until it fits
+        while (textWidth > maxWidth && fontSize > 4) {
+            fontSize = fontSize - 0.5;
+            text.style("font-size", fontSize + "px");
+            textWidth = this.getComputedTextLength();
+        }
+        
+        // Store the calculated font size on the data object
+        d.fontSize = fontSize;
     })
-    .style("font-size", d => {
-        // Scale font size based on node radius
-        const radius = d.connections ? 10 + Math.pow(d.connections, 0.8) * 2 : 10;
-        return Math.max(8, Math.min(radius * 0.7, 16)) + "px";
-    })
+    .style("font-size", d => d.fontSize + "px") // Apply the calculated font size
     .style("opacity", 0.9)
     .style("pointer-events", "none"); // Ensure text doesn't interfere with mouse events
 
