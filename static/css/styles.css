@@ -14,7 +14,7 @@ body {
     cursor: pointer;
 }
 .node circle {
-    fill: #69b3a2;
+    fill: #333333;
     stroke: #fff;
     stroke-width: 1.5px;
     transition: all 0.3s ease;
@@ -31,7 +31,8 @@ body {
 
 /* Node glow effect */
 .node-highlight circle {
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
+    fill: #ff2600;
 }
 
 /* First-order connection highlighting */
@@ -43,7 +44,12 @@ body {
 
 .node-highlight-first circle {
     stroke: #ffffff;
+    fill: #ffffff;
     stroke-width: 2.5px;
+}
+
+.node-highlight-first text {
+    fill: #000000 !important;
 }
 
 /* Second-order connection highlighting */
@@ -61,6 +67,7 @@ body {
 /* Dimmed nodes and links */
 .node-dimmed circle {
     opacity: 0.2;
+    fill: #ffffff40;
 }
 
 .node-dimmed text {
@@ -68,13 +75,13 @@ body {
 }
 
 .link-dimmed {
-    stroke-opacity: 0.1;
+    stroke-opacity: 0.2;
 }
 
 #search-container {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 25px;
+    left: 25px;
     z-index: 10;
 }
 #search-input {
