@@ -726,7 +726,12 @@ function dragended(event, d) {
 }
 
 function getNodeColor(node) {
-    // Color nodes based on collection
+    // Use the dynamically generated collection colors if available
+    if (typeof collectionColors !== 'undefined' && collectionColors[node.collectionId]) {
+        return collectionColors[node.collectionId];
+    }
+    
+    // Fallback to hardcoded colors if collection colors are not available
     const collections = {
         "13b87098-500c-490d-ae46-01356387fe88": "#ff7f0e", // Adventures
         "7275a3d8-27da-4f63-ac39-a9bc9a1ec6d7": "#1f77b4", // Spells

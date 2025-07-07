@@ -43,8 +43,20 @@ def create_visualization():
     # Copy CSS
     shutil.copy("static/css/styles.css", docs_css_dir / "styles.css")
     
+    # Copy collection colors CSS if it exists
+    collection_colors_css = Path("static/css/collection-colors.css")
+    if collection_colors_css.exists():
+        shutil.copy(collection_colors_css, docs_css_dir / "collection-colors.css")
+        print("Collection colors CSS copied to docs/css/collection-colors.css")
+    
     # Copy visualization.js
     shutil.copy("static/js/visualization.js", docs_js_dir / "visualization.js")
+    
+    # Copy collection colors JS if it exists
+    collection_colors_js = Path("static/js/collection-colors.js")
+    if collection_colors_js.exists():
+        shutil.copy(collection_colors_js, docs_js_dir / "collection-colors.js")
+        print("Collection colors JS copied to docs/js/collection-colors.js")
     
     # Copy index.html
     shutil.copy("static/index.html", docs_dir / "index.html")
@@ -75,4 +87,3 @@ This visualization is automatically updated daily with the latest data from the 
 
 if __name__ == "__main__":
     create_visualization()
-
