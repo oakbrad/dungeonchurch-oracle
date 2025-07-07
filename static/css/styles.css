@@ -58,6 +58,19 @@ body {
     stroke-width: 2px;
 }
 
+/* Dimmed nodes and links */
+.node-dimmed circle {
+    opacity: 0.2;
+}
+
+.node-dimmed text {
+    opacity: 0.2;
+}
+
+.link-dimmed {
+    stroke-opacity: 0.1;
+}
+
 #search-container {
     position: absolute;
     top: 20px;

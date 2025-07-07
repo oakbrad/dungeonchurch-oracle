@@ -87,21 +87,6 @@ node.append("circle")
             firstOrderNodeIds.add(connectedId);
         });
         
-        // Highlight first-order links and nodes
-        link.each(function(l) {
-            const linkElement = d3.select(this);
-            if (l.source.id === d.id || l.target.id === d.id) {
-                linkElement.classed("link-highlight-first", true);
-            }
-        });
-        
-        node.each(function(n) {
-            const nodeElement = d3.select(this);
-            if (firstOrderNodeIds.has(n.id)) {
-                nodeElement.classed("node-highlight-first", true);
-            }
-        });
-        
         // Get second-order connections
         const secondOrderNodeIds = new Set();
         
@@ -122,13 +107,34 @@ node.append("circle")
             });
         });
         
+        // Create sets to track which nodes and links should be highlighted
+        const highlightedNodeIds = new Set([d.id, ...firstOrderNodeIds, ...secondOrderNodeIds]);
+        const highlightedLinkIndices = new Set();
+        
+        // Highlight first-order links and nodes
+        link.each(function(l, i) {
+            const linkElement = d3.select(this);
+            if (l.source.id === d.id || l.target.id === d.id) {
+                linkElement.classed("link-highlight-first", true);
+                highlightedLinkIndices.add(i);
+            }
+        });
+        
+        node.each(function(n) {
+            const nodeElement = d3.select(this);
+            if (firstOrderNodeIds.has(n.id)) {
+                nodeElement.classed("node-highlight-first", true);
+            }
+        });
+        
         // Highlight second-order links and nodes
-        link.each(function(l) {
+        link.each(function(l, i) {
             const linkElement = d3.select(this);
             // If link connects a first-order node to a second-order node
             if ((firstOrderNodeIds.has(l.source.id) && secondOrderNodeIds.has(l.target.id)) || 
                 (firstOrderNodeIds.has(l.target.id) && secondOrderNodeIds.has(l.source.id))) {
                 linkElement.classed("link-highlight-second", true);
+                highlightedLinkIndices.add(i);
             }
         });
         
@@ -138,15 +144,32 @@ node.append("circle")
                 nodeElement.classed("node-highlight-second", true);
             }
         });
+        
+        // Dim all non-highlighted nodes and links
+        node.each(function(n) {
+            const nodeElement = d3.select(this);
+            if (!highlightedNodeIds.has(n.id)) {
+                nodeElement.classed("node-dimmed", true);
+            }
+        });
+        
+        link.each(function(l, i) {
+            const linkElement = d3.select(this);
+            if (!highlightedLinkIndices.has(i)) {
+                linkElement.classed("link-dimmed", true);
+            }
+        });
     })
     .on("mouseout", function() {
-        // Remove all highlight classes
+        // Remove all highlight and dimmed classes
         node.classed("node-highlight", false)
             .classed("node-highlight-first", false)
-            .classed("node-highlight-second", false);
+            .classed("node-highlight-second", false)
+            .classed("node-dimmed", false);
         
         link.classed("link-highlight-first", false)
-            .classed("link-highlight-second", false);
+            .classed("link-highlight-second", false)
+            .classed("link-dimmed", false);
     });
 
 // Add labels to nodes - move inside the circle with improved centering
