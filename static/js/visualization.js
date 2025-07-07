@@ -171,9 +171,20 @@ node.append("circle")
                 .duration(200)
                 .style("opacity", .9);
             
+            // Calculate position to center below the node
+            const nodeX = d.x; // Node's x position in the visualization
+            const nodeY = d.y; // Node's y position in the visualization
+            const radius = d.radius || 10; // Node's radius
+            
+            // Convert node coordinates to screen coordinates
+            const transform = d3.zoomTransform(svg.node());
+            const screenX = transform.applyX(nodeX);
+            const screenY = transform.applyY(nodeY);
+            
+            // Position tooltip centered below the node
             tooltipTruncated.html("<strong>" + d.title + "</strong>")
-                .style("left", (event.pageX + 10) + "px")
-                .style("top", (event.pageY - 28) + "px");
+                .style("left", screenX + "px")
+                .style("top", (screenY + radius + 10) + "px");
         }
     })
     .on("mouseout", function(d) {
