@@ -221,6 +221,8 @@ node.append("circle")
                 // Set the stroke color to the collection color of the connected node
                 const connectedNode = l.source.id === d.id ? l.target : l.source;
                 linkElement.attr("stroke", getNodeColor(connectedNode));
+                // Increase the stroke width to make it look filled
+                linkElement.attr("stroke-width", 4);
                 highlightedLinkIndices.add(i);
             }
         });

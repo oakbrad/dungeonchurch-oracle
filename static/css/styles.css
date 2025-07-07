@@ -44,6 +44,8 @@ body {
 .link-highlight-first {
     stroke-opacity: 0.9;
     stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 .node-highlight-first circle {
@@ -68,7 +70,8 @@ body {
 /* Dimmed nodes and links */
 .node-dimmed circle {
     opacity: 0.1;
-    fill: #666;
+    fill: #666 !important;
+    stroke: #666 !important;
 }
 
 .node-dimmed text {
@@ -78,6 +81,7 @@ body {
 }
 
 .link-dimmed {
+    stroke: #999 !important;
     stroke-opacity: 0.1;
 }
 
