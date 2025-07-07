@@ -18,6 +18,8 @@ This repo automates the creation of [D3js](https://d3js.org/) visualizations bas
 ## Repository Structure
 
 - `data/` - Contains the graph data JSON file
+  - `graph_data.json` - Main graph data with connected nodes
+  - `orphan_data.json` - Orphaned nodes (nodes with 0 connections)
 - `scripts/` - Python scripts for data processing and visualization generation
 - `static/` - Static templates for the visualization (HTML, CSS, JS)
 - `docs/` - Generated files for GitHub Pages deployment (created by scripts, not stored in the repository)
@@ -51,8 +53,10 @@ python scripts/process_relationships.py <path_to_dump_file>
 ```
 1. Restore the PostgreSQL dump file to a temporary database
 2. Extract document relationship data
-3. Save the data as a JSON file in the `data` directory
-4. Drop the temporary database
+3. Identify and remove orphaned nodes (nodes with 0 connections)
+4. Save the main graph data as `graph_data.json` in the `data` directory
+5. Save the orphaned nodes as `orphan_data.json` in the `data` directory
+6. Drop the temporary database
 
 ### Create Visualization
 ```bash
@@ -95,4 +99,3 @@ This repository includes GitHub Actions workflows that:
    - The graph data (`data/graph_data.json`)
    - The static templates (`static/*`)
    - The visualization script (`scripts/create_viz.py`)
-
