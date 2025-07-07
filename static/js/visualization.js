@@ -768,6 +768,12 @@ searchInput.addEventListener("input", function() {
                 // Find the node in the visualization
                 const selectedNode = node;
                 
+                // First clear any existing highlights
+                clearHighlightAndResetZoom();
+                
+                // Set this node as the highlighted node
+                highlightedNode = selectedNode;
+                
                 // Center view on the selected node
                 svg.transition().duration(750).call(
                     zoom.transform,
@@ -776,6 +782,124 @@ searchInput.addEventListener("input", function() {
                         .scale(1)
                         .translate(-selectedNode.x, -selectedNode.y)
                 );
+                
+                // Get first-order connections
+                const firstOrderLinks = graphData.links.filter(link => 
+                    link.source.id === selectedNode.id || link.target.id === selectedNode.id
+                );
+                
+                const firstOrderNodeIds = new Set();
+                firstOrderLinks.forEach(link => {
+                    const connectedId = link.source.id === selectedNode.id ? link.target.id : link.source.id;
+                    firstOrderNodeIds.add(connectedId);
+                });
+                
+                // Get second-order connections
+                const secondOrderNodeIds = new Set();
+                
+                // For each first-order node, find its connections
+                firstOrderNodeIds.forEach(nodeId => {
+                    graphData.links.forEach(link => {
+                        if (link.source.id === nodeId) {
+                            // Don't include the original node or first-order nodes
+                            if (link.target.id !== selectedNode.id && !firstOrderNodeIds.has(link.target.id)) {
+                                secondOrderNodeIds.add(link.target.id);
+                            }
+                        } else if (link.target.id === nodeId) {
+                            // Don't include the original node or first-order nodes
+                            if (link.source.id !== selectedNode.id && !firstOrderNodeIds.has(link.source.id)) {
+                                secondOrderNodeIds.add(link.source.id);
+                            }
+                        }
+                    });
+                });
+                
+                // Create sets to track which nodes and links should be highlighted
+                const highlightedNodeIds = new Set([selectedNode.id, ...firstOrderNodeIds, ...secondOrderNodeIds]);
+                const highlightedLinkIndices = new Set();
+                
+                // Apply the highlight effect
+                // Highlight the selected node
+                node.each(function(n) {
+                    const nodeElement = d3.select(this);
+                    if (n.id === selectedNode.id) {
+                        nodeElement.classed("node-highlight", true);
+                    }
+                });
+                
+                // Highlight first-order links and nodes
+                link.each(function(l, i) {
+                    const linkElement = d3.select(this);
+                    if (l.source.id === selectedNode.id || l.target.id === selectedNode.id) {
+                        linkElement.classed("link-highlight-first", true);
+                        highlightedLinkIndices.add(i);
+                    }
+                });
+                
+                node.each(function(n) {
+                    const nodeElement = d3.select(this);
+                    if (firstOrderNodeIds.has(n.id)) {
+                        nodeElement.classed("node-highlight-first", true);
+                    }
+                });
+                
+                // Highlight second-order links and nodes
+                link.each(function(l, i) {
+                    const linkElement = d3.select(this);
+                    // If link connects a first-order node to a second-order node
+                    if ((firstOrderNodeIds.has(l.source.id) && secondOrderNodeIds.has(l.target.id)) || 
+                        (firstOrderNodeIds.has(l.target.id) && secondOrderNodeIds.has(l.source.id))) {
+                        linkElement.classed("link-highlight-second", true);
+                        highlightedLinkIndices.add(i);
+                    }
+                });
+                
+                node.each(function(n) {
+                    const nodeElement = d3.select(this);
+                    if (secondOrderNodeIds.has(n.id)) {
+                        nodeElement.classed("node-highlight-second", true);
+                    }
+                });
+                
+                // Dim all non-highlighted nodes and links
+                node.each(function(n) {
+                    const nodeElement = d3.select(this);
+                    if (!highlightedNodeIds.has(n.id)) {
+                        nodeElement.classed("node-dimmed", true);
+                    }
+                });
+                
+                link.each(function(l, i) {
+                    const linkElement = d3.select(this);
+                    if (!highlightedLinkIndices.has(i)) {
+                        linkElement.classed("link-dimmed", true);
+                    }
+                });
+                
+                // Show tooltip if the node's title is truncated
+                if (selectedNode.isTruncated) {
+                    tooltipTruncated.transition()
+                        .duration(200)
+                        .style("opacity", .9);
+                    
+                    // Calculate position to center below the node
+                    const nodeX = selectedNode.x; // Node's x position in the visualization
+                    const nodeY = selectedNode.y; // Node's y position in the visualization
+                    const radius = selectedNode.radius || 10; // Node's radius
+                    
+                    // Get current zoom transform
+                    const transform = d3.zoomTransform(svg.node());
+                    
+                    // Convert node coordinates to screen coordinates
+                    const screenX = transform.applyX(nodeX);
+                    const screenY = transform.applyY(nodeY);
+                    
+                    // Position tooltip below the node
+                    tooltipTruncated
+                        .html(selectedNode.title)
+                        .style("left", screenX + "px")
+                        .style("top", (screenY + radius + 10) + "px");
+                }
                 
                 // Clear search
                 searchInput.value = "";
