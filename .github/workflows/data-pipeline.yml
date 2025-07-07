@@ -91,21 +91,46 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          # Check if graph_data.json exists and has changes
+          # Check if graph_data.json or orphan_data.json exist and have changes
+          CHANGES_DETECTED=false
+          
           if [ -f data/graph_data.json ]; then
             git add data/graph_data.json
             
-            # Only commit if there are changes
-            if git diff --staged --quiet; then
-              echo "No changes to graph_data.json"
+            # Check if there are changes to graph_data.json
+            if ! git diff --staged --quiet; then
+              CHANGES_DETECTED=true
+              echo "Changes detected in graph_data.json"
             else
-              git commit -m "Update graph data [skip ci]"
-              git push
-              echo "Updated graph_data.json committed and pushed"
+              echo "No changes to graph_data.json"
             fi
           else
             echo "graph_data.json not found"
             exit 1
+          fi
+          
+          # Check for orphan_data.json
+          if [ -f data/orphan_data.json ]; then
+            git add data/orphan_data.json
+            
+            # Check if there are changes to orphan_data.json
+            if ! git diff --staged --quiet; then
+              CHANGES_DETECTED=true
+              echo "Changes detected in orphan_data.json"
+            else
+              echo "No changes to orphan_data.json"
+            fi
+          else
+            echo "orphan_data.json not found"
+          fi
+          
+          # Commit and push if any changes were detected
+          if [ "$CHANGES_DETECTED" = true ]; then
+            git commit -m "Update graph and orphan data [skip ci]"
+            git push
+            echo "Updated data files committed and pushed"
+          else
+            echo "No changes detected in any data files"
           fi
       
       - name: Clean up dump file
