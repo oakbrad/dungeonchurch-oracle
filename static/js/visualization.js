@@ -22,6 +22,14 @@ const svg = d3.select("#visualization")
     .attr("width", width)
     .attr("height", height);
 
+// Add click handler to SVG to clear highlight state when clicking on the canvas
+svg.on("click", function(event) {
+    // Only handle clicks directly on the SVG, not on nodes or other elements
+    if (event.target === this) {
+        clearHighlightAndResetZoom();
+    }
+});
+
 // Create a group for zoom/pan
 const g = svg.append("g");
 
@@ -36,6 +44,38 @@ svg.call(zoom);
 
 // Center the view initially
 svg.call(zoom.transform, d3.zoomIdentity.translate(width / 2, height / 2).scale(0.5));
+
+// Track the currently highlighted node
+let highlightedNode = null;
+
+// Function to clear highlight state and reset zoom
+function clearHighlightAndResetZoom() {
+    if (highlightedNode) {
+        // Remove all highlight and dimmed classes
+        node.classed("node-highlight", false)
+            .classed("node-highlight-first", false)
+            .classed("node-highlight-second", false)
+            .classed("node-dimmed", false);
+        
+        link.classed("link-highlight-first", false)
+            .classed("link-highlight-second", false)
+            .classed("link-dimmed", false);
+            
+        // Hide tooltip
+        tooltipTruncated.transition()
+            .duration(500)
+            .style("opacity", 0);
+            
+        // Reset the highlighted node tracker
+        highlightedNode = null;
+        
+        // Reset zoom to default center view
+        svg.transition().duration(750).call(
+            zoom.transform,
+            d3.zoomIdentity.translate(width / 2, height / 2).scale(0.5)
+        );
+    }
+}
 
 // Create the force simulation
 const simulation = d3.forceSimulation(graphData.nodes)
@@ -74,7 +114,205 @@ node.append("circle")
         return d.radius;
     })
     .attr("fill", d => getNodeColor(d))
+    .on("click", function(event, d) {
+        // Prevent event from propagating to potential parent elements
+        event.stopPropagation();
+        
+        // Set this node as the highlighted node
+        highlightedNode = d;
+        
+        // Get first-order connections
+        const firstOrderLinks = graphData.links.filter(link => 
+            link.source.id === d.id || link.target.id === d.id
+        );
+        
+        const firstOrderNodeIds = new Set();
+        firstOrderLinks.forEach(link => {
+            const connectedId = link.source.id === d.id ? link.target.id : link.source.id;
+            firstOrderNodeIds.add(connectedId);
+        });
+        
+        // Get all nodes that need to be included in the view
+        const nodesToInclude = [d];
+        firstOrderNodeIds.forEach(nodeId => {
+            const node = graphData.nodes.find(n => n.id === nodeId);
+            if (node) nodesToInclude.push(node);
+        });
+        
+        // Calculate the bounding box for these nodes
+        let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+        nodesToInclude.forEach(node => {
+            minX = Math.min(minX, node.x);
+            minY = Math.min(minY, node.y);
+            maxX = Math.max(maxX, node.x);
+            maxY = Math.max(maxY, node.y);
+        });
+        
+        // Add some padding
+        const padding = 50;
+        minX -= padding;
+        minY -= padding;
+        maxX += padding;
+        maxY += padding;
+        
+        // Calculate the scale and translate to fit this box
+        const boxWidth = maxX - minX;
+        const boxHeight = maxY - minY;
+        const scale = Math.min(width / boxWidth, height / boxHeight) * 0.9;
+        const centerX = (minX + maxX) / 2;
+        const centerY = (minY + maxY) / 2;
+        
+        // Animate the zoom
+        svg.transition().duration(750).call(
+            zoom.transform,
+            d3.zoomIdentity
+                .translate(width / 2, height / 2)
+                .scale(scale)
+                .translate(-centerX, -centerY)
+        );
+        
+        // Apply the highlight effect
+        // Get the current node element
+        const currentNode = d3.select(this.parentNode);
+        
+        // First clear any existing highlights
+        node.classed("node-highlight", false)
+            .classed("node-highlight-first", false)
+            .classed("node-highlight-second", false)
+            .classed("node-dimmed", false);
+        
+        link.classed("link-highlight-first", false)
+            .classed("link-highlight-second", false)
+            .classed("link-dimmed", false);
+        
+        // Add highlight class to the current node
+        currentNode.classed("node-highlight", true);
+        
+        // Get second-order connections
+        const secondOrderNodeIds = new Set();
+        
+        // For each first-order node, find its connections
+        firstOrderNodeIds.forEach(nodeId => {
+            graphData.links.forEach(link => {
+                if (link.source.id === nodeId) {
+                    // Don't include the original node or first-order nodes
+                    if (link.target.id !== d.id && !firstOrderNodeIds.has(link.target.id)) {
+                        secondOrderNodeIds.add(link.target.id);
+                    }
+                } else if (link.target.id === nodeId) {
+                    // Don't include the original node or first-order nodes
+                    if (link.source.id !== d.id && !firstOrderNodeIds.has(link.source.id)) {
+                        secondOrderNodeIds.add(link.source.id);
+                    }
+                }
+            });
+        });
+        
+        // Create sets to track which nodes and links should be highlighted
+        const highlightedNodeIds = new Set([d.id, ...firstOrderNodeIds, ...secondOrderNodeIds]);
+        const highlightedLinkIndices = new Set();
+        
+        // Highlight first-order links and nodes
+        link.each(function(l, i) {
+            const linkElement = d3.select(this);
+            if (l.source.id === d.id || l.target.id === d.id) {
+                linkElement.classed("link-highlight-first", true);
+                highlightedLinkIndices.add(i);
+            }
+        });
+        
+        node.each(function(n) {
+            const nodeElement = d3.select(this);
+            if (firstOrderNodeIds.has(n.id)) {
+                nodeElement.classed("node-highlight-first", true);
+            }
+        });
+        
+        // Highlight second-order links and nodes
+        link.each(function(l, i) {
+            const linkElement = d3.select(this);
+            // If link connects a first-order node to a second-order node
+            if ((firstOrderNodeIds.has(l.source.id) && secondOrderNodeIds.has(l.target.id)) || 
+                (firstOrderNodeIds.has(l.target.id) && secondOrderNodeIds.has(l.source.id))) {
+                linkElement.classed("link-highlight-second", true);
+                highlightedLinkIndices.add(i);
+            }
+        });
+        
+        node.each(function(n) {
+            const nodeElement = d3.select(this);
+            if (secondOrderNodeIds.has(n.id)) {
+                nodeElement.classed("node-highlight-second", true);
+            }
+        });
+        
+        // Dim all non-highlighted nodes and links
+        node.each(function(n) {
+            const nodeElement = d3.select(this);
+            if (!highlightedNodeIds.has(n.id)) {
+                nodeElement.classed("node-dimmed", true);
+            }
+        });
+        
+        link.each(function(l, i) {
+            const linkElement = d3.select(this);
+            if (!highlightedLinkIndices.has(i)) {
+                linkElement.classed("link-dimmed", true);
+            }
+        });
+        
+        // Show tooltip if the node's title is truncated
+        if (d.isTruncated) {
+            tooltipTruncated.transition()
+                .duration(200)
+                .style("opacity", .9);
+            
+            // Calculate position to center below the node
+            const nodeX = d.x; // Node's x position in the visualization
+            const nodeY = d.y; // Node's y position in the visualization
+            const radius = d.radius || 10; // Node's radius
+            
+            // Get current zoom transform
+            const transform = d3.zoomTransform(svg.node());
+            
+            // Convert node coordinates to screen coordinates
+            const screenX = transform.applyX(nodeX);
+            const screenY = transform.applyY(nodeY);
+            
+            // Calculate offset based on zoom level
+            // This ensures the caption maintains a consistent visual distance
+            // regardless of zoom level
+            const zoomScale = transform.k;
+            const verticalOffset = (radius + 10) / zoomScale;
+            
+            // Position tooltip centered below the node
+            // Apply the zoom-adjusted vertical offset to maintain consistent spacing
+            tooltipTruncated.html("<strong>" + d.title + "</strong>")
+                .style("left", screenX + "px")
+                .style("top", transform.applyY(nodeY + verticalOffset) + "px");
+        }
+    })
+    .on("dblclick", function(event, d) {
+        // Prevent event from propagating and prevent default behavior
+        event.stopPropagation();
+        event.preventDefault();
+        
+        // Open the wiki document in a new window
+        if (d.urlId) {
+            window.open(`https://lore.dungeon.church/doc/-${d.urlId}`, '_blank');
+        }
+    })
+    .on("contextmenu", function(event) {
+        // Prevent the default context menu
+        event.preventDefault();
+        
+        // Clear highlight state and reset zoom
+        clearHighlightAndResetZoom();
+    })
     .on("mouseover", function(event, d) {
+        // If we already have a highlighted node, don't do anything on mouseover
+        if (highlightedNode) return;
+        
         // Get the current node element
         const currentNode = d3.select(this.parentNode);
         
@@ -197,6 +435,9 @@ node.append("circle")
         }
     })
     .on("mouseout", function() {
+        // If we have a highlighted node, don't clear highlights on mouseout
+        if (highlightedNode) return;
+        
         // Remove all highlight and dimmed classes
         node.classed("node-highlight", false)
             .classed("node-highlight-first", false)
