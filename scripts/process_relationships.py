@@ -143,21 +143,37 @@ def extract_relationship_data(db_name):
         # Extract nodes
         print("Extracting nodes data")
         cursor.execute("SELECT * FROM graph_nodes")
-        nodes = cursor.fetchall()
+        all_nodes = cursor.fetchall()
         
         # Extract edges
         print("Extracting edges data")
         cursor.execute("SELECT * FROM graph_edges")
-        links = cursor.fetchall()
+        all_links = cursor.fetchall()
         
         cursor.close()
         conn.close()
+        
+        # Filter out nodes from the private collection
+        private_collection_id = "9870bc72-55da-4158-892c-3c54ec9e5828"
+        print(f"Filtering out nodes from private collection: {private_collection_id}")
+        nodes = [node for node in all_nodes if node['collectionId'] != private_collection_id]
+        
+        # Get the IDs of nodes to include
+        node_ids = {node['id'] for node in nodes}
+        
+        # Filter out links that connect to excluded nodes
+        print("Filtering out links connected to private collection nodes")
+        links = [link for link in all_links 
+                if link['source'] in node_ids and link['target'] in node_ids]
         
         # Convert to D3-compatible format
         graph_data = {
             "nodes": [dict(node) for node in nodes],
             "links": [dict(link) for link in links]
         }
+        
+        print(f"Filtered out {len(all_nodes) - len(nodes)} nodes from private collection")
+        print(f"Filtered out {len(all_links) - len(links)} links connected to private collection nodes")
         
         return graph_data
         
