@@ -173,6 +173,28 @@ def extract_relationship_data(db_name):
         links = [link for link in all_links 
                 if link['source'] in node_ids and link['target'] in node_ids]
         
+        # Remove duplicate relationships
+        print("Removing duplicate relationships")
+        unique_links = {}
+        deduplicated_links = []
+        
+        for link in links:
+            # Create a key based on source and target
+            # Sort source and target to treat A->B and B->A as the same relationship
+            source, target = sorted([link['source'], link['target']])
+            key = (source, target)
+            
+            # Only add if we haven't seen this relationship before
+            if key not in unique_links:
+                unique_links[key] = True
+                deduplicated_links.append(link)
+        
+        # Count the number of duplicates removed
+        duplicates_removed = len(links) - len(deduplicated_links)
+        
+        # Replace the original links with deduplicated ones
+        links = deduplicated_links
+        
         # Convert to D3-compatible format
         graph_data = {
             "nodes": [dict(node) for node in nodes],
@@ -180,7 +202,8 @@ def extract_relationship_data(db_name):
         }
         
         print(f"Filtered out {len(all_nodes) - len(nodes)} nodes from excluded collections")
-        print(f"Filtered out {len(all_links) - len(links)} links connected to excluded collection nodes")
+        print(f"Filtered out {len(all_links) - len(links) + duplicates_removed} links connected to excluded collection nodes")
+        print(f"Removed {duplicates_removed} duplicate relationships")
         
         return graph_data
         
