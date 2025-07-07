@@ -119,7 +119,7 @@ node.append("circle")
             .style("opacity", 0);
     });
 
-// Add labels to nodes - move inside the circle with multi-line support
+// Add labels to nodes - move inside the circle with improved multi-line support
 node.append("text")
     .attr("text-anchor", "middle") // Center text horizontally
     .attr("dominant-baseline", "central") // Center text vertically
@@ -128,104 +128,197 @@ node.append("text")
         const radius = d.radius;
         const title = d.title;
         
-        // Initial font size estimate based on radius
-        let fontSize = Math.min(radius * 0.6, 14);
+        // Function to calculate available width at a given vertical offset in a circle
+        function getAvailableWidthAtOffset(radius, yOffset) {
+            // Pythagoras: in a circle, width at offset y from center is 2*sqrt(r²-y²)
+            return 2 * Math.sqrt(Math.max(0, radius * radius - yOffset * yOffset));
+        }
         
-        // Function to create tspans for multi-line text
-        function createMultiLineText(text, title, fontSize, maxLines) {
+        // Function to fit text in the circle
+        function fitTextInCircle(text, title, radius) {
             text.selectAll("*").remove(); // Clear any existing content
-            text.style("font-size", fontSize + "px");
             
-            // Split text into words
-            const words = title.split(/\s+/);
-            const lines = [];
-            let currentLine = [];
+            // Constants for text fitting
+            const minFontSize = 6;
+            const maxFontSize = Math.min(radius * 0.6, 14);
+            const maxLines = Math.min(5, Math.max(1, Math.floor(radius / 6)));
+            const padding = 2; // Padding inside the circle
             
-            // Create a temporary text element to measure text width
-            const tempText = text.append("tspan").style("opacity", 0);
+            // Start with maximum font size and single line
+            let fontSize = maxFontSize;
+            let lineCount = 1;
+            let shouldTruncate = false;
             
-            // Calculate available width (accounting for circular shape)
-            const availableWidth = radius * 1.8;
-            
-            // Group words into lines
-            words.forEach(word => {
-                currentLine.push(word);
-                tempText.text(currentLine.join(" "));
-                if (tempText.node().getComputedTextLength() > availableWidth && currentLine.length > 1) {
-                    // Remove the last word if the line is too long
-                    currentLine.pop();
-                    lines.push(currentLine.join(" "));
-                    currentLine = [word];
+            // Try different configurations until text fits
+            while (fontSize >= minFontSize) {
+                // Set font size for measurement
+                text.style("font-size", fontSize + "px");
+                
+                // Calculate line height based on font size
+                const lineHeight = fontSize * 1.2;
+                
+                // Calculate total height for current line count
+                const totalTextHeight = lineHeight * lineCount;
+                
+                // Check if total height exceeds available height with padding
+                if (totalTextHeight > (radius * 2 - padding * 2)) {
+                    // If we can't reduce font size further, we need to truncate
+                    if (fontSize <= minFontSize) {
+                        shouldTruncate = true;
+                        break;
+                    }
+                    
+                    // Try smaller font size
+                    fontSize -= 0.5;
+                    continue;
                 }
-            });
-            
-            // Add the last line
-            if (currentLine.length > 0) {
-                lines.push(currentLine.join(" "));
+                
+                // Split text into words
+                const words = title.split(/\s+/);
+                
+                // Try to fit text with current font size and line count
+                const lines = [];
+                let currentLine = [];
+                let success = true;
+                
+                // Create a temporary text element to measure text width
+                const tempText = text.append("tspan").style("opacity", 0);
+                
+                // Calculate vertical positions for lines
+                const verticalPositions = [];
+                for (let i = 0; i < lineCount; i++) {
+                    // Calculate y-offset from center for this line
+                    const yOffset = (i - (lineCount - 1) / 2) * lineHeight;
+                    verticalPositions.push(yOffset);
+                    
+                    // Calculate available width at this vertical position
+                    const availableWidth = getAvailableWidthAtOffset(radius - padding, yOffset) - padding * 2;
+                    
+                    // Try to fit words on this line
+                    while (words.length > 0) {
+                        currentLine.push(words[0]);
+                        tempText.text(currentLine.join(" "));
+                        
+                        if (tempText.node().getComputedTextLength() > availableWidth) {
+                            // If even a single word doesn't fit on an empty line
+                            if (currentLine.length === 1) {
+                                // If we can add more lines, try that
+                                if (lineCount < maxLines) {
+                                    success = false;
+                                    break;
+                                } else if (fontSize > minFontSize) {
+                                    // Try smaller font
+                                    success = false;
+                                    break;
+                                } else {
+                                    // We need to truncate this word
+                                    let truncatedWord = currentLine[0];
+                                    while (truncatedWord.length > 3) {
+                                        truncatedWord = truncatedWord.slice(0, -1);
+                                        tempText.text(truncatedWord + "...");
+                                        if (tempText.node().getComputedTextLength() <= availableWidth) {
+                                            currentLine[0] = truncatedWord + "...";
+                                            break;
+                                        }
+                                    }
+                                }
+                            } else {
+                                // Remove the last word that didn't fit
+                                currentLine.pop();
+                            }
+                            
+                            // Add current line to lines array
+                            lines.push(currentLine.join(" "));
+                            currentLine = [];
+                            break;
+                        }
+                        
+                        // Word fits, remove it from words array
+                        words.shift();
+                        
+                        // If we've used all words, add the current line
+                        if (words.length === 0) {
+                            lines.push(currentLine.join(" "));
+                            break;
+                        }
+                    }
+                    
+                    // If we couldn't fit text with current configuration
+                    if (!success) break;
+                    
+                    // If we've used all words, we're done
+                    if (words.length === 0) break;
+                }
+                
+                // Remove temporary element
+                tempText.remove();
+                
+                // If we have remaining words, we need more lines or smaller font
+                if (words.length > 0) {
+                    if (lineCount < maxLines) {
+                        // Try more lines
+                        lineCount++;
+                    } else if (fontSize > minFontSize) {
+                        // Try smaller font
+                        fontSize -= 0.5;
+                    } else {
+                        // We need to truncate
+                        shouldTruncate = true;
+                        break;
+                    }
+                    continue;
+                }
+                
+                // If we've successfully fit all text, create the tspans
+                if (success) {
+                    // Create tspans for each line
+                    lines.forEach((line, i) => {
+                        if (i < verticalPositions.length) {
+                            text.append("tspan")
+                                .attr("x", 0)
+                                .attr("y", verticalPositions[i])
+                                .attr("dy", "0.35em")
+                                .text(line);
+                        }
+                    });
+                    return true;
+                }
             }
             
-            // Remove temporary element
-            tempText.remove();
-            
-            // If we have too many lines, try with fewer lines
-            if (lines.length > maxLines) {
-                return false;
-            }
-            
-            // Create tspans for each line
-            const lineHeight = fontSize * 1.2; // Line height based on font size
-            const totalHeight = lineHeight * lines.length;
-            
-            // Check if total height fits within the circle
-            if (totalHeight > radius * 1.8) {
-                return false;
-            }
-            
-            // Calculate vertical offset to center all lines
-            const startY = -(lineHeight * (lines.length - 1)) / 2;
-            
-            // Create tspans for each line
-            lines.forEach((line, i) => {
+            // If we need to truncate, create a single line with ellipsis
+            if (shouldTruncate) {
+                text.style("font-size", minFontSize + "px");
+                
+                // Calculate available width at center
+                const availableWidth = getAvailableWidthAtOffset(radius - padding, 0) - padding * 2;
+                
+                // Truncate text to fit
+                let truncatedText = title;
+                const tempText = text.append("tspan").style("opacity", 0);
+                
+                tempText.text(truncatedText);
+                while (tempText.node().getComputedTextLength() > availableWidth && truncatedText.length > 3) {
+                    truncatedText = truncatedText.slice(0, -1);
+                    tempText.text(truncatedText + "...");
+                }
+                
+                tempText.remove();
+                
+                // Add truncated text
                 text.append("tspan")
                     .attr("x", 0)
-                    .attr("y", startY + i * lineHeight)
-                    .attr("dy", "0.35em")
-                    .text(line);
-            });
+                    .attr("y", 0)
+                    .text(truncatedText + (truncatedText.length < title.length ? "..." : ""));
+            }
             
             return true;
         }
         
-        // Try different font sizes and line counts to find optimal configuration
-        let success = false;
-        let maxLines = Math.max(1, Math.floor(radius / 8)); // Estimate max lines based on radius
+        // Fit the text in the circle
+        fitTextInCircle(text, title, radius);
         
-        // Try with different line counts, starting from the maximum
-        while (!success && fontSize >= 6) {
-            success = createMultiLineText(text, title, fontSize, maxLines);
-            if (!success) {
-                // If not successful, reduce font size or increase max lines
-                if (maxLines < Math.min(5, Math.floor(radius / 6))) {
-                    maxLines++;
-                } else {
-                    fontSize -= 0.5;
-                    maxLines = Math.max(1, Math.floor(radius / 8)); // Reset max lines
-                }
-            }
-        }
-        
-        // If we still couldn't fit the text, use a single line with minimum font size
-        if (!success) {
-            text.selectAll("*").remove();
-            text.style("font-size", "6px")
-                .append("tspan")
-                .attr("x", 0)
-                .attr("y", 0)
-                .text(title);
-        }
-        
-        // Store the calculated font size on the data object
-        d.fontSize = fontSize;
+        // Store the font size on the data object
+        d.fontSize = parseFloat(text.style("font-size"));
     })
     .style("opacity", 0.9)
     .style("pointer-events", "none"); // Ensure text doesn't interfere with mouse events
