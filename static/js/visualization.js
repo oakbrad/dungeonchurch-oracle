@@ -26,6 +26,8 @@ const svg = d3.select("#visualization")
 svg.on("click", function(event) {
     // Only handle clicks directly on the SVG, not on nodes or other elements
     if (event.target === this) {
+        // Hide any existing tooltips immediately without transition
+        hideTooltipImmediately();
         clearHighlightAndResetZoom();
     }
 });
@@ -38,6 +40,11 @@ const zoom = d3.zoom()
     .scaleExtent([0.1, 8])
     .on("zoom", (event) => {
         g.attr("transform", event.transform);
+        
+        // Update tooltip position if it's visible and we have a highlighted node
+        if (parseFloat(tooltipTruncated.style("opacity")) > 0 && highlightedNode) {
+            updateTooltipPosition(highlightedNode, event.transform);
+        }
     });
 
 svg.call(zoom);
@@ -48,7 +55,61 @@ svg.call(zoom.transform, d3.zoomIdentity.translate(width / 2, height / 2).scale(
 // Track the currently highlighted node
 let highlightedNode = null;
 
-// Track animation frames for drift animation
+// Function to update tooltip position
+function updateTooltipPosition(d, transform) {
+    if (!d || !d.isTruncated) return;
+    
+    const nodeX = d.x;
+    const nodeY = d.y;
+    const radius = d.radius || 10;
+    
+    // If no transform is provided, get the current one
+    if (!transform) {
+        transform = d3.zoomTransform(svg.node());
+    }
+    
+    // Convert node coordinates to screen coordinates
+    const screenX = transform.applyX(nodeX);
+    const screenY = transform.applyY(nodeY);
+    
+    // Calculate vertical offset based on node radius and zoom level
+    // This ensures the tooltip is always positioned right under the node
+    const zoomScale = transform.k;
+    const verticalOffset = radius * zoomScale + 5; // 5px additional padding
+    
+    // Position tooltip centered below the node
+    tooltipTruncated
+        .style("left", screenX + "px")
+        .style("top", (screenY + verticalOffset) + "px");
+}
+
+// Function to show tooltip
+function showTooltip(d, transform) {
+    if (!d || !d.isTruncated) return;
+    
+    // Update tooltip content
+    tooltipTruncated.html("<strong>" + d.title + "</strong>");
+    
+    // Show the tooltip with transition
+    tooltipTruncated.transition()
+        .duration(200)
+        .style("opacity", 0.9);
+    
+    // Position the tooltip
+    updateTooltipPosition(d, transform);
+}
+
+// Function to hide tooltip
+function hideTooltip() {
+    tooltipTruncated.transition()
+        .duration(200)
+        .style("opacity", 0);
+}
+
+// Function to hide tooltip immediately without transition
+function hideTooltipImmediately() {
+    tooltipTruncated.style("opacity", 0);
+}
 
 // Function to clear highlight state and reset zoom
 function clearHighlightAndResetZoom() {
@@ -63,10 +124,8 @@ function clearHighlightAndResetZoom() {
             .classed("link-highlight-second", false)
             .classed("link-dimmed", false);
             
-        // Hide tooltip
-        tooltipTruncated.transition()
-            .duration(500)
-            .style("opacity", 0);
+        // Hide tooltip immediately without transition
+        hideTooltipImmediately();
             
         // Reset the highlighted node tracker
         highlightedNode = null;
@@ -84,14 +143,11 @@ function clearHighlightAndResetZoom() {
     }
 }
 
-// Function to perform zoom with tween animation
-
-// Function to apply drift animation to dimmed nodes
-
-// Function to stop drift animation
-
 // Function to highlight and zoom to a node
 function highlightAndZoomToNode(d) {
+    // Hide any existing tooltips immediately without transition
+    hideTooltipImmediately();
+    
     // Set this node as the highlighted node
     highlightedNode = d;
     
@@ -244,39 +300,20 @@ function highlightAndZoomToNode(d) {
             
             // 3. Raise the highlighted node to the top
             currentNode.raise();
+            
+            // Show tooltip if the node's title is truncated
+            if (d.isTruncated) {
+                // Get the final transform after animation
+                const finalTransform = d3.zoomTransform(svg.node());
+                showTooltip(d, finalTransform);
+            }
        });
-    
-    // Start drift animation for dimmed nodes
     
     // Show tooltip if the node's title is truncated
     if (d.isTruncated) {
-        tooltipTruncated.transition()
-            .duration(200)
-            .style("opacity", .9);
-        
-        // Calculate position to center below the node
-        const nodeX = d.x; // Node's x position in the visualization
-        const nodeY = d.y; // Node's y position in the visualization
-        const radius = d.radius || 10; // Node's radius
-        
-        // Get current zoom transform
-        const transform = d3.zoomTransform(svg.node());
-        
-        // Convert node coordinates to screen coordinates
-        const screenX = transform.applyX(nodeX);
-        const screenY = transform.applyY(nodeY);
-        
-        // Calculate offset based on zoom level
-        // This ensures the caption maintains a consistent visual distance
-        // regardless of zoom level
-        const zoomScale = transform.k;
-        const verticalOffset = (radius + 10) / zoomScale;
-        
-        // Position tooltip centered below the node
-        // Apply the zoom-adjusted vertical offset to maintain consistent spacing
-        tooltipTruncated.html("<strong>" + d.title + "</strong>")
-            .style("left", screenX + "px")
-            .style("top", (screenY + verticalOffset) + "px");
+        // Note: We don't show the tooltip here anymore
+        // It will be shown in the "end" event of the zoom transition
+        // This ensures the tooltip is positioned correctly after the zoom animation
     }
 }
 
@@ -323,8 +360,16 @@ node.append("circle")
         // Prevent event from propagating to potential parent elements
         event.stopPropagation();
         
-        // Use the shared function to highlight and zoom to the node
-        highlightAndZoomToNode(d);
+        // Hide any existing tooltips immediately without transition
+        hideTooltipImmediately();
+        
+        // If this node is already highlighted, clear the highlight
+        if (highlightedNode === d) {
+            clearHighlightAndResetZoom();
+        } else {
+            // Otherwise, highlight and zoom to this node
+            highlightAndZoomToNode(d);
+        }
     })
     .on("dblclick", function(event, d) {
         // Prevent event from propagating and prevent default behavior
@@ -345,172 +390,134 @@ node.append("circle")
     })
     .on("mouseover", function(event, d) {
         // If we already have a highlighted node, don't do anything on mouseover
-        if (highlightedNode) return;
+        // unless it's the highlighted node itself (to ensure tooltip shows correctly)
+        if (highlightedNode && highlightedNode !== d) return;
         
         // Get the current node element
         const currentNode = d3.select(this.parentNode);
         
-        // Add highlight class to the current node
-        currentNode.classed("node-highlight", true);
-        
-        // Get first-order connections
-        const firstOrderLinks = graphData.links.filter(link => 
-            link.source.id === d.id || link.target.id === d.id
-        );
-        
-        const firstOrderNodeIds = new Set();
-        firstOrderLinks.forEach(link => {
-            const connectedId = link.source.id === d.id ? link.target.id : link.source.id;
-            firstOrderNodeIds.add(connectedId);
-        });
-        
-        // Get second-order connections
-        const secondOrderNodeIds = new Set();
-        
-        // For each first-order node, find its connections
-        firstOrderNodeIds.forEach(nodeId => {
-            graphData.links.forEach(link => {
-                if (link.source.id === nodeId) {
-                    // Don't include the original node or first-order nodes
-                    if (link.target.id !== d.id && !firstOrderNodeIds.has(link.target.id)) {
-                        secondOrderNodeIds.add(link.target.id);
+        // If no node is highlighted, add temporary highlight class
+        if (!highlightedNode) {
+            // Add highlight class to the current node
+            currentNode.classed("node-highlight", true);
+            
+            // Get first-order connections
+            const firstOrderLinks = graphData.links.filter(link => 
+                link.source.id === d.id || link.target.id === d.id
+            );
+            
+            const firstOrderNodeIds = new Set();
+            firstOrderLinks.forEach(link => {
+                const connectedId = link.source.id === d.id ? link.target.id : link.source.id;
+                firstOrderNodeIds.add(connectedId);
+            });
+            
+            // Get second-order connections
+            const secondOrderNodeIds = new Set();
+            
+            // For each first-order node, find its connections
+            firstOrderNodeIds.forEach(nodeId => {
+                graphData.links.forEach(link => {
+                    if (link.source.id === nodeId) {
+                        // Don't include the original node or first-order nodes
+                        if (link.target.id !== d.id && !firstOrderNodeIds.has(link.target.id)) {
+                            secondOrderNodeIds.add(link.target.id);
+                        }
+                    } else if (link.target.id === nodeId) {
+                        // Don't include the original node or first-order nodes
+                        if (link.source.id !== d.id && !firstOrderNodeIds.has(link.source.id)) {
+                            secondOrderNodeIds.add(link.source.id);
+                        }
                     }
-                } else if (link.target.id === nodeId) {
-                    // Don't include the original node or first-order nodes
-                    if (link.source.id !== d.id && !firstOrderNodeIds.has(link.source.id)) {
-                        secondOrderNodeIds.add(link.source.id);
-                    }
+                });
+            });
+            
+            // Create sets to track which nodes and links should be highlighted
+            const highlightedNodeIds = new Set([d.id, ...firstOrderNodeIds, ...secondOrderNodeIds]);
+            const highlightedLinkIndices = new Set();
+            
+            // Highlight first-order links and nodes
+            link.each(function(l, i) {
+                const linkElement = d3.select(this);
+                if (l.source.id === d.id || l.target.id === d.id) {
+                    linkElement.classed("link-highlight-first", true);
+                    highlightedLinkIndices.add(i);
                 }
             });
-        });
-        
-        // Create sets to track which nodes and links should be highlighted
-        const highlightedNodeIds = new Set([d.id, ...firstOrderNodeIds, ...secondOrderNodeIds]);
-        const highlightedLinkIndices = new Set();
-        
-        // Highlight first-order links and nodes
-        link.each(function(l, i) {
-            const linkElement = d3.select(this);
-            if (l.source.id === d.id || l.target.id === d.id) {
-                linkElement.classed("link-highlight-first", true);
-                highlightedLinkIndices.add(i);
-            }
-        });
-        
-        node.each(function(n) {
-            const nodeElement = d3.select(this);
-            if (firstOrderNodeIds.has(n.id)) {
-                nodeElement.classed("node-highlight-first", true);
-            }
-        });
-        
-        // Highlight second-order links and nodes
-        link.each(function(l, i) {
-            const linkElement = d3.select(this);
-            // If link connects a first-order node to a second-order node
-            if ((firstOrderNodeIds.has(l.source.id) && secondOrderNodeIds.has(l.target.id)) || 
-                (firstOrderNodeIds.has(l.target.id) && secondOrderNodeIds.has(l.source.id))) {
-                linkElement.classed("link-highlight-second", true);
-                highlightedLinkIndices.add(i);
-            }
-        });
-        
-        node.each(function(n) {
-            const nodeElement = d3.select(this);
-            if (secondOrderNodeIds.has(n.id)) {
-                nodeElement.classed("node-highlight-second", true);
-            }
-        });
-        
-        // Dim all non-highlighted nodes and links
-        node.each(function(n) {
-            const nodeElement = d3.select(this);
-            if (!highlightedNodeIds.has(n.id)) {
-                nodeElement.classed("node-dimmed", true);
-            }
-        });
-        
-        link.each(function(l, i) {
-            const linkElement = d3.select(this);
-            if (!highlightedLinkIndices.has(i)) {
-                linkElement.classed("link-dimmed", true);
-            }
-        });
-        
-        // Wait for CSS transitions to complete before reordering
-        // The longest transition in the CSS is 0.5s (500ms)
-        setTimeout(() => {
-            // Reorder elements for proper rendering AFTER the transitions complete
-            // First, lower all elements to the back
-            node.lower();
-            link.lower();
             
-            // Then raise elements in order of importance
-            // 1. Raise second-order connections
-            link.filter(".link-highlight-second").raise();
-            node.filter(".node-highlight-second").raise();
+            node.each(function(n) {
+                const nodeElement = d3.select(this);
+                if (firstOrderNodeIds.has(n.id)) {
+                    nodeElement.classed("node-highlight-first", true);
+                }
+            });
             
-            // 2. Raise first-order connections
-            link.filter(".link-highlight-first").raise();
-            node.filter(".node-highlight-first").raise();
+            // Highlight second-order links and nodes
+            link.each(function(l, i) {
+                const linkElement = d3.select(this);
+                // If link connects a first-order node to a second-order node
+                if ((firstOrderNodeIds.has(l.source.id) && secondOrderNodeIds.has(l.target.id)) || 
+                    (firstOrderNodeIds.has(l.target.id) && secondOrderNodeIds.has(l.source.id))) {
+                    linkElement.classed("link-highlight-second", true);
+                    highlightedLinkIndices.add(i);
+                }
+            });
             
-            // 3. Raise the highlighted node to the top
-            currentNode.raise();
-        }, 500); // Wait for 500ms to match the longest CSS transition
+            node.each(function(n) {
+                const nodeElement = d3.select(this);
+                if (secondOrderNodeIds.has(n.id)) {
+                    nodeElement.classed("node-highlight-second", true);
+                }
+            });
+            
+            // Dim all non-highlighted nodes and links
+            node.each(function(n) {
+                const nodeElement = d3.select(this);
+                if (!highlightedNodeIds.has(n.id)) {
+                    nodeElement.classed("node-dimmed", true);
+                }
+            });
+            
+            link.each(function(l, i) {
+                const linkElement = d3.select(this);
+                if (!highlightedLinkIndices.has(i)) {
+                    linkElement.classed("link-dimmed", true);
+                }
+            });
+        }
         
         // Show tooltip if the node's title is truncated
         if (d.isTruncated) {
-            tooltipTruncated.transition()
-                .duration(200)
-                .style("opacity", .9);
-            
-            // Calculate position to center below the node
-            const nodeX = d.x; // Node's x position in the visualization
-            const nodeY = d.y; // Node's y position in the visualization
-            const radius = d.radius || 10; // Node's radius
-            
-            // Get current zoom transform
+            // Get current transform
             const transform = d3.zoomTransform(svg.node());
-            
-            // Convert node coordinates to screen coordinates
-            const screenX = transform.applyX(nodeX);
-            const screenY = transform.applyY(nodeY);
-            
-            // Calculate offset based on zoom level
-            // This ensures the caption maintains a consistent visual distance
-            // regardless of zoom level
-            const zoomScale = transform.k;
-            const verticalOffset = (radius + 10) / zoomScale;
-            
-            // Position tooltip centered below the node
-            // Apply the zoom-adjusted vertical offset to maintain consistent spacing
-            tooltipTruncated.html("<strong>" + d.title + "</strong>")
-                .style("left", screenX + "px")
-                .style("top", transform.applyY(nodeY + verticalOffset) + "px");
+            showTooltip(d, transform);
         }
     })
-    .on("mouseout", function() {
+    .on("mouseout", function(event, d) {
         // If we have a highlighted node, don't clear highlights on mouseout
-        if (highlightedNode) return;
+        // unless it's the highlighted node itself (to ensure proper tooltip behavior)
+        if (highlightedNode && highlightedNode !== d) return;
         
-        // Remove all highlight and dimmed classes
-        node.classed("node-highlight", false)
-            .classed("node-highlight-first", false)
-            .classed("node-highlight-second", false)
-            .classed("node-dimmed", false);
-        
-        link.classed("link-highlight-first", false)
-            .classed("link-highlight-second", false)
-            .classed("link-dimmed", false);
+        if (!highlightedNode) {
+            // Remove all highlight and dimmed classes
+            node.classed("node-highlight", false)
+                .classed("node-highlight-first", false)
+                .classed("node-highlight-second", false)
+                .classed("node-dimmed", false);
             
-        // Reset the rendering order
-        node.order();
-        link.order();
+            link.classed("link-highlight-first", false)
+                .classed("link-highlight-second", false)
+                .classed("link-dimmed", false);
+                
+            // Reset the rendering order
+            node.order();
+            link.order();
+        }
             
-        // Hide tooltip
-        tooltipTruncated.transition()
-            .duration(500)
-            .style("opacity", 0);
+        // Hide tooltip only if we're not in highlight mode or if this is the highlighted node
+        if (!highlightedNode || highlightedNode === d) {
+            hideTooltip();
+        }
     });
 
 // Add labels to nodes - move inside the circle with improved centering
