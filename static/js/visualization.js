@@ -120,6 +120,13 @@ function clearHighlightAndResetZoom() {
             .classed("node-highlight-second", false)
             .classed("node-dimmed", false);
         
+        // Remove all collection-specific classes
+        graphData.nodes.forEach(n => {
+            if (n.collectionId) {
+                node.classed(`collection-${n.collectionId}`, false);
+            }
+        });
+        
         link.classed("link-highlight-first", false)
             .classed("link-highlight-second", false)
             .classed("link-dimmed", false);
@@ -198,6 +205,13 @@ function highlightAndZoomToNode(d) {
         .classed("node-highlight-second", false)
         .classed("node-dimmed", false);
     
+    // Remove all collection-specific classes
+    graphData.nodes.forEach(n => {
+        if (n.collectionId) {
+            node.classed(`collection-${n.collectionId}`, false);
+        }
+    });
+    
     link.classed("link-highlight-first", false)
         .classed("link-highlight-second", false)
         .classed("link-dimmed", false);
@@ -232,19 +246,24 @@ function highlightAndZoomToNode(d) {
     const highlightedNodeIds = new Set([d.id, ...firstOrderNodeIds, ...secondOrderNodeIds]);
     const highlightedLinkIndices = new Set();
     
+    // Highlight first-order connections
+    firstOrderNodeIds.forEach(nodeId => {
+        const nodeElement = node.filter(n => n.id === nodeId);
+        nodeElement.classed("node-highlight-first", true);
+        
+        // Add collection-specific class for styling
+        const nodeData = nodeMap.get(nodeId);
+        if (nodeData && nodeData.collectionId) {
+            nodeElement.classed(`collection-${nodeData.collectionId}`, true);
+        }
+    });
+
     // Highlight first-order links and nodes
     link.each(function(l, i) {
         const linkElement = d3.select(this);
         if (l.source.id === d.id || l.target.id === d.id) {
             linkElement.classed("link-highlight-first", true);
             highlightedLinkIndices.add(i);
-        }
-    });
-    
-    node.each(function(n) {
-        const nodeElement = d3.select(this);
-        if (firstOrderNodeIds.has(n.id)) {
-            nodeElement.classed("node-highlight-first", true);
         }
     });
     
@@ -449,6 +468,11 @@ node.append("circle")
                 const nodeElement = d3.select(this);
                 if (firstOrderNodeIds.has(n.id)) {
                     nodeElement.classed("node-highlight-first", true);
+                    
+                    // Add collection-specific class for styling
+                    if (n.collectionId) {
+                        nodeElement.classed(`collection-${n.collectionId}`, true);
+                    }
                 }
             });
             
@@ -504,6 +528,13 @@ node.append("circle")
                 .classed("node-highlight-first", false)
                 .classed("node-highlight-second", false)
                 .classed("node-dimmed", false);
+            
+            // Remove all collection-specific classes
+            graphData.nodes.forEach(n => {
+                if (n.collectionId) {
+                    node.classed(`collection-${n.collectionId}`, false);
+                }
+            });
             
             link.classed("link-highlight-first", false)
                 .classed("link-highlight-second", false)
