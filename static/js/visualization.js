@@ -241,9 +241,17 @@ function highlightAndZoomToNode(d) {
         }
     });
     
+    // Set CSS variable for collection color on first-order nodes
     node.each(function(n) {
         const nodeElement = d3.select(this);
         if (firstOrderNodeIds.has(n.id)) {
+            // Get the collection color for this node
+            const collectionColor = typeof collectionColors !== 'undefined' && 
+                                   collectionColors[n.collectionId] ? 
+                                   collectionColors[n.collectionId] : '#ff2600';
+            
+            // Set the CSS variable for this node
+            nodeElement.style("--current-collection-color", collectionColor);
             nodeElement.classed("node-highlight-first", true);
         }
     });

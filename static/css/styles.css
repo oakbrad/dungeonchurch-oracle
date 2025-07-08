@@ -54,7 +54,8 @@ body {
 
 .node-highlight-first circle {
     stroke: #ffffff;
-    fill: #ff2600;
+    /* Use collection color from the node's data attribute, with #ff2600 as fallback */
+    fill: var(--current-collection-color, #ff2600);
     stroke-width: 2.5px;
     transform: scale(125%,125%);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
