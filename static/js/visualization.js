@@ -76,6 +76,11 @@ function clearHighlightAndResetZoom() {
             zoom.transform,
             d3.zoomIdentity.translate(width / 2, height / 2).scale(0.5)
         );
+        
+        // Reset the rendering order by reappending all nodes and links
+        // This effectively resets them to their original order in the DOM
+        node.order();
+        link.order();
     }
 }
 
@@ -130,15 +135,6 @@ function highlightAndZoomToNode(d) {
     const scale = Math.min(width / boxWidth, height / boxHeight) * 0.9;
     const centerX = (minX + maxX) / 2;
     const centerY = (minY + maxY) / 2;
-    
-    // Animate the zoom
-    svg.transition().duration(750).call(
-        zoom.transform,
-        d3.zoomIdentity
-            .translate(width / 2, height / 2)
-            .scale(scale)
-            .translate(-centerX, -centerY)
-    );
     
     // First clear any existing highlights
     node.classed("node-highlight", false)
@@ -215,11 +211,40 @@ function highlightAndZoomToNode(d) {
     });
     
     // Dim all non-highlighted nodes and links
-    node.filter(n => !nodeHighlightSet.has(n.id))
+    node.filter(n => !highlightedNodeIds.has(n.id))
         .classed("node-dimmed", true);
     
-    link.filter(l => !linkHighlightSet.has(l.index))
+    link.filter((l, i) => !highlightedLinkIndices.has(i))
         .classed("link-dimmed", true);
+    
+    // Animate the zoom
+    svg.transition()
+       .duration(750)
+       .call(
+            zoom.transform,
+            d3.zoomIdentity
+                .translate(width / 2, height / 2)
+                .scale(scale)
+                .translate(-centerX, -centerY)
+        )
+       .on("end", function() {
+            // Reorder elements for proper rendering AFTER the animation completes
+            // First, lower all elements to the back
+            node.lower();
+            link.lower();
+            
+            // Then raise elements in order of importance
+            // 1. Raise second-order connections
+            link.filter(".link-highlight-second").raise();
+            node.filter(".node-highlight-second").raise();
+            
+            // 2. Raise first-order connections
+            link.filter(".link-highlight-first").raise();
+            node.filter(".node-highlight-first").raise();
+            
+            // 3. Raise the highlighted node to the top
+            currentNode.raise();
+       });
     
     // Start drift animation for dimmed nodes
     
@@ -412,6 +437,27 @@ node.append("circle")
             }
         });
         
+        // Wait for CSS transitions to complete before reordering
+        // The longest transition in the CSS is 0.5s (500ms)
+        setTimeout(() => {
+            // Reorder elements for proper rendering AFTER the transitions complete
+            // First, lower all elements to the back
+            node.lower();
+            link.lower();
+            
+            // Then raise elements in order of importance
+            // 1. Raise second-order connections
+            link.filter(".link-highlight-second").raise();
+            node.filter(".node-highlight-second").raise();
+            
+            // 2. Raise first-order connections
+            link.filter(".link-highlight-first").raise();
+            node.filter(".node-highlight-first").raise();
+            
+            // 3. Raise the highlighted node to the top
+            currentNode.raise();
+        }, 500); // Wait for 500ms to match the longest CSS transition
+        
         // Show tooltip if the node's title is truncated
         if (d.isTruncated) {
             tooltipTruncated.transition()
@@ -456,6 +502,10 @@ node.append("circle")
         link.classed("link-highlight-first", false)
             .classed("link-highlight-second", false)
             .classed("link-dimmed", false);
+            
+        // Reset the rendering order
+        node.order();
+        link.order();
             
         // Hide tooltip
         tooltipTruncated.transition()
