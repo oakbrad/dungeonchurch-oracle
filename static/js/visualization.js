@@ -437,22 +437,26 @@ node.append("circle")
             }
         });
         
-        // Reorder elements for proper rendering
-        // First, lower all elements to the back
-        node.lower();
-        link.lower();
-        
-        // Then raise elements in order of importance
-        // 1. Raise second-order connections
-        link.filter(".link-highlight-second").raise();
-        node.filter(".node-highlight-second").raise();
-        
-        // 2. Raise first-order connections
-        link.filter(".link-highlight-first").raise();
-        node.filter(".node-highlight-first").raise();
-        
-        // 3. Raise the highlighted node to the top
-        currentNode.raise();
+        // Wait for CSS transitions to complete before reordering
+        // The longest transition in the CSS is 0.5s (500ms)
+        setTimeout(() => {
+            // Reorder elements for proper rendering AFTER the transitions complete
+            // First, lower all elements to the back
+            node.lower();
+            link.lower();
+            
+            // Then raise elements in order of importance
+            // 1. Raise second-order connections
+            link.filter(".link-highlight-second").raise();
+            node.filter(".node-highlight-second").raise();
+            
+            // 2. Raise first-order connections
+            link.filter(".link-highlight-first").raise();
+            node.filter(".node-highlight-first").raise();
+            
+            // 3. Raise the highlighted node to the top
+            currentNode.raise();
+        }, 500); // Wait for 500ms to match the longest CSS transition
         
         // Show tooltip if the node's title is truncated
         if (d.isTruncated) {
