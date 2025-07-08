@@ -33,6 +33,9 @@ svg.on("click", function(event) {
 // Create a group for zoom/pan
 const g = svg.append("g");
 
+// Add CSS class to enable z-index on SVG elements
+g.attr("class", "visualization-container");
+
 // Add zoom behavior
 const zoom = d3.zoom()
     .scaleExtent([0.1, 8])
@@ -221,43 +224,6 @@ function highlightAndZoomToNode(d) {
         }
     });
     
-    // Move highlighted nodes to the end of their container to render them on top
-    // First get the parent container
-    const nodeContainer = node.nodes()[0].parentNode;
-    const linkContainer = link.nodes()[0].parentNode;
-    
-    // Move second-order nodes and links to the end (will be rendered on top of non-highlighted elements)
-    node.each(function(n) {
-        if (secondOrderNodeIds.has(n.id)) {
-            nodeContainer.appendChild(this);
-        }
-    });
-    
-    link.each(function(l, i) {
-        if ((firstOrderNodeIds.has(l.source.id) && secondOrderNodeIds.has(l.target.id)) || 
-            (firstOrderNodeIds.has(l.target.id) && secondOrderNodeIds.has(l.source.id))) {
-            linkContainer.appendChild(this);
-        }
-    });
-    
-    // Move first-order nodes and links to the end (will be rendered on top of second-order elements)
-    node.each(function(n) {
-        if (firstOrderNodeIds.has(n.id)) {
-            nodeContainer.appendChild(this);
-        }
-    });
-    
-    link.each(function(l, i) {
-        if (l.source.id === d.id || l.target.id === d.id) {
-            linkContainer.appendChild(this);
-        }
-    });
-    
-    // Move the highlighted node to the end (will be rendered on top of everything)
-    currentNode.each(function() {
-        nodeContainer.appendChild(this);
-    });
-    
     // Show tooltip if the node's title is truncated
     if (d.isTruncated) {
         tooltipTruncated.transition()
@@ -286,7 +252,7 @@ function highlightAndZoomToNode(d) {
         // Apply the zoom-adjusted vertical offset to maintain consistent spacing
         tooltipTruncated.html("<strong>" + d.title + "</strong>")
             .style("left", screenX + "px")
-            .style("top", transform.applyY(nodeY + verticalOffset) + "px");
+            .style("top", (screenY + verticalOffset) + "px");
     }
 }
 
@@ -447,43 +413,6 @@ node.append("circle")
             }
         });
         
-        // Move highlighted nodes to the end of their container to render them on top
-        // First get the parent container
-        const nodeContainer = node.nodes()[0].parentNode;
-        const linkContainer = link.nodes()[0].parentNode;
-        
-        // Move second-order nodes and links to the end (will be rendered on top of non-highlighted elements)
-        node.each(function(n) {
-            if (secondOrderNodeIds.has(n.id)) {
-                nodeContainer.appendChild(this);
-            }
-        });
-        
-        link.each(function(l, i) {
-            if ((firstOrderNodeIds.has(l.source.id) && secondOrderNodeIds.has(l.target.id)) || 
-                (firstOrderNodeIds.has(l.target.id) && secondOrderNodeIds.has(l.source.id))) {
-                linkContainer.appendChild(this);
-            }
-        });
-        
-        // Move first-order nodes and links to the end (will be rendered on top of second-order elements)
-        node.each(function(n) {
-            if (firstOrderNodeIds.has(n.id)) {
-                nodeContainer.appendChild(this);
-            }
-        });
-        
-        link.each(function(l, i) {
-            if (l.source.id === d.id || l.target.id === d.id) {
-                linkContainer.appendChild(this);
-            }
-        });
-        
-        // Move the highlighted node to the end (will be rendered on top of everything)
-        currentNode.each(function() {
-            nodeContainer.appendChild(this);
-        });
-        
         // Show tooltip if the node's title is truncated
         if (d.isTruncated) {
             tooltipTruncated.transition()
@@ -512,7 +441,7 @@ node.append("circle")
             // Apply the zoom-adjusted vertical offset to maintain consistent spacing
             tooltipTruncated.html("<strong>" + d.title + "</strong>")
                 .style("left", screenX + "px")
-                .style("top", transform.applyY(nodeY + verticalOffset) + "px");
+                .style("top", (screenY + verticalOffset) + "px");
         }
     })
     .on("mouseout", function() {

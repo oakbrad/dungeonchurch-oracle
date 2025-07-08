@@ -10,6 +10,13 @@ body {
     height: 100vh;
     position: relative;
 }
+
+/* Enable z-index on SVG elements */
+.visualization-container .node,
+.visualization-container .link {
+    position: relative;
+}
+
 .node {
     cursor: pointer;
 }
@@ -30,6 +37,10 @@ body {
 }
 
 /* Node glow effect */
+.node-highlight {
+    z-index: 30 !important;
+}
+
 .node-highlight circle {
     filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
     fill: #ffffff;
@@ -46,6 +57,11 @@ body {
     stroke: #ffffff;
     stroke-opacity: 0.9;
     stroke-width: 2px;
+    z-index: 20 !important;
+}
+
+.node-highlight-first {
+    z-index: 20 !important;
 }
 
 .node-highlight-first circle {
@@ -63,6 +79,11 @@ body {
     stroke: #ffffff;
     stroke-opacity: 0.4;
     stroke-width: 1px;
+    z-index: 10 !important;
+}
+
+.node-highlight-second {
+    z-index: 10 !important;
 }
 
 .node-highlight-second circle {
@@ -72,10 +93,13 @@ body {
 
 .node-highlight-second circle {
     fill: #ffffff50;
-
 }
 
 /* Dimmed nodes and links */
+.node-dimmed {
+    z-index: 1 !important;
+}
+
 .node-dimmed circle {
     opacity: 0.1;
     fill: #666;
@@ -89,6 +113,7 @@ body {
 
 .link-dimmed {
     stroke-opacity: 0.1;
+    z-index: 1 !important;
 }
 
 /* Tooltip for truncated nodes */
