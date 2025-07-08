@@ -75,22 +75,15 @@ function clearHighlightAndResetZoom() {
         // Stop any ongoing drift animation
         stopDriftAnimation();
         
-        // Reset zoom to default center view with tween animation
-        const currentTransform = d3.zoomTransform(svg.node());
-        const targetTransform = d3.zoomIdentity.translate(width / 2, height / 2).scale(0.5);
-        
-        zoomWithTween(currentTransform, targetTransform, 750);
+        // Reset zoom to default center view
+        svg.transition().duration(750).call(
+            zoom.transform,
+            d3.zoomIdentity.translate(width / 2, height / 2).scale(0.5)
+        );
     }
 }
 
 // Function to perform zoom with tween animation
-function zoomWithTween(startTransform, endTransform, duration) {
-    // Use D3's zoom.transform to handle the transition properly
-    svg.transition()
-        .duration(duration)
-        .ease(d3.easeCubicInOut) // Smoother easing function
-        .call(zoom.transform, endTransform);
-}
 
 // Function to apply drift animation to dimmed nodes
 function startDriftAnimation() {
@@ -221,15 +214,14 @@ function highlightAndZoomToNode(d) {
     const centerX = (minX + maxX) / 2;
     const centerY = (minY + maxY) / 2;
     
-    // Get current transform for smooth transition
-    const currentTransform = d3.zoomTransform(svg.node());
-    const targetTransform = d3.zoomIdentity
-        .translate(width / 2, height / 2)
-        .scale(scale)
-        .translate(-centerX, -centerY);
-    
-    // Animate the zoom with tween
-    zoomWithTween(currentTransform, targetTransform, 1000);
+    // Animate the zoom
+    svg.transition().duration(750).call(
+        zoom.transform,
+        d3.zoomIdentity
+            .translate(width / 2, height / 2)
+            .scale(scale)
+            .translate(-centerX, -centerY)
+    );
     
     // First clear any existing highlights
     node.classed("node-highlight", false)
