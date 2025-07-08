@@ -26,6 +26,8 @@ const svg = d3.select("#visualization")
 svg.on("click", function(event) {
     // Only handle clicks directly on the SVG, not on nodes or other elements
     if (event.target === this) {
+        // Hide any existing tooltips immediately without transition
+        hideTooltipImmediately();
         clearHighlightAndResetZoom();
     }
 });
@@ -104,6 +106,11 @@ function hideTooltip() {
         .style("opacity", 0);
 }
 
+// Function to hide tooltip immediately without transition
+function hideTooltipImmediately() {
+    tooltipTruncated.style("opacity", 0);
+}
+
 // Function to clear highlight state and reset zoom
 function clearHighlightAndResetZoom() {
     if (highlightedNode) {
@@ -138,6 +145,9 @@ function clearHighlightAndResetZoom() {
 
 // Function to highlight and zoom to a node
 function highlightAndZoomToNode(d) {
+    // Hide any existing tooltips immediately without transition
+    hideTooltipImmediately();
+    
     // Set this node as the highlighted node
     highlightedNode = d;
     
@@ -349,6 +359,9 @@ node.append("circle")
     .on("click", function(event, d) {
         // Prevent event from propagating to potential parent elements
         event.stopPropagation();
+        
+        // Hide any existing tooltips immediately without transition
+        hideTooltipImmediately();
         
         // If this node is already highlighted, clear the highlight
         if (highlightedNode === d) {
