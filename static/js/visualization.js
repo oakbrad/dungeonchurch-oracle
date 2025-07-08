@@ -59,10 +59,8 @@ function clearHighlightAndResetZoom() {
         
         link.classed("link-highlight-first", false)
             .classed("link-highlight-second", false)
-            .classed("link-dimmed", false);
-            
-        // Hide tooltip
-        tooltipTruncated.transition()
+            .classed("link-dimmed", false)
+            .transition()
             .duration(500)
             .style("opacity", 0);
             
@@ -166,35 +164,35 @@ function highlightAndZoomToNode(d) {
             node.fx = node.x;
             node.fy = node.y;
         } else if (firstOrderNodeIds.has(node.id)) {
-            // First-order connections get a stronger outward push
+            // First-order connections get a more subtle outward push
             const dx = node.x - d.x;
             const dy = node.y - d.y;
             const distance = Math.sqrt(dx * dx + dy * dy) || 1;
             const normalizedDx = dx / distance;
             const normalizedDy = dy / distance;
             
-            // Apply an initial velocity outward
-            node.vx = normalizedDx * 5;
-            node.vy = normalizedDy * 5;
+            // Apply a gentler initial velocity for more subtle effect
+            node.vx = normalizedDx * 2.5;
+            node.vy = normalizedDy * 2.5;
         } else if (secondOrderNodeIds.has(node.id)) {
-            // Second-order connections get a milder push
+            // Second-order connections get a very mild push
             const dx = node.x - d.x;
             const dy = node.y - d.y;
             const distance = Math.sqrt(dx * dx + dy * dy) || 1;
             const normalizedDx = dx / distance;
             const normalizedDy = dy / distance;
             
-            // Apply a gentler initial velocity
-            node.vx = normalizedDx * 2;
-            node.vy = normalizedDy * 2;
+            // Apply a very gentle initial velocity
+            node.vx = normalizedDx * 1;
+            node.vy = normalizedDy * 1;
         }
     });
     
-    // Temporarily increase the repulsion force
-    simulation.force("charge").strength(-600);
+    // Temporarily increase the repulsion force (less intense)
+    simulation.force("charge").strength(-450);
     
-    // Restart simulation with higher energy
-    simulation.alpha(0.8).alphaTarget(0).alphaDecay(0.02).restart();
+    // Restart simulation with moderate energy for subtler effect
+    simulation.alpha(0.5).alphaTarget(0).alphaDecay(0.03).restart();
     
     // Animate the zoom
     svg.transition().duration(750).call(
