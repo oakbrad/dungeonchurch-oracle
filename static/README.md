@@ -1,40 +1,69 @@
-# Static Templates for Dungeon Church Oracle
+# Dungeon Church Oracle - Static Template
 
-This folder contains the static templates used to generate the Dungeon Church Oracle visualization.
+This directory contains the static template files for the Dungeon Church Oracle visualization.
 
-## Structure
+## Overview
+
+The Dungeon Church Oracle is an interactive network visualization of wiki content. It displays relationships between different pages in the wiki as a force-directed graph.
+
+## Features
+
+- Interactive network graph with zoom and pan functionality
+- Search for specific nodes
+- Hover for detailed information
+- Color-coded nodes by collection
+- Responsive design for embedding in other websites
+
+## Files
 
 - `index.html` - The main HTML template
-- `css/styles.css` - The CSS styles for the visualization
-- `js/visualization.js` - The JavaScript code for the D3.js visualization
+- `css/styles.css` - Main CSS styles
+- `css/collection-colors.css` - CSS for collection-specific colors
+- `js/visualization.js` - D3.js visualization code
+- `js/collection-colors.js` - JavaScript for collection colors
+- `embed-example.html` - Example showing how to embed the visualization
 
-## How to Use
+## Embedding
 
-1. **Local Development**:
-   - Edit these files to customize the visualization
-   - Run `python scripts/create_viz.py` to generate the visualization in the `docs` folder
-   - Open `docs/index.html` in your browser to preview the changes
-   - Note: The `docs` folder is not stored in the repository, it's generated on-demand
+The visualization is designed to be embedded in other websites as an interactive element. It will automatically adapt to fill its container without scrollbars.
 
-2. **Deployment**:
-   - Changes to files in this folder will automatically trigger a rebuild and deployment via GitHub Actions
-   - The GitHub Actions workflow will run `create_viz.py` and deploy the generated files to GitHub Pages
-   - The `docs` folder is uploaded as an artifact and deployed directly to GitHub Pages
+### Basic Embedding
 
-## Notes
+To embed the visualization in your website, use an iframe:
 
-- The graph data is not stored in this folder. It's generated from `data/graph_data.json` by the `create_viz.py` script.
-- The `create_viz.py` script will:
-  - Generate a `graph-data.js` file with the graph data
-  - Copy these template files to the `docs` folder
-  - Deploy the `docs` folder to GitHub Pages
+```html
+<div style="width: 100%; height: 500px; overflow: hidden;">
+  <iframe src="https://oakbrad.github.io/dungeonchurch-oracle/" width="100%" height="100%" frameborder="0"></iframe>
+</div>
+```
 
-## Adding Custom Features
+You can adjust the width and height of the container to fit your layout.
 
-To add custom features to the visualization:
+### Advanced: Container Resizing
 
-1. Edit the appropriate files in this folder
-2. Test locally by running `python scripts/create_viz.py` and opening `docs/index.html`
-3. Commit and push your changes
-4. The GitHub Actions workflow will automatically deploy your changes to GitHub Pages
+If your container size changes dynamically (e.g., in responsive layouts or when toggling UI elements), you can notify the visualization using the postMessage API:
+
+```javascript
+// Get a reference to the iframe
+const iframe = document.querySelector('iframe');
+
+// Send a resize message to the visualization
+iframe.contentWindow.postMessage({ type: 'resize' }, '*');
+```
+
+This ensures the visualization properly updates its dimensions when its container changes size.
+
+### Example
+
+See `embed-example.html` for a complete example of embedding the visualization in different container sizes.
+
+## Development
+
+The visualization is generated using data from `data/graph_data.json`. The Python script `scripts/create_viz.py` processes this data and creates the visualization files in the `docs` directory.
+
+To modify the visualization:
+
+1. Edit the files in the `static` directory
+2. Run `scripts/create_viz.py` to generate the updated visualization
+3. The updated visualization will be available in the `docs` directory
 
