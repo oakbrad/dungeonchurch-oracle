@@ -22,6 +22,12 @@ const svg = d3.select("#visualization")
     .attr("width", width)
     .attr("height", height);
 
+// Create a group for all visualization elements
+const g = svg.append("g");
+
+// Global variables for tracking highlight state
+let highlightedNode = null;
+
 // Add marker definitions for arrows
 const defs = svg.append("defs");
 
@@ -44,9 +50,6 @@ svg.on("click", function(event) {
         clearHighlightAndResetZoom();
     }
 });
-
-// Create a group for zoom/pan
-const g = svg.append("g");
 
 // Add zoom behavior
 const zoom = d3.zoom()
@@ -157,9 +160,6 @@ svg.call(zoom);
 
 // Center the view initially
 svg.call(zoom.transform, d3.zoomIdentity.translate(width / 2, height / 2).scale(0.5));
-
-// Track the currently highlighted node
-let highlightedNode = null;
 
 // Function to clear highlight state and reset zoom
 function clearHighlightAndResetZoom() {
