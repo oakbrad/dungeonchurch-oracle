@@ -70,9 +70,10 @@ function updateTooltipPosition(d, transform) {
     const screenX = transform.applyX(nodeX);
     const screenY = transform.applyY(nodeY);
     
-    // Calculate offset based on zoom level
+    // Calculate vertical offset based on node radius and zoom level
+    // This ensures the tooltip is always positioned right under the node
     const zoomScale = transform.k;
-    const verticalOffset = (radius + 10) / zoomScale;
+    const verticalOffset = radius * zoomScale + 5; // 5px additional padding
     
     // Position tooltip centered below the node
     tooltipTruncated
