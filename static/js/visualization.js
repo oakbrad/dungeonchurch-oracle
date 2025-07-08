@@ -221,6 +221,43 @@ function highlightAndZoomToNode(d) {
         }
     });
     
+    // Move highlighted nodes to the end of their container to render them on top
+    // First get the parent container
+    const nodeContainer = node.nodes()[0].parentNode;
+    const linkContainer = link.nodes()[0].parentNode;
+    
+    // Move second-order nodes and links to the end (will be rendered on top of non-highlighted elements)
+    node.each(function(n) {
+        if (secondOrderNodeIds.has(n.id)) {
+            nodeContainer.appendChild(this);
+        }
+    });
+    
+    link.each(function(l, i) {
+        if ((firstOrderNodeIds.has(l.source.id) && secondOrderNodeIds.has(l.target.id)) || 
+            (firstOrderNodeIds.has(l.target.id) && secondOrderNodeIds.has(l.source.id))) {
+            linkContainer.appendChild(this);
+        }
+    });
+    
+    // Move first-order nodes and links to the end (will be rendered on top of second-order elements)
+    node.each(function(n) {
+        if (firstOrderNodeIds.has(n.id)) {
+            nodeContainer.appendChild(this);
+        }
+    });
+    
+    link.each(function(l, i) {
+        if (l.source.id === d.id || l.target.id === d.id) {
+            linkContainer.appendChild(this);
+        }
+    });
+    
+    // Move the highlighted node to the end (will be rendered on top of everything)
+    currentNode.each(function() {
+        nodeContainer.appendChild(this);
+    });
+    
     // Show tooltip if the node's title is truncated
     if (d.isTruncated) {
         tooltipTruncated.transition()
@@ -249,7 +286,7 @@ function highlightAndZoomToNode(d) {
         // Apply the zoom-adjusted vertical offset to maintain consistent spacing
         tooltipTruncated.html("<strong>" + d.title + "</strong>")
             .style("left", screenX + "px")
-            .style("top", (screenY + verticalOffset) + "px");
+            .style("top", transform.applyY(nodeY + verticalOffset) + "px");
     }
 }
 
@@ -321,7 +358,7 @@ node.append("circle")
         if (highlightedNode) return;
         
         // Get the current node element
-        const currentNode = d3.select(this.parentNode);
+        const currentNode = d3.select(this);
         
         // Add highlight class to the current node
         currentNode.classed("node-highlight", true);
@@ -408,6 +445,43 @@ node.append("circle")
             if (!highlightedLinkIndices.has(i)) {
                 linkElement.classed("link-dimmed", true);
             }
+        });
+        
+        // Move highlighted nodes to the end of their container to render them on top
+        // First get the parent container
+        const nodeContainer = node.nodes()[0].parentNode;
+        const linkContainer = link.nodes()[0].parentNode;
+        
+        // Move second-order nodes and links to the end (will be rendered on top of non-highlighted elements)
+        node.each(function(n) {
+            if (secondOrderNodeIds.has(n.id)) {
+                nodeContainer.appendChild(this);
+            }
+        });
+        
+        link.each(function(l, i) {
+            if ((firstOrderNodeIds.has(l.source.id) && secondOrderNodeIds.has(l.target.id)) || 
+                (firstOrderNodeIds.has(l.target.id) && secondOrderNodeIds.has(l.source.id))) {
+                linkContainer.appendChild(this);
+            }
+        });
+        
+        // Move first-order nodes and links to the end (will be rendered on top of second-order elements)
+        node.each(function(n) {
+            if (firstOrderNodeIds.has(n.id)) {
+                nodeContainer.appendChild(this);
+            }
+        });
+        
+        link.each(function(l, i) {
+            if (l.source.id === d.id || l.target.id === d.id) {
+                linkContainer.appendChild(this);
+            }
+        });
+        
+        // Move the highlighted node to the end (will be rendered on top of everything)
+        currentNode.each(function() {
+            nodeContainer.appendChild(this);
         });
         
         // Show tooltip if the node's title is truncated
