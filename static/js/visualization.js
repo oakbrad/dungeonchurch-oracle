@@ -437,6 +437,23 @@ node.append("circle")
             }
         });
         
+        // Reorder elements for proper rendering
+        // First, lower all elements to the back
+        node.lower();
+        link.lower();
+        
+        // Then raise elements in order of importance
+        // 1. Raise second-order connections
+        link.filter(".link-highlight-second").raise();
+        node.filter(".node-highlight-second").raise();
+        
+        // 2. Raise first-order connections
+        link.filter(".link-highlight-first").raise();
+        node.filter(".node-highlight-first").raise();
+        
+        // 3. Raise the highlighted node to the top
+        currentNode.raise();
+        
         // Show tooltip if the node's title is truncated
         if (d.isTruncated) {
             tooltipTruncated.transition()
@@ -481,6 +498,10 @@ node.append("circle")
         link.classed("link-highlight-first", false)
             .classed("link-highlight-second", false)
             .classed("link-dimmed", false);
+            
+        // Reset the rendering order
+        node.order();
+        link.order();
             
         // Hide tooltip
         tooltipTruncated.transition()
