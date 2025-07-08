@@ -11,94 +11,10 @@ graphData.nodes.forEach(node => {
 const width = window.innerWidth;
 const height = window.innerHeight;
 
-// Create tooltip manager for handling all tooltip-related functionality
-const TooltipManager = {
-    // The tooltip element
-    element: null,
-    
-    // The currently active node (if any)
-    activeNode: null,
-    
-    // Initialize the tooltip
-    init() {
-        this.element = d3.select("body").append("div")
-            .attr("class", "tooltip-truncated")
-            .style("opacity", 0);
-        return this;
-    },
-    
-    // Show tooltip for a node
-    show(node, transform) {
-        // Only show tooltip if the node's title is truncated
-        if (!node.isTruncated) return;
-        
-        // Set this node as active
-        this.activeNode = node;
-        
-        // Show the tooltip with transition
-        this.element.transition()
-            .duration(200)
-            .style("opacity", 0.9);
-        
-        // Update tooltip content
-        this.element.html("<strong>" + node.title + "</strong>");
-        
-        // Position the tooltip
-        this.updatePosition(transform);
-    },
-    
-    // Hide tooltip
-    hide() {
-        this.element.transition()
-            .duration(500)
-            .style("opacity", 0);
-        
-        // Clear active node
-        this.activeNode = null;
-    },
-    
-    // Update tooltip position based on current zoom transform
-    updatePosition(transform) {
-        if (!this.activeNode) return;
-        
-        const node = this.activeNode;
-        const nodeX = node.x;
-        const nodeY = node.y;
-        const radius = node.radius || 10;
-        
-        // If no transform is provided, get the current one
-        if (!transform) {
-            transform = d3.zoomTransform(svg.node());
-        }
-        
-        // Convert node coordinates to screen coordinates
-        const screenX = transform.applyX(nodeX);
-        const screenY = transform.applyY(nodeY);
-        
-        // Calculate offset based on zoom level
-        // This ensures the tooltip maintains a consistent visual distance
-        const zoomScale = transform.k;
-        const verticalOffset = (radius + 10) / zoomScale;
-        
-        // Position tooltip centered below the node
-        this.element
-            .style("left", screenX + "px")
-            .style("top", (screenY + verticalOffset) + "px");
-    },
-    
-    // Check if tooltip is currently visible
-    isVisible() {
-        return this.element.style("opacity") > 0;
-    },
-    
-    // Check if tooltip is currently showing for a specific node
-    isShowingFor(node) {
-        return this.activeNode === node && this.isVisible();
-    }
-};
-
-// Initialize the tooltip manager
-const tooltipTruncated = TooltipManager.init();
+// Create tooltip for truncated nodes
+const tooltipTruncated = d3.select("body").append("div")
+    .attr("class", "tooltip-truncated")
+    .style("opacity", 0);
 
 // Create SVG
 const svg = d3.select("#visualization")
@@ -123,9 +39,9 @@ const zoom = d3.zoom()
     .on("zoom", (event) => {
         g.attr("transform", event.transform);
         
-        // Update tooltip position if it's visible
-        if (tooltipTruncated.isVisible()) {
-            tooltipTruncated.updatePosition(event.transform);
+        // Update tooltip position if it's visible and we have a highlighted node
+        if (parseFloat(tooltipTruncated.style("opacity")) > 0 && highlightedNode) {
+            updateTooltipPosition(highlightedNode, event.transform);
         }
     });
 
@@ -136,6 +52,56 @@ svg.call(zoom.transform, d3.zoomIdentity.translate(width / 2, height / 2).scale(
 
 // Track the currently highlighted node
 let highlightedNode = null;
+
+// Function to update tooltip position
+function updateTooltipPosition(d, transform) {
+    if (!d || !d.isTruncated) return;
+    
+    const nodeX = d.x;
+    const nodeY = d.y;
+    const radius = d.radius || 10;
+    
+    // If no transform is provided, get the current one
+    if (!transform) {
+        transform = d3.zoomTransform(svg.node());
+    }
+    
+    // Convert node coordinates to screen coordinates
+    const screenX = transform.applyX(nodeX);
+    const screenY = transform.applyY(nodeY);
+    
+    // Calculate offset based on zoom level
+    const zoomScale = transform.k;
+    const verticalOffset = (radius + 10) / zoomScale;
+    
+    // Position tooltip centered below the node
+    tooltipTruncated
+        .style("left", screenX + "px")
+        .style("top", (screenY + verticalOffset) + "px");
+}
+
+// Function to show tooltip
+function showTooltip(d, transform) {
+    if (!d || !d.isTruncated) return;
+    
+    // Update tooltip content
+    tooltipTruncated.html("<strong>" + d.title + "</strong>");
+    
+    // Show the tooltip with transition
+    tooltipTruncated.transition()
+        .duration(200)
+        .style("opacity", 0.9);
+    
+    // Position the tooltip
+    updateTooltipPosition(d, transform);
+}
+
+// Function to hide tooltip
+function hideTooltip() {
+    tooltipTruncated.transition()
+        .duration(200)
+        .style("opacity", 0);
+}
 
 // Function to clear highlight state and reset zoom
 function clearHighlightAndResetZoom() {
@@ -151,7 +117,7 @@ function clearHighlightAndResetZoom() {
             .classed("link-dimmed", false);
             
         // Hide tooltip
-        tooltipTruncated.hide();
+        hideTooltip();
             
         // Reset the highlighted node tracker
         highlightedNode = null;
@@ -328,7 +294,7 @@ function highlightAndZoomToNode(d) {
             if (d.isTruncated) {
                 // Get the final transform after animation
                 const finalTransform = d3.zoomTransform(svg.node());
-                tooltipTruncated.show(d, finalTransform);
+                showTooltip(d, finalTransform);
             }
        });
     
@@ -358,16 +324,29 @@ const link = g.append("g")
     .attr("stroke-width", d => Math.sqrt(d.value || 1));
 
 // Create nodes
-const node = g.selectAll(".node")
+const node = g.append("g")
+    .selectAll(".node")
     .data(graphData.nodes)
-    .enter()
-    .append("g")
+    .enter().append("g")
     .attr("class", "node")
     .call(d3.drag()
         .on("start", dragstarted)
         .on("drag", dragged)
-        .on("end", dragended))
+        .on("end", dragended));
+
+// Add circles to nodes
+node.append("circle")
+    .attr("r", d => {
+        // Increase the relative size difference between nodes
+        // Store the radius on the data object for later use
+        d.radius = d.connections ? 10 + Math.pow(d.connections, 0.8) * 2 : 10;
+        return d.radius;
+    })
+    .attr("fill", d => getNodeColor(d))
+    .attr("stroke", "#fff")
+    .attr("stroke-width", 1.5)
     .on("click", function(event, d) {
+        // Prevent event from propagating to potential parent elements
         event.stopPropagation();
         
         // If this node is already highlighted, clear the highlight
@@ -377,6 +356,23 @@ const node = g.selectAll(".node")
             // Otherwise, highlight and zoom to this node
             highlightAndZoomToNode(d);
         }
+    })
+    .on("dblclick", function(event, d) {
+        // Prevent event from propagating and prevent default behavior
+        event.stopPropagation();
+        event.preventDefault();
+        
+        // Open the wiki document in a new window
+        if (d.urlId) {
+            window.open(`https://lore.dungeon.church/doc/-${d.urlId}`, '_blank');
+        }
+    })
+    .on("contextmenu", function(event) {
+        // Prevent the default context menu
+        event.preventDefault();
+        
+        // Clear highlight state and reset zoom
+        clearHighlightAndResetZoom();
     })
     .on("mouseover", function(event, d) {
         // If we already have a highlighted node, don't do anything on mouseover
@@ -474,34 +470,13 @@ const node = g.selectAll(".node")
                     linkElement.classed("link-dimmed", true);
                 }
             });
-            
-            // Wait for CSS transitions to complete before reordering
-            // The longest transition in the CSS is 0.5s (500ms)
-            setTimeout(() => {
-                // Reorder elements for proper rendering AFTER the transitions complete
-                // First, lower all elements to the back
-                node.lower();
-                link.lower();
-                
-                // Then raise elements in order of importance
-                // 1. Raise second-order connections
-                link.filter(".link-highlight-second").raise();
-                node.filter(".node-highlight-second").raise();
-                
-                // 2. Raise first-order connections
-                link.filter(".link-highlight-first").raise();
-                node.filter(".node-highlight-first").raise();
-                
-                // 3. Raise the highlighted node to the top
-                currentNode.raise();
-            }, 500); // Wait for 500ms to match the longest CSS transition
-            
-            // Show tooltip if the node's title is truncated
-            if (d.isTruncated) {
-                // Get current transform
-                const transform = d3.zoomTransform(svg.node());
-                tooltipTruncated.show(d, transform);
-            }
+        }
+        
+        // Show tooltip if the node's title is truncated
+        if (d.isTruncated) {
+            // Get current transform
+            const transform = d3.zoomTransform(svg.node());
+            showTooltip(d, transform);
         }
     })
     .on("mouseout", function(event, d) {
@@ -527,37 +502,8 @@ const node = g.selectAll(".node")
             
         // Hide tooltip only if we're not in highlight mode or if this is the highlighted node
         if (!highlightedNode || highlightedNode === d) {
-            tooltipTruncated.hide();
+            hideTooltip();
         }
-    });
-
-// Add circles to nodes
-node.append("circle")
-    .attr("r", d => {
-        // Increase the relative size difference between nodes
-        // Store the radius on the data object for later use
-        d.radius = d.connections ? 10 + Math.pow(d.connections, 0.8) * 2 : 10;
-        return d.radius;
-    })
-    .attr("fill", d => getNodeColor(d))
-    .attr("stroke", "#fff")
-    .attr("stroke-width", 1.5)
-    .on("dblclick", function(event, d) {
-        // Prevent event from propagating and prevent default behavior
-        event.stopPropagation();
-        event.preventDefault();
-        
-        // Open the wiki document in a new window
-        if (d.urlId) {
-            window.open(`https://lore.dungeon.church/doc/-${d.urlId}`, '_blank');
-        }
-    })
-    .on("contextmenu", function(event) {
-        // Prevent the default context menu
-        event.preventDefault();
-        
-        // Clear highlight state and reset zoom
-        clearHighlightAndResetZoom();
     });
 
 // Add labels to nodes - move inside the circle with improved centering

@@ -114,11 +114,10 @@ body {
     max-width: 300px;
     z-index: 100;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    transition: opacity 0.2s ease-in-out;
     transform: translateX(-50%);
-    white-space: normal;
-    word-wrap: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #search-container {
