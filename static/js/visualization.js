@@ -136,15 +136,6 @@ function highlightAndZoomToNode(d) {
     const centerX = (minX + maxX) / 2;
     const centerY = (minY + maxY) / 2;
     
-    // Animate the zoom
-    svg.transition().duration(750).call(
-        zoom.transform,
-        d3.zoomIdentity
-            .translate(width / 2, height / 2)
-            .scale(scale)
-            .translate(-centerX, -centerY)
-    );
-    
     // First clear any existing highlights
     node.classed("node-highlight", false)
         .classed("node-highlight-first", false)
@@ -226,22 +217,34 @@ function highlightAndZoomToNode(d) {
     link.filter((l, i) => !highlightedLinkIndices.has(i))
         .classed("link-dimmed", true);
     
-    // Reorder elements for proper rendering
-    // First, lower all elements to the back
-    node.lower();
-    link.lower();
-    
-    // Then raise elements in order of importance
-    // 1. Raise second-order connections
-    link.filter(".link-highlight-second").raise();
-    node.filter(".node-highlight-second").raise();
-    
-    // 2. Raise first-order connections
-    link.filter(".link-highlight-first").raise();
-    node.filter(".node-highlight-first").raise();
-    
-    // 3. Raise the highlighted node to the top
-    currentNode.raise();
+    // Animate the zoom
+    svg.transition()
+       .duration(750)
+       .call(
+            zoom.transform,
+            d3.zoomIdentity
+                .translate(width / 2, height / 2)
+                .scale(scale)
+                .translate(-centerX, -centerY)
+        )
+       .on("end", function() {
+            // Reorder elements for proper rendering AFTER the animation completes
+            // First, lower all elements to the back
+            node.lower();
+            link.lower();
+            
+            // Then raise elements in order of importance
+            // 1. Raise second-order connections
+            link.filter(".link-highlight-second").raise();
+            node.filter(".node-highlight-second").raise();
+            
+            // 2. Raise first-order connections
+            link.filter(".link-highlight-first").raise();
+            node.filter(".node-highlight-first").raise();
+            
+            // 3. Raise the highlighted node to the top
+            currentNode.raise();
+       });
     
     // Start drift animation for dimmed nodes
     
