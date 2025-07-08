@@ -76,6 +76,11 @@ function clearHighlightAndResetZoom() {
             zoom.transform,
             d3.zoomIdentity.translate(width / 2, height / 2).scale(0.5)
         );
+        
+        // Reset the rendering order by reappending all nodes and links
+        // This effectively resets them to their original order in the DOM
+        node.order();
+        link.order();
     }
 }
 
@@ -215,11 +220,28 @@ function highlightAndZoomToNode(d) {
     });
     
     // Dim all non-highlighted nodes and links
-    node.filter(n => !nodeHighlightSet.has(n.id))
+    node.filter(n => !highlightedNodeIds.has(n.id))
         .classed("node-dimmed", true);
     
-    link.filter(l => !linkHighlightSet.has(l.index))
+    link.filter((l, i) => !highlightedLinkIndices.has(i))
         .classed("link-dimmed", true);
+    
+    // Reorder elements for proper rendering
+    // First, lower all elements to the back
+    node.lower();
+    link.lower();
+    
+    // Then raise elements in order of importance
+    // 1. Raise second-order connections
+    link.filter(".link-highlight-second").raise();
+    node.filter(".node-highlight-second").raise();
+    
+    // 2. Raise first-order connections
+    link.filter(".link-highlight-first").raise();
+    node.filter(".node-highlight-first").raise();
+    
+    // 3. Raise the highlighted node to the top
+    currentNode.raise();
     
     // Start drift animation for dimmed nodes
     
