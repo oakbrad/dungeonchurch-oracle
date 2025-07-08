@@ -2,8 +2,8 @@ name: Data Visualization Pipeline
 
 on:
   schedule:
-    # Run once a day at midnight UTC
-    - cron: '0 0 * * *'
+    # Run once a day at 430PST (1130 UTC)
+    - cron: '30 11 * * *'
   workflow_dispatch:
     # Allow manual triggering
 permissions:                  # 
