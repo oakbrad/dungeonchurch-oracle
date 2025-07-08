@@ -22,6 +22,61 @@ const svg = d3.select("#visualization")
     .attr("width", width)
     .attr("height", height);
 
+// Add marker definitions for arrows
+const defs = svg.append("defs");
+
+// Define arrow marker for unidirectional links
+defs.append("marker")
+    .attr("id", "arrow")
+    .attr("viewBox", "0 -5 10 10")
+    .attr("refX", 15)  // Position the arrow away from the end point
+    .attr("refY", 0)
+    .attr("orient", "auto")
+    .attr("markerWidth", 6)
+    .attr("markerHeight", 6)
+    .append("path")
+    .attr("d", "M0,-5L10,0L0,5")
+    .attr("fill", "#999");
+
+// Define arrow marker for highlighted links (first order)
+defs.append("marker")
+    .attr("id", "arrow-highlight-first")
+    .attr("viewBox", "0 -5 10 10")
+    .attr("refX", 15)
+    .attr("refY", 0)
+    .attr("orient", "auto")
+    .attr("markerWidth", 6)
+    .attr("markerHeight", 6)
+    .append("path")
+    .attr("d", "M0,-5L10,0L0,5")
+    .attr("fill", "#ffffff");
+
+// Define arrow marker for highlighted links (second order)
+defs.append("marker")
+    .attr("id", "arrow-highlight-second")
+    .attr("viewBox", "0 -5 10 10")
+    .attr("refX", 15)
+    .attr("refY", 0)
+    .attr("orient", "auto")
+    .attr("markerWidth", 6)
+    .attr("markerHeight", 6)
+    .append("path")
+    .attr("d", "M0,-5L10,0L0,5")
+    .attr("fill", "#ffffff");
+
+// Define arrow marker for dimmed links
+defs.append("marker")
+    .attr("id", "arrow-dimmed")
+    .attr("viewBox", "0 -5 10 10")
+    .attr("refX", 15)
+    .attr("refY", 0)
+    .attr("orient", "auto")
+    .attr("markerWidth", 6)
+    .attr("markerHeight", 6)
+    .append("path")
+    .attr("d", "M0,-5L10,0L0,5")
+    .attr("fill", "#999");
+
 // Add click handler to SVG to clear highlight state when clicking on the canvas
 svg.on("click", function(event) {
     // Only handle clicks directly on the SVG, not on nodes or other elements
@@ -60,6 +115,21 @@ function clearHighlightAndResetZoom() {
         link.classed("link-highlight-first", false)
             .classed("link-highlight-second", false)
             .classed("link-dimmed", false);
+            
+        // Reset arrow markers to default
+        link.each(function(l) {
+            const linkElement = d3.select(this);
+            if (l.direction === "unidirectional") {
+                linkElement.attr("marker-end", "url(#arrow)")
+                          .attr("marker-start", null);
+            } else if (l.direction === "bidirectional") {
+                linkElement.attr("marker-end", "url(#arrow)")
+                          .attr("marker-start", "url(#arrow)");
+            } else {
+                linkElement.attr("marker-end", null)
+                          .attr("marker-start", null);
+            }
+        });
             
         // Hide tooltip
         tooltipTruncated.transition()
@@ -177,6 +247,13 @@ function highlightAndZoomToNode(d) {
         const linkElement = d3.select(this);
         if (l.source.id === d.id || l.target.id === d.id) {
             linkElement.classed("link-highlight-first", true);
+            // Update arrow markers for highlighted links
+            if (l.direction === "unidirectional") {
+                linkElement.attr("marker-end", "url(#arrow-highlight-first)");
+            } else if (l.direction === "bidirectional") {
+                linkElement.attr("marker-end", "url(#arrow-highlight-first)")
+                          .attr("marker-start", "url(#arrow-highlight-first)");
+            }
             highlightedLinkIndices.add(i);
         }
     });
@@ -195,6 +272,13 @@ function highlightAndZoomToNode(d) {
         if ((firstOrderNodeIds.has(l.source.id) && secondOrderNodeIds.has(l.target.id)) || 
             (firstOrderNodeIds.has(l.target.id) && secondOrderNodeIds.has(l.source.id))) {
             linkElement.classed("link-highlight-second", true);
+            // Update arrow markers for highlighted links
+            if (l.direction === "unidirectional") {
+                linkElement.attr("marker-end", "url(#arrow-highlight-second)");
+            } else if (l.direction === "bidirectional") {
+                linkElement.attr("marker-end", "url(#arrow-highlight-second)")
+                          .attr("marker-start", "url(#arrow-highlight-second)");
+            }
             highlightedLinkIndices.add(i);
         }
     });
@@ -218,6 +302,13 @@ function highlightAndZoomToNode(d) {
         const linkElement = d3.select(this);
         if (!highlightedLinkIndices.has(i)) {
             linkElement.classed("link-dimmed", true);
+            // Update arrow markers for dimmed links
+            if (l.direction === "unidirectional") {
+                linkElement.attr("marker-end", "url(#arrow-dimmed)");
+            } else if (l.direction === "bidirectional") {
+                linkElement.attr("marker-end", "url(#arrow-dimmed)")
+                          .attr("marker-start", "url(#arrow-dimmed)");
+            }
         }
     });
     
@@ -268,7 +359,20 @@ const link = g.append("g")
     .data(graphData.links)
     .enter().append("line")
     .attr("class", "link")
-    .attr("stroke-width", d => Math.sqrt(d.value || 1));
+    .attr("stroke-width", d => Math.sqrt(d.value || 1))
+    .attr("marker-end", d => {
+        // Add arrow marker based on direction
+        if (d.direction === "unidirectional") {
+            return "url(#arrow)";
+        } else if (d.direction === "bidirectional") {
+            return "url(#arrow)";
+        }
+        return null;
+    })
+    .attr("marker-start", d => {
+        // Add arrow marker for bidirectional links
+        return d.direction === "bidirectional" ? "url(#arrow)" : null;
+    });
 
 // Create nodes
 const node = g.append("g")
