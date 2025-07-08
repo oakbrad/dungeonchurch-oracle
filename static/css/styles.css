@@ -109,6 +109,41 @@ body {
     text-overflow: ellipsis;
 }
 
+/* Tooltip for node details */
+.tooltip-details {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    pointer-events: none;
+    font-size: 14px;
+    max-width: 300px;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.tooltip-details-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 5px;
+}
+
+.tooltip-details-content p {
+    margin: 5px 0;
+}
+
+.tooltip-details-content a {
+    color: #4fc3f7;
+    text-decoration: none;
+}
+
+.tooltip-details-content a:hover {
+    text-decoration: underline;
+}
+
 #search-container {
     position: absolute;
     top: 25px;

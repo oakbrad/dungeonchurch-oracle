@@ -16,6 +16,11 @@ const tooltipTruncated = d3.select("body").append("div")
     .attr("class", "tooltip-truncated")
     .style("opacity", 0);
 
+// Create tooltip for node details
+const tooltipDetails = d3.select("body").append("div")
+    .attr("class", "tooltip-details")
+    .style("opacity", 0);
+
 // Create SVG
 const svg = d3.select("#visualization")
     .append("svg")
@@ -61,8 +66,12 @@ function clearHighlightAndResetZoom() {
             .classed("link-highlight-second", false)
             .classed("link-dimmed", false);
             
-        // Hide tooltip
+        // Hide tooltips
         tooltipTruncated.transition()
+            .duration(500)
+            .style("opacity", 0);
+            
+        tooltipDetails.transition()
             .duration(500)
             .style("opacity", 0);
             
@@ -251,6 +260,30 @@ function highlightAndZoomToNode(d) {
             .style("left", screenX + "px")
             .style("top", (screenY + verticalOffset) + "px");
     }
+    
+    // Show node details tooltip with creation date
+    tooltipDetails.transition()
+        .duration(200)
+        .style("opacity", .9);
+    
+    // Format the creation date if it exists
+    let createdAtFormatted = "Unknown";
+    if (d.createdAt) {
+        const createdDate = new Date(d.createdAt);
+        createdAtFormatted = createdDate.toLocaleDateString();
+    }
+    
+    // Position the details tooltip in the corner of the screen
+    tooltipDetails.html(`
+        <div class="tooltip-details-content">
+            <h3>${d.title}</h3>
+            <p><strong>Created:</strong> ${createdAtFormatted}</p>
+            <p><strong>Connections:</strong> ${d.connections}</p>
+            <p><a href="https://wiki.dungeon.church/d/${d.urlId}" target="_blank">View in Wiki</a></p>
+        </div>
+    `)
+    .style("left", "20px")
+    .style("top", "20px");
 }
 
 // Create the force simulation
