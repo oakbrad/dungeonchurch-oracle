@@ -94,7 +94,7 @@ function zoomWithTween(startTransform, endTransform, duration) {
     svg.transition()
         .duration(duration)
         .ease(d3.easeCubicInOut) // Smoother easing function
-        .attrTween("transform", function() {
+        .tween("zoom", function() {
             return function(t) {
                 const interpolated = interpolateZoom(t);
                 const zoomTransform = d3.zoomIdentity
@@ -103,7 +103,6 @@ function zoomWithTween(startTransform, endTransform, duration) {
                 
                 // Apply the transform to the zoom behavior
                 zoom.transform(svg, zoomTransform);
-                return zoomTransform;
             };
         });
 }
