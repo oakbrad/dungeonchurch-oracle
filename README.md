@@ -19,6 +19,10 @@ This repo automates the creation of [D3js](https://d3js.org/) visualizations bas
 
 - `data/` - Contains the graph data JSON file
   - `graph_data.json` - Main graph data with connected nodes
+    - Contains nodes (articles) and links (relationships between articles)
+    - Each link includes metadata about the relationship:
+      - `creation_time` - When the relationship was created
+      - `direction` - Whether the relationship is unidirectional or bidirectional
   - `orphan_data.json` - Orphaned nodes (nodes with 0 connections)
 - `scripts/` - Python scripts for data processing and visualization generation
 - `static/` - Static templates for the visualization (HTML, CSS, JS)

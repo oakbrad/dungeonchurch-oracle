@@ -90,11 +90,18 @@ def restore_database(dump_file):
         WHERE  "deletedAt" IS NULL;
         """)
         
-        # Create graph_edges view
+        # Create graph_edges view with additional metadata
         cursor.execute("""
         CREATE MATERIALIZED VIEW IF NOT EXISTS graph_edges AS
         SELECT "reverseDocumentId" AS source,
-               "documentId"        AS target
+               "documentId"        AS target,
+               "createdAt"         AS creation_time,
+               CASE WHEN EXISTS (
+                 SELECT 1 FROM relationships r2 
+                 WHERE r2."documentId" = relationships."reverseDocumentId" 
+                 AND r2."reverseDocumentId" = relationships."documentId"
+                 AND r2.type = 'backlink'
+               ) THEN 'bidirectional' ELSE 'unidirectional' END as direction
         FROM   relationships
         WHERE  type = 'backlink';
         """)
@@ -187,6 +194,11 @@ def extract_relationship_data(db_name):
             # Only add if we haven't seen this relationship before
             if key not in unique_links:
                 unique_links[key] = True
+                
+                # Convert creation_time to ISO format string if it exists
+                if 'creation_time' in link and link['creation_time'] is not None:
+                    link['creation_time'] = link['creation_time'].isoformat()
+                
                 deduplicated_links.append(link)
         
         # Count the number of duplicates removed
