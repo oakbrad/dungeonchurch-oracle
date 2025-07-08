@@ -8,6 +8,13 @@ on:
       - 'data/graph_data.json'
       - 'static/**'
       - 'scripts/create_viz.py'
+  workflow_run:
+    workflows: ["Data Visualization Pipeline"]
+    types:
+      - completed
+    branches:
+      - main
+    conclusion: success
   workflow_dispatch:
     # Allow manual triggering
 
@@ -59,4 +66,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
