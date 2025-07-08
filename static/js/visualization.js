@@ -25,65 +25,17 @@ const svg = d3.select("#visualization")
 // Add marker definitions for arrows
 const defs = svg.append("defs");
 
-// Helper function to calculate refX based on node radius
+// Helper function to calculate refX based on node radius and scale
 // This ensures arrows touch the edge of the node circle
-function calculateRefX(nodeRadius) {
+function calculateRefX(nodeRadius, scale = 1) {
     // Add a small offset to ensure the arrow touches the outer edge of the stroke
+    // Adjust for the scale transform - divide by scale to compensate
     const strokeWidth = 1.5;
-    return nodeRadius + strokeWidth + 3;
+    return (nodeRadius + strokeWidth + 3) / scale;
 }
 
-// Define arrow marker for unidirectional links
-defs.append("marker")
-    .attr("id", "arrow")
-    .attr("viewBox", "0 -5 10 10")
-    .attr("refX", calculateRefX(10)) // Base radius is 10
-    .attr("refY", 0)
-    .attr("orient", "auto")
-    .attr("markerWidth", 8)  // Increased from 6
-    .attr("markerHeight", 8) // Increased from 6
-    .append("path")
-    .attr("d", "M0,-5L10,0L0,5")
-    .attr("fill", "#999");
-
-// Define arrow marker for highlighted links (first order)
-defs.append("marker")
-    .attr("id", "arrow-highlight-first")
-    .attr("viewBox", "0 -5 10 10")
-    .attr("refX", calculateRefX(12.5)) // First-order nodes are scaled 125%
-    .attr("refY", 0)
-    .attr("orient", "auto")
-    .attr("markerWidth", 8)  // Increased from 6
-    .attr("markerHeight", 8) // Increased from 6
-    .append("path")
-    .attr("d", "M0,-5L10,0L0,5")
-    .attr("fill", "#ffffff");
-
-// Define arrow marker for highlighted links (second order)
-defs.append("marker")
-    .attr("id", "arrow-highlight-second")
-    .attr("viewBox", "0 -5 10 10")
-    .attr("refX", calculateRefX(10)) // No scaling for second-order
-    .attr("refY", 0)
-    .attr("orient", "auto")
-    .attr("markerWidth", 8)  // Increased from 6
-    .attr("markerHeight", 8) // Increased from 6
-    .append("path")
-    .attr("d", "M0,-5L10,0L0,5")
-    .attr("fill", "#ffffff");
-
-// Define arrow marker for dimmed links
-defs.append("marker")
-    .attr("id", "arrow-dimmed")
-    .attr("viewBox", "0 -5 10 10")
-    .attr("refX", calculateRefX(10)) // Base radius is 10
-    .attr("refY", 0)
-    .attr("orient", "auto")
-    .attr("markerWidth", 8)  // Increased from 6
-    .attr("markerHeight", 8) // Increased from 6
-    .append("path")
-    .attr("d", "M0,-5L10,0L0,5")
-    .attr("fill", "#999");
+// We'll create dynamic markers based on zoom level when needed
+// No need for static marker definitions
 
 // Add click handler to SVG to clear highlight state when clicking on the canvas
 svg.on("click", function(event) {
@@ -101,7 +53,105 @@ const zoom = d3.zoom()
     .scaleExtent([0.1, 8])
     .on("zoom", (event) => {
         g.attr("transform", event.transform);
+        
+        // If there's a highlighted node, update arrow markers for the new zoom level
+        if (highlightedNode) {
+            updateArrowMarkersForZoom(event.transform.k);
+        }
     });
+
+// Function to update arrow markers based on current zoom level
+function updateArrowMarkersForZoom(scale) {
+    // Update first-order link markers
+    link.each(function(l) {
+        const linkElement = d3.select(this);
+        
+        // Only update markers for highlighted links
+        if (linkElement.classed("link-highlight-first")) {
+            if (l.direction === "unidirectional") {
+                const markerId = `arrow-highlight-first-${scale.toFixed(2)}`;
+                
+                // Create marker if it doesn't exist
+                if (!defs.select(`#${markerId}`).node()) {
+                    defs.append("marker")
+                        .attr("id", markerId)
+                        .attr("viewBox", "0 -5 10 10")
+                        .attr("refX", calculateRefX(12.5, scale))
+                        .attr("refY", 0)
+                        .attr("orient", "auto")
+                        .attr("markerWidth", 8)
+                        .attr("markerHeight", 8)
+                        .append("path")
+                        .attr("d", "M0,-5L10,0L0,5")
+                        .attr("fill", "#ffffff");
+                }
+                
+                linkElement.attr("marker-end", `url(#${markerId})`);
+            } else if (l.direction === "bidirectional") {
+                const markerId = `arrow-highlight-first-${scale.toFixed(2)}`;
+                
+                // Create marker if it doesn't exist
+                if (!defs.select(`#${markerId}`).node()) {
+                    defs.append("marker")
+                        .attr("id", markerId)
+                        .attr("viewBox", "0 -5 10 10")
+                        .attr("refX", calculateRefX(12.5, scale))
+                        .attr("refY", 0)
+                        .attr("orient", "auto")
+                        .attr("markerWidth", 8)
+                        .attr("markerHeight", 8)
+                        .append("path")
+                        .attr("d", "M0,-5L10,0L0,5")
+                        .attr("fill", "#ffffff");
+                }
+                
+                linkElement.attr("marker-end", `url(#${markerId})`)
+                          .attr("marker-start", `url(#${markerId})`);
+            }
+        } else if (linkElement.classed("link-highlight-second")) {
+            if (l.direction === "unidirectional") {
+                const markerId = `arrow-highlight-second-${scale.toFixed(2)}`;
+                
+                // Create marker if it doesn't exist
+                if (!defs.select(`#${markerId}`).node()) {
+                    defs.append("marker")
+                        .attr("id", markerId)
+                        .attr("viewBox", "0 -5 10 10")
+                        .attr("refX", calculateRefX(10, scale))
+                        .attr("refY", 0)
+                        .attr("orient", "auto")
+                        .attr("markerWidth", 8)
+                        .attr("markerHeight", 8)
+                        .append("path")
+                        .attr("d", "M0,-5L10,0L0,5")
+                        .attr("fill", "#ffffff");
+                }
+                
+                linkElement.attr("marker-end", `url(#${markerId})`);
+            } else if (l.direction === "bidirectional") {
+                const markerId = `arrow-highlight-second-${scale.toFixed(2)}`;
+                
+                // Create marker if it doesn't exist
+                if (!defs.select(`#${markerId}`).node()) {
+                    defs.append("marker")
+                        .attr("id", markerId)
+                        .attr("viewBox", "0 -5 10 10")
+                        .attr("refX", calculateRefX(10, scale))
+                        .attr("refY", 0)
+                        .attr("orient", "auto")
+                        .attr("markerWidth", 8)
+                        .attr("markerHeight", 8)
+                        .append("path")
+                        .attr("d", "M0,-5L10,0L0,5")
+                        .attr("fill", "#ffffff");
+                }
+                
+                linkElement.attr("marker-end", `url(#${markerId})`)
+                          .attr("marker-start", `url(#${markerId})`);
+            }
+        }
+    });
+}
 
 svg.call(zoom);
 
@@ -124,20 +174,9 @@ function clearHighlightAndResetZoom() {
             .classed("link-highlight-second", false)
             .classed("link-dimmed", false);
             
-        // Reset arrow markers to default
-        link.each(function(l) {
-            const linkElement = d3.select(this);
-            if (l.direction === "unidirectional") {
-                linkElement.attr("marker-end", "url(#arrow)")
-                          .attr("marker-start", null);
-            } else if (l.direction === "bidirectional") {
-                linkElement.attr("marker-end", "url(#arrow)")
-                          .attr("marker-start", "url(#arrow)");
-            } else {
-                linkElement.attr("marker-end", null)
-                          .attr("marker-start", null);
-            }
-        });
+        // Remove all arrow markers when not highlighted
+        link.attr("marker-end", null)
+            .attr("marker-start", null);
             
         // Hide tooltip
         tooltipTruncated.transition()
@@ -255,13 +294,58 @@ function highlightAndZoomToNode(d) {
         const linkElement = d3.select(this);
         if (l.source.id === d.id || l.target.id === d.id) {
             linkElement.classed("link-highlight-first", true);
+            
+            // Get current zoom transform to adjust marker refX
+            const transform = d3.zoomTransform(svg.node());
+            const scale = transform.k;
+            
             // Update arrow markers for highlighted links
             if (l.direction === "unidirectional") {
-                linkElement.attr("marker-end", "url(#arrow-highlight-first)");
+                // Create dynamic marker with adjusted refX for current zoom level
+                const markerId = `arrow-highlight-first-${scale.toFixed(2)}`;
+                
+                // Check if this marker already exists
+                if (!defs.select(`#${markerId}`).node()) {
+                    // Create a new marker with adjusted refX for this zoom level
+                    defs.append("marker")
+                        .attr("id", markerId)
+                        .attr("viewBox", "0 -5 10 10")
+                        .attr("refX", calculateRefX(12.5, scale)) // Adjust for zoom
+                        .attr("refY", 0)
+                        .attr("orient", "auto")
+                        .attr("markerWidth", 8)
+                        .attr("markerHeight", 8)
+                        .append("path")
+                        .attr("d", "M0,-5L10,0L0,5")
+                        .attr("fill", "#ffffff");
+                }
+                
+                linkElement.attr("marker-end", `url(#${markerId})`)
+                          .attr("marker-start", null);
             } else if (l.direction === "bidirectional") {
-                linkElement.attr("marker-end", "url(#arrow-highlight-first)")
-                          .attr("marker-start", "url(#arrow-highlight-first)");
+                // Create dynamic markers with adjusted refX for current zoom level
+                const markerId = `arrow-highlight-first-${scale.toFixed(2)}`;
+                
+                // Check if this marker already exists
+                if (!defs.select(`#${markerId}`).node()) {
+                    // Create a new marker with adjusted refX for this zoom level
+                    defs.append("marker")
+                        .attr("id", markerId)
+                        .attr("viewBox", "0 -5 10 10")
+                        .attr("refX", calculateRefX(12.5, scale)) // Adjust for zoom
+                        .attr("refY", 0)
+                        .attr("orient", "auto")
+                        .attr("markerWidth", 8)
+                        .attr("markerHeight", 8)
+                        .append("path")
+                        .attr("d", "M0,-5L10,0L0,5")
+                        .attr("fill", "#ffffff");
+                }
+                
+                linkElement.attr("marker-end", `url(#${markerId})`)
+                          .attr("marker-start", `url(#${markerId})`);
             }
+            
             highlightedLinkIndices.add(i);
         }
     });
@@ -280,13 +364,58 @@ function highlightAndZoomToNode(d) {
         if ((firstOrderNodeIds.has(l.source.id) && secondOrderNodeIds.has(l.target.id)) || 
             (firstOrderNodeIds.has(l.target.id) && secondOrderNodeIds.has(l.source.id))) {
             linkElement.classed("link-highlight-second", true);
+            
+            // Get current zoom transform to adjust marker refX
+            const transform = d3.zoomTransform(svg.node());
+            const scale = transform.k;
+            
             // Update arrow markers for highlighted links
             if (l.direction === "unidirectional") {
-                linkElement.attr("marker-end", "url(#arrow-highlight-second)");
+                // Create dynamic marker with adjusted refX for current zoom level
+                const markerId = `arrow-highlight-second-${scale.toFixed(2)}`;
+                
+                // Check if this marker already exists
+                if (!defs.select(`#${markerId}`).node()) {
+                    // Create a new marker with adjusted refX for this zoom level
+                    defs.append("marker")
+                        .attr("id", markerId)
+                        .attr("viewBox", "0 -5 10 10")
+                        .attr("refX", calculateRefX(10, scale)) // Adjust for zoom
+                        .attr("refY", 0)
+                        .attr("orient", "auto")
+                        .attr("markerWidth", 8)
+                        .attr("markerHeight", 8)
+                        .append("path")
+                        .attr("d", "M0,-5L10,0L0,5")
+                        .attr("fill", "#ffffff");
+                }
+                
+                linkElement.attr("marker-end", `url(#${markerId})`)
+                          .attr("marker-start", null);
             } else if (l.direction === "bidirectional") {
-                linkElement.attr("marker-end", "url(#arrow-highlight-second)")
-                          .attr("marker-start", "url(#arrow-highlight-second)");
+                // Create dynamic markers with adjusted refX for current zoom level
+                const markerId = `arrow-highlight-second-${scale.toFixed(2)}`;
+                
+                // Check if this marker already exists
+                if (!defs.select(`#${markerId}`).node()) {
+                    // Create a new marker with adjusted refX for this zoom level
+                    defs.append("marker")
+                        .attr("id", markerId)
+                        .attr("viewBox", "0 -5 10 10")
+                        .attr("refX", calculateRefX(10, scale)) // Adjust for zoom
+                        .attr("refY", 0)
+                        .attr("orient", "auto")
+                        .attr("markerWidth", 8)
+                        .attr("markerHeight", 8)
+                        .append("path")
+                        .attr("d", "M0,-5L10,0L0,5")
+                        .attr("fill", "#ffffff");
+                }
+                
+                linkElement.attr("marker-end", `url(#${markerId})`)
+                          .attr("marker-start", `url(#${markerId})`);
             }
+            
             highlightedLinkIndices.add(i);
         }
     });
@@ -310,13 +439,9 @@ function highlightAndZoomToNode(d) {
         const linkElement = d3.select(this);
         if (!highlightedLinkIndices.has(i)) {
             linkElement.classed("link-dimmed", true);
-            // Update arrow markers for dimmed links
-            if (l.direction === "unidirectional") {
-                linkElement.attr("marker-end", "url(#arrow-dimmed)");
-            } else if (l.direction === "bidirectional") {
-                linkElement.attr("marker-end", "url(#arrow-dimmed)")
-                          .attr("marker-start", "url(#arrow-dimmed)");
-            }
+            // Remove arrow markers for dimmed links
+            linkElement.attr("marker-end", null)
+                      .attr("marker-start", null);
         }
     });
     
@@ -368,19 +493,9 @@ const link = g.append("g")
     .enter().append("line")
     .attr("class", "link")
     .attr("stroke-width", d => Math.sqrt(d.value || 1))
-    .attr("marker-end", d => {
-        // Add arrow marker based on direction
-        if (d.direction === "unidirectional") {
-            return "url(#arrow)";
-        } else if (d.direction === "bidirectional") {
-            return "url(#arrow)";
-        }
-        return null;
-    })
-    .attr("marker-start", d => {
-        // Add arrow marker for bidirectional links
-        return d.direction === "bidirectional" ? "url(#arrow)" : null;
-    });
+    // Initially, don't show any arrows - they'll only be shown on highlighted networks
+    .attr("marker-end", null)
+    .attr("marker-start", null);
 
 // Create nodes
 const node = g.append("g")

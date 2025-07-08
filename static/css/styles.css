@@ -29,25 +29,6 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Marker styling for arrows */
-#arrow path {
-    fill: #999;
-}
-
-#arrow-highlight-first path {
-    fill: #ffffff;
-}
-
-#arrow-highlight-second path {
-    fill: #ffffff;
-    opacity: 0.4;
-}
-
-#arrow-dimmed path {
-    fill: #999;
-    opacity: 0.1;
-}
-
 /* Node glow effect */
 .node-highlight circle {
     filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
