@@ -49,7 +49,6 @@ svg.call(zoom.transform, d3.zoomIdentity.translate(width / 2, height / 2).scale(
 let highlightedNode = null;
 
 // Track animation frames for drift animation
-let driftAnimationId = null;
 
 // Function to clear highlight state and reset zoom
 function clearHighlightAndResetZoom() {
@@ -72,9 +71,6 @@ function clearHighlightAndResetZoom() {
         // Reset the highlighted node tracker
         highlightedNode = null;
         
-        // Stop any ongoing drift animation
-        stopDriftAnimation();
-        
         // Reset zoom to default center view
         svg.transition().duration(750).call(
             zoom.transform,
@@ -86,87 +82,8 @@ function clearHighlightAndResetZoom() {
 // Function to perform zoom with tween animation
 
 // Function to apply drift animation to dimmed nodes
-function startDriftAnimation() {
-    // Stop any existing animation
-    stopDriftAnimation();
-    
-    // Get all dimmed nodes
-    const dimmedNodes = node.filter(function() {
-        return d3.select(this).classed("node-dimmed");
-    });
-    
-    // Skip if no dimmed nodes
-    if (dimmedNodes.size() === 0) return;
-    
-    // Performance optimization: limit the number of animated nodes
-    const maxAnimatedNodes = 100;
-    const nodesToAnimate = dimmedNodes.size() > maxAnimatedNodes 
-        ? dimmedNodes.filter((d, i) => i % Math.ceil(dimmedNodes.size() / maxAnimatedNodes) === 0)
-        : dimmedNodes;
-    
-    // Store original positions
-    nodesToAnimate.each(function(d) {
-        if (!d.originalX) d.originalX = d.x;
-        if (!d.originalY) d.originalY = d.y;
-    });
-    
-    // Animation function
-    function animateDrift() {
-        nodesToAnimate.each(function(d) {
-            // Generate small random movement
-            const dx = (Math.random() - 0.5) * 2;
-            const dy = (Math.random() - 0.5) * 2;
-            
-            // Update position with drift
-            d.x += dx;
-            d.y += dy;
-            
-            // Keep nodes within a reasonable distance of their original position
-            const distanceFromOriginal = Math.sqrt(
-                Math.pow(d.x - d.originalX, 2) + 
-                Math.pow(d.y - d.originalY, 2)
-            );
-            
-            // If drifted too far, pull back toward original position
-            if (distanceFromOriginal > 50) {
-                d.x = d.x * 0.95 + d.originalX * 0.05;
-                d.y = d.y * 0.95 + d.originalY * 0.05;
-            }
-        });
-        
-        // Update positions
-        nodesToAnimate.attr("transform", d => `translate(${d.x},${d.y})`);
-        
-        // Continue animation if we still have a highlighted node
-        if (highlightedNode) {
-            driftAnimationId = requestAnimationFrame(animateDrift);
-        }
-    }
-    
-    // Start the animation
-    driftAnimationId = requestAnimationFrame(animateDrift);
-}
 
 // Function to stop drift animation
-function stopDriftAnimation() {
-    if (driftAnimationId) {
-        cancelAnimationFrame(driftAnimationId);
-        driftAnimationId = null;
-        
-        // Reset nodes to their simulation positions
-        node.each(function(d) {
-            if (d.originalX && d.originalY) {
-                d.x = d.originalX;
-                d.y = d.originalY;
-                delete d.originalX;
-                delete d.originalY;
-            }
-        });
-        
-        // Update positions
-        node.attr("transform", d => `translate(${d.x},${d.y})`);
-    }
-}
 
 // Function to highlight and zoom to a node
 function highlightAndZoomToNode(d) {
@@ -298,22 +215,13 @@ function highlightAndZoomToNode(d) {
     });
     
     // Dim all non-highlighted nodes and links
-    node.each(function(n) {
-        const nodeElement = d3.select(this);
-        if (!highlightedNodeIds.has(n.id)) {
-            nodeElement.classed("node-dimmed", true);
-        }
-    });
+    node.filter(n => !nodeHighlightSet.has(n.id))
+        .classed("node-dimmed", true);
     
-    link.each(function(l, i) {
-        const linkElement = d3.select(this);
-        if (!highlightedLinkIndices.has(i)) {
-            linkElement.classed("link-dimmed", true);
-        }
-    });
+    link.filter(l => !linkHighlightSet.has(l.index))
+        .classed("link-dimmed", true);
     
     // Start drift animation for dimmed nodes
-    startDriftAnimation();
     
     // Show tooltip if the node's title is truncated
     if (d.isTruncated) {
