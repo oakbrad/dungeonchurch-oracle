@@ -124,8 +124,8 @@ function clearHighlightAndResetZoom() {
             .classed("link-highlight-second", false)
             .classed("link-dimmed", false);
             
-        // Hide tooltip
-        hideTooltip();
+        // Hide tooltip immediately without transition
+        hideTooltipImmediately();
             
         // Reset the highlighted node tracker
         highlightedNode = null;
