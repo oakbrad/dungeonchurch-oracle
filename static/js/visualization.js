@@ -25,15 +25,23 @@ const svg = d3.select("#visualization")
 // Add marker definitions for arrows
 const defs = svg.append("defs");
 
+// Helper function to calculate refX based on node radius
+// This ensures arrows touch the edge of the node circle
+function calculateRefX(nodeRadius) {
+    // Add a small offset to ensure the arrow touches the outer edge of the stroke
+    const strokeWidth = 1.5;
+    return nodeRadius + strokeWidth + 3;
+}
+
 // Define arrow marker for unidirectional links
 defs.append("marker")
     .attr("id", "arrow")
     .attr("viewBox", "0 -5 10 10")
-    .attr("refX", 15)  // Position the arrow away from the end point
+    .attr("refX", calculateRefX(10)) // Base radius is 10
     .attr("refY", 0)
     .attr("orient", "auto")
-    .attr("markerWidth", 6)
-    .attr("markerHeight", 6)
+    .attr("markerWidth", 8)  // Increased from 6
+    .attr("markerHeight", 8) // Increased from 6
     .append("path")
     .attr("d", "M0,-5L10,0L0,5")
     .attr("fill", "#999");
@@ -42,11 +50,11 @@ defs.append("marker")
 defs.append("marker")
     .attr("id", "arrow-highlight-first")
     .attr("viewBox", "0 -5 10 10")
-    .attr("refX", 15)
+    .attr("refX", calculateRefX(12.5)) // First-order nodes are scaled 125%
     .attr("refY", 0)
     .attr("orient", "auto")
-    .attr("markerWidth", 6)
-    .attr("markerHeight", 6)
+    .attr("markerWidth", 8)  // Increased from 6
+    .attr("markerHeight", 8) // Increased from 6
     .append("path")
     .attr("d", "M0,-5L10,0L0,5")
     .attr("fill", "#ffffff");
@@ -55,11 +63,11 @@ defs.append("marker")
 defs.append("marker")
     .attr("id", "arrow-highlight-second")
     .attr("viewBox", "0 -5 10 10")
-    .attr("refX", 15)
+    .attr("refX", calculateRefX(10)) // No scaling for second-order
     .attr("refY", 0)
     .attr("orient", "auto")
-    .attr("markerWidth", 6)
-    .attr("markerHeight", 6)
+    .attr("markerWidth", 8)  // Increased from 6
+    .attr("markerHeight", 8) // Increased from 6
     .append("path")
     .attr("d", "M0,-5L10,0L0,5")
     .attr("fill", "#ffffff");
@@ -68,11 +76,11 @@ defs.append("marker")
 defs.append("marker")
     .attr("id", "arrow-dimmed")
     .attr("viewBox", "0 -5 10 10")
-    .attr("refX", 15)
+    .attr("refX", calculateRefX(10)) // Base radius is 10
     .attr("refY", 0)
     .attr("orient", "auto")
-    .attr("markerWidth", 6)
-    .attr("markerHeight", 6)
+    .attr("markerWidth", 8)  // Increased from 6
+    .attr("markerHeight", 8) // Increased from 6
     .append("path")
     .attr("d", "M0,-5L10,0L0,5")
     .attr("fill", "#999");
@@ -808,11 +816,51 @@ node.append("text")
 
 // Update positions on each tick
 simulation.on("tick", () => {
+    // Helper function to calculate the point where the link should meet the node's edge
+    function calculateLinkEndpoint(source, target, nodeRadius) {
+        // Calculate the angle between source and target
+        const dx = target.x - source.x;
+        const dy = target.y - source.y;
+        const angle = Math.atan2(dy, dx);
+        
+        // Calculate the point on the circumference of the node
+        const x = target.x - Math.cos(angle) * nodeRadius;
+        const y = target.y - Math.sin(angle) * nodeRadius;
+        
+        return { x, y };
+    }
+    
     link
-        .attr("x1", d => d.source.x)
-        .attr("y1", d => d.source.y)
-        .attr("x2", d => d.target.x)
-        .attr("y2", d => d.target.y);
+        .attr("x1", d => {
+            // For bidirectional links, adjust the start point to be at the edge of the source node
+            if (d.direction === "bidirectional") {
+                const sourceRadius = d.source.radius || 10;
+                const endpoint = calculateLinkEndpoint(d.target, d.source, sourceRadius);
+                return endpoint.x;
+            }
+            return d.source.x;
+        })
+        .attr("y1", d => {
+            // For bidirectional links, adjust the start point to be at the edge of the source node
+            if (d.direction === "bidirectional") {
+                const sourceRadius = d.source.radius || 10;
+                const endpoint = calculateLinkEndpoint(d.target, d.source, sourceRadius);
+                return endpoint.y;
+            }
+            return d.source.y;
+        })
+        .attr("x2", d => {
+            // Adjust the end point to be at the edge of the target node
+            const targetRadius = d.target.radius || 10;
+            const endpoint = calculateLinkEndpoint(d.source, d.target, targetRadius);
+            return endpoint.x;
+        })
+        .attr("y2", d => {
+            // Adjust the end point to be at the edge of the target node
+            const targetRadius = d.target.radius || 10;
+            const endpoint = calculateLinkEndpoint(d.source, d.target, targetRadius);
+            return endpoint.y;
+        });
     
     node
         .attr("transform", d => `translate(${d.x},${d.y})`);
