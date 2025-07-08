@@ -17,16 +17,17 @@ body {
     fill: #666;
     stroke: #fff;
     stroke-width: 1.5px;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .node text {
     fill: #fff;
     font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .link {
     stroke: #999;
     stroke-opacity: 0.6;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 /* Node glow effect */
@@ -34,11 +35,13 @@ body {
     filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
     fill: #ffffff;
     transform: scale(200%,200%);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .node-highlight text {
     fill: #000000 !important;
     transform: scale(200%,200%);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 /* First-order connection highlighting */
@@ -46,6 +49,7 @@ body {
     stroke: #ffffff;
     stroke-opacity: 0.9;
     stroke-width: 2px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .node-highlight-first circle {
@@ -53,9 +57,11 @@ body {
     fill: #ff2600;
     stroke-width: 2.5px;
     transform: scale(125%,125%);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .node-highlight-first text {
         transform: scale(125%,125%);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 /* Second-order connection highlighting */
@@ -63,16 +69,18 @@ body {
     stroke: #ffffff;
     stroke-opacity: 0.4;
     stroke-width: 1px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .node-highlight-second circle {
     stroke: #aaaaaa;
     stroke-width: 2px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .node-highlight-second circle {
     fill: #ffffff50;
-
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 /* Dimmed nodes and links */

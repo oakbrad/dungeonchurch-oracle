@@ -123,6 +123,79 @@ function highlightAndZoomToNode(d) {
     const centerX = (minX + maxX) / 2;
     const centerY = (minY + maxY) / 2;
     
+    // Get second-order connections
+    const secondOrderNodeIds = new Set();
+    
+    // For each first-order node, find its connections
+    firstOrderNodeIds.forEach(nodeId => {
+        graphData.links.forEach(link => {
+            if (link.source.id === nodeId) {
+                // Don't include the original node or first-order nodes
+                if (link.target.id !== d.id && !firstOrderNodeIds.has(link.target.id)) {
+                    secondOrderNodeIds.add(link.target.id);
+                }
+            } else if (link.target.id === nodeId) {
+                // Don't include the original node or first-order nodes
+                if (link.source.id !== d.id && !firstOrderNodeIds.has(link.source.id)) {
+                    secondOrderNodeIds.add(link.source.id);
+                }
+            }
+        });
+    });
+    
+    // Create sets to track which nodes and links should be highlighted
+    const highlightedNodeIds = new Set([d.id, ...firstOrderNodeIds, ...secondOrderNodeIds]);
+    const highlightedLinkIndices = new Set();
+    
+    // Store original force parameters
+    const originalAlpha = simulation.alpha();
+    const originalAlphaTarget = simulation.alphaTarget();
+    const originalAlphaDecay = simulation.alphaDecay();
+    
+    // Apply spring effect to highlighted nodes
+    graphData.nodes.forEach(node => {
+        // Reset any previous fixed positions
+        if (node !== d) {
+            node.fx = null;
+            node.fy = null;
+        }
+        
+        // Apply spring effect to highlighted nodes and their connections
+        if (node.id === d.id) {
+            // Center node gets a slight outward push
+            node.fx = node.x;
+            node.fy = node.y;
+        } else if (firstOrderNodeIds.has(node.id)) {
+            // First-order connections get a stronger outward push
+            const dx = node.x - d.x;
+            const dy = node.y - d.y;
+            const distance = Math.sqrt(dx * dx + dy * dy) || 1;
+            const normalizedDx = dx / distance;
+            const normalizedDy = dy / distance;
+            
+            // Apply an initial velocity outward
+            node.vx = normalizedDx * 5;
+            node.vy = normalizedDy * 5;
+        } else if (secondOrderNodeIds.has(node.id)) {
+            // Second-order connections get a milder push
+            const dx = node.x - d.x;
+            const dy = node.y - d.y;
+            const distance = Math.sqrt(dx * dx + dy * dy) || 1;
+            const normalizedDx = dx / distance;
+            const normalizedDy = dy / distance;
+            
+            // Apply a gentler initial velocity
+            node.vx = normalizedDx * 2;
+            node.vy = normalizedDy * 2;
+        }
+    });
+    
+    // Temporarily increase the repulsion force
+    simulation.force("charge").strength(-600);
+    
+    // Restart simulation with higher energy
+    simulation.alpha(0.8).alphaTarget(0).alphaDecay(0.02).restart();
+    
     // Animate the zoom
     svg.transition().duration(750).call(
         zoom.transform,
@@ -147,30 +220,6 @@ function highlightAndZoomToNode(d) {
     
     // Add highlight class to the current node
     currentNode.classed("node-highlight", true);
-    
-    // Get second-order connections
-    const secondOrderNodeIds = new Set();
-    
-    // For each first-order node, find its connections
-    firstOrderNodeIds.forEach(nodeId => {
-        graphData.links.forEach(link => {
-            if (link.source.id === nodeId) {
-                // Don't include the original node or first-order nodes
-                if (link.target.id !== d.id && !firstOrderNodeIds.has(link.target.id)) {
-                    secondOrderNodeIds.add(link.target.id);
-                }
-            } else if (link.target.id === nodeId) {
-                // Don't include the original node or first-order nodes
-                if (link.source.id !== d.id && !firstOrderNodeIds.has(link.source.id)) {
-                    secondOrderNodeIds.add(link.source.id);
-                }
-            }
-        });
-    });
-    
-    // Create sets to track which nodes and links should be highlighted
-    const highlightedNodeIds = new Set([d.id, ...firstOrderNodeIds, ...secondOrderNodeIds]);
-    const highlightedLinkIndices = new Set();
     
     // Highlight first-order links and nodes
     link.each(function(l, i) {
@@ -220,6 +269,18 @@ function highlightAndZoomToNode(d) {
             linkElement.classed("link-dimmed", true);
         }
     });
+    
+    // Restore original force parameters after the spring effect
+    setTimeout(() => {
+        simulation.force("charge").strength(-300);
+        simulation.alpha(originalAlpha).alphaTarget(originalAlphaTarget).alphaDecay(originalAlphaDecay);
+        
+        // Release the fixed position of the center node
+        if (d.fx !== null) {
+            d.fx = null;
+            d.fy = null;
+        }
+    }, 1500);
     
     // Show tooltip if the node's title is truncated
     if (d.isTruncated) {
