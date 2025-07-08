@@ -8,8 +8,23 @@ graphData.nodes.forEach(node => {
 });
 
 // Setup the visualization
-const width = window.innerWidth;
-const height = window.innerHeight;
+let width = 0;
+let height = 0;
+
+// Function to get container dimensions
+function getContainerDimensions() {
+    const container = document.getElementById('visualization');
+    const rect = container.getBoundingClientRect();
+    return {
+        width: rect.width,
+        height: rect.height
+    };
+}
+
+// Initialize dimensions
+const dimensions = getContainerDimensions();
+width = dimensions.width;
+height = dimensions.height;
 
 // Create tooltip for truncated nodes
 const tooltipTruncated = d3.select("body").append("div")
@@ -856,5 +871,53 @@ searchInput.addEventListener("input", function() {
 document.addEventListener("click", function(event) {
     if (event.target !== searchInput && !searchResults.contains(event.target)) {
         searchResults.style.display = "none";
+    }
+});
+
+// Function to handle resize events
+function handleResize() {
+    // Get new dimensions
+    const newDimensions = getContainerDimensions();
+    width = newDimensions.width;
+    height = newDimensions.height;
+    
+    // Update SVG dimensions
+    svg.attr("width", width)
+       .attr("height", height);
+    
+    // Recenter if needed
+    if (!highlightedNode) {
+        svg.transition().duration(300).call(
+            zoom.transform,
+            d3.zoomIdentity.translate(width / 2, height / 2).scale(0.5)
+        );
+    }
+    
+    // Update tooltip position if visible
+    if (parseFloat(tooltipTruncated.style("opacity")) > 0 && highlightedNode) {
+        updateTooltipPosition(highlightedNode);
+    }
+}
+
+// Set up resize observer for container
+if (typeof ResizeObserver !== 'undefined') {
+    const resizeObserver = new ResizeObserver(entries => {
+        // We only observe one element, so we can just use the first entry
+        handleResize();
+    });
+    
+    // Start observing the visualization container
+    resizeObserver.observe(document.getElementById('visualization'));
+} else {
+    // Fallback to window resize event for older browsers
+    window.addEventListener('resize', handleResize);
+}
+
+// Handle iframe resize messages from parent
+window.addEventListener('message', function(event) {
+    // Check if the message is a resize notification
+    if (event.data && event.data.type === 'resize') {
+        // Force a resize calculation
+        handleResize();
     }
 });
