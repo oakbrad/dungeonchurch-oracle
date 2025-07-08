@@ -54,12 +54,30 @@ body {
 
 .node-highlight-first circle {
     stroke: #ffffff;
+    /* Default fill color for nodes without a specific collection class */
+    fill: #666;
     stroke-width: 2.5px;
     transform: scale(125%,125%);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* Ensure collection colors are applied to highlighted nodes */
+.node-highlight-first.collection-ffaa3b03-1b56-4131-aedd-f208a0b3ed03 circle { fill: #00d084; }
+.node-highlight-first.collection-13b87098-500c-490d-ae46-01356387fe88 circle { fill: #ffbe0b; }
+.node-highlight-first.collection-9eecd4c7-d708-40ca-add0-5f6ec31066cf circle { fill: #0366d6; }
+.node-highlight-first.collection-a60ccdf0-330c-4a08-8511-729aea62ca75 circle { fill: #9e5cf7; }
+.node-highlight-first.collection-7e8c2f3f-6e08-4b08-b207-33365583a8bf circle { fill: #4E5C6E; }
+.node-highlight-first.collection-7275a3d8-27da-4f63-ac39-a9bc9a1ec6d7 circle { fill: #ffbe0b; }
+.node-highlight-first.collection-184c6e39-ef59-49b4-89d8-302d6abae3cf circle { fill: #ff4dfa; }
+.node-highlight-first.collection-28015ad0-50f5-4495-a6c5-2415436a3d40 circle { fill: #ff825c; }
+.node-highlight-first.collection-7c70ca02-fdd6-4a30-a8b7-931093ebfbd8 circle { fill: #ff5c80; }
+.node-highlight-first.collection-9870bc72-55da-4158-892c-3c54ec9e5828 circle { fill: #666; } /* Default for null */
+.node-highlight-first.collection-098323c3-c9a2-45f4-ab12-ff8b759c5be7 circle { fill: #9e5cf7; }
+.node-highlight-first.collection-77c74010-e20c-419c-8122-97563ec685b6 circle { fill: #00d084; }
+.node-highlight-first.collection-ac7efc59-549b-4aa9-9ed8-1b22f82382d0 circle { fill: #FF4DFA; }
+
 .node-highlight-first text {
-        transform: scale(125%,125%);
+    transform: scale(125%,125%);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
