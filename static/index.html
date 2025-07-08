@@ -16,6 +16,13 @@
     </div>
     <div id="visualization"></div>
     
+    <!-- Time slider container -->
+    <div id="time-slider-container">
+        <input type="range" id="time-slider" min="0" max="100" value="100">
+        <div id="time-label">Current Time: <span id="current-time">Present</span></div>
+        <button id="reset-time-btn">Reset to Full Timeline</button>
+    </div>
+    
     <!-- The graph data will be loaded here -->
     <script src="js/graph-data.js"></script>
     <!-- Add collection colors JS -->
@@ -23,3 +30,4 @@
     <script src="js/visualization.js"></script>
 </body>
 </html>
+

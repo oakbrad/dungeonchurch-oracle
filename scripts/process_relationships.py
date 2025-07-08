@@ -85,7 +85,7 @@ def restore_database(dump_file):
         # Create graph_nodes view
         cursor.execute("""
         CREATE MATERIALIZED VIEW IF NOT EXISTS graph_nodes AS
-        SELECT id, title, "urlId", "collectionId"
+        SELECT id, title, "urlId", "collectionId", "createdAt"
         FROM   documents
         WHERE  "deletedAt" IS NULL;
         """)
@@ -209,6 +209,10 @@ def extract_relationship_data(db_name):
         # Add the connection count to each node
         for node in nodes:
             node['connections'] = connection_counts.get(node['id'], 0)
+            
+            # Convert createdAt to ISO format string if it exists
+            if 'createdAt' in node and node['createdAt'] is not None:
+                node['createdAt'] = node['createdAt'].isoformat()
         
         # Convert to D3-compatible format
         graph_data = {

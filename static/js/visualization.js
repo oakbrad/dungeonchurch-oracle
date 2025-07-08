@@ -7,6 +7,136 @@ graphData.nodes.forEach(node => {
     nodeMap.set(node.id, node);
 });
 
+// Time-related variables and functions
+let earliestDate = null;
+let latestDate = null;
+let currentTimeFilter = null;
+let isNodeSpecificTimeline = false;
+let selectedNodeId = null;
+
+// Initialize time-related data
+function initializeTimeData() {
+    // Find earliest and latest dates in the dataset
+    graphData.nodes.forEach(node => {
+        if (node.createdAt) {
+            const date = new Date(node.createdAt);
+            if (!earliestDate || date < earliestDate) {
+                earliestDate = date;
+            }
+            if (!latestDate || date > latestDate) {
+                latestDate = date;
+            }
+        }
+    });
+    
+    // If no dates found, use default values
+    if (!earliestDate) {
+        earliestDate = new Date(2020, 0, 1); // Default to Jan 1, 2020
+    }
+    if (!latestDate) {
+        latestDate = new Date(); // Default to current date
+    }
+    
+    // Set current time filter to latest date (show all nodes)
+    currentTimeFilter = new Date();
+    
+    // Initialize the time slider
+    const timeSlider = document.getElementById('time-slider');
+    timeSlider.min = earliestDate.getTime();
+    timeSlider.max = latestDate.getTime();
+    timeSlider.value = latestDate.getTime();
+    
+    // Update the time label
+    updateTimeLabel(latestDate);
+    
+    // Add event listener for slider changes
+    timeSlider.addEventListener('input', function() {
+        const selectedTime = new Date(parseInt(this.value));
+        currentTimeFilter = selectedTime;
+        updateTimeLabel(selectedTime);
+        updateVisibleNodes();
+    });
+    
+    // Add event listener for reset button
+    document.getElementById('reset-time-btn').addEventListener('click', function() {
+        resetToFullTimeline();
+    });
+}
+
+// Update the time label with the selected date
+function updateTimeLabel(date) {
+    const formattedDate = date.toLocaleDateString() + ' ' + date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+    document.getElementById('current-time').textContent = formattedDate;
+}
+
+// Reset to full timeline view
+function resetToFullTimeline() {
+    isNodeSpecificTimeline = false;
+    selectedNodeId = null;
+    
+    // Reset slider to latest date
+    const timeSlider = document.getElementById('time-slider');
+    timeSlider.value = latestDate.getTime();
+    currentTimeFilter = latestDate;
+    updateTimeLabel(latestDate);
+    
+    // Update visualization
+    updateVisibleNodes();
+    
+    // Clear any node highlights
+    clearHighlightAndResetZoom();
+}
+
+// Update which nodes are visible based on the current time filter
+function updateVisibleNodes() {
+    // Filter nodes based on creation date
+    node.each(function(d) {
+        const nodeElement = d3.select(this);
+        const createdAt = d.createdAt ? new Date(d.createdAt) : earliestDate;
+        
+        // In node-specific timeline mode, only show the selected node and its connections
+        if (isNodeSpecificTimeline) {
+            if (d.id === selectedNodeId) {
+                // Always show the selected node
+                nodeElement.style('display', 'block');
+            } else {
+                // For other nodes, check if they're connected to the selected node
+                // and if they were created before the current time filter
+                const isConnected = graphData.links.some(link => 
+                    (link.source.id === selectedNodeId && link.target.id === d.id) || 
+                    (link.target.id === selectedNodeId && link.source.id === d.id)
+                );
+                
+                if (isConnected && createdAt <= currentTimeFilter) {
+                    nodeElement.style('display', 'block');
+                } else {
+                    nodeElement.style('display', 'none');
+                }
+            }
+        } else {
+            // In global timeline mode, show all nodes created before the current time filter
+            if (createdAt <= currentTimeFilter) {
+                nodeElement.style('display', 'block');
+            } else {
+                nodeElement.style('display', 'none');
+            }
+        }
+    });
+    
+    // Filter links based on visible nodes
+    link.each(function(d) {
+        const linkElement = d3.select(this);
+        const sourceVisible = d3.select(node.nodes().find(n => d3.select(n).datum().id === d.source.id)).style('display') !== 'none';
+        const targetVisible = d3.select(node.nodes().find(n => d3.select(n).datum().id === d.target.id)).style('display') !== 'none';
+        
+        if (sourceVisible && targetVisible) {
+            linkElement.style('display', 'block');
+        } else {
+            linkElement.style('display', 'none');
+        }
+    });
+}
+
 // Setup the visualization
 const width = window.innerWidth;
 const height = window.innerHeight;
@@ -69,6 +199,13 @@ function clearHighlightAndResetZoom() {
         // Reset the highlighted node tracker
         highlightedNode = null;
         
+        // Reset node-specific timeline mode
+        isNodeSpecificTimeline = false;
+        selectedNodeId = null;
+        
+        // Update visible nodes based on current time filter
+        updateVisibleNodes();
+        
         // Reset zoom to default center view
         svg.transition().duration(750).call(
             zoom.transform,
@@ -81,6 +218,22 @@ function clearHighlightAndResetZoom() {
 function highlightAndZoomToNode(d) {
     // Set this node as the highlighted node
     highlightedNode = d;
+    
+    // Set node-specific timeline mode
+    isNodeSpecificTimeline = true;
+    selectedNodeId = d.id;
+    
+    // If the node has a creation date, update the time slider to start from that date
+    if (d.createdAt) {
+        const nodeCreationDate = new Date(d.createdAt);
+        const timeSlider = document.getElementById('time-slider');
+        timeSlider.value = latestDate.getTime(); // First set to latest to show all connections
+        currentTimeFilter = latestDate;
+        updateTimeLabel(latestDate);
+        
+        // Update visible nodes based on the node-specific timeline
+        updateVisibleNodes();
+    }
     
     // Get first-order connections
     const firstOrderLinks = graphData.links.filter(link => 
@@ -751,6 +904,9 @@ function getNodeColor(node) {
 function truncateText(text, maxLength) {
     return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
 }
+
+// Initialize the time data after the visualization is set up
+initializeTimeData();
 
 // Search functionality
 const searchInput = document.getElementById("search-input");
