@@ -120,12 +120,8 @@ function clearHighlightAndResetZoom() {
             .classed("node-highlight-second", false)
             .classed("node-dimmed", false);
         
-        // Remove all collection-specific classes
-        graphData.nodes.forEach(n => {
-            if (n.collectionId) {
-                node.classed(`collection-${n.collectionId}`, false);
-            }
-        });
+        // Reset fill colors for all nodes
+        node.select("circle").attr("fill", null);
         
         link.classed("link-highlight-first", false)
             .classed("link-highlight-second", false)
@@ -205,12 +201,8 @@ function highlightAndZoomToNode(d) {
         .classed("node-highlight-second", false)
         .classed("node-dimmed", false);
     
-    // Remove all collection-specific classes
-    graphData.nodes.forEach(n => {
-        if (n.collectionId) {
-            node.classed(`collection-${n.collectionId}`, false);
-        }
-    });
+    // Reset fill colors for all nodes
+    node.select("circle").attr("fill", null);
     
     link.classed("link-highlight-first", false)
         .classed("link-highlight-second", false)
@@ -251,10 +243,12 @@ function highlightAndZoomToNode(d) {
         const nodeElement = node.filter(n => n.id === nodeId);
         nodeElement.classed("node-highlight-first", true);
         
-        // Add collection-specific class for styling
+        // Use direct attribute manipulation for better performance
         const nodeData = nodeMap.get(nodeId);
         if (nodeData && nodeData.collectionId) {
-            nodeElement.classed(`collection-${nodeData.collectionId}`, true);
+            // Apply collection color directly to the circle element
+            nodeElement.select("circle")
+                .attr("fill", getCollectionColor(nodeData.collectionId));
         }
     });
 
@@ -469,9 +463,11 @@ node.append("circle")
                 if (firstOrderNodeIds.has(n.id)) {
                     nodeElement.classed("node-highlight-first", true);
                     
-                    // Add collection-specific class for styling
+                    // Use direct attribute manipulation for better performance
                     if (n.collectionId) {
-                        nodeElement.classed(`collection-${n.collectionId}`, true);
+                        // Apply collection color directly to the circle element
+                        nodeElement.select("circle")
+                            .attr("fill", getCollectionColor(n.collectionId));
                     }
                 }
             });
@@ -529,12 +525,8 @@ node.append("circle")
                 .classed("node-highlight-second", false)
                 .classed("node-dimmed", false);
             
-            // Remove all collection-specific classes
-            graphData.nodes.forEach(n => {
-                if (n.collectionId) {
-                    node.classed(`collection-${n.collectionId}`, false);
-                }
-            });
+            // Reset fill colors for all nodes
+            node.select("circle").attr("fill", null);
             
             link.classed("link-highlight-first", false)
                 .classed("link-highlight-second", false)
