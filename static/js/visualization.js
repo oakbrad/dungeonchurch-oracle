@@ -85,26 +85,11 @@ function clearHighlightAndResetZoom() {
 
 // Function to perform zoom with tween animation
 function zoomWithTween(startTransform, endTransform, duration) {
-    // Use d3.interpolateZoom for smooth zooming
-    const interpolateZoom = d3.interpolateZoom(
-        [startTransform.x, startTransform.y, startTransform.k],
-        [endTransform.x, endTransform.y, endTransform.k]
-    );
-    
+    // Use D3's zoom.transform to handle the transition properly
     svg.transition()
         .duration(duration)
         .ease(d3.easeCubicInOut) // Smoother easing function
-        .tween("zoom", function() {
-            return function(t) {
-                const interpolated = interpolateZoom(t);
-                const zoomTransform = d3.zoomIdentity
-                    .translate(interpolated[0], interpolated[1])
-                    .scale(interpolated[2]);
-                
-                // Apply the transform to the zoom behavior
-                zoom.transform(svg, zoomTransform);
-            };
-        });
+        .call(zoom.transform, endTransform);
 }
 
 // Function to apply drift animation to dimmed nodes
