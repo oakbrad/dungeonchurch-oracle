@@ -14,7 +14,6 @@ on:
       - completed
     branches:
       - main
-    conclusion: success
   workflow_dispatch:
     # Allow manual triggering
 
