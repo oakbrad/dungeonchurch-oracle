@@ -149,9 +149,6 @@ function highlightAndZoomToNode(d) {
     // Find the current node element
     const currentNode = node.filter(n => n.id === d.id);
     
-    // Add highlight class to the current node
-    currentNode.classed("node-highlight", true);
-    
     // Get second-order connections
     const secondOrderNodeIds = new Set();
     
@@ -176,12 +173,32 @@ function highlightAndZoomToNode(d) {
     const highlightedNodeIds = new Set([d.id, ...firstOrderNodeIds, ...secondOrderNodeIds]);
     const highlightedLinkIndices = new Set();
     
+    // Reorder elements for proper rendering BEFORE applying highlight classes
+    // First, lower all elements to the back
+    node.lower();
+    link.lower();
+    
+    // Then raise elements in order of importance
+    // 1. Raise second-order connections
+    node.filter(n => secondOrderNodeIds.has(n.id)).raise();
+    
+    // 2. Raise first-order connections
+    node.filter(n => firstOrderNodeIds.has(n.id)).raise();
+    
+    // 3. Raise the highlighted node to the top
+    currentNode.raise();
+    
+    // Now apply highlight classes after reordering
+    // Add highlight class to the current node
+    currentNode.classed("node-highlight", true);
+    
     // Highlight first-order links and nodes
     link.each(function(l, i) {
         const linkElement = d3.select(this);
         if (l.source.id === d.id || l.target.id === d.id) {
             linkElement.classed("link-highlight-first", true);
             highlightedLinkIndices.add(i);
+            linkElement.raise(); // Raise first-order links
         }
     });
     
@@ -200,6 +217,7 @@ function highlightAndZoomToNode(d) {
             (firstOrderNodeIds.has(l.target.id) && secondOrderNodeIds.has(l.source.id))) {
             linkElement.classed("link-highlight-second", true);
             highlightedLinkIndices.add(i);
+            linkElement.raise(); // Raise second-order links, but below first-order links
         }
     });
     
@@ -226,25 +244,7 @@ function highlightAndZoomToNode(d) {
                 .translate(width / 2, height / 2)
                 .scale(scale)
                 .translate(-centerX, -centerY)
-        )
-       .on("end", function() {
-            // Reorder elements for proper rendering AFTER the animation completes
-            // First, lower all elements to the back
-            node.lower();
-            link.lower();
-            
-            // Then raise elements in order of importance
-            // 1. Raise second-order connections
-            link.filter(".link-highlight-second").raise();
-            node.filter(".node-highlight-second").raise();
-            
-            // 2. Raise first-order connections
-            link.filter(".link-highlight-first").raise();
-            node.filter(".node-highlight-first").raise();
-            
-            // 3. Raise the highlighted node to the top
-            currentNode.raise();
-       });
+        );
     
     // Start drift animation for dimmed nodes
     
@@ -350,9 +350,6 @@ node.append("circle")
         // Get the current node element
         const currentNode = d3.select(this.parentNode);
         
-        // Add highlight class to the current node
-        currentNode.classed("node-highlight", true);
-        
         // Get first-order connections
         const firstOrderLinks = graphData.links.filter(link => 
             link.source.id === d.id || link.target.id === d.id
@@ -388,12 +385,32 @@ node.append("circle")
         const highlightedNodeIds = new Set([d.id, ...firstOrderNodeIds, ...secondOrderNodeIds]);
         const highlightedLinkIndices = new Set();
         
+        // Reorder elements for proper rendering BEFORE applying highlight classes
+        // First, lower all elements to the back
+        node.lower();
+        link.lower();
+        
+        // Then raise elements in order of importance
+        // 1. Raise second-order connections
+        node.filter(n => secondOrderNodeIds.has(n.id)).raise();
+        
+        // 2. Raise first-order connections
+        node.filter(n => firstOrderNodeIds.has(n.id)).raise();
+        
+        // 3. Raise the highlighted node to the top
+        currentNode.raise();
+        
+        // Now apply highlight classes after reordering
+        // Add highlight class to the current node
+        currentNode.classed("node-highlight", true);
+        
         // Highlight first-order links and nodes
         link.each(function(l, i) {
             const linkElement = d3.select(this);
             if (l.source.id === d.id || l.target.id === d.id) {
                 linkElement.classed("link-highlight-first", true);
                 highlightedLinkIndices.add(i);
+                linkElement.raise(); // Raise first-order links
             }
         });
         
@@ -412,6 +429,7 @@ node.append("circle")
                 (firstOrderNodeIds.has(l.target.id) && secondOrderNodeIds.has(l.source.id))) {
                 linkElement.classed("link-highlight-second", true);
                 highlightedLinkIndices.add(i);
+                linkElement.raise(); // Raise second-order links, but below first-order links
             }
         });
         
@@ -436,27 +454,6 @@ node.append("circle")
                 linkElement.classed("link-dimmed", true);
             }
         });
-        
-        // Wait for CSS transitions to complete before reordering
-        // The longest transition in the CSS is 0.5s (500ms)
-        setTimeout(() => {
-            // Reorder elements for proper rendering AFTER the transitions complete
-            // First, lower all elements to the back
-            node.lower();
-            link.lower();
-            
-            // Then raise elements in order of importance
-            // 1. Raise second-order connections
-            link.filter(".link-highlight-second").raise();
-            node.filter(".node-highlight-second").raise();
-            
-            // 2. Raise first-order connections
-            link.filter(".link-highlight-first").raise();
-            node.filter(".node-highlight-first").raise();
-            
-            // 3. Raise the highlighted node to the top
-            currentNode.raise();
-        }, 500); // Wait for 500ms to match the longest CSS transition
         
         // Show tooltip if the node's title is truncated
         if (d.isTruncated) {
