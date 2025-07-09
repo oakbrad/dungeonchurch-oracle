@@ -130,7 +130,7 @@ function hideTooltipImmediately() {
 function clearHighlightAndResetZoom() {
 
 // Function to reorder elements to bring highlighted network to front
-function reorderHighlightedElements(currentNode) {
+function reorderHighlightedElements() {
     // First, lower all elements to the back
     node.lower();
     link.lower();
@@ -145,7 +145,7 @@ function reorderHighlightedElements(currentNode) {
     node.filter(".node-highlight-first").raise();
     
     // 3. Raise the highlighted node to the top
-    currentNode.raise();
+    node.filter(".node-highlight").raise();
 }
     if (highlightedNode) {
         // Remove all highlight and dimmed classes
@@ -319,7 +319,7 @@ function highlightAndZoomToNode(d) {
         )
        .on("end", function() {
             // Reorder elements for proper rendering AFTER the animation completes
-            reorderHighlightedElements(currentNode);
+            reorderHighlightedElements();
             
             // Show tooltip if the node's title is truncated
             if (d.isTruncated) {
@@ -505,7 +505,7 @@ node.append("circle")
                 }
             });
             // Reorder elements to bring highlighted network to front
-            reorderHighlightedElements(currentNode);
+            reorderHighlightedElements();
         }
         
         // Show tooltip if the node's title is truncated
