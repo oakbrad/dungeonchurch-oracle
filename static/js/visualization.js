@@ -128,25 +128,6 @@ function hideTooltipImmediately() {
 
 // Function to clear highlight state and reset zoom
 function clearHighlightAndResetZoom() {
-
-// Function to reorder elements to bring highlighted network to front
-function reorderHighlightedElements() {
-    // First, lower all elements to the back
-    node.lower();
-    link.lower();
-    
-    // Then raise elements in order of importance
-    // 1. Raise second-order connections
-    link.filter(".link-highlight-second").raise();
-    node.filter(".node-highlight-second").raise();
-    
-    // 2. Raise first-order connections
-    link.filter(".link-highlight-first").raise();
-    node.filter(".node-highlight-first").raise();
-    
-    // 3. Raise the highlighted node to the top
-    node.filter(".node-highlight").raise();
-}
     if (highlightedNode) {
         // Remove all highlight and dimmed classes
         node.classed("node-highlight", false)
@@ -178,6 +159,25 @@ function reorderHighlightedElements() {
 }
 
 // Function to highlight and zoom to a node
+// Function to reorder elements to bring highlighted network to front
+function reorderHighlightedElements() {
+    // First, lower all elements to the back
+    node.lower();
+    link.lower();
+    
+    // Then raise elements in order of importance
+    // 1. Raise second-order connections
+    link.filter(".link-highlight-second").raise();
+    node.filter(".node-highlight-second").raise();
+    
+    // 2. Raise first-order connections
+    link.filter(".link-highlight-first").raise();
+    node.filter(".node-highlight-first").raise();
+    
+    // 3. Raise the highlighted node to the top
+    node.filter(".node-highlight").raise();
+}
+
 function highlightAndZoomToNode(d) {
     // Hide any existing tooltips immediately without transition
     hideTooltipImmediately();
@@ -414,7 +414,7 @@ node.append("circle")
         if (highlightedNode && highlightedNode !== d) return;
         
         // Get the current node element
-        const currentNode = node.filter(n => n.id === d.id);
+        const currentNode = d3.select(this.parentNode);
         
         // If no node is highlighted, add temporary highlight class
         if (!highlightedNode) {
@@ -503,9 +503,9 @@ node.append("circle")
                 if (!highlightedLinkIndices.has(i)) {
                     linkElement.classed("link-dimmed", true);
                 }
-            });
             // Reorder elements to bring highlighted network to front
             reorderHighlightedElements();
+            });
         }
         
         // Show tooltip if the node's title is truncated
