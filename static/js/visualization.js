@@ -565,8 +565,7 @@ function fitTextInCircle(text, title, radius) {
     }
     
     // Only use abbreviation strategy for extremely small circles
-    // Increased threshold to ensure more circles show full text
-    if (radius < 8) {
+    if (radius < 6) {
         return fitSmallCircleText(text, title, radius);
     }
     
