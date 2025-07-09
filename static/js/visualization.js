@@ -128,6 +128,24 @@ function hideTooltipImmediately() {
 
 // Function to clear highlight state and reset zoom
 function clearHighlightAndResetZoom() {
+\n// Function to reorder elements to bring highlighted network to front
+function reorderHighlightedElements(currentNode) {
+    // First, lower all elements to the back
+    node.lower();
+    link.lower();
+    
+    // Then raise elements in order of importance
+    // 1. Raise second-order connections
+    link.filter(".link-highlight-second").raise();
+    node.filter(".node-highlight-second").raise();
+    
+    // 2. Raise first-order connections
+    link.filter(".link-highlight-first").raise();
+    node.filter(".node-highlight-first").raise();
+    
+    // 3. Raise the highlighted node to the top
+    currentNode.raise();
+}
     if (highlightedNode) {
         // Remove all highlight and dimmed classes
         node.classed("node-highlight", false)
@@ -300,21 +318,7 @@ function highlightAndZoomToNode(d) {
         )
        .on("end", function() {
             // Reorder elements for proper rendering AFTER the animation completes
-            // First, lower all elements to the back
-            node.lower();
-            link.lower();
-            
-            // Then raise elements in order of importance
-            // 1. Raise second-order connections
-            link.filter(".link-highlight-second").raise();
-            node.filter(".node-highlight-second").raise();
-            
-            // 2. Raise first-order connections
-            link.filter(".link-highlight-first").raise();
-            node.filter(".node-highlight-first").raise();
-            
-            // 3. Raise the highlighted node to the top
-            currentNode.raise();
+            reorderHighlightedElements(currentNode);
             
             // Show tooltip if the node's title is truncated
             if (d.isTruncated) {
@@ -499,6 +503,8 @@ node.append("circle")
                     linkElement.classed("link-dimmed", true);
                 }
             });
+            // Reorder elements to bring highlighted network to front
+            reorderHighlightedElements(currentNode);
         }
         
         // Show tooltip if the node's title is truncated
