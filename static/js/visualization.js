@@ -414,7 +414,7 @@ node.append("circle")
         if (highlightedNode && highlightedNode !== d) return;
         
         // Get the current node element
-        const currentNode = d3.select(this.parentNode);
+        const currentNode = node.filter(n => n.id === d.id);
         
         // If no node is highlighted, add temporary highlight class
         if (!highlightedNode) {
