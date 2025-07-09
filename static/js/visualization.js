@@ -128,7 +128,8 @@ function hideTooltipImmediately() {
 
 // Function to clear highlight state and reset zoom
 function clearHighlightAndResetZoom() {
-\n// Function to reorder elements to bring highlighted network to front
+
+// Function to reorder elements to bring highlighted network to front
 function reorderHighlightedElements(currentNode) {
     // First, lower all elements to the back
     node.lower();
