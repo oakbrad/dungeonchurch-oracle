@@ -545,219 +545,287 @@ node.append("text")
         const title = d.title || "Node"; // Ensure there's always some text
         
         // Function to calculate available width at a given vertical offset in a circle
-        function getAvailableWidthAtOffset(radius, yOffset) {
-            // Pythagoras: in a circle, width at offset y from center is 2*sqrt(r²-y²)
-            return 2 * Math.sqrt(Math.max(0, radius * radius - yOffset * yOffset));
-        }
+// Function to calculate available width at a given vertical offset in a circle
+function getAvailableWidthAtOffset(radius, yOffset) {
+    // Pythagoras: in a circle, width at offset y from center is 2*sqrt(r²-y²)
+    return 2 * Math.sqrt(Math.max(0, radius * radius - yOffset * yOffset));
+}
+
+// Function to fit text in the circle
+function fitTextInCircle(text, title, radius) {
+    text.selectAll("*").remove(); // Clear any existing content
+    
+    // Constants for text fitting
+    const minFontSize = 6;
+    const maxFontSize = Math.min(radius * 0.7, 16); // Increased max font size slightly
+    const maxLines = Math.min(6, Math.max(1, Math.floor(radius / 5))); // Allow more lines
+    const padding = 2; // Padding inside the circle
+    
+    // If title is empty or undefined, use a default
+    if (!title || title.trim() === "") {
+        title = "Node";
+    }
+    
+    // For very small circles, use abbreviation strategy
+    if (radius < 12) {
+        return fitSmallCircleText(text, title, radius);
+    }
+    
+    // Use binary search to find optimal font size
+    let minFS = minFontSize;
+    let maxFS = maxFontSize;
+    let currentFontSize;
+    let bestConfig = null;
+    let bestTextLength = 0;
+    
+    // Try different line counts
+    for (let lineCount = 1; lineCount <= maxLines; lineCount++) {
+        // Binary search for optimal font size for this line count
+        minFS = minFontSize;
+        maxFS = maxFontSize;
         
-        // Function to fit text in the circle
-        function fitTextInCircle(text, title, radius) {
-            text.selectAll("*").remove(); // Clear any existing content
+        while (maxFS - minFS > 0.5) {
+            currentFontSize = (minFS + maxFS) / 2;
             
-            // Constants for text fitting
-            const minFontSize = 6;
-            const maxFontSize = Math.min(radius * 0.6, 14);
-            const maxLines = Math.min(5, Math.max(1, Math.floor(radius / 6)));
-            const padding = 2; // Padding inside the circle
+            // Try to fit with current font size and line count
+            const result = tryFitText(text, title, radius, currentFontSize, lineCount, padding);
             
-            // Start with maximum font size and single line
-            let fontSize = maxFontSize;
-            let lineCount = 1;
-            let shouldTruncate = false;
-            
-            // Try different configurations until text fits
-            while (fontSize >= minFontSize) {
-                // Set font size for measurement
-                text.style("font-size", fontSize + "px");
-                
-                // Calculate line height based on font size
-                const lineHeight = fontSize * 1.2;
-                
-                // Calculate total height for current line count
-                const totalTextHeight = lineHeight * lineCount;
-                
-                // Check if total height exceeds available height with padding
-                if (totalTextHeight > (radius * 2 - padding * 2)) {
-                    // If we can't reduce font size further, we need to truncate
-                    if (fontSize <= minFontSize) {
-                        shouldTruncate = true;
-                        break;
-                    }
-                    
-                    // Try smaller font size
-                    fontSize -= 0.5;
-                    continue;
+            if (result.success) {
+                // If successful and shows more text than previous best, update best config
+                if (result.textLength > bestTextLength) {
+                    bestConfig = {
+                        fontSize: currentFontSize,
+                        lineCount: lineCount,
+                        lines: result.lines,
+                        textLength: result.textLength
+                    };
+                    bestTextLength = result.textLength;
                 }
-                
-                // Split text into words
-                const words = title.split(/\s+/);
-                
-                // Try to fit text with current font size and line count
-                const lines = [];
-                let currentLine = [];
-                let success = true;
-                
-                // Create a temporary text element to measure text width
-                const tempText = text.append("tspan").style("opacity", 0);
-                
-                // Calculate vertical positions for lines
-                const verticalPositions = [];
-                for (let i = 0; i < lineCount; i++) {
-                    // Calculate y-offset from center for this line
-                    const yOffset = (i - (lineCount - 1) / 2) * lineHeight;
-                    verticalPositions.push(yOffset);
-                    
-                    // Calculate available width at this vertical position
-                    const availableWidth = getAvailableWidthAtOffset(radius - padding, yOffset) - padding * 2;
-                    
-                    // Try to fit words on this line
-                    while (words.length > 0) {
-                        currentLine.push(words[0]);
-                        tempText.text(currentLine.join(" "));
-                        
-                        if (tempText.node().getComputedTextLength() > availableWidth) {
-                            // If even a single word doesn't fit on an empty line
-                            if (currentLine.length === 1) {
-                                // If we can add more lines, try that
-                                if (lineCount < maxLines) {
-                                    success = false;
-                                    break;
-                                } else if (fontSize > minFontSize) {
-                                    // Try smaller font
-                                    success = false;
-                                    break;
-                                } else {
-                                    // We need to truncate this word
-                                    let truncatedWord = currentLine[0];
-                                    while (truncatedWord.length > 3) {
-                                        truncatedWord = truncatedWord.slice(0, -1);
-                                        tempText.text(truncatedWord + "...");
-                                        if (tempText.node().getComputedTextLength() <= availableWidth) {
-                                            currentLine[0] = truncatedWord + "...";
-                                            break;
-                                        }
-                                    }
-                                }
-                            } else {
-                                // Remove the last word that didn't fit
-                                currentLine.pop();
-                            }
+                // Try a larger font size
+                minFS = currentFontSize;
+            } else {
+                // Try a smaller font size
+                maxFS = currentFontSize;
+            }
+        }
+    }
+    
+    // If we found a configuration that works, use it
+    if (bestConfig) {
+        text.style("font-size", bestConfig.fontSize + "px");
+        
+        // Create tspans for each line with precise positioning
+        const lineHeight = bestConfig.fontSize * 1.2;
+        bestConfig.lines.forEach((line, i) => {
+            // Calculate vertical position
+            // For single line, y=0 (center)
+            // For multiple lines, distribute evenly around center
+            const yPos = bestConfig.lineCount === 1 ? 0 : 
+                        (i - (bestConfig.lineCount - 1) / 2) * lineHeight;
+            
+            text.append("tspan")
+                .attr("x", 0)
+                .attr("y", yPos)
+                .attr("dy", 0) // No additional vertical offset
+                .text(line);
+        });
+        
+        // Mark node as not truncated if we fit the full text
+        d.isTruncated = bestConfig.textLength < title.length;
+        return true;
+    }
+    
+    // If no configuration worked, fall back to abbreviation
+    return fitSmallCircleText(text, title, radius);
+}
+
+// Helper function to try fitting text with given parameters
+function tryFitText(text, title, radius, fontSize, lineCount, padding) {
+    // Set font size for measurement
+    text.style("font-size", fontSize + "px");
+    
+    // Calculate line height based on font size
+    const lineHeight = fontSize * 1.2;
+    
+    // Calculate total height for current line count
+    const totalTextHeight = lineHeight * lineCount;
+    
+    // Check if total height exceeds available height with padding
+    if (totalTextHeight > (radius * 2 - padding * 2)) {
+        return { success: false };
+    }
+    
+    // Split text into words
+    const words = title.split(/\s+/);
+    
+    // Try to fit text with current font size and line count
+    const lines = [];
+    let currentLine = [];
+    let totalTextLength = 0;
+    
+    // Create a temporary text element to measure text width
+    const tempText = text.append("tspan").style("opacity", 0);
+    
+    // Calculate vertical positions for lines
+    for (let i = 0; i < lineCount; i++) {
+        // Calculate y-offset from center for this line
+        const yOffset = (i - (lineCount - 1) / 2) * lineHeight;
+        
+        // Calculate available width at this vertical position
+        const availableWidth = getAvailableWidthAtOffset(radius - padding, yOffset) - padding * 2;
+        
+        // Try to fit words on this line
+        while (words.length > 0) {
+            // Try adding the next word
+            currentLine.push(words[0]);
+            tempText.text(currentLine.join(" "));
+            
+            if (tempText.node().getComputedTextLength() > availableWidth) {
+                // If even a single word doesn't fit on an empty line
+                if (currentLine.length === 1) {
+                    // Try to hyphenate the word if it's long enough
+                    if (currentLine[0].length > 5) {
+                        const hyphenResult = hyphenateWord(currentLine[0], tempText, availableWidth);
+                        if (hyphenResult.success) {
+                            // Add the partial word with hyphen
+                            lines.push(hyphenResult.firstPart + "-");
+                            totalTextLength += hyphenResult.firstPart.length + 1; // +1 for hyphen
                             
-                            // Add current line to lines array
-                            lines.push(currentLine.join(" "));
+                            // Replace the current word with the remainder
+                            words[0] = hyphenResult.remainder;
                             currentLine = [];
                             break;
                         }
-                        
-                        // Word fits, remove it from words array
-                        words.shift();
-                        
-                        // If we've used all words, add the current line
-                        if (words.length === 0) {
-                            lines.push(currentLine.join(" "));
-                            break;
-                        }
                     }
                     
-                    // If we couldn't fit text with current configuration
-                    if (!success) break;
-                    
-                    // If we've used all words, we're done
-                    if (words.length === 0) break;
-                }
-                
-                // Remove temporary element
-                tempText.remove();
-                
-                // If we have remaining words, we need more lines or smaller font
-                if (words.length > 0) {
-                    if (lineCount < maxLines) {
-                        // Try more lines
-                        lineCount++;
-                    } else if (fontSize > minFontSize) {
-                        // Try smaller font
-                        fontSize -= 0.5;
-                    } else {
-                        // We need to truncate
-                        shouldTruncate = true;
-                        break;
-                    }
-                    continue;
-                }
-                
-                // If we've successfully fit all text, create the tspans
-                if (success) {
-                    // Create a container group for better positioning
-                    const lineCount = lines.length;
-                    const totalHeight = lineHeight * lineCount;
-                    
-                    // Create tspans for each line with precise positioning
-                    lines.forEach((line, i) => {
-                        // Calculate vertical position
-                        // For single line, y=0 (center)
-                        // For multiple lines, distribute evenly around center
-                        const yPos = lineCount === 1 ? 0 : 
-                                    (i - (lineCount - 1) / 2) * lineHeight;
-                        
-                        text.append("tspan")
-                            .attr("x", 0)
-                            .attr("y", yPos)
-                            .attr("dy", 0) // No additional vertical offset
-                            .text(line);
-                    });
-                    
-                    // Mark node as not truncated
-                    d.isTruncated = false;
-                    
-                    return true;
-                }
-            }
-            
-            // If we need to truncate, create a single line with ellipsis
-            if (shouldTruncate) {
-                text.style("font-size", minFontSize + "px");
-                
-                // Calculate available width at center
-                const availableWidth = getAvailableWidthAtOffset(radius - padding, 0) - padding * 2;
-                
-                // Ensure we show at least the first few characters
-                let truncatedText = title;
-                const tempText = text.append("tspan").style("opacity", 0);
-                
-                // If title is empty or undefined, use a default
-                if (!title || title.trim() === "") {
-                    truncatedText = "Node";
+                    // If we can't hyphenate or it's too short, this config won't work
+                    tempText.remove();
+                    return { success: false };
                 } else {
-                    tempText.text(truncatedText);
-                    while (tempText.node().getComputedTextLength() > availableWidth && truncatedText.length > 3) {
-                        truncatedText = truncatedText.slice(0, -1);
-                        tempText.text(truncatedText + "...");
+                    // Remove the last word that didn't fit
+                    currentLine.pop();
+                    
+                    // If we couldn't fit any words on this line, this config won't work
+                    if (currentLine.length === 0) {
+                        tempText.remove();
+                        return { success: false };
                     }
                     
-                    // If we're down to just one character, don't add ellipsis
-                    if (truncatedText.length === 1) {
-                        tempText.text(truncatedText);
-                    }
+                    // Add current line to lines array
+                    const lineText = currentLine.join(" ");
+                    lines.push(lineText);
+                    totalTextLength += lineText.length + 1; // +1 for space between lines
+                    currentLine = [];
+                    break;
                 }
-                
-                tempText.remove();
-                
-                // Add truncated text
-                text.append("tspan")
-                    .attr("x", 0)
-                    .attr("y", 0)
-                    .text(truncatedText.length === 1 ? truncatedText : truncatedText + "...");
-                
-                // Mark node as truncated
-                d.isTruncated = true;
             }
             
-            return true;
+            // Word fits, remove it from words array
+            words.shift();
+            
+            // If we've used all words, add the current line
+            if (words.length === 0) {
+                const lineText = currentLine.join(" ");
+                lines.push(lineText);
+                totalTextLength += lineText.length;
+                break;
+            }
         }
         
-        // Fit the text in the circle
-        fitTextInCircle(text, title, radius);
+        // If we've used all words, we're done
+        if (words.length === 0) break;
+    }
+    
+    // Remove temporary element
+    tempText.remove();
+    
+    // If we have remaining words, this configuration doesn't work
+    if (words.length > 0) {
+        return { success: false };
+    }
+    
+    return { 
+        success: true, 
+        lines: lines, 
+        textLength: totalTextLength 
+    };
+}
+
+// Helper function to hyphenate a word to fit available width
+function hyphenateWord(word, tempText, availableWidth) {
+    // Try different break points to find the longest part that fits
+    for (let i = Math.min(word.length - 1, Math.floor(word.length * 0.7)); i >= 3; i--) {
+        const firstPart = word.substring(0, i);
+        tempText.text(firstPart + "-");
         
+        if (tempText.node().getComputedTextLength() <= availableWidth) {
+            return {
+                success: true,
+                firstPart: firstPart,
+                remainder: word.substring(i)
+            };
+        }
+    }
+    
+    return { success: false };
+}
+
+// Function to handle text in very small circles
+function fitSmallCircleText(text, title, radius) {
+    // Set minimum font size
+    const fontSize = Math.max(minFontSize, radius * 0.8);
+    text.style("font-size", fontSize + "px");
+    
+    // Calculate available width at center
+    const availableWidth = getAvailableWidthAtOffset(radius - padding, 0) - padding * 2;
+    
+    // Try different abbreviation strategies
+    
+    // 1. For multi-word titles, try initials (e.g., "World of Warcraft" -> "WoW")
+    if (title.includes(" ")) {
+        const words = title.split(/\s+/);
+        const initials = words.map(word => word.charAt(0).toUpperCase()).join("");
+        
+        // Check if initials fit
+        const tempText = text.append("tspan").style("opacity", 0);
+        tempText.text(initials);
+        
+        if (tempText.node().getComputedTextLength() <= availableWidth) {
+            tempText.remove();
+            text.append("tspan")
+                .attr("x", 0)
+                .attr("y", 0)
+                .text(initials);
+            
+            // Mark node as truncated
+            d.isTruncated = true;
+            return true;
+        }
+        tempText.remove();
+    }
+    
+    // 2. Try first few characters with ellipsis
+    let truncatedText = title;
+    const tempText = text.append("tspan").style("opacity", 0);
+    
+    tempText.text(truncatedText);
+    while (tempText.node().getComputedTextLength() > availableWidth && truncatedText.length > 1) {
+        truncatedText = truncatedText.slice(0, -1);
+        tempText.text(truncatedText.length > 1 ? truncatedText + "…" : truncatedText);
+    }
+    
+    tempText.remove();
+    
+    // 3. If we're down to just one character, don't add ellipsis
+    text.append("tspan")
+        .attr("x", 0)
+        .attr("y", 0)
+        .text(truncatedText.length > 1 ? truncatedText + "…" : truncatedText);
+    
+    // Mark node as truncated
+    d.isTruncated = true;
+    return true;
+}
         // Store the font size on the data object
         d.fontSize = parseFloat(text.style("font-size"));
         
