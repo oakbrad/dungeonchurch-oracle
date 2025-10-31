@@ -422,7 +422,7 @@
       "urlId": "JlNwOH9FMQ",
       "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
       "createdAt": "2024-12-10T20:30:51.012000+00:00",
-      "connections": 11
+      "connections": 12
     },
     {
       "id": "ddc5ab1d-3388-417b-91b7-8a4ecc793703",
@@ -462,7 +462,7 @@
       "urlId": "IxWr0lTtBc",
       "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
       "createdAt": "2024-12-14T19:43:01.630000+00:00",
-      "connections": 11
+      "connections": 12
     },
     {
       "id": "ffa4e63c-e182-4b80-97ad-8b3490e214d2",
@@ -489,14 +489,6 @@
       "connections": 16
     },
     {
-      "id": "60815dac-e9dc-4aac-9510-18e7aad986de",
-      "title": "Burle",
-      "urlId": "8ZuZ4qZsXt",
-      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
-      "createdAt": "2022-01-05T22:16:51.579000+00:00",
-      "connections": 17
-    },
-    {
       "id": "e4233162-e341-4641-8a10-22508b928092",
       "title": "Grim Mold\u2019s Relics",
       "urlId": "Q0YvmvmjLp",
@@ -521,12 +513,12 @@
       "connections": 1
     },
     {
-      "id": "4a3ce942-4dbb-4b4d-a4cc-af28e725b733",
-      "title": "Session 15-16: Murder on the Jubilee",
-      "urlId": "b5dYJiJkGZ",
-      "collectionId": "13b87098-500c-490d-ae46-01356387fe88",
-      "createdAt": "2023-03-07T22:56:31.334000+00:00",
-      "connections": 26
+      "id": "60815dac-e9dc-4aac-9510-18e7aad986de",
+      "title": "Burle",
+      "urlId": "8ZuZ4qZsXt",
+      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
+      "createdAt": "2022-01-05T22:16:51.579000+00:00",
+      "connections": 17
     },
     {
       "id": "7a31fbc2-98b4-4531-9550-ef91fa9be823",
@@ -623,6 +615,14 @@
       "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
       "createdAt": "2025-02-26T05:38:01.576000+00:00",
       "connections": 9
+    },
+    {
+      "id": "4a3ce942-4dbb-4b4d-a4cc-af28e725b733",
+      "title": "Session 15-16: Murder on the Jubilee",
+      "urlId": "b5dYJiJkGZ",
+      "collectionId": "13b87098-500c-490d-ae46-01356387fe88",
+      "createdAt": "2023-03-07T22:56:31.334000+00:00",
+      "connections": 26
     },
     {
       "id": "e99378ff-b4cc-4c78-a2fb-2a0a39d13025",
@@ -750,7 +750,7 @@
       "urlId": "DNPKQvAKgi",
       "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
       "createdAt": "2025-04-02T01:05:15.539000+00:00",
-      "connections": 4
+      "connections": 5
     },
     {
       "id": "641d4508-36c0-4da8-b2b9-6b3a89e9f536",
@@ -846,7 +846,7 @@
       "urlId": "Djp93iAMK8",
       "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
       "createdAt": "2025-01-23T19:56:37.913000+00:00",
-      "connections": 9
+      "connections": 10
     },
     {
       "id": "a1288f20-464e-430a-ab27-8a2bc7bd785b",
@@ -886,7 +886,7 @@
       "urlId": "XOLsEwH0d6",
       "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
       "createdAt": "2025-09-05T22:43:28.960000+00:00",
-      "connections": 3
+      "connections": 4
     },
     {
       "id": "db7e4936-cb17-45af-a476-0daa38ddcae9",
@@ -1097,20 +1097,12 @@
       "connections": 1
     },
     {
-      "id": "a5118b9e-592f-4b8d-9850-069841fd4f7f",
-      "title": "Clockwork Myrmidon",
-      "urlId": "ovzS6Ccvnk",
-      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
-      "createdAt": "2024-05-23T03:12:54.741000+00:00",
+      "id": "a363f881-2e86-4239-8718-506765d06d68",
+      "title": "Sheet",
+      "urlId": "tkDisN9PwI",
+      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
+      "createdAt": "2024-05-06T06:37:04.066000+00:00",
       "connections": 1
-    },
-    {
-      "id": "810ce731-efbb-43b2-a40d-5809962c405f",
-      "title": "Treant",
-      "urlId": "DMoj3FKaOe",
-      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
-      "createdAt": "2024-02-28T00:09:19.235000+00:00",
-      "connections": 2
     },
     {
       "id": "eeb51f8d-b1dc-4395-9a35-3e083366963d",
@@ -1145,12 +1137,12 @@
       "connections": 6
     },
     {
-      "id": "efc17026-ab98-47d0-8d8b-0b01640f1fa4",
-      "title": "Owlbear",
-      "urlId": "kTCnClqfKW",
+      "id": "801e1f45-df9a-4483-9695-f259165b37f7",
+      "title": "Chain Devil",
+      "urlId": "Yrz9S6uMkK",
       "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
-      "createdAt": "2024-02-28T04:02:10.711000+00:00",
-      "connections": 2
+      "createdAt": "2024-04-25T00:42:49.158000+00:00",
+      "connections": 1
     },
     {
       "id": "0231ee96-b2f5-4f50-9505-be4a0310d6c4",
@@ -1225,6 +1217,14 @@
       "connections": 6
     },
     {
+      "id": "a5118b9e-592f-4b8d-9850-069841fd4f7f",
+      "title": "Clockwork Myrmidon",
+      "urlId": "ovzS6Ccvnk",
+      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
+      "createdAt": "2024-05-23T03:12:54.741000+00:00",
+      "connections": 1
+    },
+    {
       "id": "244f3d70-893c-437e-9df2-c4fdc37985a0",
       "title": "Vial of Dark Resolve",
       "urlId": "hdap6jS2a8",
@@ -1246,7 +1246,7 @@
       "urlId": "xaYgpxxPXi",
       "collectionId": "28015ad0-50f5-4495-a6c5-2415436a3d40",
       "createdAt": "2024-12-10T19:20:54.310000+00:00",
-      "connections": 11
+      "connections": 12
     },
     {
       "id": "0d6eded7-8916-4a5e-8e30-090d58b813a4",
@@ -1254,7 +1254,7 @@
       "urlId": "B7ywkNMMT1",
       "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
       "createdAt": "2025-06-21T20:20:22.377000+00:00",
-      "connections": 4
+      "connections": 5
     },
     {
       "id": "0137d7a7-e722-4162-86bd-e0bf67657d25",
@@ -1350,7 +1350,7 @@
       "urlId": "EwNVMyiegT",
       "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
       "createdAt": "2025-04-02T01:06:13.090000+00:00",
-      "connections": 6
+      "connections": 7
     },
     {
       "id": "a3c4a013-1620-4b9f-9c06-c5da8f4f714f",
@@ -1398,7 +1398,7 @@
       "urlId": "zF0JwTQJsP",
       "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
       "createdAt": "2025-03-16T21:21:50.951000+00:00",
-      "connections": 17
+      "connections": 18
     },
     {
       "id": "cffa9353-7fef-49bf-8d6a-907eec8485f7",
@@ -1542,7 +1542,7 @@
       "urlId": "1Vn0FtePMR",
       "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
       "createdAt": "2025-01-12T03:12:09.118000+00:00",
-      "connections": 17
+      "connections": 18
     },
     {
       "id": "ed735538-f8e0-4bd2-9671-e1203bb9613b",
@@ -1566,7 +1566,7 @@
       "urlId": "CfxGmUVYNA",
       "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
       "createdAt": "2025-04-02T01:36:57.044000+00:00",
-      "connections": 5
+      "connections": 6
     },
     {
       "id": "e7120bd4-4aa8-46b6-aecd-3bd769f55171",
@@ -1617,6 +1617,14 @@
       "connections": 1
     },
     {
+      "id": "14bc700d-6436-40f5-9f6c-8f619a71825e",
+      "title": "Wereboar",
+      "urlId": "dbjcRjiQst",
+      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
+      "createdAt": "2025-10-30T01:24:06.654000+00:00",
+      "connections": 1
+    },
+    {
       "id": "99f1c7c7-4a9d-4770-b7d2-3c77e5cc9e31",
       "title": "Knights of the Silver Order",
       "urlId": "FzbtcbSsrx",
@@ -1633,12 +1641,12 @@
       "connections": 18
     },
     {
-      "id": "a363f881-2e86-4239-8718-506765d06d68",
-      "title": "Sheet",
-      "urlId": "tkDisN9PwI",
-      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
-      "createdAt": "2024-05-06T06:37:04.066000+00:00",
-      "connections": 1
+      "id": "a95f703c-8fc1-4600-a852-94f10f5bc72f",
+      "title": "Galmaarden 14: Ale Tales",
+      "urlId": "YABbwJJTYU",
+      "collectionId": "13b87098-500c-490d-ae46-01356387fe88",
+      "createdAt": "2025-10-30T01:17:56.525000+00:00",
+      "connections": 16
     },
     {
       "id": "3e2db61e-3734-49f9-9521-bc827b28975e",
@@ -1862,7 +1870,7 @@
       "urlId": "03tcpxxc2t",
       "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
       "createdAt": "2021-10-31T03:15:02.403000+00:00",
-      "connections": 52
+      "connections": 53
     },
     {
       "id": "4d0c0d57-5438-4045-83b2-cb8b4ffdb2b9",
@@ -1873,12 +1881,20 @@
       "connections": 9
     },
     {
-      "id": "801e1f45-df9a-4483-9695-f259165b37f7",
-      "title": "Chain Devil",
-      "urlId": "Yrz9S6uMkK",
+      "id": "810ce731-efbb-43b2-a40d-5809962c405f",
+      "title": "Treant",
+      "urlId": "DMoj3FKaOe",
       "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
-      "createdAt": "2024-04-25T00:42:49.158000+00:00",
-      "connections": 1
+      "createdAt": "2024-02-28T00:09:19.235000+00:00",
+      "connections": 2
+    },
+    {
+      "id": "efc17026-ab98-47d0-8d8b-0b01640f1fa4",
+      "title": "Owlbear",
+      "urlId": "kTCnClqfKW",
+      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
+      "createdAt": "2024-02-28T04:02:10.711000+00:00",
+      "connections": 2
     },
     {
       "id": "b1e54491-9ce1-4cab-bc5c-6ada29a30491",
@@ -1918,7 +1934,7 @@
       "urlId": "SLXdYH518j",
       "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
       "createdAt": "2021-10-31T04:20:04.007000+00:00",
-      "connections": 7
+      "connections": 8
     },
     {
       "id": "b90a7e1d-6717-4d1c-a84a-6ab5b571aa31",
@@ -1942,7 +1958,7 @@
       "urlId": "P8vzvEmuaZ",
       "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
       "createdAt": "2024-04-25T00:38:54.154000+00:00",
-      "connections": 1
+      "connections": 2
     },
     {
       "id": "a62ffaa7-4cf3-4240-946d-558e569e5470",
@@ -3046,7 +3062,7 @@
       "urlId": "ICD17iMkzY",
       "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
       "createdAt": "2024-04-09T02:47:11.111000+00:00",
-      "connections": 2
+      "connections": 3
     },
     {
       "id": "1638a16a-49a2-4762-ae7c-f282305fb0f7",
@@ -15828,6 +15844,102 @@
       "source": "b6770cb5-fa2c-4628-86e5-d3d2722df65b",
       "target": "98dff707-5778-4314-8809-acc481d6db94",
       "creation_time": "2025-10-17T19:59:32.146000+00:00",
+      "direction": "unidirectional"
+    },
+    {
+      "source": "a95f703c-8fc1-4600-a852-94f10f5bc72f",
+      "target": "10ac0090-b3a2-46c3-879d-616dc7678cb0",
+      "creation_time": "2025-10-30T01:22:16.351000+00:00",
+      "direction": "unidirectional"
+    },
+    {
+      "source": "a95f703c-8fc1-4600-a852-94f10f5bc72f",
+      "target": "b32c1f3d-675a-46d7-9e7a-31cd62681146",
+      "creation_time": "2025-10-30T01:22:16.352000+00:00",
+      "direction": "unidirectional"
+    },
+    {
+      "source": "a95f703c-8fc1-4600-a852-94f10f5bc72f",
+      "target": "f93a3447-a6e4-489a-8f98-837fdd4d2c9b",
+      "creation_time": "2025-10-30T01:22:34.835000+00:00",
+      "direction": "unidirectional"
+    },
+    {
+      "source": "a95f703c-8fc1-4600-a852-94f10f5bc72f",
+      "target": "e3814361-f776-4640-b253-2c429107bdc8",
+      "creation_time": "2025-10-30T01:23:36.298000+00:00",
+      "direction": "unidirectional"
+    },
+    {
+      "source": "a95f703c-8fc1-4600-a852-94f10f5bc72f",
+      "target": "f0455302-8630-4be2-b696-81258a72c8b7",
+      "creation_time": "2025-10-30T01:23:44.461000+00:00",
+      "direction": "unidirectional"
+    },
+    {
+      "source": "a95f703c-8fc1-4600-a852-94f10f5bc72f",
+      "target": "14bc700d-6436-40f5-9f6c-8f619a71825e",
+      "creation_time": "2025-10-30T01:26:23.421000+00:00",
+      "direction": "unidirectional"
+    },
+    {
+      "source": "a95f703c-8fc1-4600-a852-94f10f5bc72f",
+      "target": "3627a721-b7b1-46e5-a5b6-ea930832817f",
+      "creation_time": "2025-10-30T01:26:39.734000+00:00",
+      "direction": "unidirectional"
+    },
+    {
+      "source": "a95f703c-8fc1-4600-a852-94f10f5bc72f",
+      "target": "b4ed20ae-b6f0-4320-9e6b-0d273bbd600f",
+      "creation_time": "2025-10-30T01:56:52.182000+00:00",
+      "direction": "unidirectional"
+    },
+    {
+      "source": "a95f703c-8fc1-4600-a852-94f10f5bc72f",
+      "target": "99f89472-b0b9-40c4-9129-a9e002bc7406",
+      "creation_time": "2025-10-30T01:58:07.099000+00:00",
+      "direction": "unidirectional"
+    },
+    {
+      "source": "a95f703c-8fc1-4600-a852-94f10f5bc72f",
+      "target": "c8997907-c7e8-46e3-a7fc-0799badd2c4b",
+      "creation_time": "2025-10-30T01:59:19.711000+00:00",
+      "direction": "unidirectional"
+    },
+    {
+      "source": "a95f703c-8fc1-4600-a852-94f10f5bc72f",
+      "target": "3479225b-e210-4a88-9d70-610b14c4ca48",
+      "creation_time": "2025-10-30T02:00:46.022000+00:00",
+      "direction": "unidirectional"
+    },
+    {
+      "source": "a95f703c-8fc1-4600-a852-94f10f5bc72f",
+      "target": "a5550f34-170c-4a68-8c9b-83f939ebc91e",
+      "creation_time": "2025-10-30T02:01:12.542000+00:00",
+      "direction": "unidirectional"
+    },
+    {
+      "source": "a95f703c-8fc1-4600-a852-94f10f5bc72f",
+      "target": "a6f0c7b2-e2dd-4408-a33b-255bfb078a04",
+      "creation_time": "2025-10-30T02:01:26.862000+00:00",
+      "direction": "unidirectional"
+    },
+    {
+      "source": "a95f703c-8fc1-4600-a852-94f10f5bc72f",
+      "target": "0d6eded7-8916-4a5e-8e30-090d58b813a4",
+      "creation_time": "2025-10-30T02:02:56.490000+00:00",
+      "direction": "unidirectional"
+    },
+    {
+      "source": "a95f703c-8fc1-4600-a852-94f10f5bc72f",
+      "target": "9b832210-bfa1-4a3d-b8ef-9c60443b3f3d",
+      "creation_time": "2025-10-30T02:06:09.074000+00:00",
+      "direction": "unidirectional"
+    },
+    {
+      "source": "a95f703c-8fc1-4600-a852-94f10f5bc72f",
+      "target": "5b43e787-5069-462a-a45f-1869b2bc1b87",
+      "creation_time": "2025-10-30T02:06:34.359000+00:00",
       "direction": "unidirectional"
     }
   ]
