@@ -617,14 +617,6 @@
       "connections": 9
     },
     {
-      "id": "4a3ce942-4dbb-4b4d-a4cc-af28e725b733",
-      "title": "Session 15-16: Murder on the Jubilee",
-      "urlId": "b5dYJiJkGZ",
-      "collectionId": "13b87098-500c-490d-ae46-01356387fe88",
-      "createdAt": "2023-03-07T22:56:31.334000+00:00",
-      "connections": 26
-    },
-    {
       "id": "e99378ff-b4cc-4c78-a2fb-2a0a39d13025",
       "title": "Soulbound Skull",
       "urlId": "DNlBi2UMIZ",
@@ -655,6 +647,14 @@
       "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
       "createdAt": "2024-11-09T05:04:16.757000+00:00",
       "connections": 7
+    },
+    {
+      "id": "4a3ce942-4dbb-4b4d-a4cc-af28e725b733",
+      "title": "Session 15-16: Murder on the Jubilee",
+      "urlId": "b5dYJiJkGZ",
+      "collectionId": "13b87098-500c-490d-ae46-01356387fe88",
+      "createdAt": "2023-03-07T22:56:31.334000+00:00",
+      "connections": 26
     },
     {
       "id": "f87fa3a2-4568-4110-a1b0-293156d8e1ba",
@@ -849,12 +849,12 @@
       "connections": 10
     },
     {
-      "id": "a1288f20-464e-430a-ab27-8a2bc7bd785b",
-      "title": "Inner Circle",
-      "urlId": "iVSnGQFWfT",
-      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
-      "createdAt": "2024-09-20T02:35:08.369000+00:00",
-      "connections": 12
+      "id": "49e8f2c0-f2ea-4615-9b21-8850ca7ec9b7",
+      "title": "Banshee Blight",
+      "urlId": "ziIwCBr2jq",
+      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
+      "createdAt": "2023-03-11T18:16:12.835000+00:00",
+      "connections": 2
     },
     {
       "id": "761b22a6-a3ab-4a96-9628-b68e16175c13",
@@ -1097,12 +1097,12 @@
       "connections": 1
     },
     {
-      "id": "a363f881-2e86-4239-8718-506765d06d68",
-      "title": "Sheet",
-      "urlId": "tkDisN9PwI",
-      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
-      "createdAt": "2024-05-06T06:37:04.066000+00:00",
-      "connections": 1
+      "id": "810ce731-efbb-43b2-a40d-5809962c405f",
+      "title": "Treant",
+      "urlId": "DMoj3FKaOe",
+      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
+      "createdAt": "2024-02-28T00:09:19.235000+00:00",
+      "connections": 2
     },
     {
       "id": "eeb51f8d-b1dc-4395-9a35-3e083366963d",
@@ -1135,14 +1135,6 @@
       "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
       "createdAt": "2024-10-06T05:41:02.682000+00:00",
       "connections": 6
-    },
-    {
-      "id": "801e1f45-df9a-4483-9695-f259165b37f7",
-      "title": "Chain Devil",
-      "urlId": "Yrz9S6uMkK",
-      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
-      "createdAt": "2024-04-25T00:42:49.158000+00:00",
-      "connections": 1
     },
     {
       "id": "0231ee96-b2f5-4f50-9505-be4a0310d6c4",
@@ -1217,14 +1209,6 @@
       "connections": 6
     },
     {
-      "id": "a5118b9e-592f-4b8d-9850-069841fd4f7f",
-      "title": "Clockwork Myrmidon",
-      "urlId": "ovzS6Ccvnk",
-      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
-      "createdAt": "2024-05-23T03:12:54.741000+00:00",
-      "connections": 1
-    },
-    {
       "id": "244f3d70-893c-437e-9df2-c4fdc37985a0",
       "title": "Vial of Dark Resolve",
       "urlId": "hdap6jS2a8",
@@ -1247,14 +1231,6 @@
       "collectionId": "28015ad0-50f5-4495-a6c5-2415436a3d40",
       "createdAt": "2024-12-10T19:20:54.310000+00:00",
       "connections": 12
-    },
-    {
-      "id": "0d6eded7-8916-4a5e-8e30-090d58b813a4",
-      "title": "Eldritch Lily",
-      "urlId": "B7ywkNMMT1",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "createdAt": "2025-06-21T20:20:22.377000+00:00",
-      "connections": 5
     },
     {
       "id": "0137d7a7-e722-4162-86bd-e0bf67657d25",
@@ -1297,6 +1273,22 @@
       "connections": 7
     },
     {
+      "id": "a363f881-2e86-4239-8718-506765d06d68",
+      "title": "Sheet",
+      "urlId": "tkDisN9PwI",
+      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
+      "createdAt": "2024-05-06T06:37:04.066000+00:00",
+      "connections": 1
+    },
+    {
+      "id": "efc17026-ab98-47d0-8d8b-0b01640f1fa4",
+      "title": "Owlbear",
+      "urlId": "kTCnClqfKW",
+      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
+      "createdAt": "2024-02-28T04:02:10.711000+00:00",
+      "connections": 2
+    },
+    {
       "id": "355a2242-160e-4c90-adba-6c1a4a042bc7",
       "title": "Eldan Fletcher",
       "urlId": "QWyA10eG7I",
@@ -1337,14 +1329,6 @@
       "connections": 2
     },
     {
-      "id": "6926ac4d-3902-4111-b4b0-b56a35fd140e",
-      "title": "Aldor the Immense",
-      "urlId": "xzpcXjqD6D",
-      "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
-      "createdAt": "2025-04-02T01:06:04.652000+00:00",
-      "connections": 4
-    },
-    {
       "id": "a5550f34-170c-4a68-8c9b-83f939ebc91e",
       "title": "Watchtower",
       "urlId": "EwNVMyiegT",
@@ -1367,6 +1351,14 @@
       "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
       "createdAt": "2025-06-23T02:28:06.055000+00:00",
       "connections": 2
+    },
+    {
+      "id": "6926ac4d-3902-4111-b4b0-b56a35fd140e",
+      "title": "Aldor the Immense",
+      "urlId": "xzpcXjqD6D",
+      "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
+      "createdAt": "2025-04-02T01:06:04.652000+00:00",
+      "connections": 4
     },
     {
       "id": "cdd231a2-4914-4f96-993b-5a2067dc5812",
@@ -1399,6 +1391,14 @@
       "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
       "createdAt": "2025-03-16T21:21:50.951000+00:00",
       "connections": 18
+    },
+    {
+      "id": "a1288f20-464e-430a-ab27-8a2bc7bd785b",
+      "title": "Inner Circle",
+      "urlId": "iVSnGQFWfT",
+      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
+      "createdAt": "2024-09-20T02:35:08.369000+00:00",
+      "connections": 12
     },
     {
       "id": "cffa9353-7fef-49bf-8d6a-907eec8485f7",
@@ -1465,14 +1465,6 @@
       "connections": 19
     },
     {
-      "id": "b9e8f102-21c4-4d72-970c-c1fca9e83926",
-      "title": "Lizardfolk Shaman",
-      "urlId": "yMdbkObeRG",
-      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
-      "createdAt": "2024-02-29T04:22:15.028000+00:00",
-      "connections": 1
-    },
-    {
       "id": "db8e3685-022a-4c86-9ed4-85f58ae888e0",
       "title": "Sjostein Saltwhisperer",
       "urlId": "MDEMFcPuhW",
@@ -1510,14 +1502,6 @@
       "urlId": "zzuK7i676b",
       "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
       "createdAt": "2025-02-23T04:56:17.230000+00:00",
-      "connections": 2
-    },
-    {
-      "id": "49e8f2c0-f2ea-4615-9b21-8850ca7ec9b7",
-      "title": "Banshee Blight",
-      "urlId": "ziIwCBr2jq",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "createdAt": "2023-03-11T18:16:12.835000+00:00",
       "connections": 2
     },
     {
@@ -1641,6 +1625,14 @@
       "connections": 18
     },
     {
+      "id": "0d6eded7-8916-4a5e-8e30-090d58b813a4",
+      "title": "Eldritch Lily",
+      "urlId": "B7ywkNMMT1",
+      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
+      "createdAt": "2025-06-21T20:20:22.377000+00:00",
+      "connections": 6
+    },
+    {
       "id": "a95f703c-8fc1-4600-a852-94f10f5bc72f",
       "title": "Galmaarden 14: Ale Tales",
       "urlId": "YABbwJJTYU",
@@ -1729,14 +1721,6 @@
       "connections": 4
     },
     {
-      "id": "7ba51ddc-e490-4e13-944e-0e13c43cd714",
-      "title": "Herschel",
-      "urlId": "lgSYbAyEFz",
-      "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
-      "createdAt": "2022-03-31T05:28:18.882000+00:00",
-      "connections": 1
-    },
-    {
       "id": "233b6dc1-670e-453f-9883-724a547eb12d",
       "title": "Daisy Dewpetal",
       "urlId": "lqt3e7DgIg",
@@ -1775,6 +1759,14 @@
       "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
       "createdAt": "2022-01-05T22:47:24.790000+00:00",
       "connections": 13
+    },
+    {
+      "id": "7ba51ddc-e490-4e13-944e-0e13c43cd714",
+      "title": "Herschel",
+      "urlId": "lgSYbAyEFz",
+      "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
+      "createdAt": "2022-03-31T05:28:18.882000+00:00",
+      "connections": 1
     },
     {
       "id": "c5971fcf-cb7e-4ec8-bdea-95eea51e6557",
@@ -1870,7 +1862,7 @@
       "urlId": "03tcpxxc2t",
       "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
       "createdAt": "2021-10-31T03:15:02.403000+00:00",
-      "connections": 53
+      "connections": 54
     },
     {
       "id": "4d0c0d57-5438-4045-83b2-cb8b4ffdb2b9",
@@ -1881,20 +1873,20 @@
       "connections": 9
     },
     {
-      "id": "810ce731-efbb-43b2-a40d-5809962c405f",
-      "title": "Treant",
-      "urlId": "DMoj3FKaOe",
+      "id": "801e1f45-df9a-4483-9695-f259165b37f7",
+      "title": "Chain Devil",
+      "urlId": "Yrz9S6uMkK",
       "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
-      "createdAt": "2024-02-28T00:09:19.235000+00:00",
-      "connections": 2
+      "createdAt": "2024-04-25T00:42:49.158000+00:00",
+      "connections": 1
     },
     {
-      "id": "efc17026-ab98-47d0-8d8b-0b01640f1fa4",
-      "title": "Owlbear",
-      "urlId": "kTCnClqfKW",
+      "id": "a5118b9e-592f-4b8d-9850-069841fd4f7f",
+      "title": "Clockwork Myrmidon",
+      "urlId": "ovzS6Ccvnk",
       "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
-      "createdAt": "2024-02-28T04:02:10.711000+00:00",
-      "connections": 2
+      "createdAt": "2024-05-23T03:12:54.741000+00:00",
+      "connections": 1
     },
     {
       "id": "b1e54491-9ce1-4cab-bc5c-6ada29a30491",
@@ -2039,6 +2031,14 @@
       "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
       "createdAt": "2024-02-24T05:11:15.248000+00:00",
       "connections": 3
+    },
+    {
+      "id": "b9e8f102-21c4-4d72-970c-c1fca9e83926",
+      "title": "Lizardfolk Shaman",
+      "urlId": "yMdbkObeRG",
+      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
+      "createdAt": "2024-02-29T04:22:15.028000+00:00",
+      "connections": 1
     },
     {
       "id": "13bc2045-b83d-4480-b591-40466f88e927",
@@ -15940,6 +15940,12 @@
       "source": "a95f703c-8fc1-4600-a852-94f10f5bc72f",
       "target": "5b43e787-5069-462a-a45f-1869b2bc1b87",
       "creation_time": "2025-10-30T02:06:34.359000+00:00",
+      "direction": "unidirectional"
+    },
+    {
+      "source": "0d6eded7-8916-4a5e-8e30-090d58b813a4",
+      "target": "5b43e787-5069-462a-a45f-1869b2bc1b87",
+      "creation_time": "2025-11-01T03:56:27.350000+00:00",
       "direction": "unidirectional"
     }
   ]
