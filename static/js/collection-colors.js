@@ -18,5 +18,8 @@ const collectionColors = {
 
 // Function to get color for a collection
 function getCollectionColor(collectionId) {
+    console.log("getCollectionColor called with:", collectionId);
+    console.log("Available colors:", Object.keys(collectionColors));
     return collectionColors[collectionId] || '#69b3a2';
 }
+
