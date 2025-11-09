@@ -1177,6 +1177,14 @@
       "connections": 5
     },
     {
+      "id": "f2d3e404-b5cb-4e38-9f0e-e375083f5aec",
+      "title": "The Yellow Prince",
+      "urlId": "8KlDFYPfS0",
+      "collectionId": "13b87098-500c-490d-ae46-01356387fe88",
+      "createdAt": "2025-11-03T22:12:34.654000+00:00",
+      "connections": 12
+    },
+    {
       "id": "c2b72032-bd6e-4602-a7ba-121ae4c73fcd",
       "title": "Burle Hunter's Guild",
       "urlId": "TFqCs3pSJy",
@@ -1199,14 +1207,6 @@
       "collectionId": "13b87098-500c-490d-ae46-01356387fe88",
       "createdAt": "2025-05-07T20:29:49.213000+00:00",
       "connections": 8
-    },
-    {
-      "id": "f2d3e404-b5cb-4e38-9f0e-e375083f5aec",
-      "title": "The Yellow Prince",
-      "urlId": "8KlDFYPfS0",
-      "collectionId": "13b87098-500c-490d-ae46-01356387fe88",
-      "createdAt": "2025-11-03T22:12:34.654000+00:00",
-      "connections": 12
     },
     {
       "id": "c48ac874-9b8e-44b0-a091-7f26eccbf1e6",
