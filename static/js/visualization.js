@@ -135,6 +135,9 @@ function clearHighlightAndResetZoom() {
             .classed("node-highlight-second", false)
             .classed("node-dimmed", false);
         
+        // Reset fill colors for all nodes
+        node.select("circle").attr("fill", null);
+        
         link.classed("link-highlight-first", false)
             .classed("link-highlight-second", false)
             .classed("link-dimmed", false);
@@ -213,6 +216,9 @@ function highlightAndZoomToNode(d) {
         .classed("node-highlight-second", false)
         .classed("node-dimmed", false);
     
+    // Reset fill colors for all nodes
+    node.select("circle").attr("fill", null);
+    
     link.classed("link-highlight-first", false)
         .classed("link-highlight-second", false)
         .classed("link-dimmed", false);
@@ -247,19 +253,26 @@ function highlightAndZoomToNode(d) {
     const highlightedNodeIds = new Set([d.id, ...firstOrderNodeIds, ...secondOrderNodeIds]);
     const highlightedLinkIndices = new Set();
     
+    // Highlight first-order connections
+    firstOrderNodeIds.forEach(nodeId => {
+        const nodeElement = node.filter(n => n.id === nodeId);
+        nodeElement.classed("node-highlight-first", true);
+        
+        // Use direct attribute manipulation for better performance
+        const nodeData = nodeMap.get(nodeId);
+        if (nodeData && nodeData.collectionId) {
+            // Apply collection color directly to the circle element
+            nodeElement.select("circle")
+                .attr("fill", getCollectionColor(nodeData.collectionId));
+        }
+    });
+
     // Highlight first-order links and nodes
     link.each(function(l, i) {
         const linkElement = d3.select(this);
         if (l.source.id === d.id || l.target.id === d.id) {
             linkElement.classed("link-highlight-first", true);
             highlightedLinkIndices.add(i);
-        }
-    });
-    
-    node.each(function(n) {
-        const nodeElement = d3.select(this);
-        if (firstOrderNodeIds.has(n.id)) {
-            nodeElement.classed("node-highlight-first", true);
         }
     });
     
@@ -464,6 +477,13 @@ node.append("circle")
                 const nodeElement = d3.select(this);
                 if (firstOrderNodeIds.has(n.id)) {
                     nodeElement.classed("node-highlight-first", true);
+                    
+                    // Use direct attribute manipulation for better performance
+                    if (n.collectionId) {
+                        // Apply collection color directly to the circle element
+                        nodeElement.select("circle")
+                            .attr("fill", getCollectionColor(n.collectionId));
+                    }
                 }
             });
             
@@ -519,6 +539,9 @@ node.append("circle")
                 .classed("node-highlight-first", false)
                 .classed("node-highlight-second", false)
                 .classed("node-dimmed", false);
+            
+            // Reset fill colors for all nodes
+            node.select("circle").attr("fill", null);
             
             link.classed("link-highlight-first", false)
                 .classed("link-highlight-second", false)
@@ -807,19 +830,23 @@ function dragended(event, d) {
 }
 
 function getNodeColor(node) {
-    // Use the dynamically generated collection colors if available
-    if (typeof collectionColors !== 'undefined' && collectionColors[node.collectionId]) {
-        return collectionColors[node.collectionId];
+    // Use the getCollectionColor function from collection-colors.js
+    if (typeof getCollectionColor === 'function' && node.collectionId) {
+        const color = getCollectionColor(node.collectionId);
+        console.log("Default color for node:", node.id, "Collection ID:", node.collectionId, "Color:", color);
+        return color;
     }
     
-    // Fallback to hardcoded colors if collection colors are not available
+    // Fallback to hardcoded colors if getCollectionColor is not available
     const collections = {
         "13b87098-500c-490d-ae46-01356387fe88": "#ff7f0e", // Adventures
         "7275a3d8-27da-4f63-ac39-a9bc9a1ec6d7": "#1f77b4", // Spells
         // Add more collections as needed
     };
     
-    return collections[node.collectionId] || "#69b3a2";
+    const fallbackColor = collections[node.collectionId] || "#69b3a2";
+    console.log("Fallback color for node:", node.id, "Collection ID:", node.collectionId, "Color:", fallbackColor);
+    return fallbackColor;
 }
 
 function truncateText(text, maxLength) {
