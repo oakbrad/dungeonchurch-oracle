@@ -129,18 +129,90 @@ function hideTooltipImmediately() {
     tooltipTruncated.style("opacity", 0);
 }
 
+// Helper function to calculate node connections (first and second order)
+// Returns { firstOrderNodeIds, secondOrderNodeIds, firstOrderLinks }
+function calculateNodeConnections(nodeId) {
+    // Get first-order connections
+    const firstOrderLinks = graphData.links.filter(link =>
+        link.source.id === nodeId || link.target.id === nodeId
+    );
+
+    const firstOrderNodeIds = new Set();
+    firstOrderLinks.forEach(link => {
+        const connectedId = link.source.id === nodeId ? link.target.id : link.source.id;
+        firstOrderNodeIds.add(connectedId);
+    });
+
+    // Get second-order connections
+    const secondOrderNodeIds = new Set();
+    firstOrderNodeIds.forEach(firstNodeId => {
+        graphData.links.forEach(link => {
+            if (link.source.id === firstNodeId) {
+                if (link.target.id !== nodeId && !firstOrderNodeIds.has(link.target.id)) {
+                    secondOrderNodeIds.add(link.target.id);
+                }
+            } else if (link.target.id === firstNodeId) {
+                if (link.source.id !== nodeId && !firstOrderNodeIds.has(link.source.id)) {
+                    secondOrderNodeIds.add(link.source.id);
+                }
+            }
+        });
+    });
+
+    return { firstOrderNodeIds, secondOrderNodeIds, firstOrderLinks };
+}
+
+// Helper function to clear all highlight classes from nodes and links
+function clearAllHighlights() {
+    node.classed("node-highlight", false)
+        .classed("node-highlight-first", false)
+        .classed("node-highlight-second", false)
+        .classed("node-dimmed", false);
+
+    link.classed("link-highlight-first", false)
+        .classed("link-highlight-second", false)
+        .classed("link-dimmed", false);
+}
+
+// Helper function to apply highlight classes based on connection data
+function applyHighlightClasses(nodeId, connections) {
+    const { firstOrderNodeIds, secondOrderNodeIds } = connections;
+    const highlightedNodeIds = new Set([nodeId, ...firstOrderNodeIds, ...secondOrderNodeIds]);
+    const highlightedLinkIndices = new Set();
+
+    // Apply first-order link highlighting
+    link.classed("link-highlight-first", (l, i) => {
+        const isFirst = l.source.id === nodeId || l.target.id === nodeId;
+        if (isFirst) highlightedLinkIndices.add(i);
+        return isFirst;
+    });
+
+    // Apply first-order node highlighting
+    node.classed("node-highlight-first", n => firstOrderNodeIds.has(n.id));
+
+    // Apply second-order link highlighting
+    link.classed("link-highlight-second", (l, i) => {
+        const isSecond = (firstOrderNodeIds.has(l.source.id) && secondOrderNodeIds.has(l.target.id)) ||
+                        (firstOrderNodeIds.has(l.target.id) && secondOrderNodeIds.has(l.source.id));
+        if (isSecond) highlightedLinkIndices.add(i);
+        return isSecond;
+    });
+
+    // Apply second-order node highlighting
+    node.classed("node-highlight-second", n => secondOrderNodeIds.has(n.id));
+
+    // Dim non-highlighted elements
+    node.classed("node-dimmed", n => !highlightedNodeIds.has(n.id));
+    link.classed("link-dimmed", (l, i) => !highlightedLinkIndices.has(i));
+
+    return highlightedLinkIndices;
+}
+
 // Function to clear highlight state and reset zoom
 function clearHighlightAndResetZoom() {
     if (highlightedNode) {
-        // Remove all highlight and dimmed classes
-        node.classed("node-highlight", false)
-            .classed("node-highlight-first", false)
-            .classed("node-highlight-second", false)
-            .classed("node-dimmed", false);
-
-        link.classed("link-highlight-first", false)
-            .classed("link-highlight-second", false)
-            .classed("link-dimmed", false);
+        // Remove all highlight and dimmed classes using helper
+        clearAllHighlights();
 
         // Hide tooltip immediately without transition
         hideTooltipImmediately();
@@ -153,20 +225,19 @@ function clearHighlightAndResetZoom() {
             applyAlignmentDefaultStyles();
             // Reset zoom to alignment view center
             const scale = Math.min(width, height) / (alignmentGridSize * 0.8 * 2.5);
-            svg.transition().duration(750).call(
+            svg.interrupt().transition().duration(750).call(
                 zoom.transform,
                 d3.zoomIdentity.translate(width / 2, height / 2).scale(scale)
             );
         } else {
             // Reset zoom to default center view
-            svg.transition().duration(750).call(
+            svg.interrupt().transition().duration(750).call(
                 zoom.transform,
                 d3.zoomIdentity.translate(width / 2, height / 2).scale(0.5)
             );
         }
 
-        // Reset the rendering order by reappending all nodes and links
-        // This effectively resets them to their original order in the DOM
+        // Reset the rendering order
         node.order();
         link.order();
     }
@@ -184,131 +255,53 @@ function highlightAndZoomToNode(d) {
 
     // Set this node as the highlighted node
     highlightedNode = d;
-    
-    // Get first-order connections
-    const firstOrderLinks = graphData.links.filter(link => 
-        link.source.id === d.id || link.target.id === d.id
-    );
-    
-    const firstOrderNodeIds = new Set();
-    firstOrderLinks.forEach(link => {
-        const connectedId = link.source.id === d.id ? link.target.id : link.source.id;
-        firstOrderNodeIds.add(connectedId);
-    });
-    
-    // Get all nodes that need to be included in the view
+
+    // Calculate connections using shared helper
+    const connections = calculateNodeConnections(d.id);
+    const { firstOrderNodeIds } = connections;
+
+    // Get all nodes that need to be included in the view for zoom calculation
     const nodesToInclude = [d];
     firstOrderNodeIds.forEach(nodeId => {
-        const node = graphData.nodes.find(n => n.id === nodeId);
-        if (node) nodesToInclude.push(node);
+        const n = nodeMap.get(nodeId);
+        if (n) nodesToInclude.push(n);
     });
-    
+
     // Calculate the bounding box for these nodes
     let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
-    nodesToInclude.forEach(node => {
-        minX = Math.min(minX, node.x);
-        minY = Math.min(minY, node.y);
-        maxX = Math.max(maxX, node.x);
-        maxY = Math.max(maxY, node.y);
+    nodesToInclude.forEach(n => {
+        minX = Math.min(minX, n.x);
+        minY = Math.min(minY, n.y);
+        maxX = Math.max(maxX, n.x);
+        maxY = Math.max(maxY, n.y);
     });
-    
+
     // Add some padding
     const padding = 50;
     minX -= padding;
     minY -= padding;
     maxX += padding;
     maxY += padding;
-    
+
     // Calculate the scale and translate to fit this box
     const boxWidth = maxX - minX;
     const boxHeight = maxY - minY;
     const scale = Math.min(width / boxWidth, height / boxHeight) * 0.9;
     const centerX = (minX + maxX) / 2;
     const centerY = (minY + maxY) / 2;
-    
-    // First clear any existing highlights
-    node.classed("node-highlight", false)
-        .classed("node-highlight-first", false)
-        .classed("node-highlight-second", false)
-        .classed("node-dimmed", false);
-    
-    link.classed("link-highlight-first", false)
-        .classed("link-highlight-second", false)
-        .classed("link-dimmed", false);
-    
-    // Find the current node element
+
+    // Clear existing highlights and apply new ones
+    clearAllHighlights();
+
+    // Find the current node element and highlight it
     const currentNode = node.filter(n => n.id === d.id);
-    
-    // Add highlight class to the current node
     currentNode.classed("node-highlight", true);
-    
-    // Get second-order connections
-    const secondOrderNodeIds = new Set();
-    
-    // For each first-order node, find its connections
-    firstOrderNodeIds.forEach(nodeId => {
-        graphData.links.forEach(link => {
-            if (link.source.id === nodeId) {
-                // Don't include the original node or first-order nodes
-                if (link.target.id !== d.id && !firstOrderNodeIds.has(link.target.id)) {
-                    secondOrderNodeIds.add(link.target.id);
-                }
-            } else if (link.target.id === nodeId) {
-                // Don't include the original node or first-order nodes
-                if (link.source.id !== d.id && !firstOrderNodeIds.has(link.source.id)) {
-                    secondOrderNodeIds.add(link.source.id);
-                }
-            }
-        });
-    });
-    
-    // Create sets to track which nodes and links should be highlighted
-    const highlightedNodeIds = new Set([d.id, ...firstOrderNodeIds, ...secondOrderNodeIds]);
-    const highlightedLinkIndices = new Set();
-    
-    // Highlight first-order links and nodes
-    link.each(function(l, i) {
-        const linkElement = d3.select(this);
-        if (l.source.id === d.id || l.target.id === d.id) {
-            linkElement.classed("link-highlight-first", true);
-            highlightedLinkIndices.add(i);
-        }
-    });
-    
-    node.each(function(n) {
-        const nodeElement = d3.select(this);
-        if (firstOrderNodeIds.has(n.id)) {
-            nodeElement.classed("node-highlight-first", true);
-        }
-    });
-    
-    // Highlight second-order links and nodes
-    link.each(function(l, i) {
-        const linkElement = d3.select(this);
-        // If link connects a first-order node to a second-order node
-        if ((firstOrderNodeIds.has(l.source.id) && secondOrderNodeIds.has(l.target.id)) || 
-            (firstOrderNodeIds.has(l.target.id) && secondOrderNodeIds.has(l.source.id))) {
-            linkElement.classed("link-highlight-second", true);
-            highlightedLinkIndices.add(i);
-        }
-    });
-    
-    node.each(function(n) {
-        const nodeElement = d3.select(this);
-        if (secondOrderNodeIds.has(n.id)) {
-            nodeElement.classed("node-highlight-second", true);
-        }
-    });
-    
-    // Dim all non-highlighted nodes and links
-    node.filter(n => !highlightedNodeIds.has(n.id))
-        .classed("node-dimmed", true);
-    
-    link.filter((l, i) => !highlightedLinkIndices.has(i))
-        .classed("link-dimmed", true);
-    
+
+    // Apply connection highlighting
+    applyHighlightClasses(d.id, connections);
+
     // Animate the zoom
-    svg.transition()
+    svg.interrupt().transition()
        .duration(750)
        .call(
             zoom.transform,
@@ -319,36 +312,22 @@ function highlightAndZoomToNode(d) {
         )
        .on("end", function() {
             // Reorder elements for proper rendering AFTER the animation completes
-            // First, lower all elements to the back
             node.lower();
             link.lower();
-            
-            // Then raise elements in order of importance
-            // 1. Raise second-order connections
+
+            // Raise elements in order of importance
             link.filter(".link-highlight-second").raise();
             node.filter(".node-highlight-second").raise();
-            
-            // 2. Raise first-order connections
             link.filter(".link-highlight-first").raise();
             node.filter(".node-highlight-first").raise();
-            
-            // 3. Raise the highlighted node to the top
             currentNode.raise();
-            
+
             // Show tooltip if the node's title is truncated
             if (d.isTruncated) {
-                // Get the final transform after animation
                 const finalTransform = d3.zoomTransform(svg.node());
                 showTooltip(d, finalTransform);
             }
        });
-    
-    // Show tooltip if the node's title is truncated
-    if (d.isTruncated) {
-        // Note: We don't show the tooltip here anymore
-        // It will be shown in the "end" event of the zoom transition
-        // This ensures the tooltip is positioned correctly after the zoom animation
-    }
 }
 
 // Alignment grid dimensions (in simulation coordinates)
@@ -514,7 +493,7 @@ function switchToAlignmentMode() {
     const isAlignmentNode = d => alignmentCollectionIds.has(d.collectionId);
 
     // Hide non-alignment nodes completely, show alignment nodes
-    node.transition()
+    node.interrupt().transition()
         .duration(500)
         .style("display", d => isAlignmentNode(d) ? "block" : "none");
 
@@ -522,7 +501,7 @@ function switchToAlignmentMode() {
     applyAlignmentDefaultStyles();
 
     // Hide links that connect to non-alignment nodes
-    link.transition()
+    link.interrupt().transition()
         .duration(500)
         .style("display", d => {
             const sourceNode = typeof d.source === 'object' ? d.source : nodeMap.get(d.source);
@@ -538,7 +517,7 @@ function switchToAlignmentMode() {
     // Zoom to center on the alignment axis
     // Scale to fit the axis extent within the viewport
     const scale = Math.min(width, height) / (axisExtent * 2.5);
-    svg.transition()
+    svg.interrupt().transition()
         .duration(750)
         .call(zoom.transform, d3.zoomIdentity
             .translate(width / 2, height / 2)
@@ -592,12 +571,12 @@ function switchToConnectionMode() {
         .force("collide", d3.forceCollide(30));
 
     // Show all nodes again
-    node.transition()
+    node.interrupt().transition()
         .duration(500)
         .style("display", "block");
 
     // Show all links again
-    link.transition()
+    link.interrupt().transition()
         .duration(500)
         .style("display", "block");
 
@@ -605,7 +584,7 @@ function switchToConnectionMode() {
     simulation.alpha(1).restart();
 
     // Reset zoom to default view
-    svg.transition()
+    svg.interrupt().transition()
         .duration(750)
         .call(zoom.transform, d3.zoomIdentity
             .translate(width / 2, height / 2)
@@ -693,10 +672,10 @@ node.append("circle")
         // If we already have a highlighted node, don't do anything on mouseover
         // unless it's the highlighted node itself (to ensure tooltip shows correctly)
         if (highlightedNode && highlightedNode !== d) return;
-        
+
         // Get the current node element
         const currentNode = d3.select(this.parentNode);
-        
+
         // If no node is highlighted, add temporary highlight class
         if (!highlightedNode) {
             // If in alignment mode, clear the default alignment styles first
@@ -706,95 +685,14 @@ node.append("circle")
 
             // Add highlight class to the current node
             currentNode.classed("node-highlight", true);
-            
-            // Get first-order connections
-            const firstOrderLinks = graphData.links.filter(link => 
-                link.source.id === d.id || link.target.id === d.id
-            );
-            
-            const firstOrderNodeIds = new Set();
-            firstOrderLinks.forEach(link => {
-                const connectedId = link.source.id === d.id ? link.target.id : link.source.id;
-                firstOrderNodeIds.add(connectedId);
-            });
-            
-            // Get second-order connections
-            const secondOrderNodeIds = new Set();
-            
-            // For each first-order node, find its connections
-            firstOrderNodeIds.forEach(nodeId => {
-                graphData.links.forEach(link => {
-                    if (link.source.id === nodeId) {
-                        // Don't include the original node or first-order nodes
-                        if (link.target.id !== d.id && !firstOrderNodeIds.has(link.target.id)) {
-                            secondOrderNodeIds.add(link.target.id);
-                        }
-                    } else if (link.target.id === nodeId) {
-                        // Don't include the original node or first-order nodes
-                        if (link.source.id !== d.id && !firstOrderNodeIds.has(link.source.id)) {
-                            secondOrderNodeIds.add(link.source.id);
-                        }
-                    }
-                });
-            });
-            
-            // Create sets to track which nodes and links should be highlighted
-            const highlightedNodeIds = new Set([d.id, ...firstOrderNodeIds, ...secondOrderNodeIds]);
-            const highlightedLinkIndices = new Set();
-            
-            // Highlight first-order links and nodes
-            link.each(function(l, i) {
-                const linkElement = d3.select(this);
-                if (l.source.id === d.id || l.target.id === d.id) {
-                    linkElement.classed("link-highlight-first", true);
-                    highlightedLinkIndices.add(i);
-                }
-            });
-            
-            node.each(function(n) {
-                const nodeElement = d3.select(this);
-                if (firstOrderNodeIds.has(n.id)) {
-                    nodeElement.classed("node-highlight-first", true);
-                }
-            });
-            
-            // Highlight second-order links and nodes
-            link.each(function(l, i) {
-                const linkElement = d3.select(this);
-                // If link connects a first-order node to a second-order node
-                if ((firstOrderNodeIds.has(l.source.id) && secondOrderNodeIds.has(l.target.id)) || 
-                    (firstOrderNodeIds.has(l.target.id) && secondOrderNodeIds.has(l.source.id))) {
-                    linkElement.classed("link-highlight-second", true);
-                    highlightedLinkIndices.add(i);
-                }
-            });
-            
-            node.each(function(n) {
-                const nodeElement = d3.select(this);
-                if (secondOrderNodeIds.has(n.id)) {
-                    nodeElement.classed("node-highlight-second", true);
-                }
-            });
-            
-            // Dim all non-highlighted nodes and links
-            node.each(function(n) {
-                const nodeElement = d3.select(this);
-                if (!highlightedNodeIds.has(n.id)) {
-                    nodeElement.classed("node-dimmed", true);
-                }
-            });
-            
-            link.each(function(l, i) {
-                const linkElement = d3.select(this);
-                if (!highlightedLinkIndices.has(i)) {
-                    linkElement.classed("link-dimmed", true);
-                }
-            });
+
+            // Calculate and apply connection highlighting using shared helpers
+            const connections = calculateNodeConnections(d.id);
+            applyHighlightClasses(d.id, connections);
         }
-        
+
         // Show tooltip if the node's title is truncated
         if (d.isTruncated) {
-            // Get current transform
             const transform = d3.zoomTransform(svg.node());
             showTooltip(d, transform);
         }
@@ -803,17 +701,10 @@ node.append("circle")
         // If we have a highlighted node, don't clear highlights on mouseout
         // unless it's the highlighted node itself (to ensure proper tooltip behavior)
         if (highlightedNode && highlightedNode !== d) return;
-        
-        if (!highlightedNode) {
-            // Remove all highlight and dimmed classes
-            node.classed("node-highlight", false)
-                .classed("node-highlight-first", false)
-                .classed("node-highlight-second", false)
-                .classed("node-dimmed", false);
 
-            link.classed("link-highlight-first", false)
-                .classed("link-highlight-second", false)
-                .classed("link-dimmed", false);
+        if (!highlightedNode) {
+            // Remove all highlight and dimmed classes using helper
+            clearAllHighlights();
 
             // If in alignment mode, re-apply default alignment styles
             if (currentViewMode === 'alignment') {
@@ -824,7 +715,7 @@ node.append("circle")
             node.order();
             link.order();
         }
-            
+
         // Hide tooltip only if we're not in highlight mode or if this is the highlighted node
         if (!highlightedNode || highlightedNode === d) {
             hideTooltip();
@@ -1107,41 +998,49 @@ function getNodeColor(node) {
     if (typeof collectionColors !== 'undefined' && collectionColors[node.collectionId]) {
         return collectionColors[node.collectionId];
     }
-    
+
     // Fallback to hardcoded colors if collection colors are not available
     const collections = {
         "13b87098-500c-490d-ae46-01356387fe88": "#ff7f0e", // Adventures
         "7275a3d8-27da-4f63-ac39-a9bc9a1ec6d7": "#1f77b4", // Spells
-        // Add more collections as needed
     };
-    
-    return collections[node.collectionId] || "#69b3a2";
-}
 
-function truncateText(text, maxLength) {
-    return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
+    return collections[node.collectionId] || "#69b3a2";
 }
 
 // Search functionality
 const searchInput = document.getElementById("search-input");
 const searchResults = document.getElementById("search-results");
 
-searchInput.addEventListener("input", function() {
-    const query = this.value.toLowerCase();
-    
+// Debounce helper function
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// Debounced search handler (200ms delay)
+const handleSearch = debounce(function(query) {
     if (query.length < 2) {
         searchResults.style.display = "none";
         return;
     }
-    
+
     // Filter nodes based on search query
-    const matchingNodes = graphData.nodes.filter(node => 
+    const matchingNodes = graphData.nodes.filter(node =>
         node.title.toLowerCase().includes(query)
     ).slice(0, 10); // Limit to 10 results
-    
-    // Display results
+
+    // Build results using document fragment for better performance
+    const fragment = document.createDocumentFragment();
+
     if (matchingNodes.length > 0) {
-        searchResults.innerHTML = "";
         matchingNodes.forEach(node => {
             const resultItem = document.createElement("div");
             resultItem.className = "search-result";
@@ -1149,18 +1048,27 @@ searchInput.addEventListener("input", function() {
             resultItem.addEventListener("click", function() {
                 // Use the shared function to highlight and zoom to the node
                 highlightAndZoomToNode(node);
-                
+
                 // Clear search
                 searchInput.value = "";
                 searchResults.style.display = "none";
             });
-            searchResults.appendChild(resultItem);
+            fragment.appendChild(resultItem);
         });
-        searchResults.style.display = "block";
     } else {
-        searchResults.innerHTML = "<div class='search-result'>No results found</div>";
-        searchResults.style.display = "block";
+        const noResults = document.createElement("div");
+        noResults.className = "search-result";
+        noResults.textContent = "No results found";
+        fragment.appendChild(noResults);
     }
+
+    searchResults.innerHTML = "";
+    searchResults.appendChild(fragment);
+    searchResults.style.display = "block";
+}, 200);
+
+searchInput.addEventListener("input", function() {
+    handleSearch(this.value.toLowerCase());
 });
 
 // Close search results when clicking outside
