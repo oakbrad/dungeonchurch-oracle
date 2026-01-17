@@ -6,9 +6,12 @@
     <meta name="description" content="Interactive network visualization of Dungeon Church wiki content">
     <title>Dungeon Church Oracle - Network Visualization</title>
     <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <!-- Add collection colors CSS -->
     <link rel="stylesheet" href="css/collection-colors.css">
+    <!-- Add alignment mode CSS -->
+    <link rel="stylesheet" href="css/alignment-mode.css">
     <style>
         /* Ensure proper sizing for embedding */
         html, body {
@@ -30,9 +33,12 @@
 </head>
 <body>
     <div class="oracle-container">
-        <div id="search-container">
-            <input type="text" id="search-input" placeholder="Search lore...">
-            <div id="search-results"></div>
+        <div id="controls-container">
+            <div id="search-container">
+                <input type="text" id="search-input" placeholder="Search lore...">
+                <div id="search-results"></div>
+            </div>
+            <button id="view-toggle" onclick="toggleViewMode()" title="Switch to Alignment View"><i class="fa-solid fa-scale-balanced"></i></button>
         </div>
         <div id="visualization"></div>
     </div>

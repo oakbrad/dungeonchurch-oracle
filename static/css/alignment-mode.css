@@ -1,0 +1,161 @@
+/* Alignment View Mode Styles */
+
+/* Custom font for alignment labels */
+@font-face {
+    font-family: 'DungeonChurch';
+    src: url('https://github.com/oakbrad/dungeonchurch-basilica/raw/refs/heads/main/assets/ws.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Controls container for search and toggle */
+#controls-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+/* View toggle button */
+#view-toggle {
+    background: #ff2600;
+    border: 1px solid #ff2600;
+    color: #ffffff;
+    padding: 8px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#view-toggle:hover {
+    background: #cc1e00;
+    border-color: #cc1e00;
+}
+
+#view-toggle.active {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #ff2600;
+}
+
+/* Alignment grid styling */
+.alignment-grid {
+    pointer-events: none;
+}
+
+.alignment-cell {
+    transition: opacity 0.3s ease;
+}
+
+.alignment-label {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* Node styling in alignment mode */
+.node circle.alignment-mode {
+    transition: opacity 0.3s ease, stroke 0.3s ease, stroke-width 0.3s ease;
+}
+
+/* Drift indicator - nodes that have "fallen" from stated alignment */
+.node circle.high-drift {
+    stroke: #ff6b6b !important;
+    stroke-width: 3px !important;
+}
+
+.node circle.moderate-drift {
+    stroke: #ffd93d !important;
+    stroke-width: 2.5px !important;
+}
+
+/* Tooltip additions for alignment info */
+.tooltip-alignment {
+    position: absolute;
+    padding: 10px;
+    background: rgba(20, 20, 20, 0.95);
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: #e0e0e0;
+    font-size: 12px;
+    pointer-events: none;
+    z-index: 1001;
+    max-width: 250px;
+}
+
+.tooltip-alignment .alignment-values {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 4px 12px;
+    margin-top: 8px;
+}
+
+.tooltip-alignment .alignment-label {
+    color: #888;
+}
+
+.tooltip-alignment .alignment-value {
+    color: #fff;
+    font-weight: bold;
+}
+
+.tooltip-alignment .drift-warning {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #444;
+    color: #ff6b6b;
+    font-style: italic;
+}
+
+/* Alignment legend (optional - could be added) */
+.alignment-legend {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(20, 20, 20, 0.9);
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 11px;
+    color: #888;
+}
+
+.alignment-legend h4 {
+    margin: 0 0 8px 0;
+    color: #e0e0e0;
+    font-size: 12px;
+}
+
+.alignment-legend .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 4px 0;
+}
+
+.alignment-legend .legend-swatch {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #controls-container {
+        flex-direction: column;
+    }
+
+    #view-toggle {
+        width: 100%;
+    }
+}

@@ -1,6 +1,9 @@
 // This file will be populated with graph data by create_viz.py
 // The graphData variable will be defined at the top of this file
 
+// View mode: 'connection' or 'alignment'
+let currentViewMode = 'connection';
+
 // Create a map for quick node lookup
 const nodeMap = new Map();
 graphData.nodes.forEach(node => {
@@ -134,23 +137,34 @@ function clearHighlightAndResetZoom() {
             .classed("node-highlight-first", false)
             .classed("node-highlight-second", false)
             .classed("node-dimmed", false);
-        
+
         link.classed("link-highlight-first", false)
             .classed("link-highlight-second", false)
             .classed("link-dimmed", false);
-            
+
         // Hide tooltip immediately without transition
         hideTooltipImmediately();
-            
+
         // Reset the highlighted node tracker
         highlightedNode = null;
-        
-        // Reset zoom to default center view
-        svg.transition().duration(750).call(
-            zoom.transform,
-            d3.zoomIdentity.translate(width / 2, height / 2).scale(0.5)
-        );
-        
+
+        // If in alignment mode, re-apply alignment default styles
+        if (currentViewMode === 'alignment') {
+            applyAlignmentDefaultStyles();
+            // Reset zoom to alignment view center
+            const scale = Math.min(width, height) / (alignmentGridSize * 0.8 * 2.5);
+            svg.transition().duration(750).call(
+                zoom.transform,
+                d3.zoomIdentity.translate(width / 2, height / 2).scale(scale)
+            );
+        } else {
+            // Reset zoom to default center view
+            svg.transition().duration(750).call(
+                zoom.transform,
+                d3.zoomIdentity.translate(width / 2, height / 2).scale(0.5)
+            );
+        }
+
         // Reset the rendering order by reappending all nodes and links
         // This effectively resets them to their original order in the DOM
         node.order();
@@ -162,7 +176,12 @@ function clearHighlightAndResetZoom() {
 function highlightAndZoomToNode(d) {
     // Hide any existing tooltips immediately without transition
     hideTooltipImmediately();
-    
+
+    // If in alignment mode, clear the default alignment styles first
+    if (currentViewMode === 'alignment') {
+        clearAlignmentDefaultStyles();
+    }
+
     // Set this node as the highlighted node
     highlightedNode = d;
     
@@ -332,6 +351,111 @@ function highlightAndZoomToNode(d) {
     }
 }
 
+// Alignment grid dimensions (in simulation coordinates)
+const alignmentGridSize = 800;
+
+// Create alignment grid background (hidden by default)
+const alignmentGrid = g.append("g")
+    .attr("class", "alignment-grid")
+    .style("display", "none");
+
+// Draw 3x3 alignment grid
+const gridLabels = [
+    { x: -1, y: 1, label: "Lawful Good", abbr: "LG" },
+    { x: 0, y: 1, label: "Neutral Good", abbr: "NG" },
+    { x: 1, y: 1, label: "Chaotic Good", abbr: "CG" },
+    { x: -1, y: 0, label: "Lawful Neutral", abbr: "LN" },
+    { x: 0, y: 0, label: "True Neutral", abbr: "N" },
+    { x: 1, y: 0, label: "Chaotic Neutral", abbr: "CN" },
+    { x: -1, y: -1, label: "Lawful Evil", abbr: "LE" },
+    { x: 0, y: -1, label: "Neutral Evil", abbr: "NE" },
+    { x: 1, y: -1, label: "Chaotic Evil", abbr: "CE" }
+];
+
+// Grid cell size
+const cellSize = alignmentGridSize / 3;
+
+// Draw quadrant labels only (no background rectangles)
+gridLabels.forEach(cell => {
+    const cellX = cell.x * cellSize;
+    const cellY = -cell.y * cellSize; // Invert Y so good is at top
+
+    // Draw cell label
+    alignmentGrid.append("text")
+        .attr("x", cellX)
+        .attr("y", cellY)
+        .attr("text-anchor", "middle")
+        .attr("dominant-baseline", "middle")
+        .attr("class", "alignment-label")
+        .attr("fill", "#555")
+        .attr("font-size", "28px")
+        .attr("font-family", "'DungeonChurch', 'Courier New', monospace")
+        .text(cell.abbr);
+});
+
+// Axis extends well beyond the grid for prominence
+const axisExtent = alignmentGridSize * 0.8;
+
+// Draw prominent red cross axis lines
+alignmentGrid.append("line")
+    .attr("x1", -axisExtent)
+    .attr("y1", 0)
+    .attr("x2", axisExtent)
+    .attr("y2", 0)
+    .attr("stroke", "#cc3333")
+    .attr("stroke-width", 3)
+    .attr("opacity", 0.8);
+
+alignmentGrid.append("line")
+    .attr("x1", 0)
+    .attr("y1", -axisExtent)
+    .attr("x2", 0)
+    .attr("y2", axisExtent)
+    .attr("stroke", "#cc3333")
+    .attr("stroke-width", 3)
+    .attr("opacity", 0.8);
+
+// Draw axis labels at ends of cross
+alignmentGrid.append("text")
+    .attr("x", 0)
+    .attr("y", -axisExtent - 25)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#cc9966")
+    .attr("font-size", "32px")
+    .attr("font-family", "'DungeonChurch', 'Courier New', monospace")
+    .text("GOOD");
+
+alignmentGrid.append("text")
+    .attr("x", 0)
+    .attr("y", axisExtent + 40)
+    .attr("text-anchor", "middle")
+    .attr("fill", "#cc9966")
+    .attr("font-size", "32px")
+    .attr("font-family", "'DungeonChurch', 'Courier New', monospace")
+    .text("EVIL");
+
+alignmentGrid.append("text")
+    .attr("x", -axisExtent - 25)
+    .attr("y", 0)
+    .attr("text-anchor", "middle")
+    .attr("dominant-baseline", "middle")
+    .attr("fill", "#cc9966")
+    .attr("font-size", "32px")
+    .attr("font-family", "'DungeonChurch', 'Courier New', monospace")
+    .attr("transform", `rotate(-90, ${-axisExtent - 25}, 0)`)
+    .text("LAWFUL");
+
+alignmentGrid.append("text")
+    .attr("x", axisExtent + 25)
+    .attr("y", 0)
+    .attr("text-anchor", "middle")
+    .attr("dominant-baseline", "middle")
+    .attr("fill", "#cc9966")
+    .attr("font-size", "32px")
+    .attr("font-family", "'DungeonChurch', 'Courier New', monospace")
+    .attr("transform", `rotate(90, ${axisExtent + 25}, 0)`)
+    .text("CHAOTIC");
+
 // Create the force simulation
 const simulation = d3.forceSimulation(graphData.nodes)
     .force("link", d3.forceLink(graphData.links)
@@ -340,6 +464,168 @@ const simulation = d3.forceSimulation(graphData.nodes)
     .force("charge", d3.forceManyBody().strength(-300))
     .force("center", d3.forceCenter(0, 0))
     .force("collide", d3.forceCollide(30));
+
+// Store original force configuration for connection mode
+const connectionForces = {
+    link: simulation.force("link"),
+    charge: simulation.force("charge"),
+    center: simulation.force("center"),
+    collide: simulation.force("collide")
+};
+
+// Function to switch to alignment view mode
+function switchToAlignmentMode() {
+    currentViewMode = 'alignment';
+
+    // Show alignment grid
+    alignmentGrid.style("display", "block");
+
+    // Update forces for alignment positioning
+    simulation
+        .force("link", d3.forceLink(graphData.links)
+            .id(d => d.id)
+            .distance(80)
+            .strength(0.05)) // Very weak links in alignment mode
+        .force("charge", d3.forceManyBody()
+            .strength(-200)) // Stronger repulsion to spread nodes out
+        .force("center", null) // Remove center force
+        .force("alignX", d3.forceX(d => {
+            if (d.alignment && d.alignment.final) {
+                // law_chaos: -1 (chaotic/right) to 1 (lawful/left)
+                // Invert so chaotic is right, lawful is left
+                return -d.alignment.final.law_chaos * (alignmentGridSize / 2);
+            }
+            return 0;
+        }).strength(d => d.alignment ? d.alignment.confidence * 0.3 : 0.1))
+        .force("alignY", d3.forceY(d => {
+            if (d.alignment && d.alignment.final) {
+                // good_evil: -1 (evil/bottom) to 1 (good/top)
+                // Invert Y so good is at top
+                return -d.alignment.final.good_evil * (alignmentGridSize / 2);
+            }
+            return 0;
+        }).strength(d => d.alignment ? d.alignment.confidence * 0.3 : 0.1))
+        .force("collide", d3.forceCollide(25));
+
+    // Get alignment-eligible collection IDs from graph data
+    const alignmentCollectionIds = new Set(graphData.alignmentCollectionIds || []);
+
+    // Helper to check if node is alignment-eligible (Characters, NPCs, Organizations)
+    const isAlignmentNode = d => alignmentCollectionIds.has(d.collectionId);
+
+    // Hide non-alignment nodes completely, show alignment nodes
+    node.transition()
+        .duration(500)
+        .style("display", d => isAlignmentNode(d) ? "block" : "none");
+
+    // Apply alignment-specific CSS classes based on collection type
+    applyAlignmentDefaultStyles();
+
+    // Hide links that connect to non-alignment nodes
+    link.transition()
+        .duration(500)
+        .style("display", d => {
+            const sourceNode = typeof d.source === 'object' ? d.source : nodeMap.get(d.source);
+            const targetNode = typeof d.target === 'object' ? d.target : nodeMap.get(d.target);
+            const sourceOk = sourceNode && alignmentCollectionIds.has(sourceNode.collectionId);
+            const targetOk = targetNode && alignmentCollectionIds.has(targetNode.collectionId);
+            return (sourceOk && targetOk) ? "block" : "none";
+        });
+
+    // Restart simulation
+    simulation.alpha(1).restart();
+
+    // Zoom to center on the alignment axis
+    // Scale to fit the axis extent within the viewport
+    const scale = Math.min(width, height) / (axisExtent * 2.5);
+    svg.transition()
+        .duration(750)
+        .call(zoom.transform, d3.zoomIdentity
+            .translate(width / 2, height / 2)
+            .scale(scale));
+
+    // Update toggle button - show circle-nodes icon for switching back to connection view
+    const toggleBtn = document.getElementById("view-toggle");
+    toggleBtn.innerHTML = '<i class="fa-solid fa-circle-nodes"></i>';
+    toggleBtn.title = "Switch to Connection View";
+    toggleBtn.classList.add("active");
+}
+
+// Collection type IDs for alignment styling
+const CHARACTERS_COLLECTION = '184c6e39-ef59-49b4-89d8-302d6abae3cf';
+const ORGANIZATIONS_COLLECTION = '28015ad0-50f5-4495-a6c5-2415436a3d40';
+const NPCS_COLLECTION = '098323c3-c9a2-45f4-ab12-ff8b759c5be7';
+
+// Function to apply alignment default styles (called when entering alignment mode or clearing highlight)
+function applyAlignmentDefaultStyles() {
+    node.classed("alignment-character", d => d.collectionId === CHARACTERS_COLLECTION)
+        .classed("alignment-org", d => d.collectionId === ORGANIZATIONS_COLLECTION)
+        .classed("alignment-npc", d => d.collectionId === NPCS_COLLECTION);
+}
+
+// Function to clear alignment default styles
+function clearAlignmentDefaultStyles() {
+    node.classed("alignment-character", false)
+        .classed("alignment-org", false)
+        .classed("alignment-npc", false);
+}
+
+// Function to switch to connection view mode
+function switchToConnectionMode() {
+    currentViewMode = 'connection';
+
+    // Hide alignment grid
+    alignmentGrid.style("display", "none");
+
+    // Clear alignment-specific CSS classes
+    clearAlignmentDefaultStyles();
+
+    // Restore original forces
+    simulation
+        .force("link", d3.forceLink(graphData.links)
+            .id(d => d.id)
+            .distance(100))
+        .force("charge", d3.forceManyBody().strength(-300))
+        .force("center", d3.forceCenter(0, 0))
+        .force("alignX", null)
+        .force("alignY", null)
+        .force("collide", d3.forceCollide(30));
+
+    // Show all nodes again
+    node.transition()
+        .duration(500)
+        .style("display", "block");
+
+    // Show all links again
+    link.transition()
+        .duration(500)
+        .style("display", "block");
+
+    // Restart simulation
+    simulation.alpha(1).restart();
+
+    // Reset zoom to default view
+    svg.transition()
+        .duration(750)
+        .call(zoom.transform, d3.zoomIdentity
+            .translate(width / 2, height / 2)
+            .scale(0.5));
+
+    // Update toggle button - show scale-balanced icon for switching to alignment view
+    const toggleBtn = document.getElementById("view-toggle");
+    toggleBtn.innerHTML = '<i class="fa-solid fa-scale-balanced"></i>';
+    toggleBtn.title = "Switch to Alignment View";
+    toggleBtn.classList.remove("active");
+}
+
+// Function to toggle view mode
+function toggleViewMode() {
+    if (currentViewMode === 'connection') {
+        switchToAlignmentMode();
+    } else {
+        switchToConnectionMode();
+    }
+}
 
 // Create links
 const link = g.append("g")
@@ -413,6 +699,11 @@ node.append("circle")
         
         // If no node is highlighted, add temporary highlight class
         if (!highlightedNode) {
+            // If in alignment mode, clear the default alignment styles first
+            if (currentViewMode === 'alignment') {
+                clearAlignmentDefaultStyles();
+            }
+
             // Add highlight class to the current node
             currentNode.classed("node-highlight", true);
             
@@ -519,11 +810,16 @@ node.append("circle")
                 .classed("node-highlight-first", false)
                 .classed("node-highlight-second", false)
                 .classed("node-dimmed", false);
-            
+
             link.classed("link-highlight-first", false)
                 .classed("link-highlight-second", false)
                 .classed("link-dimmed", false);
-                
+
+            // If in alignment mode, re-apply default alignment styles
+            if (currentViewMode === 'alignment') {
+                applyAlignmentDefaultStyles();
+            }
+
             // Reset the rendering order
             node.order();
             link.order();

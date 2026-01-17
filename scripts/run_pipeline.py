@@ -4,7 +4,7 @@ import sys
 import json
 import argparse
 from download_latest_dump import download_latest_dump
-from process_relationships import process_relationships, restore_database, cleanup_database
+from process_relationships import process_relationships, restore_database, cleanup_database, get_alignment_collections
 from process_colors import process_colors
 
 def run_pipeline(output_file=None, keep_dump=False, dump_file=None):
@@ -49,10 +49,9 @@ def run_pipeline(output_file=None, keep_dump=False, dump_file=None):
         # Step 3: Process the dump to extract relationship data
         print("\nStep 3: Processing the dump to extract relationship data")
         # Set default output file if not provided
+        data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+        os.makedirs(data_dir, exist_ok=True)
         if output_file is None:
-            # Create a data directory if it doesn't exist
-            data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
-            os.makedirs(data_dir, exist_ok=True)
             output_file = os.path.join(data_dir, "graph_data.json")
         
         # Extract relationship data
@@ -90,7 +89,63 @@ def run_pipeline(output_file=None, keep_dump=False, dump_file=None):
         print(f"Nodes: {len(graph_data['nodes'])}")
         print(f"Links: {len(graph_data['links'])}")
         print(f"Orphaned nodes: {len(orphaned_nodes)}")
-        
+
+        # Step 3.5: Classify alignments for relevant collections
+        print("\nStep 3.5: Classifying entity alignments")
+        api_key = os.environ.get("OPENAI_API_KEY")
+
+        if api_key:
+            from alignment_classifier import classify_alignments
+
+            # Get alignment-eligible collections
+            alignment_collections = get_alignment_collections(db_name)
+
+            if alignment_collections:
+                # Cache file path
+                cache_file = os.path.join(data_dir, "alignment_cache.json")
+
+                # Run classification pipeline
+                classify_alignments(
+                    nodes=graph_data['nodes'],
+                    links=graph_data['links'],
+                    alignment_collections=alignment_collections,
+                    cache_path=cache_file,
+                    api_key=api_key
+                )
+
+                # Add alignment collection IDs to graph data for visualization filtering
+                graph_data['alignmentCollectionIds'] = list(alignment_collections.values())
+
+                # Re-save graph data with alignment info
+                print(f"Re-saving graph data with alignment info to: {output_file}")
+                with open(output_file, 'w') as f:
+                    json.dump(graph_data, f, indent=2)
+            else:
+                print("No alignment-eligible collections found, skipping alignment classification")
+        else:
+            print("OPENAI_API_KEY not set, skipping LLM-based alignment classification")
+            # Still run explicit extraction without LLM
+            from alignment_classifier import classify_alignments
+            alignment_collections = get_alignment_collections(db_name)
+
+            if alignment_collections:
+                cache_file = os.path.join(data_dir, "alignment_cache.json")
+                classify_alignments(
+                    nodes=graph_data['nodes'],
+                    links=graph_data['links'],
+                    alignment_collections=alignment_collections,
+                    cache_path=cache_file,
+                    api_key=None  # No LLM, explicit extraction only
+                )
+
+                # Add alignment collection IDs to graph data for visualization filtering
+                graph_data['alignmentCollectionIds'] = list(alignment_collections.values())
+
+                # Re-save graph data with alignment info
+                print(f"Re-saving graph data with alignment info to: {output_file}")
+                with open(output_file, 'w') as f:
+                    json.dump(graph_data, f, indent=2)
+
         # Step 4: Process collection colors for visualization
         print("\nStep 4: Processing collection colors for visualization")
         css_file, js_file = process_colors(db_name)

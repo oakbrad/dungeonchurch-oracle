@@ -82,10 +82,11 @@ def restore_database(dump_file):
         )
         cursor = conn.cursor()
         
-        # Create graph_nodes view
+        # Create graph_nodes view (includes document text for alignment classification)
         cursor.execute("""
         CREATE MATERIALIZED VIEW IF NOT EXISTS graph_nodes AS
-        SELECT id, title, "urlId", "collectionId", "createdAt"
+        SELECT id, title, "urlId", "collectionId", "createdAt",
+               COALESCE(text, '') as content
         FROM   documents
         WHERE  "deletedAt" IS NULL;
         """)
@@ -243,6 +244,83 @@ def extract_relationship_data(db_name):
     except Exception as e:
         print(f"Error extracting relationship data: {str(e)}")
         return None
+
+def get_alignment_collections(db_name):
+    """
+    Query the collections table to find collections that should have alignment data.
+
+    Looks for collections with names matching NPC, Character, or Organization patterns.
+
+    Args:
+        db_name (str): Name of the database to query
+
+    Returns:
+        dict: Mapping of collection type to collection UUID
+              e.g., {"npc": "uuid1", "character": "uuid2", "organization": "uuid3"}
+    """
+    try:
+        # Get PostgreSQL connection parameters from environment variables
+        pg_host = os.environ.get("POSTGRES_HOST", "localhost")
+        pg_port = os.environ.get("POSTGRES_PORT", "5432")
+        pg_user = os.environ.get("POSTGRES_USER", "postgres")
+        pg_password = os.environ.get("POSTGRES_PASSWORD", "postgres")
+
+        conn = psycopg2.connect(
+            host=pg_host,
+            port=pg_port,
+            user=pg_user,
+            password=pg_password,
+            dbname=db_name
+        )
+        cursor = conn.cursor(cursor_factory=RealDictCursor)
+
+        # Query for collections matching our target patterns
+        cursor.execute("""
+            SELECT id, name
+            FROM collections
+            WHERE "deletedAt" IS NULL
+            AND (
+                name ILIKE '%npc%'
+                OR name ILIKE '%character%'
+                OR name ILIKE '%organization%'
+                OR name ILIKE '%faction%'
+                OR name ILIKE '%person%'
+                OR name ILIKE '%people%'
+            )
+        """)
+
+        results = cursor.fetchall()
+        cursor.close()
+        conn.close()
+
+        alignment_collections = {}
+
+        for row in results:
+            name_lower = row['name'].lower()
+            collection_id = row['id']
+
+            # Categorize by name pattern
+            if 'npc' in name_lower:
+                alignment_collections['npc'] = collection_id
+            elif 'character' in name_lower or 'player' in name_lower:
+                alignment_collections['character'] = collection_id
+            elif 'organization' in name_lower or 'faction' in name_lower:
+                alignment_collections['organization'] = collection_id
+            elif 'person' in name_lower or 'people' in name_lower:
+                # Fallback category
+                if 'npc' not in alignment_collections:
+                    alignment_collections['npc'] = collection_id
+
+        print(f"Found {len(alignment_collections)} alignment-eligible collections:")
+        for ctype, cid in alignment_collections.items():
+            print(f"  {ctype}: {cid}")
+
+        return alignment_collections
+
+    except Exception as e:
+        print(f"Warning: Could not query alignment collections: {str(e)}")
+        return {}
+
 
 def cleanup_database(db_name):
     """

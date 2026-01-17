@@ -115,6 +115,46 @@ html {
     transition: stroke-opacity 0.5s ease;
 }
 
+/* Alignment view default styles - Characters (white glow like selected) */
+.alignment-character circle {
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
+    fill: #ffffff;
+    stroke: #ffffff;
+    stroke-width: 2.5px;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.alignment-character text {
+    fill: #000000 !important;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Alignment view default styles - Organizations (red like first-order) */
+.alignment-org circle {
+    stroke: #ffffff;
+    fill: #ff2600;
+    stroke-width: 2.5px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.alignment-org text {
+    fill: #ffffff;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Alignment view default styles - NPCs (neutral gray) */
+.alignment-npc circle {
+    fill: #888888;
+    stroke: #aaaaaa;
+    stroke-width: 1.5px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.alignment-npc text {
+    fill: #ffffff;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* Tooltip for truncated nodes */
 .tooltip-truncated {
     position: absolute;
@@ -135,9 +175,7 @@ html {
 }
 
 #search-container {
-    position: absolute;
-    top: 25px;
-    left: 25px;
+    position: relative;
     z-index: 10;
 }
 #search-input {
@@ -168,9 +206,8 @@ html {
 
 /* Media query for small containers */
 @media (max-width: 500px) {
-    #search-container {
-        top: 10px;
-        left: 10px;
+    #controls-container {
+        flex-direction: column;
     }
     
     #search-input {
@@ -186,9 +223,8 @@ html {
 
 /* Media query for very small containers */
 @media (max-width: 300px) {
-    #search-container {
-        top: 5px;
-        left: 5px;
+    #controls-container {
+        flex-direction: column;
     }
     
     #search-input {

@@ -48,6 +48,12 @@ def create_visualization():
     if collection_colors_css.exists():
         shutil.copy(collection_colors_css, docs_css_dir / "collection-colors.css")
         print("Collection colors CSS copied to docs/css/collection-colors.css")
+
+    # Copy alignment mode CSS if it exists
+    alignment_mode_css = Path("static/css/alignment-mode.css")
+    if alignment_mode_css.exists():
+        shutil.copy(alignment_mode_css, docs_css_dir / "alignment-mode.css")
+        print("Alignment mode CSS copied to docs/css/alignment-mode.css")
     
     # Copy visualization.js
     shutil.copy("static/js/visualization.js", docs_js_dir / "visualization.js")

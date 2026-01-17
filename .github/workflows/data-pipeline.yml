@@ -44,7 +44,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install psycopg2-binary requests
+          pip install psycopg2-binary requests openai
           sudo apt-get update
           sudo apt-get install -y postgresql-client
       
@@ -79,6 +79,7 @@ jobs:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
           EXCLUDE_5E: ${{ secrets.EXCLUDE_5E }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           # Get the path of the downloaded file
           DUMP_FILE="${{ steps.download.outputs.DUMP_FILE }}"
@@ -127,7 +128,7 @@ jobs:
           # Check for collection color files
           if [ -f static/css/collection-colors.css ]; then
             git add static/css/collection-colors.css
-            
+
             # Check if there are changes to collection-colors.css
             if ! git diff --staged --quiet; then
               CHANGES_DETECTED=true
@@ -137,6 +138,21 @@ jobs:
             fi
           else
             echo "collection-colors.css not found"
+          fi
+
+          # Check for alignment cache file
+          if [ -f data/alignment_cache.json ]; then
+            git add data/alignment_cache.json
+
+            # Check if there are changes to alignment_cache.json
+            if ! git diff --staged --quiet; then
+              CHANGES_DETECTED=true
+              echo "Changes detected in alignment_cache.json"
+            else
+              echo "No changes to alignment_cache.json"
+            fi
+          else
+            echo "alignment_cache.json not found"
           fi
           
           if [ -f static/js/collection-colors.js ]; then
