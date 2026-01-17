@@ -3,7 +3,7 @@
 /* Custom font for alignment labels */
 @font-face {
     font-family: 'DungeonChurch';
-    src: url('https://github.com/oakbrad/dungeonchurch-basilica/raw/refs/heads/main/assets/ws.woff2') format('woff2');
+    src: url('https://cdn.jsdelivr.net/gh/oakbrad/dungeonchurch-basilica@main/assets/ws.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
