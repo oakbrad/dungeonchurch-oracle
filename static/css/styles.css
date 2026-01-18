@@ -28,19 +28,19 @@ html {
     fill: #666;
     stroke: #fff;
     stroke-width: 1.5px;
-    transition: fill 0.3s ease, stroke 0.3s ease, stroke-width 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+    transition: fill 0.4s ease-out, stroke 0.4s ease-out, stroke-width 0.4s ease-out, transform 0.4s ease-out, opacity 0.4s ease-out, filter 0.4s ease-out;
 }
 
 .node text {
     fill: #fff;
     font-weight: 500;
-    transition: fill 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+    transition: fill 0.4s ease-out, transform 0.4s ease-out, opacity 0.4s ease-out;
 }
 
 .link {
     stroke: #999;
     stroke-opacity: 0.6;
-    transition: stroke 0.3s ease, stroke-opacity 0.3s ease, stroke-width 0.3s ease;
+    transition: stroke 0.4s ease-out, stroke-opacity 0.4s ease-out, stroke-width 0.4s ease-out;
 }
 
 /* Node glow effect */
@@ -48,13 +48,13 @@ html {
     filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
     fill: #ffffff;
     transform: scale(200%,200%);
-    transition: fill 0.5s cubic-bezier(0.4, 0, 0.2, 1), transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s ease-out;
 }
 
 .node-highlight text {
     fill: #000000 !important;
     transform: scale(200%,200%);
-    transition: fill 0.5s cubic-bezier(0.4, 0, 0.2, 1), transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s ease-out;
 }
 
 /* First-order connection highlighting */
@@ -62,7 +62,7 @@ html {
     stroke: #ffffff;
     stroke-opacity: 0.9;
     stroke-width: 2px;
-    transition: stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1), stroke-opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), stroke-width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s ease-out;
 }
 
 .node-highlight-first circle {
@@ -70,11 +70,11 @@ html {
     fill: #ff2600;
     stroke-width: 2.5px;
     transform: scale(125%,125%);
-    transition: fill 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.4s cubic-bezier(0.4, 0, 0.2, 1), stroke-width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s ease-out;
 }
 .node-highlight-first text {
     transform: scale(125%,125%);
-    transition: fill 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s ease-out;
 }
 
 /* Second-order connection highlighting */
@@ -82,33 +82,33 @@ html {
     stroke: #ffffff;
     stroke-opacity: 0.4;
     stroke-width: 1px;
-    transition: stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1), stroke-opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), stroke-width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s ease-out;
 }
 
 .node-highlight-second circle {
     stroke: #aaaaaa;
     stroke-width: 2px;
     fill: #ffffff50;
-    transition: fill 0.3s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1), stroke-width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s ease-out;
 }
 
 /* Dimmed nodes and links */
 .node-dimmed circle {
     opacity: 0.2;
     fill: #666;
-    transition: opacity 0.5s ease;
+    transition: all 0.4s ease-out;
 }
 
 .node-dimmed text {
     color: #333;
     fill: #333;
     opacity: 0.1;
-    transition: opacity 0.5s ease;
+    transition: all 0.4s ease-out;
 }
 
 .link-dimmed {
     stroke-opacity: 0.1;
-    transition: stroke-opacity 0.5s ease;
+    transition: all 0.4s ease-out;
 }
 
 /* Alignment view default styles - Characters (white glow like selected) */

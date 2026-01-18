@@ -250,8 +250,10 @@ function clearHighlightAndResetZoom() {
 
 // Function to highlight and zoom to a node
 function highlightAndZoomToNode(d) {
-    // Cancel any ongoing animation first
+    // Cancel any ongoing animations first
     svg.interrupt();
+    node.interrupt();
+    link.interrupt();
 
     // Hide any existing tooltips immediately without transition
     hideTooltipImmediately();
@@ -688,7 +690,7 @@ node.append("circle")
         // Get the current node element
         const currentNode = d3.select(this.parentNode);
 
-        // If no node is highlighted, add temporary highlight class
+        // If no node is highlighted, add temporary highlight class and raise node
         if (!highlightedNode) {
             // If in alignment mode, clear the default alignment styles first
             if (currentViewMode === 'alignment') {
@@ -701,6 +703,9 @@ node.append("circle")
             // Calculate and apply connection highlighting using shared helpers
             const connections = calculateNodeConnections(d.id);
             applyHighlightClasses(d.id, connections);
+
+            // Raise just the hovered node to top for visibility in dense clusters
+            currentNode.raise();
         }
 
         // Show tooltip if the node's title is truncated
