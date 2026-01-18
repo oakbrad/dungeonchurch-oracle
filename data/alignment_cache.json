@@ -7396,6 +7396,19 @@
       "timestamp": "2026-01-17T22:45:51.858731",
       "source": "Princess Llorona",
       "target": "Galmaarden 17: The Princess"
+    },
+    "ad634f12fcbc2dc2": {
+      "result": {
+        "type": "trapped",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Lady Nyssara is trapped in Duskmire.",
+        "source_id": "4f521655-053c-4e24-93a9-591a57ea751e",
+        "target_id": "ca9ecae3-126f-4adc-9cf9-05b08a8481ff"
+      },
+      "timestamp": "2026-01-18T11:35:55.885812",
+      "source": "Lady Nyssara",
+      "target": "Duskmire"
     }
   }
 }

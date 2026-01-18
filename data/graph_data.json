@@ -58,11 +58,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.3457874178571253,
-          "good_evil": -0.2719552145930842
+          "good_evil": -0.2709507365397476
         },
         "final": {
           "law_chaos": -0.3457874178571253,
-          "good_evil": -0.2719552145930842
+          "good_evil": -0.2709507365397476
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -179,11 +179,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.27716632326252694,
-          "good_evil": -0.1914801275248178
+          "good_evil": -0.19098110377323854
         },
         "final": {
           "law_chaos": -0.27716632326252694,
-          "good_evil": -0.1914801275248178
+          "good_evil": -0.19098110377323854
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -271,11 +271,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.18799531277047551,
-          "good_evil": -0.24295768783973665
+          "good_evil": -0.24149366106896147
         },
         "final": {
           "law_chaos": -0.18799531277047551,
-          "good_evil": -0.24295768783973665
+          "good_evil": -0.24149366106896147
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -386,11 +386,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.19787249822632813,
-          "good_evil": -0.17730872733171799
+          "good_evil": -0.17656862482416713
         },
         "final": {
           "law_chaos": -0.19787249822632813,
-          "good_evil": -0.17730872733171799
+          "good_evil": -0.17656862482416713
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -775,11 +775,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.08776569565435198,
-          "good_evil": -0.01601182600703339
+          "good_evil": -0.014943729863395828
         },
         "final": {
           "law_chaos": -0.08776569565435198,
-          "good_evil": -0.01601182600703339
+          "good_evil": -0.014943729863395828
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -821,11 +821,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.35531673034412814,
-          "good_evil": -0.17279158268806566
+          "good_evil": -0.1727913448901573
         },
         "final": {
           "law_chaos": 0.35531673034412814,
-          "good_evil": -0.17279158268806566
+          "good_evil": -0.1727913448901573
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -942,11 +942,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.2644804145536175,
-          "good_evil": -0.07498859683531156
+          "good_evil": -0.0749560095456161
         },
         "final": {
           "law_chaos": -0.2644804145536175,
-          "good_evil": -0.07498859683531156
+          "good_evil": -0.0749560095456161
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -1043,11 +1043,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.18799531277047551,
-          "good_evil": -0.24295768783973665
+          "good_evil": -0.24149366106896147
         },
         "final": {
           "law_chaos": -0.18799531277047551,
-          "good_evil": -0.24295768783973665
+          "good_evil": -0.24149366106896147
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -1216,11 +1216,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.014337234948836985,
-          "good_evil": 0.0652469366861836
+          "good_evil": 0.06524802877578453
         },
         "final": {
           "law_chaos": 0.014337234948836985,
-          "good_evil": 0.0652469366861836
+          "good_evil": 0.06524802877578453
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -1340,14 +1340,14 @@
         },
         "behavioral": {
           "law_chaos": -0.04999999999999999,
-          "good_evil": -0.6045454545454545
+          "good_evil": -0.5874999999999999
         },
         "final": {
           "law_chaos": -0.04999999999999999,
-          "good_evil": -0.6045454545454545
+          "good_evil": -0.5874999999999999
         },
         "confidence": 0.7,
-        "drift": 0.13922796615977728,
+        "drift": 0.13462677256296968,
         "source": "llm"
       }
     },
@@ -1588,11 +1588,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.04999999999999999,
-          "good_evil": -0.6045454545454545
+          "good_evil": -0.5874999999999999
         },
         "final": {
           "law_chaos": -0.04999999999999999,
-          "good_evil": -0.6045454545454545
+          "good_evil": -0.5874999999999999
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -1896,11 +1896,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.20351020763386643,
-          "good_evil": -0.12811606777260334
+          "good_evil": -0.12811485678404827
         },
         "final": {
           "law_chaos": 0.20351020763386643,
-          "good_evil": -0.12811606777260334
+          "good_evil": -0.12811485678404827
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -1942,11 +1942,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.055602615194985376,
-          "good_evil": -0.07433774514916296
+          "good_evil": -0.0743350784055473
         },
         "final": {
           "law_chaos": 0.055602615194985376,
-          "good_evil": -0.07433774514916296
+          "good_evil": -0.0743350784055473
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -2515,11 +2515,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.18799531277047551,
-          "good_evil": -0.24295768783973665
+          "good_evil": -0.24149366106896145
         },
         "final": {
           "law_chaos": -0.18799531277047551,
-          "good_evil": -0.24295768783973665
+          "good_evil": -0.24149366106896145
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -2806,11 +2806,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.18799531277047551,
-          "good_evil": -0.24295768783973665
+          "good_evil": -0.24149366106896147
         },
         "final": {
           "law_chaos": -0.18799531277047551,
-          "good_evil": -0.24295768783973665
+          "good_evil": -0.24149366106896147
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -2901,11 +2901,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.07984321575665469,
-          "good_evil": -0.31041624000132917
+          "good_evil": -0.3090118494329206
         },
         "final": {
           "law_chaos": -0.07984321575665469,
-          "good_evil": -0.31041624000132917
+          "good_evil": -0.3090118494329206
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -2976,11 +2976,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.07773309897185712,
-          "good_evil": 0.009852115608013173
+          "good_evil": 0.00992531694655193
         },
         "final": {
           "law_chaos": -0.07773309897185712,
-          "good_evil": 0.009852115608013173
+          "good_evil": 0.00992531694655193
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -3045,11 +3045,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.055602615194985376,
-          "good_evil": -0.07433774514916296
+          "good_evil": -0.0743350784055473
         },
         "final": {
           "law_chaos": 0.055602615194985376,
-          "good_evil": -0.07433774514916296
+          "good_evil": -0.0743350784055473
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -3068,11 +3068,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.18799531277047551,
-          "good_evil": -0.24295768783973665
+          "good_evil": -0.24149366106896147
         },
         "final": {
           "law_chaos": -0.18799531277047551,
-          "good_evil": -0.24295768783973665
+          "good_evil": -0.24149366106896147
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -3091,11 +3091,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.4568917438870436,
-          "good_evil": -0.5757229845373714
+          "good_evil": -0.5751083236789748
         },
         "final": {
           "law_chaos": 0.4568917438870436,
-          "good_evil": -0.5757229845373714
+          "good_evil": -0.5751083236789748
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -3114,11 +3114,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.15061590310176678,
-          "good_evil": 0.48051478117623597
+          "good_evil": 0.4807626148059551
         },
         "final": {
           "law_chaos": 0.15061590310176678,
-          "good_evil": 0.48051478117623597
+          "good_evil": 0.4807626148059551
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -3255,11 +3255,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.19889712479467747,
-          "good_evil": 0.24966740576496677
+          "good_evil": 0.2509146341463415
         },
         "final": {
           "law_chaos": -0.19889712479467747,
-          "good_evil": 0.24966740576496677
+          "good_evil": 0.2509146341463415
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -3393,11 +3393,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.3343742805101779,
-          "good_evil": -0.2586601626696497
+          "good_evil": -0.2586271181856871
         },
         "final": {
           "law_chaos": -0.3343742805101779,
-          "good_evil": -0.2586601626696497
+          "good_evil": -0.2586271181856871
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -3465,11 +3465,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.1062403399603556,
-          "good_evil": 0.04185329570042226
+          "good_evil": 0.041871596035056954
         },
         "final": {
           "law_chaos": -0.1062403399603556,
-          "good_evil": 0.04185329570042226
+          "good_evil": 0.041871596035056954
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -3488,11 +3488,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.4051221878210175,
-          "good_evil": -0.1464877036648388
+          "good_evil": -0.1464857972523025
         },
         "final": {
           "law_chaos": -0.4051221878210175,
-          "good_evil": -0.1464877036648388
+          "good_evil": -0.1464857972523025
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -3537,11 +3537,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.38546084615788057,
-          "good_evil": -0.4827547753581185
+          "good_evil": -0.4827522970218213
         },
         "final": {
           "law_chaos": -0.38546084615788057,
-          "good_evil": -0.4827547753581185
+          "good_evil": -0.4827522970218213
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -3583,11 +3583,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.3343742805101779,
-          "good_evil": -0.2586601626696497
+          "good_evil": -0.2586271181856871
         },
         "final": {
           "law_chaos": -0.3343742805101779,
-          "good_evil": -0.2586601626696497
+          "good_evil": -0.2586271181856871
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -3606,11 +3606,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.08776569565435198,
-          "good_evil": -0.01601182600703339
+          "good_evil": -0.014943729863395828
         },
         "final": {
           "law_chaos": -0.08776569565435198,
-          "good_evil": -0.01601182600703339
+          "good_evil": -0.014943729863395828
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -3773,11 +3773,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.1342159899693625,
-          "good_evil": -0.2514328505516379
+          "good_evil": -0.25032805257183993
         },
         "final": {
           "law_chaos": -0.1342159899693625,
-          "good_evil": -0.2514328505516379
+          "good_evil": -0.25032805257183993
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -3819,11 +3819,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.38546084615788057,
-          "good_evil": -0.4827547753581185
+          "good_evil": -0.4827522970218213
         },
         "final": {
           "law_chaos": -0.38546084615788057,
-          "good_evil": -0.4827547753581185
+          "good_evil": -0.4827522970218213
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -3943,11 +3943,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.3253952023076122,
-          "good_evil": 0.051712414028669794
+          "good_evil": 0.05171331946950554
         },
         "final": {
           "law_chaos": 0.3253952023076122,
-          "good_evil": 0.051712414028669794
+          "good_evil": 0.05171331946950554
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -3966,11 +3966,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.21927566944810187,
-          "good_evil": 0.04744135686970573
+          "good_evil": 0.047498291622479046
         },
         "final": {
           "law_chaos": -0.21927566944810187,
-          "good_evil": 0.04744135686970573
+          "good_evil": 0.047498291622479046
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -3989,11 +3989,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.23912021048374324,
-          "good_evil": -0.15192448059325547
+          "good_evil": -0.15191713737459714
         },
         "final": {
           "law_chaos": -0.23912021048374324,
-          "good_evil": -0.15192448059325547
+          "good_evil": -0.15191713737459714
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -4283,11 +4283,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.13559233766319356,
-          "good_evil": -0.11643400081842935
+          "good_evil": -0.11583808129075353
         },
         "final": {
           "law_chaos": 0.13559233766319356,
-          "good_evil": -0.11643400081842935
+          "good_evil": -0.11583808129075353
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -4329,11 +4329,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.22115148874161406,
-          "good_evil": -0.17652897318962907
+          "good_evil": -0.1765064856602828
         },
         "final": {
           "law_chaos": -0.22115148874161406,
-          "good_evil": -0.17652897318962907
+          "good_evil": -0.1765064856602828
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -4424,11 +4424,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.06979864765315917,
-          "good_evil": 0.21156233931772098
+          "good_evil": 0.21166925525124983
         },
         "final": {
           "law_chaos": -0.06979864765315917,
-          "good_evil": 0.21156233931772098
+          "good_evil": 0.21166925525124983
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -4542,11 +4542,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.3582340039958367,
-          "good_evil": -0.19961229907055303
+          "good_evil": -0.19957119495635572
         },
         "final": {
           "law_chaos": -0.3582340039958367,
-          "good_evil": -0.19961229907055303
+          "good_evil": -0.19957119495635572
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -4565,11 +4565,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.21238434068960335,
-          "good_evil": -0.29754435614998864
+          "good_evil": -0.29739388573194486
         },
         "final": {
           "law_chaos": 0.21238434068960335,
-          "good_evil": -0.29754435614998864
+          "good_evil": -0.29739388573194486
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -4611,11 +4611,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.1136702913036944,
-          "good_evil": 0.5551964521978899
+          "good_evil": 0.5555168810409812
         },
         "final": {
           "law_chaos": 0.1136702913036944,
-          "good_evil": 0.5551964521978899
+          "good_evil": 0.5555168810409812
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -4729,11 +4729,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.24192645454051678,
-          "good_evil": -0.0226397879726053
+          "good_evil": -0.02106981189605027
         },
         "final": {
           "law_chaos": -0.24192645454051678,
-          "good_evil": -0.0226397879726053
+          "good_evil": -0.02106981189605027
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -4752,11 +4752,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.25190936049691875,
-          "good_evil": 0.005910476973783607
+          "good_evil": 0.005914607534278932
         },
         "final": {
           "law_chaos": -0.25190936049691875,
-          "good_evil": 0.005910476973783607
+          "good_evil": 0.005914607534278932
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -4775,11 +4775,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.19889712479467747,
-          "good_evil": 0.24966740576496677
+          "good_evil": 0.2509146341463415
         },
         "final": {
           "law_chaos": -0.19889712479467747,
-          "good_evil": 0.24966740576496677
+          "good_evil": 0.2509146341463415
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -4847,11 +4847,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.05688689594384337,
-          "good_evil": -0.5366694819583486
+          "good_evil": -0.5232335037152892
         },
         "final": {
           "law_chaos": -0.05688689594384337,
-          "good_evil": -0.5366694819583486
+          "good_evil": -0.5232335037152892
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -4893,11 +4893,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.07984321575665469,
-          "good_evil": -0.31041624000132917
+          "good_evil": -0.3090118494329206
         },
         "final": {
           "law_chaos": -0.07984321575665469,
-          "good_evil": -0.31041624000132917
+          "good_evil": -0.3090118494329206
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -4965,11 +4965,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.19839566385868265,
-          "good_evil": 0.18921237522933623
+          "good_evil": 0.18931912171709137
         },
         "final": {
           "law_chaos": -0.19839566385868265,
-          "good_evil": 0.18921237522933623
+          "good_evil": 0.18931912171709137
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -5034,11 +5034,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.1762007744890132,
-          "good_evil": -0.3687841584018617
+          "good_evil": -0.36803460816885425
         },
         "final": {
           "law_chaos": -0.1762007744890132,
-          "good_evil": -0.3687841584018617
+          "good_evil": -0.36803460816885425
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -5368,11 +5368,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.2900641815953786,
-          "good_evil": -0.12188366954218323
+          "good_evil": -0.12188282491135395
         },
         "final": {
           "law_chaos": -0.2900641815953786,
-          "good_evil": -0.12188366954218323
+          "good_evil": -0.12188282491135395
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -5639,11 +5639,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.3457874178571253,
-          "good_evil": -0.2719552145930842
+          "good_evil": -0.2709507365397476
         },
         "final": {
           "law_chaos": -0.3457874178571253,
-          "good_evil": -0.2719552145930842
+          "good_evil": -0.2709507365397476
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -5789,11 +5789,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.007944506864093323,
-          "good_evil": 0.18450521622117308
+          "good_evil": 0.18450538514733894
         },
         "final": {
           "law_chaos": -0.007944506864093323,
-          "good_evil": 0.18450521622117308
+          "good_evil": 0.18450538514733894
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -5916,11 +5916,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.22464196965452576,
-          "good_evil": 0.14047541942637543
+          "good_evil": 0.1404775905413806
         },
         "final": {
           "law_chaos": 0.22464196965452576,
-          "good_evil": 0.14047541942637543
+          "good_evil": 0.1404775905413806
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -6014,11 +6014,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.05108785678038792,
-          "good_evil": 0.19204208003139667
+          "good_evil": 0.19204340646163306
         },
         "final": {
           "law_chaos": 0.05108785678038792,
-          "good_evil": 0.19204208003139667
+          "good_evil": 0.19204340646163306
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -6086,11 +6086,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.18132356700110755,
-          "good_evil": 0.2968551325659388
+          "good_evil": 0.2968587543292818
         },
         "final": {
           "law_chaos": 0.18132356700110755,
-          "good_evil": 0.2968551325659388
+          "good_evil": 0.2968587543292818
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -6109,11 +6109,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.11645700120611457,
-          "good_evil": 0.10573331635933564
+          "good_evil": 0.10573345841273984
         },
         "final": {
           "law_chaos": 0.11645700120611457,
-          "good_evil": 0.10573331635933564
+          "good_evil": 0.10573345841273984
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -6230,11 +6230,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.35531673034412814,
-          "good_evil": -0.17279158268806566
+          "good_evil": -0.1727913448901573
         },
         "final": {
           "law_chaos": 0.35531673034412814,
-          "good_evil": -0.17279158268806566
+          "good_evil": -0.1727913448901573
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -6276,11 +6276,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.05108785678038792,
-          "good_evil": 0.19204208003139667
+          "good_evil": 0.19204340646163306
         },
         "final": {
           "law_chaos": 0.05108785678038792,
-          "good_evil": 0.19204208003139667
+          "good_evil": 0.19204340646163306
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -6299,11 +6299,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.11027348914170325,
-          "good_evil": 0.045425829161621537
+          "good_evil": 0.04543124093150823
         },
         "final": {
           "law_chaos": -0.11027348914170325,
-          "good_evil": 0.045425829161621537
+          "good_evil": 0.04543124093150823
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -6322,11 +6322,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.03008741375404857,
-          "good_evil": 0.10419596104358421
+          "good_evil": 0.10432423055581855
         },
         "final": {
           "law_chaos": 0.03008741375404857,
-          "good_evil": 0.10419596104358421
+          "good_evil": 0.10432423055581855
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -6345,11 +6345,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.017770676764768723,
-          "good_evil": 0.20443757987254746
+          "good_evil": 0.20447436928958018
         },
         "final": {
           "law_chaos": -0.017770676764768723,
-          "good_evil": 0.20443757987254746
+          "good_evil": 0.20447436928958018
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -6368,11 +6368,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.07131295190153794,
-          "good_evil": 0.005651253416616538
+          "good_evil": 0.005675857775485986
         },
         "final": {
           "law_chaos": 0.07131295190153794,
-          "good_evil": 0.005651253416616538
+          "good_evil": 0.005675857775485986
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -6391,11 +6391,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.05170368492360471,
-          "good_evil": -0.08344055285714103
+          "good_evil": -0.08343836867793919
         },
         "final": {
           "law_chaos": 0.05170368492360471,
-          "good_evil": -0.08344055285714103
+          "good_evil": -0.08343836867793919
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -6437,11 +6437,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.11027348914170325,
-          "good_evil": 0.045425829161621537
+          "good_evil": 0.04543124093150823
         },
         "final": {
           "law_chaos": -0.11027348914170325,
-          "good_evil": 0.045425829161621537
+          "good_evil": 0.04543124093150823
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -6460,11 +6460,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.11654976426213465,
-          "good_evil": 0.1354540756438427
+          "good_evil": 0.13549269481204357
         },
         "final": {
           "law_chaos": 0.11654976426213465,
-          "good_evil": 0.1354540756438427
+          "good_evil": 0.13549269481204357
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -6532,11 +6532,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.055602615194985376,
-          "good_evil": -0.07433774514916296
+          "good_evil": -0.0743350784055473
         },
         "final": {
           "law_chaos": 0.055602615194985376,
-          "good_evil": -0.07433774514916296
+          "good_evil": -0.0743350784055473
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -6653,11 +6653,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.024592115435404405,
-          "good_evil": -0.042688638592528076
+          "good_evil": -0.040254727540873905
         },
         "final": {
           "law_chaos": -0.024592115435404405,
-          "good_evil": -0.042688638592528076
+          "good_evil": -0.040254727540873905
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -6676,11 +6676,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.48634807767275995,
-          "good_evil": -0.8722594402169414
+          "good_evil": -0.8722591746809096
         },
         "final": {
           "law_chaos": -0.48634807767275995,
-          "good_evil": -0.8722594402169414
+          "good_evil": -0.8722591746809096
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -6751,11 +6751,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.029321519549686932,
-          "good_evil": -0.023069835549259534
+          "good_evil": -0.023065363341070177
         },
         "final": {
           "law_chaos": 0.029321519549686932,
-          "good_evil": -0.023069835549259534
+          "good_evil": -0.023065363341070177
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -6872,11 +6872,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.03901839216746121,
-          "good_evil": 0.12206852232143467
+          "good_evil": 0.12210389695324925
         },
         "final": {
           "law_chaos": -0.03901839216746121,
-          "good_evil": 0.12206852232143467
+          "good_evil": 0.12210389695324925
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -6944,11 +6944,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.07331858900809161,
-          "good_evil": 0.11982501834371348
+          "good_evil": 0.11990846268393106
         },
         "final": {
           "law_chaos": 0.07331858900809161,
-          "good_evil": 0.11982501834371348
+          "good_evil": 0.11990846268393106
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -6990,11 +6990,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.0175917006634935,
-          "good_evil": 0.07827102557647841
+          "good_evil": 0.07827106819249968
         },
         "final": {
           "law_chaos": 0.0175917006634935,
-          "good_evil": 0.07827102557647841
+          "good_evil": 0.07827106819249968
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -7013,11 +7013,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.06624266531407326,
-          "good_evil": 0.21257526817156736
+          "good_evil": 0.212575270583795
         },
         "final": {
           "law_chaos": -0.06624266531407326,
-          "good_evil": 0.21257526817156736
+          "good_evil": 0.212575270583795
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -7134,11 +7134,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.035947278196630496,
-          "good_evil": 0.265010828910718
+          "good_evil": 0.2650476183277507
         },
         "final": {
           "law_chaos": 0.035947278196630496,
-          "good_evil": 0.265010828910718
+          "good_evil": 0.2650476183277507
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -7157,11 +7157,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.12874583753107346,
-          "good_evil": 0.0013635134657923188
+          "good_evil": 0.0013646211021262561
         },
         "final": {
           "law_chaos": -0.12874583753107346,
-          "good_evil": 0.0013635134657923188
+          "good_evil": 0.0013646211021262561
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -7206,11 +7206,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.03008741375404857,
-          "good_evil": 0.10419596104358421
+          "good_evil": 0.10432423055581855
         },
         "final": {
           "law_chaos": 0.03008741375404857,
-          "good_evil": 0.10419596104358421
+          "good_evil": 0.10432423055581855
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -7359,11 +7359,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.20022027375849444,
-          "good_evil": 0.2055623579615615
+          "good_evil": 0.20556254917028075
         },
         "final": {
           "law_chaos": 0.20022027375849444,
-          "good_evil": 0.2055623579615615
+          "good_evil": 0.20556254917028075
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -7480,11 +7480,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.14913440095608937,
-          "good_evil": -0.09876592933905755
+          "good_evil": -0.09803121006872662
         },
         "final": {
           "law_chaos": -0.14913440095608937,
-          "good_evil": -0.09876592933905755
+          "good_evil": -0.09803121006872662
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -7624,11 +7624,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.11645700120611459,
-          "good_evil": 0.10573331635933564
+          "good_evil": 0.10573345841273984
         },
         "final": {
           "law_chaos": 0.11645700120611459,
-          "good_evil": 0.10573331635933564
+          "good_evil": 0.10573345841273984
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -7647,11 +7647,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.23831154498012064,
-          "good_evil": 0.1800915509951471
+          "good_evil": 0.18009161902951207
         },
         "final": {
           "law_chaos": 0.23831154498012064,
-          "good_evil": 0.1800915509951471
+          "good_evil": 0.18009161902951207
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -7670,11 +7670,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.11027348914170325,
-          "good_evil": 0.045425829161621537
+          "good_evil": 0.04543124093150823
         },
         "final": {
           "law_chaos": -0.11027348914170325,
-          "good_evil": 0.045425829161621537
+          "good_evil": 0.04543124093150823
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -7693,11 +7693,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.23831154498012067,
-          "good_evil": 0.1800915509951471
+          "good_evil": 0.18009161902951207
         },
         "final": {
           "law_chaos": 0.23831154498012067,
-          "good_evil": 0.1800915509951471
+          "good_evil": 0.18009161902951207
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -7716,11 +7716,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.002782496667495581,
-          "good_evil": 0.09502859553759027
+          "good_evil": 0.09503272541552676
         },
         "final": {
           "law_chaos": -0.002782496667495581,
-          "good_evil": 0.09502859553759027
+          "good_evil": 0.09503272541552676
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -7739,11 +7739,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.04677459868615192,
-          "good_evil": -0.0007498559081399971
+          "good_evil": -0.0007037349973687338
         },
         "final": {
           "law_chaos": -0.04677459868615192,
-          "good_evil": -0.0007498559081399971
+          "good_evil": -0.0007037349973687338
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -7762,11 +7762,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.30267029909942217,
-          "good_evil": -0.03659834762364684
+          "good_evil": -0.036542867431354355
         },
         "final": {
           "law_chaos": -0.30267029909942217,
-          "good_evil": -0.03659834762364684
+          "good_evil": -0.036542867431354355
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -7811,11 +7811,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.18057667697135496,
-          "good_evil": 0.2902663582649648
+          "good_evil": 0.2902665312776043
         },
         "final": {
           "law_chaos": 0.18057667697135496,
-          "good_evil": 0.2902663582649648
+          "good_evil": 0.2902665312776043
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -7834,11 +7834,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.26032635703411644,
-          "good_evil": 0.302612624009419
+          "good_evil": 0.30261302193849
         },
         "final": {
           "law_chaos": 0.26032635703411644,
-          "good_evil": 0.302612624009419
+          "good_evil": 0.30261302193849
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -7857,11 +7857,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.20168331793474256,
-          "good_evil": -0.3487522951079381
+          "good_evil": -0.34874374862063034
         },
         "final": {
           "law_chaos": -0.20168331793474256,
-          "good_evil": -0.3487522951079381
+          "good_evil": -0.34874374862063034
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -7880,11 +7880,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.22464196965452576,
-          "good_evil": 0.14047541942637543
+          "good_evil": 0.1404775905413806
         },
         "final": {
           "law_chaos": 0.22464196965452576,
-          "good_evil": 0.14047541942637543
+          "good_evil": 0.1404775905413806
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -7903,11 +7903,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.08868450500875816,
-          "good_evil": -0.1862025313392953
+          "good_evil": -0.18608220995175878
         },
         "final": {
           "law_chaos": 0.08868450500875816,
-          "good_evil": -0.1862025313392953
+          "good_evil": -0.18608220995175878
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -7926,11 +7926,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.050601626052994016,
-          "good_evil": 0.13345464071100108
+          "good_evil": 0.13349467064390927
         },
         "final": {
           "law_chaos": 0.050601626052994016,
-          "good_evil": 0.13345464071100108
+          "good_evil": 0.13349467064390927
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -8021,11 +8021,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.2225883278940051,
-          "good_evil": 0.07719875361922786
+          "good_evil": 0.07719996525194986
         },
         "final": {
           "law_chaos": 0.2225883278940051,
-          "good_evil": 0.07719875361922786
+          "good_evil": 0.07719996525194986
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -8070,11 +8070,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.49309011284531656,
-          "good_evil": 0.33257451692112866
+          "good_evil": 0.3325750179476683
         },
         "final": {
           "law_chaos": 0.49309011284531656,
-          "good_evil": 0.33257451692112866
+          "good_evil": 0.3325750179476683
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -8093,11 +8093,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.21350865357011137,
-          "good_evil": -0.04185639433540787
+          "good_evil": -0.041855485932949826
         },
         "final": {
           "law_chaos": 0.21350865357011137,
-          "good_evil": -0.04185639433540787
+          "good_evil": -0.041855485932949826
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -8116,11 +8116,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.12874583753107346,
-          "good_evil": 0.0013635134657923188
+          "good_evil": 0.0013646211021262561
         },
         "final": {
           "law_chaos": -0.12874583753107346,
-          "good_evil": 0.0013635134657923188
+          "good_evil": 0.0013646211021262561
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -8237,11 +8237,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.3253952023076122,
-          "good_evil": 0.051712414028669794
+          "good_evil": 0.05171331946950554
         },
         "final": {
           "law_chaos": 0.3253952023076122,
-          "good_evil": 0.051712414028669794
+          "good_evil": 0.05171331946950554
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -8312,11 +8312,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.03008741375404857,
-          "good_evil": 0.10419596104358421
+          "good_evil": 0.10432423055581855
         },
         "final": {
           "law_chaos": 0.03008741375404857,
-          "good_evil": 0.10419596104358421
+          "good_evil": 0.10432423055581855
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -8361,11 +8361,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.03008741375404857,
-          "good_evil": 0.10419596104358421
+          "good_evil": 0.10432423055581855
         },
         "final": {
           "law_chaos": 0.03008741375404857,
-          "good_evil": 0.10419596104358421
+          "good_evil": 0.10432423055581855
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -8511,11 +8511,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.39635686706005185,
-          "good_evil": 0.22297167695393297
+          "good_evil": 0.22297189406543352
         },
         "final": {
           "law_chaos": 0.39635686706005185,
-          "good_evil": 0.22297167695393297
+          "good_evil": 0.22297189406543352
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -8655,11 +8655,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.30267029909942217,
-          "good_evil": -0.03659834762364684
+          "good_evil": -0.036542867431354355
         },
         "final": {
           "law_chaos": -0.30267029909942217,
-          "good_evil": -0.03659834762364684
+          "good_evil": -0.036542867431354355
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -8756,11 +8756,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.3371437549768733,
-          "good_evil": -0.5804845328260883
+          "good_evil": -0.5804840017540246
         },
         "final": {
           "law_chaos": -0.3371437549768733,
-          "good_evil": -0.5804845328260883
+          "good_evil": -0.5804840017540246
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -8802,11 +8802,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.5492873771033073,
-          "good_evil": -0.7063402095803447
+          "good_evil": -0.7063399917422465
         },
         "final": {
           "law_chaos": -0.5492873771033073,
-          "good_evil": -0.7063402095803447
+          "good_evil": -0.7063399917422465
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -8851,11 +8851,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.15919402861556725,
-          "good_evil": 0.1078139214640594
+          "good_evil": 0.10781398755311696
         },
         "final": {
           "law_chaos": -0.15919402861556725,
-          "good_evil": 0.1078139214640594
+          "good_evil": 0.10781398755311696
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -8923,11 +8923,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.03008741375404857,
-          "good_evil": 0.10419596104358421
+          "good_evil": 0.10432423055581855
         },
         "final": {
           "law_chaos": 0.03008741375404857,
-          "good_evil": 0.10419596104358421
+          "good_evil": 0.10432423055581855
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -8946,11 +8946,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.4811929847257136,
-          "good_evil": -0.45613582010302045
+          "good_evil": -0.4558741224089664
         },
         "final": {
           "law_chaos": -0.4811929847257136,
-          "good_evil": -0.45613582010302045
+          "good_evil": -0.4558741224089664
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -8969,11 +8969,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.2225883278940051,
-          "good_evil": 0.07719875361922786
+          "good_evil": 0.07719996525194986
         },
         "final": {
           "law_chaos": 0.2225883278940051,
-          "good_evil": 0.07719875361922786
+          "good_evil": 0.07719996525194986
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -9015,11 +9015,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.054073559335855344,
-          "good_evil": 0.0456752594462559
+          "good_evil": 0.04567897984483523
         },
         "final": {
           "law_chaos": 0.054073559335855344,
-          "good_evil": 0.0456752594462559
+          "good_evil": 0.04567897984483523
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -9064,11 +9064,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.055602615194985376,
-          "good_evil": -0.07433774514916296
+          "good_evil": -0.0743350784055473
         },
         "final": {
           "law_chaos": 0.055602615194985376,
-          "good_evil": -0.07433774514916296
+          "good_evil": -0.0743350784055473
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -9217,11 +9217,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.04299457936040363,
-          "good_evil": 0.0861123841953273
+          "good_evil": 0.08611244719611665
         },
         "final": {
           "law_chaos": -0.04299457936040363,
-          "good_evil": 0.0861123841953273
+          "good_evil": 0.08611244719611665
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -9240,11 +9240,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.6756357166868197,
-          "good_evil": 0.05146679499841699
+          "good_evil": 0.051467202082480464
         },
         "final": {
           "law_chaos": 0.6756357166868197,
-          "good_evil": 0.05146679499841699
+          "good_evil": 0.051467202082480464
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -9312,11 +9312,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.13632422669658228,
-          "good_evil": 0.003334430395248094
+          "good_evil": 0.0033355660856545437
         },
         "final": {
           "law_chaos": 0.13632422669658228,
-          "good_evil": 0.003334430395248094
+          "good_evil": 0.0033355660856545437
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -9335,11 +9335,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.1894005024892278,
-          "good_evil": 0.012052362741373075
+          "good_evil": 0.012055450548340707
         },
         "final": {
           "law_chaos": 0.1894005024892278,
-          "good_evil": 0.012052362741373075
+          "good_evil": 0.012055450548340707
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -9407,11 +9407,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.050589480747028966,
-          "good_evil": 0.14352016741729445
+          "good_evil": 0.14352052726758482
         },
         "final": {
           "law_chaos": 0.050589480747028966,
-          "good_evil": 0.14352016741729445
+          "good_evil": 0.14352052726758482
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -9453,11 +9453,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.42926259421673024,
-          "good_evil": 0.38975981801400744
+          "good_evil": 0.38976039697781384
         },
         "final": {
           "law_chaos": 0.42926259421673024,
-          "good_evil": 0.38975981801400744
+          "good_evil": 0.38976039697781384
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -9499,11 +9499,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.08766178350055377,
-          "good_evil": 0.2686275662829694
+          "good_evil": 0.2686293771646409
         },
         "final": {
           "law_chaos": 0.08766178350055377,
-          "good_evil": 0.2686275662829694
+          "good_evil": 0.2686293771646409
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -9548,11 +9548,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.002782496667495581,
-          "good_evil": 0.09502859553759027
+          "good_evil": 0.09503272541552676
         },
         "final": {
           "law_chaos": -0.002782496667495581,
-          "good_evil": 0.09502859553759027
+          "good_evil": 0.09503272541552676
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -9620,11 +9620,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.8333500636340382,
-          "good_evil": -0.8146650406674125
+          "good_evil": -0.8146567795464218
         },
         "final": {
           "law_chaos": -0.8333500636340382,
-          "good_evil": -0.8146650406674125
+          "good_evil": -0.8146567795464218
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -9643,11 +9643,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.05177429175793354,
-          "good_evil": -0.013468640301148816
+          "good_evil": -0.013468230767548472
         },
         "final": {
           "law_chaos": 0.05177429175793354,
-          "good_evil": -0.013468640301148816
+          "good_evil": -0.013468230767548472
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -9692,11 +9692,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.029321519549686932,
-          "good_evil": -0.023069835549259534
+          "good_evil": -0.023065363341070177
         },
         "final": {
           "law_chaos": 0.029321519549686932,
-          "good_evil": -0.023069835549259534
+          "good_evil": -0.023065363341070177
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -9767,11 +9767,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.08396910786753155,
-          "good_evil": 0.06442586882612096
+          "good_evil": 0.06442857471106431
         },
         "final": {
           "law_chaos": -0.08396910786753155,
-          "good_evil": 0.06442586882612096
+          "good_evil": 0.06442857471106431
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -9790,11 +9790,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.1055111054770814,
-          "good_evil": 0.1099678341428577
+          "good_evil": 0.10996848939661825
         },
         "final": {
           "law_chaos": 0.1055111054770814,
-          "good_evil": 0.1099678341428577
+          "good_evil": 0.10996848939661825
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -9813,11 +9813,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.03561508310293349,
-          "good_evil": 0.059100445099630694
+          "good_evil": 0.05910096059794308
         },
         "final": {
           "law_chaos": -0.03561508310293349,
-          "good_evil": 0.059100445099630694
+          "good_evil": 0.05910096059794308
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -9836,11 +9836,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.054073559335855344,
-          "good_evil": 0.0456752594462559
+          "good_evil": 0.04567897984483523
         },
         "final": {
           "law_chaos": 0.054073559335855344,
-          "good_evil": 0.0456752594462559
+          "good_evil": 0.04567897984483523
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -9911,11 +9911,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.26978937076494813,
-          "good_evil": 0.48156766263704054
+          "good_evil": 0.48156767717568416
         },
         "final": {
           "law_chaos": 0.26978937076494813,
-          "good_evil": 0.48156766263704054
+          "good_evil": 0.48156767717568416
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -9934,11 +9934,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.11645700120611459,
-          "good_evil": 0.10573331635933564
+          "good_evil": 0.10573345841273984
         },
         "final": {
           "law_chaos": 0.11645700120611459,
-          "good_evil": 0.10573331635933564
+          "good_evil": 0.10573345841273984
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -9980,11 +9980,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.07816938433524094,
-          "good_evil": -0.1257574297243845
+          "good_evil": -0.12570048947954865
         },
         "final": {
           "law_chaos": -0.07816938433524094,
-          "good_evil": -0.1257574297243845
+          "good_evil": -0.12570048947954865
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10003,11 +10003,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.024592115435404405,
-          "good_evil": -0.042688638592528076
+          "good_evil": -0.040254727540873905
         },
         "final": {
           "law_chaos": -0.024592115435404405,
-          "good_evil": -0.042688638592528076
+          "good_evil": -0.040254727540873905
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10026,11 +10026,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.5226286152033959,
-          "good_evil": -0.40756079325140165
+          "good_evil": -0.40745387731787286
         },
         "final": {
           "law_chaos": -0.5226286152033959,
-          "good_evil": -0.40756079325140165
+          "good_evil": -0.40745387731787286
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10049,11 +10049,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.04677459868615192,
-          "good_evil": -0.0007498559081399971
+          "good_evil": -0.0007037349973687338
         },
         "final": {
           "law_chaos": -0.04677459868615192,
-          "good_evil": -0.0007498559081399971
+          "good_evil": -0.0007037349973687338
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10202,11 +10202,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.11796081599596255,
-          "good_evil": 0.019007913932647683
+          "good_evil": 0.019148844629743478
         },
         "final": {
           "law_chaos": -0.11796081599596255,
-          "good_evil": 0.019007913932647683
+          "good_evil": 0.019148844629743478
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10277,11 +10277,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.12874583753107346,
-          "good_evil": 0.0013635134657923188
+          "good_evil": 0.0013646211021262561
         },
         "final": {
           "law_chaos": -0.12874583753107346,
-          "good_evil": 0.0013635134657923188
+          "good_evil": 0.0013646211021262561
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10378,11 +10378,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.18132356700110755,
-          "good_evil": 0.2968551325659388
+          "good_evil": 0.2968587543292818
         },
         "final": {
           "law_chaos": 0.18132356700110755,
-          "good_evil": 0.2968551325659388
+          "good_evil": 0.2968587543292818
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10424,11 +10424,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.12874583753107346,
-          "good_evil": 0.0013635134657923188
+          "good_evil": 0.0013646211021262561
         },
         "final": {
           "law_chaos": -0.12874583753107346,
-          "good_evil": 0.0013635134657923188
+          "good_evil": 0.0013646211021262561
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10447,11 +10447,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.51731892116445,
-          "good_evil": -0.46739999920299957
+          "good_evil": -0.4673999237642221
         },
         "final": {
           "law_chaos": -0.51731892116445,
-          "good_evil": -0.46739999920299957
+          "good_evil": -0.4673999237642221
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10493,11 +10493,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.10674835067765504,
-          "good_evil": -0.07751642725384544
+          "good_evil": -0.07751534995786064
         },
         "final": {
           "law_chaos": 0.10674835067765504,
-          "good_evil": -0.07751642725384544
+          "good_evil": -0.07751534995786064
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10516,11 +10516,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.0015633604962066701,
-          "good_evil": -0.02785411887815663
+          "good_evil": -0.02785394587979163
         },
         "final": {
           "law_chaos": -0.0015633604962066701,
-          "good_evil": -0.02785411887815663
+          "good_evil": -0.02785394587979163
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10539,11 +10539,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.06402393118859347,
-          "good_evil": -0.602188957487352
+          "good_evil": -0.6020503765560883
         },
         "final": {
           "law_chaos": -0.06402393118859347,
-          "good_evil": -0.602188957487352
+          "good_evil": -0.6020503765560883
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10562,11 +10562,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.10674835067765502,
-          "good_evil": -0.07751642725384544
+          "good_evil": -0.07751534995786064
         },
         "final": {
           "law_chaos": 0.10674835067765502,
-          "good_evil": -0.07751642725384544
+          "good_evil": -0.07751534995786064
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10611,11 +10611,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.0953805364849972,
-          "good_evil": 0.1295352601774734
+          "good_evil": 0.1295355774406396
         },
         "final": {
           "law_chaos": -0.0953805364849972,
-          "good_evil": 0.1295352601774734
+          "good_evil": 0.1295355774406396
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10680,11 +10680,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.1865130694628129,
-          "good_evil": -0.07224391347550552
+          "good_evil": -0.07224390554793826
         },
         "final": {
           "law_chaos": -0.1865130694628129,
-          "good_evil": -0.07224391347550552
+          "good_evil": -0.07224390554793826
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10781,11 +10781,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.2908533812052109,
-          "good_evil": 0.17221218257436138
+          "good_evil": 0.17221832594347233
         },
         "final": {
           "law_chaos": 0.2908533812052109,
-          "good_evil": 0.17221218257436138
+          "good_evil": 0.17221832594347233
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10827,11 +10827,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.6075294426313351,
-          "good_evil": 0.35906625120640934
+          "good_evil": 0.35906665508398333
         },
         "final": {
           "law_chaos": 0.6075294426313351,
-          "good_evil": 0.35906625120640934
+          "good_evil": 0.35906665508398333
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10850,11 +10850,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.07805029311205518,
-          "good_evil": 0.12674400078007608
+          "good_evil": 0.12674450833210155
         },
         "final": {
           "law_chaos": 0.07805029311205518,
-          "good_evil": 0.12674400078007608
+          "good_evil": 0.12674450833210155
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10873,11 +10873,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.12239542274247336,
-          "good_evil": 0.390816783065372
+          "good_evil": 0.39081755915751687
         },
         "final": {
           "law_chaos": 0.12239542274247336,
-          "good_evil": 0.390816783065372
+          "good_evil": 0.39081755915751687
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10896,11 +10896,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.04342071737519476,
-          "good_evil": 0.2583358204770161
+          "good_evil": 0.2583364655817433
         },
         "final": {
           "law_chaos": 0.04342071737519476,
-          "good_evil": 0.2583358204770161
+          "good_evil": 0.2583364655817433
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10919,11 +10919,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.016408217463577623,
-          "good_evil": 0.02606008372740637
+          "good_evil": 0.026060115227801047
         },
         "final": {
           "law_chaos": 0.016408217463577623,
-          "good_evil": 0.02606008372740637
+          "good_evil": 0.026060115227801047
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11014,11 +11014,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.12874583753107346,
-          "good_evil": 0.0013635134657923188
+          "good_evil": 0.0013646211021262561
         },
         "final": {
           "law_chaos": -0.12874583753107346,
-          "good_evil": 0.0013635134657923188
+          "good_evil": 0.0013646211021262561
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11086,11 +11086,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.30267029909942217,
-          "good_evil": -0.03659834762364684
+          "good_evil": -0.036542867431354355
         },
         "final": {
           "law_chaos": -0.30267029909942217,
-          "good_evil": -0.03659834762364684
+          "good_evil": -0.036542867431354355
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11109,11 +11109,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.002782496667495581,
-          "good_evil": 0.09502859553759027
+          "good_evil": 0.09503272541552676
         },
         "final": {
           "law_chaos": -0.002782496667495581,
-          "good_evil": 0.09502859553759027
+          "good_evil": 0.09503272541552676
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11155,11 +11155,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.242591601133301,
-          "good_evil": -0.07609247461803492
+          "good_evil": -0.07609213950066573
         },
         "final": {
           "law_chaos": -0.242591601133301,
-          "good_evil": -0.07609247461803492
+          "good_evil": -0.07609213950066573
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11178,11 +11178,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.06175278400331899,
-          "good_evil": 0.22601261739743228
+          "good_evil": 0.22601442827910379
         },
         "final": {
           "law_chaos": 0.06175278400331899,
-          "good_evil": 0.22601261739743228
+          "good_evil": 0.22601442827910379
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11253,11 +11253,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.04677459868615192,
-          "good_evil": -0.0007498559081399971
+          "good_evil": -0.0007037349973687338
         },
         "final": {
           "law_chaos": -0.04677459868615192,
-          "good_evil": -0.0007498559081399971
+          "good_evil": -0.0007037349973687338
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11371,11 +11371,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.2777612458147751,
-          "good_evil": -0.30034154640478905
+          "good_evil": -0.30033803486109484
         },
         "final": {
           "law_chaos": -0.2777612458147751,
-          "good_evil": -0.30034154640478905
+          "good_evil": -0.30033803486109484
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11394,11 +11394,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.3820245052032965,
-          "good_evil": 0.18674507182384636
+          "good_evil": 0.1867453950126418
         },
         "final": {
           "law_chaos": 0.3820245052032965,
-          "good_evil": 0.18674507182384636
+          "good_evil": 0.1867453950126418
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11417,11 +11417,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.054073559335855344,
-          "good_evil": 0.0456752594462559
+          "good_evil": 0.04567897984483523
         },
         "final": {
           "law_chaos": 0.054073559335855344,
-          "good_evil": 0.0456752594462559
+          "good_evil": 0.04567897984483523
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11466,11 +11466,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.04677459868615192,
-          "good_evil": -0.0007498559081399971
+          "good_evil": -0.0007037349973687338
         },
         "final": {
           "law_chaos": -0.04677459868615192,
-          "good_evil": -0.0007498559081399971
+          "good_evil": -0.0007037349973687338
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11512,11 +11512,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.10359608874429556,
-          "good_evil": 0.2696013457661126
+          "good_evil": 0.2696927072283596
         },
         "final": {
           "law_chaos": 0.10359608874429556,
-          "good_evil": 0.2696013457661126
+          "good_evil": 0.2696927072283596
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11535,11 +11535,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.11645700120611459,
-          "good_evil": 0.10573331635933564
+          "good_evil": 0.10573345841273984
         },
         "final": {
           "law_chaos": 0.11645700120611459,
-          "good_evil": 0.10573331635933564
+          "good_evil": 0.10573345841273984
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11610,11 +11610,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.13381573880712122,
-          "good_evil": 0.013078590977029859
+          "good_evil": 0.013079862712838102
         },
         "final": {
           "law_chaos": -0.13381573880712122,
-          "good_evil": 0.013078590977029859
+          "good_evil": 0.013079862712838102
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11633,11 +11633,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.10359608874429556,
-          "good_evil": 0.2696013457661126
+          "good_evil": 0.2696927072283596
         },
         "final": {
           "law_chaos": 0.10359608874429556,
-          "good_evil": 0.2696013457661126
+          "good_evil": 0.2696927072283596
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11656,11 +11656,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.06850296790676828,
-          "good_evil": 0.050740491987647476
+          "good_evil": 0.05152642132737341
         },
         "final": {
           "law_chaos": 0.06850296790676828,
-          "good_evil": 0.050740491987647476
+          "good_evil": 0.05152642132737341
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11679,11 +11679,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.2908533812052109,
-          "good_evil": 0.17221218257436138
+          "good_evil": 0.17221832594347233
         },
         "final": {
           "law_chaos": 0.2908533812052109,
-          "good_evil": 0.17221218257436138
+          "good_evil": 0.17221832594347233
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11728,11 +11728,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.1705494854303202,
-          "good_evil": 0.12310436789285553
+          "good_evil": 0.12310552447706023
         },
         "final": {
           "law_chaos": 0.1705494854303202,
-          "good_evil": 0.12310436789285553
+          "good_evil": 0.12310552447706023
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11826,11 +11826,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.021542235696799052,
-          "good_evil": 0.05408878083007739
+          "good_evil": 0.05430696869317157
         },
         "final": {
           "law_chaos": 0.021542235696799052,
-          "good_evil": 0.05408878083007739
+          "good_evil": 0.05430696869317157
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11849,11 +11849,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.6522646922511917,
-          "good_evil": 0.08709440142692254
+          "good_evil": 0.08709477648707563
         },
         "final": {
           "law_chaos": 0.6522646922511917,
-          "good_evil": 0.08709440142692254
+          "good_evil": 0.08709477648707563
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11872,11 +11872,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.30267029909942217,
-          "good_evil": -0.03659834762364684
+          "good_evil": -0.036542867431354355
         },
         "final": {
           "law_chaos": -0.30267029909942217,
-          "good_evil": -0.03659834762364684
+          "good_evil": -0.036542867431354355
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11918,11 +11918,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.03008741375404857,
-          "good_evil": 0.10419596104358421
+          "good_evil": 0.10432423055581855
         },
         "final": {
           "law_chaos": 0.03008741375404857,
-          "good_evil": 0.10419596104358421
+          "good_evil": 0.10432423055581855
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11941,11 +11941,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.15791613343793573,
-          "good_evil": -0.12942289042590965
+          "good_evil": -0.12942251556519066
         },
         "final": {
           "law_chaos": 0.15791613343793573,
-          "good_evil": -0.12942289042590965
+          "good_evil": -0.12942251556519066
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11990,11 +11990,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.7678974319500095,
-          "good_evil": -0.727280218479577
+          "good_evil": -0.7272788067135196
         },
         "final": {
           "law_chaos": -0.7678974319500095,
-          "good_evil": -0.727280218479577
+          "good_evil": -0.7272788067135196
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12013,11 +12013,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.11027348914170325,
-          "good_evil": 0.045425829161621537
+          "good_evil": 0.04543124093150823
         },
         "final": {
           "law_chaos": -0.11027348914170325,
-          "good_evil": 0.045425829161621537
+          "good_evil": 0.04543124093150823
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12036,11 +12036,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.21377702053897832,
-          "good_evil": 0.10942451211745997
+          "good_evil": 0.10942554138644918
         },
         "final": {
           "law_chaos": 0.21377702053897832,
-          "good_evil": 0.10942451211745997
+          "good_evil": 0.10942554138644918
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12059,11 +12059,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.4505837314384419,
-          "good_evil": 0.38469023088099435
+          "good_evil": 0.3847616029793727
         },
         "final": {
           "law_chaos": 0.4505837314384419,
-          "good_evil": 0.38469023088099435
+          "good_evil": 0.3847616029793727
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12082,11 +12082,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.4142321300627095,
-          "good_evil": -0.22473646597949604
+          "good_evil": -0.22472797780520207
         },
         "final": {
           "law_chaos": -0.4142321300627095,
-          "good_evil": -0.22473646597949604
+          "good_evil": -0.22472797780520207
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12105,11 +12105,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.35620580340637437,
-          "good_evil": -0.15564685737214504
+          "good_evil": -0.15564011240326636
         },
         "final": {
           "law_chaos": -0.35620580340637437,
-          "good_evil": -0.15564685737214504
+          "good_evil": -0.15564011240326636
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12177,11 +12177,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.23787339876818023,
-          "good_evil": -0.16905014681916733
+          "good_evil": -0.1689601774671478
         },
         "final": {
           "law_chaos": -0.23787339876818023,
-          "good_evil": -0.16905014681916733
+          "good_evil": -0.1689601774671478
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12200,11 +12200,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.024886408453967196,
-          "good_evil": 0.10504039652746595
+          "good_evil": 0.10504046755416804
         },
         "final": {
           "law_chaos": -0.024886408453967196,
-          "good_evil": 0.10504039652746595
+          "good_evil": 0.10504046755416804
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12249,11 +12249,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.1422691991348361,
-          "good_evil": 0.2808285548028946
+          "good_evil": 0.28082968399454833
         },
         "final": {
           "law_chaos": 0.1422691991348361,
-          "good_evil": 0.2808285548028946
+          "good_evil": 0.28082968399454833
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12367,11 +12367,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.11654976426213466,
-          "good_evil": 0.1354540756438427
+          "good_evil": 0.13549269481204357
         },
         "final": {
           "law_chaos": 0.11654976426213466,
-          "good_evil": 0.1354540756438427
+          "good_evil": 0.13549269481204357
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12390,11 +12390,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.03650943421697242,
-          "good_evil": 0.1816033337329389
+          "good_evil": 0.181766707838496
         },
         "final": {
           "law_chaos": 0.03650943421697242,
-          "good_evil": 0.1816033337329389
+          "good_evil": 0.181766707838496
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12413,11 +12413,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.49284144116977613,
-          "good_evil": -0.5247761066856369
+          "good_evil": -0.5247681673927999
         },
         "final": {
           "law_chaos": 0.49284144116977613,
-          "good_evil": -0.5247761066856369
+          "good_evil": -0.5247681673927999
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12436,11 +12436,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.5885409838155939,
-          "good_evil": 0.06855113893573446
+          "good_evil": 0.06855723669913459
         },
         "final": {
           "law_chaos": 0.5885409838155939,
-          "good_evil": 0.06855113893573446
+          "good_evil": 0.06855723669913459
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12459,11 +12459,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.08606313022246354,
-          "good_evil": 0.03162699834461725
+          "good_evil": 0.031815174833720546
         },
         "final": {
           "law_chaos": -0.08606313022246354,
-          "good_evil": 0.03162699834461725
+          "good_evil": 0.031815174833720546
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12508,11 +12508,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.10359608874429556,
-          "good_evil": 0.2696013457661126
+          "good_evil": 0.2696927072283596
         },
         "final": {
           "law_chaos": 0.10359608874429556,
-          "good_evil": 0.2696013457661126
+          "good_evil": 0.2696927072283596
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12531,11 +12531,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.030087413754048574,
-          "good_evil": 0.10419596104358422
+          "good_evil": 0.10432423055581856
         },
         "final": {
           "law_chaos": 0.030087413754048574,
-          "good_evil": 0.10419596104358422
+          "good_evil": 0.10432423055581856
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12554,11 +12554,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.2908533812052109,
-          "good_evil": 0.17221218257436138
+          "good_evil": 0.17221832594347233
         },
         "final": {
           "law_chaos": 0.2908533812052109,
-          "good_evil": 0.17221218257436138
+          "good_evil": 0.17221832594347233
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12577,11 +12577,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.11645700120611459,
-          "good_evil": 0.10573331635933564
+          "good_evil": 0.10573345841273984
         },
         "final": {
           "law_chaos": 0.11645700120611459,
-          "good_evil": 0.10573331635933564
+          "good_evil": 0.10573345841273984
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12600,11 +12600,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.1894005024892278,
-          "good_evil": 0.012052362741373075
+          "good_evil": 0.012055450548340707
         },
         "final": {
           "law_chaos": 0.1894005024892278,
-          "good_evil": 0.012052362741373075
+          "good_evil": 0.012055450548340707
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12623,11 +12623,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.10359608874429556,
-          "good_evil": 0.2696013457661126
+          "good_evil": 0.2696927072283596
         },
         "final": {
           "law_chaos": 0.10359608874429556,
-          "good_evil": 0.2696013457661126
+          "good_evil": 0.2696927072283596
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12646,11 +12646,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.2225883278940051,
-          "good_evil": 0.07719875361922786
+          "good_evil": 0.07719996525194986
         },
         "final": {
           "law_chaos": 0.2225883278940051,
-          "good_evil": 0.07719875361922786
+          "good_evil": 0.07719996525194986
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12669,11 +12669,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.05170368492360471,
-          "good_evil": -0.08344055285714103
+          "good_evil": -0.08343836867793919
         },
         "final": {
           "law_chaos": 0.05170368492360471,
-          "good_evil": -0.08344055285714103
+          "good_evil": -0.08343836867793919
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12692,11 +12692,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.20555700853333198,
-          "good_evil": -0.041185665693265254
+          "good_evil": -0.04116020586430417
         },
         "final": {
           "law_chaos": -0.20555700853333198,
-          "good_evil": -0.041185665693265254
+          "good_evil": -0.04116020586430417
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12715,11 +12715,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.1286831258992679,
-          "good_evil": -0.07887642782539156
+          "good_evil": -0.07887624151946
         },
         "final": {
           "law_chaos": -0.1286831258992679,
-          "good_evil": -0.07887642782539156
+          "good_evil": -0.07887624151946
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12764,11 +12764,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.4771178083328967,
-          "good_evil": -0.37182492514967946
+          "good_evil": -0.3718063696502714
         },
         "final": {
           "law_chaos": -0.4771178083328967,
-          "good_evil": -0.37182492514967946
+          "good_evil": -0.3718063696502714
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12787,11 +12787,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.1706524278160651,
-          "good_evil": 0.10350192270482411
+          "good_evil": 0.10350531104673033
         },
         "final": {
           "law_chaos": -0.1706524278160651,
-          "good_evil": 0.10350192270482411
+          "good_evil": 0.10350531104673033
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12810,11 +12810,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.19458654859705707,
-          "good_evil": 0.10868296899902659
+          "good_evil": 0.10871509909445491
         },
         "final": {
           "law_chaos": -0.19458654859705707,
-          "good_evil": 0.10868296899902659
+          "good_evil": 0.10871509909445491
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12833,11 +12833,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.04028343685918241,
-          "good_evil": 0.24176788599781046
+          "good_evil": 0.24181356672893392
         },
         "final": {
           "law_chaos": 0.04028343685918241,
-          "good_evil": 0.24176788599781046
+          "good_evil": 0.24181356672893392
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12856,11 +12856,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": 0.10359608874429556,
-          "good_evil": 0.2696013457661126
+          "good_evil": 0.2696927072283596
         },
         "final": {
           "law_chaos": 0.10359608874429556,
-          "good_evil": 0.2696013457661126
+          "good_evil": 0.2696927072283596
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -13058,11 +13058,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.19458654859705707,
-          "good_evil": 0.1086829689990266
+          "good_evil": 0.10871509909445491
         },
         "final": {
           "law_chaos": -0.19458654859705707,
-          "good_evil": 0.1086829689990266
+          "good_evil": 0.10871509909445491
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -13133,11 +13133,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.19458654859705707,
-          "good_evil": 0.10868296899902659
+          "good_evil": 0.10871509909445491
         },
         "final": {
           "law_chaos": -0.19458654859705707,
-          "good_evil": 0.10868296899902659
+          "good_evil": 0.10871509909445491
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -13182,11 +13182,11 @@
         "stated": null,
         "behavioral": {
           "law_chaos": -0.210487172572064,
-          "good_evil": 0.06508546588216625
+          "good_evil": 0.06510198812414755
         },
         "final": {
           "law_chaos": -0.210487172572064,
-          "good_evil": 0.06508546588216625
+          "good_evil": 0.06510198812414755
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -25556,7 +25556,15 @@
       "source": "4f521655-053c-4e24-93a9-591a57ea751e",
       "target": "ca9ecae3-126f-4adc-9cf9-05b08a8481ff",
       "creation_time": "2025-01-16T01:41:43.240000+00:00",
-      "direction": "unidirectional"
+      "direction": "unidirectional",
+      "relationship": {
+        "type": "trapped",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Lady Nyssara is trapped in Duskmire.",
+        "source_id": "4f521655-053c-4e24-93a9-591a57ea751e",
+        "target_id": "ca9ecae3-126f-4adc-9cf9-05b08a8481ff"
+      }
     },
     {
       "source": "4f521655-053c-4e24-93a9-591a57ea751e",
