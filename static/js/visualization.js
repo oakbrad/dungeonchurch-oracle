@@ -42,9 +42,12 @@ const svg = d3.select("#visualization")
 
 // Add click handler to SVG to clear highlight state when clicking on the canvas
 svg.on("click", function(event) {
-    // Only handle clicks directly on the SVG, not on nodes or other elements
-    if (event.target === this) {
-        // Hide any existing tooltips immediately without transition
+    // Deselect when clicking anywhere except on a node circle
+    const clickedElement = event.target;
+    const isNodeClick = clickedElement.tagName === 'circle' ||
+                        clickedElement.closest('.node');
+
+    if (!isNodeClick) {
         hideTooltipImmediately();
         clearHighlightAndResetZoom();
     }
@@ -104,22 +107,25 @@ function updateTooltipPosition(d, transform) {
 // Function to show tooltip
 function showTooltip(d, transform) {
     if (!d || !d.isTruncated) return;
-    
+
     // Update tooltip content
     tooltipTruncated.html("<strong>" + d.title + "</strong>");
-    
-    // Show the tooltip with transition
-    tooltipTruncated.transition()
+
+    // Cancel any ongoing transition and show the tooltip
+    tooltipTruncated.interrupt()
+        .transition()
         .duration(200)
         .style("opacity", 0.9);
-    
+
     // Position the tooltip
     updateTooltipPosition(d, transform);
 }
 
 // Function to hide tooltip
 function hideTooltip() {
-    tooltipTruncated.transition()
+    // Cancel any ongoing transition and hide the tooltip
+    tooltipTruncated.interrupt()
+        .transition()
         .duration(200)
         .style("opacity", 0);
 }
@@ -210,6 +216,9 @@ function applyHighlightClasses(nodeId, connections) {
 
 // Function to clear highlight state and reset zoom
 function clearHighlightAndResetZoom() {
+    // Cancel any ongoing animation first
+    svg.interrupt();
+
     if (highlightedNode) {
         // Remove all highlight and dimmed classes using helper
         clearAllHighlights();
@@ -225,16 +234,12 @@ function clearHighlightAndResetZoom() {
             applyAlignmentDefaultStyles();
             // Reset zoom to alignment view center
             const scale = Math.min(width, height) / (alignmentGridSize * 0.8 * 2.5);
-            svg.interrupt().transition().duration(750).call(
-                zoom.transform,
-                d3.zoomIdentity.translate(width / 2, height / 2).scale(scale)
-            );
+            svg.transition().duration(750)
+                .call(zoom.transform, d3.zoomIdentity.translate(width / 2, height / 2).scale(scale));
         } else {
             // Reset zoom to default center view
-            svg.interrupt().transition().duration(750).call(
-                zoom.transform,
-                d3.zoomIdentity.translate(width / 2, height / 2).scale(0.5)
-            );
+            svg.transition().duration(750)
+                .call(zoom.transform, d3.zoomIdentity.translate(width / 2, height / 2).scale(0.5));
         }
 
         // Reset the rendering order
@@ -245,6 +250,9 @@ function clearHighlightAndResetZoom() {
 
 // Function to highlight and zoom to a node
 function highlightAndZoomToNode(d) {
+    // Cancel any ongoing animation first
+    svg.interrupt();
+
     // Hide any existing tooltips immediately without transition
     hideTooltipImmediately();
 
@@ -301,7 +309,7 @@ function highlightAndZoomToNode(d) {
     applyHighlightClasses(d.id, connections);
 
     // Animate the zoom
-    svg.interrupt().transition()
+    svg.transition()
        .duration(750)
        .call(
             zoom.transform,
@@ -311,6 +319,10 @@ function highlightAndZoomToNode(d) {
                 .translate(-centerX, -centerY)
         )
        .on("end", function() {
+            // Guard: only proceed if this node is still the highlighted one
+            // (prevents stale callbacks from interrupted animations)
+            if (highlightedNode !== d) return;
+
             // Reorder elements for proper rendering AFTER the animation completes
             node.lower();
             link.lower();
@@ -639,15 +651,15 @@ node.append("circle")
     .on("click", function(event, d) {
         // Prevent event from propagating to potential parent elements
         event.stopPropagation();
-        
+
         // Hide any existing tooltips immediately without transition
         hideTooltipImmediately();
-        
+
         // If this node is already highlighted, clear the highlight
         if (highlightedNode === d) {
             clearHighlightAndResetZoom();
         } else {
-            // Otherwise, highlight and zoom to this node
+            // Select the new node (interrupt handles any ongoing animation)
             highlightAndZoomToNode(d);
         }
     })
@@ -716,8 +728,8 @@ node.append("circle")
             link.order();
         }
 
-        // Hide tooltip only if we're not in highlight mode or if this is the highlighted node
-        if (!highlightedNode || highlightedNode === d) {
+        // Hide tooltip only if no node is highlighted (don't hide for selected nodes)
+        if (!highlightedNode) {
             hideTooltip();
         }
     });
