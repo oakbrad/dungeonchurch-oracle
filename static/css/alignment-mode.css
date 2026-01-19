@@ -47,6 +47,108 @@
     color: #ff2600;
 }
 
+/* Path toggle button */
+#path-toggle {
+    background: #ff2600;
+    border: 1px solid #ff2600;
+    color: #ffffff;
+    padding: 8px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#path-toggle:hover {
+    background: #cc1e00;
+    border-color: #cc1e00;
+}
+
+#path-toggle.active {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #ff2600;
+}
+
+/* Path mode styling */
+
+/* Start and End nodes - white, no glow */
+.node-path-start circle,
+.node-path-end circle {
+    filter: none !important;
+    fill: #ffffff !important;
+    stroke: #ffffff !important;
+    stroke-width: 2.5px !important;
+    transform: scale(175%, 175%);
+    transition: all 0.4s ease-out;
+}
+
+.node-path-start text,
+.node-path-end text {
+    fill: #000000 !important;
+    transform: scale(175%, 175%);
+    transition: all 0.4s ease-out;
+}
+
+/* Waiting animation for start node before second selection */
+.node-path-waiting circle {
+    animation: pathPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pathPulse {
+    0%, 100% { filter: none; }
+    50% { filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.6)); }
+}
+
+/* Intermediate nodes on the path - red style */
+.node-path-member circle {
+    filter: none !important;
+    stroke: #ffffff !important;
+    fill: #ff2600 !important;
+    stroke-width: 2.5px !important;
+    transform: scale(125%, 125%);
+    transition: all 0.4s ease-out;
+}
+
+.node-path-member text {
+    fill: #ffffff !important;
+    transform: scale(125%, 125%);
+    transition: all 0.4s ease-out;
+}
+
+/* Links along the path - white */
+.link-path {
+    stroke: #ffffff !important;
+    stroke-opacity: 0.9 !important;
+    stroke-width: 3px !important;
+    transition: all 0.4s ease-out;
+}
+
+/* Toast notification for path feedback */
+.path-toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1001;
+    pointer-events: none;
+}
+
+.path-toast.show {
+    opacity: 1;
+}
+
 /* Alignment grid styling */
 .alignment-grid {
     pointer-events: none;

@@ -49,7 +49,13 @@ svg.on("click", function(event) {
 
     if (!isNodeClick) {
         hideTooltipImmediately();
-        clearHighlightAndResetZoom();
+
+        // If in path mode, exit path mode on canvas click
+        if (pathModeActive) {
+            togglePathMode();
+        } else {
+            clearHighlightAndResetZoom();
+        }
     }
 });
 
@@ -59,9 +65,18 @@ const g = svg.append("g");
 // Add zoom behavior
 const zoom = d3.zoom()
     .scaleExtent([0.1, 8])
+    .clickDistance(5) // Allow small movements and still register as a click
+    .filter(event => {
+        // Allow all events except right-click (which we handle separately)
+        // Don't start zoom/pan on node circles - let clicks through
+        if (event.target.tagName === 'circle') {
+            return event.type === 'wheel'; // Only allow wheel zoom on circles
+        }
+        return !event.ctrlKey && event.button !== 2;
+    })
     .on("zoom", (event) => {
         g.attr("transform", event.transform);
-        
+
         // Update tooltip position if it's visible and we have a highlighted node
         if (parseFloat(tooltipTruncated.style("opacity")) > 0 && highlightedNode) {
             updateTooltipPosition(highlightedNode, event.transform);
@@ -75,6 +90,12 @@ svg.call(zoom.transform, d3.zoomIdentity.translate(width / 2, height / 2).scale(
 
 // Track the currently highlighted node
 let highlightedNode = null;
+
+// Shortest path mode state
+let pathModeActive = false;
+let pathStartNode = null;
+let pathEndNode = null;
+let currentPath = null;
 
 // Function to update tooltip position
 function updateTooltipPosition(d, transform) {
@@ -178,6 +199,221 @@ function clearAllHighlights() {
     link.classed("link-highlight-first", false)
         .classed("link-highlight-second", false)
         .classed("link-dimmed", false);
+}
+
+// Find shortest path between two nodes using BFS
+// Returns array of node IDs from start to end, or null if no path exists
+// In alignment view, only considers alignment-eligible nodes
+function findShortestPath(startId, endId) {
+    if (startId === endId) return [startId];
+
+    // In alignment view, only consider alignment-eligible nodes
+    const alignmentCollectionIds = new Set(graphData.alignmentCollectionIds || []);
+    const isAlignmentView = currentViewMode === 'alignment';
+
+    // Build adjacency list from links
+    const adjacency = new Map();
+
+    // Only include nodes that are visible in the current view
+    graphData.nodes.forEach(n => {
+        if (!isAlignmentView || alignmentCollectionIds.has(n.collectionId)) {
+            adjacency.set(n.id, []);
+        }
+    });
+
+    graphData.links.forEach(l => {
+        const sourceId = typeof l.source === 'object' ? l.source.id : l.source;
+        const targetId = typeof l.target === 'object' ? l.target.id : l.target;
+
+        // Only add edge if both nodes are in the adjacency list (visible in current view)
+        if (adjacency.has(sourceId) && adjacency.has(targetId)) {
+            adjacency.get(sourceId).push(targetId);
+            adjacency.get(targetId).push(sourceId);
+        }
+    });
+
+    // Check if start and end nodes are valid for current view
+    if (!adjacency.has(startId) || !adjacency.has(endId)) {
+        return null;
+    }
+
+    // BFS
+    const queue = [[startId]];
+    const visited = new Set([startId]);
+
+    while (queue.length > 0) {
+        const path = queue.shift();
+        const current = path[path.length - 1];
+
+        for (const neighbor of adjacency.get(current) || []) {
+            if (neighbor === endId) {
+                return [...path, neighbor];
+            }
+            if (!visited.has(neighbor)) {
+                visited.add(neighbor);
+                queue.push([...path, neighbor]);
+            }
+        }
+    }
+
+    return null; // No path found
+}
+
+// Clear all path-related highlight classes
+function clearPathHighlights() {
+    node.classed("node-path-start", false)
+        .classed("node-path-end", false)
+        .classed("node-path-member", false)
+        .classed("node-path-waiting", false)
+        .classed("node-highlight", false)
+        .classed("node-dimmed", false);
+
+    link.classed("link-path", false)
+        .classed("link-dimmed", false);
+}
+
+// Apply path highlighting given an array of node IDs
+function applyPathHighlights(pathNodeIds) {
+    if (!pathNodeIds || pathNodeIds.length === 0) return;
+
+    // Clear alignment default styles if in alignment view (they conflict with path styles)
+    if (currentViewMode === 'alignment') {
+        clearAlignmentDefaultStyles();
+    }
+
+    const pathSet = new Set(pathNodeIds);
+    const startId = pathNodeIds[0];
+    const endId = pathNodeIds[pathNodeIds.length - 1];
+
+    // Create set of link indices that are on the path
+    const pathLinkIndices = new Set();
+    for (let i = 0; i < pathNodeIds.length - 1; i++) {
+        const currentId = pathNodeIds[i];
+        const nextId = pathNodeIds[i + 1];
+
+        link.each(function(l, idx) {
+            const sourceId = typeof l.source === 'object' ? l.source.id : l.source;
+            const targetId = typeof l.target === 'object' ? l.target.id : l.target;
+
+            if ((sourceId === currentId && targetId === nextId) ||
+                (sourceId === nextId && targetId === currentId)) {
+                pathLinkIndices.add(idx);
+            }
+        });
+    }
+
+    // Apply node classes
+    node.classed("node-path-start", d => d.id === startId)
+        .classed("node-path-end", d => d.id === endId)
+        .classed("node-path-member", d => pathSet.has(d.id) && d.id !== startId && d.id !== endId)
+        .classed("node-dimmed", d => !pathSet.has(d.id));
+
+    // Apply link classes
+    link.classed("link-path", (l, i) => pathLinkIndices.has(i))
+        .classed("link-dimmed", (l, i) => !pathLinkIndices.has(i));
+
+    // First lower all elements to reset z-order
+    node.lower();
+    link.lower();
+
+    // Raise path elements for visibility (in order: links, members, start, end)
+    link.filter(".link-path").raise();
+    node.filter(".node-path-member").raise();
+    node.filter(".node-path-start").raise();
+    node.filter(".node-path-end").raise();
+}
+
+// Zoom to fit the entire path
+function zoomToPath(pathNodeIds) {
+    const nodesToInclude = pathNodeIds.map(id => nodeMap.get(id)).filter(n => n);
+
+    if (nodesToInclude.length === 0) return;
+
+    // Calculate bounding box
+    let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+    nodesToInclude.forEach(n => {
+        minX = Math.min(minX, n.x);
+        minY = Math.min(minY, n.y);
+        maxX = Math.max(maxX, n.x);
+        maxY = Math.max(maxY, n.y);
+    });
+
+    // Add padding
+    const padding = 80;
+    minX -= padding;
+    minY -= padding;
+    maxX += padding;
+    maxY += padding;
+
+    // Calculate scale and translate
+    const boxWidth = maxX - minX;
+    const boxHeight = maxY - minY;
+    const scale = Math.min(width / boxWidth, height / boxHeight) * 0.85;
+    const centerX = (minX + maxX) / 2;
+    const centerY = (minY + maxY) / 2;
+
+    // Animate zoom
+    svg.transition()
+       .duration(750)
+       .call(
+            zoom.transform,
+            d3.zoomIdentity
+                .translate(width / 2, height / 2)
+                .scale(scale)
+                .translate(-centerX, -centerY)
+        );
+}
+
+// Show toast notification
+function showPathToast(message, duration = 2000) {
+    const toast = document.getElementById('path-toast');
+    toast.textContent = message;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), duration);
+}
+
+// Toggle path-finding mode
+function togglePathMode() {
+    pathModeActive = !pathModeActive;
+
+    const pathBtn = document.getElementById("path-toggle");
+
+    if (pathModeActive) {
+        // Enter path mode
+        pathBtn.classList.add("active");
+        pathBtn.title = "Exit Path Mode";
+
+        // Clear any existing highlights
+        clearHighlightAndResetZoom();
+        highlightedNode = null;
+
+        // Reset path state
+        pathStartNode = null;
+        pathEndNode = null;
+        currentPath = null;
+    } else {
+        // Exit path mode
+        pathBtn.classList.remove("active");
+        pathBtn.title = "Find Shortest Path";
+
+        // Clear path highlighting
+        clearPathHighlights();
+
+        // Re-apply alignment styles if in alignment view
+        if (currentViewMode === 'alignment') {
+            applyAlignmentDefaultStyles();
+        }
+
+        // Reset to default zoom view
+        svg.transition()
+           .duration(750)
+           .call(zoom.transform, d3.zoomIdentity.translate(width / 2, height / 2).scale(0.5));
+
+        // Reset path state
+        pathStartNode = null;
+        pathEndNode = null;
+        currentPath = null;
+    }
 }
 
 // Helper function to apply highlight classes based on connection data
@@ -613,6 +849,11 @@ function switchToConnectionMode() {
 
 // Function to toggle view mode
 function toggleViewMode() {
+    // Clear any path state when switching views
+    if (pathModeActive) {
+        togglePathMode();
+    }
+
     if (currentViewMode === 'connection') {
         switchToAlignmentMode();
     } else {
@@ -635,6 +876,7 @@ const node = g.append("g")
     .enter().append("g")
     .attr("class", "node")
     .call(d3.drag()
+        .clickDistance(5) // Allow small movements to still register as clicks
         .on("start", dragstarted)
         .on("drag", dragged)
         .on("end", dragended));
@@ -657,7 +899,42 @@ node.append("circle")
         // Hide any existing tooltips immediately without transition
         hideTooltipImmediately();
 
-        // If this node is already highlighted, clear the highlight
+        // PATH MODE HANDLING
+        if (pathModeActive) {
+            if (!pathStartNode) {
+                // First click - set start node
+                pathStartNode = d;
+                clearPathHighlights();
+
+                // Highlight start node with waiting animation (don't dim network)
+                node.filter(n => n.id === d.id)
+                    .classed("node-path-start", true)
+                    .classed("node-path-waiting", true);
+
+            } else if (pathStartNode.id === d.id) {
+                // Clicked start node - exit path mode entirely
+                togglePathMode();
+
+            } else {
+                // Clicked any other node - find/re-route path from start to this node
+                pathEndNode = d;
+                const path = findShortestPath(pathStartNode.id, pathEndNode.id);
+
+                if (path) {
+                    currentPath = path;
+                    clearPathHighlights();
+                    applyPathHighlights(path);
+                    zoomToPath(path);
+                } else {
+                    // No path found - show toast, keep start selected
+                    showPathToast("No path exists between these nodes");
+                    pathEndNode = null;
+                }
+            }
+            return; // Don't fall through to normal click handling
+        }
+
+        // NORMAL MODE HANDLING
         if (highlightedNode === d) {
             clearHighlightAndResetZoom();
         } else {
@@ -678,9 +955,14 @@ node.append("circle")
     .on("contextmenu", function(event) {
         // Prevent the default context menu
         event.preventDefault();
-        
-        // Clear highlight state and reset zoom
-        clearHighlightAndResetZoom();
+
+        // If in path mode, exit path mode
+        if (pathModeActive) {
+            togglePathMode();
+        } else {
+            // Clear highlight state and reset zoom
+            clearHighlightAndResetZoom();
+        }
     })
     .on("mouseover", function(event, d) {
         // If we already have a highlighted node, don't do anything on mouseover
@@ -692,20 +974,31 @@ node.append("circle")
 
         // If no node is highlighted, add temporary highlight class and raise node
         if (!highlightedNode) {
-            // If in alignment mode, clear the default alignment styles first
-            if (currentViewMode === 'alignment') {
-                clearAlignmentDefaultStyles();
+            // In path mode with a path displayed, don't add mouseover highlighting
+            if (pathModeActive && currentPath) {
+                return;
             }
+            // In path mode without a path yet, only highlight the single hovered node
+            if (pathModeActive) {
+                currentNode.classed("node-highlight", true);
+                currentNode.raise();
+            } else {
+                // Normal mode: full network highlight
+                // If in alignment mode, clear the default alignment styles first
+                if (currentViewMode === 'alignment') {
+                    clearAlignmentDefaultStyles();
+                }
 
-            // Add highlight class to the current node
-            currentNode.classed("node-highlight", true);
+                // Add highlight class to the current node
+                currentNode.classed("node-highlight", true);
 
-            // Calculate and apply connection highlighting using shared helpers
-            const connections = calculateNodeConnections(d.id);
-            applyHighlightClasses(d.id, connections);
+                // Calculate and apply connection highlighting using shared helpers
+                const connections = calculateNodeConnections(d.id);
+                applyHighlightClasses(d.id, connections);
 
-            // Raise just the hovered node to top for visibility in dense clusters
-            currentNode.raise();
+                // Raise just the hovered node to top for visibility in dense clusters
+                currentNode.raise();
+            }
         }
 
         // Show tooltip if the node's title is truncated
@@ -720,17 +1013,27 @@ node.append("circle")
         if (highlightedNode && highlightedNode !== d) return;
 
         if (!highlightedNode) {
-            // Remove all highlight and dimmed classes using helper
-            clearAllHighlights();
-
-            // If in alignment mode, re-apply default alignment styles
-            if (currentViewMode === 'alignment') {
-                applyAlignmentDefaultStyles();
+            // In path mode with a path displayed, don't change anything
+            if (pathModeActive && currentPath) {
+                return;
             }
+            // In path mode without a path yet, only clear the single node highlight
+            if (pathModeActive) {
+                d3.select(this.parentNode).classed("node-highlight", false);
+            } else {
+                // Normal mode: clear full network highlight
+                // Remove all highlight and dimmed classes using helper
+                clearAllHighlights();
 
-            // Reset the rendering order
-            node.order();
-            link.order();
+                // If in alignment mode, re-apply default alignment styles
+                if (currentViewMode === 'alignment') {
+                    applyAlignmentDefaultStyles();
+                }
+
+                // Reset the rendering order
+                node.order();
+                link.order();
+            }
         }
 
         // Hide tooltip only if no node is highlighted (don't hide for selected nodes)
@@ -1063,12 +1366,41 @@ const handleSearch = debounce(function(query) {
             resultItem.className = "search-result";
             resultItem.textContent = node.title;
             resultItem.addEventListener("click", function() {
-                // Use the shared function to highlight and zoom to the node
-                highlightAndZoomToNode(node);
-
                 // Clear search
                 searchInput.value = "";
                 searchResults.style.display = "none";
+
+                // Handle path mode
+                if (pathModeActive) {
+                    if (!pathStartNode) {
+                        // No start node yet - set this as start
+                        pathStartNode = node;
+                        clearPathHighlights();
+
+                        // Highlight start node with waiting animation using the global 'node' D3 selection
+                        d3.selectAll('.node').filter(n => n.id === node.id)
+                            .classed("node-path-start", true)
+                            .classed("node-path-waiting", true);
+
+                    } else {
+                        // Start exists - find path to this node (re-route if path already exists)
+                        pathEndNode = node;
+                        const path = findShortestPath(pathStartNode.id, pathEndNode.id);
+
+                        if (path) {
+                            currentPath = path;
+                            clearPathHighlights();
+                            applyPathHighlights(path);
+                            zoomToPath(path);
+                        } else {
+                            showPathToast("No path exists between these nodes");
+                            pathEndNode = null;
+                        }
+                    }
+                } else {
+                    // Normal mode - use the shared function to highlight and zoom to the node
+                    highlightAndZoomToNode(node);
+                }
             });
             fragment.appendChild(resultItem);
         });

@@ -38,9 +38,11 @@
                 <input type="text" id="search-input" placeholder="Search lore...">
                 <div id="search-results"></div>
             </div>
+            <button id="path-toggle" onclick="togglePathMode()" title="Find Shortest Path"><i class="fa-solid fa-route"></i></button>
             <button id="view-toggle" onclick="toggleViewMode()" title="Switch to Alignment View"><i class="fa-solid fa-scale-balanced"></i></button>
         </div>
         <div id="visualization"></div>
+        <div id="path-toast" class="path-toast"></div>
     </div>
     
     <!-- The graph data will be loaded here -->
