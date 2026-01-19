@@ -1609,6 +1609,16 @@
       },
       "timestamp": "2026-01-17T22:33:33.198276",
       "title": "Wraithwoven Coven"
+    },
+    "96ee5f29428b4ff5": {
+      "alignment": {
+        "law_chaos": -0.8,
+        "good_evil": -0.6,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-01-19T11:39:17.483256",
+      "title": "Jethro Honeyrock"
     }
   },
   "relationships": {
@@ -7409,6 +7419,214 @@
       "timestamp": "2026-01-18T11:35:55.885812",
       "source": "Lady Nyssara",
       "target": "Duskmire"
+    },
+    "997c4ef428d0e351": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.6,
+        "order_valence": 0.9,
+        "summary": "Collaborative governance of beverage production",
+        "source_id": "ccd8bf41-1354-48a6-8847-f9c41a0bb91e",
+        "target_id": "5b43e787-5069-462a-a45f-1869b2bc1b87"
+      },
+      "timestamp": "2026-01-19T11:39:19.927134",
+      "source": "New City Brewing Distributors",
+      "target": "New Galmaarden"
+    },
+    "b2351caab74f96eb": {
+      "result": {
+        "type": "opposed",
+        "moral_valence": -0.5,
+        "order_valence": -0.8,
+        "summary": "The Red Talon Society opposes the Dragon Empire",
+        "source_id": "874fa03a-71b3-4785-a704-94f3d021aaf9",
+        "target_id": "ca1708ac-15ad-4729-ad67-83fd2968996c"
+      },
+      "timestamp": "2026-01-19T11:39:21.964173",
+      "source": "The Red Talon Society",
+      "target": "Dragon Empire"
+    },
+    "d09cad3ed54f341a": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.8,
+        "order_valence": 0.5,
+        "summary": "Adventurers support Saltmarsh through ownership.",
+        "source_id": "f072e19f-6e96-4195-87ad-7b609a252019",
+        "target_id": "3235b720-ecbe-4089-ad79-9c17674c77d4"
+      },
+      "timestamp": "2026-01-19T11:39:24.385432",
+      "source": "Gold Scale Company",
+      "target": "Saltmarsh"
+    },
+    "cc90a8276a148e79": {
+      "result": {
+        "type": "allied",
+        "moral_valence": -0.5,
+        "order_valence": 0.8,
+        "summary": "Coven collaborates with Dreadwood for power.",
+        "source_id": "dd86e42d-6695-47d1-9b25-2d86fbcaf350",
+        "target_id": "a19107c0-b29f-4dbc-afcd-56b64bcfdb97"
+      },
+      "timestamp": "2026-01-19T11:39:26.518830",
+      "source": "Wraithwoven Coven",
+      "target": "Dreadwood"
+    },
+    "ecc1243600053f44": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 1.0,
+        "summary": "Council employs the Town Guard for order",
+        "source_id": "d5deabf1-abd5-4db9-92f9-aa14a40dd29e",
+        "target_id": "2216a863-42a6-4567-8775-18759a8545d9"
+      },
+      "timestamp": "2026-01-19T11:39:29.265078",
+      "source": "Saltmarsh Council",
+      "target": "Saltmarsh Town Guard"
+    },
+    "8a6fb8bb33bed3bd": {
+      "result": {
+        "type": "allied",
+        "moral_valence": -0.5,
+        "order_valence": 0.8,
+        "summary": "Coven and hag collaborate for mutual gain",
+        "source_id": "dd86e42d-6695-47d1-9b25-2d86fbcaf350",
+        "target_id": "ae440eb8-77a4-4808-94a8-d65823c17c70"
+      },
+      "timestamp": "2026-01-19T11:39:31.488945",
+      "source": "Wraithwoven Coven",
+      "target": "Green Hag"
+    },
+    "abf45182a460d09e": {
+      "result": {
+        "type": "created",
+        "moral_valence": 0.5,
+        "order_valence": 1.0,
+        "summary": "Constructs created for order and protection",
+        "source_id": "95cc8356-e5f5-440f-b666-5cc982672254",
+        "target_id": "ca9ecae3-126f-4adc-9cf9-05b08a8481ff"
+      },
+      "timestamp": "2026-01-19T11:39:33.279457",
+      "source": "Bloodless Sentinels",
+      "target": "Duskmire"
+    },
+    "4bdc7d954eaef654": {
+      "result": {
+        "type": "neutral",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Craggylheim grew up in Sturmfreihafen",
+        "source_id": "10ac0090-b3a2-46c3-879d-616dc7678cb0",
+        "target_id": "8a8a0a7f-437f-4005-8007-8fdd78664b85"
+      },
+      "timestamp": "2026-01-19T11:39:35.615832",
+      "source": "Craggylheim Groggut",
+      "target": "Sturmfreihafen (Str\u00fcmfreih\u00e5fen)"
+    },
+    "5e033e9c7881d9e3": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Dwarven gangs oppose King Olfgard's rule",
+        "source_id": "f0455302-8630-4be2-b696-81258a72c8b7",
+        "target_id": "b0bdbf59-39ad-4e88-8350-7d8812b562bc"
+      },
+      "timestamp": "2026-01-19T11:39:37.005531",
+      "source": "The Queen\u2019s Men",
+      "target": "King Olfgard Wisebeard"
+    },
+    "0a3f6c18d7971447": {
+      "result": {
+        "type": "served",
+        "moral_valence": -0.5,
+        "order_valence": -0.8,
+        "summary": "Desperate seekers embrace chaotic delirium.",
+        "source_id": "3e2db61e-3734-49f9-9521-bc827b28975e",
+        "target_id": "99f89472-b0b9-40c4-9129-a9e002bc7406"
+      },
+      "timestamp": "2026-01-19T11:39:38.718609",
+      "source": "Followers of the Falling Fire",
+      "target": "Delirium"
+    },
+    "0e631dfc4e8cb4c8": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.5,
+        "order_valence": 0.2,
+        "summary": "Alliance for research on delirium control",
+        "source_id": "4df547d4-7058-4f7d-9d04-f57c91c256ed",
+        "target_id": "c384b2ac-bfac-4475-85bc-b3bdba252872"
+      },
+      "timestamp": "2026-01-19T11:39:39.986944",
+      "source": "Amethyst Academy",
+      "target": "Galmaarden 8/9: Reed Manor"
+    },
+    "d5cc7e55427007af": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.7,
+        "order_valence": 0.2,
+        "summary": "Jethro aids the Pyoran Halfling",
+        "source_id": "f514e109-06ff-42f5-a47f-2550bcbeb01b",
+        "target_id": "1638a16a-49a2-4762-ae7c-f282305fb0f7"
+      },
+      "timestamp": "2026-01-19T11:39:41.324656",
+      "source": "Jethro Honeyrock",
+      "target": "Halfling (Pyoran)"
+    },
+    "b5b5c35a0956034b": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.5,
+        "order_valence": -0.2,
+        "summary": "Jethro lost money to Bhardok",
+        "source_id": "f514e109-06ff-42f5-a47f-2550bcbeb01b",
+        "target_id": "350ab345-a244-42a9-8e47-f7201f39ab49"
+      },
+      "timestamp": "2026-01-19T11:39:42.442524",
+      "source": "Jethro Honeyrock",
+      "target": "Bhardok the Underlord"
+    },
+    "54317a0365356ef6": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.5,
+        "order_valence": 0.2,
+        "summary": "The Queen's Men ally with Bhardok.",
+        "source_id": "f0455302-8630-4be2-b696-81258a72c8b7",
+        "target_id": "350ab345-a244-42a9-8e47-f7201f39ab49"
+      },
+      "timestamp": "2026-01-19T11:39:43.792512",
+      "source": "The Queen\u2019s Men",
+      "target": "Bhardok the Underlord"
+    },
+    "af9f2c2144212610": {
+      "result": {
+        "type": "opposed",
+        "moral_valence": -0.5,
+        "order_valence": 1.0,
+        "summary": "Knights oppose Followers due to delirium embrace",
+        "source_id": "99f1c7c7-4a9d-4770-b7d2-3c77e5cc9e31",
+        "target_id": "3e2db61e-3734-49f9-9521-bc827b28975e"
+      },
+      "timestamp": "2026-01-19T11:39:45.047233",
+      "source": "Knights of the Silver Order",
+      "target": "Followers of the Falling Fire"
+    },
+    "f7327989fa246695": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.2,
+        "order_valence": 0.3,
+        "summary": "Alliance for research on delirium's power",
+        "source_id": "4df547d4-7058-4f7d-9d04-f57c91c256ed",
+        "target_id": "99f89472-b0b9-40c4-9129-a9e002bc7406"
+      },
+      "timestamp": "2026-01-19T11:39:46.244747",
+      "source": "Amethyst Academy",
+      "target": "Delirium"
     }
   }
 }

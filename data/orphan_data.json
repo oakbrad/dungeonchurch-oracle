@@ -127,15 +127,6 @@
       "connections": 0
     },
     {
-      "id": "8abaf115-af57-4910-9e30-d3e55fda9042",
-      "title": "",
-      "urlId": "7cqNWQW4Ou",
-      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
-      "createdAt": "2021-12-03T10:21:02.183000+00:00",
-      "content": "",
-      "connections": 0
-    },
-    {
       "id": "2893a341-1a9c-41eb-aab3-c0a40bdeed98",
       "title": "The Moon",
       "urlId": "bgZmElgvAb",
@@ -151,15 +142,6 @@
       "collectionId": "28015ad0-50f5-4495-a6c5-2415436a3d40",
       "createdAt": "2025-06-30T20:12:36.113000+00:00",
       "content": "\\\n",
-      "connections": 0
-    },
-    {
-      "id": "f514e109-06ff-42f5-a47f-2550bcbeb01b",
-      "title": "Jethro Honeyrock",
-      "urlId": "h44z7NLtgQ",
-      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
-      "createdAt": "2025-11-09T23:54:54.673000+00:00",
-      "content": "Halfling (Stout)\n\nRogue\n\n\\\nWhat does it mean to fit in? Is it becoming an amalgamation of your surroundings as to not stand out? Or is it deliberately crafting a new personality for yourself to perfectly both contrast *and* match the new micro-society you\u2019ll be joining?\n\nJethro believes it\u2019s the latter.\n\n\\\nJethro Honeyrock has travelled far and wide, not truly finding a place to settle down. From sneaking in and staying at a forgotten bedroom at an inn, to making makeshift shelters to scrape by in hidden alleyways. He's been sure to not get too tied down to one place or another, as when he'd run a gambling grift and be found out, he'd skip town. If he found himself with a bit of a gambling debt on his head, he'd also skip town.\n\nHe's a good bit shorter than the average dwarf, with a noticeably scrawnier stature, too. He hides it well, however, typically wearing a large, baggy cloak over his regular doubled-up garb to look bulkier than normal. When he'd skip town, he'd reinvent his appearance the best he can while still trying to look dwarf-like, from changing up his intricate beard braids, swapping out his entire wardrobe, to making more rash decisions such as intentionally giving himself a scar on his face when fleeing an especially bad situation.\n\nJethro's gambling related activities have slowed down after his most recent gambling run. For months, he played and cheated in an underground game run by The Queen's Men, but eventually his gambling grift went sideways. He found himself losing a lot of the money he had earned, specifically to a dwarf named Bhardok. When he somehow started to lose more than he won in a game rigged *in his* favor, Jethro started to get antsy and look for a way out.\n\n\\\n",
       "connections": 0
     },
     {
@@ -181,15 +163,6 @@
       "connections": 0
     },
     {
-      "id": "bcd19c66-4063-4f60-a14f-dd03519cee53",
-      "title": "Temple of the Lights",
-      "urlId": "88znSgAhr0",
-      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
-      "createdAt": "2025-06-14T00:09:33.539000+00:00",
-      "content": "\\\n",
-      "connections": 0
-    },
-    {
       "id": "b39f4303-311a-480a-ab92-2e24f2171fed",
       "title": "Restaurant List",
       "urlId": "OXVi7L5CUF",
@@ -199,12 +172,12 @@
       "connections": 0
     },
     {
-      "id": "ef485e4c-cf47-4a88-bb7d-6bcb4e1127d5",
-      "title": "",
-      "urlId": "YkWsMwoRVU",
+      "id": "bcd19c66-4063-4f60-a14f-dd03519cee53",
+      "title": "Temple of the Lights",
+      "urlId": "88znSgAhr0",
       "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
-      "createdAt": "2022-02-16T07:32:03.152000+00:00",
-      "content": "",
+      "createdAt": "2025-06-14T00:09:33.539000+00:00",
+      "content": "\\\n",
       "connections": 0
     },
     {
@@ -244,6 +217,24 @@
       "connections": 0
     },
     {
+      "id": "8abaf115-af57-4910-9e30-d3e55fda9042",
+      "title": "",
+      "urlId": "7cqNWQW4Ou",
+      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
+      "createdAt": "2021-12-03T10:21:02.183000+00:00",
+      "content": "",
+      "connections": 0
+    },
+    {
+      "id": "ef485e4c-cf47-4a88-bb7d-6bcb4e1127d5",
+      "title": "",
+      "urlId": "YkWsMwoRVU",
+      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
+      "createdAt": "2022-02-16T07:32:03.152000+00:00",
+      "content": "",
+      "connections": 0
+    },
+    {
       "id": "1366376f-f606-4c4c-94b1-ee5672151729",
       "title": "NPC",
       "urlId": "NbEQA6bRW6",
@@ -262,12 +253,12 @@
       "connections": 0
     },
     {
-      "id": "6f642105-6cdb-4efd-8de6-7138aff5eaa8",
-      "title": "Directions to Brad's Studio",
-      "urlId": "MqCuUBMHAN",
+      "id": "f4e43cc6-76cc-4140-abad-35e7c4d68419",
+      "title": "Ironsworn Rules & Reference",
+      "urlId": "hnnfupcKzs",
       "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
-      "createdAt": "2021-11-03T00:29:17.643000+00:00",
-      "content": "# Cotton Mills Studios in Fruitvale\n\n* [1091 Calcot Place, Oakland, CA 94606](https://www.google.com/maps/place/1091+Calcot+Pl,+Oakland,+CA+94606/@37.7981586,-122.2419963,17z/data=!4m5!3m4!1s0x808f86e66880231f:0xc4ebb81204f63886!8m2!3d37.7816762!4d-122.2381794)\n* It\u2019s in a weird spot - you go underneath the 23rd Street overpass on Calcot Place, sandwiched between 880 and the train tracks\n\n  ### Parking\n* Secure guest parking is available in the lot, ping Brad on Discord to open the gate. Guest parking is in the back right painted as \u201cGUEST\u201d spots. \n* :skull_and_crossbones: **DO NOT PARK IN NUMBERED SPOTS** :skull_and_crossbones:\n\n# From Transit\n\nThe Cotton Mill is only about 1 mile from Fruitvale BART station, however it goes through a pedestrian-unfriendly, industrial part of the neighborhood with a lot of encampments so I would not recommend walking it. It is perfectly fine to bike/scooter/etc. though! \n\n ![](/api/attachments.redirect?id=547e027e-68c4-40c0-8ecc-3e50aba7c2ec)\n\n[Google Maps: Fruitvale to Cotton Mill Studios via Walk/Bike](https://www.google.com/maps/dir/37.7813835,-122.2378542/Fruitvale+BART,+Oakland,+CA+94601/@37.7776882,-122.2352504,16z/data=!4m10!4m9!1m1!4e1!1m5!1m1!1s0x808f86f4a3f0d739:0x60fc93ed71a391b0!2m2!1d-122.225206!2d37.7752293!3e1?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D)\n\n# Cycling Directions\n\nPlease take a look at map before you leave. Because of the train track overpass, going from East 12th Street \u2192 23rd Avenue is a dangerous/bad route for bikes (no shoulder, limited visibility hill, high speed traffic getting to 880, rough road surface, etc).\n\n### Very Bad No Good Intersection\n\nThe intersection at 23rd Ave turning onto E 11th St / Calcot Place is very poorly designed and people constantly blow the lights at high speed. Be careful! Never assume the cars are going to stop.\n\n ![](/api/attachments.redirect?id=5452d24f-0d57-4239-8b2f-d6d520989b48)\n\n### From Downtown Headed East\n\n* [Google Link: Lake Merritt BART to 1091 Calcot Place via Bike](https://www.google.com/maps/dir/Lake+Merritt+Station,+800+Oak+St,+Oakland,+CA+94607/1091+Calcot+Pl,+Oakland,+CA+94606-5044,+USA/@37.7898052,-122.2556352,16.19z/data=!4m19!4m18!1m10!1m1!1s0x808f80cb294063c9:0xb6198c573126a242!2m2!1d-122.2652155!2d37.7970287!3m4!1m2!1d-122.2590238!2d37.7922871!3s0x808f872e03cc9e49:0xc057dc92c8095608!1m5!1m1!1s0x808f86e66880231f:0xc4ebb81204f63886!2m2!1d-122.2381794!2d37.7816762!3e1)\n* Take Embarcadero (aka \u201cBay Trail\u201d route) to 23rd Avenue, cross 880 freeway via bike lane on overpass on 23rd. Take a right onto confusingly signed \u201cE 11 St / Miller Place\u201d which immediately becomes Calcot Place as you go left and under 23rd Ave.\n\n  ![](/api/attachments.redirect?id=8c62d87c-26ae-4b86-887c-56db575c5c1a)\n\n  ### From Fruitvale Station Headed West\n* [Google Link: Fruitvale BART to 1091 Calcot Place via Bike](https://www.google.com/maps/dir/Fruitvale+BART,+Oakland,+CA/1091+Calcot+Pl,+Oakland,+CA+94606-5044,+USA/@37.776886,-122.2329674,16.38z/data=!4m24!4m23!1m15!1m1!1s0x808f86f4a3f0d739:0x60fc93ed71a391b0!2m2!1d-122.225206!2d37.7752293!3m4!1m2!1d-122.2319972!2d37.7764991!3s0x808f86edfaa3d1d9:0xe6f9d1347390eb74!3m4!1m2!1d-122.2334449!2d37.7781265!3s0x808f86ee5a5706a3:0x149631eece763fea!1m5!1m1!1s0x808f86e66880231f:0xc4ebb81204f63886!2m2!1d-122.2381794!2d37.7816762!3e1)\n* Head west from Fruitvale on E 12th Street, take a left onto 29th Avenue and cross the train tracks. Keep going until just before freeway entrance, and take a right on E 10th Street at the light (past the animal shelter on right, opposite the school on your left). Follow that around past Art Haus and then under the 23rd Ave overpass.\n\n  ![](/api/attachments.redirect?id=04e97ca7-ce3a-4e4f-b884-45c9df0449b4)\n\n  \\\n  \\\n\n\\\n",
+      "createdAt": "2023-04-19T22:25:48.602000+00:00",
+      "content": " ![](/api/attachments.redirect?id=d08e9987-4216-44a7-a705-f445f7dfabd0)\n\n[Ironsworn](https://www.ironswornrpg.com/) is a solo or co-op RPG of perilous quests by [Shawn Tomkin](https://linktr.ee/shawntomkin) that is free. In Ironsworn, your character is sworn to undertake tasks and seek out bonds in a dark fantasy setting using a simple, \u201cfiction first\u201d system.\n\nIronsworn is great for worldbuilding, downtime activities, a writing aide, or fleshing out your character\u2019s story.\n\n# Resources\n\n## Core Documents\n\n[Ironsworn Rulebook.pdf 43133141](/api/attachments.redirect?id=148a972b-f2d2-479c-a4dd-551ce16937e8)\n\n[Ironsworn-Playkit.pdf 1567795](/api/attachments.redirect?id=930026d3-dc18-4341-bc99-6c0579bfbd47)\n\n[Ironsworn-Assets-Master-Set-1.pdf 551839](/api/attachments.redirect?id=0aac2d3d-f992-4b22-a28f-d289efdd1b16)\n\n## Links\n\n* [Ironsworn Official](https://www.ironswornrpg.com/downloads) - the rulebook, sheets for playing, asset cards, etc. are all free for download & printing. \n* [Awesome Ironsworn](https://billiam.github.io/awesome-ironsworn/) - A comprehensive collection of links to tools, resources, homebrew, etc.\n* [Ironsworn Discord](https://discord.com/invite/8bRuZwK) - Join this and be sure to check out #share-your-kit channel\n* [The Trove - Ironsworn](https://thetrove.dungeon.church/Ironsworn/) - Dungeon Church\u2019s archive of PDFs and other assets. Notable:\n  * [Traveler\u2019s PDF](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Mobile%20Device%20Edition.pdf) - an extremely helpful PDF rule reference for mobile devices\n  * [Traveler\u2019s DIY](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Traveler%27s%20DIY%20Edition%20%28v1-3-1_220121%29.pdf) - excellent set of printable card references for analog play\n  * [Vaults & Vows](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Vaults%20&%20Vows%20Assets%20%28D&D%20SRD%20Conversion%29.pdf) - alternative assets for Ironsworn converted from the D&D SRD\n  * [Combat Flow Chart](https://thetrove.dungeon.church/Ironsworn/Ironsworn%20-%20Combat%20Moves%20Flowchart.jpg)\n* [Ironsworn: Delve](https://thetrove.dungeon.church/Ironsworn/Ironsworn%20-%20Delve/) - additional rules for exploring dungeons\n\n[https://www.youtube.com/watch?v=9wIYUn4Et5o](https://www.youtube.com/watch?v=9wIYUn4Et5o)\n\n*Playing Ironsworn in Foundry.*\n\n# Share Your Kit\n\nSee the Ironsworn Discord channel for lots of inspiration. Post your own setup here.\n\n## Brad\u2019s Setup\n\n### Digital\n\niPad with Pencil. [Notability](https://notability.com/) + [Xodo PDF](https://apps.apple.com/us/app/xodo-pdf-reader-scanner/id805075929) in dark mode with the [Traveler\u2019s PDF](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Mobile%20Device%20Edition.pdf).\n\n### Analog\n\n* [Rory Story Cubes](https://www.storycubes.com/en/) for the Oracle (Core, Voyage, Actions, Fantasia sets)\n* [Double Six Dice](https://doublesixdice.com/)\n* [Traveler\u2019s DIY cards](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Traveler%27s%20DIY%20Edition%20%28v1-3-1_220121%29.pdf)\n\n\\\n",
       "connections": 0
     },
     {
@@ -316,6 +307,15 @@
       "connections": 0
     },
     {
+      "id": "6f642105-6cdb-4efd-8de6-7138aff5eaa8",
+      "title": "Directions to Brad's Studio",
+      "urlId": "MqCuUBMHAN",
+      "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
+      "createdAt": "2021-11-03T00:29:17.643000+00:00",
+      "content": "# Cotton Mills Studios in Fruitvale\n\n* [1091 Calcot Place, Oakland, CA 94606](https://www.google.com/maps/place/1091+Calcot+Pl,+Oakland,+CA+94606/@37.7981586,-122.2419963,17z/data=!4m5!3m4!1s0x808f86e66880231f:0xc4ebb81204f63886!8m2!3d37.7816762!4d-122.2381794)\n* It\u2019s in a weird spot - you go underneath the 23rd Street overpass on Calcot Place, sandwiched between 880 and the train tracks\n\n  ### Parking\n* Secure guest parking is available in the lot, ping Brad on Discord to open the gate. Guest parking is in the back right painted as \u201cGUEST\u201d spots. \n* :skull_and_crossbones: **DO NOT PARK IN NUMBERED SPOTS** :skull_and_crossbones:\n\n# From Transit\n\nThe Cotton Mill is only about 1 mile from Fruitvale BART station, however it goes through a pedestrian-unfriendly, industrial part of the neighborhood with a lot of encampments so I would not recommend walking it. It is perfectly fine to bike/scooter/etc. though! \n\n ![](/api/attachments.redirect?id=547e027e-68c4-40c0-8ecc-3e50aba7c2ec)\n\n[Google Maps: Fruitvale to Cotton Mill Studios via Walk/Bike](https://www.google.com/maps/dir/37.7813835,-122.2378542/Fruitvale+BART,+Oakland,+CA+94601/@37.7776882,-122.2352504,16z/data=!4m10!4m9!1m1!4e1!1m5!1m1!1s0x808f86f4a3f0d739:0x60fc93ed71a391b0!2m2!1d-122.225206!2d37.7752293!3e1?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D)\n\n# Cycling Directions\n\nPlease take a look at map before you leave. Because of the train track overpass, going from East 12th Street \u2192 23rd Avenue is a dangerous/bad route for bikes (no shoulder, limited visibility hill, high speed traffic getting to 880, rough road surface, etc).\n\n### Very Bad No Good Intersection\n\nThe intersection at 23rd Ave turning onto E 11th St / Calcot Place is very poorly designed and people constantly blow the lights at high speed. Be careful! Never assume the cars are going to stop.\n\n ![](/api/attachments.redirect?id=5452d24f-0d57-4239-8b2f-d6d520989b48)\n\n### From Downtown Headed East\n\n* [Google Link: Lake Merritt BART to 1091 Calcot Place via Bike](https://www.google.com/maps/dir/Lake+Merritt+Station,+800+Oak+St,+Oakland,+CA+94607/1091+Calcot+Pl,+Oakland,+CA+94606-5044,+USA/@37.7898052,-122.2556352,16.19z/data=!4m19!4m18!1m10!1m1!1s0x808f80cb294063c9:0xb6198c573126a242!2m2!1d-122.2652155!2d37.7970287!3m4!1m2!1d-122.2590238!2d37.7922871!3s0x808f872e03cc9e49:0xc057dc92c8095608!1m5!1m1!1s0x808f86e66880231f:0xc4ebb81204f63886!2m2!1d-122.2381794!2d37.7816762!3e1)\n* Take Embarcadero (aka \u201cBay Trail\u201d route) to 23rd Avenue, cross 880 freeway via bike lane on overpass on 23rd. Take a right onto confusingly signed \u201cE 11 St / Miller Place\u201d which immediately becomes Calcot Place as you go left and under 23rd Ave.\n\n  ![](/api/attachments.redirect?id=8c62d87c-26ae-4b86-887c-56db575c5c1a)\n\n  ### From Fruitvale Station Headed West\n* [Google Link: Fruitvale BART to 1091 Calcot Place via Bike](https://www.google.com/maps/dir/Fruitvale+BART,+Oakland,+CA/1091+Calcot+Pl,+Oakland,+CA+94606-5044,+USA/@37.776886,-122.2329674,16.38z/data=!4m24!4m23!1m15!1m1!1s0x808f86f4a3f0d739:0x60fc93ed71a391b0!2m2!1d-122.225206!2d37.7752293!3m4!1m2!1d-122.2319972!2d37.7764991!3s0x808f86edfaa3d1d9:0xe6f9d1347390eb74!3m4!1m2!1d-122.2334449!2d37.7781265!3s0x808f86ee5a5706a3:0x149631eece763fea!1m5!1m1!1s0x808f86e66880231f:0xc4ebb81204f63886!2m2!1d-122.2381794!2d37.7816762!3e1)\n* Head west from Fruitvale on E 12th Street, take a left onto 29th Avenue and cross the train tracks. Keep going until just before freeway entrance, and take a right on E 10th Street at the light (past the animal shelter on right, opposite the school on your left). Follow that around past Art Haus and then under the 23rd Ave overpass.\n\n  ![](/api/attachments.redirect?id=04e97ca7-ce3a-4e4f-b884-45c9df0449b4)\n\n  \\\n  \\\n\n\\\n",
+      "connections": 0
+    },
+    {
       "id": "074b438f-e9de-4f0c-a6f4-b76575529ab4",
       "title": "Oil of Immolation",
       "urlId": "dxIY4nbdeR",
@@ -358,15 +358,6 @@
       "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
       "createdAt": "2024-05-23T01:38:51.847000+00:00",
       "content": "*Large Construct, unaligned*\n\n\n___\n\n* **Armor Class** 13 (natural armor)\n* **Hit Points** 65 (`10d10 + 10`)\n* **Speed** 20 ft.\n\n\n___\n\n| STR | DEX | CON | INT | WIS | CHA |\n|:---:|:---:|:---:|:---:|:---:|:---:|\n| 18 (+4) | 13 (+1) | 12 (+1) | 1 (-5) | 3 (-4) | 1 (-5) |\n\n\n___\n\n* **Damage Immunities** poison, psychic\n* **Condition Immunities** blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned\n* **Senses** blindsight 60 ft. (blind beyond this radius), passive Perception 6\n* **Languages** \u2014\n* **Challenge** 4 (1,100 XP)\n* **Proficiency Bonus** +2\n\n\n___\n\n***Antimagic Susceptibility.*** The bearskin rug is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the rug must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.\n\n***Damage Transfer.*** While it is grappling a creature, the bearskin rug takes only half the damage dealt to it, and the creature grappled by the rug takes the other half.\n\n***False Appearance.*** While the bearskin rug remains motionless, it is indistinguishable from a normal bearskin rug.\n\n### Actions\n\n***Multiattack.*** The animated bearskin rug makes two attacks: one with its bite and one with its claws. It can use its Envelop in place of its claw attack.\n\n***Bite.*** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (`1d10 + 4`) piercing damage.\n\n***Claws.*** Melee Weapon Attack: +6 to hit, reach 5 ft., one target not grappled by the bearskin rug. Hit: 9 (`1d10 + 4`) piercing damage.\n\n***Envelop.*** Melee Weapon Attack: +6 to hit, reach 5 ft., one Medium or smaller creature. Hit: The creature is grappled (escaped DC 14). Until this grapple ends, the target is restrained, and the rug can't envelop another target.\n\n***Menacing Roar (Recharge 6).*** Each creature within 20 feet of the rug that can hear the roar must succeed on a DC 13 Wisdom saving throw or become frightened for 1 minute. A creature frightened this way must spend its turns trying to move as far away from the rug as it can. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action. At the end of each of its turns and when it takes damage, the creature can repeat the saving throw, ending the effect on itself on a success.\n\n## Animated Bearskin Rug\n\n ![](/api/attachments.redirect?id=c0294267-8bd8-42fe-b100-8e478f911231 \"right-50\")*A shaggy rug made from the skin of a bear suddenly rises up like a billowing sheet. The head snaps its jaws and the whole thing lunges forward, flat and threatening.*\n\n***Inn Protection.*** Inns and hunting lodges in remote locations often hire mages to make animated bearskin rugs. The rugs serve as seemingly harmless decorations that can instantly turn into guardians to drive away burglars, or into bouncers to break up bar fights.\n\n***Bearserk.*** There are rare cases of animated bearskin rugs suddenly going berserk and refusing to follow the commands of their masters. It is unknown what triggers such violence in the constructs. Berserk rugs need to be put down swiftly, as they attack any creature they notice.\n\n***Construct Nature.*** An animated bearskin rug doesn't require air, food, drink, or sleep.\n\n\n---\n\n- [x] [Source: Tome of Beasts 2, page 24](https://5e.dungeon.church/bestiary.html#animated%20bearskin%20rug_tob2)\n\n\\\n",
-      "connections": 0
-    },
-    {
-      "id": "f4e43cc6-76cc-4140-abad-35e7c4d68419",
-      "title": "Ironsworn Rules & Reference",
-      "urlId": "hnnfupcKzs",
-      "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
-      "createdAt": "2023-04-19T22:25:48.602000+00:00",
-      "content": " ![](/api/attachments.redirect?id=d08e9987-4216-44a7-a705-f445f7dfabd0)\n\n[Ironsworn](https://www.ironswornrpg.com/) is a solo or co-op RPG of perilous quests by [Shawn Tomkin](https://linktr.ee/shawntomkin) that is free. In Ironsworn, your character is sworn to undertake tasks and seek out bonds in a dark fantasy setting using a simple, \u201cfiction first\u201d system.\n\nIronsworn is great for worldbuilding, downtime activities, a writing aide, or fleshing out your character\u2019s story.\n\n# Resources\n\n## Core Documents\n\n[Ironsworn Rulebook.pdf 43133141](/api/attachments.redirect?id=148a972b-f2d2-479c-a4dd-551ce16937e8)\n\n[Ironsworn-Playkit.pdf 1567795](/api/attachments.redirect?id=930026d3-dc18-4341-bc99-6c0579bfbd47)\n\n[Ironsworn-Assets-Master-Set-1.pdf 551839](/api/attachments.redirect?id=0aac2d3d-f992-4b22-a28f-d289efdd1b16)\n\n## Links\n\n* [Ironsworn Official](https://www.ironswornrpg.com/downloads) - the rulebook, sheets for playing, asset cards, etc. are all free for download & printing. \n* [Awesome Ironsworn](https://billiam.github.io/awesome-ironsworn/) - A comprehensive collection of links to tools, resources, homebrew, etc.\n* [Ironsworn Discord](https://discord.com/invite/8bRuZwK) - Join this and be sure to check out #share-your-kit channel\n* [The Trove - Ironsworn](https://thetrove.dungeon.church/Ironsworn/) - Dungeon Church\u2019s archive of PDFs and other assets. Notable:\n  * [Traveler\u2019s PDF](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Mobile%20Device%20Edition.pdf) - an extremely helpful PDF rule reference for mobile devices\n  * [Traveler\u2019s DIY](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Traveler%27s%20DIY%20Edition%20%28v1-3-1_220121%29.pdf) - excellent set of printable card references for analog play\n  * [Vaults & Vows](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Vaults%20&%20Vows%20Assets%20%28D&D%20SRD%20Conversion%29.pdf) - alternative assets for Ironsworn converted from the D&D SRD\n  * [Combat Flow Chart](https://thetrove.dungeon.church/Ironsworn/Ironsworn%20-%20Combat%20Moves%20Flowchart.jpg)\n* [Ironsworn: Delve](https://thetrove.dungeon.church/Ironsworn/Ironsworn%20-%20Delve/) - additional rules for exploring dungeons\n\n[https://www.youtube.com/watch?v=9wIYUn4Et5o](https://www.youtube.com/watch?v=9wIYUn4Et5o)\n\n*Playing Ironsworn in Foundry.*\n\n# Share Your Kit\n\nSee the Ironsworn Discord channel for lots of inspiration. Post your own setup here.\n\n## Brad\u2019s Setup\n\n### Digital\n\niPad with Pencil. [Notability](https://notability.com/) + [Xodo PDF](https://apps.apple.com/us/app/xodo-pdf-reader-scanner/id805075929) in dark mode with the [Traveler\u2019s PDF](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Mobile%20Device%20Edition.pdf).\n\n### Analog\n\n* [Rory Story Cubes](https://www.storycubes.com/en/) for the Oracle (Core, Voyage, Actions, Fantasia sets)\n* [Double Six Dice](https://doublesixdice.com/)\n* [Traveler\u2019s DIY cards](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Traveler%27s%20DIY%20Edition%20%28v1-3-1_220121%29.pdf)\n\n\\\n",
       "connections": 0
     },
     {

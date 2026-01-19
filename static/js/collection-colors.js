@@ -2,8 +2,8 @@
 
 const collectionColors = {
   "ffaa3b03-1b56-4131-aedd-f208a0b3ed03": "#00d084",
-  "9eecd4c7-d708-40ca-add0-5f6ec31066cf": "#0366d6",
   "13b87098-500c-490d-ae46-01356387fe88": "#ffbe0b",
+  "9eecd4c7-d708-40ca-add0-5f6ec31066cf": "#0366d6",
   "184c6e39-ef59-49b4-89d8-302d6abae3cf": "#ff4dfa",
   "a60ccdf0-330c-4a08-8511-729aea62ca75": "#9e5cf7",
   "7e8c2f3f-6e08-4b08-b207-33365583a8bf": "#4E5C6E",
