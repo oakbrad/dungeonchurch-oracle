@@ -365,12 +365,38 @@ function zoomToPath(pathNodeIds) {
 }
 
 // Show toast notification
-function showPathToast(message, duration = 2000) {
+let toastTimeout = null;
+function showPathToast(message, duration = 800) {
     const toast = document.getElementById('path-toast');
     toast.textContent = message;
     toast.classList.add('show');
-    setTimeout(() => toast.classList.remove('show'), duration);
+
+    // Clear any existing timeout
+    if (toastTimeout) {
+        clearTimeout(toastTimeout);
+    }
+
+    // Auto-hide after duration
+    toastTimeout = setTimeout(() => {
+        toast.classList.remove('show');
+        toastTimeout = null;
+    }, duration);
 }
+
+// Hide toast immediately (called on click)
+function hidePathToast() {
+    const toast = document.getElementById('path-toast');
+    if (toast.classList.contains('show')) {
+        toast.classList.remove('show');
+        if (toastTimeout) {
+            clearTimeout(toastTimeout);
+            toastTimeout = null;
+        }
+    }
+}
+
+// Dismiss toast on any click
+document.addEventListener('click', hidePathToast);
 
 // Toggle path-finding mode
 function togglePathMode() {
@@ -898,6 +924,9 @@ node.append("circle")
 
         // Hide any existing tooltips immediately without transition
         hideTooltipImmediately();
+
+        // Dismiss any toast message
+        hidePathToast();
 
         // PATH MODE HANDLING
         if (pathModeActive) {
