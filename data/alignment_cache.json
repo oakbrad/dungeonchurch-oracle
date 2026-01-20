@@ -1619,6 +1619,16 @@
       },
       "timestamp": "2026-01-19T11:39:17.483256",
       "title": "Jethro Honeyrock"
+    },
+    "a8474cd96b433ed2": {
+      "alignment": {
+        "law_chaos": -0.8,
+        "good_evil": -0.9,
+        "confidence": 0.85,
+        "source": "llm"
+      },
+      "timestamp": "2026-01-20T11:39:57.822196",
+      "title": "Friedrich von Lichten, The Pale Man"
     }
   },
   "relationships": {
@@ -7627,6 +7637,58 @@
       "timestamp": "2026-01-19T11:39:46.244747",
       "source": "Amethyst Academy",
       "target": "Delirium"
+    },
+    "775d9c76213bd615": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.8,
+        "order_valence": -0.6,
+        "summary": "Expelled for unethical experiments on aides",
+        "source_id": "c62e6a74-ecac-445f-87fa-b9fe97116ecb",
+        "target_id": "4df547d4-7058-4f7d-9d04-f57c91c256ed"
+      },
+      "timestamp": "2026-01-20T11:40:00.033874",
+      "source": "Friedrich von Lichten, The Pale Man",
+      "target": "Amethyst Academy"
+    },
+    "114b53fbbaa6f909": {
+      "result": {
+        "type": "neutral",
+        "moral_valence": 0.0,
+        "order_valence": -0.5,
+        "summary": "Friedrich's disappearance into Delirium",
+        "source_id": "c62e6a74-ecac-445f-87fa-b9fe97116ecb",
+        "target_id": "99f89472-b0b9-40c4-9129-a9e002bc7406"
+      },
+      "timestamp": "2026-01-20T11:40:02.568065",
+      "source": "Friedrich von Lichten, The Pale Man",
+      "target": "Delirium"
+    },
+    "2280d82f258c80e7": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.6,
+        "summary": "Friedrich's presumed death leads to betrayal.",
+        "source_id": "c62e6a74-ecac-445f-87fa-b9fe97116ecb",
+        "target_id": "2172f81a-52e6-4c4e-9ed6-bdb0df1414d3"
+      },
+      "timestamp": "2026-01-20T11:40:04.617213",
+      "source": "Friedrich von Lichten, The Pale Man",
+      "target": "Galmaarden 18: Urban Escape"
+    },
+    "0b0e106e5b1ab73d": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.2,
+        "order_valence": -0.3,
+        "summary": "Friedrich and Zombie Raccoons seek delirium together",
+        "source_id": "c62e6a74-ecac-445f-87fa-b9fe97116ecb",
+        "target_id": "8486080f-c08d-4ec4-aa23-97356abff26c"
+      },
+      "timestamp": "2026-01-20T11:40:06.592188",
+      "source": "Friedrich von Lichten, The Pale Man",
+      "target": "Zombie Raccoon"
     }
   }
 }
