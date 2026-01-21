@@ -118,6 +118,15 @@
       "connections": 0
     },
     {
+      "id": "8abaf115-af57-4910-9e30-d3e55fda9042",
+      "title": "",
+      "urlId": "7cqNWQW4Ou",
+      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
+      "createdAt": "2021-12-03T10:21:02.183000+00:00",
+      "content": "",
+      "connections": 0
+    },
+    {
       "id": "c5a25534-d081-4135-9045-2970a9836a0a",
       "title": "Durandian Guilds",
       "urlId": "VYP24qV8BZ",
@@ -190,42 +199,6 @@
       "connections": 0
     },
     {
-      "id": "b12d36a2-1492-462e-9286-26d43f1fd4b9",
-      "title": "Gideon Runeshot, Powder Mage",
-      "urlId": "Fg3vZTtLm2",
-      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
-      "createdAt": "2025-04-16T17:55:33.132000+00:00",
-      "content": "[Disembodied](https://5e.dungeon.church/races.html#the%20disembodied_ghpg) [Wizard](/doc/wizard-FMhzXhBZIo) with a gun\n\n ![](/api/attachments.redirect?id=de4f7576-71e3-4067-b123-8048931e0db2 \" =1024x1024\")\n\n### Files\n\n[spells-sublist-Gideon Runeshot Spells.json 947](/api/attachments.redirect?id=e35754e2-6d9b-41d0-8e25-4feecc0d8406)\n\n[gideon_spells_rpg_cards.json 26430](/api/attachments.redirect?id=9db135e4-bbe0-4f66-a101-ed3b0e48a4cf)\n\n[Gideon RPG cards.pdf 192941](/api/attachments.redirect?id=cbed95ff-fcaf-41b4-b840-56f268f46453)\n\n\\\n",
-      "connections": 0
-    },
-    {
-      "id": "58d14500-2615-4cd6-8300-3ed3fee6a8af",
-      "title": "Pommepress Family Orchards & Cidery",
-      "urlId": "5cuIaCEs2o",
-      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
-      "createdAt": "2026-01-13T03:43:47.736000+00:00",
-      "content": "Gnome family cidery & meadery where they employ many hardworking goblins.\n\nThey are well known for singing in a quarter called *The Motley Medley*\n\n ![](/api/attachments.redirect?id=063ec2fa-3880-462e-a0dc-9d51d767b3d7 \" =1024x1536\") ![](/api/attachments.redirect?id=49bf46c2-c07f-4120-b5b1-cb043616997e \" =1024x1536\")",
-      "connections": 0
-    },
-    {
-      "id": "d7b13ae5-9d70-48b3-91cd-39e10cdd3d4e",
-      "title": "Elfbark Ales",
-      "urlId": "l0SEeSfVd4",
-      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
-      "createdAt": "2025-06-10T05:37:17.740000+00:00",
-      "content": " ![](/api/attachments.redirect?id=2a6da0fa-f30d-454f-99ad-78019548226b \"full-width\")\n\nOne of the few actual buildings that make up the Longhouse, they are the main purveyors of ale and stew, which is served on a long, log table in the center of the lane.\n\nThe bartender, Jorin, is a surly motherfucker known for chasing off just as many customers as he serves.\n\n ![Jorin](/api/attachments.redirect?id=6c35669c-9852-4a3b-9a35-51292359708e)",
-      "connections": 0
-    },
-    {
-      "id": "8abaf115-af57-4910-9e30-d3e55fda9042",
-      "title": "",
-      "urlId": "7cqNWQW4Ou",
-      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
-      "createdAt": "2021-12-03T10:21:02.183000+00:00",
-      "content": "",
-      "connections": 0
-    },
-    {
       "id": "ef485e4c-cf47-4a88-bb7d-6bcb4e1127d5",
       "title": "",
       "urlId": "YkWsMwoRVU",
@@ -235,12 +208,21 @@
       "connections": 0
     },
     {
-      "id": "f4e43cc6-76cc-4140-abad-35e7c4d68419",
-      "title": "Ironsworn Rules & Reference",
-      "urlId": "hnnfupcKzs",
-      "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
-      "createdAt": "2023-04-19T22:25:48.602000+00:00",
-      "content": " ![](/api/attachments.redirect?id=d08e9987-4216-44a7-a705-f445f7dfabd0)\n\n[Ironsworn](https://www.ironswornrpg.com/) is a solo or co-op RPG of perilous quests by [Shawn Tomkin](https://linktr.ee/shawntomkin) that is free. In Ironsworn, your character is sworn to undertake tasks and seek out bonds in a dark fantasy setting using a simple, \u201cfiction first\u201d system.\n\nIronsworn is great for worldbuilding, downtime activities, a writing aide, or fleshing out your character\u2019s story.\n\n# Resources\n\n## Core Documents\n\n[Ironsworn Rulebook.pdf 43133141](/api/attachments.redirect?id=148a972b-f2d2-479c-a4dd-551ce16937e8)\n\n[Ironsworn-Playkit.pdf 1567795](/api/attachments.redirect?id=930026d3-dc18-4341-bc99-6c0579bfbd47)\n\n[Ironsworn-Assets-Master-Set-1.pdf 551839](/api/attachments.redirect?id=0aac2d3d-f992-4b22-a28f-d289efdd1b16)\n\n## Links\n\n* [Ironsworn Official](https://www.ironswornrpg.com/downloads) - the rulebook, sheets for playing, asset cards, etc. are all free for download & printing. \n* [Awesome Ironsworn](https://billiam.github.io/awesome-ironsworn/) - A comprehensive collection of links to tools, resources, homebrew, etc.\n* [Ironsworn Discord](https://discord.com/invite/8bRuZwK) - Join this and be sure to check out #share-your-kit channel\n* [The Trove - Ironsworn](https://thetrove.dungeon.church/Ironsworn/) - Dungeon Church\u2019s archive of PDFs and other assets. Notable:\n  * [Traveler\u2019s PDF](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Mobile%20Device%20Edition.pdf) - an extremely helpful PDF rule reference for mobile devices\n  * [Traveler\u2019s DIY](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Traveler%27s%20DIY%20Edition%20%28v1-3-1_220121%29.pdf) - excellent set of printable card references for analog play\n  * [Vaults & Vows](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Vaults%20&%20Vows%20Assets%20%28D&D%20SRD%20Conversion%29.pdf) - alternative assets for Ironsworn converted from the D&D SRD\n  * [Combat Flow Chart](https://thetrove.dungeon.church/Ironsworn/Ironsworn%20-%20Combat%20Moves%20Flowchart.jpg)\n* [Ironsworn: Delve](https://thetrove.dungeon.church/Ironsworn/Ironsworn%20-%20Delve/) - additional rules for exploring dungeons\n\n[https://www.youtube.com/watch?v=9wIYUn4Et5o](https://www.youtube.com/watch?v=9wIYUn4Et5o)\n\n*Playing Ironsworn in Foundry.*\n\n# Share Your Kit\n\nSee the Ironsworn Discord channel for lots of inspiration. Post your own setup here.\n\n## Brad\u2019s Setup\n\n### Digital\n\niPad with Pencil. [Notability](https://notability.com/) + [Xodo PDF](https://apps.apple.com/us/app/xodo-pdf-reader-scanner/id805075929) in dark mode with the [Traveler\u2019s PDF](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Mobile%20Device%20Edition.pdf).\n\n### Analog\n\n* [Rory Story Cubes](https://www.storycubes.com/en/) for the Oracle (Core, Voyage, Actions, Fantasia sets)\n* [Double Six Dice](https://doublesixdice.com/)\n* [Traveler\u2019s DIY cards](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Traveler%27s%20DIY%20Edition%20%28v1-3-1_220121%29.pdf)\n\n\\\n",
+      "id": "b12d36a2-1492-462e-9286-26d43f1fd4b9",
+      "title": "Gideon Runeshot, Powder Mage",
+      "urlId": "Fg3vZTtLm2",
+      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
+      "createdAt": "2025-04-16T17:55:33.132000+00:00",
+      "content": "[Disembodied](https://5e.dungeon.church/races.html#the%20disembodied_ghpg) [Wizard](/doc/wizard-FMhzXhBZIo) with a gun\n\n ![](/api/attachments.redirect?id=de4f7576-71e3-4067-b123-8048931e0db2 \" =1024x1024\")\n\n### Files\n\n[spells-sublist-Gideon Runeshot Spells.json 947](/api/attachments.redirect?id=e35754e2-6d9b-41d0-8e25-4feecc0d8406)\n\n[gideon_spells_rpg_cards.json 26430](/api/attachments.redirect?id=9db135e4-bbe0-4f66-a101-ed3b0e48a4cf)\n\n[Gideon RPG cards.pdf 192941](/api/attachments.redirect?id=cbed95ff-fcaf-41b4-b840-56f268f46453)\n\n\\\n",
+      "connections": 0
+    },
+    {
+      "id": "d7b13ae5-9d70-48b3-91cd-39e10cdd3d4e",
+      "title": "Elfbark Ales",
+      "urlId": "l0SEeSfVd4",
+      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
+      "createdAt": "2025-06-10T05:37:17.740000+00:00",
+      "content": " ![](/api/attachments.redirect?id=2a6da0fa-f30d-454f-99ad-78019548226b \"full-width\")\n\nOne of the few actual buildings that make up the Longhouse, they are the main purveyors of ale and stew, which is served on a long, log table in the center of the lane.\n\nThe bartender, Jorin, is a surly motherfucker known for chasing off just as many customers as he serves.\n\n ![Jorin](/api/attachments.redirect?id=6c35669c-9852-4a3b-9a35-51292359708e)",
       "connections": 0
     },
     {
@@ -259,6 +241,15 @@
       "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
       "createdAt": "2022-03-31T02:10:45.228000+00:00",
       "content": " ![](/api/attachments.redirect?id=03c2e2a7-9e3a-41d6-8bb7-2948b0af57c3)\n\nTechnical stuff that needs doing.\n\n# API Reference\n\n* [Outline](https://www.getoutline.com/developers)\n* [Discord](https://discord.com/developers/docs/reference)\n* [FoundryVTT](https://foundryvtt.com/api/)\n\n# TODO\n\n## Lore Discord Bot\n\n- [ ] GPT Assistant to Discord Bot?\n- [ ] Discord Bot \u2192 Outline API search with /slash command?\n\n## Monster Manual Import to Wiki\n\n- [ ] Convert Monster Manual + other module creatures into [Markdown Monster](/doc/monsters-kz72B8gixc) entries\n\n* [JSON](https://www.dropbox.com/sh/mynr6seqj4uelyv/AAAUxNI2-lY16XAq7am4Ujhja?dl=0) (meant for [Improved Initiativ](https://improved-initiative.com)) or [XML](https://github.com/kinkofer/FightClub5eXML) (used by Fight Club and a few other phone apps)\n*  Would be nice to get other missing spells/classes/class features not already listed as imported to [5E Content](https://lore.dungeon.church/collection/5e-content-aKdi46vuQN)\n* This project exists, haven\u2019t tried it: <https://github.com/lucywhg1/improved-initiative-json-converter> (Homebrewery \u201cwide\u201d is same as our [Monster Template](/doc/monster-statblock-wRK4E6KT1p))\n\n  \\\n  ## FoundryVTT\n\n### Setting up New Game World in Foundry with Content\n\n* New World with 5E as Game Type\n* Turn on Modules - Module Settings\n  * Plutonium - Set https://5e.dungeon.church as URL\n  * DDB Importer - [Set DDB cookie value](https://cdn.discordapp.com/attachments/761196994898165781/781176499155238942/manually-find-cookie.png) to enable full features\n  * Set 5E Tidy Sheet as Default\n  * System Settings\n  * **ENABLE DDB PROXY** - In Browser Console per game:\n    * `game.settings.set(\"ddb-importer\", \"custom-proxy\", true); game.settings.set(\"ddb-importer\", \"api-endpoint\", \"https://ddb-proxy.dungeon.church\");`\n* Import from 5E Tools\n  * Monsters (Compendium)\n  * Items (Compendium)\n  * Spells (Items)\n\n## Self Host Improved Initiative\n\nThe best [combat tracker](https://improved-initiative.com/) for DMs, which is possible to self host, but since the developer makes money from this service he provides no documentation for doing so\n\n* Github <https://github.com/cynicaloptimist/improved-initiative>\n\n\\\n\\\n",
+      "connections": 0
+    },
+    {
+      "id": "f4e43cc6-76cc-4140-abad-35e7c4d68419",
+      "title": "Ironsworn Rules & Reference",
+      "urlId": "hnnfupcKzs",
+      "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
+      "createdAt": "2023-04-19T22:25:48.602000+00:00",
+      "content": " ![](/api/attachments.redirect?id=d08e9987-4216-44a7-a705-f445f7dfabd0)\n\n[Ironsworn](https://www.ironswornrpg.com/) is a solo or co-op RPG of perilous quests by [Shawn Tomkin](https://linktr.ee/shawntomkin) that is free. In Ironsworn, your character is sworn to undertake tasks and seek out bonds in a dark fantasy setting using a simple, \u201cfiction first\u201d system.\n\nIronsworn is great for worldbuilding, downtime activities, a writing aide, or fleshing out your character\u2019s story.\n\n# Resources\n\n## Core Documents\n\n[Ironsworn Rulebook.pdf 43133141](/api/attachments.redirect?id=148a972b-f2d2-479c-a4dd-551ce16937e8)\n\n[Ironsworn-Playkit.pdf 1567795](/api/attachments.redirect?id=930026d3-dc18-4341-bc99-6c0579bfbd47)\n\n[Ironsworn-Assets-Master-Set-1.pdf 551839](/api/attachments.redirect?id=0aac2d3d-f992-4b22-a28f-d289efdd1b16)\n\n## Links\n\n* [Ironsworn Official](https://www.ironswornrpg.com/downloads) - the rulebook, sheets for playing, asset cards, etc. are all free for download & printing. \n* [Awesome Ironsworn](https://billiam.github.io/awesome-ironsworn/) - A comprehensive collection of links to tools, resources, homebrew, etc.\n* [Ironsworn Discord](https://discord.com/invite/8bRuZwK) - Join this and be sure to check out #share-your-kit channel\n* [The Trove - Ironsworn](https://thetrove.dungeon.church/Ironsworn/) - Dungeon Church\u2019s archive of PDFs and other assets. Notable:\n  * [Traveler\u2019s PDF](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Mobile%20Device%20Edition.pdf) - an extremely helpful PDF rule reference for mobile devices\n  * [Traveler\u2019s DIY](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Traveler%27s%20DIY%20Edition%20%28v1-3-1_220121%29.pdf) - excellent set of printable card references for analog play\n  * [Vaults & Vows](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Vaults%20&%20Vows%20Assets%20%28D&D%20SRD%20Conversion%29.pdf) - alternative assets for Ironsworn converted from the D&D SRD\n  * [Combat Flow Chart](https://thetrove.dungeon.church/Ironsworn/Ironsworn%20-%20Combat%20Moves%20Flowchart.jpg)\n* [Ironsworn: Delve](https://thetrove.dungeon.church/Ironsworn/Ironsworn%20-%20Delve/) - additional rules for exploring dungeons\n\n[https://www.youtube.com/watch?v=9wIYUn4Et5o](https://www.youtube.com/watch?v=9wIYUn4Et5o)\n\n*Playing Ironsworn in Foundry.*\n\n# Share Your Kit\n\nSee the Ironsworn Discord channel for lots of inspiration. Post your own setup here.\n\n## Brad\u2019s Setup\n\n### Digital\n\niPad with Pencil. [Notability](https://notability.com/) + [Xodo PDF](https://apps.apple.com/us/app/xodo-pdf-reader-scanner/id805075929) in dark mode with the [Traveler\u2019s PDF](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Mobile%20Device%20Edition.pdf).\n\n### Analog\n\n* [Rory Story Cubes](https://www.storycubes.com/en/) for the Oracle (Core, Voyage, Actions, Fantasia sets)\n* [Double Six Dice](https://doublesixdice.com/)\n* [Traveler\u2019s DIY cards](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Traveler%27s%20DIY%20Edition%20%28v1-3-1_220121%29.pdf)\n\n\\\n",
       "connections": 0
     },
     {
