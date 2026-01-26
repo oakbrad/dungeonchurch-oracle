@@ -1254,32 +1254,6 @@
       }
     },
     {
-      "id": "ddc5ab1d-3388-417b-91b7-8a4ecc793703",
-      "title": "Confederacy of Hearthships",
-      "urlId": "EDksxQvprt",
-      "collectionId": "28015ad0-50f5-4495-a6c5-2415436a3d40",
-      "createdAt": "2024-04-24T23:11:08.407000+00:00",
-      "content": " ![](/api/attachments.redirect?id=a44a36d6-1957-43f4-af22-c7cbfd6f1245)\n\n# History\n\nThe floating pirate state of the hearthships has it\u2019s origins in the descendants of the shipbuilders and sailors who carried the [Dwarven Migration](/doc/dwarf-durandar-UOdggQRi6Y) across the Azure Sea.\n\nWhile historically the fleets were directly under the control of the [Kingdom](/doc/durandar-sWDxZHDVIC) and the [Arkwrights Guild](/doc/arkwrights-guild-xpUNyD7GMm), the confederacy was born when that official relationship ended. For their service in the Migration, the dwarvish King gave sailors a choice: citizenship and a pension in [Durandar](/doc/durandar-sWDxZHDVIC), or ownership of their hearthship. Those few who chose life on their ships ratified the first \u201cArticles of Agreement\u201d amongst themselves shortly after, marking the formal beginning of the Confederacy.\n\nIn current times, the confederacy operates as a loose alliance of pirates and other free-minded individuals who operate at sea and out of allied ports and pirate settlements in the north. While the majority of confederacy aligned ships and crews are dwarvish, anyone is free to join and many do.\n\n# Organization\n\nThe Confederacy is not a traditional nation-state, but a loosely organized alliance of sovereign ships that agree to a common oath. There is no single leader or central authority, instead confederates take their oaths very seriously and see it as their duty to enforce them among their own crews and fleets. Ships that are known to violate or act unworthy of their oaths can be voted out of the confederacy and marked as targets as punishment.\n\n### Articles of Agreement\n\nWhile each ship maintains it\u2019s own code, the common bond among all confederacy members is their allegiance to the Articles of Agreement, or \u201cConfederate\u2019s Oath\u201d. These articles outline the pirate\u2019s code of mutual defense, distribution of profits, operating guidelines for captain\u2019s councils, and standards for crew justice & discipline.\n\n### Leadership & Crews\n\nEach ship is autonomous, and among the Azure Sea pirates this tends to follow two models - a hierarchy under the command of a captain, or a democratically organized crew who elect their leadership positions temporarily. Dwarven crews tend to follow the traditional hierarchy, handed down from the original Arkwrights, while those not as connected to the dwarven migration or operating out of [New Galmaarden](/doc/new-galmaarden-03tcpxxc2t) tend toward the democratic approach. \n\nWhatever way crews choose to organize themselves, when making decisions that affect a fleet of ships a temporary Council of Captains is called, with each ship sending a representative to represent their crews.\n\n### Operations\n\nThe pirates largely operate on friendly terms with [New Galmaarden](/doc/new-galmaarden-03tcpxxc2t) and smaller towns on their routes, while antagonizing or operating outside the law of the [Striborg Navy](/doc/striborg-navy-ndvIs6jZtX) that patrols the [Striborg](/doc/striborg-mZk9jSyJUV) Strait & southern Azure Sea waters. Confederate ships often come together for large-scale raids, pooling their resources and distributing and coordinating their attacks on well fortified or defended targets.\n\nConfederate ships often take safe harbor in small pirate towns and settlements on the northernmost coasts furthest from Striborg. These towns often become centers for the Captain\u2019s Councils, often serving as seasonal destination for ships where business, sailor recruiting, and disputes are resolved among crews - serving as temporary, physical capitals for purposes of the Confederacy.\n\n# Symbols\n\n* **Flag**: A burning anchor on a black background\n\n# Known Affiliations\n\n[The Storm Barons](/doc/storm-barons-9bIflGjrAd) are usually referred to as a \u201csplinter group\u201d, although they are known to fly under the flag of the Confederacy and participate in their Councils on occasion. This group is responsible for the more audacious acts of violence and the most profitable types of drug trafficking. While their origins are in the confederacy, it\u2019s unclear how much cooperation they get from member ships.\n\n## Confederate Ships\n\n* *[The Sea Ghost](/doc/the-sea-ghost-lvA35qmzaA)* - [Captain Strezza](/doc/strezza-pvL6kQtaEA)\n* *[Illusion\u2019s Fortune ](/doc/illusions-fortune-Eufk48Ts8B)*- [Captain Sanbalet](/doc/sanbalet-the-Zt2T42UM2E)\n\n ![](/api/attachments.redirect?id=b8a1a4f6-6912-42a3-b556-54cd9e54e576 \" =4000x4000\")\n\n\\\n",
-      "connections": 19,
-      "alignment": {
-        "stated": {
-          "law_chaos": -0.7,
-          "good_evil": -0.2
-        },
-        "behavioral": {
-          "law_chaos": -0.6473684210526316,
-          "good_evil": 0.06447368421052624
-        },
-        "final": {
-          "law_chaos": -0.6473684210526316,
-          "good_evil": 0.06447368421052624
-        },
-        "confidence": 0.8,
-        "drift": 0.09528615169000006,
-        "source": "llm"
-      }
-    },
-    {
       "id": "8b0304d3-8a74-4232-933d-35a8f62a490f",
       "title": "Grim Mold",
       "urlId": "US6JMu5NLP",
@@ -1302,6 +1276,32 @@
         },
         "confidence": 0.7,
         "drift": 0.0,
+        "source": "llm"
+      }
+    },
+    {
+      "id": "ddc5ab1d-3388-417b-91b7-8a4ecc793703",
+      "title": "Confederacy of Hearthships",
+      "urlId": "EDksxQvprt",
+      "collectionId": "28015ad0-50f5-4495-a6c5-2415436a3d40",
+      "createdAt": "2024-04-24T23:11:08.407000+00:00",
+      "content": " ![](/api/attachments.redirect?id=a44a36d6-1957-43f4-af22-c7cbfd6f1245)\n\n# History\n\nThe floating pirate state of the hearthships has it\u2019s origins in the descendants of the shipbuilders and sailors who carried the [Dwarven Migration](/doc/dwarf-durandar-UOdggQRi6Y) across the Azure Sea.\n\nWhile historically the fleets were directly under the control of the [Kingdom](/doc/durandar-sWDxZHDVIC) and the [Arkwrights Guild](/doc/arkwrights-guild-xpUNyD7GMm), the confederacy was born when that official relationship ended. For their service in the Migration, the dwarvish King gave sailors a choice: citizenship and a pension in [Durandar](/doc/durandar-sWDxZHDVIC), or ownership of their hearthship. Those few who chose life on their ships ratified the first \u201cArticles of Agreement\u201d amongst themselves shortly after, marking the formal beginning of the Confederacy.\n\nIn current times, the confederacy operates as a loose alliance of pirates and other free-minded individuals who operate at sea and out of allied ports and pirate settlements in the north. While the majority of confederacy aligned ships and crews are dwarvish, anyone is free to join and many do.\n\n# Organization\n\nThe Confederacy is not a traditional nation-state, but a loosely organized alliance of sovereign ships that agree to a common oath. There is no single leader or central authority, instead confederates take their oaths very seriously and see it as their duty to enforce them among their own crews and fleets. Ships that are known to violate or act unworthy of their oaths can be voted out of the confederacy and marked as targets as punishment.\n\n### Articles of Agreement\n\nWhile each ship maintains it\u2019s own code, the common bond among all confederacy members is their allegiance to the Articles of Agreement, or \u201cConfederate\u2019s Oath\u201d. These articles outline the pirate\u2019s code of mutual defense, distribution of profits, operating guidelines for captain\u2019s councils, and standards for crew justice & discipline.\n\n### Leadership & Crews\n\nEach ship is autonomous, and among the Azure Sea pirates this tends to follow two models - a hierarchy under the command of a captain, or a democratically organized crew who elect their leadership positions temporarily. Dwarven crews tend to follow the traditional hierarchy, handed down from the original Arkwrights, while those not as connected to the dwarven migration or operating out of [New Galmaarden](/doc/new-galmaarden-03tcpxxc2t) tend toward the democratic approach. \n\nWhatever way crews choose to organize themselves, when making decisions that affect a fleet of ships a temporary Council of Captains is called, with each ship sending a representative to represent their crews.\n\n### Operations\n\nThe pirates largely operate on friendly terms with [New Galmaarden](/doc/new-galmaarden-03tcpxxc2t) and smaller towns on their routes, while antagonizing or operating outside the law of the [Striborg Navy](/doc/striborg-navy-ndvIs6jZtX) that patrols the [Striborg](/doc/striborg-mZk9jSyJUV) Strait & southern Azure Sea waters. Confederate ships often come together for large-scale raids, pooling their resources and distributing and coordinating their attacks on well fortified or defended targets.\n\nConfederate ships often take safe harbor in small pirate towns and settlements on the northernmost coasts furthest from Striborg. These towns often become centers for the Captain\u2019s Councils, often serving as seasonal destination for ships where business, sailor recruiting, and disputes are resolved among crews - serving as temporary, physical capitals for purposes of the Confederacy. The most famous of these is [Blue Harbour](/doc/blue-harbour-BvSEhfEXJ5).\n\n# Symbols\n\n* **Flag**: A burning anchor on a black background\n\n# Known Affiliations\n\n[The Storm Barons](/doc/storm-barons-9bIflGjrAd) are usually referred to as a \u201csplinter group\u201d, although they are known to fly under the flag of the Confederacy and participate in their Councils on occasion. This group is responsible for the more audacious acts of violence and the most profitable types of drug trafficking. While their origins are in the confederacy, it\u2019s unclear how much cooperation they get from member ships.\n\n## Confederate Ships\n\n* *[The Sea Ghost](/doc/the-sea-ghost-lvA35qmzaA)* - [Captain Strezza](/doc/strezza-pvL6kQtaEA)\n* *[Illusion\u2019s Fortune ](/doc/illusions-fortune-Eufk48Ts8B)*- [Captain Sanbalet](/doc/sanbalet-the-Zt2T42UM2E)\n\n ![](/api/attachments.redirect?id=b8a1a4f6-6912-42a3-b556-54cd9e54e576 \" =4000x4000\")\n\n\\\n",
+      "connections": 19,
+      "alignment": {
+        "stated": {
+          "law_chaos": -0.7,
+          "good_evil": -0.2
+        },
+        "behavioral": {
+          "law_chaos": -0.6473684210526316,
+          "good_evil": 0.06447368421052624
+        },
+        "final": {
+          "law_chaos": -0.6473684210526316,
+          "good_evil": 0.06447368421052624
+        },
+        "confidence": 0.8,
+        "drift": 0.09528615169000006,
         "source": "llm"
       }
     },
@@ -21819,7 +21819,7 @@
       "source": "49d71504-39b8-4712-9ea6-35ab971342b9",
       "target": "ddc5ab1d-3388-417b-91b7-8a4ecc793703",
       "creation_time": "2024-07-14T19:40:31.060000+00:00",
-      "direction": "unidirectional"
+      "direction": "bidirectional"
     },
     {
       "source": "30a8ced1-25eb-40ff-973a-e8b7fb961c45",
