@@ -1629,6 +1629,36 @@
       },
       "timestamp": "2026-01-20T11:39:57.822196",
       "title": "Friedrich von Lichten, The Pale Man"
+    },
+    "13a360d3b450e974": {
+      "alignment": {
+        "law_chaos": -0.7,
+        "good_evil": -0.3,
+        "confidence": 0.8,
+        "source": "llm"
+      },
+      "timestamp": "2026-01-29T11:44:34.516999",
+      "title": "Confederacy of Hearthships"
+    },
+    "f384f9ed899ce2fa": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": 0.7,
+        "confidence": 0.8,
+        "source": "llm"
+      },
+      "timestamp": "2026-01-29T11:44:36.790499",
+      "title": "K\u00e1ra Leiptrborinn"
+    },
+    "b71579f380a0dcf6": {
+      "alignment": {
+        "law_chaos": 0.0,
+        "good_evil": 0.0,
+        "confidence": 0.3,
+        "source": "llm"
+      },
+      "timestamp": "2026-01-29T11:44:39.178275",
+      "title": "Party Boat"
     }
   },
   "relationships": {
@@ -7689,6 +7719,136 @@
       "timestamp": "2026-01-20T11:40:06.592188",
       "source": "Friedrich von Lichten, The Pale Man",
       "target": "Zombie Raccoon"
+    },
+    "b0e631aa8681a7de": {
+      "result": {
+        "type": "created",
+        "moral_valence": 0.5,
+        "order_valence": 0.2,
+        "summary": "Confederacy formed after official ties ended",
+        "source_id": "ddc5ab1d-3388-417b-91b7-8a4ecc793703",
+        "target_id": "150115d4-7df1-4493-a6b6-eb62cf9a1dbf"
+      },
+      "timestamp": "2026-01-29T11:44:41.350064",
+      "source": "Confederacy of Hearthships",
+      "target": "Arkwrights Guild"
+    },
+    "4a561ae4baeb294a": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "The Confederacy and Sea Ghost are allies.",
+        "source_id": "ddc5ab1d-3388-417b-91b7-8a4ecc793703",
+        "target_id": "a09371da-c1c7-42f3-98f8-1980c15060a4"
+      },
+      "timestamp": "2026-01-29T11:44:43.282478",
+      "source": "Confederacy of Hearthships",
+      "target": "The Sea Ghost"
+    },
+    "e484bc23a28ef867": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Confederacy and Strezza share mutual interests.",
+        "source_id": "ddc5ab1d-3388-417b-91b7-8a4ecc793703",
+        "target_id": "4d1a4aaf-b6e8-4b0e-b102-7dadcb33f0a2"
+      },
+      "timestamp": "2026-01-29T11:44:46.125954",
+      "source": "Confederacy of Hearthships",
+      "target": "Strezza"
+    },
+    "8a55becf11c1893f": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.5,
+        "order_valence": 0.0,
+        "summary": "Confederacy and Storm Barons share interests",
+        "source_id": "ddc5ab1d-3388-417b-91b7-8a4ecc793703",
+        "target_id": "2bbdab41-0b68-4011-b45e-20d2157feff5"
+      },
+      "timestamp": "2026-01-29T11:44:47.375817",
+      "source": "Confederacy of Hearthships",
+      "target": "Storm Barons"
+    },
+    "92e21949e781e4a7": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "K\u00e1ra and Durandar share a strong alliance.",
+        "source_id": "91b5b6ea-b244-45a3-8589-d4e8f60803fd",
+        "target_id": "1231ad1f-bcf9-49c1-abce-39aa344d3480"
+      },
+      "timestamp": "2026-01-29T11:44:49.539904",
+      "source": "K\u00e1ra Leiptrborinn",
+      "target": "Durandar"
+    },
+    "a62b63666930ae79": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.8,
+        "order_valence": 0.5,
+        "summary": "K\u00e1ra and Durandar share a strong alliance",
+        "source_id": "91b5b6ea-b244-45a3-8589-d4e8f60803fd",
+        "target_id": "e0e46905-cc96-4420-ad53-d9851431b60d"
+      },
+      "timestamp": "2026-01-29T11:44:50.701199",
+      "source": "K\u00e1ra Leiptrborinn",
+      "target": "Dwarf (Durandar)"
+    },
+    "c087bd20b1effc51": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.7,
+        "order_valence": 0.8,
+        "summary": "Sigr\u00fan works honestly at the Guild",
+        "source_id": "91b5b6ea-b244-45a3-8589-d4e8f60803fd",
+        "target_id": "150115d4-7df1-4493-a6b6-eb62cf9a1dbf"
+      },
+      "timestamp": "2026-01-29T11:44:52.286974",
+      "source": "K\u00e1ra Leiptrborinn",
+      "target": "Arkwrights Guild"
+    },
+    "91c7f2c5b04f93ff": {
+      "result": {
+        "type": "traded",
+        "moral_valence": -0.8,
+        "order_valence": -0.7,
+        "summary": "Profiting from drug trafficking activities",
+        "source_id": "ddc5ab1d-3388-417b-91b7-8a4ecc793703",
+        "target_id": "01a1393b-155a-4130-840d-771b4e5a4c26"
+      },
+      "timestamp": "2026-01-29T11:44:53.430898",
+      "source": "Confederacy of Hearthships",
+      "target": "Substances"
+    },
+    "c34c73b922be1715": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Collaborative partnership for mutual benefit",
+        "source_id": "ddc5ab1d-3388-417b-91b7-8a4ecc793703",
+        "target_id": "a1dd120f-5ac6-4c09-a402-a3f130772db8"
+      },
+      "timestamp": "2026-01-29T11:44:55.218663",
+      "source": "Confederacy of Hearthships",
+      "target": "Party Boat"
+    },
+    "53d84c4ecdf4d190": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "K\u00e1ra serves as the boatswain on the ship.",
+        "source_id": "a1dd120f-5ac6-4c09-a402-a3f130772db8",
+        "target_id": "91b5b6ea-b244-45a3-8589-d4e8f60803fd"
+      },
+      "timestamp": "2026-01-29T11:44:56.597156",
+      "source": "Party Boat",
+      "target": "K\u00e1ra Leiptrborinn"
     }
   }
 }
