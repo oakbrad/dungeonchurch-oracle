@@ -55,24 +55,6 @@
       "connections": 0
     },
     {
-      "id": "38310564-2e34-4f13-ad4d-2171a74eccf0",
-      "title": "Original Commissions",
-      "urlId": "UfC7ojbPA8",
-      "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
-      "createdAt": "2024-10-05T23:58:01.664000+00:00",
-      "content": "# Fonts\n\n## Waning Star by [Heavy Symmetry](https://www.instagram.com/heavy_symmetry)\n\n[Waning Star_extended.zip 1619164](/api/attachments.redirect?id=380da760-cbec-4d2e-8dd1-076d8c1728bb)\n\n[Waning Star specimen.pdf 998733](/api/attachments.redirect?id=1e50e048-b8d4-4147-9c9c-054c43ae84d0)\n\nSmall Biz License\n\n ![](/api/attachments.redirect?id=a65a5112-1398-4ee2-aed5-7bffa9e133e8)\n\n# Logo & Sigil\n\n## by [Heavy Symmetry](https://www.instagram.com/heavy_symmetry)\n\nAll source files and variations in high res PNG and vector SVG:\n\n[dungeonchurch.zip 10924625](/api/attachments.redirect?id=2bbebcb0-9a80-4c7a-9f37-3fefe1ef9d93)\n\n ![Chrome](/api/attachments.redirect?id=945bbf5f-5742-46ce-ad50-42aa2aeb347f \" =3840x2160\") ![White Sharp](/api/attachments.redirect?id=d26c3339-2d05-4f25-adb9-00faf3b2d41f \" =1125x1125\")\n\n ![White Organic](/api/attachments.redirect?id=079357f7-7e40-4777-930c-176d3be58c63 \" =1125x1125\")\n\n ![Sigil](/api/attachments.redirect?id=e0061f66-943f-49a6-8c41-fb452434443d \" =1125x1125\") ![Brad's RBW Chrome edit](/api/attachments.redirect?id=e1a110e0-9e1d-48df-b513-b9b0f3f9a561 \" =3840x2160\")\n\n[logo-chrome-red.psd 20988696](/api/attachments.redirect?id=eba70c1a-9800-46f7-b131-6789ee182389)\n\n\\\n",
-      "connections": 0
-    },
-    {
-      "id": "b18be2f0-2d34-4e36-8056-a7939cafa83e",
-      "title": "Gamer Tag Directory",
-      "urlId": "MHfI6wHjTc",
-      "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
-      "createdAt": "2024-09-07T20:11:49.344000+00:00",
-      "content": "Let\u2019s be internet gamer friends! Add your usernames and friend codes to the list.\n\n[https://docs.google.com/spreadsheets/d/1b4Cesamx93WZeY8jaJNOlnli94EU7Fdzxm88piX0G0A/edit?gid=0#gid=0](https://docs.google.com/spreadsheets/d/1b4Cesamx93WZeY8jaJNOlnli94EU7Fdzxm88piX0G0A/edit?gid=0#gid=0)\n\n\\\n",
-      "connections": 0
-    },
-    {
       "id": "afd4985e-c2ec-4c86-929a-623bfbe69ce9",
       "title": "Brooch of Witchsight",
       "urlId": "Do7tfU7V9e",
@@ -88,6 +70,24 @@
       "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
       "createdAt": "2025-01-08T00:06:19.025000+00:00",
       "content": " ![](/api/attachments.redirect?id=f097d39e-f384-4027-a4be-f22311363aad)Objectively the best internet pew pew game to play with your friends, we have a death match server running at `dungeon.church:27960`\n\nCurated fantasy-themed map rotation and some familiar NPC bots.\n\n# ioQuake Setup\n\nioQuake3 is a free game engine that runs on Mac / Windows / Linux computers. You need to install the engine, then add the game files.\n\n\n:::info\nThey have a [Player Guide](https://ioquake3.org/help/players-guide) here with more details.\n\n:::\n\n\n1. [Download and install ioQuake3](https://ioquake3.org/) app![Map: Ecstatica](/api/attachments.redirect?id=08b6cad8-39a2-4e5f-b34e-20684fbe8960 \"right-50 =337x253\")\n2. [Download the patch update](https://files.ioquake3.org/quake3-latest-pk3s.zip) from iD Software and unzip it.\n3. :pirate_flag::shushing_face: [Download the actual game file](http://quake.dungeon.church/baseq3/pak0.pk3) `pak0.pk3`\n4. Go to the Quake 3 application folder. On a Mac, use Finder to *Go\u2192Go to Folder* & navigate to `~/Library/Application Support/Quake3`. Put the *pak0.pk3* game file in `baseq3`\n5. Take the two folders there were in the patch zip (`baseq3` & `missionpack`) and copy the pk3 files into the appropriate subfolders in the application folder.\n6. Start the game, if it asks for a CD Key, use: `RC7GSLHWJP2B3TAD`\n7. At this point you will probably want to go into the settings and mess around with resolution etc. and set up your player. One required setting (to download the custom maps) you need to have *Setup\u2192Game Options\u2192Automatic Downloads* turned `on`\n\n### Join Server\n\n:partying_face: You can now go to *Multiplayer\u2192Specify* and enter address `dungeon.church` to join\n\n### Optional\n\n* Improve the graphics with [Neural Upscale Textures](https://www.moddb.com/mods/quake-3-neural-upscale/addons) mod![Map: Windsong Keep](/api/attachments.redirect?id=a5b04c6e-58b5-4e02-b900-1f853b6978bd \"right-50 =224x168\")\n* [Additional Player Skins](https://www.moddb.com/games/quake-iii-arena/addons/quake-3-model-pack)\n* In the game console (accessed in Quake 3 by pressing the \\~ key), you can enter additional commands to improve performance on modern computers:\n  * `/snaps 40`\n  * `/rate 2500`\n  * `/cl_maxpackets 125`\n  * `/com_maxfps 125`\n  * `/com_hunkMegs 512`\n  * and to bookmark our server `/seta server1 dungeon.church:27960`\n* If you have a widescreen monitor [Flexible HUD mod](https://clover.moe/flexible-hud-for-ioq3/) will fix the menus\n\n# GameTracker Stats\n\n[Link](https://www.gametracker.com/server_info/192.9.236.115:27960/) - keeps track of player stats\n\n[https://www.gametracker.com/server%5Finfo/dungeon.church:27960/](https://www.gametracker.com/server%5Finfo/dungeon.church:27960/)\n\n# Additional Resources\n\n* Windows: you can still buy the original game on [Steam](https://store.steampowered.com/app/2200/Quake_III_Arena/)\n* [Extremely old school website with an archive of player models](https://ws.q3df.org/models/)\n* [Apple Gaming Wiki notes](https://www.applegamingwiki.com/wiki/Quake_3_Arena)\n* [lvlworld](https://lvlworld.com/) - community database of Q3A levels\n\n ![Map: Fat Plonker](/api/attachments.redirect?id=3220167d-3c70-497b-a87e-40e58f65e1cb)",
+      "connections": 0
+    },
+    {
+      "id": "b18be2f0-2d34-4e36-8056-a7939cafa83e",
+      "title": "Gamer Tag Directory",
+      "urlId": "MHfI6wHjTc",
+      "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
+      "createdAt": "2024-09-07T20:11:49.344000+00:00",
+      "content": "Let\u2019s be internet gamer friends! Add your usernames and friend codes to the list.\n\n[https://docs.google.com/spreadsheets/d/1b4Cesamx93WZeY8jaJNOlnli94EU7Fdzxm88piX0G0A/edit?gid=0#gid=0](https://docs.google.com/spreadsheets/d/1b4Cesamx93WZeY8jaJNOlnli94EU7Fdzxm88piX0G0A/edit?gid=0#gid=0)\n\n\\\n",
+      "connections": 0
+    },
+    {
+      "id": "38310564-2e34-4f13-ad4d-2171a74eccf0",
+      "title": "Original Commissions",
+      "urlId": "UfC7ojbPA8",
+      "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
+      "createdAt": "2024-10-05T23:58:01.664000+00:00",
+      "content": "# Fonts\n\n## Waning Star by [Heavy Symmetry](https://www.instagram.com/heavy_symmetry)\n\n[Waning Star_extended.zip 1619164](/api/attachments.redirect?id=380da760-cbec-4d2e-8dd1-076d8c1728bb)\n\n[Waning Star specimen.pdf 998733](/api/attachments.redirect?id=1e50e048-b8d4-4147-9c9c-054c43ae84d0)\n\nSmall Biz License\n\n ![](/api/attachments.redirect?id=a65a5112-1398-4ee2-aed5-7bffa9e133e8)\n\n# Logo & Sigil\n\n## by [Heavy Symmetry](https://www.instagram.com/heavy_symmetry)\n\nAll source files and variations in high res PNG and vector SVG:\n\n[dungeonchurch.zip 10924625](/api/attachments.redirect?id=2bbebcb0-9a80-4c7a-9f37-3fefe1ef9d93)\n\n ![Chrome](/api/attachments.redirect?id=945bbf5f-5742-46ce-ad50-42aa2aeb347f \" =3840x2160\") ![White Sharp](/api/attachments.redirect?id=d26c3339-2d05-4f25-adb9-00faf3b2d41f \" =1125x1125\")\n\n ![White Organic](/api/attachments.redirect?id=079357f7-7e40-4777-930c-176d3be58c63 \" =1125x1125\")\n\n ![Sigil](/api/attachments.redirect?id=e0061f66-943f-49a6-8c41-fb452434443d \" =1125x1125\") ![Brad's RBW Chrome edit](/api/attachments.redirect?id=e1a110e0-9e1d-48df-b513-b9b0f3f9a561 \" =3840x2160\")\n\n[logo-chrome-red.psd 20988696](/api/attachments.redirect?id=eba70c1a-9800-46f7-b131-6789ee182389)\n\n\\\n",
       "connections": 0
     },
     {
@@ -163,6 +163,15 @@
       "connections": 0
     },
     {
+      "id": "8abaf115-af57-4910-9e30-d3e55fda9042",
+      "title": "",
+      "urlId": "7cqNWQW4Ou",
+      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
+      "createdAt": "2021-12-03T10:21:02.183000+00:00",
+      "content": "",
+      "connections": 0
+    },
+    {
       "id": "bcd19c66-4063-4f60-a14f-dd03519cee53",
       "title": "Temple of the Lights",
       "urlId": "88znSgAhr0",
@@ -208,12 +217,12 @@
       "connections": 0
     },
     {
-      "id": "8abaf115-af57-4910-9e30-d3e55fda9042",
-      "title": "",
-      "urlId": "7cqNWQW4Ou",
+      "id": "ef979c5c-8797-4d31-8bb4-8c63aa2c8e9d",
+      "title": "Maude the Marauder",
+      "urlId": "IBurDTKXqF",
       "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
-      "createdAt": "2021-12-03T10:21:02.183000+00:00",
-      "content": "",
+      "createdAt": "2026-02-16T03:49:13.109000+00:00",
+      "content": "Backstory for Maude the Marauder, Human Variant, Warlock/Fighter\n\n\\\n\n---\n\n\\\nThe Blind Mackerel was losing the fight. The storm had turned the sea into a wall of black iron, and the ship groaned under the strain. Rain lashed the deck, drowning out the shouts of the crew and turning the wood into a slick trap.\n\nFor fifteen years, Maude had been living as Henry. Henry wasn't a costume; he was her survival. After this plague of darkness took the highlands and the sheep, she traded the dead grass for the living sea. She bound her chest with sailcloth, pitched her voice low, and worked until her hands were nothing but grit and callus. She took to the salt like she was born to it. She knew every knot, every spar, every groan of the ship.\n\nShe was hauling on the main brace when the shout came. The timber snapped. She grabbed the rail, knuckles white, holding on for her life.\n\nThen? There was nothing\u2026 a deep chasm across the memory.\n\nEach time she tries to fill it, there are only sharp fragments: The hot reak of rum, too close to her face. A hand prying her fingers loose one by one.\u00a0\n\nTwo words spit at her like flying daggers \u201c*Swim, girl*.\u201d\u00a0\n\nA boot slamming into her ribs.\n\nShe fell.\n\nThe cold was a hammer. It drove the air from her lungs and every thought from her mind. The surface vanished. She tumbled end over end, boots dragging her down.\n\nThen, the panic broke. The thrashing stopped. She felt suspended in the void, far away from everyone and everything. Maude blinked. She wasn't fighting the water anymore. She was floating in the stillness, looking down on the violent, churning sea.\n\nShe saw him. She saw Henry. He was thrashing in the gloom. His shirt tore in the struggle, the canvas bindings unraveling like dead kelp to reveal the truth he\u2019d hidden for fifteen years. She watched the bubbles escaping his lips; silver dollars paid\u2026\u00a0 a debt he couldn't afford.\n\nMaude looked on with detached curiosity. *Look at him,* she thought. *Fighting so hard. He doesn't know he\u2019s already dead.* She watched him disappear behind the hills of the rolling waves. A speck of white in the crushing black. Henry was gone.\u00a0\n\n\"Wasteful.\"\n\nThe voice came from within the void, rippling through her, a grinding of tectonic plates against her spine. \"So much... grit. Left to rot.\"\n\nMaude couldn't speak, but she felt the question hook into her like a gaff.\n\n\"The boy is dead,\" the voice rumbled. \"Does the woman want to breathe?\"\n\nMaude looked at the darkness where Henry had vanished. She felt the phantom ache in her ribs where the boot had struck her. Every part of her rang out with a resounding *\u201cYES.\u201d*\n\nThe ocean rushed in. Not with water but with a heavy weight. The burning in her lungs dispersed like fog, replaced by the deep rhythmic pulse of the tide.\n\nHours later, Maude washed up on the sand. For a long while she coughed up shimmering globs of seaweed and black brine. She stood on legs that felt too heavy for land. She wiped the water from her eyes and felt it; something hard and sharp on her brow.\n\nA jagged knot of white lime. Rooted deep in her skull.\u00a0\n\nWhen the Captain found her, he didn't ask how she survived. He didn't ask about the jagged white knot on her brow. He just offered a hand. It was dry and warm\u2014the first warm thing she had felt since the *Mackerel* went down. In his grip, she didn't feel judgment. She felt an anchor.\n\nNow, Maude is the ballast of his ship. She hauls the heaviest lines. She takes the longest watches. And when the boarding ramps drop, she stands in front.\n\nBut the deal with the Deep wasn't a one-time exchange, it\u2019s a lifetime membership.\n\nThe barnacle on her brow was just the beginning. Patches of her skin are turning hard, rough, and calcified\u2014a barbed coral reef spreading across her ribs and down her left arm. It itches.\n\nA deep itch that feels like bubbles trapped in her bones.\n\nShe fights it with balms of tar and sulfur. She chews bitter roots to numb the nerves and spends every bit of gold she earns on experimental witches' brews and dark rituals.\u00a0 But the only thing that truly stops the itching is *letting it out*.\n\nWhen the fighting begins, Maude opens the valve to release the crushing pressure..\n\nIt bursts from her; a spectral, thrashing limb of shining black covered in acetabula. It smashes masts and drags men screaming into the dark. But of course, deep power has a high cost.\u00a0\n\nUsing it feels so *good*. It feels like gasping for air after holding her breath. But every time the water recedes, the Reef claims more ground. Her skin grows harder and the barnacles grow sharper.\u00a0\n\nThe sun has not returned and the world is rotting away around her.\u00a0 Under each moon, Maude is turning over her choices like a worry stone\u2026 \u201cWoman or weapon? Human or horror? Loyalty or life?\u201d\u00a0\\n\n\nCharacter Sheet:\u00a0\n\nhttps://drive.google.com/file/d/1C1X-apkS8poAZbSuKhPP9IB2h_na7OyK/view?usp=sharing\n\n ![](/api/attachments.redirect?id=395abf4a-2bd1-4594-a4de-b92a6b6e5e89 \" =1024x559\")\n\n\\n",
       "connections": 0
     },
     {
@@ -244,15 +253,6 @@
       "connections": 0
     },
     {
-      "id": "f4e43cc6-76cc-4140-abad-35e7c4d68419",
-      "title": "Ironsworn Rules & Reference",
-      "urlId": "hnnfupcKzs",
-      "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
-      "createdAt": "2023-04-19T22:25:48.602000+00:00",
-      "content": " ![](/api/attachments.redirect?id=d08e9987-4216-44a7-a705-f445f7dfabd0)\n\n[Ironsworn](https://www.ironswornrpg.com/) is a solo or co-op RPG of perilous quests by [Shawn Tomkin](https://linktr.ee/shawntomkin) that is free. In Ironsworn, your character is sworn to undertake tasks and seek out bonds in a dark fantasy setting using a simple, \u201cfiction first\u201d system.\n\nIronsworn is great for worldbuilding, downtime activities, a writing aide, or fleshing out your character\u2019s story.\n\n# Resources\n\n## Core Documents\n\n[Ironsworn Rulebook.pdf 43133141](/api/attachments.redirect?id=148a972b-f2d2-479c-a4dd-551ce16937e8)\n\n[Ironsworn-Playkit.pdf 1567795](/api/attachments.redirect?id=930026d3-dc18-4341-bc99-6c0579bfbd47)\n\n[Ironsworn-Assets-Master-Set-1.pdf 551839](/api/attachments.redirect?id=0aac2d3d-f992-4b22-a28f-d289efdd1b16)\n\n## Links\n\n* [Ironsworn Official](https://www.ironswornrpg.com/downloads) - the rulebook, sheets for playing, asset cards, etc. are all free for download & printing. \n* [Awesome Ironsworn](https://billiam.github.io/awesome-ironsworn/) - A comprehensive collection of links to tools, resources, homebrew, etc.\n* [Ironsworn Discord](https://discord.com/invite/8bRuZwK) - Join this and be sure to check out #share-your-kit channel\n* [The Trove - Ironsworn](https://thetrove.dungeon.church/Ironsworn/) - Dungeon Church\u2019s archive of PDFs and other assets. Notable:\n  * [Traveler\u2019s PDF](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Mobile%20Device%20Edition.pdf) - an extremely helpful PDF rule reference for mobile devices\n  * [Traveler\u2019s DIY](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Traveler%27s%20DIY%20Edition%20%28v1-3-1_220121%29.pdf) - excellent set of printable card references for analog play\n  * [Vaults & Vows](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Vaults%20&%20Vows%20Assets%20%28D&D%20SRD%20Conversion%29.pdf) - alternative assets for Ironsworn converted from the D&D SRD\n  * [Combat Flow Chart](https://thetrove.dungeon.church/Ironsworn/Ironsworn%20-%20Combat%20Moves%20Flowchart.jpg)\n* [Ironsworn: Delve](https://thetrove.dungeon.church/Ironsworn/Ironsworn%20-%20Delve/) - additional rules for exploring dungeons\n\n[https://www.youtube.com/watch?v=9wIYUn4Et5o](https://www.youtube.com/watch?v=9wIYUn4Et5o)\n\n*Playing Ironsworn in Foundry.*\n\n# Share Your Kit\n\nSee the Ironsworn Discord channel for lots of inspiration. Post your own setup here.\n\n## Brad\u2019s Setup\n\n### Digital\n\niPad with Pencil. [Notability](https://notability.com/) + [Xodo PDF](https://apps.apple.com/us/app/xodo-pdf-reader-scanner/id805075929) in dark mode with the [Traveler\u2019s PDF](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Mobile%20Device%20Edition.pdf).\n\n### Analog\n\n* [Rory Story Cubes](https://www.storycubes.com/en/) for the Oracle (Core, Voyage, Actions, Fantasia sets)\n* [Double Six Dice](https://doublesixdice.com/)\n* [Traveler\u2019s DIY cards](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Traveler%27s%20DIY%20Edition%20%28v1-3-1_220121%29.pdf)\n\n\\\n",
-      "connections": 0
-    },
-    {
       "id": "8baabf65-f57f-4639-b2aa-e8ddf6066f71",
       "title": "Legendary",
       "urlId": "Vs6JW0T0Cz",
@@ -268,6 +268,15 @@
       "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
       "createdAt": "2022-08-09T19:00:34.644000+00:00",
       "content": "####  ![](/api/attachments.redirect?id=81ceb678-1efa-4dbb-a2be-a67b57326062 \"right-50\")Dimensional Glasses\n\nWondrous item, other, very rare\n\n\n---\n\nA set of glasses that look like a kaleidoscope from the outside. Looking through them shows vignettes of various planes of existence regularly swapping, overlayed onto the environment around you. They can also be held in place by a switch, useful for creatures feeling homesick.\n\n\n---\n\n- [x] Homebrew, Source - [Dungeon Church](https://5e.dungeon.church/items.html#dimensional%20glasses_dungeonchurch)\n\n\\\n",
+      "connections": 0
+    },
+    {
+      "id": "f4e43cc6-76cc-4140-abad-35e7c4d68419",
+      "title": "Ironsworn Rules & Reference",
+      "urlId": "hnnfupcKzs",
+      "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
+      "createdAt": "2023-04-19T22:25:48.602000+00:00",
+      "content": " ![](/api/attachments.redirect?id=d08e9987-4216-44a7-a705-f445f7dfabd0)\n\n[Ironsworn](https://www.ironswornrpg.com/) is a solo or co-op RPG of perilous quests by [Shawn Tomkin](https://linktr.ee/shawntomkin) that is free. In Ironsworn, your character is sworn to undertake tasks and seek out bonds in a dark fantasy setting using a simple, \u201cfiction first\u201d system.\n\nIronsworn is great for worldbuilding, downtime activities, a writing aide, or fleshing out your character\u2019s story.\n\n# Resources\n\n## Core Documents\n\n[Ironsworn Rulebook.pdf 43133141](/api/attachments.redirect?id=148a972b-f2d2-479c-a4dd-551ce16937e8)\n\n[Ironsworn-Playkit.pdf 1567795](/api/attachments.redirect?id=930026d3-dc18-4341-bc99-6c0579bfbd47)\n\n[Ironsworn-Assets-Master-Set-1.pdf 551839](/api/attachments.redirect?id=0aac2d3d-f992-4b22-a28f-d289efdd1b16)\n\n## Links\n\n* [Ironsworn Official](https://www.ironswornrpg.com/downloads) - the rulebook, sheets for playing, asset cards, etc. are all free for download & printing. \n* [Awesome Ironsworn](https://billiam.github.io/awesome-ironsworn/) - A comprehensive collection of links to tools, resources, homebrew, etc.\n* [Ironsworn Discord](https://discord.com/invite/8bRuZwK) - Join this and be sure to check out #share-your-kit channel\n* [The Trove - Ironsworn](https://thetrove.dungeon.church/Ironsworn/) - Dungeon Church\u2019s archive of PDFs and other assets. Notable:\n  * [Traveler\u2019s PDF](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Mobile%20Device%20Edition.pdf) - an extremely helpful PDF rule reference for mobile devices\n  * [Traveler\u2019s DIY](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Traveler%27s%20DIY%20Edition%20%28v1-3-1_220121%29.pdf) - excellent set of printable card references for analog play\n  * [Vaults & Vows](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Vaults%20&%20Vows%20Assets%20%28D&D%20SRD%20Conversion%29.pdf) - alternative assets for Ironsworn converted from the D&D SRD\n  * [Combat Flow Chart](https://thetrove.dungeon.church/Ironsworn/Ironsworn%20-%20Combat%20Moves%20Flowchart.jpg)\n* [Ironsworn: Delve](https://thetrove.dungeon.church/Ironsworn/Ironsworn%20-%20Delve/) - additional rules for exploring dungeons\n\n[https://www.youtube.com/watch?v=9wIYUn4Et5o](https://www.youtube.com/watch?v=9wIYUn4Et5o)\n\n*Playing Ironsworn in Foundry.*\n\n# Share Your Kit\n\nSee the Ironsworn Discord channel for lots of inspiration. Post your own setup here.\n\n## Brad\u2019s Setup\n\n### Digital\n\niPad with Pencil. [Notability](https://notability.com/) + [Xodo PDF](https://apps.apple.com/us/app/xodo-pdf-reader-scanner/id805075929) in dark mode with the [Traveler\u2019s PDF](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Mobile%20Device%20Edition.pdf).\n\n### Analog\n\n* [Rory Story Cubes](https://www.storycubes.com/en/) for the Oracle (Core, Voyage, Actions, Fantasia sets)\n* [Double Six Dice](https://doublesixdice.com/)\n* [Traveler\u2019s DIY cards](https://thetrove.dungeon.church/Ironsworn/Third%20Party/Ironsworn%20-%20Traveler%27s%20DIY%20Edition%20%28v1-3-1_220121%29.pdf)\n\n\\\n",
       "connections": 0
     },
     {

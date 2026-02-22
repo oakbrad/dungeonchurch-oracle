@@ -1659,6 +1659,56 @@
       },
       "timestamp": "2026-01-29T11:44:39.178275",
       "title": "Party Boat"
+    },
+    "68a7b53f407be0eb": {
+      "alignment": {
+        "law_chaos": 0.0,
+        "good_evil": 0.0,
+        "confidence": 0.3,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-22T00:54:35.044160",
+      "title": "Groggut Family"
+    },
+    "0a315d47a19f44ad": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": 0.5,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-22T00:54:37.093062",
+      "title": "Imryll Farra"
+    },
+    "9e9cd23f99fb86a6": {
+      "alignment": {
+        "law_chaos": -0.5,
+        "good_evil": -0.2,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-22T00:54:39.308348",
+      "title": "Sanbalet, The"
+    },
+    "638101879f376dda": {
+      "alignment": {
+        "law_chaos": -0.5,
+        "good_evil": -0.8,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-22T00:54:41.353203",
+      "title": "Crimson Countess"
+    },
+    "86010a0c75c0bc0d": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": -0.3,
+        "confidence": 0.4,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-22T00:54:42.730285",
+      "title": "Harrowhark"
     }
   },
   "relationships": {
@@ -7849,6 +7899,318 @@
       "timestamp": "2026-01-29T11:44:56.597156",
       "source": "Party Boat",
       "target": "K\u00e1ra Leiptrborinn"
+    },
+    "f0471acc7f96de3e": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Craggylheim and Hearth Dwarf are allies.",
+        "source_id": "10ac0090-b3a2-46c3-879d-616dc7678cb0",
+        "target_id": "c86dcf7f-8dc2-4361-8adb-4198f76266e7"
+      },
+      "timestamp": "2026-02-22T00:54:44.749073",
+      "source": "Craggylheim Groggut",
+      "target": "Dwarf (Hearth)"
+    },
+    "c35204a6f56ca8f0": {
+      "result": {
+        "type": "neutral",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Craggylheim avoids magic in Durandar's presence",
+        "source_id": "10ac0090-b3a2-46c3-879d-616dc7678cb0",
+        "target_id": "1231ad1f-bcf9-49c1-abce-39aa344d3480"
+      },
+      "timestamp": "2026-02-22T00:54:46.661550",
+      "source": "Craggylheim Groggut",
+      "target": "Durandar"
+    },
+    "9b0f8ad7b3fcb0cb": {
+      "result": {
+        "type": "neutral",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Dwarf from Sturmfreihafen seeks family secrets",
+        "source_id": "10ac0090-b3a2-46c3-879d-616dc7678cb0",
+        "target_id": "8a8a0a7f-437f-4005-8007-8fdd78664b85"
+      },
+      "timestamp": "2026-02-22T00:54:47.835437",
+      "source": "Craggylheim Groggut",
+      "target": "Sturmfreihafen (Str\u00fcmfreih\u00e5fen)"
+    },
+    "4b61664595096d41": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.2,
+        "summary": "Craggylheim joins Sjostein's crew for safety",
+        "source_id": "10ac0090-b3a2-46c3-879d-616dc7678cb0",
+        "target_id": "db8e3685-022a-4c86-9ed4-85f58ae888e0"
+      },
+      "timestamp": "2026-02-22T00:54:50.336572",
+      "source": "Craggylheim Groggut",
+      "target": "Sjostein Saltwhisperer"
+    },
+    "ece78dc07b6523db": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.5,
+        "order_valence": 0.0,
+        "summary": "Craggylheim's uncle was a rum-smuggler ally",
+        "source_id": "10ac0090-b3a2-46c3-879d-616dc7678cb0",
+        "target_id": "2756b2b0-e148-4e20-871c-978ae7e987a5"
+      },
+      "timestamp": "2026-02-22T00:54:51.882890",
+      "source": "Craggylheim Groggut",
+      "target": "Saltwhispers Trading Company"
+    },
+    "fdd6e653eaa3baf5": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.8,
+        "order_valence": -0.6,
+        "summary": "Expelled for unethical experiments on aides",
+        "source_id": "c62e6a74-ecac-445f-87fa-b9fe97116ecb",
+        "target_id": "4df547d4-7058-4f7d-9d04-f57c91c256ed"
+      },
+      "timestamp": "2026-02-22T00:54:52.980000",
+      "source": "The Pale Man",
+      "target": "Amethyst Academy"
+    },
+    "4b59a6822c435499": {
+      "result": {
+        "type": "neutral",
+        "moral_valence": 0.0,
+        "order_valence": -0.5,
+        "summary": "The Pale Man vanished into Delirium's chaos",
+        "source_id": "c62e6a74-ecac-445f-87fa-b9fe97116ecb",
+        "target_id": "99f89472-b0b9-40c4-9129-a9e002bc7406"
+      },
+      "timestamp": "2026-02-22T00:54:54.161827",
+      "source": "The Pale Man",
+      "target": "Delirium"
+    },
+    "6e7cfa218938c608": {
+      "result": {
+        "type": "neutral",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "The Pale Man's presence in Galmaarden",
+        "source_id": "c62e6a74-ecac-445f-87fa-b9fe97116ecb",
+        "target_id": "2172f81a-52e6-4c4e-9ed6-bdb0df1414d3"
+      },
+      "timestamp": "2026-02-22T00:54:56.340954",
+      "source": "The Pale Man",
+      "target": "Galmaarden 18: Urban Escape"
+    },
+    "76b25f7dc5004dfa": {
+      "result": {
+        "type": "employed",
+        "moral_valence": -0.5,
+        "order_valence": -0.3,
+        "summary": "The Pale Man employs Zombie Raccoons.",
+        "source_id": "c62e6a74-ecac-445f-87fa-b9fe97116ecb",
+        "target_id": "8486080f-c08d-4ec4-aa23-97356abff26c"
+      },
+      "timestamp": "2026-02-22T00:54:58.492927",
+      "source": "The Pale Man",
+      "target": "Zombie Raccoon"
+    },
+    "78ab7f619c9d6b9b": {
+      "result": {
+        "type": "neutral",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Dwarf born on W\u00e6rlessh\u00e6th, now adventuring",
+        "source_id": "10ac0090-b3a2-46c3-879d-616dc7678cb0",
+        "target_id": "111310df-f8be-4ae8-b881-1a621256311e"
+      },
+      "timestamp": "2026-02-22T00:55:00.098802",
+      "source": "Craggylheim Groggut",
+      "target": "W\u00e6rlessh\u00e6th"
+    },
+    "648343aa0ff0aba0": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Craggylheim supports the Groggut family's trade",
+        "source_id": "10ac0090-b3a2-46c3-879d-616dc7678cb0",
+        "target_id": "300a2fdb-4490-421b-8bc5-ad6c75c2d6ae"
+      },
+      "timestamp": "2026-02-22T00:55:01.546890",
+      "source": "Craggylheim Groggut",
+      "target": "Groggut Family"
+    },
+    "561e02dac35a7d5a": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Groggut family and Sjostein are allies.",
+        "source_id": "300a2fdb-4490-421b-8bc5-ad6c75c2d6ae",
+        "target_id": "db8e3685-022a-4c86-9ed4-85f58ae888e0"
+      },
+      "timestamp": "2026-02-22T00:55:02.851270",
+      "source": "Groggut Family",
+      "target": "Sjostein Saltwhisperer"
+    },
+    "dc00dfe29741cfea": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Friendly gaming companions and allies",
+        "source_id": "10ac0090-b3a2-46c3-879d-616dc7678cb0",
+        "target_id": "f514e109-06ff-42f5-a47f-2550bcbeb01b"
+      },
+      "timestamp": "2026-02-22T00:55:04.541404",
+      "source": "Craggylheim Groggut",
+      "target": "Jethro Honeyrock"
+    },
+    "4adf6d1cc2134a6a": {
+      "result": {
+        "type": "challenged",
+        "moral_valence": 0.5,
+        "order_valence": 0.0,
+        "summary": "Friendly competition between two dwarves",
+        "source_id": "10ac0090-b3a2-46c3-879d-616dc7678cb0",
+        "target_id": "b32c1f3d-675a-46d7-9e7a-31cd62681146"
+      },
+      "timestamp": "2026-02-22T00:55:05.610662",
+      "source": "Craggylheim Groggut",
+      "target": "Thrulrik Thunderheart"
+    },
+    "7db2f3edef1bb1f9": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Sanbalet and the Dwarf are allies.",
+        "source_id": "de21215e-ac08-449d-9afd-f28d3102362c",
+        "target_id": "c86dcf7f-8dc2-4361-8adb-4198f76266e7"
+      },
+      "timestamp": "2026-02-22T00:55:08.366536",
+      "source": "Sanbalet, The",
+      "target": "Dwarf (Hearth)"
+    },
+    "62cfcab88da1423d": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.8,
+        "order_valence": 0.6,
+        "summary": "Imryll and the Elfmarked share a bond.",
+        "source_id": "f01330fc-cd58-4b54-9b01-e2474950f53c",
+        "target_id": "4c5aec10-dfab-41bf-8a77-b033d4a78246"
+      },
+      "timestamp": "2026-02-22T00:55:09.899501",
+      "source": "Imryll Farra",
+      "target": "Elfmarked"
+    },
+    "09da9b9cc0bdaa36": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Imryll seeks a ship for her crew",
+        "source_id": "f01330fc-cd58-4b54-9b01-e2474950f53c",
+        "target_id": "1231ad1f-bcf9-49c1-abce-39aa344d3480"
+      },
+      "timestamp": "2026-02-22T00:55:10.974424",
+      "source": "Imryll Farra",
+      "target": "Durandar"
+    },
+    "3f0e1fc60397e939": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Collaborating to restore a familial vessel",
+        "source_id": "f01330fc-cd58-4b54-9b01-e2474950f53c",
+        "target_id": "91b5b6ea-b244-45a3-8589-d4e8f60803fd"
+      },
+      "timestamp": "2026-02-22T00:55:12.108981",
+      "source": "Imryll Farra",
+      "target": "K\u00e1ra Leiptrborinn"
+    },
+    "4cd265eafc4e18a2": {
+      "result": {
+        "type": "transformed",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Crimson Countess transformed by Delirium",
+        "source_id": "b536e2d1-9a69-4330-a249-2eadcc11626f",
+        "target_id": "99f89472-b0b9-40c4-9129-a9e002bc7406"
+      },
+      "timestamp": "2026-02-22T00:55:13.911971",
+      "source": "Crimson Countess",
+      "target": "Delirium"
+    },
+    "3af204a2267a008e": {
+      "result": {
+        "type": "created",
+        "moral_valence": 0.5,
+        "order_valence": -0.5,
+        "summary": "Crimson Countess born from Followers' rituals",
+        "source_id": "b536e2d1-9a69-4330-a249-2eadcc11626f",
+        "target_id": "3e2db61e-3734-49f9-9521-bc827b28975e"
+      },
+      "timestamp": "2026-02-22T00:55:15.101354",
+      "source": "Crimson Countess",
+      "target": "Followers of the Falling Fire"
+    },
+    "2de6147497448660": {
+      "result": {
+        "type": "created",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Crimson Countess transformed into a harpy leader",
+        "source_id": "b536e2d1-9a69-4330-a249-2eadcc11626f",
+        "target_id": "4960e582-1aa1-478d-b02e-cf5763c0df25"
+      },
+      "timestamp": "2026-02-22T00:55:16.648934",
+      "source": "Crimson Countess",
+      "target": "Harpy"
+    },
+    "802779b6a34321a4": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.0,
+        "order_valence": -0.5,
+        "summary": "Crimson Countess employs Harpy minions.",
+        "source_id": "b536e2d1-9a69-4330-a249-2eadcc11626f",
+        "target_id": "c3c9eb18-9644-436e-a500-2cf7df35394c"
+      },
+      "timestamp": "2026-02-22T00:55:19.943436",
+      "source": "Crimson Countess",
+      "target": "Cosmological Clocktower"
+    },
+    "960eca96872c969b": {
+      "result": {
+        "type": "employed",
+        "moral_valence": -0.3,
+        "order_valence": 0.5,
+        "summary": "Crimson Countess serves the Pale Man's interests",
+        "source_id": "b536e2d1-9a69-4330-a249-2eadcc11626f",
+        "target_id": "c62e6a74-ecac-445f-87fa-b9fe97116ecb"
+      },
+      "timestamp": "2026-02-22T00:55:21.680194",
+      "source": "Crimson Countess",
+      "target": "The Pale Man"
+    },
+    "5140a06a34298847": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.2,
+        "summary": "Sanbalet hosts enjoyable parties for his crew",
+        "source_id": "de21215e-ac08-449d-9afd-f28d3102362c",
+        "target_id": "a1dd120f-5ac6-4c09-a402-a3f130772db8"
+      },
+      "timestamp": "2026-02-22T00:55:23.108548",
+      "source": "Sanbalet, The",
+      "target": "Party Boat"
     }
   }
 }
