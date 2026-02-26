@@ -1709,6 +1709,226 @@
       },
       "timestamp": "2026-02-22T00:54:42.730285",
       "title": "Harrowhark"
+    },
+    "a87e82ea0a0d4f79": {
+      "alignment": {
+        "law_chaos": 0.9,
+        "good_evil": 0.2,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-26T11:47:34.869611",
+      "title": "Father Bonas"
+    },
+    "578d377cfbbf9a99": {
+      "alignment": {
+        "law_chaos": 0.5,
+        "good_evil": -0.8,
+        "confidence": 0.9,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-26T11:47:37.666247",
+      "title": "Velryn Blackthorn"
+    },
+    "c06589803f6d5aa0": {
+      "alignment": {
+        "law_chaos": -0.8,
+        "good_evil": -0.9,
+        "confidence": 0.85,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-26T11:47:40.372578",
+      "title": "Lady Nightshade"
+    },
+    "e23df93cb137f868": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": -0.5,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-26T11:47:41.640008",
+      "title": "Saltmarsh Council"
+    },
+    "fdeee80ff975a987": {
+      "alignment": {
+        "law_chaos": -0.5,
+        "good_evil": -0.8,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-26T11:47:43.627826",
+      "title": "Sargoth the Eternal"
+    },
+    "28ab40b3575edaef": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": -0.2,
+        "confidence": 0.6,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-26T11:47:45.005550",
+      "title": "Tak Merakin"
+    },
+    "e41a3d48477d3057": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": 0.6,
+        "confidence": 0.8,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-26T11:47:46.600788",
+      "title": "Master Refrum"
+    },
+    "3420d2268a9f1a7e": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": 0.1,
+        "confidence": 0.6,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-26T11:47:48.556595",
+      "title": "S.A.M."
+    },
+    "5e61488061133bda": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": 0.5,
+        "confidence": 0.4,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-26T11:47:49.994052",
+      "title": "Jarme Loveage"
+    },
+    "6c3e99a49e659aa5": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": -0.5,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-26T11:47:51.469608",
+      "title": "Gellan Primewater"
+    },
+    "ce0024053813b63c": {
+      "alignment": {
+        "law_chaos": -0.8,
+        "good_evil": -0.9,
+        "confidence": 0.8,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-26T11:47:53.457435",
+      "title": "2 Coin"
+    },
+    "4ffaaf0f093530fd": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": -0.5,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-26T11:47:55.742078",
+      "title": "Manistrad Copperlocks"
+    },
+    "1708da8ca16bf448": {
+      "alignment": {
+        "law_chaos": -0.5,
+        "good_evil": 0.0,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-26T11:47:57.595988",
+      "title": "Deidre of the Moon"
+    },
+    "6df7fdc7038b8787": {
+      "alignment": {
+        "law_chaos": 0.3,
+        "good_evil": 0.8,
+        "confidence": 0.85,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-26T11:48:01.084245",
+      "title": "Mother Yara, Dawnbringer"
+    },
+    "c72873e6a3b27707": {
+      "alignment": {
+        "law_chaos": -0.5,
+        "good_evil": 0.8,
+        "confidence": 0.9,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-26T11:48:02.492296",
+      "title": "Estelar the Heretic"
+    },
+    "8600a17993bcc6e8": {
+      "alignment": {
+        "law_chaos": -0.5,
+        "good_evil": 0.2,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-26T11:48:03.935090",
+      "title": "Keledek the Wizard"
+    },
+    "e2d4332f446f2bca": {
+      "alignment": {
+        "law_chaos": -0.5,
+        "good_evil": -0.7,
+        "confidence": 0.8,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-26T11:48:06.045950",
+      "title": "Nerium"
+    },
+    "99e008bde546c2e2": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": -0.8,
+        "confidence": 0.8,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-26T11:48:07.463810",
+      "title": "Talia Talindra"
+    },
+    "97327d054fb5d791": {
+      "alignment": {
+        "law_chaos": -0.5,
+        "good_evil": -0.7,
+        "confidence": 0.8,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-26T11:48:08.891855",
+      "title": "Jorek Talindra"
+    },
+    "823c25cdd3ddb85f": {
+      "alignment": {
+        "law_chaos": -0.5,
+        "good_evil": -0.8,
+        "confidence": 0.8,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-26T11:48:10.366809",
+      "title": "Lamont Solmar"
+    },
+    "07e6c677d8c692c6": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": 0.3,
+        "confidence": 0.6,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-26T11:48:11.876792",
+      "title": "Anders Solmor"
+    },
+    "ce77128a2ae1e308": {
+      "alignment": {
+        "law_chaos": -0.5,
+        "good_evil": -0.5,
+        "confidence": 0.4,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-26T11:48:13.167304",
+      "title": "Ettria"
     }
   },
   "relationships": {
@@ -8211,6 +8431,1735 @@
       "timestamp": "2026-02-22T00:55:23.108548",
       "source": "Sanbalet, The",
       "target": "Party Boat"
+    },
+    "6f69a8d40a85be8f": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Keledek operates a tower in Saltmarsh",
+        "source_id": "9250735c-e89f-4b0e-b35f-91c7da82879e",
+        "target_id": "3235b720-ecbe-4089-ad79-9c17674c77d4"
+      },
+      "timestamp": "2026-02-26T11:48:14.451237",
+      "source": "Keledek the Wizard",
+      "target": "Saltmarsh"
+    },
+    "7fb7b52e0d3c4594": {
+      "result": {
+        "type": "neutral",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Keledek's ghost inhabits a temple statue",
+        "source_id": "9250735c-e89f-4b0e-b35f-91c7da82879e",
+        "target_id": "423f6a9d-175b-4aa8-93b2-bc897b933b9d"
+      },
+      "timestamp": "2026-02-26T11:48:15.659802",
+      "source": "Keledek the Wizard",
+      "target": "Saltmarsh Sailor's Temple"
+    },
+    "3fad4ddc5f993bec": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.3,
+        "order_valence": 0.5,
+        "summary": "Jorek employs Dhampir for House Talindra",
+        "source_id": "ebc59fd0-bad0-43e9-9fc4-3bd98bcb082b",
+        "target_id": "77276b15-2eb0-4c7d-9edb-312842f6bc26"
+      },
+      "timestamp": "2026-02-26T11:48:17.167227",
+      "source": "Jorek Talindra",
+      "target": "Dhampir"
+    },
+    "c8a27bf99ff18d51": {
+      "result": {
+        "type": "transformed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Lamont's transformation into a feared undead entity",
+        "source_id": "acad513a-4631-461e-b1d4-7e43dbf13f06",
+        "target_id": "f7f7fbd6-9122-4969-ad53-5ead8f49be5a"
+      },
+      "timestamp": "2026-02-26T11:48:18.532720",
+      "source": "Lamont Solmar",
+      "target": "Session 11: Plots Under the Mountain"
+    },
+    "43824d4e0c86eebc": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.8,
+        "order_valence": -0.6,
+        "summary": "Lamont deceived Skerrin for personal gain.",
+        "source_id": "acad513a-4631-461e-b1d4-7e43dbf13f06",
+        "target_id": "e54ba2ce-241c-4da2-9569-237dd3b5c9ca"
+      },
+      "timestamp": "2026-02-26T11:48:19.800683",
+      "source": "Lamont Solmar",
+      "target": "Skerrin Wavechaser"
+    },
+    "ca4c8de64c45a0c8": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.2,
+        "order_valence": -0.3,
+        "summary": "Alliance between Unseelie princess and Ramoth",
+        "source_id": "67790919-d352-4de7-8963-ffa7fc6e065d",
+        "target_id": "5ebd1de0-d578-4e89-b05b-8c1afaa96fdd"
+      },
+      "timestamp": "2026-02-26T11:48:21.260019",
+      "source": "Nerium",
+      "target": "Ramoth Flameshield"
+    },
+    "7e2504081b2e807d": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.0,
+        "order_valence": 0.5,
+        "summary": "Manistrad oversees mining for Saltmarsh Council",
+        "source_id": "79ddcfb0-9484-41fc-aa8d-76168cb74fff",
+        "target_id": "d5deabf1-abd5-4db9-92f9-aa14a40dd29e"
+      },
+      "timestamp": "2026-02-26T11:48:22.712249",
+      "source": "Manistrad Copperlocks",
+      "target": "Saltmarsh Council"
+    },
+    "9d42dc844c92ff9e": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Keledek and Eda collaborated before his death",
+        "source_id": "9250735c-e89f-4b0e-b35f-91c7da82879e",
+        "target_id": "0137d7a7-e722-4162-86bd-e0bf67657d25"
+      },
+      "timestamp": "2026-02-26T11:48:23.948320",
+      "source": "Keledek the Wizard",
+      "target": "Eda Oweland"
+    },
+    "91b73408aaf857fc": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Lamont Solmar's transformation into a feared entity",
+        "source_id": "acad513a-4631-461e-b1d4-7e43dbf13f06",
+        "target_id": "4a3ce942-4dbb-4b4d-a4cc-af28e725b733"
+      },
+      "timestamp": "2026-02-26T11:48:25.369426",
+      "source": "Lamont Solmar",
+      "target": "Session 15-16: Murder on the Jubilee"
+    },
+    "7c82976d52a45985": {
+      "result": {
+        "type": "created",
+        "moral_valence": 0.0,
+        "order_valence": -0.5,
+        "summary": "Estelar created dragonborn, but lost control",
+        "source_id": "87ac124a-3fc5-4bf5-9b5b-225bc0351d36",
+        "target_id": "df0d69a8-0262-44de-a9ae-9fee575396a9"
+      },
+      "timestamp": "2026-02-26T11:48:26.452082",
+      "source": "Estelar the Heretic",
+      "target": "Dragonborn (Pyoran)"
+    },
+    "528cbb1ceca92cb6": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Talia employs Duskmire for estate protection",
+        "source_id": "416d5240-5534-4f99-a965-ed0eb4301696",
+        "target_id": "ca9ecae3-126f-4adc-9cf9-05b08a8481ff"
+      },
+      "timestamp": "2026-02-26T11:48:27.713895",
+      "source": "Talia Talindra",
+      "target": "Duskmire"
+    },
+    "efb2ffda94196ef8": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.0,
+        "order_valence": 0.5,
+        "summary": "Talia delegates authority to Jorek.",
+        "source_id": "416d5240-5534-4f99-a965-ed0eb4301696",
+        "target_id": "ebc59fd0-bad0-43e9-9fc4-3bd98bcb082b"
+      },
+      "timestamp": "2026-02-26T11:48:28.940149",
+      "source": "Talia Talindra",
+      "target": "Jorek Talindra"
+    },
+    "51c30bc8e0d44bc6": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.2,
+        "order_valence": 0.5,
+        "summary": "Talia employs the Dhampir as Warden",
+        "source_id": "416d5240-5534-4f99-a965-ed0eb4301696",
+        "target_id": "77276b15-2eb0-4c7d-9edb-312842f6bc26"
+      },
+      "timestamp": "2026-02-26T11:48:30.387560",
+      "source": "Talia Talindra",
+      "target": "Dhampir"
+    },
+    "a8c97092d8d37299": {
+      "result": {
+        "type": "created",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Estelar's tomb was created within the temple",
+        "source_id": "87ac124a-3fc5-4bf5-9b5b-225bc0351d36",
+        "target_id": "6af42fc2-de5f-4abe-8635-93e1ab346333"
+      },
+      "timestamp": "2026-02-26T11:48:31.938179",
+      "source": "Estelar the Heretic",
+      "target": "Sunless Temple"
+    },
+    "2c4402b979e8050c": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.2,
+        "order_valence": 0.7,
+        "summary": "Talia serves the Outer Circle as Warden",
+        "source_id": "416d5240-5534-4f99-a965-ed0eb4301696",
+        "target_id": "9fbc4cda-42c0-4cde-873e-a53329b16fba"
+      },
+      "timestamp": "2026-02-26T11:48:33.205667",
+      "source": "Talia Talindra",
+      "target": "Outer Circle"
+    },
+    "01dd48d8e66f62fc": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.5,
+        "order_valence": -0.7,
+        "summary": "Estelar opposed Vizimir's enslavement program",
+        "source_id": "87ac124a-3fc5-4bf5-9b5b-225bc0351d36",
+        "target_id": "941a5c7a-dabf-42ff-bda1-01b700e8172b"
+      },
+      "timestamp": "2026-02-26T11:48:34.748431",
+      "source": "Estelar the Heretic",
+      "target": "Vizimir"
+    },
+    "da9e2ba03eeb10cb": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.8,
+        "order_valence": -0.7,
+        "summary": "Lamont betrayed Ettria with poison",
+        "source_id": "4d20623c-a902-4e79-83c5-fc43ab02d61f",
+        "target_id": "acad513a-4631-461e-b1d4-7e43dbf13f06"
+      },
+      "timestamp": "2026-02-26T11:48:35.875543",
+      "source": "Ettria",
+      "target": "Lamont Solmar"
+    },
+    "dfc8307f502a1e62": {
+      "result": {
+        "type": "created",
+        "moral_valence": 0.5,
+        "order_valence": 0.2,
+        "summary": "Keledek created S.A.M. as a magical construct",
+        "source_id": "9250735c-e89f-4b0e-b35f-91c7da82879e",
+        "target_id": "8a3acb24-468c-4843-bc18-a551be037534"
+      },
+      "timestamp": "2026-02-26T11:48:37.095105",
+      "source": "Keledek the Wizard",
+      "target": "S.A.M."
+    },
+    "9f43423e05fbf5c8": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Estelar betrayed Ashardolon for personal gain",
+        "source_id": "87ac124a-3fc5-4bf5-9b5b-225bc0351d36",
+        "target_id": "c4dab60d-564b-4696-af29-f0d917787293"
+      },
+      "timestamp": "2026-02-26T11:48:38.385709",
+      "source": "Estelar the Heretic",
+      "target": "Ashardolon"
+    },
+    "a967ae347a09fe54": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.8,
+        "order_valence": -0.9,
+        "summary": "Betrayal through deception and assassination",
+        "source_id": "4d20623c-a902-4e79-83c5-fc43ab02d61f",
+        "target_id": "e54ba2ce-241c-4da2-9569-237dd3b5c9ca"
+      },
+      "timestamp": "2026-02-26T11:48:39.687149",
+      "source": "Ettria",
+      "target": "Skerrin Wavechaser"
+    },
+    "579ece48e79f04bc": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Keledek aided Saltmarsh during the assault",
+        "source_id": "9250735c-e89f-4b0e-b35f-91c7da82879e",
+        "target_id": "53e173aa-f7c4-4e85-99ed-9833c0bed2f2"
+      },
+      "timestamp": "2026-02-26T11:48:41.369718",
+      "source": "Keledek the Wizard",
+      "target": "Session 17: The Fate of Saltmarsh"
+    },
+    "8e598bc93ca3f548": {
+      "result": {
+        "type": "saved",
+        "moral_valence": 1.0,
+        "order_valence": 0.5,
+        "summary": "Rescued from captivity in the house",
+        "source_id": "5dd830ff-4bb9-4c3a-91a8-c385de63c15b",
+        "target_id": "599c3977-6437-4f75-8b86-4ca6a7a4eb27"
+      },
+      "timestamp": "2026-02-26T11:48:42.409257",
+      "source": "2 Coin",
+      "target": "Alchemist's House"
+    },
+    "fbec6b2ad60e43fa": {
+      "result": {
+        "type": "clashed",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Conflict over magic regulation and authority",
+        "source_id": "9250735c-e89f-4b0e-b35f-91c7da82879e",
+        "target_id": "5fad65b9-abd3-4178-972c-5001a42d2054"
+      },
+      "timestamp": "2026-02-26T11:48:43.621877",
+      "source": "Keledek the Wizard",
+      "target": "Iron Riders of Abraxas"
+    },
+    "296bcbdf2cfe2e4d": {
+      "result": {
+        "type": "saved",
+        "moral_valence": 1.0,
+        "order_valence": 1.0,
+        "summary": "Rescued from captivity in the Alchemist's House",
+        "source_id": "5dd830ff-4bb9-4c3a-91a8-c385de63c15b",
+        "target_id": "421021a2-e669-463f-a5e4-880045e89e6f"
+      },
+      "timestamp": "2026-02-26T11:48:45.038670",
+      "source": "2 Coin",
+      "target": "Session 2: The Alchemist's House"
+    },
+    "f45376611e11642d": {
+      "result": {
+        "type": "neutral",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Dating relationship with potential complications",
+        "source_id": "5dd830ff-4bb9-4c3a-91a8-c385de63c15b",
+        "target_id": "6bb1ea2e-8273-450e-a55e-42713a09c9a1"
+      },
+      "timestamp": "2026-02-26T11:48:46.218177",
+      "source": "2 Coin",
+      "target": "Gellan Primewater"
+    },
+    "41766be809ca8637": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.8,
+        "order_valence": -0.6,
+        "summary": "Assassin used poison to betray Ettria",
+        "source_id": "4d20623c-a902-4e79-83c5-fc43ab02d61f",
+        "target_id": "7e52e6f9-276c-46ff-8327-e3a662ccf70d"
+      },
+      "timestamp": "2026-02-26T11:48:47.732008",
+      "source": "Ettria",
+      "target": "Nightshade Poison"
+    },
+    "6f09c3e7c13e8312": {
+      "result": {
+        "type": "served",
+        "moral_valence": 1.0,
+        "order_valence": 1.0,
+        "summary": "Deidre served the Circle of Selune faithfully",
+        "source_id": "7e631ac3-9012-4f6f-9895-ed0043c2fbd5",
+        "target_id": "6e97e42a-1afb-451c-b8eb-bda387aed78e"
+      },
+      "timestamp": "2026-02-26T11:48:48.972028",
+      "source": "Deidre of the Moon",
+      "target": "Circle of Selune"
+    },
+    "de2f43c448e60432": {
+      "result": {
+        "type": "employed",
+        "moral_valence": -0.7,
+        "order_valence": -0.8,
+        "summary": "Keledek seeks forbidden magic at Fort Lizard",
+        "source_id": "9250735c-e89f-4b0e-b35f-91c7da82879e",
+        "target_id": "d9842076-f508-44f6-8d6f-a05909621171"
+      },
+      "timestamp": "2026-02-26T11:48:50.507544",
+      "source": "Keledek the Wizard",
+      "target": "Fort Lizard"
+    },
+    "0081bbd6f74802a5": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Velryn and Duskmire share a mutual alliance.",
+        "source_id": "b1272e0d-94c2-45b2-8457-342d42f8cc04",
+        "target_id": "ca9ecae3-126f-4adc-9cf9-05b08a8481ff"
+      },
+      "timestamp": "2026-02-26T11:48:51.668017",
+      "source": "Velryn Blackthorn",
+      "target": "Duskmire"
+    },
+    "1298512a0cec217c": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.8,
+        "summary": "Town Guard allied with Iron Riders",
+        "source_id": "2216a863-42a6-4567-8775-18759a8545d9",
+        "target_id": "5fad65b9-abd3-4178-972c-5001a42d2054"
+      },
+      "timestamp": "2026-02-26T11:48:52.982067",
+      "source": "Saltmarsh Town Guard",
+      "target": "Iron Riders of Abraxas"
+    },
+    "4f4a2c28fe268f72": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -1.0,
+        "order_valence": -1.0,
+        "summary": "Sir Thomas Oweland was killed.",
+        "source_id": "d5deabf1-abd5-4db9-92f9-aa14a40dd29e",
+        "target_id": "47cc02bc-73da-4796-9833-ce3d1eb2b911"
+      },
+      "timestamp": "2026-02-26T11:48:54.412093",
+      "source": "Saltmarsh Council",
+      "target": "Sir Thomas Oweland"
+    },
+    "95a0d3f80156f7b5": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Velryn and Dhampir form a strategic alliance",
+        "source_id": "b1272e0d-94c2-45b2-8457-342d42f8cc04",
+        "target_id": "77276b15-2eb0-4c7d-9edb-312842f6bc26"
+      },
+      "timestamp": "2026-02-26T11:48:55.978550",
+      "source": "Velryn Blackthorn",
+      "target": "Dhampir"
+    },
+    "6e83de0041582593": {
+      "result": {
+        "type": "neutral",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Eda Oweland is absent from council.",
+        "source_id": "d5deabf1-abd5-4db9-92f9-aa14a40dd29e",
+        "target_id": "0137d7a7-e722-4162-86bd-e0bf67657d25"
+      },
+      "timestamp": "2026-02-26T11:48:57.198240",
+      "source": "Saltmarsh Council",
+      "target": "Eda Oweland"
+    },
+    "37e4e1bec69c021f": {
+      "result": {
+        "type": "served",
+        "moral_valence": 0.5,
+        "order_valence": 0.8,
+        "summary": "Council serves the town's interests.",
+        "source_id": "d5deabf1-abd5-4db9-92f9-aa14a40dd29e",
+        "target_id": "534354f8-2777-4dcb-b62b-871231981d42"
+      },
+      "timestamp": "2026-02-26T11:48:58.545008",
+      "source": "Saltmarsh Council",
+      "target": "Session 5: Town Business"
+    },
+    "08a5a4f90e73d914": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.8,
+        "summary": "Council employs and oversees the Town Guard",
+        "source_id": "d5deabf1-abd5-4db9-92f9-aa14a40dd29e",
+        "target_id": "2216a863-42a6-4567-8775-18759a8545d9"
+      },
+      "timestamp": "2026-02-26T11:48:59.669543",
+      "source": "Saltmarsh Council",
+      "target": "Saltmarsh Town Guard"
+    },
+    "c90f0fbcc37319af": {
+      "result": {
+        "type": "created",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Iron Riders formed from Saltmarsh Guard",
+        "source_id": "d5deabf1-abd5-4db9-92f9-aa14a40dd29e",
+        "target_id": "5fad65b9-abd3-4178-972c-5001a42d2054"
+      },
+      "timestamp": "2026-02-26T11:49:00.920094",
+      "source": "Saltmarsh Council",
+      "target": "Iron Riders of Abraxas"
+    },
+    "3fa125d4b90ed05a": {
+      "result": {
+        "type": "served",
+        "moral_valence": 0.5,
+        "order_valence": 0.7,
+        "summary": "Anders serves on the Saltmarsh Council",
+        "source_id": "4d0c0d57-5438-4045-83b2-cb8b4ffdb2b9",
+        "target_id": "d5deabf1-abd5-4db9-92f9-aa14a40dd29e"
+      },
+      "timestamp": "2026-02-26T11:49:02.061993",
+      "source": "Anders Solmor",
+      "target": "Saltmarsh Council"
+    },
+    "055063476b389d2c": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.6,
+        "order_valence": -0.3,
+        "summary": "Sahuagin blockade harms Jarme's shipyard.",
+        "source_id": "7e8179da-5e7c-4472-b257-9ebd1d6e19e0",
+        "target_id": "2ab05a30-112e-4cbc-b114-8389cba15be7"
+      },
+      "timestamp": "2026-02-26T11:49:03.190408",
+      "source": "Jarme Loveage",
+      "target": "Sahuagin"
+    },
+    "812599fb32b21d8d": {
+      "result": {
+        "type": "created",
+        "moral_valence": 1.0,
+        "order_valence": 1.0,
+        "summary": "Established a shipyard supporting local community",
+        "source_id": "7e8179da-5e7c-4472-b257-9ebd1d6e19e0",
+        "target_id": "423f6a9d-175b-4aa8-93b2-bc897b933b9d"
+      },
+      "timestamp": "2026-02-26T11:49:04.525245",
+      "source": "Jarme Loveage",
+      "target": "Saltmarsh Sailor's Temple"
+    },
+    "d0e9ffccdfd862f3": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.7,
+        "summary": "Jarme operates a shipyard in Saltmarsh",
+        "source_id": "7e8179da-5e7c-4472-b257-9ebd1d6e19e0",
+        "target_id": "3235b720-ecbe-4089-ad79-9c17674c77d4"
+      },
+      "timestamp": "2026-02-26T11:49:06.049027",
+      "source": "Jarme Loveage",
+      "target": "Saltmarsh"
+    },
+    "7c499b154abeddc3": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.6,
+        "summary": "Jarme took over Anders' family business",
+        "source_id": "7e8179da-5e7c-4472-b257-9ebd1d6e19e0",
+        "target_id": "4d0c0d57-5438-4045-83b2-cb8b4ffdb2b9"
+      },
+      "timestamp": "2026-02-26T11:49:07.374973",
+      "source": "Jarme Loveage",
+      "target": "Anders Solmor"
+    },
+    "ce9405378ae40f06": {
+      "result": {
+        "type": "served",
+        "moral_valence": 0.8,
+        "order_valence": 0.7,
+        "summary": "Faithful congregant and friend of the temple",
+        "source_id": "7e8179da-5e7c-4472-b257-9ebd1d6e19e0",
+        "target_id": "cd6de2c7-85e1-4fdc-9437-dd3f4cd7d5c3"
+      },
+      "timestamp": "2026-02-26T11:49:08.764840",
+      "source": "Jarme Loveage",
+      "target": "Proteus"
+    },
+    "1a02f61ae53ce785": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.0,
+        "order_valence": 0.5,
+        "summary": "Jarme employs Iron Riders for shipyard recovery",
+        "source_id": "7e8179da-5e7c-4472-b257-9ebd1d6e19e0",
+        "target_id": "5fad65b9-abd3-4178-972c-5001a42d2054"
+      },
+      "timestamp": "2026-02-26T11:49:10.076459",
+      "source": "Jarme Loveage",
+      "target": "Iron Riders of Abraxas"
+    },
+    "cf482d73cf44dd77": {
+      "result": {
+        "type": "executed",
+        "moral_valence": -1.0,
+        "order_valence": 1.0,
+        "summary": "Jarme executed for murders he didn't commit",
+        "source_id": "7e8179da-5e7c-4472-b257-9ebd1d6e19e0",
+        "target_id": "53e173aa-f7c4-4e85-99ed-9833c0bed2f2"
+      },
+      "timestamp": "2026-02-26T11:49:11.616229",
+      "source": "Jarme Loveage",
+      "target": "Session 17: The Fate of Saltmarsh"
+    },
+    "a89bb961150c81ed": {
+      "result": {
+        "type": "served",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Lapsed priest served the deity Proteus",
+        "source_id": "fbae3367-6e59-45e4-b1d2-6fb447e59fd9",
+        "target_id": "cd6de2c7-85e1-4fdc-9437-dd3f4cd7d5c3"
+      },
+      "timestamp": "2026-02-26T11:49:13.183366",
+      "source": "Master Refrum",
+      "target": "Proteus"
+    },
+    "09568370d8ef369c": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.8,
+        "order_valence": 0.6,
+        "summary": "Close friends and allies in faith",
+        "source_id": "fbae3367-6e59-45e4-b1d2-6fb447e59fd9",
+        "target_id": "7e8179da-5e7c-4472-b257-9ebd1d6e19e0"
+      },
+      "timestamp": "2026-02-26T11:49:14.338367",
+      "source": "Master Refrum",
+      "target": "Jarme Loveage"
+    },
+    "bc1b9fb21616ee72": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.6,
+        "summary": "Refrum lost faith after Saltmarsh attack",
+        "source_id": "fbae3367-6e59-45e4-b1d2-6fb447e59fd9",
+        "target_id": "53e173aa-f7c4-4e85-99ed-9833c0bed2f2"
+      },
+      "timestamp": "2026-02-26T11:49:15.373524",
+      "source": "Master Refrum",
+      "target": "Session 17: The Fate of Saltmarsh"
+    },
+    "5131d6b8f6497e20": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Master Refrum aids Saltmarsh's community.",
+        "source_id": "fbae3367-6e59-45e4-b1d2-6fb447e59fd9",
+        "target_id": "3235b720-ecbe-4089-ad79-9c17674c77d4"
+      },
+      "timestamp": "2026-02-26T11:49:16.824348",
+      "source": "Master Refrum",
+      "target": "Saltmarsh"
+    },
+    "8e758b9e3c642d4b": {
+      "result": {
+        "type": "served",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Refrum served as a priest in the temple",
+        "source_id": "fbae3367-6e59-45e4-b1d2-6fb447e59fd9",
+        "target_id": "423f6a9d-175b-4aa8-93b2-bc897b933b9d"
+      },
+      "timestamp": "2026-02-26T11:49:17.942830",
+      "source": "Master Refrum",
+      "target": "Saltmarsh Sailor's Temple"
+    },
+    "cc36b10357a3a7aa": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Iron Riders deceived about cremation of remains",
+        "source_id": "fbae3367-6e59-45e4-b1d2-6fb447e59fd9",
+        "target_id": "5fad65b9-abd3-4178-972c-5001a42d2054"
+      },
+      "timestamp": "2026-02-26T11:49:19.065855",
+      "source": "Master Refrum",
+      "target": "Iron Riders of Abraxas"
+    },
+    "0bbd6635e201b319": {
+      "result": {
+        "type": "served",
+        "moral_valence": 0.5,
+        "order_valence": 0.8,
+        "summary": "Father Bonas serves the community of Saltmarsh",
+        "source_id": "a24eca0d-2887-400d-ac72-14eaa2cd8c8a",
+        "target_id": "3235b720-ecbe-4089-ad79-9c17674c77d4"
+      },
+      "timestamp": "2026-02-26T11:49:20.338273",
+      "source": "Father Bonas",
+      "target": "Saltmarsh"
+    },
+    "a22e5150f109af71": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.8,
+        "order_valence": 0.6,
+        "summary": "Father Bonas and Iron Rider Warder cooperate",
+        "source_id": "a24eca0d-2887-400d-ac72-14eaa2cd8c8a",
+        "target_id": "74e2aa6d-7402-4545-8d32-8a699878d3af"
+      },
+      "timestamp": "2026-02-26T11:49:21.767230",
+      "source": "Father Bonas",
+      "target": "Iron Rider Warder"
+    },
+    "d86c77083aa30f36": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.0,
+        "order_valence": 0.5,
+        "summary": "Tak Merakin works for Saltmarsh's harbor",
+        "source_id": "f9778e61-b94b-4e8a-bebf-fa474094e247",
+        "target_id": "3235b720-ecbe-4089-ad79-9c17674c77d4"
+      },
+      "timestamp": "2026-02-26T11:49:23.222031",
+      "source": "Tak Merakin",
+      "target": "Saltmarsh"
+    },
+    "0304d9d2c2621455": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Mutual benefit through food and affiliation",
+        "source_id": "f9778e61-b94b-4e8a-bebf-fa474094e247",
+        "target_id": "ddc5ab1d-3388-417b-91b7-8a4ecc793703"
+      },
+      "timestamp": "2026-02-26T11:49:25.090875",
+      "source": "Tak Merakin",
+      "target": "Confederacy of Hearthships"
+    },
+    "f4cc67402088619b": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.8,
+        "order_valence": 0.6,
+        "summary": "Mutual support between priest and confederacy",
+        "source_id": "4d20623c-a902-4e79-83c5-fc43ab02d61f",
+        "target_id": "ddc5ab1d-3388-417b-91b7-8a4ecc793703"
+      },
+      "timestamp": "2026-02-26T11:49:26.359608",
+      "source": "Ettria",
+      "target": "Confederacy of Hearthships"
+    },
+    "dd1add14e3eb354e": {
+      "result": {
+        "type": "changed",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Ettria was seen alive but altered",
+        "source_id": "4d20623c-a902-4e79-83c5-fc43ab02d61f",
+        "target_id": "53e173aa-f7c4-4e85-99ed-9833c0bed2f2"
+      },
+      "timestamp": "2026-02-26T11:49:27.744382",
+      "source": "Ettria",
+      "target": "Session 17: The Fate of Saltmarsh"
+    },
+    "fef8e39629edbf84": {
+      "result": {
+        "type": "created",
+        "moral_valence": -0.5,
+        "order_valence": -0.7,
+        "summary": "Ettria created a Hag Eye for unknown purposes",
+        "source_id": "4d20623c-a902-4e79-83c5-fc43ab02d61f",
+        "target_id": "ff554eac-b56e-46a1-be19-68f131135efc"
+      },
+      "timestamp": "2026-02-26T11:49:29.022734",
+      "source": "Ettria",
+      "target": "Hag Eye"
+    },
+    "c2386b9e3e62553e": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Ettria killed the Child of the Briar",
+        "source_id": "4d20623c-a902-4e79-83c5-fc43ab02d61f",
+        "target_id": "e8e28ca1-7c9f-417b-97a4-0c63bf454918"
+      },
+      "timestamp": "2026-02-26T11:49:30.824730",
+      "source": "Ettria",
+      "target": "Child of the Briar"
+    },
+    "947e805b403cfb0b": {
+      "result": {
+        "type": "changed",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Ettria underwent a significant transformation",
+        "source_id": "4d20623c-a902-4e79-83c5-fc43ab02d61f",
+        "target_id": "fbae3367-6e59-45e4-b1d2-6fb447e59fd9"
+      },
+      "timestamp": "2026-02-26T11:49:32.040345",
+      "source": "Ettria",
+      "target": "Master Refrum"
+    },
+    "14b49c7740b71ecd": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -1.0,
+        "order_valence": -1.0,
+        "summary": "Proteus is dead, suggesting malevolent act",
+        "source_id": "4d20623c-a902-4e79-83c5-fc43ab02d61f",
+        "target_id": "cd6de2c7-85e1-4fdc-9437-dd3f4cd7d5c3"
+      },
+      "timestamp": "2026-02-26T11:49:33.774196",
+      "source": "Ettria",
+      "target": "Proteus"
+    },
+    "8ed59d715e606986": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.6,
+        "summary": "Iron Golem betrayed Keledek's control",
+        "source_id": "9250735c-e89f-4b0e-b35f-91c7da82879e",
+        "target_id": "64503ed9-0811-4d0d-a535-354681973732"
+      },
+      "timestamp": "2026-02-26T11:49:34.942069",
+      "source": "Keledek the Wizard",
+      "target": "Iron Golem"
+    },
+    "0e2533813058c2ff": {
+      "result": {
+        "type": "argued",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Conflict over magical shipments",
+        "source_id": "9250735c-e89f-4b0e-b35f-91c7da82879e",
+        "target_id": "f661969f-b9a7-4b5e-aeb7-5c507160856f"
+      },
+      "timestamp": "2026-02-26T11:49:36.244429",
+      "source": "Keledek the Wizard",
+      "target": "Commodore Daniel Warrington"
+    },
+    "2ced853ed78c4140": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Keledek allied with Gold Scale Company adventurers",
+        "source_id": "9250735c-e89f-4b0e-b35f-91c7da82879e",
+        "target_id": "f072e19f-6e96-4195-87ad-7b609a252019"
+      },
+      "timestamp": "2026-02-26T11:49:37.557405",
+      "source": "Keledek the Wizard",
+      "target": "Gold Scale Company"
+    },
+    "057c3420155bf006": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Sahuagin assaulted Saltmarsh, causing harm.",
+        "source_id": "8a3acb24-468c-4843-bc18-a551be037534",
+        "target_id": "2ab05a30-112e-4cbc-b114-8389cba15be7"
+      },
+      "timestamp": "2026-02-26T11:49:38.898192",
+      "source": "S.A.M.",
+      "target": "Sahuagin"
+    },
+    "d74bf611bb4b906a": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.8,
+        "summary": "Saltmarsh Town Guard employs Striborg's leadership",
+        "source_id": "2216a863-42a6-4567-8775-18759a8545d9",
+        "target_id": "545f8574-7795-40ad-913a-af35b84dd5e9"
+      },
+      "timestamp": "2026-02-26T11:49:40.157321",
+      "source": "Saltmarsh Town Guard",
+      "target": "Striborg"
+    },
+    "8c4904d2b611ba0d": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Guard left leaderless after sahuagin assault",
+        "source_id": "2216a863-42a6-4567-8775-18759a8545d9",
+        "target_id": "53e173aa-f7c4-4e85-99ed-9833c0bed2f2"
+      },
+      "timestamp": "2026-02-26T11:49:41.960299",
+      "source": "Saltmarsh Town Guard",
+      "target": "Session 17: The Fate of Saltmarsh"
+    },
+    "6536d9a129c96754": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.8,
+        "summary": "Town Guard allied with Iron Riders' leadership",
+        "source_id": "2216a863-42a6-4567-8775-18759a8545d9",
+        "target_id": "11ed0dc7-d9c7-437d-9e68-e1956a599032"
+      },
+      "timestamp": "2026-02-26T11:49:43.403960",
+      "source": "Saltmarsh Town Guard",
+      "target": "Iron Rider Deputy"
+    },
+    "a1a3abc617ce2930": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Sahuagin attacked and devastated Saltmarsh guard.",
+        "source_id": "2216a863-42a6-4567-8775-18759a8545d9",
+        "target_id": "2ab05a30-112e-4cbc-b114-8389cba15be7"
+      },
+      "timestamp": "2026-02-26T11:49:45.023602",
+      "source": "Saltmarsh Town Guard",
+      "target": "Sahuagin"
+    },
+    "09b9da0f908a1f55": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -1.0,
+        "order_valence": -1.0,
+        "summary": "Skerrin murdered the Town Guard leader",
+        "source_id": "d5deabf1-abd5-4db9-92f9-aa14a40dd29e",
+        "target_id": "e54ba2ce-241c-4da2-9569-237dd3b5c9ca"
+      },
+      "timestamp": "2026-02-26T11:49:45.983695",
+      "source": "Saltmarsh Council",
+      "target": "Skerrin Wavechaser"
+    },
+    "f7cfbee0c6b9710a": {
+      "result": {
+        "type": "served",
+        "moral_valence": 0.5,
+        "order_valence": 0.8,
+        "summary": "Council serves community during crisis",
+        "source_id": "d5deabf1-abd5-4db9-92f9-aa14a40dd29e",
+        "target_id": "4a3ce942-4dbb-4b4d-a4cc-af28e725b733"
+      },
+      "timestamp": "2026-02-26T11:49:47.153990",
+      "source": "Saltmarsh Council",
+      "target": "Session 15-16: Murder on the Jubilee"
+    },
+    "0ae93d1530497ea8": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.7,
+        "order_valence": 0.8,
+        "summary": "Council aids in Saltmarsh's fate.",
+        "source_id": "d5deabf1-abd5-4db9-92f9-aa14a40dd29e",
+        "target_id": "53e173aa-f7c4-4e85-99ed-9833c0bed2f2"
+      },
+      "timestamp": "2026-02-26T11:49:48.404955",
+      "source": "Saltmarsh Council",
+      "target": "Session 17: The Fate of Saltmarsh"
+    },
+    "7c8352fb885ea7f5": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -1.0,
+        "order_valence": -1.0,
+        "summary": "Commodore Warrington was killed by unknown forces.",
+        "source_id": "d5deabf1-abd5-4db9-92f9-aa14a40dd29e",
+        "target_id": "4ef10541-4779-49ad-9f74-c895f987adda"
+      },
+      "timestamp": "2026-02-26T11:49:49.584835",
+      "source": "Saltmarsh Council",
+      "target": "Commodore Wardell Warrington"
+    },
+    "74b15e01f5518238": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.0,
+        "order_valence": 0.5,
+        "summary": "Jarme Loveage's business ties with the council",
+        "source_id": "d5deabf1-abd5-4db9-92f9-aa14a40dd29e",
+        "target_id": "7e8179da-5e7c-4472-b257-9ebd1d6e19e0"
+      },
+      "timestamp": "2026-02-26T11:49:51.084044",
+      "source": "Saltmarsh Council",
+      "target": "Jarme Loveage"
+    },
+    "c86848ba8ed8a871": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Saltmarsh Council employs Keledek the Wizard",
+        "source_id": "d5deabf1-abd5-4db9-92f9-aa14a40dd29e",
+        "target_id": "9250735c-e89f-4b0e-b35f-91c7da82879e"
+      },
+      "timestamp": "2026-02-26T11:49:52.353378",
+      "source": "Saltmarsh Council",
+      "target": "Keledek the Wizard"
+    },
+    "0c5a6283071912f1": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -1.0,
+        "order_valence": -1.0,
+        "summary": "Vampire killed Commodore Warrington",
+        "source_id": "d5deabf1-abd5-4db9-92f9-aa14a40dd29e",
+        "target_id": "11fc418c-113d-4033-a1d7-6da09972782e"
+      },
+      "timestamp": "2026-02-26T11:49:53.612236",
+      "source": "Saltmarsh Council",
+      "target": "Vampire"
+    },
+    "e9f706def9d9dbe6": {
+      "result": {
+        "type": "imprisoned",
+        "moral_valence": -0.5,
+        "order_valence": 0.5,
+        "summary": "Council imprisoned former mine captain.",
+        "source_id": "d5deabf1-abd5-4db9-92f9-aa14a40dd29e",
+        "target_id": "30fb3a1c-e5ee-46c8-861a-0ab9bf7ed5ce"
+      },
+      "timestamp": "2026-02-26T11:49:55.011191",
+      "source": "Saltmarsh Council",
+      "target": "Warrington Memorial Asylum"
+    },
+    "f6652a05b634c42e": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Gellan's partner went missing under suspicious circumstances",
+        "source_id": "6bb1ea2e-8273-450e-a55e-42713a09c9a1",
+        "target_id": "53e173aa-f7c4-4e85-99ed-9833c0bed2f2"
+      },
+      "timestamp": "2026-02-26T11:49:56.641801",
+      "source": "Gellan Primewater",
+      "target": "Session 17: The Fate of Saltmarsh"
+    },
+    "0dae45d269ef8ea9": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.8,
+        "order_valence": -0.6,
+        "summary": "Anders betrayed by his father's deception",
+        "source_id": "4d0c0d57-5438-4045-83b2-cb8b4ffdb2b9",
+        "target_id": "c13d73c6-604f-4580-8965-6ed8ce31e724"
+      },
+      "timestamp": "2026-02-26T11:49:57.829762",
+      "source": "Anders Solmor",
+      "target": "Lady Nightshade"
+    },
+    "cabcf532bd157f33": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -1.0,
+        "order_valence": -1.0,
+        "summary": "Anders killed Eliander aboard the Dragon's Jubilee",
+        "source_id": "4d0c0d57-5438-4045-83b2-cb8b4ffdb2b9",
+        "target_id": "07c5e157-0946-4f1a-8f7f-886b0f5355b5"
+      },
+      "timestamp": "2026-02-26T11:50:00.238524",
+      "source": "Anders Solmor",
+      "target": "Eliander Fireborn"
+    },
+    "086180c63fa765a7": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.8,
+        "order_valence": -0.6,
+        "summary": "Betrayal leading to murder of a captain",
+        "source_id": "4d0c0d57-5438-4045-83b2-cb8b4ffdb2b9",
+        "target_id": "53e173aa-f7c4-4e85-99ed-9833c0bed2f2"
+      },
+      "timestamp": "2026-02-26T11:50:01.837653",
+      "source": "Anders Solmor",
+      "target": "Session 17: The Fate of Saltmarsh"
+    },
+    "5aa5104b91557904": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.6,
+        "summary": "Vanished during a crisis, leaving Saltmarsh vulnerable.",
+        "source_id": "5dd830ff-4bb9-4c3a-91a8-c385de63c15b",
+        "target_id": "3235b720-ecbe-4089-ad79-9c17674c77d4"
+      },
+      "timestamp": "2026-02-26T11:50:03.677474",
+      "source": "2 Coin",
+      "target": "Saltmarsh"
+    },
+    "72ed346b1a940db8": {
+      "result": {
+        "type": "served",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "2 Coin serves Lady Nightshade as a werewolf",
+        "source_id": "5dd830ff-4bb9-4c3a-91a8-c385de63c15b",
+        "target_id": "c13d73c6-604f-4580-8965-6ed8ce31e724"
+      },
+      "timestamp": "2026-02-26T11:50:04.968902",
+      "source": "2 Coin",
+      "target": "Lady Nightshade"
+    },
+    "68284dcfd0785df9": {
+      "result": {
+        "type": "saved",
+        "moral_valence": 1.0,
+        "order_valence": 0.5,
+        "summary": "Rescued from captivity in Alchemist's House",
+        "source_id": "5dd830ff-4bb9-4c3a-91a8-c385de63c15b",
+        "target_id": "53e173aa-f7c4-4e85-99ed-9833c0bed2f2"
+      },
+      "timestamp": "2026-02-26T11:50:06.125734",
+      "source": "2 Coin",
+      "target": "Session 17: The Fate of Saltmarsh"
+    },
+    "23925d477305554a": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -1.0,
+        "order_valence": -1.0,
+        "summary": "2 Coin was killed by Gold Scale Company",
+        "source_id": "5dd830ff-4bb9-4c3a-91a8-c385de63c15b",
+        "target_id": "f072e19f-6e96-4195-87ad-7b609a252019"
+      },
+      "timestamp": "2026-02-26T11:50:07.508963",
+      "source": "2 Coin",
+      "target": "Gold Scale Company"
+    },
+    "08c1e77abae061cf": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "2 Coin expresses camaraderie with Greyson",
+        "source_id": "5dd830ff-4bb9-4c3a-91a8-c385de63c15b",
+        "target_id": "98dff707-5778-4314-8809-acc481d6db94"
+      },
+      "timestamp": "2026-02-26T11:50:08.873876",
+      "source": "2 Coin",
+      "target": "Greyson Adams"
+    },
+    "881daa39b7c554c2": {
+      "result": {
+        "type": "neutral",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Deidre's initial belief about Lady Nightshade",
+        "source_id": "7e631ac3-9012-4f6f-9895-ed0043c2fbd5",
+        "target_id": "c13d73c6-604f-4580-8965-6ed8ce31e724"
+      },
+      "timestamp": "2026-02-26T11:50:10.058899",
+      "source": "Deidre of the Moon",
+      "target": "Lady Nightshade"
+    },
+    "206a7e4229009ac0": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.8,
+        "order_valence": 0.5,
+        "summary": "Deidre aided in understanding lunar alignments",
+        "source_id": "7e631ac3-9012-4f6f-9895-ed0043c2fbd5",
+        "target_id": "987df9fe-ddc8-4199-9dd6-248c8be6bd7e"
+      },
+      "timestamp": "2026-02-26T11:50:11.848258",
+      "source": "Deidre of the Moon",
+      "target": "Session 46-47: Lunar Kingdom"
+    },
+    "ad4e001e7b225694": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.8,
+        "order_valence": 0.6,
+        "summary": "Deidre assisted the party with insights",
+        "source_id": "7e631ac3-9012-4f6f-9895-ed0043c2fbd5",
+        "target_id": "53e173aa-f7c4-4e85-99ed-9833c0bed2f2"
+      },
+      "timestamp": "2026-02-26T11:50:13.773063",
+      "source": "Deidre of the Moon",
+      "target": "Session 17: The Fate of Saltmarsh"
+    },
+    "465dc61454c3c45c": {
+      "result": {
+        "type": "served",
+        "moral_valence": 0.8,
+        "order_valence": 0.7,
+        "summary": "Deidre served the community of Saltmarsh",
+        "source_id": "7e631ac3-9012-4f6f-9895-ed0043c2fbd5",
+        "target_id": "3235b720-ecbe-4089-ad79-9c17674c77d4"
+      },
+      "timestamp": "2026-02-26T11:50:15.615622",
+      "source": "Deidre of the Moon",
+      "target": "Saltmarsh"
+    },
+    "6bcfa262f8dc26fe": {
+      "result": {
+        "type": "committed",
+        "moral_valence": -0.5,
+        "order_valence": 0.5,
+        "summary": "Deidre was committed to the asylum",
+        "source_id": "7e631ac3-9012-4f6f-9895-ed0043c2fbd5",
+        "target_id": "30fb3a1c-e5ee-46c8-861a-0ab9bf7ed5ce"
+      },
+      "timestamp": "2026-02-26T11:50:16.723133",
+      "source": "Deidre of the Moon",
+      "target": "Warrington Memorial Asylum"
+    },
+    "878e004590fa8203": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.6,
+        "summary": "Manistrad betrayed during Riders' opportunistic theft",
+        "source_id": "79ddcfb0-9484-41fc-aa8d-76168cb74fff",
+        "target_id": "5fad65b9-abd3-4178-972c-5001a42d2054"
+      },
+      "timestamp": "2026-02-26T11:50:18.211158",
+      "source": "Manistrad Copperlocks",
+      "target": "Iron Riders of Abraxas"
+    },
+    "2c9dc6f04813dead": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.8,
+        "summary": "Manistrad oversees mining for Striborg's interests",
+        "source_id": "79ddcfb0-9484-41fc-aa8d-76168cb74fff",
+        "target_id": "545f8574-7795-40ad-913a-af35b84dd5e9"
+      },
+      "timestamp": "2026-02-26T11:50:19.666160",
+      "source": "Manistrad Copperlocks",
+      "target": "Striborg"
+    },
+    "9681bf4bff410202": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.6,
+        "summary": "Manistrad betrayed during the chaos of attack",
+        "source_id": "79ddcfb0-9484-41fc-aa8d-76168cb74fff",
+        "target_id": "53e173aa-f7c4-4e85-99ed-9833c0bed2f2"
+      },
+      "timestamp": "2026-02-26T11:50:21.294089",
+      "source": "Manistrad Copperlocks",
+      "target": "Session 17: The Fate of Saltmarsh"
+    },
+    "0ad054a7d6056810": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.7,
+        "summary": "Dwarven captain overseeing mining operations",
+        "source_id": "79ddcfb0-9484-41fc-aa8d-76168cb74fff",
+        "target_id": "3235b720-ecbe-4089-ad79-9c17674c77d4"
+      },
+      "timestamp": "2026-02-26T11:50:22.517344",
+      "source": "Manistrad Copperlocks",
+      "target": "Saltmarsh"
+    },
+    "ff075a39b0386c9d": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.6,
+        "order_valence": -0.7,
+        "summary": "Talia planned to steal from Velryn",
+        "source_id": "416d5240-5534-4f99-a965-ed0eb4301696",
+        "target_id": "b1272e0d-94c2-45b2-8457-342d42f8cc04"
+      },
+      "timestamp": "2026-02-26T11:50:23.722070",
+      "source": "Talia Talindra",
+      "target": "Velryn Blackthorn"
+    },
+    "e8646588c5cd4da5": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.2,
+        "order_valence": -0.3,
+        "summary": "Used warehouses for Sarenrae's cult rituals",
+        "source_id": "416d5240-5534-4f99-a965-ed0eb4301696",
+        "target_id": "06181160-3232-48c2-9532-c99a55726aa5"
+      },
+      "timestamp": "2026-02-26T11:50:25.418720",
+      "source": "Talia Talindra",
+      "target": "Sarenrae"
+    },
+    "1374530e8899d456": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.2,
+        "order_valence": -0.3,
+        "summary": "Used warehouses for cult rituals secretly",
+        "source_id": "416d5240-5534-4f99-a965-ed0eb4301696",
+        "target_id": "48935832-0002-45f9-aaca-5943017bf50e"
+      },
+      "timestamp": "2026-02-26T11:50:26.657013",
+      "source": "Talia Talindra",
+      "target": "Agents of the Eye"
+    },
+    "0b11674a0e4a0339": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.8,
+        "order_valence": -0.9,
+        "summary": "Talia's deceitful heist plan against Sarenrae cultists",
+        "source_id": "416d5240-5534-4f99-a965-ed0eb4301696",
+        "target_id": "ff3b901c-6c3e-469a-8616-6a1bb333ae55"
+      },
+      "timestamp": "2026-02-26T11:50:28.133414",
+      "source": "Talia Talindra",
+      "target": "Session 33: Duskmire"
+    },
+    "ba84940bc00564b3": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Gold Scale Company defended Talia's estate",
+        "source_id": "416d5240-5534-4f99-a965-ed0eb4301696",
+        "target_id": "f072e19f-6e96-4195-87ad-7b609a252019"
+      },
+      "timestamp": "2026-02-26T11:50:29.234825",
+      "source": "Talia Talindra",
+      "target": "Gold Scale Company"
+    },
+    "3e2afa41e2945311": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.8,
+        "summary": "Talia planned to steal from Sargoth",
+        "source_id": "416d5240-5534-4f99-a965-ed0eb4301696",
+        "target_id": "065db194-4cf5-4142-b2dd-288b99aad8ee"
+      },
+      "timestamp": "2026-02-26T11:50:30.544768",
+      "source": "Talia Talindra",
+      "target": "Sargoth the Eternal"
+    },
+    "7fd1b0d2b9dfdbef": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Talia was harmed by Lady Nightshade.",
+        "source_id": "416d5240-5534-4f99-a965-ed0eb4301696",
+        "target_id": "c13d73c6-604f-4580-8965-6ed8ce31e724"
+      },
+      "timestamp": "2026-02-26T11:50:31.754120",
+      "source": "Talia Talindra",
+      "target": "Lady Nightshade"
+    },
+    "1c5c7b502fd152d3": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Talia was captured and chained by Lamont",
+        "source_id": "416d5240-5534-4f99-a965-ed0eb4301696",
+        "target_id": "acad513a-4631-461e-b1d4-7e43dbf13f06"
+      },
+      "timestamp": "2026-02-26T11:50:32.973106",
+      "source": "Talia Talindra",
+      "target": "Lamont Solmar"
+    },
+    "6f9d9a39b10a6759": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.0,
+        "order_valence": 0.5,
+        "summary": "Jorek serves House Talindra in Duskmire",
+        "source_id": "ebc59fd0-bad0-43e9-9fc4-3bd98bcb082b",
+        "target_id": "ca9ecae3-126f-4adc-9cf9-05b08a8481ff"
+      },
+      "timestamp": "2026-02-26T11:50:34.276350",
+      "source": "Jorek Talindra",
+      "target": "Duskmire"
+    },
+    "d7ffe239a79f7031": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.8,
+        "summary": "Jorek stole from a dying spy",
+        "source_id": "ebc59fd0-bad0-43e9-9fc4-3bd98bcb082b",
+        "target_id": "ff3b901c-6c3e-469a-8616-6a1bb333ae55"
+      },
+      "timestamp": "2026-02-26T11:50:35.415413",
+      "source": "Jorek Talindra",
+      "target": "Session 33: Duskmire"
+    },
+    "4cc75782b13932cd": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Ama killed Jorek in chaotic melee",
+        "source_id": "ebc59fd0-bad0-43e9-9fc4-3bd98bcb082b",
+        "target_id": "e5c7b44e-a078-479d-927b-5f2e365cf6aa"
+      },
+      "timestamp": "2026-02-26T11:50:36.716677",
+      "source": "Jorek Talindra",
+      "target": "Amastacia Aspensong"
+    },
+    "dd74c87b95083623": {
+      "result": {
+        "type": "escaped",
+        "moral_valence": 0.0,
+        "order_valence": -0.5,
+        "summary": "Jorek evaded capture by the company",
+        "source_id": "ebc59fd0-bad0-43e9-9fc4-3bd98bcb082b",
+        "target_id": "f072e19f-6e96-4195-87ad-7b609a252019"
+      },
+      "timestamp": "2026-02-26T11:50:37.966841",
+      "source": "Jorek Talindra",
+      "target": "Gold Scale Company"
+    },
+    "b99a6f66bc3fb50c": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -1.0,
+        "order_valence": -1.0,
+        "summary": "Jorek was killed by Sarenrae cultists",
+        "source_id": "ebc59fd0-bad0-43e9-9fc4-3bd98bcb082b",
+        "target_id": "06181160-3232-48c2-9532-c99a55726aa5"
+      },
+      "timestamp": "2026-02-26T11:50:39.536979",
+      "source": "Jorek Talindra",
+      "target": "Sarenrae"
+    },
+    "991c9633294f303d": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.3,
+        "order_valence": 0.5,
+        "summary": "Velryn employs the Soulbound Skull as servant",
+        "source_id": "b1272e0d-94c2-45b2-8457-342d42f8cc04",
+        "target_id": "e99378ff-b4cc-4c78-a2fb-2a0a39d13025"
+      },
+      "timestamp": "2026-02-26T11:50:40.840200",
+      "source": "Velryn Blackthorn",
+      "target": "Soulbound Skull"
+    },
+    "7f0c3286615d9084": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.8,
+        "order_valence": -0.6,
+        "summary": "Velryn exploited Yara's imprisonment for power",
+        "source_id": "b1272e0d-94c2-45b2-8457-342d42f8cc04",
+        "target_id": "b10b259b-90f6-42ee-9234-a1a9b4b31243"
+      },
+      "timestamp": "2026-02-26T11:50:42.089779",
+      "source": "Velryn Blackthorn",
+      "target": "Mother Yara, Dawnbringer"
+    },
+    "8bb7604576d732b5": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.7,
+        "order_valence": 0.5,
+        "summary": "Velryn targets Sarenrae's followers",
+        "source_id": "b1272e0d-94c2-45b2-8457-342d42f8cc04",
+        "target_id": "06181160-3232-48c2-9532-c99a55726aa5"
+      },
+      "timestamp": "2026-02-26T11:50:43.400590",
+      "source": "Velryn Blackthorn",
+      "target": "Sarenrae"
+    },
+    "ab12ce96a0a4ce5f": {
+      "result": {
+        "type": "warned",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Velryn warned about dangers of The Black Chalice",
+        "source_id": "b1272e0d-94c2-45b2-8457-342d42f8cc04",
+        "target_id": "0f830abb-df04-4d2d-b7f2-07d0801aed3f"
+      },
+      "timestamp": "2026-02-26T11:50:44.840811",
+      "source": "Velryn Blackthorn",
+      "target": "The Black Chalice"
+    },
+    "b80910ff2d918b97": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Velryn utilized the Cloak of Rats.",
+        "source_id": "b1272e0d-94c2-45b2-8457-342d42f8cc04",
+        "target_id": "83b65052-cf10-4bf2-b2bb-bf59193b3b03"
+      },
+      "timestamp": "2026-02-26T11:50:46.096660",
+      "source": "Velryn Blackthorn",
+      "target": "Cloak of Rats"
+    },
+    "5f19d88f74ba09c4": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.2,
+        "order_valence": 0.5,
+        "summary": "Velryn utilizes the Amulet for protection",
+        "source_id": "b1272e0d-94c2-45b2-8457-342d42f8cc04",
+        "target_id": "9ca9e757-d49b-48b0-9736-5b191a6aaf1e"
+      },
+      "timestamp": "2026-02-26T11:50:47.270600",
+      "source": "Velryn Blackthorn",
+      "target": "Amulet of False Life"
+    },
+    "b43a8f51fa78796b": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.3,
+        "summary": "Befriended Jorek for mutual benefit",
+        "source_id": "b1272e0d-94c2-45b2-8457-342d42f8cc04",
+        "target_id": "ebc59fd0-bad0-43e9-9fc4-3bd98bcb082b"
+      },
+      "timestamp": "2026-02-26T11:50:48.711217",
+      "source": "Velryn Blackthorn",
+      "target": "Jorek Talindra"
+    },
+    "074a01b80a62ef3d": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Provided assistance with magical equipment",
+        "source_id": "b1272e0d-94c2-45b2-8457-342d42f8cc04",
+        "target_id": "244f3d70-893c-437e-9df2-c4fdc37985a0"
+      },
+      "timestamp": "2026-02-26T11:50:50.282343",
+      "source": "Velryn Blackthorn",
+      "target": "Vial of Dark Resolve"
+    },
+    "cc00f05778411dc8": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.0,
+        "order_valence": 0.5,
+        "summary": "Velryn employs Santrini to combat a cult",
+        "source_id": "b1272e0d-94c2-45b2-8457-342d42f8cc04",
+        "target_id": "727d05e2-6a17-4ae6-ab79-e545bd6c2b4d"
+      },
+      "timestamp": "2026-02-26T11:50:51.577819",
+      "source": "Velryn Blackthorn",
+      "target": "Santrini"
+    },
+    "bf558d5efc9da807": {
+      "result": {
+        "type": "investigated",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Velryn investigates arson of House Talindra",
+        "source_id": "b1272e0d-94c2-45b2-8457-342d42f8cc04",
+        "target_id": "37fceea9-c6ef-4bcb-9bb3-4b60b9eea962"
+      },
+      "timestamp": "2026-02-26T11:50:52.971698",
+      "source": "Velryn Blackthorn",
+      "target": "House Talindra"
+    },
+    "448d9b2ad5b06012": {
+      "result": {
+        "type": "traded",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Velryn illicitly imported a powerful artifact",
+        "source_id": "b1272e0d-94c2-45b2-8457-342d42f8cc04",
+        "target_id": "57a02500-4975-4609-ab4d-8ad9a18edcb4"
+      },
+      "timestamp": "2026-02-26T11:50:54.667213",
+      "source": "Velryn Blackthorn",
+      "target": "Stone of Sargoth the Eternal"
+    },
+    "29c5f346bdfb0482": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Velryn aids Sargoth against cultists",
+        "source_id": "b1272e0d-94c2-45b2-8457-342d42f8cc04",
+        "target_id": "065db194-4cf5-4142-b2dd-288b99aad8ee"
+      },
+      "timestamp": "2026-02-26T11:50:56.107108",
+      "source": "Velryn Blackthorn",
+      "target": "Sargoth the Eternal"
+    },
+    "34860d8eb121876b": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Velryn employs Belsifer for investigation",
+        "source_id": "b1272e0d-94c2-45b2-8457-342d42f8cc04",
+        "target_id": "5305d119-491e-4c57-b337-171286075b05"
+      },
+      "timestamp": "2026-02-26T11:50:57.445468",
+      "source": "Velryn Blackthorn",
+      "target": "Belsifer"
+    },
+    "889be08134bd2d4c": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Velryn exploits the lower classes' ambition",
+        "source_id": "b1272e0d-94c2-45b2-8457-342d42f8cc04",
+        "target_id": "ff3b901c-6c3e-469a-8616-6a1bb333ae55"
+      },
+      "timestamp": "2026-02-26T11:50:58.856026",
+      "source": "Velryn Blackthorn",
+      "target": "Session 33: Duskmire"
+    },
+    "9a06ae826908c7fd": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Lady Nightshade feels conspired against by deities",
+        "source_id": "c13d73c6-604f-4580-8965-6ed8ce31e724",
+        "target_id": "06181160-3232-48c2-9532-c99a55726aa5"
+      },
+      "timestamp": "2026-02-26T11:51:00.765450",
+      "source": "Lady Nightshade",
+      "target": "Sarenrae"
+    },
+    "263f3ca8f351614a": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Lady Nightshade undermined the Dragon Empire's rule",
+        "source_id": "c13d73c6-604f-4580-8965-6ed8ce31e724",
+        "target_id": "ca1708ac-15ad-4729-ad67-83fd2968996c"
+      },
+      "timestamp": "2026-02-26T11:51:02.356194",
+      "source": "Lady Nightshade",
+      "target": "Dragon Empire"
+    },
+    "63ba2bd2e8c84ff1": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Estelar's actions led to elven sacrifice",
+        "source_id": "87ac124a-3fc5-4bf5-9b5b-225bc0351d36",
+        "target_id": "987df9fe-ddc8-4199-9dd6-248c8be6bd7e"
+      },
+      "timestamp": "2026-02-26T11:51:03.757942",
+      "source": "Estelar the Heretic",
+      "target": "Session 46-47: Lunar Kingdom"
+    },
+    "f346e1ba815dd399": {
+      "result": {
+        "type": "created",
+        "moral_valence": -0.5,
+        "order_valence": -0.8,
+        "summary": "Estelar sought to create chaos with dragons",
+        "source_id": "87ac124a-3fc5-4bf5-9b5b-225bc0351d36",
+        "target_id": "ca1708ac-15ad-4729-ad67-83fd2968996c"
+      },
+      "timestamp": "2026-02-26T11:51:05.353549",
+      "source": "Estelar the Heretic",
+      "target": "Dragon Empire"
+    },
+    "71eb89333675ab5f": {
+      "result": {
+        "type": "employed",
+        "moral_valence": -0.7,
+        "order_valence": -0.9,
+        "summary": "Estelar uses the Magic Crystal for chaos.",
+        "source_id": "87ac124a-3fc5-4bf5-9b5b-225bc0351d36",
+        "target_id": "47d543f5-b9e3-4cff-8542-e8f63e71f504"
+      },
+      "timestamp": "2026-02-26T11:51:06.825121",
+      "source": "Estelar the Heretic",
+      "target": "Magic Crystal"
+    },
+    "9bfa71c532d9c6f0": {
+      "result": {
+        "type": "transformed",
+        "moral_valence": 0.8,
+        "order_valence": 0.5,
+        "summary": "Estelar transformed Bahruhn into an angel",
+        "source_id": "87ac124a-3fc5-4bf5-9b5b-225bc0351d36",
+        "target_id": "f0530ba3-33e5-40cb-af21-b65a73b56a8c"
+      },
+      "timestamp": "2026-02-26T11:51:08.576338",
+      "source": "Estelar the Heretic",
+      "target": "Bahruhn"
+    },
+    "232cdbe5c4bebb69": {
+      "result": {
+        "type": "transformed",
+        "moral_valence": 0.5,
+        "order_valence": 0.0,
+        "summary": "Estelar transformed Bahruhn into an angel",
+        "source_id": "87ac124a-3fc5-4bf5-9b5b-225bc0351d36",
+        "target_id": "06181160-3232-48c2-9532-c99a55726aa5"
+      },
+      "timestamp": "2026-02-26T11:51:10.768515",
+      "source": "Estelar the Heretic",
+      "target": "Sarenrae"
+    },
+    "a4f7b1fc29935562": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 1.0,
+        "order_valence": 0.5,
+        "summary": "Nerium helped break the curse",
+        "source_id": "67790919-d352-4de7-8963-ffa7fc6e065d",
+        "target_id": "2899268b-7e0f-4b42-ae8f-21ca27429a2a"
+      },
+      "timestamp": "2026-02-26T11:51:12.044958",
+      "source": "Nerium",
+      "target": "Valona"
+    },
+    "81ff1cc8c10155ff": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Ramoth allied with Fallowhold after conflict",
+        "source_id": "67790919-d352-4de7-8963-ffa7fc6e065d",
+        "target_id": "e6c62749-98cc-4365-be39-7fa393e1b180"
+      },
+      "timestamp": "2026-02-26T11:51:13.199175",
+      "source": "Nerium",
+      "target": "Fallowhold"
+    },
+    "62c1bcbe63d662c9": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Alliance formed after human raid",
+        "source_id": "67790919-d352-4de7-8963-ffa7fc6e065d",
+        "target_id": "dcd64d62-a9ec-4a40-873d-73a732e4eedf"
+      },
+      "timestamp": "2026-02-26T11:51:14.665471",
+      "source": "Nerium",
+      "target": "Flameborn of the Eastern Wilds"
+    },
+    "4dcd4f5825f3a58c": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.7,
+        "order_valence": 0.2,
+        "summary": "Nerium guided Gold Scale Company to Duskmire",
+        "source_id": "67790919-d352-4de7-8963-ffa7fc6e065d",
+        "target_id": "f072e19f-6e96-4195-87ad-7b609a252019"
+      },
+      "timestamp": "2026-02-26T11:51:16.122990",
+      "source": "Nerium",
+      "target": "Gold Scale Company"
+    },
+    "2a0fbdf4a85da596": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Nerium supports the Inner Circle's interests",
+        "source_id": "67790919-d352-4de7-8963-ffa7fc6e065d",
+        "target_id": "a1288f20-464e-430a-ab27-8a2bc7bd785b"
+      },
+      "timestamp": "2026-02-26T11:51:17.221956",
+      "source": "Nerium",
+      "target": "Inner Circle"
     }
   }
 }
