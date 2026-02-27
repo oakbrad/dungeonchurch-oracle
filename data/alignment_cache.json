@@ -1929,6 +1929,216 @@
       },
       "timestamp": "2026-02-26T11:48:13.167304",
       "title": "Ettria"
+    },
+    "8ade67965bf2f744": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": -0.3,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-27T11:44:25.218462",
+      "title": "Illusion's Fortune"
+    },
+    "514ea6d399be93a1": {
+      "alignment": {
+        "law_chaos": 0.5,
+        "good_evil": 0.0,
+        "confidence": 0.6,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-27T11:44:27.167703",
+      "title": "Jarme Loveage"
+    },
+    "3f5140e60ec97824": {
+      "alignment": {
+        "law_chaos": 0.8,
+        "good_evil": -0.9,
+        "confidence": 0.9,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-27T11:44:28.951932",
+      "title": "Lady Nightshade"
+    },
+    "399682fd86a6d68b": {
+      "alignment": {
+        "law_chaos": -0.5,
+        "good_evil": -0.8,
+        "confidence": 0.8,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-27T11:44:30.928541",
+      "title": "Bhardok the Underlord"
+    },
+    "e430e70ba983455b": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": 0.8,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-27T11:44:32.381773",
+      "title": "Princess Llorona"
+    },
+    "acaf4703b71fa645": {
+      "alignment": {
+        "law_chaos": 0.5,
+        "good_evil": 0.5,
+        "confidence": 0.6,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-27T11:44:34.405123",
+      "title": "Eliander Fireborn"
+    },
+    "1331a0dc0f51464c": {
+      "alignment": {
+        "law_chaos": -0.8,
+        "good_evil": -0.9,
+        "confidence": 0.9,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-27T11:44:36.437190",
+      "title": "Amelia"
+    },
+    "182d6d964f19145d": {
+      "alignment": {
+        "law_chaos": -0.8,
+        "good_evil": -0.9,
+        "confidence": 0.8,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-27T11:44:38.546719",
+      "title": "Sargoth the Eternal"
+    },
+    "bb87169c69fec7ca": {
+      "alignment": {
+        "law_chaos": -0.7,
+        "good_evil": -0.8,
+        "confidence": 0.8,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-27T11:44:40.793805",
+      "title": "Elarion Gearsong"
+    },
+    "77067881fd0336cb": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": 0.5,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-27T11:44:42.248314",
+      "title": "Moldar Deepbeard"
+    },
+    "8da646fc223719ba": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": 0.5,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-27T11:44:43.845756",
+      "title": "The Sanbalet"
+    },
+    "58a487abc9296e48": {
+      "alignment": {
+        "law_chaos": 0.3,
+        "good_evil": -0.4,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-27T11:44:45.325008",
+      "title": "Cestian Garindollo"
+    },
+    "b2a8479fd0a20225": {
+      "alignment": {
+        "law_chaos": 0.9,
+        "good_evil": 0.8,
+        "confidence": 0.9,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-27T11:44:47.791409",
+      "title": "Librarian Construct #14"
+    },
+    "7b345748e1d3fdd3": {
+      "alignment": {
+        "law_chaos": -0.8,
+        "good_evil": -0.9,
+        "confidence": 0.9,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-27T11:44:49.589784",
+      "title": "The Red Wizard"
+    },
+    "9edea122088b79cc": {
+      "alignment": {
+        "law_chaos": -0.8,
+        "good_evil": -0.9,
+        "confidence": 0.9,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-27T11:44:50.837988",
+      "title": "Verid"
+    },
+    "e261ae45d34cd921": {
+      "alignment": {
+        "law_chaos": -0.8,
+        "good_evil": -0.6,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-27T11:44:52.808143",
+      "title": "The Yellow Prince"
+    },
+    "14612585683bb2d2": {
+      "alignment": {
+        "law_chaos": -0.8,
+        "good_evil": -0.9,
+        "confidence": 0.8,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-27T11:44:54.312149",
+      "title": "Nathaniel Flint"
+    },
+    "14395b1aeead5b1b": {
+      "alignment": {
+        "law_chaos": -0.7,
+        "good_evil": -0.9,
+        "confidence": 0.8,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-27T11:44:55.503689",
+      "title": "Blackjack Mel"
+    },
+    "8c6db17dbd298549": {
+      "alignment": {
+        "law_chaos": 0.5,
+        "good_evil": -0.5,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-27T11:44:57.490692",
+      "title": "River the Mage"
+    },
+    "a54f23a45bf19690": {
+      "alignment": {
+        "law_chaos": 0.7,
+        "good_evil": 0.8,
+        "confidence": 0.9,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-27T11:44:59.332197",
+      "title": "Knight-Captain Theodore Marshal"
+    },
+    "bd32a19a277ed32c": {
+      "alignment": {
+        "law_chaos": -0.5,
+        "good_evil": 0.5,
+        "confidence": 0.8,
+        "source": "llm"
+      },
+      "timestamp": "2026-02-27T11:45:01.443389",
+      "title": "Cerric Shadowleaf"
     }
   },
   "relationships": {
@@ -10160,6 +10370,2255 @@
       "timestamp": "2026-02-26T11:51:17.221956",
       "source": "Nerium",
       "target": "Inner Circle"
+    },
+    "399246d45e912529": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Fireborn harmed by Striborg's actions",
+        "source_id": "07c5e157-0946-4f1a-8f7f-886b0f5355b5",
+        "target_id": "545f8574-7795-40ad-913a-af35b84dd5e9"
+      },
+      "timestamp": "2026-02-27T11:45:03.366383",
+      "source": "Eliander Fireborn",
+      "target": "Striborg"
+    },
+    "6a03bbdead61f887": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.7,
+        "order_valence": 0.8,
+        "summary": "Captain of the Saltmarsh Town Guard",
+        "source_id": "07c5e157-0946-4f1a-8f7f-886b0f5355b5",
+        "target_id": "2216a863-42a6-4567-8775-18759a8545d9"
+      },
+      "timestamp": "2026-02-27T11:45:04.810192",
+      "source": "Eliander Fireborn",
+      "target": "Saltmarsh Town Guard"
+    },
+    "d53ba3dcad0d2552": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.5,
+        "order_valence": 0.7,
+        "summary": "Eliander supported the Saltmarsh Council's interests",
+        "source_id": "07c5e157-0946-4f1a-8f7f-886b0f5355b5",
+        "target_id": "d5deabf1-abd5-4db9-92f9-aa14a40dd29e"
+      },
+      "timestamp": "2026-02-27T11:45:06.079341",
+      "source": "Eliander Fireborn",
+      "target": "Saltmarsh Council"
+    },
+    "6b04cc0f67eb1bf0": {
+      "result": {
+        "type": "served",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Amelia serves Lady Nightshade as a knight",
+        "source_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd",
+        "target_id": "c13d73c6-604f-4580-8965-6ed8ce31e724"
+      },
+      "timestamp": "2026-02-27T11:45:07.220972",
+      "source": "Amelia",
+      "target": "Lady Nightshade"
+    },
+    "c040759d8bcab08b": {
+      "result": {
+        "type": "served",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Cerric served the guild for adventure.",
+        "source_id": "7feedac1-cee3-4c32-a16f-578c5c160f8e",
+        "target_id": "c2b72032-bd6e-4602-a7ba-121ae4c73fcd"
+      },
+      "timestamp": "2026-02-27T11:45:08.639544",
+      "source": "Cerric Shadowleaf",
+      "target": "Burle Hunter's Guild"
+    },
+    "747959f2615df4d9": {
+      "result": {
+        "type": "served",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Cerric served Burle as a scout.",
+        "source_id": "7feedac1-cee3-4c32-a16f-578c5c160f8e",
+        "target_id": "60815dac-e9dc-4aac-9510-18e7aad986de"
+      },
+      "timestamp": "2026-02-27T11:45:10.184411",
+      "source": "Cerric Shadowleaf",
+      "target": "Burle"
+    },
+    "5cf4f054d5c586d6": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Amelia bullied by Sir Thomas's sons",
+        "source_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd",
+        "target_id": "47cc02bc-73da-4796-9833-ce3d1eb2b911"
+      },
+      "timestamp": "2026-02-27T11:45:12.055963",
+      "source": "Amelia",
+      "target": "Sir Thomas Oweland"
+    },
+    "7a87abe856ddbabc": {
+      "result": {
+        "type": "traded",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Sanbalet uses alchemist's house for smuggling",
+        "source_id": "de21215e-ac08-449d-9afd-f28d3102362c",
+        "target_id": "599c3977-6437-4f75-8b86-4ca6a7a4eb27"
+      },
+      "timestamp": "2026-02-27T11:45:13.331136",
+      "source": "The Sanbalet",
+      "target": "Alchemist's House"
+    },
+    "7da73bb89c61a71e": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Alliance between Illusion's Fortune and The Sanbalet",
+        "source_id": "6e05df05-4f67-4872-b686-94c7a82bfc04",
+        "target_id": "de21215e-ac08-449d-9afd-f28d3102362c"
+      },
+      "timestamp": "2026-02-27T11:45:14.848220",
+      "source": "Illusion's Fortune",
+      "target": "The Sanbalet"
+    },
+    "e6798f653926df90": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.7,
+        "summary": "Amelia officiated a hunt for the guild",
+        "source_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd",
+        "target_id": "c2b72032-bd6e-4602-a7ba-121ae4c73fcd"
+      },
+      "timestamp": "2026-02-27T11:45:17.812263",
+      "source": "Amelia",
+      "target": "Burle Hunter's Guild"
+    },
+    "f52b76c725e51215": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.5,
+        "order_valence": 0.2,
+        "summary": "Pirate ship allied with Hearthships Confederacy",
+        "source_id": "6e05df05-4f67-4872-b686-94c7a82bfc04",
+        "target_id": "ddc5ab1d-3388-417b-91b7-8a4ecc793703"
+      },
+      "timestamp": "2026-02-27T11:45:18.952286",
+      "source": "Illusion's Fortune",
+      "target": "Confederacy of Hearthships"
+    },
+    "5643082ea8d14be2": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Amelia and the party form an alliance.",
+        "source_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd",
+        "target_id": "ae415f5f-d2a7-4d96-a977-7bb74aca177a"
+      },
+      "timestamp": "2026-02-27T11:45:20.372972",
+      "source": "Amelia",
+      "target": "Session 24: The Hunt"
+    },
+    "95caac4e34ad1f6e": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.7,
+        "order_valence": 0.0,
+        "summary": "Amelia informed Math about his brother's whereabouts",
+        "source_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd",
+        "target_id": "2aad0c9e-e747-4320-8630-9bf03a10599a"
+      },
+      "timestamp": "2026-02-27T11:45:21.676700",
+      "source": "Amelia",
+      "target": "Math Hammerhammer\u00a0"
+    },
+    "b6e4fdbde153f6f0": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Amelia suggests Duskmire for a meeting",
+        "source_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd",
+        "target_id": "ca9ecae3-126f-4adc-9cf9-05b08a8481ff"
+      },
+      "timestamp": "2026-02-27T11:45:23.255239",
+      "source": "Amelia",
+      "target": "Duskmire"
+    },
+    "d1607a7bbdd4780f": {
+      "result": {
+        "type": "neutral",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Amelia encountered the party in the mine",
+        "source_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd",
+        "target_id": "f7f7fbd6-9122-4969-ad53-5ead8f49be5a"
+      },
+      "timestamp": "2026-02-27T11:45:24.806317",
+      "source": "Amelia",
+      "target": "Session 11: Plots Under the Mountain"
+    },
+    "f9186c2ad5429780": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.8,
+        "order_valence": 0.5,
+        "summary": "Eliander and Skerrin are allies.",
+        "source_id": "07c5e157-0946-4f1a-8f7f-886b0f5355b5",
+        "target_id": "e54ba2ce-241c-4da2-9569-237dd3b5c9ca"
+      },
+      "timestamp": "2026-02-27T11:45:26.113114",
+      "source": "Eliander Fireborn",
+      "target": "Skerrin Wavechaser"
+    },
+    "95342da8e8de10cd": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.5,
+        "order_valence": 0.0,
+        "summary": "Allied under shared interests and goals",
+        "source_id": "ddc5ab1d-3388-417b-91b7-8a4ecc793703",
+        "target_id": "2bbdab41-0b68-4011-b45e-20d2157feff5"
+      },
+      "timestamp": "2026-02-27T11:45:27.425713",
+      "source": "Confederacy of Hearthships",
+      "target": "Storm Barons"
+    },
+    "45e2f3f16ace46b5": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.7,
+        "order_valence": 0.3,
+        "summary": "Amelia aids Math in finding Lukas",
+        "source_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd",
+        "target_id": "a2670e80-b4ac-47c6-8f9c-35f6bfec2689"
+      },
+      "timestamp": "2026-02-27T11:45:28.464413",
+      "source": "Amelia",
+      "target": "Lukas Woodenkeeper"
+    },
+    "2491ae7062ff6d5a": {
+      "result": {
+        "type": "created",
+        "moral_valence": 1.0,
+        "order_valence": 1.0,
+        "summary": "Elarion Gearsong created Avalon\u2019s golden age",
+        "source_id": "e69d40f0-89d4-4100-96a8-6cde76439138",
+        "target_id": "1f16d7c6-cecb-468f-9ac4-693447083da1"
+      },
+      "timestamp": "2026-02-27T11:45:30.014816",
+      "source": "Elarion Gearsong",
+      "target": "Avalon"
+    },
+    "30b6b3e523392b1d": {
+      "result": {
+        "type": "neutral",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Moldar travels to Havong on a goat",
+        "source_id": "baf87b35-f25a-4ea6-9162-a5a981029150",
+        "target_id": "962c26fa-27ed-4029-9b1f-81bc516d1af1"
+      },
+      "timestamp": "2026-02-27T11:45:31.329504",
+      "source": "Moldar Deepbeard",
+      "target": "Havong"
+    },
+    "6e951a54940a367c": {
+      "result": {
+        "type": "created",
+        "moral_valence": -0.7,
+        "order_valence": 0.5,
+        "summary": "Established kingdom over desecrated ruins",
+        "source_id": "c13d73c6-604f-4580-8965-6ed8ce31e724",
+        "target_id": "a19107c0-b29f-4dbc-afcd-56b64bcfdb97"
+      },
+      "timestamp": "2026-02-27T11:45:32.852746",
+      "source": "Lady Nightshade",
+      "target": "Dreadwood"
+    },
+    "8bebca8e2e11d209": {
+      "result": {
+        "type": "created",
+        "moral_valence": 0.5,
+        "order_valence": 0.3,
+        "summary": "Elarion created the fellforged through experiments",
+        "source_id": "e69d40f0-89d4-4100-96a8-6cde76439138",
+        "target_id": "793619bb-0ffb-4d30-b77c-5adf2bfafb99"
+      },
+      "timestamp": "2026-02-27T11:45:34.399922",
+      "source": "Elarion Gearsong",
+      "target": "Fellforged"
+    },
+    "f07b6b591b64f5db": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Tiefling mage allied with Amethyst Academy",
+        "source_id": "a6f0c7b2-e2dd-4408-a33b-255bfb078a04",
+        "target_id": "4df547d4-7058-4f7d-9d04-f57c91c256ed"
+      },
+      "timestamp": "2026-02-27T11:45:36.082515",
+      "source": "River the Mage",
+      "target": "Amethyst Academy"
+    },
+    "3ced177e355eacd2": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "River aids Emberwood Village as a mage",
+        "source_id": "a6f0c7b2-e2dd-4408-a33b-255bfb078a04",
+        "target_id": "3479225b-e210-4a88-9d70-610b14c4ca48"
+      },
+      "timestamp": "2026-02-27T11:45:37.653509",
+      "source": "River the Mage",
+      "target": "Emberwood Village"
+    },
+    "3ac22650612d1cc5": {
+      "result": {
+        "type": "opposed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "The Queen's Men oppose the Silver Order",
+        "source_id": "f0455302-8630-4be2-b696-81258a72c8b7",
+        "target_id": "99f1c7c7-4a9d-4770-b7d2-3c77e5cc9e31"
+      },
+      "timestamp": "2026-02-27T11:45:38.999963",
+      "source": "The Queen\u2019s Men",
+      "target": "Knights of the Silver Order"
+    },
+    "a134c4f4d4679d33": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 1.0,
+        "summary": "Knight-Captain leads the Knights of Silver",
+        "source_id": "99f1c7c7-4a9d-4770-b7d2-3c77e5cc9e31",
+        "target_id": "ce883138-4c0f-4a31-b2eb-b97d73aa1a17"
+      },
+      "timestamp": "2026-02-27T11:45:40.349429",
+      "source": "Knights of the Silver Order",
+      "target": "Knight-Captain Theodore Marshal"
+    },
+    "3859641f95e60a7f": {
+      "result": {
+        "type": "created",
+        "moral_valence": 1.0,
+        "order_valence": 1.0,
+        "summary": "Knights of the Silver Order founded New Galmaarden",
+        "source_id": "99f1c7c7-4a9d-4770-b7d2-3c77e5cc9e31",
+        "target_id": "5b43e787-5069-462a-a45f-1869b2bc1b87"
+      },
+      "timestamp": "2026-02-27T11:45:41.755924",
+      "source": "Knights of the Silver Order",
+      "target": "New Galmaarden"
+    },
+    "de33604c1c2bd40a": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.2,
+        "order_valence": 0.0,
+        "summary": "Nathaniel serves the Followers of the Falling Fire",
+        "source_id": "3e2db61e-3734-49f9-9521-bc827b28975e",
+        "target_id": "c69fb056-fed7-460c-828d-6e36890b9379"
+      },
+      "timestamp": "2026-02-27T11:45:43.238012",
+      "source": "Followers of the Falling Fire",
+      "target": "Nathaniel Flint"
+    },
+    "664510c194c6c183": {
+      "result": {
+        "type": "served",
+        "moral_valence": -0.5,
+        "order_valence": -0.8,
+        "summary": "Cult serves Delirium for power and enlightenment",
+        "source_id": "3e2db61e-3734-49f9-9521-bc827b28975e",
+        "target_id": "99f89472-b0b9-40c4-9129-a9e002bc7406"
+      },
+      "timestamp": "2026-02-27T11:45:44.446665",
+      "source": "Followers of the Falling Fire",
+      "target": "Delirium"
+    },
+    "2eb8b2626aa4dcaf": {
+      "result": {
+        "type": "found",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Princess Llorona discovered in the garden",
+        "source_id": "21e542c3-7a88-49ca-880f-0dbbde206485",
+        "target_id": "4d2ff2fc-2d92-464a-a1bc-2bdea7c45450"
+      },
+      "timestamp": "2026-02-27T11:45:45.528227",
+      "source": "Princess Llorona",
+      "target": "Queen's Botanical Garden"
+    },
+    "75b8264f9f8382f2": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.6,
+        "summary": "The Queen's Men betrayed Bhardok the Underlord",
+        "source_id": "f0455302-8630-4be2-b696-81258a72c8b7",
+        "target_id": "350ab345-a244-42a9-8e47-f7201f39ab49"
+      },
+      "timestamp": "2026-02-27T11:45:47.322243",
+      "source": "The Queen\u2019s Men",
+      "target": "Bhardok the Underlord"
+    },
+    "f36587a91917ffba": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Allied for mutual benefit and charity",
+        "source_id": "de21215e-ac08-449d-9afd-f28d3102362c",
+        "target_id": "c86dcf7f-8dc2-4361-8adb-4198f76266e7"
+      },
+      "timestamp": "2026-02-27T11:45:49.904251",
+      "source": "The Sanbalet",
+      "target": "Dwarf (Hearth)"
+    },
+    "c4d3c357b02206db": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.3,
+        "summary": "The Sanbalet called for aid.",
+        "source_id": "de21215e-ac08-449d-9afd-f28d3102362c",
+        "target_id": "a1dd120f-5ac6-4c09-a402-a3f130772db8"
+      },
+      "timestamp": "2026-02-27T11:45:50.995472",
+      "source": "The Sanbalet",
+      "target": "Party Boat"
+    },
+    "5b777bcf40ef18eb": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Ettria feels abandoned by The Sanbalet",
+        "source_id": "4d20623c-a902-4e79-83c5-fc43ab02d61f",
+        "target_id": "de21215e-ac08-449d-9afd-f28d3102362c"
+      },
+      "timestamp": "2026-02-27T11:45:52.415637",
+      "source": "Ettria",
+      "target": "The Sanbalet"
+    },
+    "6c61ebaa43e75fa2": {
+      "result": {
+        "type": "created",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Lady Nightshade seeks to resurrect dragons",
+        "source_id": "c13d73c6-604f-4580-8965-6ed8ce31e724",
+        "target_id": "ca1708ac-15ad-4729-ad67-83fd2968996c"
+      },
+      "timestamp": "2026-02-27T11:45:53.667184",
+      "source": "Lady Nightshade",
+      "target": "Dragon Empire"
+    },
+    "fd664a2ef866957b": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Cerric aided the party against the guild",
+        "source_id": "7feedac1-cee3-4c32-a16f-578c5c160f8e",
+        "target_id": "30f5beca-bbc9-46f4-b9c5-79babca00a3f"
+      },
+      "timestamp": "2026-02-27T11:45:55.081856",
+      "source": "Cerric Shadowleaf",
+      "target": "Session 23: The Party"
+    },
+    "78dd7749f9a8f89e": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.5,
+        "order_valence": 0.0,
+        "summary": "Ama confirmed Cerric's identity but couldn't assist",
+        "source_id": "7feedac1-cee3-4c32-a16f-578c5c160f8e",
+        "target_id": "e5c7b44e-a078-479d-927b-5f2e365cf6aa"
+      },
+      "timestamp": "2026-02-27T11:45:56.417323",
+      "source": "Cerric Shadowleaf",
+      "target": "Amastacia Aspensong"
+    },
+    "e57377f97a67be7d": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Dhampir serves as warden for House Garindollo",
+        "source_id": "07e1596b-fc7f-4496-843a-c1cf681ce404",
+        "target_id": "77276b15-2eb0-4c7d-9edb-312842f6bc26"
+      },
+      "timestamp": "2026-02-27T11:45:57.640903",
+      "source": "Cestian Garindollo",
+      "target": "Dhampir"
+    },
+    "ae1b9aff150a0161": {
+      "result": {
+        "type": "served",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Cestian serves House Garindollo in Duskmire",
+        "source_id": "07e1596b-fc7f-4496-843a-c1cf681ce404",
+        "target_id": "ca9ecae3-126f-4adc-9cf9-05b08a8481ff"
+      },
+      "timestamp": "2026-02-27T11:45:59.749677",
+      "source": "Cestian Garindollo",
+      "target": "Duskmire"
+    },
+    "4f8ea7771e347a24": {
+      "result": {
+        "type": "served",
+        "moral_valence": 0.5,
+        "order_valence": 0.7,
+        "summary": "Cestian serves House Garindollo in Ebonveil",
+        "source_id": "07e1596b-fc7f-4496-843a-c1cf681ce404",
+        "target_id": "8eb7aac1-f1d1-4854-8eee-61e4b262b023"
+      },
+      "timestamp": "2026-02-27T11:46:00.960175",
+      "source": "Cestian Garindollo",
+      "target": "Ebonveil Estates"
+    },
+    "84fac751c55e31cd": {
+      "result": {
+        "type": "saved",
+        "moral_valence": 1.0,
+        "order_valence": 0.5,
+        "summary": "Iron Riders saved Cestian's adopted child",
+        "source_id": "07e1596b-fc7f-4496-843a-c1cf681ce404",
+        "target_id": "5fad65b9-abd3-4178-972c-5001a42d2054"
+      },
+      "timestamp": "2026-02-27T11:46:01.649877",
+      "source": "Cestian Garindollo",
+      "target": "Iron Riders of Abraxas"
+    },
+    "839582943f3c1c01": {
+      "result": {
+        "type": "saved",
+        "moral_valence": 1.0,
+        "order_valence": 0.5,
+        "summary": "Cestian saved Verid's captives after her death",
+        "source_id": "07e1596b-fc7f-4496-843a-c1cf681ce404",
+        "target_id": "17af65ce-ac1e-4494-9b57-ec46066d6087"
+      },
+      "timestamp": "2026-02-27T11:46:02.957238",
+      "source": "Cestian Garindollo",
+      "target": "Verid"
+    },
+    "edc829fb3d5499d0": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.8,
+        "summary": "Belsifer joins the Cathedral of the Moon",
+        "source_id": "5305d119-491e-4c57-b337-171286075b05",
+        "target_id": "7a31fbc2-98b4-4531-9550-ef91fa9be823"
+      },
+      "timestamp": "2026-02-27T11:46:04.348121",
+      "source": "Belsifer",
+      "target": "Cathedral of the Moon"
+    },
+    "1f0bc4840287cf7c": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Hag harms locals near Duskmire.",
+        "source_id": "17af65ce-ac1e-4494-9b57-ec46066d6087",
+        "target_id": "ca9ecae3-126f-4adc-9cf9-05b08a8481ff"
+      },
+      "timestamp": "2026-02-27T11:46:05.547946",
+      "source": "Verid",
+      "target": "Duskmire"
+    },
+    "8dcc204dc73dabe6": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.2,
+        "order_valence": -0.5,
+        "summary": "Verid collaborates with the Wraithwoven Coven",
+        "source_id": "17af65ce-ac1e-4494-9b57-ec46066d6087",
+        "target_id": "dd86e42d-6695-47d1-9b25-2d86fbcaf350"
+      },
+      "timestamp": "2026-02-27T11:46:06.739356",
+      "source": "Verid",
+      "target": "Wraithwoven Coven"
+    },
+    "eab8b42bab227df1": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -0.8,
+        "order_valence": 0.5,
+        "summary": "Verid was killed by the Iron Riders",
+        "source_id": "17af65ce-ac1e-4494-9b57-ec46066d6087",
+        "target_id": "5fad65b9-abd3-4178-972c-5001a42d2054"
+      },
+      "timestamp": "2026-02-27T11:46:08.179267",
+      "source": "Verid",
+      "target": "Iron Riders of Abraxas"
+    },
+    "9bee7c397f68f20a": {
+      "result": {
+        "type": "employed",
+        "moral_valence": -0.5,
+        "order_valence": -0.3,
+        "summary": "Hag employs dark magic in Dreadwood",
+        "source_id": "17af65ce-ac1e-4494-9b57-ec46066d6087",
+        "target_id": "a19107c0-b29f-4dbc-afcd-56b64bcfdb97"
+      },
+      "timestamp": "2026-02-27T11:46:09.559194",
+      "source": "Verid",
+      "target": "Dreadwood"
+    },
+    "c28dac8af96fb046": {
+      "result": {
+        "type": "allied",
+        "moral_valence": -0.5,
+        "order_valence": -0.3,
+        "summary": "Mildred allies with the Yellow Prince",
+        "source_id": "dd86e42d-6695-47d1-9b25-2d86fbcaf350",
+        "target_id": "f2d3e404-b5cb-4e38-9f0e-e375083f5aec"
+      },
+      "timestamp": "2026-02-27T11:46:10.862059",
+      "source": "Wraithwoven Coven",
+      "target": "The Yellow Prince"
+    },
+    "c9895c500b38edf5": {
+      "result": {
+        "type": "employed",
+        "moral_valence": -0.6,
+        "order_valence": -0.3,
+        "summary": "Wraithwoven utilize souls for dark sorcery",
+        "source_id": "dd86e42d-6695-47d1-9b25-2d86fbcaf350",
+        "target_id": "c4dab60d-564b-4696-af29-f0d917787293"
+      },
+      "timestamp": "2026-02-27T11:46:12.039650",
+      "source": "Wraithwoven Coven",
+      "target": "Ashardolon"
+    },
+    "e4cf488cd237dfac": {
+      "result": {
+        "type": "employed",
+        "moral_valence": -0.5,
+        "order_valence": -0.3,
+        "summary": "Wraithwoven Coven employs Mildred's Amulet for dark purposes",
+        "source_id": "dd86e42d-6695-47d1-9b25-2d86fbcaf350",
+        "target_id": "30a8ced1-25eb-40ff-973a-e8b7fb961c45"
+      },
+      "timestamp": "2026-02-27T11:46:13.807978",
+      "source": "Wraithwoven Coven",
+      "target": "Mildred's Amulet"
+    },
+    "d1c85d77eba6e199": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Coven members betrayed Wraithwoven for power",
+        "source_id": "dd86e42d-6695-47d1-9b25-2d86fbcaf350",
+        "target_id": "c13d73c6-604f-4580-8965-6ed8ce31e724"
+      },
+      "timestamp": "2026-02-27T11:46:15.181649",
+      "source": "Wraithwoven Coven",
+      "target": "Lady Nightshade"
+    },
+    "5918f06ed6571bb0": {
+      "result": {
+        "type": "influenced",
+        "moral_valence": -0.5,
+        "order_valence": -0.3,
+        "summary": "Wraithwoven's power diminished by Duskmire's fall",
+        "source_id": "dd86e42d-6695-47d1-9b25-2d86fbcaf350",
+        "target_id": "ca9ecae3-126f-4adc-9cf9-05b08a8481ff"
+      },
+      "timestamp": "2026-02-27T11:46:16.990951",
+      "source": "Wraithwoven Coven",
+      "target": "Duskmire"
+    },
+    "3277ab9ff111ce76": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Wraithwoven Coven member killed by Iron Riders",
+        "source_id": "dd86e42d-6695-47d1-9b25-2d86fbcaf350",
+        "target_id": "5fad65b9-abd3-4178-972c-5001a42d2054"
+      },
+      "timestamp": "2026-02-27T11:46:18.645799",
+      "source": "Wraithwoven Coven",
+      "target": "Iron Riders of Abraxas"
+    },
+    "39dcabe222e529e5": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Sakabatha defected from Wraithwoven Coven to Revelia",
+        "source_id": "dd86e42d-6695-47d1-9b25-2d86fbcaf350",
+        "target_id": "8e4242e8-93bf-44b2-96ae-57ac461209fd"
+      },
+      "timestamp": "2026-02-27T11:46:19.969203",
+      "source": "Wraithwoven Coven",
+      "target": "Revelia"
+    },
+    "0996f5e86817c498": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Wraithwoven Coven members killed by Gold Scale Company",
+        "source_id": "dd86e42d-6695-47d1-9b25-2d86fbcaf350",
+        "target_id": "2fc594fc-c22b-402a-b00b-6cf69e442327"
+      },
+      "timestamp": "2026-02-27T11:46:21.216201",
+      "source": "Wraithwoven Coven",
+      "target": "Session 40: The Black Cathedral"
+    },
+    "b7e6955c4a29f395": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Gold Scale Company killed Wraithwoven Coven member",
+        "source_id": "dd86e42d-6695-47d1-9b25-2d86fbcaf350",
+        "target_id": "f072e19f-6e96-4195-87ad-7b609a252019"
+      },
+      "timestamp": "2026-02-27T11:46:22.571777",
+      "source": "Wraithwoven Coven",
+      "target": "Gold Scale Company"
+    },
+    "36b2d7dddaf48049": {
+      "result": {
+        "type": "employed",
+        "moral_valence": -0.5,
+        "order_valence": 0.5,
+        "summary": "Wraithwoven Coven operated windmill for dark purpose",
+        "source_id": "dd86e42d-6695-47d1-9b25-2d86fbcaf350",
+        "target_id": "b0cb80bd-3a1c-4b01-a465-0e980b650b59"
+      },
+      "timestamp": "2026-02-27T11:46:24.305095",
+      "source": "Wraithwoven Coven",
+      "target": "Isle of Sargoth"
+    },
+    "7e625915d380d08b": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.8,
+        "order_valence": -0.6,
+        "summary": "Coven seeks to harm Warrington's son",
+        "source_id": "dd86e42d-6695-47d1-9b25-2d86fbcaf350",
+        "target_id": "f661969f-b9a7-4b5e-aeb7-5c507160856f"
+      },
+      "timestamp": "2026-02-27T11:46:25.719711",
+      "source": "Wraithwoven Coven",
+      "target": "Commodore Daniel Warrington"
+    },
+    "adb1d30d25d17d2f": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Adventurers sent to kill the Green King",
+        "source_id": "dd86e42d-6695-47d1-9b25-2d86fbcaf350",
+        "target_id": "34bceefe-285a-4450-945c-e1e751375c50"
+      },
+      "timestamp": "2026-02-27T11:46:27.118457",
+      "source": "Wraithwoven Coven",
+      "target": "The Green King"
+    },
+    "10cbe398929d912b": {
+      "result": {
+        "type": "claimed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Mildred claimed title to a stolen child",
+        "source_id": "6e59c2ed-d8b0-4027-a702-b1ba6095b39a",
+        "target_id": "d3bc5b90-369d-49d6-9ecf-02dfc29120df"
+      },
+      "timestamp": "2026-02-27T11:46:28.437488",
+      "source": "The Yellow Prince",
+      "target": "Mildred Magpie"
+    },
+    "fac738dda126cff5": {
+      "result": {
+        "type": "claimed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Mildred claims title to stolen child",
+        "source_id": "6e59c2ed-d8b0-4027-a702-b1ba6095b39a",
+        "target_id": "f661969f-b9a7-4b5e-aeb7-5c507160856f"
+      },
+      "timestamp": "2026-02-27T11:46:29.780901",
+      "source": "The Yellow Prince",
+      "target": "Commodore Daniel Warrington"
+    },
+    "77ffb9bacf78f0ea": {
+      "result": {
+        "type": "saved",
+        "moral_valence": 0.7,
+        "order_valence": 0.2,
+        "summary": "Mildred saved the future ruler of Dreadwood",
+        "source_id": "6e59c2ed-d8b0-4027-a702-b1ba6095b39a",
+        "target_id": "ca9ecae3-126f-4adc-9cf9-05b08a8481ff"
+      },
+      "timestamp": "2026-02-27T11:46:30.646588",
+      "source": "The Yellow Prince",
+      "target": "Duskmire"
+    },
+    "bda02ac160e6ad6a": {
+      "result": {
+        "type": "declared ruler",
+        "moral_valence": 0.5,
+        "order_valence": 0.2,
+        "summary": "Mildred claims the baby as ruler.",
+        "source_id": "6e59c2ed-d8b0-4027-a702-b1ba6095b39a",
+        "target_id": "a19107c0-b29f-4dbc-afcd-56b64bcfdb97"
+      },
+      "timestamp": "2026-02-27T11:46:31.904375",
+      "source": "The Yellow Prince",
+      "target": "Dreadwood"
+    },
+    "03247d6cb585802c": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.5,
+        "order_valence": 0.2,
+        "summary": "The Yellow Prince attempted to protect the Green King",
+        "source_id": "6e59c2ed-d8b0-4027-a702-b1ba6095b39a",
+        "target_id": "34bceefe-285a-4450-945c-e1e751375c50"
+      },
+      "timestamp": "2026-02-27T11:46:33.707404",
+      "source": "The Yellow Prince",
+      "target": "The Green King"
+    },
+    "2bd6f92d858cd2d6": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.8,
+        "order_valence": -0.6,
+        "summary": "The Yellow Prince betrayed Lady Nightshade",
+        "source_id": "6e59c2ed-d8b0-4027-a702-b1ba6095b39a",
+        "target_id": "c13d73c6-604f-4580-8965-6ed8ce31e724"
+      },
+      "timestamp": "2026-02-27T11:46:35.283675",
+      "source": "The Yellow Prince",
+      "target": "Lady Nightshade"
+    },
+    "55a33044b46b543e": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "The Yellow Prince seeks the Crown's power",
+        "source_id": "6e59c2ed-d8b0-4027-a702-b1ba6095b39a",
+        "target_id": "4ae0d79a-c2a7-4452-bc8b-3d85533ed812"
+      },
+      "timestamp": "2026-02-27T11:46:36.469851",
+      "source": "The Yellow Prince",
+      "target": "Green King's Crown"
+    },
+    "86022c8a1dc815ae": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.7,
+        "order_valence": 0.2,
+        "summary": "The Yellow Prince aids the Green King",
+        "source_id": "6e59c2ed-d8b0-4027-a702-b1ba6095b39a",
+        "target_id": "f072e19f-6e96-4195-87ad-7b609a252019"
+      },
+      "timestamp": "2026-02-27T11:46:38.350861",
+      "source": "The Yellow Prince",
+      "target": "Gold Scale Company"
+    },
+    "83005d4c70aad775": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.8,
+        "order_valence": 0.2,
+        "summary": "The Green King and Dreadwood are allies.",
+        "source_id": "34bceefe-285a-4450-945c-e1e751375c50",
+        "target_id": "a19107c0-b29f-4dbc-afcd-56b64bcfdb97"
+      },
+      "timestamp": "2026-02-27T11:46:39.414999",
+      "source": "The Green King",
+      "target": "Dreadwood"
+    },
+    "dbcc6f4365d57aa9": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.8,
+        "order_valence": 0.2,
+        "summary": "Ancient alliance for the protection of Avalon",
+        "source_id": "34bceefe-285a-4450-945c-e1e751375c50",
+        "target_id": "1f16d7c6-cecb-468f-9ac4-693447083da1"
+      },
+      "timestamp": "2026-02-27T11:46:41.118784",
+      "source": "The Green King",
+      "target": "Avalon"
+    },
+    "15b14947d67f23ef": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.8,
+        "order_valence": -0.6,
+        "summary": "Mildred seeks to kill the Green King",
+        "source_id": "34bceefe-285a-4450-945c-e1e751375c50",
+        "target_id": "d3bc5b90-369d-49d6-9ecf-02dfc29120df"
+      },
+      "timestamp": "2026-02-27T11:46:42.353383",
+      "source": "The Green King",
+      "target": "Mildred Magpie"
+    },
+    "5b8f4d8949077ebf": {
+      "result": {
+        "type": "refused to kneel",
+        "moral_valence": 0.5,
+        "order_valence": -0.5,
+        "summary": "The Green King resisted Nightshade's authority",
+        "source_id": "34bceefe-285a-4450-945c-e1e751375c50",
+        "target_id": "4ae0d79a-c2a7-4452-bc8b-3d85533ed812"
+      },
+      "timestamp": "2026-02-27T11:46:43.578336",
+      "source": "The Green King",
+      "target": "Green King's Crown"
+    },
+    "f38b1924f486ecd0": {
+      "result": {
+        "type": "neutral",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Ancient entities with no direct conflict",
+        "source_id": "34bceefe-285a-4450-945c-e1e751375c50",
+        "target_id": "c13d73c6-604f-4580-8965-6ed8ce31e724"
+      },
+      "timestamp": "2026-02-27T11:46:45.043138",
+      "source": "The Green King",
+      "target": "Lady Nightshade"
+    },
+    "d4c6b9813e2fed2a": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "The Green King aids Commodore Warrington",
+        "source_id": "34bceefe-285a-4450-945c-e1e751375c50",
+        "target_id": "f661969f-b9a7-4b5e-aeb7-5c507160856f"
+      },
+      "timestamp": "2026-02-27T11:46:46.367218",
+      "source": "The Green King",
+      "target": "Commodore Daniel Warrington"
+    },
+    "3e55e7e06288cf67": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Striborg Navy attacked Illusion's Fortune",
+        "source_id": "6e05df05-4f67-4872-b686-94c7a82bfc04",
+        "target_id": "6bab7eee-4c17-4551-8ffb-b88c5e5bce91"
+      },
+      "timestamp": "2026-02-27T11:46:47.647862",
+      "source": "Illusion's Fortune",
+      "target": "Striborg Navy"
+    },
+    "574e7634dd05bd6f": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Illusion's Fortune harmed by Striborg Navy",
+        "source_id": "6e05df05-4f67-4872-b686-94c7a82bfc04",
+        "target_id": "1231ad1f-bcf9-49c1-abce-39aa344d3480"
+      },
+      "timestamp": "2026-02-27T11:46:48.842347",
+      "source": "Illusion's Fortune",
+      "target": "Durandar"
+    },
+    "d8ea8f6debd05480": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Illusion's Fortune harmed by Striborg Navy",
+        "source_id": "6e05df05-4f67-4872-b686-94c7a82bfc04",
+        "target_id": "3235b720-ecbe-4089-ad79-9c17674c77d4"
+      },
+      "timestamp": "2026-02-27T11:46:50.205485",
+      "source": "Illusion's Fortune",
+      "target": "Saltmarsh"
+    },
+    "23d63fcd6a895247": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.8,
+        "order_valence": 0.5,
+        "summary": "Party Boat aided Illusion's Fortune in distress",
+        "source_id": "6e05df05-4f67-4872-b686-94c7a82bfc04",
+        "target_id": "a1dd120f-5ac6-4c09-a402-a3f130772db8"
+      },
+      "timestamp": "2026-02-27T11:46:51.528570",
+      "source": "Illusion's Fortune",
+      "target": "Party Boat"
+    },
+    "fd94a543cbd24058": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.8,
+        "order_valence": 0.2,
+        "summary": "Party Boat assisted Illusion's Fortune",
+        "source_id": "6e05df05-4f67-4872-b686-94c7a82bfc04",
+        "target_id": "111310df-f8be-4ae8-b881-1a621256311e"
+      },
+      "timestamp": "2026-02-27T11:46:52.964688",
+      "source": "Illusion's Fortune",
+      "target": "W\u00e6rlessh\u00e6th"
+    },
+    "783e33e3b4821447": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "The Sanbalet called for aid from allies.",
+        "source_id": "de21215e-ac08-449d-9afd-f28d3102362c",
+        "target_id": "111310df-f8be-4ae8-b881-1a621256311e"
+      },
+      "timestamp": "2026-02-27T11:46:54.263105",
+      "source": "The Sanbalet",
+      "target": "W\u00e6rlessh\u00e6th"
+    },
+    "3613858a0c82ed49": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.6,
+        "order_valence": -0.3,
+        "summary": "The Sanbalet's ship attacked by Striborg Navy",
+        "source_id": "de21215e-ac08-449d-9afd-f28d3102362c",
+        "target_id": "1231ad1f-bcf9-49c1-abce-39aa344d3480"
+      },
+      "timestamp": "2026-02-27T11:46:55.721248",
+      "source": "The Sanbalet",
+      "target": "Durandar"
+    },
+    "692fadc43e3d4b03": {
+      "result": {
+        "type": "traded",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Sanbalet traffics goods in Saltmarsh",
+        "source_id": "de21215e-ac08-449d-9afd-f28d3102362c",
+        "target_id": "3235b720-ecbe-4089-ad79-9c17674c77d4"
+      },
+      "timestamp": "2026-02-27T11:46:57.915668",
+      "source": "The Sanbalet",
+      "target": "Saltmarsh"
+    },
+    "4611cb3e8d84da3b": {
+      "result": {
+        "type": "neutral",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Fireborn attended a festival dinner.",
+        "source_id": "07c5e157-0946-4f1a-8f7f-886b0f5355b5",
+        "target_id": "7f8d9a3e-31b7-4367-990b-5dc97aeddbc1"
+      },
+      "timestamp": "2026-02-27T11:46:58.966084",
+      "source": "Eliander Fireborn",
+      "target": "Session 14: Festival's Eve"
+    },
+    "04f93094f6f593cf": {
+      "result": {
+        "type": "neutral",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Invited to dinner, potential for conflict",
+        "source_id": "07c5e157-0946-4f1a-8f7f-886b0f5355b5",
+        "target_id": "6bb1ea2e-8273-450e-a55e-42713a09c9a1"
+      },
+      "timestamp": "2026-02-27T11:47:00.495032",
+      "source": "Eliander Fireborn",
+      "target": "Gellan Primewater"
+    },
+    "1b9ffa1f9058162c": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Eliander dined with Commodore Warrington.",
+        "source_id": "07c5e157-0946-4f1a-8f7f-886b0f5355b5",
+        "target_id": "4ef10541-4779-49ad-9f74-c895f987adda"
+      },
+      "timestamp": "2026-02-27T11:47:02.016413",
+      "source": "Eliander Fireborn",
+      "target": "Commodore Wardell Warrington"
+    },
+    "bdc7f1fb15ead02b": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Eliander and 2 Coin share a meal.",
+        "source_id": "07c5e157-0946-4f1a-8f7f-886b0f5355b5",
+        "target_id": "5dd830ff-4bb9-4c3a-91a8-c385de63c15b"
+      },
+      "timestamp": "2026-02-27T11:47:03.898730",
+      "source": "Eliander Fireborn",
+      "target": "2 Coin"
+    },
+    "5c0380a98fd1ba14": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Eliander and Gold Scale Company are allies",
+        "source_id": "07c5e157-0946-4f1a-8f7f-886b0f5355b5",
+        "target_id": "f072e19f-6e96-4195-87ad-7b609a252019"
+      },
+      "timestamp": "2026-02-27T11:47:05.257864",
+      "source": "Eliander Fireborn",
+      "target": "Gold Scale Company"
+    },
+    "5ec7a225284fc784": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -1.0,
+        "order_valence": -1.0,
+        "summary": "Lamont murdered Eliander in his sleep",
+        "source_id": "07c5e157-0946-4f1a-8f7f-886b0f5355b5",
+        "target_id": "acad513a-4631-461e-b1d4-7e43dbf13f06"
+      },
+      "timestamp": "2026-02-27T11:47:06.604734",
+      "source": "Eliander Fireborn",
+      "target": "Lamont Solmar"
+    },
+    "5f3ef5bf66446c01": {
+      "result": {
+        "type": "absorbed",
+        "moral_valence": -0.5,
+        "order_valence": 0.5,
+        "summary": "Iron Riders took control after Fireborn's death",
+        "source_id": "07c5e157-0946-4f1a-8f7f-886b0f5355b5",
+        "target_id": "5fad65b9-abd3-4178-972c-5001a42d2054"
+      },
+      "timestamp": "2026-02-27T11:47:07.853893",
+      "source": "Eliander Fireborn",
+      "target": "Iron Riders of Abraxas"
+    },
+    "58a7393c44cfcd56": {
+      "result": {
+        "type": "absorbed",
+        "moral_valence": -0.5,
+        "order_valence": 0.5,
+        "summary": "Warrington took control after Fireborn's death",
+        "source_id": "07c5e157-0946-4f1a-8f7f-886b0f5355b5",
+        "target_id": "f661969f-b9a7-4b5e-aeb7-5c507160856f"
+      },
+      "timestamp": "2026-02-27T11:47:09.350404",
+      "source": "Eliander Fireborn",
+      "target": "Commodore Daniel Warrington"
+    },
+    "d949b96801cf9e59": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Jarme suffered and deteriorated in asylum",
+        "source_id": "7e8179da-5e7c-4472-b257-9ebd1d6e19e0",
+        "target_id": "30fb3a1c-e5ee-46c8-861a-0ab9bf7ed5ce"
+      },
+      "timestamp": "2026-02-27T11:47:10.834378",
+      "source": "Jarme Loveage",
+      "target": "Warrington Memorial Asylum"
+    },
+    "128105e60b28f479": {
+      "result": {
+        "type": "destroyed",
+        "moral_valence": -0.8,
+        "order_valence": -0.6,
+        "summary": "Lady Nightshade desecrated Avalon for power.",
+        "source_id": "c13d73c6-604f-4580-8965-6ed8ce31e724",
+        "target_id": "1f16d7c6-cecb-468f-9ac4-693447083da1"
+      },
+      "timestamp": "2026-02-27T11:47:13.404201",
+      "source": "Lady Nightshade",
+      "target": "Avalon"
+    },
+    "8e23b7ab3a4d1422": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.5,
+        "order_valence": 0.0,
+        "summary": "Lady Nightshade allies with Nerium for power",
+        "source_id": "c13d73c6-604f-4580-8965-6ed8ce31e724",
+        "target_id": "67790919-d352-4de7-8963-ffa7fc6e065d"
+      },
+      "timestamp": "2026-02-27T11:47:17.910740",
+      "source": "Lady Nightshade",
+      "target": "Nerium"
+    },
+    "0901d4a75aeb7836": {
+      "result": {
+        "type": "exploited",
+        "moral_valence": -0.8,
+        "order_valence": 0.5,
+        "summary": "Nightshade exploits Outer Circle for blood tribute",
+        "source_id": "c13d73c6-604f-4580-8965-6ed8ce31e724",
+        "target_id": "9fbc4cda-42c0-4cde-873e-a53329b16fba"
+      },
+      "timestamp": "2026-02-27T11:47:19.420322",
+      "source": "Lady Nightshade",
+      "target": "Outer Circle"
+    },
+    "3c4683a1ada4e6af": {
+      "result": {
+        "type": "employed",
+        "moral_valence": -0.5,
+        "order_valence": 0.5,
+        "summary": "Dhampir collect blood tribute for Nightshade",
+        "source_id": "c13d73c6-604f-4580-8965-6ed8ce31e724",
+        "target_id": "77276b15-2eb0-4c7d-9edb-312842f6bc26"
+      },
+      "timestamp": "2026-02-27T11:47:21.093531",
+      "source": "Lady Nightshade",
+      "target": "Dhampir"
+    },
+    "b5c0671146d61a41": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.2,
+        "order_valence": 1.0,
+        "summary": "Lady Nightshade employs the Bloodless Sentinels.",
+        "source_id": "c13d73c6-604f-4580-8965-6ed8ce31e724",
+        "target_id": "95cc8356-e5f5-440f-b666-5cc982672254"
+      },
+      "timestamp": "2026-02-27T11:47:22.755713",
+      "source": "Lady Nightshade",
+      "target": "Bloodless Sentinels"
+    },
+    "02f131142d7bb75e": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Drugged water supply to control population",
+        "source_id": "c13d73c6-604f-4580-8965-6ed8ce31e724",
+        "target_id": "61394638-f831-4dee-b7cc-385b47d1128e"
+      },
+      "timestamp": "2026-02-27T11:47:24.246746",
+      "source": "Lady Nightshade",
+      "target": "Sapphire Nightshade"
+    },
+    "ca29eeaf9a8641b0": {
+      "result": {
+        "type": "employed",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Lady Nightshade employs agents in Saltmarsh",
+        "source_id": "c13d73c6-604f-4580-8965-6ed8ce31e724",
+        "target_id": "3235b720-ecbe-4089-ad79-9c17674c77d4"
+      },
+      "timestamp": "2026-02-27T11:47:25.631280",
+      "source": "Lady Nightshade",
+      "target": "Saltmarsh"
+    },
+    "7f0aca191344ec56": {
+      "result": {
+        "type": "employed",
+        "moral_valence": -0.5,
+        "order_valence": -0.3,
+        "summary": "Lady Nightshade employs the Burle Hunter's Guild",
+        "source_id": "c13d73c6-604f-4580-8965-6ed8ce31e724",
+        "target_id": "c2b72032-bd6e-4602-a7ba-121ae4c73fcd"
+      },
+      "timestamp": "2026-02-27T11:47:28.274180",
+      "source": "Lady Nightshade",
+      "target": "Burle Hunter's Guild"
+    },
+    "211054f7836ead93": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.5,
+        "order_valence": 0.0,
+        "summary": "Lady Nightshade allied with Sargoth's power",
+        "source_id": "c13d73c6-604f-4580-8965-6ed8ce31e724",
+        "target_id": "065db194-4cf5-4142-b2dd-288b99aad8ee"
+      },
+      "timestamp": "2026-02-27T11:47:29.744897",
+      "source": "Lady Nightshade",
+      "target": "Sargoth the Eternal"
+    },
+    "f874771f5a6216e4": {
+      "result": {
+        "type": "opposed",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Lady Nightshade faced opposition from Gold Scale Company",
+        "source_id": "c13d73c6-604f-4580-8965-6ed8ce31e724",
+        "target_id": "f072e19f-6e96-4195-87ad-7b609a252019"
+      },
+      "timestamp": "2026-02-27T11:47:31.212171",
+      "source": "Lady Nightshade",
+      "target": "Gold Scale Company"
+    },
+    "faead81c44a47472": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.8,
+        "order_valence": -0.9,
+        "summary": "Lady Nightshade harmed Greyson during confrontation",
+        "source_id": "c13d73c6-604f-4580-8965-6ed8ce31e724",
+        "target_id": "98dff707-5778-4314-8809-acc481d6db94"
+      },
+      "timestamp": "2026-02-27T11:47:32.472063",
+      "source": "Lady Nightshade",
+      "target": "Greyson Adams"
+    },
+    "8e830a23e263ea6a": {
+      "result": {
+        "type": "served",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Amelia serves as a vampire knight.",
+        "source_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd",
+        "target_id": "3235b720-ecbe-4089-ad79-9c17674c77d4"
+      },
+      "timestamp": "2026-02-27T11:47:33.982100",
+      "source": "Amelia",
+      "target": "Saltmarsh"
+    },
+    "cf9b17fbd960beba": {
+      "result": {
+        "type": "served",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Orphan girl serves a feared vampire knight",
+        "source_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd",
+        "target_id": "11fc418c-113d-4033-a1d7-6da09972782e"
+      },
+      "timestamp": "2026-02-27T11:47:35.494290",
+      "source": "Amelia",
+      "target": "Vampire"
+    },
+    "2ef5619d5490f47b": {
+      "result": {
+        "type": "allied",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Amelia seeks power through dark means",
+        "source_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd",
+        "target_id": "a19107c0-b29f-4dbc-afcd-56b64bcfdb97"
+      },
+      "timestamp": "2026-02-27T11:47:36.860347",
+      "source": "Amelia",
+      "target": "Dreadwood"
+    },
+    "40238c04eafa5f08": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Amelia poisoned Commodore Warrington.",
+        "source_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd",
+        "target_id": "f661969f-b9a7-4b5e-aeb7-5c507160856f"
+      },
+      "timestamp": "2026-02-27T11:47:38.220437",
+      "source": "Amelia",
+      "target": "Commodore Daniel Warrington"
+    },
+    "57f8f63ab3280b4c": {
+      "result": {
+        "type": "created",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Amelia initiated Greyson's vampire transformation",
+        "source_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd",
+        "target_id": "98dff707-5778-4314-8809-acc481d6db94"
+      },
+      "timestamp": "2026-02-27T11:47:40.425856",
+      "source": "Amelia",
+      "target": "Greyson Adams"
+    },
+    "4f98b7adea019ebc": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.7,
+        "order_valence": 0.2,
+        "summary": "Amelia assists Math in finding Lukas",
+        "source_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd",
+        "target_id": "5fad65b9-abd3-4178-972c-5001a42d2054"
+      },
+      "timestamp": "2026-02-27T11:47:42.222133",
+      "source": "Amelia",
+      "target": "Iron Riders of Abraxas"
+    },
+    "e266187fe768a840": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Amelia oversaw production of poisonous nightshade",
+        "source_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd",
+        "target_id": "c9c50e11-450b-4dd0-9e40-a90762028655"
+      },
+      "timestamp": "2026-02-27T11:47:43.656771",
+      "source": "Amelia",
+      "target": "Cathedral of the First Vampire"
+    },
+    "594112fe5c398d17": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.8,
+        "order_valence": -0.6,
+        "summary": "Amelia harmed Rado using dark magic",
+        "source_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd",
+        "target_id": "22aaa61d-437c-4ce8-8d64-ed51a29795e2"
+      },
+      "timestamp": "2026-02-27T11:47:46.152526",
+      "source": "Amelia",
+      "target": "Rado"
+    },
+    "e8cf92d60de43fc5": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -1.0,
+        "order_valence": -1.0,
+        "summary": "Amastacia destroyed Amelia with Shatter",
+        "source_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd",
+        "target_id": "e5c7b44e-a078-479d-927b-5f2e365cf6aa"
+      },
+      "timestamp": "2026-02-27T11:47:47.630404",
+      "source": "Amelia",
+      "target": "Amastacia Aspensong"
+    },
+    "b6d5c90bd3ab9341": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.6,
+        "summary": "Lady staged a wedding, deceiving others",
+        "source_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd",
+        "target_id": "944c88f0-7712-46b9-a166-e5b98ab96f8e"
+      },
+      "timestamp": "2026-02-27T11:47:48.987674",
+      "source": "Amelia",
+      "target": "Castle Nightshade"
+    },
+    "71551f581e9c2b2c": {
+      "result": {
+        "type": "officiated",
+        "moral_valence": 0.5,
+        "order_valence": 0.8,
+        "summary": "Amelia officiated a hunt in Burle",
+        "source_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd",
+        "target_id": "60815dac-e9dc-4aac-9510-18e7aad986de"
+      },
+      "timestamp": "2026-02-27T11:47:50.536578",
+      "source": "Amelia",
+      "target": "Burle"
+    },
+    "2f71e912c9123da2": {
+      "result": {
+        "type": "employed",
+        "moral_valence": -0.5,
+        "order_valence": 0.5,
+        "summary": "Amelia oversees hags grinding sapphire nightshade",
+        "source_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd",
+        "target_id": "61394638-f831-4dee-b7cc-385b47d1128e"
+      },
+      "timestamp": "2026-02-27T11:47:51.910129",
+      "source": "Amelia",
+      "target": "Sapphire Nightshade"
+    },
+    "b282e5c754a5b773": {
+      "result": {
+        "type": "created",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Sargoth transformed into a vampire aboleth",
+        "source_id": "065db194-4cf5-4142-b2dd-288b99aad8ee",
+        "target_id": "039b7569-5b69-41af-b71c-a739133de785"
+      },
+      "timestamp": "2026-02-27T11:47:53.630908",
+      "source": "Sargoth the Eternal",
+      "target": "Aboleth"
+    },
+    "223473890b33d5e4": {
+      "result": {
+        "type": "sealed",
+        "moral_valence": -0.5,
+        "order_valence": 0.5,
+        "summary": "Sargoth's essence was imprisoned in stone",
+        "source_id": "065db194-4cf5-4142-b2dd-288b99aad8ee",
+        "target_id": "57a02500-4975-4609-ab4d-8ad9a18edcb4"
+      },
+      "timestamp": "2026-02-27T11:47:55.216637",
+      "source": "Sargoth the Eternal",
+      "target": "Stone of Sargoth the Eternal"
+    },
+    "688e948da615a44f": {
+      "result": {
+        "type": "created",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Sargoth transformed into a vampire aboleth",
+        "source_id": "065db194-4cf5-4142-b2dd-288b99aad8ee",
+        "target_id": "11fc418c-113d-4033-a1d7-6da09972782e"
+      },
+      "timestamp": "2026-02-27T11:47:57.006778",
+      "source": "Sargoth the Eternal",
+      "target": "Vampire"
+    },
+    "b67ea23484797b9c": {
+      "result": {
+        "type": "created",
+        "moral_valence": 0.5,
+        "order_valence": 0.0,
+        "summary": "Sargoth created the dragonborn race.",
+        "source_id": "065db194-4cf5-4142-b2dd-288b99aad8ee",
+        "target_id": "df0d69a8-0262-44de-a9ae-9fee575396a9"
+      },
+      "timestamp": "2026-02-27T11:47:58.309786",
+      "source": "Sargoth the Eternal",
+      "target": "Dragonborn (Pyoran)"
+    },
+    "69709404ecd027e8": {
+      "result": {
+        "type": "summoned",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Sargoth summoned Duskmire for power.",
+        "source_id": "065db194-4cf5-4142-b2dd-288b99aad8ee",
+        "target_id": "ca9ecae3-126f-4adc-9cf9-05b08a8481ff"
+      },
+      "timestamp": "2026-02-27T11:47:59.875302",
+      "source": "Sargoth the Eternal",
+      "target": "Duskmire"
+    },
+    "16f8aea2bfa22259": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.8,
+        "order_valence": -0.9,
+        "summary": "Talia used Sarenrae cultists as scapegoats",
+        "source_id": "065db194-4cf5-4142-b2dd-288b99aad8ee",
+        "target_id": "06181160-3232-48c2-9532-c99a55726aa5"
+      },
+      "timestamp": "2026-02-27T11:48:01.443673",
+      "source": "Sargoth the Eternal",
+      "target": "Sarenrae"
+    },
+    "100aa7818ce0b908": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.3,
+        "summary": "Sargoth seeks power through alliance.",
+        "source_id": "065db194-4cf5-4142-b2dd-288b99aad8ee",
+        "target_id": "ff3b901c-6c3e-469a-8616-6a1bb333ae55"
+      },
+      "timestamp": "2026-02-27T11:48:02.631662",
+      "source": "Sargoth the Eternal",
+      "target": "Session 33: Duskmire"
+    },
+    "8a0a41ab0c362391": {
+      "result": {
+        "type": "employed",
+        "moral_valence": -0.5,
+        "order_valence": -0.8,
+        "summary": "Jorek aided Talia's chaotic deception",
+        "source_id": "065db194-4cf5-4142-b2dd-288b99aad8ee",
+        "target_id": "ebc59fd0-bad0-43e9-9fc4-3bd98bcb082b"
+      },
+      "timestamp": "2026-02-27T11:48:03.894438",
+      "source": "Sargoth the Eternal",
+      "target": "Jorek Talindra"
+    },
+    "1795bb98c4a91ef9": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Sargoth harmed Talia while sparing Lamont",
+        "source_id": "065db194-4cf5-4142-b2dd-288b99aad8ee",
+        "target_id": "acad513a-4631-461e-b1d4-7e43dbf13f06"
+      },
+      "timestamp": "2026-02-27T11:48:05.320528",
+      "source": "Sargoth the Eternal",
+      "target": "Lamont Solmar"
+    },
+    "df369429a53e69b4": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.8,
+        "order_valence": -0.6,
+        "summary": "Sargoth tempted Greyson to betray allies",
+        "source_id": "065db194-4cf5-4142-b2dd-288b99aad8ee",
+        "target_id": "98dff707-5778-4314-8809-acc481d6db94"
+      },
+      "timestamp": "2026-02-27T11:48:06.629952",
+      "source": "Sargoth the Eternal",
+      "target": "Greyson Adams"
+    },
+    "dacaab74eb8c844f": {
+      "result": {
+        "type": "served",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Elarion serves Lady Nightshade on the moon",
+        "source_id": "e69d40f0-89d4-4100-96a8-6cde76439138",
+        "target_id": "c13d73c6-604f-4580-8965-6ed8ce31e724"
+      },
+      "timestamp": "2026-02-27T11:48:07.785571",
+      "source": "Elarion Gearsong",
+      "target": "Lady Nightshade"
+    },
+    "cb4aa82b33b7b3bc": {
+      "result": {
+        "type": "created",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Elarion created draconic constructs from souls.",
+        "source_id": "e69d40f0-89d4-4100-96a8-6cde76439138",
+        "target_id": "df0d69a8-0262-44de-a9ae-9fee575396a9"
+      },
+      "timestamp": "2026-02-27T11:48:09.323944",
+      "source": "Elarion Gearsong",
+      "target": "Dragonborn (Pyoran)"
+    },
+    "aee67cf5ce99a4a7": {
+      "result": {
+        "type": "created",
+        "moral_valence": 0.5,
+        "order_valence": 0.0,
+        "summary": "Elarion created draconic constructs with mages",
+        "source_id": "e69d40f0-89d4-4100-96a8-6cde76439138",
+        "target_id": "64a1f282-be3f-48c2-97cd-6e87c25bcc4c"
+      },
+      "timestamp": "2026-02-27T11:48:10.561803",
+      "source": "Elarion Gearsong",
+      "target": "Crimson Court"
+    },
+    "400f0f372ca7dff5": {
+      "result": {
+        "type": "created",
+        "moral_valence": 1.0,
+        "order_valence": 1.0,
+        "summary": "Elarion created the Engineer's Signet",
+        "source_id": "e69d40f0-89d4-4100-96a8-6cde76439138",
+        "target_id": "681ff94c-390f-45b9-b2ea-ed65b76e9cf4"
+      },
+      "timestamp": "2026-02-27T11:48:12.332265",
+      "source": "Elarion Gearsong",
+      "target": "Avalon Engineer's Signet"
+    },
+    "d991331f8da8195c": {
+      "result": {
+        "type": "served",
+        "moral_valence": 0.7,
+        "order_valence": 0.9,
+        "summary": "Construct serves and maintains the library.",
+        "source_id": "882caeff-bae7-4bb6-b8ed-9bc8a286eb66",
+        "target_id": "1f16d7c6-cecb-468f-9ac4-693447083da1"
+      },
+      "timestamp": "2026-02-27T11:48:13.742767",
+      "source": "Librarian Construct #14",
+      "target": "Avalon"
+    },
+    "67c7d34e8d5e778f": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.8,
+        "order_valence": 0.7,
+        "summary": "Construct supports Fellforged's knowledge preservation",
+        "source_id": "882caeff-bae7-4bb6-b8ed-9bc8a286eb66",
+        "target_id": "793619bb-0ffb-4d30-b77c-5adf2bfafb99"
+      },
+      "timestamp": "2026-02-27T11:48:16.311151",
+      "source": "Librarian Construct #14",
+      "target": "Fellforged"
+    },
+    "13a3a587f7d74d98": {
+      "result": {
+        "type": "created",
+        "moral_valence": 1.0,
+        "order_valence": 1.0,
+        "summary": "Elarion created the Librarian Construct.",
+        "source_id": "882caeff-bae7-4bb6-b8ed-9bc8a286eb66",
+        "target_id": "e69d40f0-89d4-4100-96a8-6cde76439138"
+      },
+      "timestamp": "2026-02-27T11:48:19.012935",
+      "source": "Librarian Construct #14",
+      "target": "Elarion Gearsong"
+    },
+    "0ca8a897797372b1": {
+      "result": {
+        "type": "neutral",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Encountered in tunnels during a journey",
+        "source_id": "882caeff-bae7-4bb6-b8ed-9bc8a286eb66",
+        "target_id": "f072e19f-6e96-4195-87ad-7b609a252019"
+      },
+      "timestamp": "2026-02-27T11:48:20.460196",
+      "source": "Librarian Construct #14",
+      "target": "Gold Scale Company"
+    },
+    "d6848ed72ac8d299": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Collaborated to deliver the Collector of Souls",
+        "source_id": "882caeff-bae7-4bb6-b8ed-9bc8a286eb66",
+        "target_id": "81d261e5-2830-4a89-a094-77e8b7af4975"
+      },
+      "timestamp": "2026-02-27T11:48:21.762645",
+      "source": "Librarian Construct #14",
+      "target": "Razorback the Uniter"
+    },
+    "8bc4b8e55a59f091": {
+      "result": {
+        "type": "encountered",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Neutral encounter in Avalon tunnels",
+        "source_id": "882caeff-bae7-4bb6-b8ed-9bc8a286eb66",
+        "target_id": "889ab7db-0b35-41dc-9da9-0ef1fdb6802b"
+      },
+      "timestamp": "2026-02-27T11:48:23.273327",
+      "source": "Librarian Construct #14",
+      "target": "Session 26: The Doom of Avalon"
+    },
+    "b152c911c802594b": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.5,
+        "order_valence": 0.2,
+        "summary": "Collaborated to deliver the Collector of Souls",
+        "source_id": "882caeff-bae7-4bb6-b8ed-9bc8a286eb66",
+        "target_id": "c5dced65-2e04-4e37-b7cd-1fbb316cbf24"
+      },
+      "timestamp": "2026-02-27T11:48:24.453856",
+      "source": "Librarian Construct #14",
+      "target": "Collector of Souls"
+    },
+    "709311721935a234": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.2,
+        "order_valence": 0.5,
+        "summary": "Librarian Construct serves Lady Nightshade's library",
+        "source_id": "882caeff-bae7-4bb6-b8ed-9bc8a286eb66",
+        "target_id": "c13d73c6-604f-4580-8965-6ed8ce31e724"
+      },
+      "timestamp": "2026-02-27T11:48:25.590905",
+      "source": "Librarian Construct #14",
+      "target": "Lady Nightshade"
+    },
+    "b4f744b1e06a4932": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.8,
+        "order_valence": 0.9,
+        "summary": "Provided assistance with library cards",
+        "source_id": "882caeff-bae7-4bb6-b8ed-9bc8a286eb66",
+        "target_id": "a96a15f2-1d1e-4bc0-b394-c99d0719563a"
+      },
+      "timestamp": "2026-02-27T11:48:26.819145",
+      "source": "Librarian Construct #14",
+      "target": "Jutra"
+    },
+    "21a637dc0539de62": {
+      "result": {
+        "type": "neutral",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Encountered in tunnels during a journey",
+        "source_id": "882caeff-bae7-4bb6-b8ed-9bc8a286eb66",
+        "target_id": "97a3df7b-0fbd-4c31-a085-1276a986e460"
+      },
+      "timestamp": "2026-02-27T11:48:28.354332",
+      "source": "Librarian Construct #14",
+      "target": "Session 49: The Last Tower"
+    },
+    "555149f4ea7c9419": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.5,
+        "order_valence": 0.2,
+        "summary": "Librarian Construct provided critical intelligence",
+        "source_id": "882caeff-bae7-4bb6-b8ed-9bc8a286eb66",
+        "target_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd"
+      },
+      "timestamp": "2026-02-27T11:48:29.547405",
+      "source": "Librarian Construct #14",
+      "target": "Amelia"
+    },
+    "9811cfe897d965cd": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.7,
+        "order_valence": 0.2,
+        "summary": "Librarian Construct provided critical intelligence",
+        "source_id": "882caeff-bae7-4bb6-b8ed-9bc8a286eb66",
+        "target_id": "61394638-f831-4dee-b7cc-385b47d1128e"
+      },
+      "timestamp": "2026-02-27T11:48:31.045199",
+      "source": "Librarian Construct #14",
+      "target": "Sapphire Nightshade"
+    },
+    "fdd75988d53c611b": {
+      "result": {
+        "type": "traded",
+        "moral_valence": 0.2,
+        "order_valence": 0.0,
+        "summary": "Librarian Construct provided information to Sargoth",
+        "source_id": "882caeff-bae7-4bb6-b8ed-9bc8a286eb66",
+        "target_id": "065db194-4cf5-4142-b2dd-288b99aad8ee"
+      },
+      "timestamp": "2026-02-27T11:48:32.555059",
+      "source": "Librarian Construct #14",
+      "target": "Sargoth the Eternal"
+    },
+    "d99130d33b353ff9": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Librarian Construct #14 betrayed Sargoth's trust",
+        "source_id": "882caeff-bae7-4bb6-b8ed-9bc8a286eb66",
+        "target_id": "039b7569-5b69-41af-b71c-a739133de785"
+      },
+      "timestamp": "2026-02-27T11:48:33.899726",
+      "source": "Librarian Construct #14",
+      "target": "Aboleth"
+    },
+    "c7cb66a2b1f4cc5f": {
+      "result": {
+        "type": "explained",
+        "moral_valence": 0.5,
+        "order_valence": 0.0,
+        "summary": "Librarian Construct shared knowledge about reality.",
+        "source_id": "882caeff-bae7-4bb6-b8ed-9bc8a286eb66",
+        "target_id": "c7bd44d8-2fc4-49d7-8822-ab790ced5851"
+      },
+      "timestamp": "2026-02-27T11:48:35.298246",
+      "source": "Librarian Construct #14",
+      "target": "Domains of Dread"
+    },
+    "50d164682631962d": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.0,
+        "order_valence": -0.5,
+        "summary": "The Red Wizard employs the Dark Lord.",
+        "source_id": "6644637e-e1b2-4d83-bf82-5cdfa821f313",
+        "target_id": "c7bd44d8-2fc4-49d7-8822-ab790ced5851"
+      },
+      "timestamp": "2026-02-27T11:48:36.751978",
+      "source": "The Red Wizard",
+      "target": "Domains of Dread"
+    },
+    "643ce1862b2d9cb5": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.0,
+        "order_valence": -0.5,
+        "summary": "The Red Wizard employs the Dungeon Dome",
+        "source_id": "6644637e-e1b2-4d83-bf82-5cdfa821f313",
+        "target_id": "cdd231a2-4914-4f96-993b-5a2067dc5812"
+      },
+      "timestamp": "2026-02-27T11:48:38.379824",
+      "source": "The Red Wizard",
+      "target": "Dungeon Dome"
+    },
+    "25bd76193e183cfd": {
+      "result": {
+        "type": "served",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Cult serves a morally ambiguous former wizard",
+        "source_id": "3e2db61e-3734-49f9-9521-bc827b28975e",
+        "target_id": "c62e6a74-ecac-445f-87fa-b9fe97116ecb"
+      },
+      "timestamp": "2026-02-27T11:48:39.790688",
+      "source": "Followers of the Falling Fire",
+      "target": "The Pale Man"
+    },
+    "fa5c2fd1c070ad3a": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.8,
+        "order_valence": -0.6,
+        "summary": "Cult betrayed the academy's ethical standards",
+        "source_id": "3e2db61e-3734-49f9-9521-bc827b28975e",
+        "target_id": "4df547d4-7058-4f7d-9d04-f57c91c256ed"
+      },
+      "timestamp": "2026-02-27T11:48:41.206226",
+      "source": "Followers of the Falling Fire",
+      "target": "Amethyst Academy"
+    },
+    "a94deca5ef6ad197": {
+      "result": {
+        "type": "opposed",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Opposition to curing delirium as a blessing",
+        "source_id": "3e2db61e-3734-49f9-9521-bc827b28975e",
+        "target_id": "eeb51f8d-b1dc-4395-9a35-3e083366963d"
+      },
+      "timestamp": "2026-02-27T11:48:42.840869",
+      "source": "Followers of the Falling Fire",
+      "target": "Aqua Expurgo"
+    },
+    "159a261639a6a93c": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.5,
+        "order_valence": -0.3,
+        "summary": "Cultists' influence leads to tavern's downfall",
+        "source_id": "3e2db61e-3734-49f9-9521-bc827b28975e",
+        "target_id": "0231ee96-b2f5-4f50-9505-be4a0310d6c4"
+      },
+      "timestamp": "2026-02-27T11:48:44.237952",
+      "source": "Followers of the Falling Fire",
+      "target": "Black Ivory Tavern"
+    },
+    "8f933d7df7c9b2fe": {
+      "result": {
+        "type": "traded",
+        "moral_valence": -0.5,
+        "order_valence": -0.7,
+        "summary": "Smuggling tainted ale to Skullport",
+        "source_id": "f0455302-8630-4be2-b696-81258a72c8b7",
+        "target_id": "4bda8158-f943-4c9e-9a86-7054ea8e86e8"
+      },
+      "timestamp": "2026-02-27T11:48:45.428277",
+      "source": "The Queen\u2019s Men",
+      "target": "Skullport"
+    },
+    "860bffa19495f5a5": {
+      "result": {
+        "type": "employed",
+        "moral_valence": -0.7,
+        "order_valence": -0.8,
+        "summary": "Criminal operation using brewhouse as cover",
+        "source_id": "f0455302-8630-4be2-b696-81258a72c8b7",
+        "target_id": "e3814361-f776-4640-b253-2c429107bdc8"
+      },
+      "timestamp": "2026-02-27T11:48:46.694409",
+      "source": "The Queen\u2019s Men",
+      "target": "One Eyed Mountain Brewhouse"
+    },
+    "029d06714edcd1a6": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.8,
+        "order_valence": 0.9,
+        "summary": "Knights support and protect Emberwood Village",
+        "source_id": "99f1c7c7-4a9d-4770-b7d2-3c77e5cc9e31",
+        "target_id": "3479225b-e210-4a88-9d70-610b14c4ca48"
+      },
+      "timestamp": "2026-02-27T11:48:48.097537",
+      "source": "Knights of the Silver Order",
+      "target": "Emberwood Village"
+    },
+    "ae5d9a92ed061efc": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Amethyst Academy seeks Aqua Expurgo's synthesis.",
+        "source_id": "4df547d4-7058-4f7d-9d04-f57c91c256ed",
+        "target_id": "eeb51f8d-b1dc-4395-9a35-3e083366963d"
+      },
+      "timestamp": "2026-02-27T11:48:49.306439",
+      "source": "Amethyst Academy",
+      "target": "Aqua Expurgo"
+    },
+    "71207785a3773443": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Amethyst Academy employs River the Mage.",
+        "source_id": "4df547d4-7058-4f7d-9d04-f57c91c256ed",
+        "target_id": "3479225b-e210-4a88-9d70-610b14c4ca48"
+      },
+      "timestamp": "2026-02-27T11:48:50.924551",
+      "source": "Amethyst Academy",
+      "target": "Emberwood Village"
+    },
+    "2438d8fbba025577": {
+      "result": {
+        "type": "competed",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Both seek power through Delirium crystals",
+        "source_id": "285d5c3f-e0a9-4d1f-8466-3298ed646a74",
+        "target_id": "99f89472-b0b9-40c4-9129-a9e002bc7406"
+      },
+      "timestamp": "2026-02-27T11:48:52.255947",
+      "source": "Galmaarden Factions",
+      "target": "Delirium"
+    },
+    "de5d65f076febfc3": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.8,
+        "order_valence": 0.9,
+        "summary": "Knights support Galmaarden's lawful restoration efforts.",
+        "source_id": "285d5c3f-e0a9-4d1f-8466-3298ed646a74",
+        "target_id": "99f1c7c7-4a9d-4770-b7d2-3c77e5cc9e31"
+      },
+      "timestamp": "2026-02-27T11:48:53.649457",
+      "source": "Galmaarden Factions",
+      "target": "Knights of the Silver Order"
+    },
+    "5c4e0462d770a571": {
+      "result": {
+        "type": "neutral",
+        "moral_valence": 0.0,
+        "order_valence": -0.5,
+        "summary": "Indifferent coexistence with chaotic tendencies",
+        "source_id": "285d5c3f-e0a9-4d1f-8466-3298ed646a74",
+        "target_id": "3e2db61e-3734-49f9-9521-bc827b28975e"
+      },
+      "timestamp": "2026-02-27T11:48:54.956768",
+      "source": "Galmaarden Factions",
+      "target": "Followers of the Falling Fire"
+    },
+    "999de8e8cf54412a": {
+      "result": {
+        "type": "led",
+        "moral_valence": -0.5,
+        "order_valence": -0.8,
+        "summary": "Pale Man leads a chaotic cult.",
+        "source_id": "285d5c3f-e0a9-4d1f-8466-3298ed646a74",
+        "target_id": "c62e6a74-ecac-445f-87fa-b9fe97116ecb"
+      },
+      "timestamp": "2026-02-27T11:48:56.757256",
+      "source": "Galmaarden Factions",
+      "target": "The Pale Man"
+    },
+    "783882f693d22f0d": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.8,
+        "summary": "Collaborative efforts against delirium's threat",
+        "source_id": "285d5c3f-e0a9-4d1f-8466-3298ed646a74",
+        "target_id": "4df547d4-7058-4f7d-9d04-f57c91c256ed"
+      },
+      "timestamp": "2026-02-27T11:48:57.961457",
+      "source": "Galmaarden Factions",
+      "target": "Amethyst Academy"
+    },
+    "89c5a8569fe8a7ae": {
+      "result": {
+        "type": "served",
+        "moral_valence": -0.5,
+        "order_valence": 0.0,
+        "summary": "Nathaniel serves The Pale Man's dark agenda",
+        "source_id": "c69fb056-fed7-460c-828d-6e36890b9379",
+        "target_id": "c62e6a74-ecac-445f-87fa-b9fe97116ecb"
+      },
+      "timestamp": "2026-02-27T11:48:59.497524",
+      "source": "Nathaniel Flint",
+      "target": "The Pale Man"
+    },
+    "9fa9f1e0591beb8e": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.5,
+        "order_valence": -0.5,
+        "summary": "Embraces delirium as a divine gift",
+        "source_id": "c69fb056-fed7-460c-828d-6e36890b9379",
+        "target_id": "99f89472-b0b9-40c4-9129-a9e002bc7406"
+      },
+      "timestamp": "2026-02-27T11:49:00.757291",
+      "source": "Nathaniel Flint",
+      "target": "Delirium"
+    },
+    "42b3f149bb416d51": {
+      "result": {
+        "type": "created",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Dagger linked to Nathaniel found in village",
+        "source_id": "c69fb056-fed7-460c-828d-6e36890b9379",
+        "target_id": "3479225b-e210-4a88-9d70-610b14c4ca48"
+      },
+      "timestamp": "2026-02-27T11:49:02.309961",
+      "source": "Nathaniel Flint",
+      "target": "Emberwood Village"
+    },
+    "6eda3dcc1e2dc9ce": {
+      "result": {
+        "type": "destroyed",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Nathaniel's dagger found in Rat King's chest",
+        "source_id": "c69fb056-fed7-460c-828d-6e36890b9379",
+        "target_id": "91ce4cce-02de-474c-a468-f5f5124f5832"
+      },
+      "timestamp": "2026-02-27T11:49:03.532536",
+      "source": "Nathaniel Flint",
+      "target": "Rat King"
+    },
+    "b04b5099403f29c3": {
+      "result": {
+        "type": "created",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Bhardok created Delirium's condition.",
+        "source_id": "350ab345-a244-42a9-8e47-f7201f39ab49",
+        "target_id": "99f89472-b0b9-40c4-9129-a9e002bc7406"
+      },
+      "timestamp": "2026-02-27T11:49:04.983470",
+      "source": "Bhardok the Underlord",
+      "target": "Delirium"
+    },
+    "9ce941ee1a9ec389": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.2,
+        "order_valence": 0.0,
+        "summary": "Alliance brokered for mutual benefit",
+        "source_id": "350ab345-a244-42a9-8e47-f7201f39ab49",
+        "target_id": "ee4125de-5b21-469e-8b41-d978841c10ff"
+      },
+      "timestamp": "2026-02-27T11:49:06.082228",
+      "source": "Bhardok the Underlord",
+      "target": "Blackjack Mel"
+    },
+    "5e19de01119dd6ad": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.8,
+        "summary": "Blackjack Mel betrays Gorthar's trust",
+        "source_id": "ee4125de-5b21-469e-8b41-d978841c10ff",
+        "target_id": "f87fa3a2-4568-4110-a1b0-293156d8e1ba"
+      },
+      "timestamp": "2026-02-27T11:49:07.619189",
+      "source": "Blackjack Mel",
+      "target": "Gorthar"
+    },
+    "b0537987bcacc2e4": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.8,
+        "summary": "Blackjack Mel orchestrated theft from tavern",
+        "source_id": "ee4125de-5b21-469e-8b41-d978841c10ff",
+        "target_id": "8fe70902-101b-4a7b-be28-2b315d7c823d"
+      },
+      "timestamp": "2026-02-27T11:49:09.001282",
+      "source": "Blackjack Mel",
+      "target": "Skull & Sword Tavern"
+    },
+    "ef510e4601a0c86b": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Sealed Rorsh for interrogation purposes",
+        "source_id": "a6f0c7b2-e2dd-4408-a33b-255bfb078a04",
+        "target_id": "41d71e93-8cbd-4903-930a-f16ee4427e68"
+      },
+      "timestamp": "2026-02-27T11:49:10.217024",
+      "source": "River the Mage",
+      "target": "Rorsh the Initiate"
+    },
+    "8eb808f6fdf72950": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.7,
+        "summary": "River employs Aqua for a vital mission",
+        "source_id": "a6f0c7b2-e2dd-4408-a33b-255bfb078a04",
+        "target_id": "eeb51f8d-b1dc-4395-9a35-3e083366963d"
+      },
+      "timestamp": "2026-02-27T11:49:11.529161",
+      "source": "River the Mage",
+      "target": "Aqua Expurgo"
+    },
+    "0428de078be8efd6": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.7,
+        "summary": "River employs Eldritch Lilies for missions",
+        "source_id": "a6f0c7b2-e2dd-4408-a33b-255bfb078a04",
+        "target_id": "0d6eded7-8916-4a5e-8e30-090d58b813a4"
+      },
+      "timestamp": "2026-02-27T11:49:13.037131",
+      "source": "River the Mage",
+      "target": "Eldritch Lily"
+    },
+    "c9936b2b45041f84": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.6,
+        "order_valence": 0.5,
+        "summary": "Collaborating to breach the tower's seals",
+        "source_id": "a6f0c7b2-e2dd-4408-a33b-255bfb078a04",
+        "target_id": "d2637d56-ec3d-420c-b105-e8a7e1f14b43"
+      },
+      "timestamp": "2026-02-27T11:49:14.277588",
+      "source": "River the Mage",
+      "target": "The Inscrutable Tower"
+    },
+    "fde5ede00d4a1a2b": {
+      "result": {
+        "type": "served",
+        "moral_valence": 0.7,
+        "order_valence": 1.0,
+        "summary": "Knight-Captain protects Emberwood Village",
+        "source_id": "ce883138-4c0f-4a31-b2eb-b97d73aa1a17",
+        "target_id": "3479225b-e210-4a88-9d70-610b14c4ca48"
+      },
+      "timestamp": "2026-02-27T11:49:15.563794",
+      "source": "Knight-Captain Theodore Marshal",
+      "target": "Emberwood Village"
+    },
+    "6abb8bd2a5e1a6f3": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Harrowhark diagnosed Theodore's lycanthropy",
+        "source_id": "ce883138-4c0f-4a31-b2eb-b97d73aa1a17",
+        "target_id": "cda2b247-bfa5-47d4-ae76-6f8bc5a3981f"
+      },
+      "timestamp": "2026-02-27T11:49:16.998362",
+      "source": "Knight-Captain Theodore Marshal",
+      "target": "Harrowhark"
+    },
+    "dc79d7248aeb4f81": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Princess Llorona and Eldritch Lily are allies",
+        "source_id": "21e542c3-7a88-49ca-880f-0dbbde206485",
+        "target_id": "0d6eded7-8916-4a5e-8e30-090d58b813a4"
+      },
+      "timestamp": "2026-02-27T11:49:18.415839",
+      "source": "Princess Llorona",
+      "target": "Eldritch Lily"
     }
   }
 }

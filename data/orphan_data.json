@@ -10,15 +10,6 @@
       "connections": 0
     },
     {
-      "id": "35efdcc9-2ae3-46e3-a39d-e408634157c6",
-      "title": "Wooden Stake",
-      "urlId": "FnGtypUkbI",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "createdAt": "2024-09-05T07:21:37.977000+00:00",
-      "content": "*Weapon, martial weapon, melee weapon, 3 lb.*\n\n1d12 piercing - finesse, special, two-handed\n\n\n---\n\n ![](/api/attachments.redirect?id=68e63e4b-c516-48bd-949f-19799495e9b4 \"right-50 =262x262\")An improvised weapon, crudely whittled from whatever wood was close at hand. Unreliable, but better than nothing.\n\n***Special.*** When you attack with a wooden stake, roll a 1d6. On a 6, the stake fails and breaks apart, becoming unrecoverable.\n\n***Two-Handed.*** This weapon requires two hands to use. This property is relevant only when you attack with the weapon, not when you simply hold it.\n\n***Finesse.*** When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.\n\n\n---\n\n- [x] Homebrew source: [Dungeon Church](https://5e.dungeon.church/items.html#wooden%20stake_dungeonchurch)\n\n\\\n",
-      "connections": 0
-    },
-    {
       "id": "45764f5c-2fe5-4e13-9bbf-b5281b7c0fe3",
       "title": "Void Essence",
       "urlId": "lYJOMctLcD",
@@ -34,6 +25,24 @@
       "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
       "createdAt": "2024-07-13T00:15:56.021000+00:00",
       "content": " ![](/api/attachments.redirect?id=f478e888-9e7f-4a7c-a330-fc3cb9176048)This rough stone bottle contains a liquid with the stinging scent of strong alcohol mixed with the metallic iron of fresh blood.\n\nWhen consumed, a primal force surges through veins of the drinker and their muscles bulge with newfound strength, gaining +2 to Strength checks or saves for 1 hour. Yet this consuming power causes drooling, tics, emotional outbursts, and other anti-social behaviors that cause disadvantage on Charisma checks.\n\n\n---\n\n- [x] Homebrew source: [Dungeon Church](https://5e.dungeon.church/items.html#potion%20of%20vile%20strength_dungeonchurch)\n\n\\\n",
+      "connections": 0
+    },
+    {
+      "id": "8abaf115-af57-4910-9e30-d3e55fda9042",
+      "title": "",
+      "urlId": "7cqNWQW4Ou",
+      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
+      "createdAt": "2021-12-03T10:21:02.183000+00:00",
+      "content": "",
+      "connections": 0
+    },
+    {
+      "id": "35efdcc9-2ae3-46e3-a39d-e408634157c6",
+      "title": "Wooden Stake",
+      "urlId": "FnGtypUkbI",
+      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
+      "createdAt": "2024-09-05T07:21:37.977000+00:00",
+      "content": "*Weapon, martial weapon, melee weapon, 3 lb.*\n\n1d12 piercing - finesse, special, two-handed\n\n\n---\n\n ![](/api/attachments.redirect?id=68e63e4b-c516-48bd-949f-19799495e9b4 \"right-50 =262x262\")An improvised weapon, crudely whittled from whatever wood was close at hand. Unreliable, but better than nothing.\n\n***Special.*** When you attack with a wooden stake, roll a 1d6. On a 6, the stake fails and breaks apart, becoming unrecoverable.\n\n***Two-Handed.*** This weapon requires two hands to use. This property is relevant only when you attack with the weapon, not when you simply hold it.\n\n***Finesse.*** When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.\n\n\n---\n\n- [x] Homebrew source: [Dungeon Church](https://5e.dungeon.church/items.html#wooden%20stake_dungeonchurch)\n\n\\\n",
       "connections": 0
     },
     {
@@ -154,15 +163,6 @@
       "connections": 0
     },
     {
-      "id": "8abaf115-af57-4910-9e30-d3e55fda9042",
-      "title": "",
-      "urlId": "7cqNWQW4Ou",
-      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
-      "createdAt": "2021-12-03T10:21:02.183000+00:00",
-      "content": "",
-      "connections": 0
-    },
-    {
       "id": "b39f4303-311a-480a-ab92-2e24f2171fed",
       "title": "Restaurant List",
       "urlId": "OXVi7L5CUF",
@@ -226,21 +226,21 @@
       "connections": 0
     },
     {
-      "id": "8baabf65-f57f-4639-b2aa-e8ddf6066f71",
-      "title": "Legendary",
-      "urlId": "Vs6JW0T0Cz",
-      "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
-      "createdAt": "2021-12-11T03:18:58.555000+00:00",
-      "content": "NPCs and important historical figures who have appeared in lore or backstories, but not in an actual game.",
-      "connections": 0
-    },
-    {
       "id": "6f642105-6cdb-4efd-8de6-7138aff5eaa8",
       "title": "Directions to Brad's Studio",
       "urlId": "MqCuUBMHAN",
       "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
       "createdAt": "2021-11-03T00:29:17.643000+00:00",
       "content": "# Cotton Mills Studios in Fruitvale\n\n* [1091 Calcot Place, Oakland, CA 94606](https://www.google.com/maps/place/1091+Calcot+Pl,+Oakland,+CA+94606/@37.7981586,-122.2419963,17z/data=!4m5!3m4!1s0x808f86e66880231f:0xc4ebb81204f63886!8m2!3d37.7816762!4d-122.2381794)\n* It\u2019s in a weird spot - you go underneath the 23rd Street overpass on Calcot Place, sandwiched between 880 and the train tracks\n\n  ### Parking\n* Secure guest parking is available in the lot, ping Brad on Discord to open the gate. Guest parking is in the back right painted as \u201cGUEST\u201d spots. \n* :skull_and_crossbones: **DO NOT PARK IN NUMBERED SPOTS** :skull_and_crossbones:\n\n# From Transit\n\nThe Cotton Mill is only about 1 mile from Fruitvale BART station, however it goes through a pedestrian-unfriendly, industrial part of the neighborhood with a lot of encampments so I would not recommend walking it. It is perfectly fine to bike/scooter/etc. though! \n\n ![](/api/attachments.redirect?id=547e027e-68c4-40c0-8ecc-3e50aba7c2ec)\n\n[Google Maps: Fruitvale to Cotton Mill Studios via Walk/Bike](https://www.google.com/maps/dir/37.7813835,-122.2378542/Fruitvale+BART,+Oakland,+CA+94601/@37.7776882,-122.2352504,16z/data=!4m10!4m9!1m1!4e1!1m5!1m1!1s0x808f86f4a3f0d739:0x60fc93ed71a391b0!2m2!1d-122.225206!2d37.7752293!3e1?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D)\n\n# Cycling Directions\n\nPlease take a look at map before you leave. Because of the train track overpass, going from East 12th Street \u2192 23rd Avenue is a dangerous/bad route for bikes (no shoulder, limited visibility hill, high speed traffic getting to 880, rough road surface, etc).\n\n### Very Bad No Good Intersection\n\nThe intersection at 23rd Ave turning onto E 11th St / Calcot Place is very poorly designed and people constantly blow the lights at high speed. Be careful! Never assume the cars are going to stop.\n\n ![](/api/attachments.redirect?id=5452d24f-0d57-4239-8b2f-d6d520989b48)\n\n### From Downtown Headed East\n\n* [Google Link: Lake Merritt BART to 1091 Calcot Place via Bike](https://www.google.com/maps/dir/Lake+Merritt+Station,+800+Oak+St,+Oakland,+CA+94607/1091+Calcot+Pl,+Oakland,+CA+94606-5044,+USA/@37.7898052,-122.2556352,16.19z/data=!4m19!4m18!1m10!1m1!1s0x808f80cb294063c9:0xb6198c573126a242!2m2!1d-122.2652155!2d37.7970287!3m4!1m2!1d-122.2590238!2d37.7922871!3s0x808f872e03cc9e49:0xc057dc92c8095608!1m5!1m1!1s0x808f86e66880231f:0xc4ebb81204f63886!2m2!1d-122.2381794!2d37.7816762!3e1)\n* Take Embarcadero (aka \u201cBay Trail\u201d route) to 23rd Avenue, cross 880 freeway via bike lane on overpass on 23rd. Take a right onto confusingly signed \u201cE 11 St / Miller Place\u201d which immediately becomes Calcot Place as you go left and under 23rd Ave.\n\n  ![](/api/attachments.redirect?id=8c62d87c-26ae-4b86-887c-56db575c5c1a)\n\n  ### From Fruitvale Station Headed West\n* [Google Link: Fruitvale BART to 1091 Calcot Place via Bike](https://www.google.com/maps/dir/Fruitvale+BART,+Oakland,+CA/1091+Calcot+Pl,+Oakland,+CA+94606-5044,+USA/@37.776886,-122.2329674,16.38z/data=!4m24!4m23!1m15!1m1!1s0x808f86f4a3f0d739:0x60fc93ed71a391b0!2m2!1d-122.225206!2d37.7752293!3m4!1m2!1d-122.2319972!2d37.7764991!3s0x808f86edfaa3d1d9:0xe6f9d1347390eb74!3m4!1m2!1d-122.2334449!2d37.7781265!3s0x808f86ee5a5706a3:0x149631eece763fea!1m5!1m1!1s0x808f86e66880231f:0xc4ebb81204f63886!2m2!1d-122.2381794!2d37.7816762!3e1)\n* Head west from Fruitvale on E 12th Street, take a left onto 29th Avenue and cross the train tracks. Keep going until just before freeway entrance, and take a right on E 10th Street at the light (past the animal shelter on right, opposite the school on your left). Follow that around past Art Haus and then under the 23rd Ave overpass.\n\n  ![](/api/attachments.redirect?id=04e97ca7-ce3a-4e4f-b884-45c9df0449b4)\n\n  \\\n  \\\n\n\\\n",
+      "connections": 0
+    },
+    {
+      "id": "8baabf65-f57f-4639-b2aa-e8ddf6066f71",
+      "title": "Legendary",
+      "urlId": "Vs6JW0T0Cz",
+      "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
+      "createdAt": "2021-12-11T03:18:58.555000+00:00",
+      "content": "NPCs and important historical figures who have appeared in lore or backstories, but not in an actual game.",
       "connections": 0
     },
     {
