@@ -29844,7 +29844,15 @@
       "source": "99f1c7c7-4a9d-4770-b7d2-3c77e5cc9e31",
       "target": "3e2db61e-3734-49f9-9521-bc827b28975e",
       "creation_time": "2026-01-18T19:48:07.338000+00:00",
-      "direction": "unidirectional"
+      "direction": "unidirectional",
+      "relationship": {
+        "type": "opposed",
+        "moral_valence": -0.5,
+        "order_valence": 1.0,
+        "summary": "Knights oppose Followers due to delirium embrace",
+        "source_id": "99f1c7c7-4a9d-4770-b7d2-3c77e5cc9e31",
+        "target_id": "3e2db61e-3734-49f9-9521-bc827b28975e"
+      }
     },
     {
       "source": "4df547d4-7058-4f7d-9d04-f57c91c256ed",
