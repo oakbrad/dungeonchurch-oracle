@@ -2139,6 +2139,56 @@
       },
       "timestamp": "2026-02-27T11:45:01.443389",
       "title": "Cerric Shadowleaf"
+    },
+    "7bcd7a239b2d6711": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": 0.8,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-03-04T11:43:55.747772",
+      "title": "Henner"
+    },
+    "5aa3f77d4930029d": {
+      "alignment": {
+        "law_chaos": -0.3,
+        "good_evil": 0.2,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-03-04T11:43:57.932951",
+      "title": "Gorthar"
+    },
+    "fe9a0627a85cd3be": {
+      "alignment": {
+        "law_chaos": 0.7,
+        "good_evil": 0.8,
+        "confidence": 0.9,
+        "source": "llm"
+      },
+      "timestamp": "2026-03-04T11:44:00.192119",
+      "title": "Knight-Captain Theodore Marshal"
+    },
+    "3d55450f5b9d55ec": {
+      "alignment": {
+        "law_chaos": -0.8,
+        "good_evil": -0.9,
+        "confidence": 0.8,
+        "source": "llm"
+      },
+      "timestamp": "2026-03-04T11:44:02.197418",
+      "title": "Blackjack Mel"
+    },
+    "04b21d03f0fb8c92": {
+      "alignment": {
+        "law_chaos": 0.5,
+        "good_evil": -0.5,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-03-04T11:44:04.463468",
+      "title": "River the Mage"
     }
   },
   "relationships": {
@@ -12632,6 +12682,58 @@
       "timestamp": "2026-03-01T11:38:15.879030",
       "source": "Knights of the Silver Order",
       "target": "Followers of the Falling Fire"
+    },
+    "fe28d697ed0a9d5a": {
+      "result": {
+        "type": "employed",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Child employed for dangerous mining task",
+        "source_id": "7489624c-f84b-4cc4-a836-635c54a1bc85",
+        "target_id": "4bda8158-f943-4c9e-9a86-7054ea8e86e8"
+      },
+      "timestamp": "2026-03-04T11:44:06.796698",
+      "source": "Henner",
+      "target": "Skullport"
+    },
+    "c9b956eca001b35f": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Henner targeted for kidnapping by Blackjack Mel",
+        "source_id": "7489624c-f84b-4cc4-a836-635c54a1bc85",
+        "target_id": "ee4125de-5b21-469e-8b41-d978841c10ff"
+      },
+      "timestamp": "2026-03-04T11:44:08.009181",
+      "source": "Henner",
+      "target": "Blackjack Mel"
+    },
+    "773617e02cea76a6": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -1.0,
+        "order_valence": -1.0,
+        "summary": "Mel was killed during a kidnapping attempt",
+        "source_id": "ee4125de-5b21-469e-8b41-d978841c10ff",
+        "target_id": "3479225b-e210-4a88-9d70-610b14c4ca48"
+      },
+      "timestamp": "2026-03-04T11:44:09.046625",
+      "source": "Blackjack Mel",
+      "target": "Emberwood Village"
+    },
+    "2c6c23100994dcb5": {
+      "result": {
+        "type": "served",
+        "moral_valence": 0.5,
+        "order_valence": 0.8,
+        "summary": "River served Archmage Eldrick's summons",
+        "source_id": "a6f0c7b2-e2dd-4408-a33b-255bfb078a04",
+        "target_id": "c8229713-668f-48f5-88e1-af67ad03d903"
+      },
+      "timestamp": "2026-03-04T11:44:10.682707",
+      "source": "River the Mage",
+      "target": "Archmage Eldrick Runeweaver"
     }
   }
 }
