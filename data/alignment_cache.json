@@ -2189,6 +2189,16 @@
       },
       "timestamp": "2026-03-04T11:44:04.463468",
       "title": "River the Mage"
+    },
+    "90fd353ca5a61373": {
+      "alignment": {
+        "law_chaos": 0.5,
+        "good_evil": 0.2,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-03-08T11:38:40.834794",
+      "title": "Alanik Ray"
     }
   },
   "relationships": {
@@ -12734,6 +12744,32 @@
       "timestamp": "2026-03-04T11:44:10.682707",
       "source": "River the Mage",
       "target": "Archmage Eldrick Runeweaver"
+    },
+    "a876e5675d8a18ff": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.8,
+        "order_valence": 0.7,
+        "summary": "The Order supported Avalon against threats",
+        "source_id": "5ed32fed-da2d-4b8a-b083-389e0c23d13f",
+        "target_id": "1f16d7c6-cecb-468f-9ac4-693447083da1"
+      },
+      "timestamp": "2026-03-08T11:38:43.115232",
+      "source": "The Order of the Guardians",
+      "target": "Avalon"
+    },
+    "d602e59fa193c17d": {
+      "result": {
+        "type": "opposed",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "The Order opposes the Dragon Empire",
+        "source_id": "5ed32fed-da2d-4b8a-b083-389e0c23d13f",
+        "target_id": "ca1708ac-15ad-4729-ad67-83fd2968996c"
+      },
+      "timestamp": "2026-03-08T11:38:44.901469",
+      "source": "The Order of the Guardians",
+      "target": "Dragon Empire"
     }
   }
 }
