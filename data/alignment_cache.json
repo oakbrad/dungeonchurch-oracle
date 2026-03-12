@@ -2199,6 +2199,56 @@
       },
       "timestamp": "2026-03-08T11:38:40.834794",
       "title": "Alanik Ray"
+    },
+    "92cfd370399fc4f4": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": 0.3,
+        "confidence": 0.6,
+        "source": "llm"
+      },
+      "timestamp": "2026-03-12T11:43:11.534832",
+      "title": "Vess Harlow"
+    },
+    "bbe63ff4375d96d6": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": 0.5,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-03-12T11:43:13.560221",
+      "title": "Britta the Champion"
+    },
+    "a8891e83e8681712": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": 0.1,
+        "confidence": 0.6,
+        "source": "llm"
+      },
+      "timestamp": "2026-03-12T11:43:16.076632",
+      "title": "Physik"
+    },
+    "c401005ea8aec1a3": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": 0.3,
+        "confidence": 0.6,
+        "source": "llm"
+      },
+      "timestamp": "2026-03-12T11:43:18.384124",
+      "title": "Otolyp"
+    },
+    "9956646240d194ed": {
+      "alignment": {
+        "law_chaos": -0.7,
+        "good_evil": -0.5,
+        "confidence": 0.8,
+        "source": "llm"
+      },
+      "timestamp": "2026-03-12T11:43:20.953828",
+      "title": "Zahrahn Esharath"
     }
   },
   "relationships": {
@@ -12770,6 +12820,97 @@
       "timestamp": "2026-03-08T11:38:44.901469",
       "source": "The Order of the Guardians",
       "target": "Dragon Empire"
+    },
+    "8776b5b75d5aa1a1": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.7,
+        "order_valence": -0.8,
+        "summary": "Eldan's rage leads to destructive behavior",
+        "source_id": "417b0e47-0b5c-4d68-97bb-11c661ddc8a2",
+        "target_id": "355a2242-160e-4c90-adba-6c1a4a042bc7"
+      },
+      "timestamp": "2026-03-12T11:43:22.895302",
+      "source": "Britta the Champion",
+      "target": "Eldan Fletcher"
+    },
+    "6e44b34b98b77021": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.3,
+        "summary": "Britta and Maude support each other.",
+        "source_id": "417b0e47-0b5c-4d68-97bb-11c661ddc8a2",
+        "target_id": "ef979c5c-8797-4d31-8bb4-8c63aa2c8e9d"
+      },
+      "timestamp": "2026-03-12T11:43:24.134751",
+      "source": "Britta the Champion",
+      "target": "Maude the Marauder"
+    },
+    "c3e3d363d59534f4": {
+      "result": {
+        "type": "traded",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Vess Harlow trades potions in Saltmarsh.",
+        "source_id": "11213466-22aa-4d55-94ba-f6943943a4b7",
+        "target_id": "3235b720-ecbe-4089-ad79-9c17674c77d4"
+      },
+      "timestamp": "2026-03-12T11:43:25.370310",
+      "source": "Vess Harlow",
+      "target": "Saltmarsh"
+    },
+    "5e3bfa63e77d973d": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Vess pursued opportunity after apprenticeship",
+        "source_id": "11213466-22aa-4d55-94ba-f6943943a4b7",
+        "target_id": "545f8574-7795-40ad-913a-af35b84dd5e9"
+      },
+      "timestamp": "2026-03-12T11:43:26.711800",
+      "source": "Vess Harlow",
+      "target": "Striborg"
+    },
+    "4436b06f4a13e85f": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Goblin paperboy works for Saltmarsh",
+        "source_id": "dfd0cbf2-f7c3-43fe-9165-a824cebd5f2d",
+        "target_id": "3235b720-ecbe-4089-ad79-9c17674c77d4"
+      },
+      "timestamp": "2026-03-12T11:43:29.232459",
+      "source": "Physik",
+      "target": "Saltmarsh"
+    },
+    "23a2ccc696d61593": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Iron Riders downplaying murders of innocents",
+        "source_id": "dfd0cbf2-f7c3-43fe-9165-a824cebd5f2d",
+        "target_id": "5fad65b9-abd3-4178-972c-5001a42d2054"
+      },
+      "timestamp": "2026-03-12T11:43:30.515441",
+      "source": "Physik",
+      "target": "Iron Riders of Abraxas"
+    },
+    "cbf8d18d14f204e8": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Physik employs goblins at the printshop",
+        "source_id": "dfd0cbf2-f7c3-43fe-9165-a824cebd5f2d",
+        "target_id": "77e3c8d2-4038-4d03-9517-5c2dedf0c0fc"
+      },
+      "timestamp": "2026-03-12T11:43:32.656764",
+      "source": "Physik",
+      "target": "Harlow's Tinctures"
     }
   }
 }

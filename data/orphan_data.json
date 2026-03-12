@@ -55,15 +55,6 @@
       "connections": 0
     },
     {
-      "id": "38310564-2e34-4f13-ad4d-2171a74eccf0",
-      "title": "Original Commissions",
-      "urlId": "UfC7ojbPA8",
-      "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
-      "createdAt": "2024-10-05T23:58:01.664000+00:00",
-      "content": "# Fonts\n\n## Waning Star by [Heavy Symmetry](https://www.instagram.com/heavy_symmetry)\n\n[Waning Star_extended.zip 1619164](/api/attachments.redirect?id=380da760-cbec-4d2e-8dd1-076d8c1728bb)\n\n[Waning Star specimen.pdf 998733](/api/attachments.redirect?id=1e50e048-b8d4-4147-9c9c-054c43ae84d0)\n\nSmall Biz License\n\n ![](/api/attachments.redirect?id=a65a5112-1398-4ee2-aed5-7bffa9e133e8)\n\n# Logo & Sigil\n\n## by [Heavy Symmetry](https://www.instagram.com/heavy_symmetry)\n\nAll source files and variations in high res PNG and vector SVG:\n\n[dungeonchurch.zip 10924625](/api/attachments.redirect?id=2bbebcb0-9a80-4c7a-9f37-3fefe1ef9d93)\n\n ![Chrome](/api/attachments.redirect?id=945bbf5f-5742-46ce-ad50-42aa2aeb347f \" =3840x2160\") ![White Sharp](/api/attachments.redirect?id=d26c3339-2d05-4f25-adb9-00faf3b2d41f \" =1125x1125\")\n\n ![White Organic](/api/attachments.redirect?id=079357f7-7e40-4777-930c-176d3be58c63 \" =1125x1125\")\n\n ![Sigil](/api/attachments.redirect?id=e0061f66-943f-49a6-8c41-fb452434443d \" =1125x1125\") ![Brad's RBW Chrome edit](/api/attachments.redirect?id=e1a110e0-9e1d-48df-b513-b9b0f3f9a561 \" =3840x2160\")\n\n[logo-chrome-red.psd 20988696](/api/attachments.redirect?id=eba70c1a-9800-46f7-b131-6789ee182389)\n\n\\\n",
-      "connections": 0
-    },
-    {
       "id": "afd4985e-c2ec-4c86-929a-623bfbe69ce9",
       "title": "Brooch of Witchsight",
       "urlId": "Do7tfU7V9e",
@@ -79,6 +70,15 @@
       "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
       "createdAt": "2025-01-08T00:06:19.025000+00:00",
       "content": " ![](/api/attachments.redirect?id=f097d39e-f384-4027-a4be-f22311363aad)Objectively the best internet pew pew game to play with your friends, we have a death match server running at `dungeon.church:27960`\n\nCurated fantasy-themed map rotation and some familiar NPC bots.\n\n# ioQuake Setup\n\nioQuake3 is a free game engine that runs on Mac / Windows / Linux computers. You need to install the engine, then add the game files.\n\n\n:::info\nThey have a [Player Guide](https://ioquake3.org/help/players-guide) here with more details.\n\n:::\n\n\n1. [Download and install ioQuake3](https://ioquake3.org/) app![Map: Ecstatica](/api/attachments.redirect?id=08b6cad8-39a2-4e5f-b34e-20684fbe8960 \"right-50 =337x253\")\n2. [Download the patch update](https://files.ioquake3.org/quake3-latest-pk3s.zip) from iD Software and unzip it.\n3. :pirate_flag::shushing_face: [Download the actual game file](http://quake.dungeon.church/baseq3/pak0.pk3) `pak0.pk3`\n4. Go to the Quake 3 application folder. On a Mac, use Finder to *Go\u2192Go to Folder* & navigate to `~/Library/Application Support/Quake3`. Put the *pak0.pk3* game file in `baseq3`\n5. Take the two folders there were in the patch zip (`baseq3` & `missionpack`) and copy the pk3 files into the appropriate subfolders in the application folder.\n6. Start the game, if it asks for a CD Key, use: `RC7GSLHWJP2B3TAD`\n7. At this point you will probably want to go into the settings and mess around with resolution etc. and set up your player. One required setting (to download the custom maps) you need to have *Setup\u2192Game Options\u2192Automatic Downloads* turned `on`\n\n### Join Server\n\n:partying_face: You can now go to *Multiplayer\u2192Specify* and enter address `dungeon.church` to join\n\n### Optional\n\n* Improve the graphics with [Neural Upscale Textures](https://www.moddb.com/mods/quake-3-neural-upscale/addons) mod![Map: Windsong Keep](/api/attachments.redirect?id=a5b04c6e-58b5-4e02-b900-1f853b6978bd \"right-50 =224x168\")\n* [Additional Player Skins](https://www.moddb.com/games/quake-iii-arena/addons/quake-3-model-pack)\n* In the game console (accessed in Quake 3 by pressing the \\~ key), you can enter additional commands to improve performance on modern computers:\n  * `/snaps 40`\n  * `/rate 2500`\n  * `/cl_maxpackets 125`\n  * `/com_maxfps 125`\n  * `/com_hunkMegs 512`\n  * and to bookmark our server `/seta server1 dungeon.church:27960`\n* If you have a widescreen monitor [Flexible HUD mod](https://clover.moe/flexible-hud-for-ioq3/) will fix the menus\n\n# GameTracker Stats\n\n[Link](https://www.gametracker.com/server_info/192.9.236.115:27960/) - keeps track of player stats\n\n[https://www.gametracker.com/server%5Finfo/dungeon.church:27960/](https://www.gametracker.com/server%5Finfo/dungeon.church:27960/)\n\n# Additional Resources\n\n* Windows: you can still buy the original game on [Steam](https://store.steampowered.com/app/2200/Quake_III_Arena/)\n* [Extremely old school website with an archive of player models](https://ws.q3df.org/models/)\n* [Apple Gaming Wiki notes](https://www.applegamingwiki.com/wiki/Quake_3_Arena)\n* [lvlworld](https://lvlworld.com/) - community database of Q3A levels\n\n ![Map: Fat Plonker](/api/attachments.redirect?id=3220167d-3c70-497b-a87e-40e58f65e1cb)",
+      "connections": 0
+    },
+    {
+      "id": "38310564-2e34-4f13-ad4d-2171a74eccf0",
+      "title": "Original Commissions",
+      "urlId": "UfC7ojbPA8",
+      "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
+      "createdAt": "2024-10-05T23:58:01.664000+00:00",
+      "content": "# Fonts\n\n## Waning Star by [Heavy Symmetry](https://www.instagram.com/heavy_symmetry)\n\n[Waning Star_extended.zip 1619164](/api/attachments.redirect?id=380da760-cbec-4d2e-8dd1-076d8c1728bb)\n\n[Waning Star specimen.pdf 998733](/api/attachments.redirect?id=1e50e048-b8d4-4147-9c9c-054c43ae84d0)\n\nSmall Biz License\n\n ![](/api/attachments.redirect?id=a65a5112-1398-4ee2-aed5-7bffa9e133e8)\n\n# Logo & Sigil\n\n## by [Heavy Symmetry](https://www.instagram.com/heavy_symmetry)\n\nAll source files and variations in high res PNG and vector SVG:\n\n[dungeonchurch.zip 10924625](/api/attachments.redirect?id=2bbebcb0-9a80-4c7a-9f37-3fefe1ef9d93)\n\n ![Chrome](/api/attachments.redirect?id=945bbf5f-5742-46ce-ad50-42aa2aeb347f \" =3840x2160\") ![White Sharp](/api/attachments.redirect?id=d26c3339-2d05-4f25-adb9-00faf3b2d41f \" =1125x1125\")\n\n ![White Organic](/api/attachments.redirect?id=079357f7-7e40-4777-930c-176d3be58c63 \" =1125x1125\")\n\n ![Sigil](/api/attachments.redirect?id=e0061f66-943f-49a6-8c41-fb452434443d \" =1125x1125\") ![Brad's RBW Chrome edit](/api/attachments.redirect?id=e1a110e0-9e1d-48df-b513-b9b0f3f9a561 \" =3840x2160\")\n\n[logo-chrome-red.psd 20988696](/api/attachments.redirect?id=eba70c1a-9800-46f7-b131-6789ee182389)\n\n\\\n",
       "connections": 0
     },
     {
@@ -118,12 +118,12 @@
       "connections": 0
     },
     {
-      "id": "8abaf115-af57-4910-9e30-d3e55fda9042",
-      "title": "",
-      "urlId": "7cqNWQW4Ou",
-      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
-      "createdAt": "2021-12-03T10:21:02.183000+00:00",
-      "content": "",
+      "id": "626fad49-7785-49cd-be45-e063fb0e0ae7",
+      "title": "Slug Slime",
+      "urlId": "0WSxbeLgVX",
+      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
+      "createdAt": "2026-03-08T01:36:30.573000+00:00",
+      "content": "#### Potion, Common ![](/api/attachments.redirect?id=362bcb44-e323-491f-9bd4-dcae947fc798 \"right-50 =266x266\")\n\nThis thick, viscous slime is harvested from [giant slugs](https://5e.dungeon.church/bestiary.html#giant%20slug_ttp) and is carefully bottled in small glass vials. Once exposed to air, it rapidly expands into a remarkably adhesive substance.\n\nAs an action, you can throw this vial at a creature within 20 feet, shattering it upon impact. The target must succeed on a DC 13 Dexterity saving throw or become [restrained](https://5e.dungeon.church/conditionsdiseases.html#restrained_phb) in place. A stuck creature may repeat the save at the beginning of their next turn.\n\n\\\n\\\n[https://5e.dungeon.church/items.html#slug%20slime%5Fdungeonchurch](https://5e.dungeon.church/items.html#slug%20slime%5Fdungeonchurch)\n\n\\\n",
       "connections": 0
     },
     {
@@ -133,15 +133,6 @@
       "collectionId": "28015ad0-50f5-4495-a6c5-2415436a3d40",
       "createdAt": "2025-06-30T20:12:27.045000+00:00",
       "content": "\\\n",
-      "connections": 0
-    },
-    {
-      "id": "626fad49-7785-49cd-be45-e063fb0e0ae7",
-      "title": "Slug Slime",
-      "urlId": "0WSxbeLgVX",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "createdAt": "2026-03-08T01:36:30.573000+00:00",
-      "content": "#### Potion, Common ![](/api/attachments.redirect?id=362bcb44-e323-491f-9bd4-dcae947fc798 \"right-50 =266x266\")\n\nThis thick, viscous slime is harvested from [giant slugs](https://5e.dungeon.church/bestiary.html#giant%20slug_ttp) and is carefully bottled in small glass vials. Once exposed to air, it rapidly expands into a remarkably adhesive substance.\n\nAs an action, you can throw this vial at a creature within 20 feet, shattering it upon impact. The target must succeed on a DC 13 Dexterity saving throw or become [restrained](https://5e.dungeon.church/conditionsdiseases.html#restrained_phb) in place. A stuck creature may repeat the save at the beginning of their next turn.\n\n\\\n\\\n[https://5e.dungeon.church/items.html#slug%20slime%5Fdungeonchurch](https://5e.dungeon.church/items.html#slug%20slime%5Fdungeonchurch)\n\n\\\n",
       "connections": 0
     },
     {
@@ -178,15 +169,6 @@
       "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
       "createdAt": "2025-07-05T01:34:52.655000+00:00",
       "content": "\\\n",
-      "connections": 0
-    },
-    {
-      "id": "ef485e4c-cf47-4a88-bb7d-6bcb4e1127d5",
-      "title": "",
-      "urlId": "YkWsMwoRVU",
-      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
-      "createdAt": "2022-02-16T07:32:03.152000+00:00",
-      "content": "",
       "connections": 0
     },
     {
@@ -244,21 +226,21 @@
       "connections": 0
     },
     {
-      "id": "5be03948-9ddd-4614-ab96-0a0c5fdd73b9",
-      "title": "Otolyp",
-      "urlId": "t2Bq06PY1s",
+      "id": "8abaf115-af57-4910-9e30-d3e55fda9042",
+      "title": "",
+      "urlId": "7cqNWQW4Ou",
       "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
-      "createdAt": "2026-03-08T20:56:06.813000+00:00",
-      "content": "**The Anthropologist**\n\nInfluenced by escalating casualties from conflicts with the neighboring Tritons and Sahuagin, the Laneshi synod approved an unprecedented stratagem: to send forth emissaries to communities of the land-dwelling races\u2014not to form an alliance, but to understand the roots of their predominance and turn that knowledge to their advantage.\n\nAt sixteen years old, the mystic Otolyp was the youngest volunteer to be accepted. This surprised many, for most thought he was an unlikely candidate. His life was not particularly noteworthy; he had no martial accolades to his name, nor was he outspoken of wisdom. Did the elders see value in his tranquil demeanor, or did they know of his knack for shapechange?\n\nOtolyp\u2019s personal motive for the assignment was to test a theory. Did contact with the surface dwellers lead his father to blasphemy?\n\n**The Druid**\n\nOtolyp\u2019s father Saureng was a druid. His mother Ri\u2019Maiyl was a lorekeeper. His family lived in Jom Galsha, a modest community located on the Yadaz shelf beside the great abyss.\n\nOtolyp began his druidic training at age ten. Druids in Laneshi society are for the most part shepherds and ecologists; they manage the health of aquatic species for the benefit of Laneshi. However, Saureng\u2019s beliefs had evolved over recent years. Privately with other druids, he decryied Laneshi reliance on undead slaves and questioned the necessity of twin sacrifice. Eventually his words reached the ears of the synod. He was judged a heretic and executed.\n\n**The Cook**\n\nThree weeks had passed since Otolyp left home, yet he was still apprehensive about approaching the human settlement. He watched their activities from a safe distance, taking the guise of a sea otter lounging on the water\u2019s surface. He followed fishing boats as a dolphin. However, observations from these vantage points were not very enlightening. He was confident he could assume a human likeness, but adopting their mannerisms and speech was another matter.\n\nOne day he chose to follow a ship leaving the harbor. Feeling clever, he rode the hull as a barnacle. However deprived of his senses, his perception of time was clouded. When he returned to his humanoid form the ship was derelict--crew of nine were all dead. He decided to learn as much as he could by inspecting every item on the ship. In a second lapse in judgement, he became overly engrossed in his investigation of the galley and failed to notice the approach of another vessel.\n\nAfter an awkward introduction the crew of the Eidolon decided Otolyp was not a threat. Communication was difficult. They speculated that Otolyp was the sole survivor of the ship, specifically the cook. Otolyp saw nothing to be gained from correcting their misconception and thence was conscripted into their crew.",
+      "createdAt": "2021-12-03T10:21:02.183000+00:00",
+      "content": "",
       "connections": 0
     },
     {
-      "id": "2d3e5bc3-310e-4728-b44a-638cbfba2b71",
-      "title": "Zahrahn Esharath",
-      "urlId": "auxHglfRXH",
-      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
-      "createdAt": "2026-03-08T21:51:27.087000+00:00",
-      "content": "# Character Sheet\n\nZahrahn Esharath [Level 6 Ranger](https://drive.google.com/file/d/1QIRqp7lahMf80-08QZVJ0R7cTRphOhgQ/view?usp=drive_link) (Beast-Master)\n\n# Backstory\n\nZahrahn Esharath was born in the coral-shadowed shallows of Pyora\u2019s southern reefs, where the sea sang in slow, ancient currents and the triton clans had learned to endure rather than resist. Her people called it balance; Zahrahn learned to call it surrender. When sahuagin warbands began poisoning kelp forests, raiding spawning grounds, and driving prey species to collapse, the elders answered with treaties and prayers to the tides. Zahrahn watched nurseries turn silent and hunting paths go barren, and the quiet compliance of her clan curdled into something sharper. When she spoke of retaliation, of patrols and teeth and steel, she was told that survival sometimes meant yielding. She decided survival meant fighting back.\n\nThe first raid came at night, red algae blooming where blood had already sunk into the sand. Zahrahn fought alongside her kin until the tide pulled the sahuagin away, but the cost was too high and the response too meek. When the council agreed to abandon the outer reefs, sacred grounds older than their songs. Zahrahn left with them only in body, not in spirit. She gathered what she could carry, swore no farewell oaths, and followed the wake of surface ships instead. To the clans, piracy was chaos; to Zahrahn, it was agency. On deck and below the waves, she learned to strike fast, vanish into darkness, and choose her battles, taking coin when she must, but taking lives when she could, especially from those who carved the sea into profit.\n\nNow Zahrahn sails as both hunter and ward, a ranger whose loyalty lies with reefs, mangroves, and migratory paths rather than flags. She sabotages dredgers, hunts slavers, and leaves sahuagin bodies tangled in nets meant for whales. Violence, to her, is not indulgence but stewardship, a hard answer to a hard world. She carries the ache of exile like salt in a wound, but she will not return to a home that chose resignation over resistance. If the sea must have a pirate to defend it, Zahrahn Esharath will gladly be feared. \\[generated in conversation with AI\\]",
+      "id": "ef485e4c-cf47-4a88-bb7d-6bcb4e1127d5",
+      "title": "",
+      "urlId": "YkWsMwoRVU",
+      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
+      "createdAt": "2022-02-16T07:32:03.152000+00:00",
+      "content": "",
       "connections": 0
     },
     {
@@ -469,21 +451,21 @@
       "connections": 0
     },
     {
-      "id": "66724d7b-7b93-4cec-8d11-18081239cad2",
-      "title": "Briar Mound",
-      "urlId": "Jh4pKdDHHQ",
-      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
-      "createdAt": "2024-07-19T03:25:07.994000+00:00",
-      "content": " ![](/api/attachments.redirect?id=8dfd1001-8101-43e1-a880-455b6077a9eb \"right-50 =80x80\")*Large Plant, unaligned*\n\n\n___\n\n* **Armor Class** 15 (natural armor)\n* **Hit Points** 136 (`16d10 + 48`)\n* **Speed** 20 ft., swim 20 ft.\n\n\n___\n\n| STR | DEX | CON | INT | WIS | CHA |\n|:---:|:---:|:---:|:---:|:---:|:---:|\n| 18 (+4) | 8 (-1) | 16 (+3) | 5 (-3) | 10 (+0) | 5 (-3) |\n\n\n___\n\n* **Skills** Stealth +2\n* **Damage Resistances** cold, fire\n* **Damage Immunities** lightning\n* **Condition Immunities** blinded, deafened, exhaustion\n* **Senses** blindsight 60 ft., passive Perception 10\n* **Languages** \u2014\n* **Challenge** 5 (1,800 XP)\n* **Proficiency Bonus** +3\n\n\n___\n\n***Lightning Absoprtion.*** Whenever the briar mound would take lightning damage, it instead takes no damage and regains hit points equal to the damage dealt.\n\n***Thorny Defense.*** A creature that touches the briar mound or hits it with a melee attack while within 5 feet of it takes 5 (`2d4`) piercing damage.\n\n### Actions\n\n***Multiattack.*** The briar mound makes two attacks.\n\n***Slam.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 14 (`3d6 + 4`) bludgeoning damage.\n\n***Engulf.*** The briar mound engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded, restrained, and unable to breathe, and it must succeed on a DC 14 saving throw at the start of each of the briar mound's turns or take 13 (`2d8 + 4`) bludgeoning damage. If the briar mound moves, the engulfed target moves with it. The briar mound can have only one creature engulfed at a time.\n\n ![](/api/attachments.redirect?id=8e2062cc-6bce-4048-84e5-5f71f05a7588)\n\n\n---\n\n- [x] Homebrew: source [Dungeon Church](https://5e.dungeon.church/bestiary.html#briar%20mound_dungeonchurch)\n\n\\\n",
-      "connections": 0
-    },
-    {
       "id": "233327a7-8900-4013-836e-c195abcd6d25",
       "title": "Bag of Rust",
       "urlId": "SfaknUwwtp",
       "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
       "createdAt": "2024-07-19T02:24:08.720000+00:00",
       "content": "*Wondrous item, uncommon, major tier, \u00bd lb.*\n\n\n---\n\nThis ordinary leather bag appears empty. Reaching inside the bag, however, reveals a handful of rust powder.\n\nOnce a day, you can use an action to pull rust powder from the bag and throw it up to 20 feet. The powder cloud transforms into a creature you determine by rolling a d8 and consulting the table.\n\nThe creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature. \n\nCreatures summoned this way are resistant to necrotic damage.\n\nThe creature vanishes at the next dawn or when it is reduced to 0 hit points. At that point, the bag can be used again.\n\n| d8 | Creature |\n|:---:|----|\n| 1 | [Space Hamster](https://5e.dungeon.church/bestiary.html#space%20hamster_wdmm) |\n| 2 | [Eye Crow](https://5e.dungeon.church/bestiary.html#eye%20crow_ghmg) |\n| 3 | [Riding Horse](https://5e.dungeon.church/bestiary.html#riding%20horse_mm) |\n| 4 | [Suturefly](https://5e.dungeon.church/bestiary.html#suturefly_tob) |\n| 5 | [Garroter Crab](https://5e.dungeon.church/bestiary.html#garroter%20crab_tob) |\n| 6 | [Porcellina](https://5e.dungeon.church/bestiary.html#porcellina_tob3) |\n| 7 | [Lantern Beetle](https://5e.dungeon.church/bestiary.html#lantern%20beetle_tob2) |\n| 8 | [Giant Armadillo](https://5e.dungeon.church/bestiary.html#giant%20armadillo_tob2) |\n\n ![](/api/attachments.redirect?id=bd9f28f3-4349-4a0c-a498-50e0ebe0bf5e)\n\n\n---\n\n- [x] Homebrew source: [Dungeon Church](https://5e.dungeon.church/items.html#bag%20of%20rust_dungeonchurch)\n\n\\\n",
+      "connections": 0
+    },
+    {
+      "id": "66724d7b-7b93-4cec-8d11-18081239cad2",
+      "title": "Briar Mound",
+      "urlId": "Jh4pKdDHHQ",
+      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
+      "createdAt": "2024-07-19T03:25:07.994000+00:00",
+      "content": " ![](/api/attachments.redirect?id=8dfd1001-8101-43e1-a880-455b6077a9eb \"right-50 =80x80\")*Large Plant, unaligned*\n\n\n___\n\n* **Armor Class** 15 (natural armor)\n* **Hit Points** 136 (`16d10 + 48`)\n* **Speed** 20 ft., swim 20 ft.\n\n\n___\n\n| STR | DEX | CON | INT | WIS | CHA |\n|:---:|:---:|:---:|:---:|:---:|:---:|\n| 18 (+4) | 8 (-1) | 16 (+3) | 5 (-3) | 10 (+0) | 5 (-3) |\n\n\n___\n\n* **Skills** Stealth +2\n* **Damage Resistances** cold, fire\n* **Damage Immunities** lightning\n* **Condition Immunities** blinded, deafened, exhaustion\n* **Senses** blindsight 60 ft., passive Perception 10\n* **Languages** \u2014\n* **Challenge** 5 (1,800 XP)\n* **Proficiency Bonus** +3\n\n\n___\n\n***Lightning Absoprtion.*** Whenever the briar mound would take lightning damage, it instead takes no damage and regains hit points equal to the damage dealt.\n\n***Thorny Defense.*** A creature that touches the briar mound or hits it with a melee attack while within 5 feet of it takes 5 (`2d4`) piercing damage.\n\n### Actions\n\n***Multiattack.*** The briar mound makes two attacks.\n\n***Slam.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 14 (`3d6 + 4`) bludgeoning damage.\n\n***Engulf.*** The briar mound engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded, restrained, and unable to breathe, and it must succeed on a DC 14 saving throw at the start of each of the briar mound's turns or take 13 (`2d8 + 4`) bludgeoning damage. If the briar mound moves, the engulfed target moves with it. The briar mound can have only one creature engulfed at a time.\n\n ![](/api/attachments.redirect?id=8e2062cc-6bce-4048-84e5-5f71f05a7588)\n\n\n---\n\n- [x] Homebrew: source [Dungeon Church](https://5e.dungeon.church/bestiary.html#briar%20mound_dungeonchurch)\n\n\\\n",
       "connections": 0
     }
   ],
