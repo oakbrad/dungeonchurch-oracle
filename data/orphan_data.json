@@ -298,21 +298,21 @@
       "connections": 0
     },
     {
-      "id": "e687c077-6cff-45d0-a51a-77755effa0e6",
-      "title": "NPC with Statblock",
-      "urlId": "Vch1hQ9vhn",
-      "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
-      "createdAt": "2021-10-31T22:25:54.260000+00:00",
-      "content": "# !!NPC Name!!\n\n### !!Species!! !!Class!!\n\n### !!Alignment!!\n\n### !!Age!! year old !!gender!!\n\n## Description\n\n!!Physical description, including clothes, hair, eye, demeanour, mannerisms, and voice / speaking style.!!\n\n## Background\n\n!!Location, affiliations, how they met the party, or links to other relevant wiki articles.!!\n\n# Visual Reference\n\n# Stat Block\n\n* **Armor Class** !!#!!\n* **Hit Points** !!#!! (!!1d4 + 5!!)\n* **Speed** !!10ft.!!\n\n\n---\n\n| STR | DEX | CON | INT | WIS | CHA |\n|:---:|:---:|:---:|:---:|:---:|:---:|\n| !!13 (+2)!! | !!16 (+3)!! | !!19 (+5)!! | !!2 (-4)!! | !!16 (+3)!! | !!9 (+0)!! |\n\n\n---\n\n* **Condition Immunities** !!None!!\n* **Senses** !!Darkvision, Perception +3!!\n* **Languages** !!Common!!\n* **Challenge** !!CR#!!\n* **!!Skill Name!!** !!+X!!\n\n\n---\n\n***!!Special Trait!!.*** !!This creature gains blah blah blah because it\u2019s special.!!\n\n***!!Onion Stench.!!*** !!Any creatures within 5 feet of this thing develops an irrational craving for onion rings.!!\n\n### Actions\n\n***!!Action!!.*** *!!Melee Weapon Attack!!:* !!+4 to hit!!, !!reach 5ft.!!, !!one target!!. *!!Hit!!* !!5 (1d6 + 2)!!\n\n\\\n",
-      "connections": 0
-    },
-    {
       "id": "6f642105-6cdb-4efd-8de6-7138aff5eaa8",
       "title": "Directions to Brad's Studio",
       "urlId": "MqCuUBMHAN",
       "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
       "createdAt": "2021-11-03T00:29:17.643000+00:00",
       "content": "# Cotton Mills Studios in Fruitvale\n\n* [1091 Calcot Place, Oakland, CA 94606](https://www.google.com/maps/place/1091+Calcot+Pl,+Oakland,+CA+94606/@37.7981586,-122.2419963,17z/data=!4m5!3m4!1s0x808f86e66880231f:0xc4ebb81204f63886!8m2!3d37.7816762!4d-122.2381794)\n* It\u2019s in a weird spot - you go underneath the 23rd Street overpass on Calcot Place, sandwiched between 880 and the train tracks\n\n  ### Parking\n* Secure guest parking is available in the lot, ping Brad on Discord to open the gate. Guest parking is in the back right painted as \u201cGUEST\u201d spots. \n* :skull_and_crossbones: **DO NOT PARK IN NUMBERED SPOTS** :skull_and_crossbones:\n\n# From Transit\n\nThe Cotton Mill is only about 1 mile from Fruitvale BART station, however it goes through a pedestrian-unfriendly, industrial part of the neighborhood with a lot of encampments so I would not recommend walking it. It is perfectly fine to bike/scooter/etc. though! \n\n ![](/api/attachments.redirect?id=547e027e-68c4-40c0-8ecc-3e50aba7c2ec)\n\n[Google Maps: Fruitvale to Cotton Mill Studios via Walk/Bike](https://www.google.com/maps/dir/37.7813835,-122.2378542/Fruitvale+BART,+Oakland,+CA+94601/@37.7776882,-122.2352504,16z/data=!4m10!4m9!1m1!4e1!1m5!1m1!1s0x808f86f4a3f0d739:0x60fc93ed71a391b0!2m2!1d-122.225206!2d37.7752293!3e1?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D)\n\n# Cycling Directions\n\nPlease take a look at map before you leave. Because of the train track overpass, going from East 12th Street \u2192 23rd Avenue is a dangerous/bad route for bikes (no shoulder, limited visibility hill, high speed traffic getting to 880, rough road surface, etc).\n\n### Very Bad No Good Intersection\n\nThe intersection at 23rd Ave turning onto E 11th St / Calcot Place is very poorly designed and people constantly blow the lights at high speed. Be careful! Never assume the cars are going to stop.\n\n ![](/api/attachments.redirect?id=5452d24f-0d57-4239-8b2f-d6d520989b48)\n\n### From Downtown Headed East\n\n* [Google Link: Lake Merritt BART to 1091 Calcot Place via Bike](https://www.google.com/maps/dir/Lake+Merritt+Station,+800+Oak+St,+Oakland,+CA+94607/1091+Calcot+Pl,+Oakland,+CA+94606-5044,+USA/@37.7898052,-122.2556352,16.19z/data=!4m19!4m18!1m10!1m1!1s0x808f80cb294063c9:0xb6198c573126a242!2m2!1d-122.2652155!2d37.7970287!3m4!1m2!1d-122.2590238!2d37.7922871!3s0x808f872e03cc9e49:0xc057dc92c8095608!1m5!1m1!1s0x808f86e66880231f:0xc4ebb81204f63886!2m2!1d-122.2381794!2d37.7816762!3e1)\n* Take Embarcadero (aka \u201cBay Trail\u201d route) to 23rd Avenue, cross 880 freeway via bike lane on overpass on 23rd. Take a right onto confusingly signed \u201cE 11 St / Miller Place\u201d which immediately becomes Calcot Place as you go left and under 23rd Ave.\n\n  ![](/api/attachments.redirect?id=8c62d87c-26ae-4b86-887c-56db575c5c1a)\n\n  ### From Fruitvale Station Headed West\n* [Google Link: Fruitvale BART to 1091 Calcot Place via Bike](https://www.google.com/maps/dir/Fruitvale+BART,+Oakland,+CA/1091+Calcot+Pl,+Oakland,+CA+94606-5044,+USA/@37.776886,-122.2329674,16.38z/data=!4m24!4m23!1m15!1m1!1s0x808f86f4a3f0d739:0x60fc93ed71a391b0!2m2!1d-122.225206!2d37.7752293!3m4!1m2!1d-122.2319972!2d37.7764991!3s0x808f86edfaa3d1d9:0xe6f9d1347390eb74!3m4!1m2!1d-122.2334449!2d37.7781265!3s0x808f86ee5a5706a3:0x149631eece763fea!1m5!1m1!1s0x808f86e66880231f:0xc4ebb81204f63886!2m2!1d-122.2381794!2d37.7816762!3e1)\n* Head west from Fruitvale on E 12th Street, take a left onto 29th Avenue and cross the train tracks. Keep going until just before freeway entrance, and take a right on E 10th Street at the light (past the animal shelter on right, opposite the school on your left). Follow that around past Art Haus and then under the 23rd Ave overpass.\n\n  ![](/api/attachments.redirect?id=04e97ca7-ce3a-4e4f-b884-45c9df0449b4)\n\n  \\\n  \\\n\n\\\n",
+      "connections": 0
+    },
+    {
+      "id": "e687c077-6cff-45d0-a51a-77755effa0e6",
+      "title": "NPC with Statblock",
+      "urlId": "Vch1hQ9vhn",
+      "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
+      "createdAt": "2021-10-31T22:25:54.260000+00:00",
+      "content": "# !!NPC Name!!\n\n### !!Species!! !!Class!!\n\n### !!Alignment!!\n\n### !!Age!! year old !!gender!!\n\n## Description\n\n!!Physical description, including clothes, hair, eye, demeanour, mannerisms, and voice / speaking style.!!\n\n## Background\n\n!!Location, affiliations, how they met the party, or links to other relevant wiki articles.!!\n\n# Visual Reference\n\n# Stat Block\n\n* **Armor Class** !!#!!\n* **Hit Points** !!#!! (!!1d4 + 5!!)\n* **Speed** !!10ft.!!\n\n\n---\n\n| STR | DEX | CON | INT | WIS | CHA |\n|:---:|:---:|:---:|:---:|:---:|:---:|\n| !!13 (+2)!! | !!16 (+3)!! | !!19 (+5)!! | !!2 (-4)!! | !!16 (+3)!! | !!9 (+0)!! |\n\n\n---\n\n* **Condition Immunities** !!None!!\n* **Senses** !!Darkvision, Perception +3!!\n* **Languages** !!Common!!\n* **Challenge** !!CR#!!\n* **!!Skill Name!!** !!+X!!\n\n\n---\n\n***!!Special Trait!!.*** !!This creature gains blah blah blah because it\u2019s special.!!\n\n***!!Onion Stench.!!*** !!Any creatures within 5 feet of this thing develops an irrational craving for onion rings.!!\n\n### Actions\n\n***!!Action!!.*** *!!Melee Weapon Attack!!:* !!+4 to hit!!, !!reach 5ft.!!, !!one target!!. *!!Hit!!* !!5 (1d6 + 2)!!\n\n\\\n",
       "connections": 0
     },
     {
@@ -334,21 +334,21 @@
       "connections": 0
     },
     {
-      "id": "071bfc34-6b37-46bb-9cfe-5c57f1d91ca8",
-      "title": "Ring of Prestidigitation",
-      "urlId": "RrfeGNnCzv",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "createdAt": "2024-04-05T08:28:45.433000+00:00",
-      "content": "#### Ring of Prestidigitation ![](/api/attachments.redirect?id=00bd2c78-a7fc-4a7e-8303-10f9b0330116 \"right-50\")\n\nRing, common, minor tier\n\n\n---\n\nWhile wearing this ring, you can cast [Prestidigitation](/doc/prestidigitation-9pvycsqJfm) at will.\n\n\n---\n\n- [x] Homebrew, Source - [Dungeon Church](https://5e.dungeon.church/items.html#ring%20of%20prestidigitation_dungeonchurch)\n\n\\\n",
-      "connections": 0
-    },
-    {
       "id": "ad5643eb-ed6a-4f83-9490-3226dfb21f10",
       "title": "Oil of Immolation",
       "urlId": "nrtJScIEL4",
       "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
       "createdAt": "2024-05-09T05:31:59.412000+00:00",
       "content": " ![](/api/attachments.redirect?id=3844e98a-2ea6-4cc8-ba25-d1576e3277dd \"right-50\")*Uncommon, 1lb*\n\nThis thick, viscous amber liquid is contained with a dark glass and gives off a faint warm heat. It is both a highly unstable compound that ignites at the slightest provocation, and a protection against the effects of fire. Any object or creature that is coated in this oil will burn ferociously for 1 minute, but not suffer any harm or damage.\n\n\n---\n\n- [x] Homebrew source: [Dungeon Church](https://5e.dungeon.church/items.html#oil%20of%20immolation_dungeonchurch)\n\n\\\n",
+      "connections": 0
+    },
+    {
+      "id": "071bfc34-6b37-46bb-9cfe-5c57f1d91ca8",
+      "title": "Ring of Prestidigitation",
+      "urlId": "RrfeGNnCzv",
+      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
+      "createdAt": "2024-04-05T08:28:45.433000+00:00",
+      "content": "#### Ring of Prestidigitation ![](/api/attachments.redirect?id=00bd2c78-a7fc-4a7e-8303-10f9b0330116 \"right-50\")\n\nRing, common, minor tier\n\n\n---\n\nWhile wearing this ring, you can cast [Prestidigitation](/doc/prestidigitation-9pvycsqJfm) at will.\n\n\n---\n\n- [x] Homebrew, Source - [Dungeon Church](https://5e.dungeon.church/items.html#ring%20of%20prestidigitation_dungeonchurch)\n\n\\\n",
       "connections": 0
     },
     {
@@ -451,21 +451,21 @@
       "connections": 0
     },
     {
-      "id": "233327a7-8900-4013-836e-c195abcd6d25",
-      "title": "Bag of Rust",
-      "urlId": "SfaknUwwtp",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "createdAt": "2024-07-19T02:24:08.720000+00:00",
-      "content": "*Wondrous item, uncommon, major tier, \u00bd lb.*\n\n\n---\n\nThis ordinary leather bag appears empty. Reaching inside the bag, however, reveals a handful of rust powder.\n\nOnce a day, you can use an action to pull rust powder from the bag and throw it up to 20 feet. The powder cloud transforms into a creature you determine by rolling a d8 and consulting the table.\n\nThe creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature. \n\nCreatures summoned this way are resistant to necrotic damage.\n\nThe creature vanishes at the next dawn or when it is reduced to 0 hit points. At that point, the bag can be used again.\n\n| d8 | Creature |\n|:---:|----|\n| 1 | [Space Hamster](https://5e.dungeon.church/bestiary.html#space%20hamster_wdmm) |\n| 2 | [Eye Crow](https://5e.dungeon.church/bestiary.html#eye%20crow_ghmg) |\n| 3 | [Riding Horse](https://5e.dungeon.church/bestiary.html#riding%20horse_mm) |\n| 4 | [Suturefly](https://5e.dungeon.church/bestiary.html#suturefly_tob) |\n| 5 | [Garroter Crab](https://5e.dungeon.church/bestiary.html#garroter%20crab_tob) |\n| 6 | [Porcellina](https://5e.dungeon.church/bestiary.html#porcellina_tob3) |\n| 7 | [Lantern Beetle](https://5e.dungeon.church/bestiary.html#lantern%20beetle_tob2) |\n| 8 | [Giant Armadillo](https://5e.dungeon.church/bestiary.html#giant%20armadillo_tob2) |\n\n ![](/api/attachments.redirect?id=bd9f28f3-4349-4a0c-a498-50e0ebe0bf5e)\n\n\n---\n\n- [x] Homebrew source: [Dungeon Church](https://5e.dungeon.church/items.html#bag%20of%20rust_dungeonchurch)\n\n\\\n",
-      "connections": 0
-    },
-    {
       "id": "66724d7b-7b93-4cec-8d11-18081239cad2",
       "title": "Briar Mound",
       "urlId": "Jh4pKdDHHQ",
       "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
       "createdAt": "2024-07-19T03:25:07.994000+00:00",
       "content": " ![](/api/attachments.redirect?id=8dfd1001-8101-43e1-a880-455b6077a9eb \"right-50 =80x80\")*Large Plant, unaligned*\n\n\n___\n\n* **Armor Class** 15 (natural armor)\n* **Hit Points** 136 (`16d10 + 48`)\n* **Speed** 20 ft., swim 20 ft.\n\n\n___\n\n| STR | DEX | CON | INT | WIS | CHA |\n|:---:|:---:|:---:|:---:|:---:|:---:|\n| 18 (+4) | 8 (-1) | 16 (+3) | 5 (-3) | 10 (+0) | 5 (-3) |\n\n\n___\n\n* **Skills** Stealth +2\n* **Damage Resistances** cold, fire\n* **Damage Immunities** lightning\n* **Condition Immunities** blinded, deafened, exhaustion\n* **Senses** blindsight 60 ft., passive Perception 10\n* **Languages** \u2014\n* **Challenge** 5 (1,800 XP)\n* **Proficiency Bonus** +3\n\n\n___\n\n***Lightning Absoprtion.*** Whenever the briar mound would take lightning damage, it instead takes no damage and regains hit points equal to the damage dealt.\n\n***Thorny Defense.*** A creature that touches the briar mound or hits it with a melee attack while within 5 feet of it takes 5 (`2d4`) piercing damage.\n\n### Actions\n\n***Multiattack.*** The briar mound makes two attacks.\n\n***Slam.*** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 14 (`3d6 + 4`) bludgeoning damage.\n\n***Engulf.*** The briar mound engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded, restrained, and unable to breathe, and it must succeed on a DC 14 saving throw at the start of each of the briar mound's turns or take 13 (`2d8 + 4`) bludgeoning damage. If the briar mound moves, the engulfed target moves with it. The briar mound can have only one creature engulfed at a time.\n\n ![](/api/attachments.redirect?id=8e2062cc-6bce-4048-84e5-5f71f05a7588)\n\n\n---\n\n- [x] Homebrew: source [Dungeon Church](https://5e.dungeon.church/bestiary.html#briar%20mound_dungeonchurch)\n\n\\\n",
+      "connections": 0
+    },
+    {
+      "id": "233327a7-8900-4013-836e-c195abcd6d25",
+      "title": "Bag of Rust",
+      "urlId": "SfaknUwwtp",
+      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
+      "createdAt": "2024-07-19T02:24:08.720000+00:00",
+      "content": "*Wondrous item, uncommon, major tier, \u00bd lb.*\n\n\n---\n\nThis ordinary leather bag appears empty. Reaching inside the bag, however, reveals a handful of rust powder.\n\nOnce a day, you can use an action to pull rust powder from the bag and throw it up to 20 feet. The powder cloud transforms into a creature you determine by rolling a d8 and consulting the table.\n\nThe creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature. \n\nCreatures summoned this way are resistant to necrotic damage.\n\nThe creature vanishes at the next dawn or when it is reduced to 0 hit points. At that point, the bag can be used again.\n\n| d8 | Creature |\n|:---:|----|\n| 1 | [Space Hamster](https://5e.dungeon.church/bestiary.html#space%20hamster_wdmm) |\n| 2 | [Eye Crow](https://5e.dungeon.church/bestiary.html#eye%20crow_ghmg) |\n| 3 | [Riding Horse](https://5e.dungeon.church/bestiary.html#riding%20horse_mm) |\n| 4 | [Suturefly](https://5e.dungeon.church/bestiary.html#suturefly_tob) |\n| 5 | [Garroter Crab](https://5e.dungeon.church/bestiary.html#garroter%20crab_tob) |\n| 6 | [Porcellina](https://5e.dungeon.church/bestiary.html#porcellina_tob3) |\n| 7 | [Lantern Beetle](https://5e.dungeon.church/bestiary.html#lantern%20beetle_tob2) |\n| 8 | [Giant Armadillo](https://5e.dungeon.church/bestiary.html#giant%20armadillo_tob2) |\n\n ![](/api/attachments.redirect?id=bd9f28f3-4349-4a0c-a498-50e0ebe0bf5e)\n\n\n---\n\n- [x] Homebrew source: [Dungeon Church](https://5e.dungeon.church/items.html#bag%20of%20rust_dungeonchurch)\n\n\\\n",
       "connections": 0
     }
   ],
