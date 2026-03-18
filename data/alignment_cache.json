@@ -2249,6 +2249,16 @@
       },
       "timestamp": "2026-03-12T11:43:20.953828",
       "title": "Zahrahn Esharath"
+    },
+    "638863f8ae10bb3a": {
+      "alignment": {
+        "law_chaos": -0.8,
+        "good_evil": -0.9,
+        "confidence": 0.9,
+        "source": "llm"
+      },
+      "timestamp": "2026-03-18T11:48:45.626772",
+      "title": "Amelia"
     }
   },
   "relationships": {
@@ -12911,6 +12921,19 @@
       "timestamp": "2026-03-12T11:43:32.656764",
       "source": "Physik",
       "target": "Harlow's Tinctures"
+    },
+    "1be58e73bf4331fc": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Amelia harmed Rado during a battle",
+        "source_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd",
+        "target_id": "22aaa61d-437c-4ce8-8d64-ed51a29795e2"
+      },
+      "timestamp": "2026-03-18T11:48:47.480980",
+      "source": "Amelia",
+      "target": "Rado"
     }
   }
 }
