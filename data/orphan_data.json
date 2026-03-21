@@ -46,6 +46,15 @@
       "connections": 0
     },
     {
+      "id": "626fad49-7785-49cd-be45-e063fb0e0ae7",
+      "title": "Slug Slime",
+      "urlId": "0WSxbeLgVX",
+      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
+      "createdAt": "2026-03-08T01:36:30.573000+00:00",
+      "content": "#### Potion, Common ![](/api/attachments.redirect?id=362bcb44-e323-491f-9bd4-dcae947fc798 \"right-50 =266x266\")\n\nThis thick, viscous slime is harvested from [giant slugs](https://5e.dungeon.church/bestiary.html#giant%20slug_ttp) and is carefully bottled in small glass vials. Once exposed to air, it rapidly expands into a remarkably adhesive substance.\n\nAs an action, you can throw this vial at a creature within 20 feet, shattering it upon impact. The target must succeed on a DC 13 Dexterity saving throw or become [restrained](https://5e.dungeon.church/conditionsdiseases.html#restrained_phb) in place. A stuck creature may repeat the save at the beginning of their next turn.\n\n\\\n\\\n[https://5e.dungeon.church/items.html#slug%20slime%5Fdungeonchurch](https://5e.dungeon.church/items.html#slug%20slime%5Fdungeonchurch)\n\n\\\n",
+      "connections": 0
+    },
+    {
       "id": "b18be2f0-2d34-4e36-8056-a7939cafa83e",
       "title": "Gamer Tag Directory",
       "urlId": "MHfI6wHjTc",
@@ -118,15 +127,6 @@
       "connections": 0
     },
     {
-      "id": "626fad49-7785-49cd-be45-e063fb0e0ae7",
-      "title": "Slug Slime",
-      "urlId": "0WSxbeLgVX",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "createdAt": "2026-03-08T01:36:30.573000+00:00",
-      "content": "#### Potion, Common ![](/api/attachments.redirect?id=362bcb44-e323-491f-9bd4-dcae947fc798 \"right-50 =266x266\")\n\nThis thick, viscous slime is harvested from [giant slugs](https://5e.dungeon.church/bestiary.html#giant%20slug_ttp) and is carefully bottled in small glass vials. Once exposed to air, it rapidly expands into a remarkably adhesive substance.\n\nAs an action, you can throw this vial at a creature within 20 feet, shattering it upon impact. The target must succeed on a DC 13 Dexterity saving throw or become [restrained](https://5e.dungeon.church/conditionsdiseases.html#restrained_phb) in place. A stuck creature may repeat the save at the beginning of their next turn.\n\n\\\n\\\n[https://5e.dungeon.church/items.html#slug%20slime%5Fdungeonchurch](https://5e.dungeon.church/items.html#slug%20slime%5Fdungeonchurch)\n\n\\\n",
-      "connections": 0
-    },
-    {
       "id": "c5a25534-d081-4135-9045-2970a9836a0a",
       "title": "Durandian Guilds",
       "urlId": "VYP24qV8BZ",
@@ -169,6 +169,15 @@
       "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
       "createdAt": "2025-07-05T01:34:52.655000+00:00",
       "content": "\\\n",
+      "connections": 0
+    },
+    {
+      "id": "8abaf115-af57-4910-9e30-d3e55fda9042",
+      "title": "",
+      "urlId": "7cqNWQW4Ou",
+      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
+      "createdAt": "2021-12-03T10:21:02.183000+00:00",
+      "content": "",
       "connections": 0
     },
     {
@@ -223,15 +232,6 @@
       "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
       "createdAt": "2026-03-08T01:50:16.823000+00:00",
       "content": "*Tiny Beast, Unaligned*\n\n\n___\n\n* **Armor Class** 12\n* **Hit Points** 5 (2d4)\n* **Speed** 10 ft., fly 80 ft.\n\n\n___\n\n| STR | DEX | CON | INT | WIS | CHA |\n|:---:|:---:|:---:|:---:|:---:|:---:|\n| 2 (-4) | 15 (+2) | 11 (+0) | 2 (-4) | 12 (+1) | 6 (-2) |\n\n\n___\n\n* **Skills** Perception +3, Survival +5\n* **Senses** passive Perception 13\n* **Languages** \u2014\n* **Challenge** 1/4 (50 XP)\n* **Proficiency Bonus** +2\n\n\n___\n\n### Actions\n\n***Beak.*** *Melee Weapon Attack:*  +4 to hit, reach 5 ft., one target. *Hit:* 6 piercing damage.\n\n## One-Eyed Purple Breasted Warbler\n\n*Each fall, hunters all over the realm strike out into the forests and hills to pursue this brightly plumed upland game bird. Prized as exceptional tablefare, it often graces the menus of many a tavern*\n\n***Timothy's Warbler.*** Named for the hearth dwarf conservationist who spread the bird throughout the lands of Pyora in his travels, the full name is technically *Timothy's One-Eyed Purple Breasted Warbler*.\n\n ![](/api/attachments.redirect?id=c76cd24d-ccf5-4bfb-8d33-5e655da5c46a \" =1024x1024\")",
-      "connections": 0
-    },
-    {
-      "id": "8abaf115-af57-4910-9e30-d3e55fda9042",
-      "title": "",
-      "urlId": "7cqNWQW4Ou",
-      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
-      "createdAt": "2021-12-03T10:21:02.183000+00:00",
-      "content": "",
       "connections": 0
     },
     {
