@@ -2454,8 +2454,8 @@
       "urlId": "NwapU8Z8Za",
       "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
       "createdAt": "2022-01-05T22:36:11.838000+00:00",
-      "content": "\\\n ![Kreb Shenker](/api/attachments.redirect?id=3488d9a6-02ef-4d61-97ea-14f4d8d5db63 \"right-50\")Divey sailor bar in [Saltmarsh](/doc/saltmarsh-GkGI6ISio5), it hangs precariously out of the water of the harbor, held up by stilts. The bar itself seems to be randomly assembled from random ship parts, crab traps, and held together with rope. It is common knowledge it serves as a gathering places for sailors of ill repute, smugglers, rogues, and bandits. The [Town Guard](/doc/saltmarsh-town-guard-v63eLpRU1Q) typically takes a hands off approach, as long as whatever skullduggery takes place inside doesn\u2019t spill out onto the streets. The bar\u2019s proprietor, [Kreb Shenker](/doc/kreb-shenker-ya5uvzqUn9), keeps a large dagger handy in case anyone gets out of hand.\n\n\\\n\\\n### Read Aloud\n\n> *The Empty Net clings to the harbor's edge like a barnacle. The building \u2014 if you can call it that \u2014 is a patchwork of salvaged ship hulls, crab traps bent into load-bearing walls, and tarred canvas stretched across gaps where it\u2019s amateur carpentry was insufficient. It leans seaward on blackened pilings that disappear into the dark water below, and the whole structure groans with each swell. A hand-painted sign over the door depicts a fish skeleton in an fishing net.*\\n\\n*Inside, crab traps hang from the ceiling as makeshift lantern cages. The floor is a patchwork of hatch covers and gangplanks, some of them spongy with rot, and through the wider gaps between boards you can see the harbor water lapping in the dark below. A half-dozen sailors slump at tables or lean against the bar. A dwarf sits alone in the corner, muttering into a cup with the fixed intensity of the professionally drunk.*\n\n ![](/api/attachments.redirect?id=0f71a2ef-d769-43ca-a819-ff99de494761)\n\n\\\n",
-      "connections": 11,
+      "content": "\\\n ![Kreb Shenker](/api/attachments.redirect?id=3488d9a6-02ef-4d61-97ea-14f4d8d5db63 \"right-50\")Divey sailor bar in [Saltmarsh](/doc/saltmarsh-GkGI6ISio5), it hangs precariously out of the water of the harbor, held up by stilts. The bar itself seems to be randomly assembled from random ship parts, crab traps, and held together with rope. It is common knowledge it serves as a gathering places for sailors of ill repute, smugglers, rogues, and bandits. The [Town Guard](/doc/saltmarsh-town-guard-v63eLpRU1Q) typically takes a hands off approach, as long as whatever skullduggery takes place inside doesn\u2019t spill out onto the streets. The bar\u2019s proprietor, [Kreb Shenker](/doc/kreb-shenker-ya5uvzqUn9), keeps a large dagger handy in case anyone gets out of hand.\n\n\\\n\\\n## Menu\n\n* Fish head soup\n* Whelks in vinegar\n* [Giant crab](/doc/huge-giant-crab-xNS848hkAw) chowder\n\n## Read Aloud\n\n> *The Empty Net clings to the harbor's edge like a barnacle. The building \u2014 if you can call it that \u2014 is a patchwork of salvaged ship hulls, crab traps bent into load-bearing walls, and tarred canvas stretched across gaps where it\u2019s amateur carpentry was insufficient. It leans seaward on blackened pilings that disappear into the dark water below, and the whole structure groans with each swell. A hand-painted sign over the door depicts a fish skeleton in an fishing net.*\\n\\n*Inside, crab traps hang from the ceiling as makeshift lantern cages. The floor is a patchwork of hatch covers and gangplanks, some of them spongy with rot, and through the wider gaps between boards you can see the harbor water lapping in the dark below. A half-dozen sailors slump at tables or lean against the bar. A dwarf sits alone in the corner, muttering into a cup with the fixed intensity of the professionally drunk.*\n\n ![](/api/attachments.redirect?id=0f71a2ef-d769-43ca-a819-ff99de494761)\n\n\\\n",
+      "connections": 12,
       "alignment": {
         "stated": null,
         "behavioral": {
@@ -7243,29 +7243,6 @@
       }
     },
     {
-      "id": "0f830abb-df04-4d2d-b7f2-07d0801aed3f",
-      "title": "The Black Chalice",
-      "urlId": "liXC2cnejj",
-      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
-      "createdAt": "2024-09-23T20:45:24.073000+00:00",
-      "content": "A bar of ill repute in the [Outer Circle](/doc/outer-circle-wpbygPZiuW) of [Duskmire](/doc/duskmire-hJey19lfsu), known for its discretion and its cocktails \u2014 of both the bottled and living kind. The Black Chalice operates as neutral ground where humans, dhampir, and vampires congregate for drinks, deals, and information. Located in the northern trade district near the warren of tenements near the House Talindra warehouses.\n\n## Known Patrons\n\n**Gora Ironjaw** \u2014 The bartender. A gruff, practical man who speaks in low, gravelly tones and has little patience for fools. His iron jaw is the result of a brutal encounter with a vampire noble that left him fiercely independent and distrustful of the elite. He doesn't hate vampires, but he won't bow to them either. His bar is neutral ground.\n\n[**Jorek Talindra**](/doc/jorek-talindra-zwTvrSOGgc) \u2014 Dhampir foreman. Operator of the nearby warehouses along the Saltmarsh River. Known to be fond of drink and often found on a barstool with his trademark leather jacket.\n\n**Durgan Blackeye** \u2014 A wiry, sharp-eyed goblin informant and street scavenger with patchy gray-green skin and one milky white eye from a fight he barely survived. Always picking through Duskmire's darker corners, selling scraps and information to those desperate enough to buy.\n\n## Menu\n\n\\\n",
-      "connections": 5,
-      "alignment": {
-        "stated": null,
-        "behavioral": {
-          "law_chaos": -0.023286863208083465,
-          "good_evil": -0.7285080645264718
-        },
-        "final": {
-          "law_chaos": -0.023286863208083465,
-          "good_evil": -0.7285080645264718
-        },
-        "confidence": 0.3,
-        "drift": 0.0,
-        "source": "propagated"
-      }
-    },
-    {
       "id": "99f1c7c7-4a9d-4770-b7d2-3c77e5cc9e31",
       "title": "Knights of the Silver Order",
       "urlId": "FzbtcbSsrx",
@@ -7289,6 +7266,29 @@
         "confidence": 1.0,
         "drift": 0.0,
         "source": "explicit"
+      }
+    },
+    {
+      "id": "0f830abb-df04-4d2d-b7f2-07d0801aed3f",
+      "title": "The Black Chalice",
+      "urlId": "liXC2cnejj",
+      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
+      "createdAt": "2024-09-23T20:45:24.073000+00:00",
+      "content": "A bar of ill repute in the [Outer Circle](/doc/outer-circle-wpbygPZiuW) of [Duskmire](/doc/duskmire-hJey19lfsu), known for its discretion and its cocktails \u2014 of both the bottled and living kind. The Black Chalice operates as neutral ground where humans, dhampir, and vampires congregate for drinks, deals, and information. Located in the northern trade district near the warren of tenements near the House Talindra warehouses.\n\n## Known Patrons\n\n**Gora Ironjaw** \u2014 The bartender. A gruff, practical man who speaks in low, gravelly tones and has little patience for fools. His iron jaw is the result of a brutal encounter with a vampire noble that left him fiercely independent and distrustful of the elite. He doesn't hate vampires, but he won't bow to them either. His bar is neutral ground.\n\n[**Jorek Talindra**](/doc/jorek-talindra-zwTvrSOGgc) \u2014 Dhampir foreman. Operator of the nearby warehouses along the Saltmarsh River. Known to be fond of drink and often found on a barstool with his trademark leather jacket.\n\n**Durgan Blackeye** \u2014 A wiry, sharp-eyed goblin informant and street scavenger with patchy gray-green skin and one milky white eye from a fight he barely survived. Always picking through Duskmire's darker corners, selling scraps and information to those desperate enough to buy.\n\n## Menu\n\n* Blackened Saltmarsh river pike\n* Bone marrow & bread\n* Jellied eels & mash\n* Pickled purple warbler eggs\n\n\\\n",
+      "connections": 5,
+      "alignment": {
+        "stated": null,
+        "behavioral": {
+          "law_chaos": -0.023286863208083465,
+          "good_evil": -0.7285080645264718
+        },
+        "final": {
+          "law_chaos": -0.023286863208083465,
+          "good_evil": -0.7285080645264718
+        },
+        "confidence": 0.3,
+        "drift": 0.0,
+        "source": "propagated"
       }
     },
     {
@@ -9521,16 +9521,16 @@
       "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
       "createdAt": "2022-01-05T23:29:19.832000+00:00",
       "content": "*Huge beast, unaligned*\n\n\n---\n\n* **Armor Class** 15 (natural armor)\n* **Hit Points** 161 (14d12+70)\n* **Speed** 30 ft, swim 30 ft.\n\n\n---\n\n| STR | DEX | CON | INT | WIS | CHA |\n|:---:|:---:|:---:|:---:|:---:|:---:|\n| 20 (+5) | 15 (+2) | 20 (+5) | 1 (-5) | 9 (-1) | 3 (-4) |\n\n\n---\n\n* **Condition Immunities** charmed, frightened, paralyzed\n* **Senses** blindsight 30ft, Passive Perception 9\n* **Languages** -\n* **Challenge** 8\n\n\n---\n\n***Amphibious.*** The crab can breathe air and water.\n\n***Banded Claw.*** On one of its claws, the crab wears a rune-covered copper band that makes it immune to being [charmed](http://5e.dungeon.church/conditionsdiseases.html#charmed_phb), [frightened](http://5e.dungeon.church/conditionsdiseases.html#frightened_phb), and [paralyzed](http://5e.dungeon.church/conditionsdiseases.html#paralyzed_phb). The copper band is worthless as a treasure, as the magic is keyed to this crab.!!rings.!!\n\n### Actions\n\n***Claw.*** *Melee Weapon Attack:* +9 to hit, reach 10 ft., one target. *Hit:* 27 (4d10 + 5) bludgeoning damage, and the target is [grappled](http://5e.dungeon.church/conditionsdiseases.html#grappled_phb), escape DC 14. The crab has two claws, each of which can grapple only one target.\n\n\n---\n\n- [ ] Homebrew\n\n**Sources:** Tales From the Yawning Portal, page 103",
-      "connections": 3,
+      "connections": 4,
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.37240869374129965,
-          "good_evil": 0.06002095217785013
+          "law_chaos": 0.30630864685681547,
+          "good_evil": 0.07899849533573337
         },
         "final": {
-          "law_chaos": 0.37240869374129965,
-          "good_evil": 0.06002095217785013
+          "law_chaos": 0.30630864685681547,
+          "good_evil": 0.07899849533573337
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -36540,6 +36540,12 @@
       "source": "c0f7d848-b802-4a82-982d-6e78bada037a",
       "target": "9b0b1bb0-a93c-4798-8021-61c5555f799b",
       "creation_time": "2026-03-11T17:55:07.035000+00:00",
+      "direction": "unidirectional"
+    },
+    {
+      "source": "cb196984-1d1c-4e3f-b4d2-7ab671131ffe",
+      "target": "4b07babb-c958-4b12-aecb-e449ee94ef18",
+      "creation_time": "2026-03-21T01:11:16.298000+00:00",
       "direction": "unidirectional"
     }
   ],
