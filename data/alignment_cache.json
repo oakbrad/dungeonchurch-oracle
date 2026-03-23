@@ -2259,6 +2259,16 @@
       },
       "timestamp": "2026-03-18T11:48:45.626772",
       "title": "Amelia"
+    },
+    "11ac4f7556396495": {
+      "alignment": {
+        "law_chaos": 0.1,
+        "good_evil": 0.2,
+        "confidence": 0.6,
+        "source": "llm"
+      },
+      "timestamp": "2026-03-23T11:48:30.942604",
+      "title": "Physik"
     }
   },
   "relationships": {
@@ -12934,6 +12944,19 @@
       "timestamp": "2026-03-18T11:48:47.480980",
       "source": "Amelia",
       "target": "Rado"
+    },
+    "a6eb0c18c0126942": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Physik assisted the party at Harlow's.",
+        "source_id": "dfd0cbf2-f7c3-43fe-9165-a824cebd5f2d",
+        "target_id": "77e3c8d2-4038-4d03-9517-5c2dedf0c0fc"
+      },
+      "timestamp": "2026-03-23T11:48:35.634141",
+      "source": "Physik",
+      "target": "Harlow's Tinctures"
     }
   }
 }
