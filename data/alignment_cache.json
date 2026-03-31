@@ -2269,6 +2269,16 @@
       },
       "timestamp": "2026-03-23T11:48:30.942604",
       "title": "Physik"
+    },
+    "d59c43f4d88f7860": {
+      "alignment": {
+        "law_chaos": -0.5,
+        "good_evil": -0.8,
+        "confidence": 0.8,
+        "source": "llm"
+      },
+      "timestamp": "2026-03-31T11:49:27.162731",
+      "title": "Bhardok the Underlord"
     }
   },
   "relationships": {
