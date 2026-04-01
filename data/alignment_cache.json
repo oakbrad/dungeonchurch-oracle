@@ -2279,6 +2279,16 @@
       },
       "timestamp": "2026-03-31T11:49:27.162731",
       "title": "Bhardok the Underlord"
+    },
+    "4ceac90fabaed1ab": {
+      "alignment": {
+        "law_chaos": -0.8,
+        "good_evil": -0.9,
+        "confidence": 0.85,
+        "source": "llm"
+      },
+      "timestamp": "2026-04-01T11:49:55.487891",
+      "title": "Blackjack Mel"
     }
   },
   "relationships": {
@@ -12967,6 +12977,19 @@
       "timestamp": "2026-03-23T11:48:35.634141",
       "source": "Physik",
       "target": "Harlow's Tinctures"
+    },
+    "8d487567d18de4b3": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -1.0,
+        "order_valence": -1.0,
+        "summary": "Blackjack Mel was killed by Craggylheim Groggut",
+        "source_id": "ee4125de-5b21-469e-8b41-d978841c10ff",
+        "target_id": "10ac0090-b3a2-46c3-879d-616dc7678cb0"
+      },
+      "timestamp": "2026-04-01T11:49:58.565606",
+      "source": "Blackjack Mel",
+      "target": "Craggylheim Groggut"
     }
   }
 }
