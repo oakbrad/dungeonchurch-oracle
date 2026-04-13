@@ -342,12 +342,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.002617990595726883,
-          "good_evil": 0.054885041561907835
+          "law_chaos": -0.0009671238217900831,
+          "good_evil": 0.05940949298015211
         },
         "final": {
-          "law_chaos": 0.002617990595726883,
-          "good_evil": 0.054885041561907835
+          "law_chaos": -0.0009671238217900831,
+          "good_evil": 0.05940949298015211
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -797,12 +797,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": -0.12842631972260915,
-          "good_evil": -0.10826366000282714
+          "law_chaos": -0.12847255510430725,
+          "good_evil": -0.10831693642835749
         },
         "final": {
-          "law_chaos": -0.12842631972260915,
-          "good_evil": -0.10826366000282714
+          "law_chaos": -0.12847255510430725,
+          "good_evil": -0.10831693642835749
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -8160,12 +8160,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.059765017651974214,
-          "good_evil": 0.23992857297762527
+          "law_chaos": 0.05976303038543922,
+          "good_evil": 0.2399262830763922
         },
         "final": {
-          "law_chaos": 0.059765017651974214,
-          "good_evil": 0.23992857297762527
+          "law_chaos": 0.05976303038543922,
+          "good_evil": 0.2399262830763922
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -8298,12 +8298,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.1531449320388033,
-          "good_evil": 0.08755560368620385
+          "law_chaos": 0.12006558606254103,
+          "good_evil": 0.1326140764550861
         },
         "final": {
-          "law_chaos": 0.1531449320388033,
-          "good_evil": 0.08755560368620385
+          "law_chaos": 0.12006558606254103,
+          "good_evil": 0.1326140764550861
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -8710,12 +8710,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.04081109180050023,
-          "good_evil": 0.07178466057802955
+          "law_chaos": 0.024225183430671017,
+          "good_evil": 0.09426062053694033
         },
         "final": {
-          "law_chaos": 0.04081109180050023,
-          "good_evil": 0.07178466057802955
+          "law_chaos": 0.024225183430671017,
+          "good_evil": 0.09426062053694033
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -8756,12 +8756,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.10645497484538877,
-          "good_evil": 0.16374208833191456
+          "law_chaos": 0.08991430822399012,
+          "good_evil": 0.18627017976573915
         },
         "final": {
-          "law_chaos": 0.10645497484538877,
-          "good_evil": 0.16374208833191456
+          "law_chaos": 0.08991430822399012,
+          "good_evil": 0.18627017976573915
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -9018,12 +9018,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.059765017651974214,
-          "good_evil": 0.23992857297762527
+          "law_chaos": 0.05976303038543922,
+          "good_evil": 0.2399262830763922
         },
         "final": {
-          "law_chaos": 0.059765017651974214,
-          "good_evil": 0.23992857297762527
+          "law_chaos": 0.05976303038543922,
+          "good_evil": 0.2399262830763922
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10003,12 +10003,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.059765017651974214,
-          "good_evil": 0.23992857297762527
+          "law_chaos": 0.05976303038543922,
+          "good_evil": 0.2399262830763922
         },
         "final": {
-          "law_chaos": 0.059765017651974214,
-          "good_evil": 0.23992857297762527
+          "law_chaos": 0.05976303038543922,
+          "good_evil": 0.2399262830763922
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10052,12 +10052,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.059765017651974214,
-          "good_evil": 0.23992857297762527
+          "law_chaos": 0.05976303038543922,
+          "good_evil": 0.2399262830763922
         },
         "final": {
-          "law_chaos": 0.059765017651974214,
-          "good_evil": 0.23992857297762527
+          "law_chaos": 0.05976303038543922,
+          "good_evil": 0.2399262830763922
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10565,12 +10565,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.059765017651974214,
-          "good_evil": 0.23992857297762527
+          "law_chaos": 0.05976303038543922,
+          "good_evil": 0.2399262830763922
         },
         "final": {
-          "law_chaos": 0.059765017651974214,
-          "good_evil": 0.23992857297762527
+          "law_chaos": 0.05976303038543922,
+          "good_evil": 0.2399262830763922
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -10967,6 +10967,29 @@
       }
     },
     {
+      "id": "9e034329-234a-4a28-81ea-b404acbef0d1",
+      "title": "Ravenfolk",
+      "urlId": "2FqUStq1FR",
+      "collectionId": "ffaa3b03-1b56-4131-aedd-f208a0b3ed03",
+      "createdAt": "2023-11-13T02:04:19.147000+00:00",
+      "content": "\\\n ![](/api/attachments.redirect?id=ee103495-550d-46b3-bb69-646fd190348b \" =843x718\")\n\n# In Our Current Campaign\n\n> Few live amid so much rumor, suspicion, and outright falsehood as the ravenfolk. Depending on whom you ask, they might condemn the ravenfolk as nomads bearing misfortune or praise them as messengers from the gods. Ravenfolk are loyal comrades and treacherous thieves, brave warriors and contemptible cowards. They are despised for their strange and secretive nature, and criticized for having no true culture - only mimicry. These contradictions conceal a greater mystery few understand or know.\\n\\nThe Ravenfolk are the ethereal wanderers and messengers of Pyora, born from the celestial drama of deities and their caprices. They emerged from the feathers of [Eve](/doc/eve-QQyGI5YbZc), the winged consort of the [Raven Queen](/doc/raven-queen-95zkXkC4gg), who, in a fit of jealousy clipped Eve's wings to keep her faithful. These feathers, cast into the nether regions of the planes, took on life and consciousness, becoming the Ravenfolk.\n>\n> \\nCast out from their home, the Ravenfolk traverse the myriad planes of existence, seeking redemption and a path back to the favor of the Raven Queen. \n\n\n:::info\nRavenfolk = \u201cKenku\u201d in the official sources or \u201cRavenfolk\u201d in the Kobold Press books\n\n:::\n\n# Ravenfolk Traits\n\nThe ravenfolk are mysterious travelers of the planes who sometimes make their rookeries high in the towers of major cities, but usually travel as solitary wanderers. They are very rarely seen and most people believe their existence to be a myth.\n\n#### Ability Score Increase\n\nYour Dexterity score increases by 2 and your Charisma score increases by 1.\n\n#### Age\n\nRavenfolk reach adulthood at 10 years old, and can live to be 110.\n\n#### Alignment\n\nRavenfolk tend toward chaos thanks to their capricious and insatiable curiosity. Greed overwhelms some ravenfolk, drawing them toward evil.\n\n#### Size\n\nRavenfolk are slighter and shorter than humans. They range from 4 feet to just shy of 6 feet tall. Your size is Small or Medium.\n\n#### Speed\n\nYour base walking speed is 30 feet.\n\n#### Sudden Attack\n\nYou have advantage on attack rolls against a surprised creature.\n\n#### Mimicry\n\nRavenfolk can mimic any sound they've heard. Make a Charisma (Deception) check against the passive Wisdom (Insight) of any listeners. Success indicates they believe the sound you created was real.\n\n#### Trickster\n\nYou have proficiency in the Deception and Stealth skills.\n\n#### Languages\n\nYou can mimic Common perfectly and 3 additional languages poorly.\n\n ![](/api/attachments.redirect?id=c559849d-d726-43ae-aab4-d336cb8a6dc0)\n\n ![](/api/attachments.redirect?id=730f646f-034b-465b-b795-0f90ecdda19e)\n\n\n---\n\n**Source:** From Kobold Press *Midgard Heroes*\n\n[Kobold - Ravenfolk.pdf 6571677](/api/attachments.redirect?id=02711dae-2522-4f44-b241-597ca871de28)\n\n\\\n",
+      "connections": 7,
+      "alignment": {
+        "stated": null,
+        "behavioral": {
+          "law_chaos": 0.07691286195144884,
+          "good_evil": 0.26520196997135953
+        },
+        "final": {
+          "law_chaos": 0.07691286195144884,
+          "good_evil": 0.26520196997135953
+        },
+        "confidence": 0.3,
+        "drift": 0.0,
+        "source": "propagated"
+      }
+    },
+    {
       "id": "7f8d9a3e-31b7-4367-990b-5dc97aeddbc1",
       "title": "Session 14: Festival's Eve",
       "urlId": "VAcA8ZfizE",
@@ -11072,12 +11095,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": -0.13663581572878863,
-          "good_evil": 0.222634353873027
+          "law_chaos": -0.14380604456382257,
+          "good_evil": 0.23168325670951553
         },
         "final": {
-          "law_chaos": -0.13663581572878863,
-          "good_evil": 0.222634353873027
+          "law_chaos": -0.14380604456382257,
+          "good_evil": 0.23168325670951553
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11085,26 +11108,29 @@
       }
     },
     {
-      "id": "30839dce-1e5b-47f8-914b-2cfd4ae1b07c",
-      "title": "Rationing Spice",
-      "urlId": "iguPtdfdS2",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "createdAt": "2024-04-12T06:33:19.258000+00:00",
-      "content": "### Rationing Spice ![](/api/attachments.redirect?id=0e48163e-ccdd-47d8-9f6c-fd0b55cfc89c \"right-50\")\n\n*Food, common*\n\n\n---\n\nWhen applied liberally to food, this reddish powder gives the consumer the feeling that they are eating twice as much and so are satiated on half a normal ration. After three days of eating enchantment spiced food, the consumer must eat a full, hot meal or take one level of exhaustion per day until they do.\n\nOriginally developed under the [Dragon Empire](/doc/dragon-empire-odzVqtQPbm) to stretch their \"labor inputs\", it has become a common performance enhancing supplement for soldiers, adventurers, and outdoorsmen of all types.\n\n\n---\n\n- [x] Homebrew, Source - [Dungeon Church](https://5e.dungeon.church/items.html#rationing%20spice_dungeonchurch)\n\n\\\n",
-      "connections": 3,
+      "id": "9f523314-098a-4159-91ed-0d6079723595",
+      "title": "Atashi",
+      "urlId": "atVd38Z9vD",
+      "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
+      "createdAt": "2024-02-13T05:30:38.666000+00:00",
+      "content": " ![](/api/attachments.redirect?id=c683c70f-14ab-4bfa-8328-aa73c586008b \" =179x313\")\n\nBlind and elder monk mentor of [Bahruhn](/doc/bahruhn-bsKvF54uuT). Died of a fever; his death precipitated the uncovering of a conspiracy by [Abbot Agha](/doc/abbot-agha-JaATb0YfCD) - the head of [The ](/doc/the-khaneye-jun-fan-6tqXbPVyii)**[Khaneye Jun Fan](/doc/the-khaneye-jun-fan-6tqXbPVyii)**. ",
+      "connections": 4,
       "alignment": {
-        "stated": null,
+        "stated": {
+          "law_chaos": 0.5,
+          "good_evil": 0.8
+        },
         "behavioral": {
-          "law_chaos": 0.946969696969697,
-          "good_evil": -0.9939393939393939
+          "law_chaos": 0.5,
+          "good_evil": 0.8
         },
         "final": {
-          "law_chaos": 0.946969696969697,
-          "good_evil": -0.9939393939393939
+          "law_chaos": 0.5,
+          "good_evil": 0.8
         },
-        "confidence": 0.3,
+        "confidence": 0.7,
         "drift": 0.0,
-        "source": "propagated"
+        "source": "llm"
       }
     },
     {
@@ -11321,22 +11347,22 @@
       }
     },
     {
-      "id": "3a3cf764-f912-4466-a747-a8925f236176",
-      "title": "Giant Ant Queen",
-      "urlId": "DFmrJM0oNu",
+      "id": "532e455d-3861-4aa8-8668-ee3a6460c6bb",
+      "title": "Gibbering Mouther",
+      "urlId": "TgplvjaPZM",
       "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
-      "createdAt": "2024-06-24T00:47:27.856000+00:00",
-      "content": "*Large Beast, unaligned*\n\n\n___\n\n* **Armor Class** 15 (natural armor)\n* **Hit Points** 85 (`10d10 + 30`)\n* **Speed** 40 ft.\n\n\n___\n\n| STR | DEX | CON | INT | WIS | CHA |\n|:---:|:---:|:---:|:---:|:---:|:---:|\n| 17 (+3) | 13 (+1) | 16 (+3) | 2 (-4) | 11 (+0) | 4 (-3) |\n\n\n___\n\n* **Senses** blindsight 60 ft., passive Perception 10\n* **Languages** \u2014\n* **Challenge** 4 (1,100 XP)\n* **Proficiency Bonus** +2\n\n\n___\n\n***Keen Smell.*** The giant ant queen has advantage on Wisdom (Perception) checks that rely on smell.\n\n***Queen's Scent.*** Giant ants defending a queen gain advantage on all attack rolls.\n\n### Actions\n\n***Multiattack.*** The giant ant queen makes two bite attacks and one sting attack.\n\n***Bite.*** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (`1d8 + 3`) bludgeoning damage and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the giant ant can't bite a different target.\n\n***Sting.*** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (`1d8 + 3`) piercing damage plus 22 (`4d10`) poison damage, or half as much poison damage with a successful DC 14 Constitution saving throw.\n\n## Giant Ant Queen\n\n ![](/api/attachments.redirect?id=48211989-31d4-4536-a486-99e1fe3373dc \"right-50\")Several pony-sized ants swarm around an ant the size of a draft horse, clacking their serrated mandibles and threatening with their stingers.\n\nGiant ants look much like a normal ant with six legs, a waspish segmented body, and large antenna. Their hides are covered in thick chitin, and they have large, serrated mandibles flanking their mouths and stingers on their tails. These stingers are the size of a shortsword, and they're capable of stabbing and poisoning a human to death.\n\n***Colony Defenders.*** Giant ants form colonies under the control of a queen much like their normal-sized cousins. Sterile females form castes with the workers building the nest and caring for larvae. Queens and male drones rarely leave the colony. Soldiers defend the colony and forage for food.\n\n***Carry Prey Home.*** Giant ants are both predators and scavengers, working in organized groups to bring down large prey and carry it back to the nest. Giant ants tend to ignore animals away from the colony when not foraging for food, but they quickly move to overwhelm prey when hungry or threatened.\n\nA giant ant stands nearly four feet tall and weighs 400 pounds, while a giant ant queen is over five feet tall and weighs 900 pounds. Giant ants communicate with each other primarily with pheromones but also use sound and touch.\n\nA giant ant stands nearly four feet tall and weighs 400 pounds, while a giant ant queen is over five feet tall and weighs 900 pounds. Giant ants communicate with each other primarily with pheromones but also use sound and touch.\n\n\n---\n\n- [x] Homebrew Source: [Tome of Beasts 1, page 23](https://5e.dungeon.church/bestiary.html#giant%20ant%20queen_tob,fbmt:sand\\~b1\\~b0,flstsource:hftt=1\\~rmbre=1\\~aatm=1\\~aitfr-isf=1\\~aitfr-thp=1\\~aitfr-dn=1\\~aitfr-fcd=1\\~awm=1\\~coa=1\\~crcotn=1\\~dod=1\\~dodk=1\\~egw=1\\~ghloe=1\\~gotsf=1\\~hat-tg=1\\~hwcs=1\\~imr=1\\~llk=1\\~lr=1\\~mabjov=1\\~mcv1sc=1\\~mcv2dc=1\\~mcv3mc=1\\~mcv4ec=1\\~mismv1=1\\~mff=1\\~mgelft=1\\~nrh-tcmc=1\\~nrh-avitw=1\\~nrh-ass=1\\~nrh-coi=1\\~nrh-tlt=1\\~nrh-awol=1\\~nrh-at=1\\~psa=1\\~psd=1\\~psi=1\\~psk=1\\~psx=1\\~psz=1\\~rtg=1\\~sads=1\\~tdcsr=1\\~ttp=1\\~vd=1\\~hfstcm=1\\~sja=1\\~lk=1\\~lrdt=1\\~tob1-2023=1,flopsource:extend,fbsr:giant%20ant)\n\n\\\n",
-      "connections": 1,
+      "createdAt": "2024-02-24T04:23:28.732000+00:00",
+      "content": "*Medium aberration, Neutral*\n\n<https://soundcloud.com/kazzerax/gibbering-mouther-1>\n\n\n---\n\n* **Armor Class** 9\n* **Hit Points** 67 (`9d8 + 27`)\n* **Speed** 10 ft, swim 10 ft\n\n\n---\n\n| STR | DEX | CON | INT | WIS | CHA |\n|:---:|:---:|:---:|:---:|:---:|:---:|\n| 10 | 8 (-1) | 16 (+3) | 3 (-4) | 10 | 6 (-2) |\n\n\n---\n\n* **Condition Immunities** Prone\n* **Senses** Darkvision 60ft, PP 10\n* **Languages** !!Common!!\n* **Challenge** 2\n* **Proficency Bonus** +2\n\n\n---\n\n***Aberrant Ground.*** The ground in a 10-foot radius around the mouther is doughlike difficult terrain. Each creature that starts its turn in that area must succeed on a DC 10 Strength saving throw or have its speed reduced to 0 until the start of its next turn.\n\n***Gibbering.*** The mouther babbles incoherently while it can see any creature and isn\u2019t [incapacitated](https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Incapacitated). Each creature that starts its turn within 20 feet of the mouther and can hear the gibbering must succeed on a DC 10 Wisdom saving throw. On a failure, the creature can\u2019t take reactions until the start of its next turn and rolls a d8 to determine what it does during its turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action or bonus action and uses all its movement to move in a randomly determined direction. On a 7 or 8, the creature makes a melee attack against a randomly determined creature within its reach or does nothing if it can\u2019t make such an attack.\n\n### Actions\n\n***Multiattack.*** The gibbering mouther makes one bite attack and, if it can, uses its Blinding Spittle.\n\n***Bite.*** *Melee Weapon Attack:* +2 to hit, reach 5 ft., one creature. *Hit:* 17 (`5d6`) piercing damage. If the target is Medium or smaller, it must succeed on a DC 10 Strength saving throw or be knocked [prone](https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Prone). If the target is killed by this damage, it is absorbed into the mouther.\n\n***Blinding Spittle (Recharge 5\u20136).*** The mouther spits a chemical glob at a point it can see within 15 feet of it. The glob explodes in a blinding flash of light on impact. Each creature within 5 feet of the flash must succeed on a DC 13 Dexterity saving throw or be [blinded](https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Blinded) until the end of the mouther\u2019s next turn.\n\n\n---\n\n ![](/api/attachments.redirect?id=9452a0ad-e0f2-40c7-bad9-979e7933ed63)\n\nOf all the terrors created by foul sorcery, gibbering mouthers are among the most wicked and depraved. This creature is the composite eyes, mouths, and liquefied matter of its former victims. Tormented by the destruction of their bodies and absorption into the mouther, those victims gibber incoherently and are forced to consume everything in reach.\n\n***Amoeboid Form.*** The gibbering mouther\u2019s body is an amorphous mass of mouths and eyes that propels itself by oozing forward, fastening several mouths to the ground and pulling its bulk behind. Though it moves slowly, it swims through water, mud, and quicksand with ease.\n\n***Horrifying Cacophony. ***When a gibbering mouther senses prey, its mouths begin to murmur and chatter, each with a different voice: deep or shrill, wailing or ululating, crying out in agony or ecstasy. This cacophonous gibbering overcomes the senses of any creature that hears it, causing most to flee in terror. Others are overcome with confusion or stand paralyzed, fixated on the horrific creature as it oozes forward to consume them.\n\n***All-Consuming.*** Driven to devour any creature it can reach, a gibbering mouther flows over victims transfixed by its ranting, its multitudinous voices temporarily silenced as it gnaws and swallows living flesh. The monster liquefies stone with which it comes into contact, hindering creatures that overcome its gibbering and attempt to flee.\n\nA gibbering mouther leaves nothing of its prey behind. However, even as the last of a victim\u2019s body is consumed, its eyes and mouth boil to the surface, ready to join the chorus of tormented gibbering that welcomes the monster\u2019s next meal.\n\n- [ ] Homebrew **Sources:** [MM](https://5e.dungeon.church/bestiary.html#gibbering%20mouther_mm,fbmt:sand\\~b1\\~b0,flstsource:hftt=1\\~rmbre=1\\~aatm=1\\~aitfr-isf=1\\~aitfr-thp=1\\~aitfr-dn=1\\~aitfr-fcd=1\\~awm=1\\~coa=1\\~crcotn=1\\~dod=1\\~dodk=1\\~egw=1\\~ghloe=1\\~gotsf=1\\~hat-tg=1\\~hwcs=1\\~imr=1\\~llk=1\\~lr=1\\~mabjov=1\\~mcv1sc=1\\~mcv2dc=1\\~mcv3mc=1\\~mcv4ec=1\\~mismv1=1\\~mff=1\\~mgelft=1\\~nrh-tcmc=1\\~nrh-avitw=1\\~nrh-ass=1\\~nrh-coi=1\\~nrh-tlt=1\\~nrh-awol=1\\~nrh-at=1\\~psa=1\\~psd=1\\~psi=1\\~psk=1\\~psx=1\\~psz=1\\~rtg=1\\~sads=1\\~tdcsr=1\\~ttp=1\\~vd=1\\~hfstcm=1\\~sja=1\\~lk=1\\~lrdt=1\\~tob1-2023=1,flopsource:extend,fbsr:gibbering)\n\n\\\n",
+      "connections": 2,
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.14391007889170543,
-          "good_evil": 0.24850749678810102
+          "law_chaos": -0.039873702996830164,
+          "good_evil": -0.09838662818009035
         },
         "final": {
-          "law_chaos": 0.14391007889170543,
-          "good_evil": 0.24850749678810102
+          "law_chaos": -0.039873702996830164,
+          "good_evil": -0.09838662818009035
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11344,22 +11370,22 @@
       }
     },
     {
-      "id": "f20a6014-97ca-47b7-bf8e-0e5a8e326a94",
-      "title": "Celestial Arcanum Academy",
-      "urlId": "IQjeZ8hhwt",
-      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
-      "createdAt": "2024-06-29T21:33:01.027000+00:00",
-      "content": "",
-      "connections": 1,
+      "id": "ae415f5f-d2a7-4d96-a977-7bb74aca177a",
+      "title": "Session 24: The Hunt",
+      "urlId": "tgDf5YJbgf",
+      "collectionId": "13b87098-500c-490d-ae46-01356387fe88",
+      "createdAt": "2024-04-22T06:04:03.429000+00:00",
+      "content": "4/21/24\n\n* [Grey Rivermoon](/doc/grey-rivermoon-p54iB0ukBr) @[Ryk Sheppard](mention://4941189e-07a2-40b5-8e91-9d27960134a7/user/306eb823-ba3d-4c22-855d-e7711b311662) \n* [Greyson Adams](/doc/greyson-adams-0y5qoKwfDR) @[Lowfi Steve](mention://a6c926cb-eb8a-40f9-80a6-f51abf83c6e4/user/cf6c5a84-febc-4585-b826-f419e23f3ccd) \n* [Ama](/doc/amastacia-aspensong-7Wl2NAGQ9A) @[Toni](mention://8c2c3e04-6022-4633-9e06-c541ef134b56/user/b107b3d5-cccf-4184-b91b-accfd1e42b3e) \n* [Bahruhn](/doc/bahruhn-bsKvF54uuT) @[Arman Daniel Catterson](mention://298f4b27-61b8-4584-bc83-096f7ca478b3/user/9003b75e-5376-4490-a845-0e47818504ce) \n* [Rado](/doc/rado-khfSywxKIF) @[Robby Borton](mention://cdbe5983-d98a-425a-b8e5-c81f3dd8b401/user/8cc73826-3758-4850-9fd3-57c4506d73a6) \n\n# Butcher\u2019s Dungeon\n\n> You stand within this now quite underground cavern, your boots soaked blood, it\u2019s inescapable iron scent filling your nostrils. The clinking of chains echoes through this cursed place, twinkling like an infernal melody in the murky darkness. Candles burn a sooty light that casts a web of shadows on the walls.\\n\\nFrom the far side of the altar a voice pierces the silence, echoing with a chilly resonance : \n>\n> \\n**Esteemed interlopers, I bow before your power! I beseech your uncorrupted souls to unshackle my bonds the way you have unshackled my torturer\u2019s head from his body.\u201d**\\n\\nHis eyes peer out from behind the altar, glowing with red fire. He laughs the laugh of a child, his echoing with the clinking of the swaying chains.\\n\\n**Grant me that sweet libation of freedom, and I shall show you their inner sanctum\u2026.\u201d**\n\nZargnaw attempts to bargain with them: kill [Eldan](/doc/eldan-fletcher-QWyA10eG7I), and he\u2019ll open the guild\u2019s inner sanctum to them. He looks at the hearts on the altar longingly, \u201cThey did that to me\u2026\u201d. He spider climbs the wall and uses his clawed finger to draw the outline of a door in burning red magic, revealing a heavy metal door bolted and locked into the rock. \n\nThe party hears the celebration upstairs still going on, now very late into the night. They stand in this terrible cavern, with the hearts still pumping blood on the altar. Grey skewers one on his sword, as the others debate their next move. They are unsure whether to trust the Iron Riders, or [Zargnaw](/doc/zargnaw-gZYDM82FXz), and think they should try to escape without being seen.\n\nThey decide to swim back up the well since they all need a bath and a good rest.\n\nUnfortunately when they surface, dozens of guildsmen and [Iron Riders](/doc/iron-riders-of-abraxas-P77pTaxjou) are in the courtyard around a great bonfire. \u201cAh there they are you cheeky bastards, swimming in the well!\u201d Several hands reach to draw them up and out of it, dripping wet, and drinks are put in their hands. \u201cYou can\u2019t leave yet - the best part of our tradition is just about to happen!\u201d\n\nThe party looks around for anyone they know and see [Saxton](/doc/saxton-pope-CJaIQ4Kkdw) & [Commodore Warrington](/doc/commodore-daniel-warrington-OHzOMkhMHS) sees both sitting on a dias, at two chairs, with an empty throne in between them. They also notice that everyone here is very heavily armed, and an anticipatory menace permeates the crowd.\n\n# The Hunting Party\n\nAs the first hint of civil twilight, with the darkest part of the night past, everyone looks to the wrought iron gate of the guildhall being opened by torchbearers, and a young woman in a flowing red dress rides in atop a skeletal horse. Greyson mutters under his breath, *\u201dAmelia!\u201d*\n\n ![](/api/attachments.redirect?id=2a7038c0-171a-47d3-9856-2d10f058c983)She dismounts the undead beast and is escorted by guildsmen to the platform. She takes her place between Saxton and Warrington, who fill a wine glass for her. The party feels the guildsmen surround them, slowing pushing them up towards the front of the crowd. Amelia, rising and raising her glass to the crowd, which has now gone quiet, she says:\n\n> Loyal servants of the [Lady of the Wood](/doc/lady-nightshade-3kjLNj2Zbs) and valiant warriors of the Iron Riders, I am honored to see you off this morning. Together, as comrades, we embark on a hunt like no other\u2014a pursuit that shall test the mettle of all who attempt it and prove the unwavering strength of our alliance. May the darkness guide your steps and the thrill of the chase invigorate your spirits.\\n\\nHer gaze then turns to the party, her expression a mix of amusement and dark promise.\\n\\n\"And to our esteemed guests, the choices before you are as stark as the night is long. Join us in our noble endeavor, mark your allegiance by signing your names in the ancient ledger, and hunt those who have been marked by fate. Embrace the honor of the hunter, and enjoy the spoils and protections that come with those who prove their devotion to our Queen\u2026\n\nTwo Iron Riders - [Mara](/doc/mara-dADMrr538D) and [Erik](/doc/erik-jorgansen-cfriEl7OGK) - drag a bound and chained [Cerric Shadowleaf](/doc/cerric-shadowleaf-jMvCl3ogF1), who appears furious and curses and kicks at his captors. They throw him to the ground in front of Amelia, drawing their swords as they stand over him.\n\nAmelia calls out, \u201c[Iron Thrax](/doc/iron-thrax-XjradLKM25)! You wish to gain the favor of our Lady?\u201d\n\nIron Thrax is similarly thrust out to the front beside the party. He seems flummoxed, looking horrified at Cerric in front of him. \u201cMistress, this hunt\u2026. my own family was killed by butchers\u2026\u201d\n\nAmelia responds: \u201cDid you not tell me you would do anything to avenge them? Pay any price, even your soul? Today I name my price: Make your choice to be a hunter, or join the hunted.\u201d\n\nIron Thrax responds dejectedly, \u201cI will hunt\u201d\n\n\u201cJust as you my Lady bound me to her, I bind thee to me.\u201d She places a golden brooch with the symbol of the guild around his shoulders, similar to the one that Saxton wears. \n\nAmelia asks the party the same question. Grey lunges out at her with a reckless attack, but Amelia waves her hand in a bored manner at him and he [freezes in time](/doc/time-stop-u5l0EnWL4r), suspended in the air as he jumps with weapon in hand. The party refuses.\n\nAs the sunlight finally cracks the horizon, Amelia says: \u201cMy time here is coming to an end, in my absence the Knight of Day will watch over the proceedings.\u201d\n\nAs she says this, everyone smells the distinct smell of burning flesh on the wind.\n\nAmelia snaps her fingers and turns into a mist.\n\nThe hunt begins. A [horn](/doc/guildmasters-hunting-horn-PkmJIssiGT) is blown.\n\n# The Hunt\n\nThe crowd cheers and the gates of the guildhall are thrown open. Greyson uses his magic ring to create a poof of mist around the party as a diversion. Guildsmen bring out packs of dogs and ready their weapons as they laugh. Cerric shouts, *\u201dRUN!!!!!\u201d* and the party sprints. The dogs are unleashed, and Greyson trips, going down. Ama and Rado alternate [Wall of Thorns](/doc/wall-of-thorns-wEDoOfhshp) and sticky spider [Webs](/doc/web-vW8qhEOjRB) to hold their pursuers back and are successful. They gain the party a good lead, as they burst out of the town gates and run into the woods with the dogs baying fading into the distance.\n\nThey first attempt to create a diversion, taking the stinking dragon\u2019s head out of their bag of holding. Bahruhn runs it up a tree, smearing viscera and bad smells everywhere. Cerric tells them he knows there is an elven ruin they could take refuge in, but without the powers of the guild he doesn\u2019t know how to navigate to it. They push through some minor forest inconveniences.\n\n## The Briar Patch\n\nThe game trail they\u2019re following ends abruptly at a large patch of blackberry briars, sharp thorns glistening with dew and berries so ripe you can smell the fermentation. Rado uses his [Detect Magic](/doc/detect-magic-eyp2IwEbpj) to see if he can get a better idea of which way to go, and finds they are near an illusion of some sort. He reaches out to touch the briars, and as he nears them the vines pull back with quick, snake-like motions\u2026 revealing a path.\n\n ![](/api/attachments.redirect?id=3dd2da37-b899-46e8-a026-4c53d761c67a)The party doesn\u2019t feel good about this, but they follow the path. It closes up behind them, but continues to reveal itself as they walk through the briars. Around them, they hear a distinct clicking noises coming from multiple directions. Ama thinks they might be finches.\n\nJust as they feared, it was a trap. Suddenly several [briar children](/doc/child-of-the-briar-sI5pUsj9VA) pop up out of the berry laden bushes and the vines rush out to entangle the party. They get everyone except Grey, who kicks at one of the little stick people as it stabs him in the ankle with a thorny trident.\n\nA briar child wearing a crown and smoking a corncob pipe with the pungent smell of [dreamvine](/doc/dream-vine-viEBw5FxT7). He blows smoke rings at the party. \u201cWell well well what do we have here? A whole party, what do you know. It\u2019s time to pay the toll folks! Give me something shiny\u201d he says greedily.\n\nThe other briar children laugh, until Grey threatens fire. They get very agitated, \u201cNone of that big man!!! Just give us what we want!!\u201d as the party hears the baying hounds getting closer.\n\nAfter some bargaining back and forth, the party establishes a rapport with the bandits and give up a few precious stones and pieces of gold and platinum. Now much nicer, the briar king introduces himself as [King Thistletongu](/doc/king-thistletongue-glZXlT4FaG)e and what he really wants is a shiny whistle.\n\nHaving bought off his good will, the briar children mischievously promise to delay the hunters.\n\n## Burning Meadow\n\nThe party continues on there way and comes to a meadow, still smoldering as if from a wildfire. In the center of the field is a single blackened oak tree, with a charred deer carcass hanging from a chain. Beneath the dead animal is it\u2019s heart, slowly beating black blood\u2026 a burning trail leads away into the woods.\n\nThe party thinks back to the burning gulthias tree in the [Sunless Temple](/doc/sunless-temple-yS5i3gqWiO), and wonder - who is the Knight of Day? Rado thinks this place feels void of life and magic.\n\nSeveral nightingales come and sing over the corpse of the deer, as if in eulogy.\n\n## Ambush\n\nThe party continues and comes to a shallow stream, about 15 feet across. They skip across the rocks (or Ama walks, magically) and examine a much weathered statue of obvious elven origin. Cerric comments that they must be on the right track. Then they hear a rustling in the bushes\u2026 and out comes an Owlbear, pissed off. Grey begins to whack at it with his sword.\n\nAt this moment, the hounds finally catch up catching the party split across opposite sides of the stream. The baying of the [spellhounds](/doc/spellhound-P8vzvEmuaZ) causes Rado\u2019s magic to misfire, it\u2019s droning resonance getting into his head. Taking hits from both sides, the guildsmen arrive after their hounds - Eldan, Iron Thrax, and Saxton all engaging with their greatswords and firing crossbow bolts at the party. Bahruhn takes several successful runs at the Owlbear, then Ama casts [Shatter](/doc/shatter-yjdXR6DPdg) and the Owlbear\u2019s head explodes in a brief moment of victory. Bahruhn returns to the frey on the other side of the stream only to be struck down by Commodore Dan. Greyson gets in a bunch of good stabs and evasions, and finally Eldan goes down as well. The guildsmen surround their injured comrade and begin to pull him back into the brush, making a retreat as they hold up shields and ready their crossbows menacingly at the party. Grey makes a final rush at them, dodging their crossbow bolts as they leave behind the party in not much better shape than their attackers.\n\n ![](/api/attachments.redirect?id=4a46a55c-70b2-4d63-b142-0b206e2b7cd0) ![](/api/attachments.redirect?id=52567112-ddc3-4fa5-914d-58255a816132)\n\n\n---\n\n- [x] Homebrew added: [King Thistletongue](/doc/king-thistletongue-byqTEswqZE)\n\n\\\n",
+      "connections": 23,
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.23239874325856003,
-          "good_evil": 0.0773408345305266
+          "law_chaos": -0.04688518389166331,
+          "good_evil": -0.048207008396481
         },
         "final": {
-          "law_chaos": 0.23239874325856003,
-          "good_evil": 0.0773408345305266
+          "law_chaos": -0.04688518389166331,
+          "good_evil": -0.048207008396481
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11495,12 +11521,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": -0.003650243478939338,
-          "good_evil": 0.00161204788922436
+          "law_chaos": -0.005453116132017217,
+          "good_evil": -0.00046537868572273295
         },
         "final": {
-          "law_chaos": -0.003650243478939338,
-          "good_evil": 0.00161204788922436
+          "law_chaos": -0.005453116132017217,
+          "good_evil": -0.00046537868572273295
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11642,12 +11668,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.07715106278746316,
-          "good_evil": 0.19826946976337761
+          "law_chaos": 0.07707152428806266,
+          "good_evil": 0.19817781859095346
         },
         "final": {
-          "law_chaos": 0.07715106278746316,
-          "good_evil": 0.19826946976337761
+          "law_chaos": 0.07707152428806266,
+          "good_evil": 0.19817781859095346
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -11966,6 +11992,29 @@
       }
     },
     {
+      "id": "751602d2-ab99-49d8-880d-b232a479eb68",
+      "title": "Session 27: Construct Cargo Cult",
+      "urlId": "7kH72MkRRg",
+      "collectionId": "13b87098-500c-490d-ae46-01356387fe88",
+      "createdAt": "2024-06-04T03:01:49.696000+00:00",
+      "content": "6/2/24\n\n* [Bahruhn](/doc/bahruhn-bsKvF54uuT) @[Arman Daniel Catterson](mention://15adaf2b-df58-4085-91eb-72f66cbb933d/user/9003b75e-5376-4490-a845-0e47818504ce) \n* [Ramoth](/doc/ramoth-TY76Abmb8e) @[Amy Catterson](mention://8cc7dd18-4661-4e29-b6fc-05fb54fc3f8f/user/5fa9f5b5-703f-4161-bfa0-ad42d56332e1) \n* [Rado](/doc/rado-khfSywxKIF) @[Robby Borton](mention://fac25c6a-ff3d-431d-ba24-91fb35f0eac6/user/8cc73826-3758-4850-9fd3-57c4506d73a6) \n* [Ama](/doc/amastacia-aspensong-7Wl2NAGQ9A) @[Toni](mention://e2671b2f-1219-449b-8118-2765afbd1270/user/b107b3d5-cccf-4184-b91b-accfd1e42b3e) \n* [Grey](/doc/grey-rivermoon-p54iB0ukBr) @[Ryk Sheppard](mention://8c840dc2-c490-4e3e-98bf-eb2a23b6990e/user/306eb823-ba3d-4c22-855d-e7711b311662) \n* [Greyson](/doc/greyson-adams-0y5qoKwfDR) @[Lowfi Steve](mention://6588fa61-249f-4d56-9cac-4cfb31572f55/user/cf6c5a84-febc-4585-b826-f419e23f3ccd) \n\n# Burning Bridges\n\n> The acrid stench of burning oil and sewage fills your nostrils as you stand amidst the wreckage of the collapsed bridge. Flames dance and flicker on the surface of the filthy water, casting eerie, shifting shadows on the tunnel walls. The heat from the fire warms your face\n>\n> \\nThe debris from the bridge forms a tangled blockade, blocking your way forward. The sound of whirring machines and mechanical footsteps fades into the distance.\n\nGrey jumps over the burning wreckage of the bridge & chases after the [constructs](/doc/fellforged-uX906NOf0f) through a tunnel. The dungeon seems alive with whirring gears and  moving pistons powered by steam. The injured construct robotically marches towards a great fire somewhere in the distance. Suddenly, an iron portcullis shuts blocking Grey\u2019s momentum. Heat and steam erupt from the great burning light source.\n\nBack at the bridge the party takes inventory of their wounds. Bahruhn looks through the wreckage of the constructs that self destructed and pulls an Arcane Propulsion Arm from the body of one of the fallen robots.\n\nThe party decides to keep going through the sewer tunnel. They come to an abrupt curve where it appears the water has washed lots of barrels and other detritus against one corner. Rado uses the [Ley Line Lens](/doc/ley-line-lens-A8oN3yTn4x), and he sees a magical disturbance that appears to refract the ley line they are following in many directions. They are not sure what to make of this.\n\nAma and Ramoth investigate the pile, while Grey creeps ahead north with his glowing sword guiding him. Rado shoots his Dancing Lights into the darkness and they see\u2026 Coming down the tunnel, slowly and a bit wobbly, are several giant black ants. Grey keeps his distance and observes them\u2026 something is off. He noticed that everywhere they touch or step, they are leaving a blackened trail\u2026 like soot. He smells the acrid scent of burning monster flesh.\n\nThe others have determined that all this trash is not a natural pile, but some sort of barricade. Determined to see what\u2019s on the other side as the ants advance towards them, they frantically begin hacking at it with their weapons.\n\n# Fuel\n\nAs the ant approaches Grey, he decides to whack it, as barbarians do. His weapon connects and sends a cloud of soot everywhere. He realizes these ants have been burnt to a crisp. As he holds the monsters back, the others begin to disassemble the barricade. As they settle in for a fight with the ants, suddenly a large door to the east slides open with a mechanical *whoosh*. The constructs are back, and they immediately spray the area with oil. Slipping in the water and oil slick, Grey positions himself to get between the robots and the party. \n\n ![](/api/attachments.redirect?id=820d48df-8c49-4cdd-bba8-e775c0179a32)The party picks up their pace, sensing the urgency of the situation. It seems the robots are after the ants, as they next shoot nets at Grey and the insects. One of them intones, *WE MUST COLLECT FUEL!* as it pursues them. Trapped by a net, Grey can only watch helplessly as a large [Coal Golem](/doc/coal-golem-z4SQh5bzSf) lumbers up behind the robots and shoots a line of flame into the oil slicked tunnel, erupting everything in heat and flames.\n\n ![](/api/attachments.redirect?id=8d1c2f49-ed83-45ff-a3b4-4856be5d8729)\n\nThe ants immediately ignite as if [made of charcoal](/doc/giant-coal-ant-M9repJEaQW). One of them comes barreling down at the party on the ceiling. The party gets in a few good blows but now Grey is being overwhelmed by the constructs and fire. The others are now frantic to get at the door they\u2019ve uncovered behind the rubble. One construct goes down by Grey\u2019s weapon. As the energy leaves it\u2019s animated body, a [wraith]() emerges, screaming in pain. It flies back toward the room the robots came from.\n\nWith the constructs in hot pursuit, the situation is starting to look dire. They take out a few of the ants, and the robots haul off one of the others behind their metal door. It mercifully shuts with a loud *clang* behind them, sealing the path to pursuit again. One of the constructs who went down is stuck in the door, the upper half of his body severed by the great metal door.\n\n*WE MUST COLLECT FUEL\u2026 YOU ARE FUEL!*\n\nThe party demands some answers: What do you need fuel for?\n\n*FOR POWER, WE NEED POWER TO KEEP GOING. IT IS ONLY LOGICAL.*\n\nWho made you?\n\n*OUR MASTER IS [ELARION GEARSONG](/doc/elarion-gearsong-5hUorix4Zk), IT HAS BEEN 342 DAYS 13 HOURS 42 MINUTES AND 21 SECONDS SINCE WE HAVE SEEN HIM\u2026.*\n\nThe robot begins to short circuit and just repeats\u2026\n\n*FUEL\u2026. NEED FUEL\u2026.*\n\nAs he runs out of energy they see the number \u201c21\u201d stamped into his forehead.\n\n# Retreat\n\nThe party is severely injured at this point, but they have the doorway uncovered to the south.\n\n ![](/api/attachments.redirect?id=12fa36ae-a43a-417b-8cea-26f8ec51b543)This narrow stone hallway with a low ceiling terminates in an ominous looking magic field of some kind that crackles and pops. They cannot see what\u2019s beyond. They brace themselves and open up the lone doorway leading west, and find inside a large pile of insect eggs. Ant insect eggs (Ama deposits one in the [Bag of Holding](/doc/bag-of-holding-vaqJdkPRX2)). They decide not to disturb them and retreat back the way they came.\n\nThey go back to the room that held the beholder, and this time they can\u2019t help but notice that the iron chains that are bolted into the stone walls have human-shaped soot marks. Ama sets up her Tiny Hut and they ponder the meaning of this while Ama beats Bahruhn at [Dragonchess](/doc/house-rules-OhKbZs6UV4) once again.\n\n\\\nAma: 2 Bahruhn: 0 \n\n# Construct Cargo Cult\n\n ![](/api/attachments.redirect?id=2ad8e06e-59d6-46aa-a65a-68fa243cf35a)They awake to face the same dilemma: keep going further into the dungeon or make a retreat back up the elevator? While pondering their decision they take a moment to clean up, removing layers of soot and filth using prestidigitation and the Everlasting Flask. The party decides to try again and keep going, to see if the ley line leads them to Razorback\u2019s rebel hideout.\n\nCreeping back to where the closed metal gate is, they attempt to come up with a plan before Greyson finally says fuck it and downs a potion, turning himself into a gaseous mist. He passes through the thin gap of the gate into the other side, but realizes he can\u2019t communicate with his companions now. The room beyond is full of steam and the sound of machines working, so he is easily able to slip in unnoticed and observe what is happening:\n\nAll of the constructs stand in a circle around a great incinerator engine. Steam and machines hiss all around. In the hole of the incinerator is the great golem, heat radiating off his elemental body. One of the construct approaches, bearing the bottom half of #21 and a Giant Ant. The other constructs chant in the Elvish tongue that Greyson can\u2019t understand, but he gets the meaning. This is some type of ceremony.\n\nThe construct bearing the corpses approaches the incinerator and throws them to be burned up by the golem. The chanting ends. The robots watch in silence as it burns.\n\nGreyson sees a button on the wall near the gate and returns to his physical form. With no way to communicate with his party outside he makes and executive decision and pushes the button.\n\n# Round Two\n\nAs the gate lifts, all the robots turn towards Greyson. The coal golem is enraged to be interrupted during his feeding, and lifts his great heft out of the incinerator, towering over everything else in the room.\n\nThe door moves\u2026. a few inches. Slowly. The party yells at each other through the gap.\n\nGreyson is surrounded by the fellforged, takes blows left and right. While he gets in some good stabs he goes down hard.\n\nThe door moves a few more inches.  The fire spreads to Greyson\u2019s unconscious body.\n\nThe party is almost able to reach their friend. They throw spells and arrows through the gap.\n\nThe great golem strides forward and leans down, blowing hot smoke at the party, stunning and blinding some of them.\n\nThey are not deterred, seeing how close Greyson is to death. The robots and the golem stand over him, ready to strike, but Grey army crawls under the door, grabs Greyson and pulls him out just in time. \n\nThe party regroups and debates running or staying to fight. They stabilize Greyson, ready their attacks and rain down blows on the remaining constructs and the great golem, but most of their attacks just glance off these fell creatures.\n\nRado uses his Mage Hand to press the button and reverse its course. It immediately slams shut.\n\nThe tunnel falls into silence once more.\n\n# Unstable Magic\n\nBadly wounded and Greyson still barely clinging to life, they once again retreat from the door. They doff some potions and encourage each other with [Healing Words](/doc/healing-word-1mUZPJOpEA). This time they decide to brave the magic field. They toss some items through, but all they hear is -pop- as they disappear beyond its electrical facade. Bahruhn decides to be brave and jumps through the miss. Ama, not one to be left behind, rushes to do the same  \n\nThey are shrunk immediately to an impossibly tiny size as they pass through. So small that a nearby normal ant appears to be Giant. They sneak around the corner and see a large mountain inside of a stone room, with lots of pipes running through it. It\u2019s an ant hill.\n\nAma decides to interrogate an ant who is pushing around a (to them) boulder-sized rock. However, the ant is very dumb. When she asks what he is doing, he just answers, \u201cMy job is rock\u201d and that he is \u201cdoing it for the queen\u201d.\n\nAma and Bahruhn appeal to the party to join them on the other side of the mist. After some hemming and hawing they come through as well. The party retreats to formulate a plan and once again sets up the Tiny Hut. This time they use the Flask of Everlasting to fill it with water, and then use Prestidigitation to heat it up so it\u2019s a nice spa. They relax and discuss their next move.\n\n\\\n",
+      "connections": 13,
+      "alignment": {
+        "stated": null,
+        "behavioral": {
+          "law_chaos": -0.14380604456382257,
+          "good_evil": 0.23168325670951553
+        },
+        "final": {
+          "law_chaos": -0.14380604456382257,
+          "good_evil": 0.23168325670951553
+        },
+        "confidence": 0.3,
+        "drift": 0.0,
+        "source": "propagated"
+      }
+    },
+    {
       "id": "980da4ec-e74b-413c-b655-111686c6bbc0",
       "title": "The Lady's Price",
       "urlId": "9GqAM1W0Pw",
@@ -11976,12 +12025,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.1284596089361302,
-          "good_evil": -0.26173048959941003
+          "law_chaos": 0.10747217078142336,
+          "good_evil": -0.24295590230864125
         },
         "final": {
-          "law_chaos": 0.1284596089361302,
-          "good_evil": -0.26173048959941003
+          "law_chaos": 0.10747217078142336,
+          "good_evil": -0.24295590230864125
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12045,12 +12094,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.1284596089361302,
-          "good_evil": -0.26173048959941003
+          "law_chaos": 0.10747217078142336,
+          "good_evil": -0.24295590230864125
         },
         "final": {
-          "law_chaos": 0.1284596089361302,
-          "good_evil": -0.26173048959941003
+          "law_chaos": 0.10747217078142336,
+          "good_evil": -0.24295590230864125
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12274,29 +12323,6 @@
       }
     },
     {
-      "id": "53be6be6-9e5f-4f73-a1a1-c1f8c1bda1ee",
-      "title": "Gnomish Tea Set",
-      "urlId": "HrqDVlit6V",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "createdAt": "2024-04-09T16:42:04.416000+00:00",
-      "content": " ![](/api/attachments.redirect?id=b539c8e0-8105-4837-a67c-32dd256c56f9)The gnomes are masters of the tea ceremony, and it is rare to find even a halfling on the surface who does not travel with their tea set. While most are made of metal because of it\u2019s durability, each tea set is handcrafted and unique to the person. Some are highly polished works of art, others are more functional in nature and so modified over the years by their user they more resemble some type of clockwork.\n\nGnomes of the Underdark are known to use their tea sets in communal rituals that allow them to [Stone Shape](/doc/stone-shape-Ni4NXltKR3) en masse. If enough gnomes participate in this ritual, they can effectively tunnel and travel through solid stone. The exact nature of this [Stone Tea](/doc/stone-tea-ik79CS5iIM) and it\u2019s ceremony are a tightly guarded gnomish secret.\n\n***Stone Tea*.** Gnomes and halflings who come from Underdark society know the secret of this brew, and an individual with a week\u2019s preparation time and the proper ingredients can summon enough magic to imbue a single tea ceremony ritual with [Stone Shape](/doc/stone-shape-Ni4NXltKR3). However, Stone Tea is known to induce erratic behavior individuals who are regularly exposed to sunlight.\n\n\n---\n\n- [x] Homebrew, Source - [Dungeon Church](https://5e.dungeon.church/items.html#gnomish%20tea%20set_dungeonchurch)\n\n\\\n",
-      "connections": 4,
-      "alignment": {
-        "stated": null,
-        "behavioral": {
-          "law_chaos": -0.13972891018632994,
-          "good_evil": 0.20103762434659056
-        },
-        "final": {
-          "law_chaos": -0.13972891018632994,
-          "good_evil": 0.20103762434659056
-        },
-        "confidence": 0.3,
-        "drift": 0.0,
-        "source": "propagated"
-      }
-    },
-    {
       "id": "89535718-6777-48dc-b529-8a9b42dfe0cf",
       "title": "Poltergeist",
       "urlId": "UdVS1rLmud",
@@ -12320,52 +12346,26 @@
       }
     },
     {
-      "id": "9e034329-234a-4a28-81ea-b404acbef0d1",
-      "title": "Ravenfolk",
-      "urlId": "2FqUStq1FR",
-      "collectionId": "ffaa3b03-1b56-4131-aedd-f208a0b3ed03",
-      "createdAt": "2023-11-13T02:04:19.147000+00:00",
-      "content": "\\\n ![](/api/attachments.redirect?id=ee103495-550d-46b3-bb69-646fd190348b \" =843x718\")\n\n# In Our Current Campaign\n\n> Few live amid so much rumor, suspicion, and outright falsehood as the ravenfolk. Depending on whom you ask, they might condemn the ravenfolk as nomads bearing misfortune or praise them as messengers from the gods. Ravenfolk are loyal comrades and treacherous thieves, brave warriors and contemptible cowards. They are despised for their strange and secretive nature, and criticized for having no true culture - only mimicry. These contradictions conceal a greater mystery few understand or know.\\n\\nThe Ravenfolk are the ethereal wanderers and messengers of Pyora, born from the celestial drama of deities and their caprices. They emerged from the feathers of [Eve](/doc/eve-QQyGI5YbZc), the winged consort of the [Raven Queen](/doc/raven-queen-95zkXkC4gg), who, in a fit of jealousy clipped Eve's wings to keep her faithful. These feathers, cast into the nether regions of the planes, took on life and consciousness, becoming the Ravenfolk.\n>\n> \\nCast out from their home, the Ravenfolk traverse the myriad planes of existence, seeking redemption and a path back to the favor of the Raven Queen. \n\n\n:::info\nRavenfolk = \u201cKenku\u201d in the official sources or \u201cRavenfolk\u201d in the Kobold Press books\n\n:::\n\n# Ravenfolk Traits\n\nThe ravenfolk are mysterious travelers of the planes who sometimes make their rookeries high in the towers of major cities, but usually travel as solitary wanderers. They are very rarely seen and most people believe their existence to be a myth.\n\n#### Ability Score Increase\n\nYour Dexterity score increases by 2 and your Charisma score increases by 1.\n\n#### Age\n\nRavenfolk reach adulthood at 10 years old, and can live to be 110.\n\n#### Alignment\n\nRavenfolk tend toward chaos thanks to their capricious and insatiable curiosity. Greed overwhelms some ravenfolk, drawing them toward evil.\n\n#### Size\n\nRavenfolk are slighter and shorter than humans. They range from 4 feet to just shy of 6 feet tall. Your size is Small or Medium.\n\n#### Speed\n\nYour base walking speed is 30 feet.\n\n#### Sudden Attack\n\nYou have advantage on attack rolls against a surprised creature.\n\n#### Mimicry\n\nRavenfolk can mimic any sound they've heard. Make a Charisma (Deception) check against the passive Wisdom (Insight) of any listeners. Success indicates they believe the sound you created was real.\n\n#### Trickster\n\nYou have proficiency in the Deception and Stealth skills.\n\n#### Languages\n\nYou can mimic Common perfectly and 3 additional languages poorly.\n\n ![](/api/attachments.redirect?id=c559849d-d726-43ae-aab4-d336cb8a6dc0)\n\n ![](/api/attachments.redirect?id=730f646f-034b-465b-b795-0f90ecdda19e)\n\n\n---\n\n**Source:** From Kobold Press *Midgard Heroes*\n\n[Kobold - Ravenfolk.pdf 6571677](/api/attachments.redirect?id=02711dae-2522-4f44-b241-597ca871de28)\n\n\\\n",
-      "connections": 7,
+      "id": "53be6be6-9e5f-4f73-a1a1-c1f8c1bda1ee",
+      "title": "Gnomish Tea Set",
+      "urlId": "HrqDVlit6V",
+      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
+      "createdAt": "2024-04-09T16:42:04.416000+00:00",
+      "content": " ![](/api/attachments.redirect?id=b539c8e0-8105-4837-a67c-32dd256c56f9)The gnomes are masters of the tea ceremony, and it is rare to find even a halfling on the surface who does not travel with their tea set. While most are made of metal because of it\u2019s durability, each tea set is handcrafted and unique to the person. Some are highly polished works of art, others are more functional in nature and so modified over the years by their user they more resemble some type of clockwork.\n\nGnomes of the Underdark are known to use their tea sets in communal rituals that allow them to [Stone Shape](/doc/stone-shape-Ni4NXltKR3) en masse. If enough gnomes participate in this ritual, they can effectively tunnel and travel through solid stone. The exact nature of this [Stone Tea](/doc/stone-tea-ik79CS5iIM) and it\u2019s ceremony are a tightly guarded gnomish secret.\n\n***Stone Tea*.** Gnomes and halflings who come from Underdark society know the secret of this brew, and an individual with a week\u2019s preparation time and the proper ingredients can summon enough magic to imbue a single tea ceremony ritual with [Stone Shape](/doc/stone-shape-Ni4NXltKR3). However, Stone Tea is known to induce erratic behavior individuals who are regularly exposed to sunlight.\n\n ![Jon Michael Route 'Moon Handle Teapot' (1998)](/api/attachments.redirect?id=c6495f39-1282-4348-b9a5-7557b791bd0b \" =2000x1988\")\n\n\n---\n\n- [x] Homebrew, Source - [Dungeon Church](https://5e.dungeon.church/items.html#gnomish%20tea%20set_dungeonchurch)\n\n\\\n",
+      "connections": 4,
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.07691286195144884,
-          "good_evil": 0.26520196997135953
+          "law_chaos": -0.13972891018632994,
+          "good_evil": 0.20103762434659056
         },
         "final": {
-          "law_chaos": 0.07691286195144884,
-          "good_evil": 0.26520196997135953
+          "law_chaos": -0.13972891018632994,
+          "good_evil": 0.20103762434659056
         },
         "confidence": 0.3,
         "drift": 0.0,
         "source": "propagated"
-      }
-    },
-    {
-      "id": "9f523314-098a-4159-91ed-0d6079723595",
-      "title": "Atashi",
-      "urlId": "atVd38Z9vD",
-      "collectionId": "098323c3-c9a2-45f4-ab12-ff8b759c5be7",
-      "createdAt": "2024-02-13T05:30:38.666000+00:00",
-      "content": " ![](/api/attachments.redirect?id=c683c70f-14ab-4bfa-8328-aa73c586008b \" =179x313\")\n\nBlind and elder monk mentor of [Bahruhn](/doc/bahruhn-bsKvF54uuT). Died of a fever; his death precipitated the uncovering of a conspiracy by [Abbot Agha](/doc/abbot-agha-JaATb0YfCD) - the head of [The ](/doc/the-khaneye-jun-fan-6tqXbPVyii)**[Khaneye Jun Fan](/doc/the-khaneye-jun-fan-6tqXbPVyii)**. ",
-      "connections": 4,
-      "alignment": {
-        "stated": {
-          "law_chaos": 0.5,
-          "good_evil": 0.8
-        },
-        "behavioral": {
-          "law_chaos": 0.5,
-          "good_evil": 0.8
-        },
-        "final": {
-          "law_chaos": 0.5,
-          "good_evil": 0.8
-        },
-        "confidence": 0.7,
-        "drift": 0.0,
-        "source": "llm"
       }
     },
     {
@@ -12579,29 +12579,6 @@
       }
     },
     {
-      "id": "866f9613-1791-4d58-97bc-5b74b321167d",
-      "title": "Virtual Table Player Info",
-      "urlId": "GKIAmafFdH",
-      "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
-      "createdAt": "2024-07-06T20:58:21.203000+00:00",
-      "content": "*We play virtually with\u2026*\n\n ![](/api/attachments.redirect?id=6aaaf3ad-e04e-4981-99e3-a35df4cc3061)\n\n\n:::info\nThe **one shot** tabletop is at <https://table.dungeon.church>\n\nThe **Galmaarden** campaign tabletop is at <https://galmaarden.dungeon.church>\n\n:::\n\n### [Virtual Game Survey](https://form.jotform.com/241319109770152)\n\n:arrow_up: Please fill out if you have not already :magic_wand:\n\n# Getting Access to Foundry\n\nTo get a Foundry account, ask your DM to set one up for you. Once you log in, you can change your password by right clicking yourself in the player list in the bottom right. \n\n ![](/api/attachments.redirect?id=f38c61d7-f184-46f8-9d24-b408f4238f3f)\n\nYou can create a new character sheet in the **\ud83d\udc64Actors** tab. [See below](https://lore.dungeon.church/doc/virtual-table-player-info-GKIAmafFdH#h-character-creation) for character creation instructions.\n\n# Resources\n\n* [FoundryVTT Discord](https://discord.gg/foundryvtt) has help channels\n* [FoundryVTT Knowledge Base](https://foundryvtt.com/kb/) has a Getting Started section\n* [FoundryVTT Keyboard Shortcut reference](https://foundryvtt.com/article/controls/)\n* [5eTools Discord](https://discord.gg/5etools) for help with Plutonium or 5eTools. \n  * ==Don\u2019t talk about 5eTools/Plutonium elsewhere== - most D&D spaces will ban you for \u201cpiracy\u201d :face_with_rolling_eyes:\n\n## Recommended Foundry Setup\n\n\n:::success\nFoundry runs in your browser. There is also a standalone [Foundry Lightweight Client](https://foundry.ruleplaying.com/flc) app that may help if you are having compatibility issues or using an older computer.\n\n:::\n\n\n:::info\n**\u2699\ufe0f** FoundryVTT Settings Tab **\u27a1\ufe0f** Configure Settings\n\n:::\n\n* Left Click to Release Objects - `Checked` idk why this isn\u2019t default behavior\n* Maximum Framerate `30` - 30 is plenty, go to `15` if your computer sucks\n* **\\[**:apple: **Mac Users\\]** Pixel Ratio Scaling `Off` - improves performance on Retina screens significantly\n* :potato: **Potato Computers \ud83e\udd54**: In the Foundry settings, there are a bunch of settings for the various animations and special effects. If you\u2019re still struggling, turn all of these off. You should also run the Discord call from a different device (ie. your phone, game console, tablet, etc.) since Discord itself is pretty resource intensive.\n* :warning: These settings are stored locally in your browser. If you switch computers, browsers, or clear your browser cache you will need to go back in and adjust them again.\n\n\n:::tip\nIt definitely helps to play Foundry with both a **keyboard *and* mouse**, just like you would a PC game! Get a nerdy headset, make sure all your stuff is charged and plugged in, set up a 2nd monitor/device if you\u2019ve got one, and get comfy :nerd_face:\n\n:::\n\n### Useful Shortcut Keys\n\n| **Shortcut** | **Action** |\n|:---:|----|\n| c | Toggle character sheet |\n| t | Target selected token |\n| Shift + Click to Roll | Roll normally & skip popup |\n| Control + Click to Roll | Roll Blind to GM |\n\n## Basic Troubleshooting\n\n\n1. FoundryVTT is officially designed for **Chrome** browser. **Firefox** also works fine. ==Before you try anything else, switch to Chrome tho== & make sure you're on the latest version. Safari **is not supported and does not work**.\n2. [Check your browsers 3D settings](https://foundry.ruleplaying.com/gpu) with this site. [Turn on hardware acceleration in your browser](https://forums.forge-vtt.com/docs?topic=11296 \"Turn on hardware acceleration in your browser\n   \n   (https://forums.forge-vtt.com/docs?topic=11296)\") if not - in many cases it's off by default (especially on laptops). This helps a lot!\n3. **Password manager & adblocker plugins are known to interfere** with Foundry! Turn them off or whitelist the `dungeon.church` domain in their settings.\n4. Foundry is a DIY solution and highly customizable - anything can be changed. If you're having issues or wish something worked differently, let me know.\n\n# Character Creation\n\nYou can use the Charactermancer feature to easily guide you through making your character. It is powered by our 5etools mirror at [https://5e.dungeon.church](https://5e.dungeon.church.)\n\n[https://www.youtube.com/watch?v=IAxAoL6-NCw](https://www.youtube.com/watch?v=IAxAoL6-NCw)\n\n**TLDR:**\n\n* Log in to Foundry\n* `Create New Actor` in the **\ud83d\udc64** **Actors** tab\n* Open your new sheet, then access the `Charactermancer` from the `\u2026` menu in top right.\n* This will guide you through the steps of making a character. In the left hand pane are the choices you need to make, in the right hand pane is a reference for the relevant rules.\n* You can also use this to level up or multi-class\n\n\n:::tip\n:printer: You can print your FoundryVTT characters for playing at a physical table! \\n\\nRight click on your character in the **Actors** tab, then select **Export Sheet**.\\n\\nThe PDF also includes item & spell cards :magic_wand:\n\n:::\n\n## Importing with Plutonium\n\nPlutonium Import is used for importing individual features, items, spells, etc. from 5etools into your sheet. You can also make your character this way if you prefer a little more hands on approach. Just add each thing you need using the importer:\n\n* Go to the :bust_in_silhouette: **Actors** tab in the right sidebar, open up your character sheet. Select `Plutonium Import` from `\u2026` Menu.\n* From the left column, select each feature you need to import one at a time (**Item, Spell, etc)**. Click \"Open Importer\". Make your selection and it will be added to your sheet. \n\n\\\n ![You can import all character features individually using Plutonium. Use the Wrench in the top left to edit ability scores and other minor details.](/api/attachments.redirect?id=7f5b9ea0-fe57-4227-83ab-cb3cad152e07) ![Select what you need to add from the left column, then hit Open Importer. This brings up the 5eTools content browser.](/api/attachments.redirect?id=0b7c2cb6-b857-4fd8-ae9d-4b8cfa33fcc7)\n\n## Importing from Web (Rivet)\n\nYou can also import content directly from the 5etools website into Foundry using the browser extension [Rivet](https://chromewebstore.google.com/detail/rivet/igmilfmbmkmpkjjgoabaagaoohhhbjde). When you have 5etools and Foundry open at the same time, you will see a paper airplane icon to send to Foundry.\n\n ![](/api/attachments.redirect?id=39c74afd-7d54-4fb1-bb48-3610133fd76e)If you want to add a feature or item to your character sheet, you can \u201c**Set as Rivet Target**\u201d to send it there.\n\n ![](/api/attachments.redirect?id=d1058874-b2e1-4150-b159-cb5dcb20d65f)\n\n# Additional Help\n\n## Preparing Spells\n\nIf you are playing a spellcaster class that [prepares your spells](https://5e.dungeon.church/book.html#phb,10,known%20and%20prepared%20spells,0), you have a *known* spell list and a *prepared* spell list. The importer will add all *known* spells to your sheet according to your class & level. To select which spells you have *prepared* there is a **Prepared Spell Mass Toggler** tool in the `\u2026` menu in the top right.\n\nWhen you need to swap spells, use this tool to select **\u2611\ufe0f** which ones you currently have prepared. If you need to add new spells to your known spell list, use the importer to add them individually. \n\n\\\n ![Preparing spells with the Mass Toggler tool](/api/attachments.redirect?id=95a72fe1-3ba2-46d4-86d9-8b19fc8a566e)\n\n## Filtering Your Options\n\nThe filters are very powerful and allow you to focus on just the specific things you are interested in. \n\nDungeon Church\u2019s Pyora setting is listed as a homebrew Source, with source tag red `CHURCH` which is another thing you can filter by.\n\n### Examples\n\n#### ***Your DM told you to use a Pyoran species***\n\nOpen the **Race & Subrace** Importer in Plutonium, then hit **Filter** on the list. \n\nYou can deselect everything (Source: `CLEAR` or `NONE` button) then reselect `Dungeon Church` under Homebrew\n\n ![](/api/attachments.redirect?id=e722f876-ee24-4059-892f-c3f0232d300a)\n\n#### ***You are a wizard looking for an extremely specific spell.***\n\nYou need a Level 5 spell, divination school so the cost is reduced, and you want to exclude anything that does ice damage because that doesn\u2019t fit in with your character\u2019s vibe.\n\n ![Filter by: 5th level Wizard spell, Divination school, no cold damage](/api/attachments.redirect?id=b02ab21e-a4a1-4477-8a72-cca0018470b3)\n\n#### ***You are a druid who is creating your [initial beast list](/doc/house-rules-OhKbZs6UV4)*\u2026**\n\nGo to the Creature importer and filter by what Beasts are available for [Wild Shape](/doc/wild-shape-bCuGgQx5Y9) in your chosen Environments\n\n ![](/api/attachments.redirect?id=1fbbdfd2-b37b-4a01-b732-6ab2d69f5fb4)",
-      "connections": 4,
-      "alignment": {
-        "stated": null,
-        "behavioral": {
-          "law_chaos": 0.1418717969202424,
-          "good_evil": -0.11286427074921132
-        },
-        "final": {
-          "law_chaos": 0.1418717969202424,
-          "good_evil": -0.11286427074921132
-        },
-        "confidence": 0.3,
-        "drift": 0.0,
-        "source": "propagated"
-      }
-    },
-    {
       "id": "55273286-0b05-4a96-bda4-e415b8104254",
       "title": "Steam Mephit",
       "urlId": "RsvOfpU21i",
@@ -12648,29 +12625,6 @@
         "confidence": 0.8,
         "drift": 0.0,
         "source": "llm"
-      }
-    },
-    {
-      "id": "532e455d-3861-4aa8-8668-ee3a6460c6bb",
-      "title": "Gibbering Mouther",
-      "urlId": "TgplvjaPZM",
-      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
-      "createdAt": "2024-02-24T04:23:28.732000+00:00",
-      "content": "*Medium aberration, Neutral*\n\n<https://soundcloud.com/kazzerax/gibbering-mouther-1>\n\n\n---\n\n* **Armor Class** 9\n* **Hit Points** 67 (`9d8 + 27`)\n* **Speed** 10 ft, swim 10 ft\n\n\n---\n\n| STR | DEX | CON | INT | WIS | CHA |\n|:---:|:---:|:---:|:---:|:---:|:---:|\n| 10 | 8 (-1) | 16 (+3) | 3 (-4) | 10 | 6 (-2) |\n\n\n---\n\n* **Condition Immunities** Prone\n* **Senses** Darkvision 60ft, PP 10\n* **Languages** !!Common!!\n* **Challenge** 2\n* **Proficency Bonus** +2\n\n\n---\n\n***Aberrant Ground.*** The ground in a 10-foot radius around the mouther is doughlike difficult terrain. Each creature that starts its turn in that area must succeed on a DC 10 Strength saving throw or have its speed reduced to 0 until the start of its next turn.\n\n***Gibbering.*** The mouther babbles incoherently while it can see any creature and isn\u2019t [incapacitated](https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Incapacitated). Each creature that starts its turn within 20 feet of the mouther and can hear the gibbering must succeed on a DC 10 Wisdom saving throw. On a failure, the creature can\u2019t take reactions until the start of its next turn and rolls a d8 to determine what it does during its turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action or bonus action and uses all its movement to move in a randomly determined direction. On a 7 or 8, the creature makes a melee attack against a randomly determined creature within its reach or does nothing if it can\u2019t make such an attack.\n\n### Actions\n\n***Multiattack.*** The gibbering mouther makes one bite attack and, if it can, uses its Blinding Spittle.\n\n***Bite.*** *Melee Weapon Attack:* +2 to hit, reach 5 ft., one creature. *Hit:* 17 (`5d6`) piercing damage. If the target is Medium or smaller, it must succeed on a DC 10 Strength saving throw or be knocked [prone](https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Prone). If the target is killed by this damage, it is absorbed into the mouther.\n\n***Blinding Spittle (Recharge 5\u20136).*** The mouther spits a chemical glob at a point it can see within 15 feet of it. The glob explodes in a blinding flash of light on impact. Each creature within 5 feet of the flash must succeed on a DC 13 Dexterity saving throw or be [blinded](https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Blinded) until the end of the mouther\u2019s next turn.\n\n\n---\n\n ![](/api/attachments.redirect?id=9452a0ad-e0f2-40c7-bad9-979e7933ed63)\n\nOf all the terrors created by foul sorcery, gibbering mouthers are among the most wicked and depraved. This creature is the composite eyes, mouths, and liquefied matter of its former victims. Tormented by the destruction of their bodies and absorption into the mouther, those victims gibber incoherently and are forced to consume everything in reach.\n\n***Amoeboid Form.*** The gibbering mouther\u2019s body is an amorphous mass of mouths and eyes that propels itself by oozing forward, fastening several mouths to the ground and pulling its bulk behind. Though it moves slowly, it swims through water, mud, and quicksand with ease.\n\n***Horrifying Cacophony. ***When a gibbering mouther senses prey, its mouths begin to murmur and chatter, each with a different voice: deep or shrill, wailing or ululating, crying out in agony or ecstasy. This cacophonous gibbering overcomes the senses of any creature that hears it, causing most to flee in terror. Others are overcome with confusion or stand paralyzed, fixated on the horrific creature as it oozes forward to consume them.\n\n***All-Consuming.*** Driven to devour any creature it can reach, a gibbering mouther flows over victims transfixed by its ranting, its multitudinous voices temporarily silenced as it gnaws and swallows living flesh. The monster liquefies stone with which it comes into contact, hindering creatures that overcome its gibbering and attempt to flee.\n\nA gibbering mouther leaves nothing of its prey behind. However, even as the last of a victim\u2019s body is consumed, its eyes and mouth boil to the surface, ready to join the chorus of tormented gibbering that welcomes the monster\u2019s next meal.\n\n- [ ] Homebrew **Sources:** [MM](https://5e.dungeon.church/bestiary.html#gibbering%20mouther_mm,fbmt:sand\\~b1\\~b0,flstsource:hftt=1\\~rmbre=1\\~aatm=1\\~aitfr-isf=1\\~aitfr-thp=1\\~aitfr-dn=1\\~aitfr-fcd=1\\~awm=1\\~coa=1\\~crcotn=1\\~dod=1\\~dodk=1\\~egw=1\\~ghloe=1\\~gotsf=1\\~hat-tg=1\\~hwcs=1\\~imr=1\\~llk=1\\~lr=1\\~mabjov=1\\~mcv1sc=1\\~mcv2dc=1\\~mcv3mc=1\\~mcv4ec=1\\~mismv1=1\\~mff=1\\~mgelft=1\\~nrh-tcmc=1\\~nrh-avitw=1\\~nrh-ass=1\\~nrh-coi=1\\~nrh-tlt=1\\~nrh-awol=1\\~nrh-at=1\\~psa=1\\~psd=1\\~psi=1\\~psk=1\\~psx=1\\~psz=1\\~rtg=1\\~sads=1\\~tdcsr=1\\~ttp=1\\~vd=1\\~hfstcm=1\\~sja=1\\~lk=1\\~lrdt=1\\~tob1-2023=1,flopsource:extend,fbsr:gibbering)\n\n\\\n",
-      "connections": 2,
-      "alignment": {
-        "stated": null,
-        "behavioral": {
-          "law_chaos": -0.039873702996830164,
-          "good_evil": -0.09838662818009035
-        },
-        "final": {
-          "law_chaos": -0.039873702996830164,
-          "good_evil": -0.09838662818009035
-        },
-        "confidence": 0.3,
-        "drift": 0.0,
-        "source": "propagated"
       }
     },
     {
@@ -12851,12 +12805,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.673399312031005,
-          "good_evil": 0.5203972292119112
+          "law_chaos": 0.6706618200977823,
+          "good_evil": 0.5228460884237506
         },
         "final": {
-          "law_chaos": 0.673399312031005,
-          "good_evil": 0.5203972292119112
+          "law_chaos": 0.6706618200977823,
+          "good_evil": 0.5228460884237506
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -12969,12 +12923,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.14391007889170543,
-          "good_evil": 0.24850749678810102
+          "law_chaos": 0.1439074976857867,
+          "good_evil": 0.24850452249828534
         },
         "final": {
-          "law_chaos": 0.14391007889170543,
-          "good_evil": 0.24850749678810102
+          "law_chaos": 0.1439074976857867,
+          "good_evil": 0.24850452249828534
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -13057,29 +13011,6 @@
       }
     },
     {
-      "id": "ae415f5f-d2a7-4d96-a977-7bb74aca177a",
-      "title": "Session 24: The Hunt",
-      "urlId": "tgDf5YJbgf",
-      "collectionId": "13b87098-500c-490d-ae46-01356387fe88",
-      "createdAt": "2024-04-22T06:04:03.429000+00:00",
-      "content": "4/21/24\n\n* [Grey Rivermoon](/doc/grey-rivermoon-p54iB0ukBr) @[Ryk Sheppard](mention://4941189e-07a2-40b5-8e91-9d27960134a7/user/306eb823-ba3d-4c22-855d-e7711b311662) \n* [Greyson Adams](/doc/greyson-adams-0y5qoKwfDR) @[Lowfi Steve](mention://a6c926cb-eb8a-40f9-80a6-f51abf83c6e4/user/cf6c5a84-febc-4585-b826-f419e23f3ccd) \n* [Ama](/doc/amastacia-aspensong-7Wl2NAGQ9A) @[Toni](mention://8c2c3e04-6022-4633-9e06-c541ef134b56/user/b107b3d5-cccf-4184-b91b-accfd1e42b3e) \n* [Bahruhn](/doc/bahruhn-bsKvF54uuT) @[Arman Daniel Catterson](mention://298f4b27-61b8-4584-bc83-096f7ca478b3/user/9003b75e-5376-4490-a845-0e47818504ce) \n* [Rado](/doc/rado-khfSywxKIF) @[Robby Borton](mention://cdbe5983-d98a-425a-b8e5-c81f3dd8b401/user/8cc73826-3758-4850-9fd3-57c4506d73a6) \n\n# Butcher\u2019s Dungeon\n\n> You stand within this now quite underground cavern, your boots soaked blood, it\u2019s inescapable iron scent filling your nostrils. The clinking of chains echoes through this cursed place, twinkling like an infernal melody in the murky darkness. Candles burn a sooty light that casts a web of shadows on the walls.\\n\\nFrom the far side of the altar a voice pierces the silence, echoing with a chilly resonance : \n>\n> \\n**Esteemed interlopers, I bow before your power! I beseech your uncorrupted souls to unshackle my bonds the way you have unshackled my torturer\u2019s head from his body.\u201d**\\n\\nHis eyes peer out from behind the altar, glowing with red fire. He laughs the laugh of a child, his echoing with the clinking of the swaying chains.\\n\\n**Grant me that sweet libation of freedom, and I shall show you their inner sanctum\u2026.\u201d**\n\nZargnaw attempts to bargain with them: kill [Eldan](/doc/eldan-fletcher-QWyA10eG7I), and he\u2019ll open the guild\u2019s inner sanctum to them. He looks at the hearts on the altar longingly, \u201cThey did that to me\u2026\u201d. He spider climbs the wall and uses his clawed finger to draw the outline of a door in burning red magic, revealing a heavy metal door bolted and locked into the rock. \n\nThe party hears the celebration upstairs still going on, now very late into the night. They stand in this terrible cavern, with the hearts still pumping blood on the altar. Grey skewers one on his sword, as the others debate their next move. They are unsure whether to trust the Iron Riders, or [Zargnaw](/doc/zargnaw-gZYDM82FXz), and think they should try to escape without being seen.\n\nThey decide to swim back up the well since they all need a bath and a good rest.\n\nUnfortunately when they surface, dozens of guildsmen and [Iron Riders](/doc/iron-riders-of-abraxas-P77pTaxjou) are in the courtyard around a great bonfire. \u201cAh there they are you cheeky bastards, swimming in the well!\u201d Several hands reach to draw them up and out of it, dripping wet, and drinks are put in their hands. \u201cYou can\u2019t leave yet - the best part of our tradition is just about to happen!\u201d\n\nThe party looks around for anyone they know and see [Saxton](/doc/saxton-pope-CJaIQ4Kkdw) & [Commodore Warrington](/doc/commodore-daniel-warrington-OHzOMkhMHS) sees both sitting on a dias, at two chairs, with an empty throne in between them. They also notice that everyone here is very heavily armed, and an anticipatory menace permeates the crowd.\n\n# The Hunting Party\n\nAs the first hint of civil twilight, with the darkest part of the night past, everyone looks to the wrought iron gate of the guildhall being opened by torchbearers, and a young woman in a flowing red dress rides in atop a skeletal horse. Greyson mutters under his breath, *\u201dAmelia!\u201d*\n\n ![](/api/attachments.redirect?id=2a7038c0-171a-47d3-9856-2d10f058c983)She dismounts the undead beast and is escorted by guildsmen to the platform. She takes her place between Saxton and Warrington, who fill a wine glass for her. The party feels the guildsmen surround them, slowing pushing them up towards the front of the crowd. Amelia, rising and raising her glass to the crowd, which has now gone quiet, she says:\n\n> Loyal servants of the [Lady of the Wood](/doc/lady-nightshade-3kjLNj2Zbs) and valiant warriors of the Iron Riders, I am honored to see you off this morning. Together, as comrades, we embark on a hunt like no other\u2014a pursuit that shall test the mettle of all who attempt it and prove the unwavering strength of our alliance. May the darkness guide your steps and the thrill of the chase invigorate your spirits.\\n\\nHer gaze then turns to the party, her expression a mix of amusement and dark promise.\\n\\n\"And to our esteemed guests, the choices before you are as stark as the night is long. Join us in our noble endeavor, mark your allegiance by signing your names in the ancient ledger, and hunt those who have been marked by fate. Embrace the honor of the hunter, and enjoy the spoils and protections that come with those who prove their devotion to our Queen\u2026\n\nTwo Iron Riders - [Mara](/doc/mara-dADMrr538D) and [Erik](/doc/erik-jorgansen-cfriEl7OGK) - drag a bound and chained [Cerric Shadowleaf](/doc/cerric-shadowleaf-jMvCl3ogF1), who appears furious and curses and kicks at his captors. They throw him to the ground in front of Amelia, drawing their swords as they stand over him.\n\nAmelia calls out, \u201c[Iron Thrax](/doc/iron-thrax-XjradLKM25)! You wish to gain the favor of our Lady?\u201d\n\nIron Thrax is similarly thrust out to the front beside the party. He seems flummoxed, looking horrified at Cerric in front of him. \u201cMistress, this hunt\u2026. my own family was killed by butchers\u2026\u201d\n\nAmelia responds: \u201cDid you not tell me you would do anything to avenge them? Pay any price, even your soul? Today I name my price: Make your choice to be a hunter, or join the hunted.\u201d\n\nIron Thrax responds dejectedly, \u201cI will hunt\u201d\n\n\u201cJust as you my Lady bound me to her, I bind thee to me.\u201d She places a golden brooch with the symbol of the guild around his shoulders, similar to the one that Saxton wears. \n\nAmelia asks the party the same question. Grey lunges out at her with a reckless attack, but Amelia waves her hand in a bored manner at him and he [freezes in time](/doc/time-stop-u5l0EnWL4r), suspended in the air as he jumps with weapon in hand. The party refuses.\n\nAs the sunlight finally cracks the horizon, Amelia says: \u201cMy time here is coming to an end, in my absence the Knight of Day will watch over the proceedings.\u201d\n\nAs she says this, everyone smells the distinct smell of burning flesh on the wind.\n\nAmelia snaps her fingers and turns into a mist.\n\nThe hunt begins. A [horn](/doc/guildmasters-hunting-horn-PkmJIssiGT) is blown.\n\n# The Hunt\n\nThe crowd cheers and the gates of the guildhall are thrown open. Greyson uses his magic ring to create a poof of mist around the party as a diversion. Guildsmen bring out packs of dogs and ready their weapons as they laugh. Cerric shouts, *\u201dRUN!!!!!\u201d* and the party sprints. The dogs are unleashed, and Greyson trips, going down. Ama and Rado alternate [Wall of Thorns](/doc/wall-of-thorns-wEDoOfhshp) and sticky spider [Webs](/doc/web-vW8qhEOjRB) to hold their pursuers back and are successful. They gain the party a good lead, as they burst out of the town gates and run into the woods with the dogs baying fading into the distance.\n\nThey first attempt to create a diversion, taking the stinking dragon\u2019s head out of their bag of holding. Bahruhn runs it up a tree, smearing viscera and bad smells everywhere. Cerric tells them he knows there is an elven ruin they could take refuge in, but without the powers of the guild he doesn\u2019t know how to navigate to it. They push through some minor forest inconveniences.\n\n## The Briar Patch\n\nThe game trail they\u2019re following ends abruptly at a large patch of blackberry briars, sharp thorns glistening with dew and berries so ripe you can smell the fermentation. Rado uses his [Detect Magic](/doc/detect-magic-eyp2IwEbpj) to see if he can get a better idea of which way to go, and finds they are near an illusion of some sort. He reaches out to touch the briars, and as he nears them the vines pull back with quick, snake-like motions\u2026 revealing a path.\n\n ![](/api/attachments.redirect?id=3dd2da37-b899-46e8-a026-4c53d761c67a)The party doesn\u2019t feel good about this, but they follow the path. It closes up behind them, but continues to reveal itself as they walk through the briars. Around them, they hear a distinct clicking noises coming from multiple directions. Ama thinks they might be finches.\n\nJust as they feared, it was a trap. Suddenly several [briar children](/doc/child-of-the-briar-sI5pUsj9VA) pop up out of the berry laden bushes and the vines rush out to entangle the party. They get everyone except Grey, who kicks at one of the little stick people as it stabs him in the ankle with a thorny trident.\n\nA briar child wearing a crown and smoking a corncob pipe with the pungent smell of [dreamvine](/doc/dream-vine-viEBw5FxT7). He blows smoke rings at the party. \u201cWell well well what do we have here? A whole party, what do you know. It\u2019s time to pay the toll folks! Give me something shiny\u201d he says greedily.\n\nThe other briar children laugh, until Grey threatens fire. They get very agitated, \u201cNone of that big man!!! Just give us what we want!!\u201d as the party hears the baying hounds getting closer.\n\nAfter some bargaining back and forth, the party establishes a rapport with the bandits and give up a few precious stones and pieces of gold and platinum. Now much nicer, the briar king introduces himself as [King Thistletongu](/doc/king-thistletongue-glZXlT4FaG)e and what he really wants is a shiny whistle.\n\nHaving bought off his good will, the briar children mischievously promise to delay the hunters.\n\n## Burning Meadow\n\nThe party continues on there way and comes to a meadow, still smoldering as if from a wildfire. In the center of the field is a single blackened oak tree, with a charred deer carcass hanging from a chain. Beneath the dead animal is it\u2019s heart, slowly beating black blood\u2026 a burning trail leads away into the woods.\n\nThe party thinks back to the burning gulthias tree in the [Sunless Temple](/doc/sunless-temple-yS5i3gqWiO), and wonder - who is the Knight of Day? Rado thinks this place feels void of life and magic.\n\nSeveral nightingales come and sing over the corpse of the deer, as if in eulogy.\n\n## Ambush\n\nThe party continues and comes to a shallow stream, about 15 feet across. They skip across the rocks (or Ama walks, magically) and examine a much weathered statue of obvious elven origin. Cerric comments that they must be on the right track. Then they hear a rustling in the bushes\u2026 and out comes an Owlbear, pissed off. Grey begins to whack at it with his sword.\n\nAt this moment, the hounds finally catch up catching the party split across opposite sides of the stream. The baying of the [spellhounds](/doc/spellhound-P8vzvEmuaZ) causes Rado\u2019s magic to misfire, it\u2019s droning resonance getting into his head. Taking hits from both sides, the guildsmen arrive after their hounds - Eldan, Iron Thrax, and Saxton all engaging with their greatswords and firing crossbow bolts at the party. Bahruhn takes several successful runs at the Owlbear, then Ama casts [Shatter](/doc/shatter-yjdXR6DPdg) and the Owlbear\u2019s head explodes in a brief moment of victory. Bahruhn returns to the frey on the other side of the stream only to be struck down by Commodore Dan. Greyson gets in a bunch of good stabs and evasions, and finally Eldan goes down as well. The guildsmen surround their injured comrade and begin to pull him back into the brush, making a retreat as they hold up shields and ready their crossbows menacingly at the party. Grey makes a final rush at them, dodging their crossbow bolts as they leave behind the party in not much better shape than their attackers.\n\n ![](/api/attachments.redirect?id=4a46a55c-70b2-4d63-b142-0b206e2b7cd0) ![](/api/attachments.redirect?id=52567112-ddc3-4fa5-914d-58255a816132)\n\n\n---\n\n- [x] Homebrew added: [King Thistletongue](/doc/king-thistletongue-byqTEswqZE)\n\n\\\n",
-      "connections": 23,
-      "alignment": {
-        "stated": null,
-        "behavioral": {
-          "law_chaos": -0.04594868698741656,
-          "good_evil": -0.04712789526393865
-        },
-        "final": {
-          "law_chaos": -0.04594868698741656,
-          "good_evil": -0.04712789526393865
-        },
-        "confidence": 0.3,
-        "drift": 0.0,
-        "source": "propagated"
-      }
-    },
-    {
       "id": "f4804bd7-6dc5-49a0-b8aa-a1b4b15edb44",
       "title": "Mite",
       "urlId": "pRblyvMyf7",
@@ -13090,12 +13021,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.14391007889170543,
-          "good_evil": 0.24850749678810102
+          "law_chaos": 0.1439074976857867,
+          "good_evil": 0.24850452249828534
         },
         "final": {
-          "law_chaos": 0.14391007889170543,
-          "good_evil": 0.24850749678810102
+          "law_chaos": 0.1439074976857867,
+          "good_evil": 0.24850452249828534
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -13208,12 +13139,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.6596826621749876,
-          "good_evil": 0.09666177020803648
+          "law_chaos": 0.6576516197729192,
+          "good_evil": 0.09847866575230443
         },
         "final": {
-          "law_chaos": 0.6596826621749876,
-          "good_evil": 0.09666177020803648
+          "law_chaos": 0.6576516197729192,
+          "good_evil": 0.09847866575230443
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -13244,29 +13175,6 @@
       }
     },
     {
-      "id": "6ba4ce39-5a83-4a3b-86f4-72863d3c10bb",
-      "title": "Iron Rider Hunter",
-      "urlId": "kPxugCHSLi",
-      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
-      "createdAt": "2024-05-08T05:01:59.389000+00:00",
-      "content": "## Iron Rider Hunter\n\n*Medium Humanoid (Any Race), any alignment*\n\n\n___\n\n* **Armor Class** 15 (chain shirt)\n* **Hit Points** 26 (`4d8 + 8`)\n* **Speed** 30 ft.\n\n\n___\n\n| STR | DEX | CON | INT | WIS | CHA |\n|:---:|:---:|:---:|:---:|:---:|:---:|\n| 13 (+1) | 15 (+2) | 14 (+2) | 12 (+1) | 13 (+1) | 10 (+0) |\n\n\n___\n\n ![](/api/attachments.redirect?id=ead03a8b-55ca-4f5a-a1ae-50166a7ded56 \"right-50\")\n\n* **Skills** Investigation +3, Perception +3, Religion +3, Survival +3\n* **Senses** passive Perception 13\n* **Languages** any two languages\n* **Challenge** 1 (200 XP)\n* **Proficiency Bonus** +2\n\n\n___\n\n***Iron Rider's Awareness.*** The Iron Rider hunter can expend a 1st-level ranger spell slot to sense for 1 minute whether arcane or innate spellcasters, aberrations, fey, and fiends are within 1 mile. This trait doesn't reveal the creatures' locations or numbers.\n\n***Spellcasting.*** The Iron Rider hunter is a 3rd-level spellcaster. Its spellcasting ability is Wisdom. The hunter knows the following ranger spells:\n\n1st level (3 slots): [detect magic](/doc/detect-magic-eyp2IwEbpj), [hunter's mark](/doc/hunters-mark-wWqu8hUN7X), [protection from evil and good](/doc/protection-from-evil-and-good-lzxbgYM3jv)\n\n### Actions\n\n***Multiattack.*** The Iron Rider hunter makes two shortsword attacks, provided it has a shortsword in each hand.\n\n***Shortsword.*** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (`1d6 + 2`) piercing damage and 2 (`1d4`) psychic damage, or 5 (`2d4`) psychic damage if the target is concentrating on a spell.\n\n***Longbow.*** Ranged Weapon Attack: +4 to hit, ranged 150/600 ft., one target. Hit: 6 (`1d8 + 2`) piercing damage and 2 (`1d4`) psychic damage, or 5 (`2d4`) psychic damage if the target is concentrating on a spell.\n\n\n---\n\n- [x] Homebrew: Source [Dungeon Church](https://5e.dungeon.church/bestiary.html#iron%20rider%20hunter_dungeonchurch) (modified from Grim Hollow Monsters Guide)\n\n\\\n",
-      "connections": 2,
-      "alignment": {
-        "stated": null,
-        "behavioral": {
-          "law_chaos": 1.0,
-          "good_evil": 0.0
-        },
-        "final": {
-          "law_chaos": 1.0,
-          "good_evil": 0.0
-        },
-        "confidence": 0.3,
-        "drift": 0.0,
-        "source": "propagated"
-      }
-    },
-    {
       "id": "0da9366c-d4ba-4705-96be-082c826cf98b",
       "title": "Swarm of Animated Books",
       "urlId": "6gLv4mcFXc",
@@ -13277,12 +13185,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.059765017651974214,
-          "good_evil": 0.23992857297762527
+          "law_chaos": 0.05976303038543922,
+          "good_evil": 0.2399262830763922
         },
         "final": {
-          "law_chaos": 0.059765017651974214,
-          "good_evil": 0.23992857297762527
+          "law_chaos": 0.05976303038543922,
+          "good_evil": 0.2399262830763922
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -13385,6 +13293,29 @@
       }
     },
     {
+      "id": "6ba4ce39-5a83-4a3b-86f4-72863d3c10bb",
+      "title": "Iron Rider Hunter",
+      "urlId": "kPxugCHSLi",
+      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
+      "createdAt": "2024-05-08T05:01:59.389000+00:00",
+      "content": "## Iron Rider Hunter\n\n*Medium Humanoid (Any Race), any alignment*\n\n\n___\n\n* **Armor Class** 15 (chain shirt)\n* **Hit Points** 26 (`4d8 + 8`)\n* **Speed** 30 ft.\n\n\n___\n\n| STR | DEX | CON | INT | WIS | CHA |\n|:---:|:---:|:---:|:---:|:---:|:---:|\n| 13 (+1) | 15 (+2) | 14 (+2) | 12 (+1) | 13 (+1) | 10 (+0) |\n\n\n___\n\n ![](/api/attachments.redirect?id=ead03a8b-55ca-4f5a-a1ae-50166a7ded56 \"right-50\")\n\n* **Skills** Investigation +3, Perception +3, Religion +3, Survival +3\n* **Senses** passive Perception 13\n* **Languages** any two languages\n* **Challenge** 1 (200 XP)\n* **Proficiency Bonus** +2\n\n\n___\n\n***Iron Rider's Awareness.*** The Iron Rider hunter can expend a 1st-level ranger spell slot to sense for 1 minute whether arcane or innate spellcasters, aberrations, fey, and fiends are within 1 mile. This trait doesn't reveal the creatures' locations or numbers.\n\n***Spellcasting.*** The Iron Rider hunter is a 3rd-level spellcaster. Its spellcasting ability is Wisdom. The hunter knows the following ranger spells:\n\n1st level (3 slots): [detect magic](/doc/detect-magic-eyp2IwEbpj), [hunter's mark](/doc/hunters-mark-wWqu8hUN7X), [protection from evil and good](/doc/protection-from-evil-and-good-lzxbgYM3jv)\n\n### Actions\n\n***Multiattack.*** The Iron Rider hunter makes two shortsword attacks, provided it has a shortsword in each hand.\n\n***Shortsword.*** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (`1d6 + 2`) piercing damage and 2 (`1d4`) psychic damage, or 5 (`2d4`) psychic damage if the target is concentrating on a spell.\n\n***Longbow.*** Ranged Weapon Attack: +4 to hit, ranged 150/600 ft., one target. Hit: 6 (`1d8 + 2`) piercing damage and 2 (`1d4`) psychic damage, or 5 (`2d4`) psychic damage if the target is concentrating on a spell.\n\n\n---\n\n- [x] Homebrew: Source [Dungeon Church](https://5e.dungeon.church/bestiary.html#iron%20rider%20hunter_dungeonchurch) (modified from Grim Hollow Monsters Guide)\n\n\\\n",
+      "connections": 2,
+      "alignment": {
+        "stated": null,
+        "behavioral": {
+          "law_chaos": 1.0,
+          "good_evil": 0.0
+        },
+        "final": {
+          "law_chaos": 1.0,
+          "good_evil": 0.0
+        },
+        "confidence": 0.3,
+        "drift": 0.0,
+        "source": "propagated"
+      }
+    },
+    {
       "id": "0c8d370e-bfaf-4a9f-88be-c35ad1b57a25",
       "title": "Dire Wolf",
       "urlId": "Vedxigkw0u",
@@ -13441,12 +13372,35 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": -0.18943477098410183,
-          "good_evil": -0.12426693899831381
+          "law_chaos": -0.1896279359112173,
+          "good_evil": -0.12448952041705816
         },
         "final": {
-          "law_chaos": -0.18943477098410183,
-          "good_evil": -0.12426693899831381
+          "law_chaos": -0.1896279359112173,
+          "good_evil": -0.12448952041705816
+        },
+        "confidence": 0.3,
+        "drift": 0.0,
+        "source": "propagated"
+      }
+    },
+    {
+      "id": "33819209-830c-4e56-a524-8e4e5a739467",
+      "title": "Guildmaster's Hunting Horn",
+      "urlId": "PkmJIssiGT",
+      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
+      "createdAt": "2024-07-16T02:53:34.857000+00:00",
+      "content": "> A polished brass horn, beautifully etched with a scene of dogs pursuing a buck through the woods, and dressed with a leather strap for carrying over the shoulder. Carried by the guildmaster of [Burle Hunter\u2019s Guild](/doc/burle-hunters-guild-TFqCs3pSJy) and traditionally blown at the start of their organized hunts and to mark holiday celebrations.\n\nThis horn has 2 charges and resets at dawn. Daily, you may choose the creature type of your quarry. When you use an action to blow the horn, all creatures that can hear it within 600 feet of your chosen type must make a DC 13 Wisdom saving thrown or be frightened.\n\n ![](/api/attachments.redirect?id=a6387da7-309e-4190-aed1-76cf4caec3b7)\n\n\n---\n\n- [x] Homebrew source: [Dungeon Church](https://5e.dungeon.church/items.html#guildmaster's%20hunting%20horn_dungeonchurch)\n\n\\\n",
+      "connections": 4,
+      "alignment": {
+        "stated": null,
+        "behavioral": {
+          "law_chaos": -0.15190737720588787,
+          "good_evil": -0.11991771238343753
+        },
+        "final": {
+          "law_chaos": -0.15190737720588787,
+          "good_evil": -0.11991771238343753
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -13513,12 +13467,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": -0.03050902092696237,
-          "good_evil": -0.24334228273163017
+          "law_chaos": -0.031081405603908926,
+          "good_evil": -0.242830248532791
         },
         "final": {
-          "law_chaos": -0.03050902092696237,
-          "good_evil": -0.24334228273163017
+          "law_chaos": -0.031081405603908926,
+          "good_evil": -0.242830248532791
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -13569,6 +13523,32 @@
         "confidence": 0.3,
         "drift": 0.0,
         "source": "propagated"
+      }
+    },
+    {
+      "id": "3d02c7d2-5ee1-4d30-a066-1dca9182a10e",
+      "title": "Sopia Wavecrest",
+      "urlId": "JsFrGtX2pM",
+      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
+      "createdAt": "2024-07-14T17:48:14.156000+00:00",
+      "content": "# **Character Sheet**\n\n[https://docs.google.com/document/d/1HUJl-MG3T6Aj7nsXDkebVAd6G722IeQ8t2ZRyeKrF%5FY/edit?usp=sharing](https://docs.google.com/document/d/1HUJl-MG3T6Aj7nsXDkebVAd6G722IeQ8t2ZRyeKrF%5FY/edit?usp=sharing)\n\n# Backstory\n\nBorn in the small but bustling pirate settlement of [Blue Harbour](/doc/blue-harbour-BvSEhfEXJ5) to parents of the aforementioned profession, Sopia was instilled with a love for the sea and the perils it prosed from a young age. An [elfmarked](/doc/elfmarked-ohkfCOb0aT) child, it was hard to say if it was the blood of the Travelers or her parents\u2019 unconventional profession that led her to dog the various captains and crews that visited her home, but in the end, the result was the same. She followed them, she learned from them when they allowed it, and when time came that she could hold her own on the rolling deck of a ship, she signed on with the man who had taken the most interest in her budding career. That man was [Ruhrin Starhelm](/doc/ruhrin-starhelm-w8g2zPDAO5), Captain of the *[Tempest\u2019s Embrace](/doc/tempests-embrace-rwK9njgwMz)*.  \\n\\nPerhaps he saw some measure of himself in her\u2014 he too had been an Elfmarked youth, ripe with potential and drawn inexorably the sea and all it promised. Ultimately, she thrived under his guidance; with a sharp mind and unwavering loyalty, she quickly worked her way through the ship\u2019s ranks and gained the position of First Mate. There, she thrived, guiding the crew through numerous successful raids and defenses against rivals, always upholding the Articles of Agreement that bound the [Confederacy of Hearthships](/doc/confederacy-of-hearthships-EDksxQvprt) together.\n\nIt was not to last. Disaster struck in the form of a marked rogue; a [Tribeborn](/doc/tribeborn-KVgPsdxk3f) [Storm Baron](/doc/storm-barons-9bIflGjrAd) called [Marek,](/doc/baron-marek-jRmX1mC2c5) whose daring had pushed him further than the Articles would give grace for. He had violated the Oaths\u2014 and so, the Tempest\u2019s Embrace had set upon his ship. Justice though, would not prevail that day. The Tempest\u2019s crew was routed. Captain Starhelm was slain, and the creature responsible for his destruction now claimed their ship as his prize.  \\n\\nIn the end, those members of the crew who refused to submit to the druid\u2019s rule were put to the sword and left for dead on an isolated beachhead. Sopia numbered among those who survived, and after burying the remains of their crew, the diminished crew limped to the nearest port of call\u2014 [Saltmarsh](/doc/saltmarsh-GkGI6ISio5).  \\n\n\n# Present Day\n\nNow in Saltmarsh, Sopia is a displaced corsair bent on revenge and justice. Haunted by the loss of her ship and the death of her Captain, she is driven by the need to restore her lost honor and find justice for the fallen Starhelm.\n\n***Personality Traits***\n\n **Loyal** \u2013 Without doubt, Sopia remains loyal to her crew and the Confederacy. Even now, she holds unto the Articles of Agreement. \n\n**Resourceful** \u2013 After being stranded into the wild, Sopia is a resourceful and flexible person.\n\n***Ideals***\n\n**Freedom** \u2013 Valuing freedom on the open sea and the autonomy of the ships of the Confederacy. \\n**Justice** \u2013 Devoted to avenging Captain Starhelm's death and to bringing the Tempest's Embrace back from Marek.\n\n***Bonds***\n\n**Captain Starhelm** \u2013 Sopia feels quite the loyalty to her fallen captain and is driven by vengeance and justice. \n\n**The Crew** \u2013 She considers the remnants her crew her family and will go to great lengths to protect and support them.\n\n***Flaws***\n\n**Vengeful** \u2013 Sopia's desire for revenge against Marek can sometimes cloud her judgment and lead her into dangerous situations. \n\n**Haunted** \u2013 The loss of the Tempest's Embrace and the betrayal by Marek weigh heavily on her mind, sometimes causing her to doubt her decisions.\n\n ![](/api/attachments.redirect?id=1546a582-152d-4351-8bf3-60c3ed8e84e7)\n\n\\\n",
+      "connections": 10,
+      "alignment": {
+        "stated": {
+          "law_chaos": 0.0,
+          "good_evil": 0.0
+        },
+        "behavioral": {
+          "law_chaos": 0.11250000000000003,
+          "good_evil": 0.08119565217391309
+        },
+        "final": {
+          "law_chaos": 0.0,
+          "good_evil": 0.0
+        },
+        "confidence": 1.0,
+        "drift": 0.0,
+        "source": "explicit"
       }
     },
     {
@@ -13677,12 +13657,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.1531449320388033,
-          "good_evil": 0.08755560368620385
+          "law_chaos": 0.12006558606254104,
+          "good_evil": 0.1326140764550861
         },
         "final": {
-          "law_chaos": 0.1531449320388033,
-          "good_evil": 0.08755560368620385
+          "law_chaos": 0.12006558606254104,
+          "good_evil": 0.1326140764550861
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -13726,12 +13706,35 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.1764338545630503,
-          "good_evil": 0.13139284203408308
+          "law_chaos": 0.17351486098815197,
+          "good_evil": 0.13536832719400074
         },
         "final": {
-          "law_chaos": 0.1764338545630503,
-          "good_evil": 0.13139284203408308
+          "law_chaos": 0.17351486098815197,
+          "good_evil": 0.13536832719400074
+        },
+        "confidence": 0.3,
+        "drift": 0.0,
+        "source": "propagated"
+      }
+    },
+    {
+      "id": "30839dce-1e5b-47f8-914b-2cfd4ae1b07c",
+      "title": "Rationing Spice",
+      "urlId": "iguPtdfdS2",
+      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
+      "createdAt": "2024-04-12T06:33:19.258000+00:00",
+      "content": "### Rationing Spice ![](/api/attachments.redirect?id=0e48163e-ccdd-47d8-9f6c-fd0b55cfc89c \"right-50\")\n\n*Food, common*\n\n\n---\n\nWhen applied liberally to food, this reddish powder gives the consumer the feeling that they are eating twice as much and so are satiated on half a normal ration. After three days of eating enchantment spiced food, the consumer must eat a full, hot meal or take one level of exhaustion per day until they do.\n\nOriginally developed under the [Dragon Empire](/doc/dragon-empire-odzVqtQPbm) to stretch their \"labor inputs\", it has become a common performance enhancing supplement for soldiers, adventurers, and outdoorsmen of all types.\n\n\n---\n\n- [x] Homebrew, Source - [Dungeon Church](https://5e.dungeon.church/items.html#rationing%20spice_dungeonchurch)\n\n\\\n",
+      "connections": 3,
+      "alignment": {
+        "stated": null,
+        "behavioral": {
+          "law_chaos": 0.6334105310999495,
+          "good_evil": -0.6406518607319732
+        },
+        "final": {
+          "law_chaos": 0.6334105310999495,
+          "good_evil": -0.6406518607319732
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -13749,12 +13752,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.5063768647082802,
-          "good_evil": 0.06353739194185672
+          "law_chaos": 0.5024073431911288,
+          "good_evil": 0.06894440867412258
         },
         "final": {
-          "law_chaos": 0.5063768647082802,
-          "good_evil": 0.06353739194185672
+          "law_chaos": 0.5024073431911288,
+          "good_evil": 0.06894440867412258
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -13798,12 +13801,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.14391007889170543,
-          "good_evil": 0.24850749678810102
+          "law_chaos": 0.1439074976857867,
+          "good_evil": 0.24850452249828534
         },
         "final": {
-          "law_chaos": 0.14391007889170543,
-          "good_evil": 0.24850749678810102
+          "law_chaos": 0.1439074976857867,
+          "good_evil": 0.24850452249828534
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -13821,12 +13824,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.05976501765197422,
-          "good_evil": 0.23992857297762524
+          "law_chaos": 0.05976303038543922,
+          "good_evil": 0.2399262830763922
         },
         "final": {
-          "law_chaos": 0.05976501765197422,
-          "good_evil": 0.23992857297762524
+          "law_chaos": 0.05976303038543922,
+          "good_evil": 0.2399262830763922
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -13844,12 +13847,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.011548913528579313,
-          "good_evil": 0.035623695252263186
+          "law_chaos": -0.014344340898896626,
+          "good_evil": 0.06829941146329711
         },
         "final": {
-          "law_chaos": 0.011548913528579313,
-          "good_evil": 0.035623695252263186
+          "law_chaos": -0.014344340898896626,
+          "good_evil": 0.06829941146329711
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -13903,29 +13906,6 @@
       }
     },
     {
-      "id": "751602d2-ab99-49d8-880d-b232a479eb68",
-      "title": "Session 27: Construct Cargo Cult",
-      "urlId": "7kH72MkRRg",
-      "collectionId": "13b87098-500c-490d-ae46-01356387fe88",
-      "createdAt": "2024-06-04T03:01:49.696000+00:00",
-      "content": "6/2/24\n\n* [Bahruhn](/doc/bahruhn-bsKvF54uuT) @[Arman Daniel Catterson](mention://15adaf2b-df58-4085-91eb-72f66cbb933d/user/9003b75e-5376-4490-a845-0e47818504ce) \n* [Ramoth](/doc/ramoth-TY76Abmb8e) @[Amy Catterson](mention://8cc7dd18-4661-4e29-b6fc-05fb54fc3f8f/user/5fa9f5b5-703f-4161-bfa0-ad42d56332e1) \n* [Rado](/doc/rado-khfSywxKIF) @[Robby Borton](mention://fac25c6a-ff3d-431d-ba24-91fb35f0eac6/user/8cc73826-3758-4850-9fd3-57c4506d73a6) \n* [Ama](/doc/amastacia-aspensong-7Wl2NAGQ9A) @[Toni](mention://e2671b2f-1219-449b-8118-2765afbd1270/user/b107b3d5-cccf-4184-b91b-accfd1e42b3e) \n* [Grey](/doc/grey-rivermoon-p54iB0ukBr) @[Ryk Sheppard](mention://8c840dc2-c490-4e3e-98bf-eb2a23b6990e/user/306eb823-ba3d-4c22-855d-e7711b311662) \n* [Greyson](/doc/greyson-adams-0y5qoKwfDR) @[Lowfi Steve](mention://6588fa61-249f-4d56-9cac-4cfb31572f55/user/cf6c5a84-febc-4585-b826-f419e23f3ccd) \n\n# Burning Bridges\n\n> The acrid stench of burning oil and sewage fills your nostrils as you stand amidst the wreckage of the collapsed bridge. Flames dance and flicker on the surface of the filthy water, casting eerie, shifting shadows on the tunnel walls. The heat from the fire warms your face\n>\n> \\nThe debris from the bridge forms a tangled blockade, blocking your way forward. The sound of whirring machines and mechanical footsteps fades into the distance.\n\nGrey jumps over the burning wreckage of the bridge & chases after the [constructs](/doc/fellforged-uX906NOf0f) through a tunnel. The dungeon seems alive with whirring gears and  moving pistons powered by steam. The injured construct robotically marches towards a great fire somewhere in the distance. Suddenly, an iron portcullis shuts blocking Grey\u2019s momentum. Heat and steam erupt from the great burning light source.\n\nBack at the bridge the party takes inventory of their wounds. Bahruhn looks through the wreckage of the constructs that self destructed and pulls an Arcane Propulsion Arm from the body of one of the fallen robots.\n\nThe party decides to keep going through the sewer tunnel. They come to an abrupt curve where it appears the water has washed lots of barrels and other detritus against one corner. Rado uses the [Ley Line Lens](/doc/ley-line-lens-A8oN3yTn4x), and he sees a magical disturbance that appears to refract the ley line they are following in many directions. They are not sure what to make of this.\n\nAma and Ramoth investigate the pile, while Grey creeps ahead north with his glowing sword guiding him. Rado shoots his Dancing Lights into the darkness and they see\u2026 Coming down the tunnel, slowly and a bit wobbly, are several giant black ants. Grey keeps his distance and observes them\u2026 something is off. He noticed that everywhere they touch or step, they are leaving a blackened trail\u2026 like soot. He smells the acrid scent of burning monster flesh.\n\nThe others have determined that all this trash is not a natural pile, but some sort of barricade. Determined to see what\u2019s on the other side as the ants advance towards them, they frantically begin hacking at it with their weapons.\n\n# Fuel\n\nAs the ant approaches Grey, he decides to whack it, as barbarians do. His weapon connects and sends a cloud of soot everywhere. He realizes these ants have been burnt to a crisp. As he holds the monsters back, the others begin to disassemble the barricade. As they settle in for a fight with the ants, suddenly a large door to the east slides open with a mechanical *whoosh*. The constructs are back, and they immediately spray the area with oil. Slipping in the water and oil slick, Grey positions himself to get between the robots and the party. \n\n ![](/api/attachments.redirect?id=820d48df-8c49-4cdd-bba8-e775c0179a32)The party picks up their pace, sensing the urgency of the situation. It seems the robots are after the ants, as they next shoot nets at Grey and the insects. One of them intones, *WE MUST COLLECT FUEL!* as it pursues them. Trapped by a net, Grey can only watch helplessly as a large [Coal Golem](/doc/coal-golem-z4SQh5bzSf) lumbers up behind the robots and shoots a line of flame into the oil slicked tunnel, erupting everything in heat and flames.\n\n ![](/api/attachments.redirect?id=8d1c2f49-ed83-45ff-a3b4-4856be5d8729)\n\nThe ants immediately ignite as if [made of charcoal](/doc/giant-coal-ant-M9repJEaQW). One of them comes barreling down at the party on the ceiling. The party gets in a few good blows but now Grey is being overwhelmed by the constructs and fire. The others are now frantic to get at the door they\u2019ve uncovered behind the rubble. One construct goes down by Grey\u2019s weapon. As the energy leaves it\u2019s animated body, a [wraith]() emerges, screaming in pain. It flies back toward the room the robots came from.\n\nWith the constructs in hot pursuit, the situation is starting to look dire. They take out a few of the ants, and the robots haul off one of the others behind their metal door. It mercifully shuts with a loud *clang* behind them, sealing the path to pursuit again. One of the constructs who went down is stuck in the door, the upper half of his body severed by the great metal door.\n\n*WE MUST COLLECT FUEL\u2026 YOU ARE FUEL!*\n\nThe party demands some answers: What do you need fuel for?\n\n*FOR POWER, WE NEED POWER TO KEEP GOING. IT IS ONLY LOGICAL.*\n\nWho made you?\n\n*OUR MASTER IS [ELARION GEARSONG](/doc/elarion-gearsong-5hUorix4Zk), IT HAS BEEN 342 DAYS 13 HOURS 42 MINUTES AND 21 SECONDS SINCE WE HAVE SEEN HIM\u2026.*\n\nThe robot begins to short circuit and just repeats\u2026\n\n*FUEL\u2026. NEED FUEL\u2026.*\n\nAs he runs out of energy they see the number \u201c21\u201d stamped into his forehead.\n\n# Retreat\n\nThe party is severely injured at this point, but they have the doorway uncovered to the south.\n\n ![](/api/attachments.redirect?id=12fa36ae-a43a-417b-8cea-26f8ec51b543)This narrow stone hallway with a low ceiling terminates in an ominous looking magic field of some kind that crackles and pops. They cannot see what\u2019s beyond. They brace themselves and open up the lone doorway leading west, and find inside a large pile of insect eggs. Ant insect eggs (Ama deposits one in the [Bag of Holding](/doc/bag-of-holding-vaqJdkPRX2)). They decide not to disturb them and retreat back the way they came.\n\nThey go back to the room that held the beholder, and this time they can\u2019t help but notice that the iron chains that are bolted into the stone walls have human-shaped soot marks. Ama sets up her Tiny Hut and they ponder the meaning of this while Ama beats Bahruhn at [Dragonchess](/doc/house-rules-OhKbZs6UV4) once again.\n\n\\\nAma: 2 Bahruhn: 0 \n\n# Construct Cargo Cult\n\n ![](/api/attachments.redirect?id=2ad8e06e-59d6-46aa-a65a-68fa243cf35a)They awake to face the same dilemma: keep going further into the dungeon or make a retreat back up the elevator? While pondering their decision they take a moment to clean up, removing layers of soot and filth using prestidigitation and the Everlasting Flask. The party decides to try again and keep going, to see if the ley line leads them to Razorback\u2019s rebel hideout.\n\nCreeping back to where the closed metal gate is, they attempt to come up with a plan before Greyson finally says fuck it and downs a potion, turning himself into a gaseous mist. He passes through the thin gap of the gate into the other side, but realizes he can\u2019t communicate with his companions now. The room beyond is full of steam and the sound of machines working, so he is easily able to slip in unnoticed and observe what is happening:\n\nAll of the constructs stand in a circle around a great incinerator engine. Steam and machines hiss all around. In the hole of the incinerator is the great golem, heat radiating off his elemental body. One of the construct approaches, bearing the bottom half of #21 and a Giant Ant. The other constructs chant in the Elvish tongue that Greyson can\u2019t understand, but he gets the meaning. This is some type of ceremony.\n\nThe construct bearing the corpses approaches the incinerator and throws them to be burned up by the golem. The chanting ends. The robots watch in silence as it burns.\n\nGreyson sees a button on the wall near the gate and returns to his physical form. With no way to communicate with his party outside he makes and executive decision and pushes the button.\n\n# Round Two\n\nAs the gate lifts, all the robots turn towards Greyson. The coal golem is enraged to be interrupted during his feeding, and lifts his great heft out of the incinerator, towering over everything else in the room.\n\nThe door moves\u2026. a few inches. Slowly. The party yells at each other through the gap.\n\nGreyson is surrounded by the fellforged, takes blows left and right. While he gets in some good stabs he goes down hard.\n\nThe door moves a few more inches.  The fire spreads to Greyson\u2019s unconscious body.\n\nThe party is almost able to reach their friend. They throw spells and arrows through the gap.\n\nThe great golem strides forward and leans down, blowing hot smoke at the party, stunning and blinding some of them.\n\nThey are not deterred, seeing how close Greyson is to death. The robots and the golem stand over him, ready to strike, but Grey army crawls under the door, grabs Greyson and pulls him out just in time. \n\nThe party regroups and debates running or staying to fight. They stabilize Greyson, ready their attacks and rain down blows on the remaining constructs and the great golem, but most of their attacks just glance off these fell creatures.\n\nRado uses his Mage Hand to press the button and reverse its course. It immediately slams shut.\n\nThe tunnel falls into silence once more.\n\n# Unstable Magic\n\nBadly wounded and Greyson still barely clinging to life, they once again retreat from the door. They doff some potions and encourage each other with [Healing Words](/doc/healing-word-1mUZPJOpEA). This time they decide to brave the magic field. They toss some items through, but all they hear is -pop- as they disappear beyond its electrical facade. Bahruhn decides to be brave and jumps through the miss. Ama, not one to be left behind, rushes to do the same  \n\nThey are shrunk immediately to an impossibly tiny size as they pass through. So small that a nearby normal ant appears to be Giant. They sneak around the corner and see a large mountain inside of a stone room, with lots of pipes running through it. It\u2019s an ant hill.\n\nAma decides to interrogate an ant who is pushing around a (to them) boulder-sized rock. However, the ant is very dumb. When she asks what he is doing, he just answers, \u201cMy job is rock\u201d and that he is \u201cdoing it for the queen\u201d.\n\nAma and Bahruhn appeal to the party to join them on the other side of the mist. After some hemming and hawing they come through as well. The party retreats to formulate a plan and once again sets up the Tiny Hut. This time they use the Flask of Everlasting to fill it with water, and then use Prestidigitation to heat it up so it\u2019s a nice spa. They relax and discuss their next move.\n\n\\\n",
-      "connections": 13,
-      "alignment": {
-        "stated": null,
-        "behavioral": {
-          "law_chaos": -0.13663581572878863,
-          "good_evil": 0.22263435387302696
-        },
-        "final": {
-          "law_chaos": -0.13663581572878863,
-          "good_evil": 0.22263435387302696
-        },
-        "confidence": 0.3,
-        "drift": 0.0,
-        "source": "propagated"
-      }
-    },
-    {
       "id": "d75ddada-1fdd-482e-9bd4-08e495f0be40",
       "title": "Giant Spider",
       "urlId": "zh0pADNloc",
@@ -13942,6 +13922,75 @@
         "final": {
           "law_chaos": 0.19764252558286538,
           "good_evil": -0.0024306872843902
+        },
+        "confidence": 0.3,
+        "drift": 0.0,
+        "source": "propagated"
+      }
+    },
+    {
+      "id": "3a3cf764-f912-4466-a747-a8925f236176",
+      "title": "Giant Ant Queen",
+      "urlId": "DFmrJM0oNu",
+      "collectionId": "ac7efc59-549b-4aa9-9ed8-1b22f82382d0",
+      "createdAt": "2024-06-24T00:47:27.856000+00:00",
+      "content": "*Large Beast, unaligned*\n\n\n___\n\n* **Armor Class** 15 (natural armor)\n* **Hit Points** 85 (`10d10 + 30`)\n* **Speed** 40 ft.\n\n\n___\n\n| STR | DEX | CON | INT | WIS | CHA |\n|:---:|:---:|:---:|:---:|:---:|:---:|\n| 17 (+3) | 13 (+1) | 16 (+3) | 2 (-4) | 11 (+0) | 4 (-3) |\n\n\n___\n\n* **Senses** blindsight 60 ft., passive Perception 10\n* **Languages** \u2014\n* **Challenge** 4 (1,100 XP)\n* **Proficiency Bonus** +2\n\n\n___\n\n***Keen Smell.*** The giant ant queen has advantage on Wisdom (Perception) checks that rely on smell.\n\n***Queen's Scent.*** Giant ants defending a queen gain advantage on all attack rolls.\n\n### Actions\n\n***Multiattack.*** The giant ant queen makes two bite attacks and one sting attack.\n\n***Bite.*** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (`1d8 + 3`) bludgeoning damage and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the giant ant can't bite a different target.\n\n***Sting.*** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (`1d8 + 3`) piercing damage plus 22 (`4d10`) poison damage, or half as much poison damage with a successful DC 14 Constitution saving throw.\n\n## Giant Ant Queen\n\n ![](/api/attachments.redirect?id=48211989-31d4-4536-a486-99e1fe3373dc \"right-50\")Several pony-sized ants swarm around an ant the size of a draft horse, clacking their serrated mandibles and threatening with their stingers.\n\nGiant ants look much like a normal ant with six legs, a waspish segmented body, and large antenna. Their hides are covered in thick chitin, and they have large, serrated mandibles flanking their mouths and stingers on their tails. These stingers are the size of a shortsword, and they're capable of stabbing and poisoning a human to death.\n\n***Colony Defenders.*** Giant ants form colonies under the control of a queen much like their normal-sized cousins. Sterile females form castes with the workers building the nest and caring for larvae. Queens and male drones rarely leave the colony. Soldiers defend the colony and forage for food.\n\n***Carry Prey Home.*** Giant ants are both predators and scavengers, working in organized groups to bring down large prey and carry it back to the nest. Giant ants tend to ignore animals away from the colony when not foraging for food, but they quickly move to overwhelm prey when hungry or threatened.\n\nA giant ant stands nearly four feet tall and weighs 400 pounds, while a giant ant queen is over five feet tall and weighs 900 pounds. Giant ants communicate with each other primarily with pheromones but also use sound and touch.\n\nA giant ant stands nearly four feet tall and weighs 400 pounds, while a giant ant queen is over five feet tall and weighs 900 pounds. Giant ants communicate with each other primarily with pheromones but also use sound and touch.\n\n\n---\n\n- [x] Homebrew Source: [Tome of Beasts 1, page 23](https://5e.dungeon.church/bestiary.html#giant%20ant%20queen_tob,fbmt:sand\\~b1\\~b0,flstsource:hftt=1\\~rmbre=1\\~aatm=1\\~aitfr-isf=1\\~aitfr-thp=1\\~aitfr-dn=1\\~aitfr-fcd=1\\~awm=1\\~coa=1\\~crcotn=1\\~dod=1\\~dodk=1\\~egw=1\\~ghloe=1\\~gotsf=1\\~hat-tg=1\\~hwcs=1\\~imr=1\\~llk=1\\~lr=1\\~mabjov=1\\~mcv1sc=1\\~mcv2dc=1\\~mcv3mc=1\\~mcv4ec=1\\~mismv1=1\\~mff=1\\~mgelft=1\\~nrh-tcmc=1\\~nrh-avitw=1\\~nrh-ass=1\\~nrh-coi=1\\~nrh-tlt=1\\~nrh-awol=1\\~nrh-at=1\\~psa=1\\~psd=1\\~psi=1\\~psk=1\\~psx=1\\~psz=1\\~rtg=1\\~sads=1\\~tdcsr=1\\~ttp=1\\~vd=1\\~hfstcm=1\\~sja=1\\~lk=1\\~lrdt=1\\~tob1-2023=1,flopsource:extend,fbsr:giant%20ant)\n\n\\\n",
+      "connections": 1,
+      "alignment": {
+        "stated": null,
+        "behavioral": {
+          "law_chaos": 0.1439074976857867,
+          "good_evil": 0.24850452249828534
+        },
+        "final": {
+          "law_chaos": 0.1439074976857867,
+          "good_evil": 0.24850452249828534
+        },
+        "confidence": 0.3,
+        "drift": 0.0,
+        "source": "propagated"
+      }
+    },
+    {
+      "id": "f20a6014-97ca-47b7-bf8e-0e5a8e326a94",
+      "title": "Celestial Arcanum Academy",
+      "urlId": "IQjeZ8hhwt",
+      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
+      "createdAt": "2024-06-29T21:33:01.027000+00:00",
+      "content": "",
+      "connections": 1,
+      "alignment": {
+        "stated": null,
+        "behavioral": {
+          "law_chaos": 0.23239874325856003,
+          "good_evil": 0.0773408345305266
+        },
+        "final": {
+          "law_chaos": 0.23239874325856003,
+          "good_evil": 0.0773408345305266
+        },
+        "confidence": 0.3,
+        "drift": 0.0,
+        "source": "propagated"
+      }
+    },
+    {
+      "id": "866f9613-1791-4d58-97bc-5b74b321167d",
+      "title": "Virtual Table Player Info",
+      "urlId": "GKIAmafFdH",
+      "collectionId": "77c74010-e20c-419c-8122-97563ec685b6",
+      "createdAt": "2024-07-06T20:58:21.203000+00:00",
+      "content": "*We play virtually with\u2026*\n\n ![](/api/attachments.redirect?id=6aaaf3ad-e04e-4981-99e3-a35df4cc3061)\n\n\n:::info\nThe **one shot** tabletop is at <https://table.dungeon.church>\n\nThe **Galmaarden** campaign tabletop is at <https://galmaarden.dungeon.church>\n\n:::\n\n### [Virtual Game Survey](https://form.jotform.com/241319109770152)\n\n:arrow_up: Please fill out if you have not already :magic_wand:\n\n# Getting Access to Foundry\n\nTo get a Foundry account, ask your DM to set one up for you. Once you log in, you can change your password by right clicking yourself in the player list in the bottom right. \n\n ![](/api/attachments.redirect?id=f38c61d7-f184-46f8-9d24-b408f4238f3f)\n\nYou can create a new character sheet in the **\ud83d\udc64Actors** tab. [See below](https://lore.dungeon.church/doc/virtual-table-player-info-GKIAmafFdH#h-character-creation) for character creation instructions.\n\n# Resources\n\n* [FoundryVTT Discord](https://discord.gg/foundryvtt) has help channels\n* [FoundryVTT Knowledge Base](https://foundryvtt.com/kb/) has a Getting Started section\n* [FoundryVTT Keyboard Shortcut reference](https://foundryvtt.com/article/controls/)\n* [5eTools Discord](https://discord.gg/5etools) for help with Plutonium or 5eTools. \n  * ==Don\u2019t talk about 5eTools/Plutonium elsewhere== - most D&D spaces will ban you for \u201cpiracy\u201d :face_with_rolling_eyes:\n\n## Recommended Foundry Setup\n\n\n:::success\nFoundry runs in your browser. There is also a standalone [Foundry Lightweight Client](https://foundry.ruleplaying.com/flc) app that may help if you are having compatibility issues or using an older computer.\n\n:::\n\n\n:::info\n**\u2699\ufe0f** FoundryVTT Settings Tab **\u27a1\ufe0f** Configure Settings\n\n:::\n\n* Left Click to Release Objects - `Checked` idk why this isn\u2019t default behavior\n* Maximum Framerate `30` - 30 is plenty, go to `15` if your computer sucks\n* **\\[**:apple: **Mac Users\\]** Pixel Ratio Scaling `Off` - improves performance on Retina screens significantly\n* :potato: **Potato Computers \ud83e\udd54**: In the Foundry settings, there are a bunch of settings for the various animations and special effects. If you\u2019re still struggling, turn all of these off. You should also run the Discord call from a different device (ie. your phone, game console, tablet, etc.) since Discord itself is pretty resource intensive.\n* :warning: These settings are stored locally in your browser. If you switch computers, browsers, or clear your browser cache you will need to go back in and adjust them again.\n\n\n:::tip\nIt definitely helps to play Foundry with both a **keyboard *and* mouse**, just like you would a PC game! Get a nerdy headset, make sure all your stuff is charged and plugged in, set up a 2nd monitor/device if you\u2019ve got one, and get comfy :nerd_face:\n\n:::\n\n### Useful Shortcut Keys\n\n| **Shortcut** | **Action** |\n|:---:|----|\n| c | Toggle character sheet |\n| t | Target selected token |\n| Shift + Click to Roll | Roll normally & skip popup |\n| Control + Click to Roll | Roll Blind to GM |\n\n## Basic Troubleshooting\n\n\n1. FoundryVTT is officially designed for **Chrome** browser. **Firefox** also works fine. ==Before you try anything else, switch to Chrome tho== & make sure you're on the latest version. Safari **is not supported and does not work**.\n2. [Check your browsers 3D settings](https://foundry.ruleplaying.com/gpu) with this site. [Turn on hardware acceleration in your browser](https://forums.forge-vtt.com/docs?topic=11296 \"Turn on hardware acceleration in your browser\n   \n   (https://forums.forge-vtt.com/docs?topic=11296)\") if not - in many cases it's off by default (especially on laptops). This helps a lot!\n3. **Password manager & adblocker plugins are known to interfere** with Foundry! Turn them off or whitelist the `dungeon.church` domain in their settings.\n4. Foundry is a DIY solution and highly customizable - anything can be changed. If you're having issues or wish something worked differently, let me know.\n\n# Character Creation\n\nYou can use the Charactermancer feature to easily guide you through making your character. It is powered by our 5etools mirror at [https://5e.dungeon.church](https://5e.dungeon.church.)\n\n[https://www.youtube.com/watch?v=IAxAoL6-NCw](https://www.youtube.com/watch?v=IAxAoL6-NCw)\n\n**TLDR:**\n\n* Log in to Foundry\n* `Create New Actor` in the **\ud83d\udc64** **Actors** tab\n* Open your new sheet, then access the `Charactermancer` from the `\u2026` menu in top right.\n* This will guide you through the steps of making a character. In the left hand pane are the choices you need to make, in the right hand pane is a reference for the relevant rules.\n* You can also use this to level up or multi-class\n\n\n:::tip\n:printer: You can print your FoundryVTT characters for playing at a physical table! \\n\\nRight click on your character in the **Actors** tab, then select **Export Sheet**.\\n\\nThe PDF also includes item & spell cards :magic_wand:\n\n:::\n\n## Importing with Plutonium\n\nPlutonium Import is used for importing individual features, items, spells, etc. from 5etools into your sheet. You can also make your character this way if you prefer a little more hands on approach. Just add each thing you need using the importer:\n\n* Go to the :bust_in_silhouette: **Actors** tab in the right sidebar, open up your character sheet. Select `Plutonium Import` from `\u2026` Menu.\n* From the left column, select each feature you need to import one at a time (**Item, Spell, etc)**. Click \"Open Importer\". Make your selection and it will be added to your sheet. \n\n\\\n ![You can import all character features individually using Plutonium. Use the Wrench in the top left to edit ability scores and other minor details.](/api/attachments.redirect?id=7f5b9ea0-fe57-4227-83ab-cb3cad152e07) ![Select what you need to add from the left column, then hit Open Importer. This brings up the 5eTools content browser.](/api/attachments.redirect?id=0b7c2cb6-b857-4fd8-ae9d-4b8cfa33fcc7)\n\n## Importing from Web (Rivet)\n\nYou can also import content directly from the 5etools website into Foundry using the browser extension [Rivet](https://chromewebstore.google.com/detail/rivet/igmilfmbmkmpkjjgoabaagaoohhhbjde). When you have 5etools and Foundry open at the same time, you will see a paper airplane icon to send to Foundry.\n\n ![](/api/attachments.redirect?id=39c74afd-7d54-4fb1-bb48-3610133fd76e)If you want to add a feature or item to your character sheet, you can \u201c**Set as Rivet Target**\u201d to send it there.\n\n ![](/api/attachments.redirect?id=d1058874-b2e1-4150-b159-cb5dcb20d65f)\n\n# Additional Help\n\n## Preparing Spells\n\nIf you are playing a spellcaster class that [prepares your spells](https://5e.dungeon.church/book.html#phb,10,known%20and%20prepared%20spells,0), you have a *known* spell list and a *prepared* spell list. The importer will add all *known* spells to your sheet according to your class & level. To select which spells you have *prepared* there is a **Prepared Spell Mass Toggler** tool in the `\u2026` menu in the top right.\n\nWhen you need to swap spells, use this tool to select **\u2611\ufe0f** which ones you currently have prepared. If you need to add new spells to your known spell list, use the importer to add them individually. \n\n\\\n ![Preparing spells with the Mass Toggler tool](/api/attachments.redirect?id=95a72fe1-3ba2-46d4-86d9-8b19fc8a566e)\n\n## Filtering Your Options\n\nThe filters are very powerful and allow you to focus on just the specific things you are interested in. \n\nDungeon Church\u2019s Pyora setting is listed as a homebrew Source, with source tag red `CHURCH` which is another thing you can filter by.\n\n### Examples\n\n#### ***Your DM told you to use a Pyoran species***\n\nOpen the **Race & Subrace** Importer in Plutonium, then hit **Filter** on the list. \n\nYou can deselect everything (Source: `CLEAR` or `NONE` button) then reselect `Dungeon Church` under Homebrew\n\n ![](/api/attachments.redirect?id=e722f876-ee24-4059-892f-c3f0232d300a)\n\n#### ***You are a wizard looking for an extremely specific spell.***\n\nYou need a Level 5 spell, divination school so the cost is reduced, and you want to exclude anything that does ice damage because that doesn\u2019t fit in with your character\u2019s vibe.\n\n ![Filter by: 5th level Wizard spell, Divination school, no cold damage](/api/attachments.redirect?id=b02ab21e-a4a1-4477-8a72-cca0018470b3)\n\n#### ***You are a druid who is creating your [initial beast list](/doc/house-rules-OhKbZs6UV4)*\u2026**\n\nGo to the Creature importer and filter by what Beasts are available for [Wild Shape](/doc/wild-shape-bCuGgQx5Y9) in your chosen Environments\n\n ![](/api/attachments.redirect?id=1fbbdfd2-b37b-4a01-b732-6ab2d69f5fb4)",
+      "connections": 4,
+      "alignment": {
+        "stated": null,
+        "behavioral": {
+          "law_chaos": 0.1418717969202424,
+          "good_evil": -0.11286427074921132
+        },
+        "final": {
+          "law_chaos": 0.1418717969202424,
+          "good_evil": -0.11286427074921132
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -14005,12 +14054,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": -0.07152274843780285,
-          "good_evil": 0.05601371746985524
+          "law_chaos": -0.071615219201199,
+          "good_evil": 0.05590716461879453
         },
         "final": {
-          "law_chaos": -0.07152274843780285,
-          "good_evil": 0.05601371746985524
+          "law_chaos": -0.071615219201199,
+          "good_evil": 0.05590716461879453
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -14028,12 +14077,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.003637131581458395,
-          "good_evil": 0.23557092533056398
+          "law_chaos": 5.072656098206498e-05,
+          "good_evil": 0.24009388960390043
         },
         "final": {
-          "law_chaos": 0.003637131581458395,
-          "good_evil": 0.23557092533056398
+          "law_chaos": 5.072656098206498e-05,
+          "good_evil": 0.24009388960390043
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -14051,12 +14100,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": 0.14391007889170543,
-          "good_evil": 0.24850749678810102
+          "law_chaos": 0.1439074976857867,
+          "good_evil": 0.24850452249828534
         },
         "final": {
-          "law_chaos": 0.14391007889170543,
-          "good_evil": 0.24850749678810102
+          "law_chaos": 0.1439074976857867,
+          "good_evil": 0.24850452249828534
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -14165,55 +14214,6 @@
       }
     },
     {
-      "id": "33819209-830c-4e56-a524-8e4e5a739467",
-      "title": "Guildmaster's Hunting Horn",
-      "urlId": "PkmJIssiGT",
-      "collectionId": "a60ccdf0-330c-4a08-8511-729aea62ca75",
-      "createdAt": "2024-07-16T02:53:34.857000+00:00",
-      "content": "> A polished brass horn, beautifully etched with a scene of dogs pursuing a buck through the woods, and dressed with a leather strap for carrying over the shoulder. Carried by the guildmaster of [Burle Hunter\u2019s Guild](/doc/burle-hunters-guild-TFqCs3pSJy) and traditionally blown at the start of their organized hunts and to mark holiday celebrations.\n\nThis horn has 2 charges and resets at dawn. Daily, you may choose the creature type of your quarry. When you use an action to blow the horn, all creatures that can hear it within 600 feet of your chosen type must make a DC 13 Wisdom saving thrown or be frightened.\n\n ![](/api/attachments.redirect?id=a6387da7-309e-4190-aed1-76cf4caec3b7)\n\n\n---\n\n- [x] Homebrew source: [Dungeon Church](https://5e.dungeon.church/items.html#guildmaster's%20hunting%20horn_dungeonchurch)\n\n\\\n",
-      "connections": 4,
-      "alignment": {
-        "stated": null,
-        "behavioral": {
-          "law_chaos": -0.15159521157113895,
-          "good_evil": -0.11955800800592342
-        },
-        "final": {
-          "law_chaos": -0.15159521157113895,
-          "good_evil": -0.11955800800592342
-        },
-        "confidence": 0.3,
-        "drift": 0.0,
-        "source": "propagated"
-      }
-    },
-    {
-      "id": "3d02c7d2-5ee1-4d30-a066-1dca9182a10e",
-      "title": "Sopia Wavecrest",
-      "urlId": "JsFrGtX2pM",
-      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
-      "createdAt": "2024-07-14T17:48:14.156000+00:00",
-      "content": "# **Character Sheet**\n\n[https://docs.google.com/document/d/1HUJl-MG3T6Aj7nsXDkebVAd6G722IeQ8t2ZRyeKrF%5FY/edit?usp=sharing](https://docs.google.com/document/d/1HUJl-MG3T6Aj7nsXDkebVAd6G722IeQ8t2ZRyeKrF%5FY/edit?usp=sharing)\n\n# Backstory\n\nBorn in the small but bustling pirate settlement of [Blue Harbour](/doc/blue-harbour-BvSEhfEXJ5) to parents of the aforementioned profession, Sopia was instilled with a love for the sea and the perils it prosed from a young age. An [elfmarked](/doc/elfmarked-ohkfCOb0aT) child, it was hard to say if it was the blood of the Travelers or her parents\u2019 unconventional profession that led her to dog the various captains and crews that visited her home, but in the end, the result was the same. She followed them, she learned from them when they allowed it, and when time came that she could hold her own on the rolling deck of a ship, she signed on with the man who had taken the most interest in her budding career. That man was [Ruhrin Starhelm](/doc/ruhrin-starhelm-w8g2zPDAO5), Captain of the *[Tempest\u2019s Embrace](/doc/tempests-embrace-rwK9njgwMz)*.  \\n\\nPerhaps he saw some measure of himself in her\u2014 he too had been an Elfmarked youth, ripe with potential and drawn inexorably the sea and all it promised. Ultimately, she thrived under his guidance; with a sharp mind and unwavering loyalty, she quickly worked her way through the ship\u2019s ranks and gained the position of First Mate. There, she thrived, guiding the crew through numerous successful raids and defenses against rivals, always upholding the Articles of Agreement that bound the [Confederacy of Hearthships](/doc/confederacy-of-hearthships-EDksxQvprt) together.\n\nIt was not to last. Disaster struck in the form of a marked rogue; a [Tribeborn](/doc/tribeborn-KVgPsdxk3f) [Storm Baron](/doc/storm-barons-9bIflGjrAd) called [Marek,](/doc/baron-marek-jRmX1mC2c5) whose daring had pushed him further than the Articles would give grace for. He had violated the Oaths\u2014 and so, the Tempest\u2019s Embrace had set upon his ship. Justice though, would not prevail that day. The Tempest\u2019s crew was routed. Captain Starhelm was slain, and the creature responsible for his destruction now claimed their ship as his prize.  \\n\\nIn the end, those members of the crew who refused to submit to the druid\u2019s rule were put to the sword and left for dead on an isolated beachhead. Sopia numbered among those who survived, and after burying the remains of their crew, the diminished crew limped to the nearest port of call\u2014 [Saltmarsh](/doc/saltmarsh-GkGI6ISio5).  \\n\n\n# Present Day\n\nNow in Saltmarsh, Sopia is a displaced corsair bent on revenge and justice. Haunted by the loss of her ship and the death of her Captain, she is driven by the need to restore her lost honor and find justice for the fallen Starhelm.\n\n***Personality Traits***\n\n **Loyal** \u2013 Without doubt, Sopia remains loyal to her crew and the Confederacy. Even now, she holds unto the Articles of Agreement. \n\n**Resourceful** \u2013 After being stranded into the wild, Sopia is a resourceful and flexible person.\n\n***Ideals***\n\n**Freedom** \u2013 Valuing freedom on the open sea and the autonomy of the ships of the Confederacy. \\n**Justice** \u2013 Devoted to avenging Captain Starhelm's death and to bringing the Tempest's Embrace back from Marek.\n\n***Bonds***\n\n**Captain Starhelm** \u2013 Sopia feels quite the loyalty to her fallen captain and is driven by vengeance and justice. \n\n**The Crew** \u2013 She considers the remnants her crew her family and will go to great lengths to protect and support them.\n\n***Flaws***\n\n**Vengeful** \u2013 Sopia's desire for revenge against Marek can sometimes cloud her judgment and lead her into dangerous situations. \n\n**Haunted** \u2013 The loss of the Tempest's Embrace and the betrayal by Marek weigh heavily on her mind, sometimes causing her to doubt her decisions.\n\n ![](/api/attachments.redirect?id=1546a582-152d-4351-8bf3-60c3ed8e84e7)\n\n\\\n",
-      "connections": 10,
-      "alignment": {
-        "stated": {
-          "law_chaos": 0.0,
-          "good_evil": 0.0
-        },
-        "behavioral": {
-          "law_chaos": 0.11250000000000003,
-          "good_evil": 0.08119565217391309
-        },
-        "final": {
-          "law_chaos": 0.0,
-          "good_evil": 0.0
-        },
-        "confidence": 1.0,
-        "drift": 0.0,
-        "source": "explicit"
-      }
-    },
-    {
       "id": "452ac9d6-a5a0-41fb-bcd4-8e26ac0254d1",
       "title": "Berserker's Draught",
       "urlId": "sn5rNNx4Lp",
@@ -14273,12 +14273,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": -0.07152274843780285,
-          "good_evil": 0.05601371746985524
+          "law_chaos": -0.071615219201199,
+          "good_evil": 0.055907164618794525
         },
         "final": {
-          "law_chaos": -0.07152274843780285,
-          "good_evil": 0.05601371746985524
+          "law_chaos": -0.071615219201199,
+          "good_evil": 0.055907164618794525
         },
         "confidence": 0.3,
         "drift": 0.0,
@@ -14348,12 +14348,12 @@
       "alignment": {
         "stated": null,
         "behavioral": {
-          "law_chaos": -0.07152274843780285,
-          "good_evil": 0.05601371746985524
+          "law_chaos": -0.071615219201199,
+          "good_evil": 0.05590716461879453
         },
         "final": {
-          "law_chaos": -0.07152274843780285,
-          "good_evil": 0.05601371746985524
+          "law_chaos": -0.071615219201199,
+          "good_evil": 0.05590716461879453
         },
         "confidence": 0.3,
         "drift": 0.0,
