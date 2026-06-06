@@ -6,8 +6,6 @@
         <img src=https://img.shields.io/github/last-commit/oakbrad/dungeonchurch-pyora?label=dungeonchurch-pyora&color=gray&labelColor=ff2600&logo=dungeonsanddragons></a>
     <a href=https://github.com/oakbrad/dungeonchurch-basilica>
         <img src=https://img.shields.io/github/last-commit/oakbrad/dungeonchurch-basilica?label=dungeonchurch-basilica&color=gray&labelColor=ff2600&logo=ghost></a>
-    <a href=https://github.com/oakbrad/dungeonchurch-cogs>
-        <img src=https://img.shields.io/github/last-commit/oakbrad/dungeonchurch-cogs?label=dungeonchurch-cogs&color=gray&labelColor=ff2600&logoColor=ffffff&logo=discord></a>
 </p>
 
 # Oracle
