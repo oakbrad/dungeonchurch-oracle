@@ -2289,6 +2289,156 @@
       },
       "timestamp": "2026-04-01T11:49:55.487891",
       "title": "Blackjack Mel"
+    },
+    "10a4eb8288d3d546": {
+      "alignment": {
+        "law_chaos": 0.3,
+        "good_evil": 0.8,
+        "confidence": 0.85,
+        "source": "llm"
+      },
+      "timestamp": "2026-08-13T01:44:18.014918",
+      "title": "Jinx Jogomilski"
+    },
+    "39ea54a64cdbfe16": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": 0.8,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-08-13T01:44:19.517561",
+      "title": "Ama'Dar"
+    },
+    "725bf2318f229e2e": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": 0.5,
+        "confidence": 0.6,
+        "source": "llm"
+      },
+      "timestamp": "2026-08-13T01:44:20.833157",
+      "title": "Whinny Kroak - Artificer Alchemist"
+    },
+    "b1fdbad3c938f4e2": {
+      "alignment": {
+        "law_chaos": -0.8,
+        "good_evil": -0.9,
+        "confidence": 0.8,
+        "source": "llm"
+      },
+      "timestamp": "2026-08-13T01:44:22.233153",
+      "title": "Elarion Gearsong"
+    },
+    "4772fe29a8e4dfa5": {
+      "alignment": {
+        "law_chaos": -0.5,
+        "good_evil": 0.0,
+        "confidence": 0.6,
+        "source": "llm"
+      },
+      "timestamp": "2026-08-13T01:44:23.771511",
+      "title": "Deidre of the Moon"
+    },
+    "9cc36084c58bdf06": {
+      "alignment": {
+        "law_chaos": -0.5,
+        "good_evil": -0.3,
+        "confidence": 0.6,
+        "source": "llm"
+      },
+      "timestamp": "2026-08-13T01:44:25.293358",
+      "title": "Mahmah Moonwart"
+    },
+    "02ec276452c0f67e": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": 0.1,
+        "confidence": 0.4,
+        "source": "llm"
+      },
+      "timestamp": "2026-08-13T01:44:26.346257",
+      "title": "Party Boat"
+    },
+    "2e3184989ccee577": {
+      "alignment": {
+        "law_chaos": -0.7,
+        "good_evil": -0.5,
+        "confidence": 0.85,
+        "source": "llm"
+      },
+      "timestamp": "2026-08-13T01:44:27.610190",
+      "title": "Zahrahn Esharath"
+    },
+    "5067cfd08a0f618b": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": -0.5,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-08-13T01:44:28.730228",
+      "title": "Iron Thrax"
+    },
+    "cf5563ebbbcb73c8": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": 0.7,
+        "confidence": 0.8,
+        "source": "llm"
+      },
+      "timestamp": "2026-08-13T01:44:31.322019",
+      "title": "Razorback the Uniter"
+    },
+    "8b1e21e55259c5fd": {
+      "alignment": {
+        "law_chaos": -0.7,
+        "good_evil": -0.9,
+        "confidence": 0.8,
+        "source": "llm"
+      },
+      "timestamp": "2026-08-13T01:44:32.547420",
+      "title": "Frendlee Neybor"
+    },
+    "61ab8a1e2b9f4631": {
+      "alignment": {
+        "law_chaos": 1.0,
+        "good_evil": -0.5,
+        "confidence": 0.9,
+        "source": "llm"
+      },
+      "timestamp": "2026-08-13T01:44:33.568549",
+      "title": "Grunthor"
+    },
+    "33d54d95a3a8aef9": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": 0.6,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-08-13T01:44:34.737606",
+      "title": "Erik Jorgansen"
+    },
+    "463d38ff2d81b93d": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": -0.6,
+        "confidence": 0.4,
+        "source": "llm"
+      },
+      "timestamp": "2026-08-13T01:44:35.782013",
+      "title": "Ettria"
+    },
+    "af44c836a9292b12": {
+      "alignment": {
+        "law_chaos": -0.8,
+        "good_evil": -0.9,
+        "confidence": 0.85,
+        "source": "llm"
+      },
+      "timestamp": "2026-08-13T01:44:37.135347",
+      "title": "Ranger Jarfi"
     }
   },
   "relationships": {
@@ -12990,6 +13140,604 @@
       "timestamp": "2026-04-01T11:49:58.565606",
       "source": "Blackjack Mel",
       "target": "Craggylheim Groggut"
+    },
+    "a283442586bbb8ef": {
+      "result": {
+        "type": "created",
+        "moral_valence": 0.5,
+        "order_valence": -0.5,
+        "summary": "Krack's existence influenced by Cirilla's Gift",
+        "source_id": "b13c632c-92bc-46c7-8356-14e96b45fe90",
+        "target_id": "91da20af-a5a1-4e73-ad7b-0fa6af9d42be"
+      },
+      "timestamp": "2026-08-13T01:44:38.028003",
+      "source": "Krack",
+      "target": "Cirilla\u2019s Gift"
+    },
+    "0ad4bde445245edb": {
+      "result": {
+        "type": "served",
+        "moral_valence": 0.2,
+        "order_valence": 0.5,
+        "summary": "Gnome serves Yusdrayl and protects dragon",
+        "source_id": "372878d6-da83-4974-93f3-10e33c5be421",
+        "target_id": "e7491c9e-b628-4a85-959e-f194d05194dd"
+      },
+      "timestamp": "2026-08-13T01:44:38.956774",
+      "source": "Meepo",
+      "target": "Gnome (Pyoran)"
+    },
+    "7dd7188eed151afd": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Gnome works for Ole Boudreaux's Bazaar",
+        "source_id": "30f4ff54-c7f6-4451-8470-ae5f5b4be853",
+        "target_id": "e7491c9e-b628-4a85-959e-f194d05194dd"
+      },
+      "timestamp": "2026-08-13T01:44:39.866442",
+      "source": "Ole Boudreaux",
+      "target": "Gnome (Pyoran)"
+    },
+    "5d1c6171a20acc3c": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.8,
+        "order_valence": 0.5,
+        "summary": "Pilgrimage led to clerical awakening",
+        "source_id": "2aad0c9e-e747-4320-8630-9bf03a10599a",
+        "target_id": "6c12c4ea-8fee-4d59-9cd7-bd4022d1fd1a"
+      },
+      "timestamp": "2026-08-13T01:44:40.792425",
+      "source": "Math Hammerhammer",
+      "target": "Temple of Selune"
+    },
+    "0fdcd32f6cd9b191": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Allies in maritime endeavors and trade.",
+        "source_id": "ddc5ab1d-3388-417b-91b7-8a4ecc793703",
+        "target_id": "a09371da-c1c7-42f3-98f8-1980c15060a4"
+      },
+      "timestamp": "2026-08-13T01:44:41.936914",
+      "source": "Confederacy of Hearthships",
+      "target": "The Sea Ghost"
+    },
+    "90d84abfbd6d7564": {
+      "result": {
+        "type": "bound",
+        "moral_valence": -0.5,
+        "order_valence": -0.8,
+        "summary": "Math's naive faith leads to chaos.",
+        "source_id": "2aad0c9e-e747-4320-8630-9bf03a10599a",
+        "target_id": "b13c632c-92bc-46c7-8356-14e96b45fe90"
+      },
+      "timestamp": "2026-08-13T01:44:43.119235",
+      "source": "Math Hammerhammer",
+      "target": "Krack"
+    },
+    "c515c7e64899bead": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.8,
+        "order_valence": 0.2,
+        "summary": "Math found faith and purpose through Sel\u00fbne",
+        "source_id": "2aad0c9e-e747-4320-8630-9bf03a10599a",
+        "target_id": "2676642c-e5ad-454b-a598-ee25808f3cc8"
+      },
+      "timestamp": "2026-08-13T01:44:44.092259",
+      "source": "Math Hammerhammer",
+      "target": "Sel\u00fbne"
+    },
+    "363be0ec0fe85fc3": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Krack is an owner of Gold Scale Company",
+        "source_id": "f072e19f-6e96-4195-87ad-7b609a252019",
+        "target_id": "b13c632c-92bc-46c7-8356-14e96b45fe90"
+      },
+      "timestamp": "2026-08-13T01:44:45.116854",
+      "source": "Gold Scale Company",
+      "target": "Krack"
+    },
+    "c6c8020e811bd776": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.7,
+        "summary": "Math Hammerhammer is a co-owner of Gold Scale Company.",
+        "source_id": "f072e19f-6e96-4195-87ad-7b609a252019",
+        "target_id": "2aad0c9e-e747-4320-8630-9bf03a10599a"
+      },
+      "timestamp": "2026-08-13T01:44:46.153464",
+      "source": "Gold Scale Company",
+      "target": "Math Hammerhammer"
+    },
+    "d974bc9364c72330": {
+      "result": {
+        "type": "helped",
+        "moral_valence": 0.7,
+        "order_valence": 0.2,
+        "summary": "Amelia informed Math about his brother's whereabouts",
+        "source_id": "2497f529-50a3-4db2-afc7-d38d34e33ebd",
+        "target_id": "2aad0c9e-e747-4320-8630-9bf03a10599a"
+      },
+      "timestamp": "2026-08-13T01:44:47.155975",
+      "source": "Amelia",
+      "target": "Math Hammerhammer"
+    },
+    "703cb4659618ca5b": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Strezza serves the Confederacy of Hearthships",
+        "source_id": "ddc5ab1d-3388-417b-91b7-8a4ecc793703",
+        "target_id": "4d1a4aaf-b6e8-4b0e-b102-7dadcb33f0a2"
+      },
+      "timestamp": "2026-08-13T01:44:48.053694",
+      "source": "Confederacy of Hearthships",
+      "target": "Strezza"
+    },
+    "6d08406bb4d46159": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.5,
+        "order_valence": 0.0,
+        "summary": "Storm Barons allied with Confederacy of Hearthships",
+        "source_id": "ddc5ab1d-3388-417b-91b7-8a4ecc793703",
+        "target_id": "2bbdab41-0b68-4011-b45e-20d2157feff5"
+      },
+      "timestamp": "2026-08-13T01:44:48.921937",
+      "source": "Confederacy of Hearthships",
+      "target": "Storm Barons"
+    },
+    "bf13c1ee181fc3a0": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Lukas was publicly humiliated and exiled.",
+        "source_id": "2aad0c9e-e747-4320-8630-9bf03a10599a",
+        "target_id": "a2670e80-b4ac-47c6-8f9c-35f6bfec2689"
+      },
+      "timestamp": "2026-08-13T01:44:49.810539",
+      "source": "Math Hammerhammer",
+      "target": "Lukas Woodenkeeper"
+    },
+    "cbf00cf59c1e96aa": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.8,
+        "order_valence": 0.7,
+        "summary": "Math supports Striborg's benevolent intentions",
+        "source_id": "2aad0c9e-e747-4320-8630-9bf03a10599a",
+        "target_id": "545f8574-7795-40ad-913a-af35b84dd5e9"
+      },
+      "timestamp": "2026-08-13T01:44:50.888042",
+      "source": "Math Hammerhammer",
+      "target": "Striborg"
+    },
+    "7c944273abc235b7": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.8,
+        "order_valence": 0.5,
+        "summary": "Krack joins Lukas in a noble quest",
+        "source_id": "b13c632c-92bc-46c7-8356-14e96b45fe90",
+        "target_id": "a2670e80-b4ac-47c6-8f9c-35f6bfec2689"
+      },
+      "timestamp": "2026-08-13T01:44:51.940459",
+      "source": "Krack",
+      "target": "Lukas Woodenkeeper"
+    },
+    "12026e6550b5ba2f": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Alliance marked by dragonborn handprint",
+        "source_id": "49cd0b83-d204-4085-b664-c28418d0b49d",
+        "target_id": "81d261e5-2830-4a89-a094-77e8b7af4975"
+      },
+      "timestamp": "2026-08-13T01:44:52.903232",
+      "source": "Balasar",
+      "target": "Razorback the Uniter"
+    },
+    "abc9f7dc28fe171a": {
+      "result": {
+        "type": "neutral",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Krack's search in New Galmaarden was unproductive",
+        "source_id": "b13c632c-92bc-46c7-8356-14e96b45fe90",
+        "target_id": "5b43e787-5069-462a-a45f-1869b2bc1b87"
+      },
+      "timestamp": "2026-08-13T01:44:54.464893",
+      "source": "Krack",
+      "target": "New Galmaarden"
+    },
+    "3b90719f5446f3b6": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.5,
+        "order_valence": 0.0,
+        "summary": "Nerium is a member of the Infernal Circle",
+        "source_id": "523b5efa-f29c-4824-9edd-df6aac2b8016",
+        "target_id": "67790919-d352-4de7-8963-ffa7fc6e065d"
+      },
+      "timestamp": "2026-08-13T01:44:55.672798",
+      "source": "The Infernal Circle",
+      "target": "Nerium"
+    },
+    "f0a5795a79c9ec62": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.5,
+        "order_valence": 0.0,
+        "summary": "The Infernal Circle allies with Sargoth.",
+        "source_id": "523b5efa-f29c-4824-9edd-df6aac2b8016",
+        "target_id": "065db194-4cf5-4142-b2dd-288b99aad8ee"
+      },
+      "timestamp": "2026-08-13T01:44:56.834524",
+      "source": "The Infernal Circle",
+      "target": "Sargoth the Eternal"
+    },
+    "c8c3e10e42161cfa": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Infernal Circle brutally expands Dragon Empire's rule",
+        "source_id": "523b5efa-f29c-4824-9edd-df6aac2b8016",
+        "target_id": "81d261e5-2830-4a89-a094-77e8b7af4975"
+      },
+      "timestamp": "2026-08-13T01:44:57.718696",
+      "source": "The Infernal Circle",
+      "target": "Razorback the Uniter"
+    },
+    "ca4372087451b0cc": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.2,
+        "summary": "Confederacy supports the Party Boat's endeavors",
+        "source_id": "ddc5ab1d-3388-417b-91b7-8a4ecc793703",
+        "target_id": "a1dd120f-5ac6-4c09-a402-a3f130772db8"
+      },
+      "timestamp": "2026-08-13T01:44:59.065056",
+      "source": "Confederacy of Hearthships",
+      "target": "Party Boat"
+    },
+    "81bf26e180e35d43": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "K\u00e1ra serves as the boatswain on the ship.",
+        "source_id": "a1dd120f-5ac6-4c09-a402-a3f130772db8",
+        "target_id": "91b5b6ea-b244-45a3-8589-d4e8f60803fd"
+      },
+      "timestamp": "2026-08-13T01:45:00.021160",
+      "source": "Party Boat",
+      "target": "K\u00e1ra Leiptrborinn"
+    },
+    "bdd8fc8e924eb3a7": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Ettria feels abandoned by The Sanbalet",
+        "source_id": "4d20623c-a902-4e79-83c5-fc43ab02d61f",
+        "target_id": "de21215e-ac08-449d-9afd-f28d3102362c"
+      },
+      "timestamp": "2026-08-13T01:45:02.008239",
+      "source": "Ettria",
+      "target": "The Sanbalet"
+    },
+    "baa2abf5f28d4d8a": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Ettria killed the Hag Eye.",
+        "source_id": "4d20623c-a902-4e79-83c5-fc43ab02d61f",
+        "target_id": "ff554eac-b56e-46a1-be19-68f131135efc"
+      },
+      "timestamp": "2026-08-13T01:45:03.136129",
+      "source": "Ettria",
+      "target": "Hag Eye"
+    },
+    "b8a764bc19466d3b": {
+      "result": {
+        "type": "harmed",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Ettria harms the Child of the Briar",
+        "source_id": "4d20623c-a902-4e79-83c5-fc43ab02d61f",
+        "target_id": "e8e28ca1-7c9f-417b-97a4-0c63bf454918"
+      },
+      "timestamp": "2026-08-13T01:45:04.305463",
+      "source": "Ettria",
+      "target": "Child of the Briar"
+    },
+    "bc82d1508d889aa8": {
+      "result": {
+        "type": "changed",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Ettria underwent a significant transformation",
+        "source_id": "4d20623c-a902-4e79-83c5-fc43ab02d61f",
+        "target_id": "fbae3367-6e59-45e4-b1d2-6fb447e59fd9"
+      },
+      "timestamp": "2026-08-13T01:45:05.336259",
+      "source": "Ettria",
+      "target": "Master Refrum"
+    },
+    "1e3e8081e6ea3fa2": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -1.0,
+        "order_valence": -1.0,
+        "summary": "Proteus is declared dead, madness ensues",
+        "source_id": "4d20623c-a902-4e79-83c5-fc43ab02d61f",
+        "target_id": "cd6de2c7-85e1-4fdc-9437-dd3f4cd7d5c3"
+      },
+      "timestamp": "2026-08-13T01:45:06.725589",
+      "source": "Ettria",
+      "target": "Proteus"
+    },
+    "9bf85a5f7fb42a94": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.5,
+        "summary": "Lady Nightshade feels conspired against by deities",
+        "source_id": "c13d73c6-604f-4580-8965-6ed8ce31e724",
+        "target_id": "06181160-3232-48c2-9532-c99a55726aa5"
+      },
+      "timestamp": "2026-08-13T01:45:07.806076",
+      "source": "Lady Nightshade",
+      "target": "Sarenrae"
+    },
+    "b850e2e7c362cbde": {
+      "result": {
+        "type": "served",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Elarion serves Lady Nightshade on the moon",
+        "source_id": "e69d40f0-89d4-4100-96a8-6cde76439138",
+        "target_id": "c13d73c6-604f-4580-8965-6ed8ce31e724"
+      },
+      "timestamp": "2026-08-13T01:45:08.697105",
+      "source": "Elarion Gearsong",
+      "target": "Lady Nightshade"
+    },
+    "090ee36160504cdc": {
+      "result": {
+        "type": "created",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Vess created a beneficial sleep tincture",
+        "source_id": "11213466-22aa-4d55-94ba-f6943943a4b7",
+        "target_id": "42bf4fc1-fa02-47fa-9cd2-b6f3ab0f7397"
+      },
+      "timestamp": "2026-08-13T01:45:09.645052",
+      "source": "Vess Harlow",
+      "target": "Dreamless Drops"
+    },
+    "8050513cbcae8dfb": {
+      "result": {
+        "type": "created",
+        "moral_valence": 0.8,
+        "order_valence": 0.5,
+        "summary": "Whinny created a bond with Ravenfolk.",
+        "source_id": "aba35535-5f99-4e1c-963d-7355136405d5",
+        "target_id": "9e034329-234a-4a28-81ea-b404acbef0d1"
+      },
+      "timestamp": "2026-08-13T01:45:10.598288",
+      "source": "Whinny Kroak - Artificer Alchemist",
+      "target": "Ravenfolk"
+    },
+    "2fefeafef251e5da": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.5,
+        "order_valence": 0.0,
+        "summary": "Whinny joins the Confederacy for adventure",
+        "source_id": "aba35535-5f99-4e1c-963d-7355136405d5",
+        "target_id": "ddc5ab1d-3388-417b-91b7-8a4ecc793703"
+      },
+      "timestamp": "2026-08-13T01:45:11.550089",
+      "source": "Whinny Kroak - Artificer Alchemist",
+      "target": "Confederacy of Hearthships"
+    },
+    "1722507b8de50762": {
+      "result": {
+        "type": "served",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Whinny was set to join the crew",
+        "source_id": "aba35535-5f99-4e1c-963d-7355136405d5",
+        "target_id": "a1dd120f-5ac6-4c09-a402-a3f130772db8"
+      },
+      "timestamp": "2026-08-13T01:45:12.542339",
+      "source": "Whinny Kroak - Artificer Alchemist",
+      "target": "Party Boat"
+    },
+    "723a88f1909cf7d4": {
+      "result": {
+        "type": "created",
+        "moral_valence": 1.0,
+        "order_valence": 1.0,
+        "summary": "Frendlee Neybor was born in Duskmire",
+        "source_id": "1c02728c-8b9b-429a-ab9e-d18dee851186",
+        "target_id": "ca9ecae3-126f-4adc-9cf9-05b08a8481ff"
+      },
+      "timestamp": "2026-08-13T01:45:14.917686",
+      "source": "Frendlee Neybor",
+      "target": "Duskmire"
+    },
+    "531b4ac9fd54bb08": {
+      "result": {
+        "type": "traded",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Child's soul traded for safety",
+        "source_id": "1c02728c-8b9b-429a-ab9e-d18dee851186",
+        "target_id": "d3bc5b90-369d-49d6-9ecf-02dfc29120df"
+      },
+      "timestamp": "2026-08-13T01:45:15.829178",
+      "source": "Frendlee Neybor",
+      "target": "Mildred Magpie"
+    },
+    "d0e2f5a285b480a2": {
+      "result": {
+        "type": "traded",
+        "moral_valence": -0.8,
+        "order_valence": -0.5,
+        "summary": "Child's soul traded for safety",
+        "source_id": "1c02728c-8b9b-429a-ab9e-d18dee851186",
+        "target_id": "758e9709-c184-461f-93de-02a635441ae3"
+      },
+      "timestamp": "2026-08-13T01:45:16.781457",
+      "source": "Frendlee Neybor",
+      "target": "Glimmervale"
+    },
+    "f68dc41bd8444dc0": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Frendlee tasked to kill traitor Sakabatha",
+        "source_id": "1c02728c-8b9b-429a-ab9e-d18dee851186",
+        "target_id": "c13d73c6-604f-4580-8965-6ed8ce31e724"
+      },
+      "timestamp": "2026-08-13T01:45:17.949743",
+      "source": "Frendlee Neybor",
+      "target": "Lady Nightshade"
+    },
+    "40fca7695f156ab7": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -0.5,
+        "order_valence": 0.5,
+        "summary": "Frendlee tasked to kill traitor for secrecy",
+        "source_id": "1c02728c-8b9b-429a-ab9e-d18dee851186",
+        "target_id": "8e4242e8-93bf-44b2-96ae-57ac461209fd"
+      },
+      "timestamp": "2026-08-13T01:45:19.861268",
+      "source": "Frendlee Neybor",
+      "target": "Revelia"
+    },
+    "541e4a50bfbe75fc": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -0.5,
+        "order_valence": 0.5,
+        "summary": "Frendlee tasked to kill Sakabatha",
+        "source_id": "1c02728c-8b9b-429a-ab9e-d18dee851186",
+        "target_id": "e33f2c01-a6bc-4ccd-a829-8ade1f2ce693"
+      },
+      "timestamp": "2026-08-13T01:45:20.882879",
+      "source": "Frendlee Neybor",
+      "target": "Sakabatha"
+    },
+    "1b01fddd2e88ef8e": {
+      "result": {
+        "type": "killed",
+        "moral_valence": -0.5,
+        "order_valence": 0.5,
+        "summary": "Frendlee tasked to kill for protection",
+        "source_id": "1c02728c-8b9b-429a-ab9e-d18dee851186",
+        "target_id": "dd86e42d-6695-47d1-9b25-2d86fbcaf350"
+      },
+      "timestamp": "2026-08-13T01:45:21.861092",
+      "source": "Frendlee Neybor",
+      "target": "Wraithwoven Coven"
+    },
+    "21315aa2893a75a9": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Jinx worked in mercenary company circuits",
+        "source_id": "fdc6c6a7-537c-4a99-90b7-85f143635520",
+        "target_id": "8e4242e8-93bf-44b2-96ae-57ac461209fd"
+      },
+      "timestamp": "2026-08-13T01:45:22.930991",
+      "source": "Jinx Jogomilski",
+      "target": "Revelia"
+    },
+    "a614e1424c4d9490": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.8,
+        "order_valence": 0.5,
+        "summary": "Jinx found refuge and companionship in Glimmervale",
+        "source_id": "fdc6c6a7-537c-4a99-90b7-85f143635520",
+        "target_id": "758e9709-c184-461f-93de-02a635441ae3"
+      },
+      "timestamp": "2026-08-13T01:45:23.884543",
+      "source": "Jinx Jogomilski",
+      "target": "Glimmervale"
+    },
+    "bdc6cbf469d35f40": {
+      "result": {
+        "type": "allied",
+        "moral_valence": 0.7,
+        "order_valence": 0.5,
+        "summary": "Jinx found refuge with the carnival.",
+        "source_id": "fdc6c6a7-537c-4a99-90b7-85f143635520",
+        "target_id": "ca9ecae3-126f-4adc-9cf9-05b08a8481ff"
+      },
+      "timestamp": "2026-08-13T01:45:24.953107",
+      "source": "Jinx Jogomilski",
+      "target": "Duskmire"
+    },
+    "a50626f6b490632d": {
+      "result": {
+        "type": "neutral",
+        "moral_valence": 0.0,
+        "order_valence": 0.0,
+        "summary": "Jinx interacts with the witchlight environment",
+        "source_id": "fdc6c6a7-537c-4a99-90b7-85f143635520",
+        "target_id": "c26dd3b2-d806-42e3-a8d9-93f29ac23546"
+      },
+      "timestamp": "2026-08-13T01:45:25.945827",
+      "source": "Jinx Jogomilski",
+      "target": "Witchlight"
+    },
+    "8cdaebadfa51cb9d": {
+      "result": {
+        "type": "employed",
+        "moral_valence": 0.5,
+        "order_valence": 0.5,
+        "summary": "Reklunir employs The Night Messengers.",
+        "source_id": "269fa86f-ff71-4b73-9222-128a4753b961",
+        "target_id": "ae895dfb-1eae-41f8-acd4-16ef6f04f0ec"
+      },
+      "timestamp": "2026-08-13T01:45:27.153015",
+      "source": "Reklunir Yonuros",
+      "target": "The Night Messengers"
+    },
+    "f90d1d6e5dfe83e1": {
+      "result": {
+        "type": "betrayed",
+        "moral_valence": -0.7,
+        "order_valence": -0.6,
+        "summary": "Reklunir's awakening led to chaos.",
+        "source_id": "269fa86f-ff71-4b73-9222-128a4753b961",
+        "target_id": "c13d73c6-604f-4580-8965-6ed8ce31e724"
+      },
+      "timestamp": "2026-08-13T01:45:28.136399",
+      "source": "Reklunir Yonuros",
+      "target": "Lady Nightshade"
     }
   }
 }
