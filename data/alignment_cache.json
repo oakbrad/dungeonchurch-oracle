@@ -2439,6 +2439,16 @@
       },
       "timestamp": "2026-08-13T01:44:37.135347",
       "title": "Ranger Jarfi"
+    },
+    "ac1c291c9a220dd8": {
+      "alignment": {
+        "law_chaos": -0.9,
+        "good_evil": -0.8,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-08-14T12:07:04.546035",
+      "title": "Heckna"
     }
   },
   "relationships": {
@@ -13738,6 +13748,19 @@
       "timestamp": "2026-08-13T01:45:28.136399",
       "source": "Reklunir Yonuros",
       "target": "Lady Nightshade"
+    },
+    "bd4e5aae00fcde1a": {
+      "result": {
+        "type": "allied",
+        "moral_valence": -0.5,
+        "order_valence": -0.5,
+        "summary": "Heckna is suspected to ally with Sakabatha",
+        "source_id": "ce9476d5-4c8a-4e2e-ac07-44add5350821",
+        "target_id": "e33f2c01-a6bc-4ccd-a829-8ade1f2ce693"
+      },
+      "timestamp": "2026-08-14T12:07:06.200820",
+      "source": "Heckna",
+      "target": "Sakabatha"
     }
   }
 }
