@@ -100,15 +100,6 @@
       "connections": 0
     },
     {
-      "id": "981bd26e-2983-4b63-a9c9-253c134e361b",
-      "title": "Barrow, Wildfire Druid",
-      "urlId": "YFtvEtcD46",
-      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
-      "createdAt": "2026-08-21T22:31:21.296000+00:00",
-      "content": "Backstory in progress\u2026\n\n\\\n\\\n[Barrow WF Drd.pdf 432126](/api/attachments.redirect?id=e44b24e5-55a5-47d0-91e5-5380be7117f9)\n\n\\\n",
-      "connections": 0
-    },
-    {
       "id": "e4a8892f-02cb-4e39-badc-bebd1e354dc7",
       "title": "Forge Mead",
       "urlId": "wP6KD1RtSA",
@@ -199,6 +190,15 @@
       "connections": 0
     },
     {
+      "id": "ef485e4c-cf47-4a88-bb7d-6bcb4e1127d5",
+      "title": "",
+      "urlId": "YkWsMwoRVU",
+      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
+      "createdAt": "2022-02-16T07:32:03.152000+00:00",
+      "content": "",
+      "connections": 0
+    },
+    {
       "id": "b39f4303-311a-480a-ab92-2e24f2171fed",
       "title": "Restaurant List",
       "urlId": "OXVi7L5CUF",
@@ -244,12 +244,12 @@
       "connections": 0
     },
     {
-      "id": "e7e5c4bb-62d8-4002-a4a5-504cca5a94a6",
-      "title": "Thadef Fisselvein",
-      "urlId": "D3HR37P3mi",
+      "id": "981bd26e-2983-4b63-a9c9-253c134e361b",
+      "title": "Barrow, Wildfire Druid",
+      "urlId": "YFtvEtcD46",
       "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
-      "createdAt": "2026-08-09T19:04:17.770000+00:00",
-      "content": "\\\n",
+      "createdAt": "2026-08-21T22:31:21.296000+00:00",
+      "content": " ![](/api/attachments.redirect?id=d5d02e4a-54ea-48ca-a08f-5bd3dfe758ba \"left-50 =236x354\")*Most all creatures are born, eat, shit and die. Our order are called \u201cDeath Records\u201d because \u201cShit Librarian\u201d doesn\u2019t have the same ring to it.*\n\n\\\n**Childhood:**\n\nBorn to a small tribe east of the Dreadwood, a sickly whelpling vanished when set in a basket too far from the edge of the village and too close to the shadows of the trees. Months later, he walked out of the woods, healthy but changed. A crown of spines twisted around his budding horns, and an ugly, baleful glow to his right eye sparked fear in the other youths of the village. Though not shunned outright, he stuck to the outskirts and the wilds until a member of a hermetic order stumbled upon the odd little creature. Barrow sought answers from the traveler but instead found purpose. \n\n\\\n**Order:**\n\n\u201cGreentorch\u201d, \u201cAsh-eater\u201d, \u201cHearthless Minister\u201d, \u201cPathtender\u201d\n\nAn ancient, benevolent but misunderstood collection of druids born from the necessity of the Tribeborn to interact with peoples of more pastoral or urban persuasions. Also adopted by pockets of Dragonborn after their liberation as they sought traditions and community at the dawn of their existence as free beings. \n\nGreentorches act as chroniclers of the traditions of birth, life, and death amongst the scattered nomadic or blossoming new civilizations of Pyora. they may circulate between vastly different populations, providing advice and medicine in exchange for stories and rituals, or delivering such stories to a group that may have lost their history.\n\nA trained Death Record is an encyclopedia of the traditions of every group they have lived among. They administer rites to the dying, craft talismans of protection for the newborn, and even share herbs and recipes amongst otherwise isolated tribes. The name \u201cAsh-Eater\u201d is the result of an unfortunate incident early in the history of the order. A nomadic tribe\u2019s death tradition included mixing the bone ash of their beloved deceased with the corn and wheatmeal of their traveling supplies so that their kin would be with them always, rather than interred in some faraway soil. The tradition was respected and administered by an attending minister, but an outsider misunderstood it as Greentorches themselves perpetuating ritual cannibalism. \n\nPathtenders absorb, remember, perpetuate and honor all the ways that thinking and living beings move along the path of life, intervening to keep individuals on it, or when necessary, guide others off.\n\n\\\n**Now:**\n\nBarrow returns to the woods of his childhood. He seeks answers regarding his lost time and his unnaturally vigorous, strange body. He has learned that his disappearance years before may have coincided with the appearance of an otherworldly carnival, and a member of his order has asked him to investigate the presence of foul magicks in the forest besides. \n\nEver since he was a child, he has been able to pull a cloak of shimmering haze around him and don a glamor of the unremarkable, usually allowing him to pass through cities and crowds unseen. He sneaks into the carnival under the glowing lights of the big top, and settles in to witness a spectacle. But has he arrived unnoticed as he has done so many times before? Or has he merely been allowed entry by some entity long-familiar with his face?\n\n\\\n\\\n[Barrow WF Drd.pdf 432126](/api/attachments.redirect?id=e44b24e5-55a5-47d0-91e5-5380be7117f9)\n\n\\\n",
       "connections": 0
     },
     {
@@ -262,12 +262,12 @@
       "connections": 0
     },
     {
-      "id": "ef485e4c-cf47-4a88-bb7d-6bcb4e1127d5",
-      "title": "",
-      "urlId": "YkWsMwoRVU",
-      "collectionId": "9eecd4c7-d708-40ca-add0-5f6ec31066cf",
-      "createdAt": "2022-02-16T07:32:03.152000+00:00",
-      "content": "",
+      "id": "e7e5c4bb-62d8-4002-a4a5-504cca5a94a6",
+      "title": "Thadef Fisselvein",
+      "urlId": "D3HR37P3mi",
+      "collectionId": "184c6e39-ef59-49b4-89d8-302d6abae3cf",
+      "createdAt": "2026-08-09T19:04:17.770000+00:00",
+      "content": "When Thadef was a boy, his family visited Revelia. \"This place is so fun! I never want to leave!\" exclaimed Thadef. His dad, a capricious gnome, shrugged. \"Okay....Here, blow this whistle when you want to come home.\"\n\nThadef lost the whistle.\n\nThough Thadef was a youngster his presence at Revelia was welcome--there is always much work to be done. He began with simple chores and errands for Heckna. Over the years he learned rigging, mechanisms, trap doors, eventually maintenance of the carousel.\n\nWhen Revalia moved to a location outside Striborg, Thadef went to explore the big city. He quickly discovered the harsh necessity of coin, and took up odd jobs of labor. A thief noticed Thadef's naive and quirky manner and saw potential. \"Hey kiddo. Want to make some easy money?\" Thadef did not yet fully grasp the consequence of crime in human society, and took the position of lure for this gang of thieves. Their exploits were moderately lucrative. The band suffered occasional loss of crew to the authorities, but due to his youth and accessory involvement, Thadef avoided punitive maiming. His luck ran out when he was crushed by a carriage in a failed escape.\n\nHis back broken, Thadef resorted to begging. He became fast friends with his new neighbors, the rats. To his delight, these friends turned out to be much better partners in crime than his previous gang.\n\nThese days he prefers various schemes and chicanery to blatant larceny. When he senses the law catching up with him he takes a vacation in the forest. It was during one of these vacations that he found Revelia had returned to the area.\n\n\\\n\\\n[Thadef.pdf 667646](/api/attachments.redirect?id=ae7591c9-8beb-4b75-9b5b-b4edd5c13202)\n\n\\\n",
       "connections": 0
     },
     {
