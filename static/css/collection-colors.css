@@ -1,8 +1,8 @@
 /* Auto-generated collection colors */
 
 :root {
-    --collection-9eecd4c7-d708-40ca-add0-5f6ec31066cf: #0366d6;
     --collection-13b87098-500c-490d-ae46-01356387fe88: #ffbe0b;
+    --collection-9eecd4c7-d708-40ca-add0-5f6ec31066cf: #0366d6;
     --collection-a60ccdf0-330c-4a08-8511-729aea62ca75: #9e5cf7;
     --collection-7e8c2f3f-6e08-4b08-b207-33365583a8bf: #4E5C6E;
     --collection-7275a3d8-27da-4f63-ac39-a9bc9a1ec6d7: None;
@@ -16,16 +16,16 @@
     --collection-77c74010-e20c-419c-8122-97563ec685b6: #00d084;
 }
 
-/* Locations */
-.collection-9eecd4c7-d708-40ca-add0-5f6ec31066cf {
-    fill: #0366d6;
-    color: #0366d6;
-}
-
 /* Game Log */
 .collection-13b87098-500c-490d-ae46-01356387fe88 {
     fill: #ffbe0b;
     color: #ffbe0b;
+}
+
+/* Locations */
+.collection-9eecd4c7-d708-40ca-add0-5f6ec31066cf {
+    fill: #0366d6;
+    color: #0366d6;
 }
 
 /* Items */

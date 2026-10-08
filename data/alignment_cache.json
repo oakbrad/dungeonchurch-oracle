@@ -2449,6 +2449,26 @@
       },
       "timestamp": "2026-08-14T12:07:04.546035",
       "title": "Heckna"
+    },
+    "4bf7234d0ac7188c": {
+      "alignment": {
+        "law_chaos": 0.2,
+        "good_evil": 0.7,
+        "confidence": 0.8,
+        "source": "llm"
+      },
+      "timestamp": "2026-10-08T17:57:13.066680",
+      "title": "Barrow, Wildfire Druid"
+    },
+    "b2d44f84cc8a943f": {
+      "alignment": {
+        "law_chaos": -0.8,
+        "good_evil": -0.5,
+        "confidence": 0.7,
+        "source": "llm"
+      },
+      "timestamp": "2026-10-08T17:57:15.252473",
+      "title": "Thadef Fisselvein"
     }
   },
   "relationships": {
